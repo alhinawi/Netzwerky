@@ -4,3 +4,7 @@ out/
 .env*
 *.log
 shot.mjs
+shot*.mjs
+live.mjs
+verify*.mjs
+dump.ts
