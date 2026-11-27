@@ -36,6 +36,8 @@ export default function ScanReader({
   const router = useRouter()
   const [answers, setAnswers] = useState<Answers>({})
   const [results, setResults] = useState<Results>({})
+  /** one line of plain feedback under the page after Prüfen */
+  const [msg, setMsg] = useState<string | null>(null)
   const [activeWord, setActiveWord] = useState<string | null>(null)
   const [tab, setTab] = useState<'word' | 'sentence'>('word')
   const [zoom, setZoom] = useState(1)
@@ -110,6 +112,7 @@ export default function ScanReader({
       setAnswers({})
     }
     setResults({})
+    setMsg(null)
     setActiveWord(null)
     setFlip('none')
     setAskClear(false)
@@ -169,23 +172,37 @@ export default function ScanReader({
 
   const check = () => {
     const nextRes: Results = {}
-    let allOk = true
+    let okCount = 0
+    let answered = 0
+    let open = 0
     for (const f of page.fields) {
       // a field without an official answer is not judged, only kept as typed
       if (!f.answer) continue
-      const ok = f.answer.split('|').some((a) => norm(a) === norm(answers[f.id] || ''))
+      const given = answers[f.id] || ''
+      // nothing written yet: leave it neutral, it is not a wrong answer
+      if (!given) { open++; continue }
+      const ok = f.answer.split('|').some((a) => norm(a) === norm(given))
       nextRes[f.id] = ok
-      if (!ok) allOk = false
+      answered++
+      if (ok) okCount++
     }
     for (const m of page.matchings) {
       m.left.forEach((_, i) => {
-        const ok = answers[`${m.id}-${i}`] === m.answers[i]
+        const given = answers[`${m.id}-${i}`] || ''
+        if (!given) { open++; return }
+        const ok = given === m.answers[i]
         nextRes[`${m.id}-${i}`] = ok
-        if (!ok) allOk = false
+        answered++
+        if (ok) okCount++
       })
     }
     setResults(nextRes)
-    if (allOk) playCorrect()
+    if (answered === 0) {
+      setMsg(`Noch nichts eingetragen – ${open} ${open === 1 ? 'Feld' : 'Felder'} offen`)
+      return
+    }
+    setMsg(`${okCount} von ${answered} richtig${open ? ` · ${open} offen` : ''}`)
+    if (okCount === answered) playCorrect()
     else {
       playWrong()
       setShake(true)
@@ -196,6 +213,7 @@ export default function ScanReader({
   const reset = () => {
     setAnswers({})
     setResults({})
+    setMsg(null)
     setAskClear(false)
     playTap()
   }
@@ -567,7 +585,7 @@ export default function ScanReader({
                   aria-pressed={on}
                   className={`absolute grid place-items-center rounded-sm border-2 ${
                     status === undefined
-                      ? 'border-nw/70 bg-white/80'
+                      ? 'border-neutral-400 bg-white/70'
                       : status
                         ? 'border-emerald-600 bg-emerald-100 text-emerald-700'
                         : 'border-rose-600 bg-rose-100 text-rose-700'
@@ -650,7 +668,12 @@ export default function ScanReader({
       <audio ref={pron} preload="none" onEnded={() => setSpoken(null)} className="hidden" />
 
       <div className="fixed inset-x-0 bottom-0 z-30 border-t border-neutral-200 bg-white">
-        <div className="mx-auto max-w-[1180px] px-3 pt-2">
+        {msg && (
+          <div className="border-b border-neutral-200 bg-neutral-50 px-3 py-1.5 text-center text-[12px] font-semibold text-neutral-700">
+            {msg}
+          </div>
+        )}
+        <div className={`mx-auto max-w-[1180px] px-3 pt-2 ${page.audio.length ? '' : 'hidden'}`}>
           <div className="flex items-center justify-between text-[12px] text-neutral-600">
             <span className="truncate">{audioLabel ?? page.audio[0]?.label ?? 'CD1 · Track —'}</span>
             <span className="shrink-0 tabular-nums text-neutral-400">
