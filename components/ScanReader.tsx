@@ -452,6 +452,27 @@ export default function ScanReader({
 
           {page.fields.map((f) => {
             const status = results[f.id]
+            if (f.kind === 'check') {
+              const on = (answers[f.id] || '') === 'x'
+              return (
+                <button
+                  key={f.id}
+                  onClick={(e) => { e.stopPropagation(); save(f.id, on ? '' : 'x') }}
+                  aria-label={f.label || f.id}
+                  aria-pressed={on}
+                  className={`absolute grid place-items-center rounded-sm border-2 ${
+                    status === undefined
+                      ? 'border-nw/70 bg-white/80'
+                      : status
+                        ? 'border-emerald-600 bg-emerald-100 text-emerald-700'
+                        : 'border-rose-600 bg-rose-100 text-rose-700'
+                  }`}
+                  style={boxStyle(f)}
+                >
+                  {on && <svg viewBox="0 0 24 24" className="h-full w-full" fill="none" stroke="currentColor" strokeWidth="3"><path d="M5 13l4 4L19 7" strokeLinecap="round" strokeLinejoin="round" /></svg>}
+                </button>
+              )
+            }
             return (
               <input
                 key={f.id}
