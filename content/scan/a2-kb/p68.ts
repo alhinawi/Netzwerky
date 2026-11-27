@@ -70,6 +70,14 @@ export const p68: ScanPage = {
   audio: [
   ],
   fields: [
+    { id: 'f1', group: '7a-table', x: 228, y: 1295, w: 165, h: 82, label: '7a Zeile 1: Name' },
+    { id: 'f2', group: '7a-table', x: 402, y: 1295, w: 260, h: 82, label: '7a Zeile 1: Studium/Ausbildung' },
+    { id: 'f3', group: '7a-table', x: 672, y: 1295, w: 275, h: 82, label: '7a Zeile 1: Beruf frueher und heute' },
+    { id: 'f4', group: '7a-table', x: 958, y: 1295, w: 260, h: 82, label: '7a Zeile 1: Grund fuer den Berufswechsel' },
+    { id: 'f5', group: '7a-table', x: 228, y: 1380, w: 165, h: 80, label: '7a Zeile 2: Name' },
+    { id: 'f6', group: '7a-table', x: 402, y: 1380, w: 260, h: 80, label: '7a Zeile 2: Studium/Ausbildung' },
+    { id: 'f7', group: '7a-table', x: 672, y: 1380, w: 275, h: 80, label: '7a Zeile 2: Beruf frueher und heute' },
+    { id: 'f8', group: '7a-table', x: 958, y: 1380, w: 260, h: 80, label: '7a Zeile 2: Grund fuer den Berufswechsel' },
   ],
   matchings: [],
   patches: [

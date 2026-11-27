@@ -47,7 +47,19 @@ export const p28: ScanPage = {
   audio: [
     { id: 'a1_18_97', x: 97, y: 1660, w: 32, h: 30, src: ['NWn_A2_KB_Audio_1-018.mp3'], label: 'Aufgabe 2a (1.18)' },
   ],
-  fields: [],
+  fields: [
+    { id: 'f1', group: '1b', x: 227, y: 1525, w: 24, h: 24, answer: '', label: '1b', kind: 'check' },
+    { id: 'f2', group: '1b', x: 228, y: 1553, w: 24, h: 24, answer: '', label: '1b', kind: 'check' },
+    { id: 'f3', group: '1b', x: 228, y: 1583, w: 24, h: 24, answer: '', label: '1b', kind: 'check' },
+    { id: 'f4', group: '1b', x: 571, y: 1522, w: 24, h: 24, answer: '', label: '1b', kind: 'check' },
+    { id: 'f5', group: '1b', x: 572, y: 1551, w: 24, h: 24, answer: '', label: '1b', kind: 'check' },
+    { id: 'f6', group: '1b', x: 573, y: 1580, w: 24, h: 24, answer: '', label: '1b', kind: 'check' },
+    { id: 'f7', group: '1b', x: 820, y: 1534, w: 24, h: 24, answer: '', label: '1b', kind: 'check' },
+    { id: 'f8', group: '1b', x: 820, y: 1562, w: 24, h: 24, answer: '', label: '1b', kind: 'check' },
+    { id: 'f9', group: '1b', x: 821, y: 1590, w: 24, h: 24, answer: '', label: '1b', kind: 'check' },
+    { id: 'f10', group: '1b', x: 1032, y: 1544, w: 26, h: 26, answer: '', label: '1b', kind: 'check' },
+    { id: 'f11', group: '1b', x: 1033, y: 1574, w: 26, h: 26, answer: '', label: '1b', kind: 'check' },
+  ],
   matchings: [],
   patches: [
   ],

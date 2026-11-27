@@ -40,7 +40,12 @@ export const p29: ScanPage = {
   ],
   audio: [
   ],
-  fields: [],
+  fields: [
+    { id: 'f1', group: '3', x: 822, y: 1458, w: 320, h: 36, answer: '', label: '3' },
+    { id: 'f2', group: '3', x: 822, y: 1502, w: 320, h: 36, answer: '', label: '3' },
+    { id: 'f3', group: '3', x: 822, y: 1546, w: 320, h: 34, answer: '', label: '3' },
+    { id: 'f4', group: '3', x: 822, y: 1586, w: 320, h: 36, answer: '', label: '3' },
+  ],
   matchings: [],
   patches: [
   ],
