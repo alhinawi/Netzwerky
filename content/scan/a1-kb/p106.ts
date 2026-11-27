@@ -1,0 +1,38 @@
+import type { ScanPage } from '../types'
+
+export const p106: ScanPage = {
+  book: 'a1-kb',
+  printed: 106,
+  chapter: 9,
+  image: '/pages/a1-kb/106.jpg',
+  width: 1241,
+  height: 1753,
+  words: [
+    { id: 'hb', x: 215, y: 100, w: 257, h: 24, text: 'über Wohnformen sprechen', ar: 'نتكلم عن أشكال السكن' },
+    { id: 't', x: 215, y: 180, w: 394, h: 40, text: 'Wer wohnt denn da?', ar: 'مين ساكن هناك بقى؟' },
+    { id: 'i10a', x: 137, y: 234, w: 635, h: 24, text: '10a Sehen Sie die Fotos an und ordnen Sie die Überschriften zu.', ar: '١٠أ بُص على الصور ووصّل كل عنوان بالصورة بتاعته.' },
+    { id: 'h1', x: 215, y: 274, w: 250, h: 50, text: '1. Im Hochhaus zu Hause – ich sehe die ganze Stadt', ar: '١. في البرج السكني زي بيتي، أشوف المدينة كلها' },
+    { id: 'h2', x: 215, y: 341, w: 235, h: 52, text: '2. Cool – wohnen im Loft, alles in einem Raum', ar: '٢. جامد، السكن في لوفت، كل حاجة في مساحة واحدة' },
+    { id: 'h3', x: 215, y: 408, w: 345, h: 52, text: '3. Hallo Herr Nachbar! – Wohnen im Reihenhaus mit Garten', ar: '٣. أهلاً يا جاري! السكن في بيت متلاصق بجنينة' },
+    { id: 'h4', x: 215, y: 476, w: 346, h: 52, text: '4. Altbauwohnung in der Stadt – Treppen aus Holz und hohe Decken', ar: '٤. شقة في مبنى قديم في المدينة، سلالم خشب وأسقف عالية' },
+    { id: 'h5', x: 215, y: 545, w: 275, h: 52, text: '5. Fachwerkhaus – alles klein: Zimmer und Fenster', ar: '٥. بيت بإطار خشبي، كله صغير: الأوض والشبابيك' },
+    { id: 'lA', x: 145, y: 1038, w: 26, h: 26, text: 'A', ar: 'الصورة A' },
+    { id: 'lB', x: 176, y: 1527, w: 26, h: 26, text: 'B', ar: 'الصورة B' },
+    { id: 'lC', x: 712, y: 663, w: 26, h: 26, text: 'C', ar: 'الصورة C' },
+    { id: 'lD', x: 667, y: 1133, w: 26, h: 26, text: 'D', ar: 'الصورة D' },
+    { id: 'lE', x: 710, y: 1605, w: 26, h: 26, text: 'E', ar: 'الصورة E' },
+  ],
+  audio: [],
+  fields: [],
+  matchings: [],
+  patches: [],
+  sentences: [
+    { id: 's-i10a', text: 'Sehen Sie die Fotos an und ordnen Sie die Überschriften zu.', ar: 'بُص على الصور ووصّل كل عنوان بالصورة بتاعته.', words: ['i10a'] },
+    { id: 's-h1', text: 'Im Hochhaus zu Hause – ich sehe die ganze Stadt', ar: 'في البرج السكني زي بيتي، أشوف المدينة كلها', words: ['h1'] },
+    { id: 's-h2', text: 'Cool – wohnen im Loft, alles in einem Raum', ar: 'جامد، السكن في لوفت، كل حاجة في مساحة واحدة', words: ['h2'] },
+    { id: 's-h3', text: 'Hallo Herr Nachbar! – Wohnen im Reihenhaus mit Garten', ar: 'أهلاً يا جاري! السكن في بيت متلاصق بجنينة', words: ['h3'] },
+    { id: 's-h4', text: 'Altbauwohnung in der Stadt – Treppen aus Holz und hohe Decken', ar: 'شقة في مبنى قديم في المدينة، سلالم خشب وأسقف عالية', words: ['h4'] },
+    { id: 's-h5', text: 'Fachwerkhaus – alles klein: Zimmer und Fenster', ar: 'بيت بإطار خشبي، كله صغير: الأوض والشبابيك', words: ['h5'] },
+  ],
+  groups: [],
+}
