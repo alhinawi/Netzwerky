@@ -558,17 +558,6 @@ export default function ScanReader({
           </div>
           <div className="flex items-center gap-3 pb-2 pt-1">
             <button
-              onClick={() => { const on = !sound; setSound(on); setSoundOn(on) }}
-              aria-label={sound ? 'Ton aus' : 'Ton an'}
-              aria-pressed={sound}
-              className={`grid h-9 w-9 shrink-0 place-items-center rounded-md border ${sound ? 'border-nw text-nw' : 'border-neutral-300 text-neutral-400'}`}
-            >
-              <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="1.7">
-                <path d="M4 9.5h3l4.5-3.5v12L7 14.5H4z" strokeLinejoin="round" />
-                {sound ? <><path d="M15.5 9a4 4 0 0 1 0 6" strokeLinecap="round" /><path d="M18 6.5a7.5 7.5 0 0 1 0 11" strokeLinecap="round" /></> : <path d="M16 9l5 6M21 9l-5 6" strokeLinecap="round" />}
-              </svg>
-            </button>
-            <button
               onClick={() => {
                 const el = audio.current
                 if (!el || !playing) { const first = page.audio[0]; if (first) play(first.src, first.label); return }
@@ -591,6 +580,17 @@ export default function ScanReader({
             <button onClick={() => setProfileOpen(true)} aria-label="Profil" className="grid h-9 w-9 shrink-0 place-items-center rounded-full border border-neutral-300 text-neutral-500">
               <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="1.7"><circle cx="12" cy="8.5" r="3.2" /><path d="M5.5 19c1.2-3.2 3.6-4.6 6.5-4.6s5.3 1.4 6.5 4.6" strokeLinecap="round" /></svg>
             </button>
+            <button
+              onClick={() => { const on = !sound; setSound(on); setSoundOn(on) }}
+              aria-label={sound ? 'Ton aus' : 'Ton an'}
+              aria-pressed={sound}
+              className={`grid h-9 w-9 shrink-0 place-items-center rounded-md border ${sound ? 'border-nw text-nw' : 'border-neutral-300 text-neutral-400'}`}
+            >
+              <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="1.7">
+                <path d="M4 9.5h3l4.5-3.5v12L7 14.5H4z" strokeLinejoin="round" />
+                {sound ? <><path d="M15.5 9a4 4 0 0 1 0 6" strokeLinecap="round" /><path d="M18 6.5a7.5 7.5 0 0 1 0 11" strokeLinecap="round" /></> : <path d="M16 9l5 6M21 9l-5 6" strokeLinecap="round" />}
+              </svg>
+            </button>
             <button onClick={() => go(prev)} disabled={!prev} aria-label="Vorherige Seite" className="grid h-9 w-9 shrink-0 place-items-center rounded-md border border-neutral-300 text-neutral-500 disabled:opacity-30">
               <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="1.8"><path d="M14 5l-7 7 7 7" strokeLinecap="round" strokeLinejoin="round" /></svg>
             </button>
@@ -598,7 +598,7 @@ export default function ScanReader({
               onClick={() => setPagesOpen((v) => !v)}
               aria-label="Seite wählen"
               aria-expanded={pagesOpen}
-              className="flex flex-1 items-center justify-center gap-1 rounded-md border border-neutral-300 py-1.5 text-[13px] text-neutral-700"
+              className="flex w-[4.5rem] shrink-0 items-center justify-center gap-1 rounded-md border border-neutral-300 py-1.5 text-[13px] text-neutral-700"
             >
               {page.printed}
               <span className={`text-[9px] text-neutral-400 transition-transform ${pagesOpen ? 'rotate-180' : ''}`}>▴</span>
