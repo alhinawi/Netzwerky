@@ -48,6 +48,14 @@ export default function ScanReader({
     } catch {}
     return 'none'
   })
+  const [under, setUnder] = useState<{ image: string; printed: number } | null>(() => {
+    if (typeof window === 'undefined') return null
+    try {
+      const d = sessionStorage.getItem('nw-under')
+      if (d) { sessionStorage.removeItem('nw-under'); const [img, pr] = d.split('|'); return { image: img, printed: Number(pr) } }
+    } catch {}
+    return null
+  })
   const [shake, setShake] = useState(false)
   const [playing, setPlaying] = useState<string | null>(null)
   const [progress, setProgress] = useState(0)
@@ -196,14 +204,15 @@ export default function ScanReader({
   // Clear the turn class once the animation has played.
   useEffect(() => {
     if (flip === 'none') return
-    const t = window.setTimeout(() => setFlip('none'), 700)
+    const t = window.setTimeout(() => { setFlip('none'); setUnder(null) }, 700)
     return () => window.clearTimeout(t)
   }, [flip])
 
   const go = (target?: number) => {
     if (!target) return
     const dir = target > page.printed ? 'next' : 'prev'
-    setFlip(dir)
+    setUnder({ image: page.image, printed: page.printed })
+    try { sessionStorage.setItem('nw-under', `${page.image}|${page.printed}`) } catch {}
     try { sessionStorage.setItem('nw-flip', dir) } catch {}
     router.push(`/read/${page.book}/${target}/`)
   }
@@ -227,7 +236,7 @@ export default function ScanReader({
   const level = (page.book.split('-')[0] || 'a1').toUpperCase()
   // Plattform pages carry a half chapter (6.5 = Plattform 2, 9.5 = Plattform 3)
   const chapterLabel = (n: number) => {
-    const plat: Record<string, string> = { 'a2-kb:6.5': 'Plattform 2', 'a2-kb:9.5': 'Plattform 3', 'a2-kb:12.5': 'Plattform 4', 'a2-kb:13': 'Anhang', 'a1-kb:0': 'Anhang', 'a1-kb:3': 'Plattform 1' }
+    const plat: Record<string, string> = { 'a2-kb:6.5': 'Plattform 2', 'a2-kb:9.5': 'Plattform 3', 'a2-kb:12.5': 'Plattform 4', 'a2-kb:13': 'Anhang', 'a1-kb:0': 'Anhang', 'a1-kb:3': 'Plattform 1', 'a2-kb:3.5': 'Plattform 1' }
     return plat[`${page.book}:${n}`] ?? `K${n}`
   }
   const audioBase = `/audio/${level.toLowerCase()}/kb`
@@ -342,6 +351,10 @@ export default function ScanReader({
             else go(prev)
           }}
         >
+          {under && under.printed !== page.printed && (
+            /* eslint-disable-next-line @next/next/no-img-element */
+            <img src={under.image} alt="" aria-hidden className="turn-under pointer-events-none absolute inset-0 h-full w-full" draggable={false} />
+          )}
           <picture>
             <source type="image/webp" srcSet={page.image.replace(/\.jpg$/, '.webp')} />
             {/* eslint-disable-next-line @next/next/no-img-element */}
