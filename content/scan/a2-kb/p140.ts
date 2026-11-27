@@ -90,7 +90,12 @@ export const p140: ScanPage = {
   ],
   audio: [
   ],
-  fields: [],
+  fields: [
+    { id: 'm1', group: '7c', x: 550, y: 1048, w: 55, h: 26, answer: 'B', label: '7c 1' },
+    { id: 'm2', group: '7c', x: 505, y: 1090, w: 55, h: 26, answer: 'D', label: '7c 2' },
+    { id: 'm3', group: '7c', x: 585, y: 1138, w: 55, h: 26, answer: 'A', label: '7c 3' },
+    { id: 'm4', group: '7c', x: 430, y: 1172, w: 55, h: 26, answer: 'C', label: '7c 4' },
+  ],
   matchings: [],
   patches: [],
   sentences: [

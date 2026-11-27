@@ -102,7 +102,20 @@ export const p139: ScanPage = {
   ],
   audio: [
   ],
-  fields: [],
+  fields: [
+    { id: 'cb1a', group: '4c', x: 583, y: 310, w: 20, h: 20, answer: '', label: '4c 1 Sachen', kind: 'check' },
+    { id: 'cb1b', group: '4c', x: 729, y: 310, w: 20, h: 20, answer: 'x', label: '4c 1 Personen', kind: 'check' },
+    { id: 'cb2a', group: '4c', x: 583, y: 340, w: 20, h: 20, answer: 'x', label: '4c 2 Singular', kind: 'check' },
+    { id: 'cb2b', group: '4c', x: 729, y: 340, w: 20, h: 20, answer: '', label: '4c 2 Plural', kind: 'check' },
+    { id: 'cb3a', group: '4c', x: 583, y: 370, w: 20, h: 20, answer: 'x', label: '4c 3 Sachen', kind: 'check' },
+    { id: 'cb3b', group: '4c', x: 729, y: 370, w: 20, h: 20, answer: '', label: '4c 3 Personen', kind: 'check' },
+    { id: 'gp1', group: '4d', x: 330, y: 560, w: 45, h: 26, answer: 'jemand', label: '4d 1' },
+    { id: 'gp2', group: '4d', x: 390, y: 590, w: 45, h: 26, answer: 'niemand', label: '4d 2' },
+    { id: 'gp3', group: '4d', x: 255, y: 620, w: 45, h: 26, answer: 'etwas|was', label: '4d 3' },
+    { id: 'gp4', group: '4d', x: 190, y: 650, w: 45, h: 26, answer: 'man', label: '4d 4' },
+    { id: 'gp5', group: '4d', x: 500, y: 680, w: 45, h: 26, answer: 'alles', label: '4d 5' },
+    { id: 'gp6', group: '4d', x: 365, y: 710, w: 45, h: 26, answer: 'nichts', label: '4d 6' },
+  ],
   matchings: [],
   patches: [],
   sentences: [
