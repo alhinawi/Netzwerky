@@ -7,7 +7,7 @@ export type ScanField = Box & {
   group: string
   answer: string
   label?: string
-  kind?: 'text' | 'select'
+  kind?: 'text' | 'select' | 'check'
   options?: string[]
 }
 export type ScanMatchItem = Box & { text: string }
