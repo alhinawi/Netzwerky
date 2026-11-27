@@ -166,6 +166,21 @@ export default function ScanReader({
     router.push(`/read/${page.book}/${target}/`)
   }
 
+  // Warm the next and previous page images once the current one is on screen,
+  // so flipping a page does not wait for the download.
+  useEffect(() => {
+    const nbrs = [next, prev].filter((n) => n && n !== page.printed)
+    if (nbrs.length === 0) return
+    const idle = (cb: () => void) =>
+      'requestIdleCallback' in window ? (window as any).requestIdleCallback(cb, { timeout: 2500 }) : setTimeout(cb, 1200)
+    idle(() => {
+      for (const n of nbrs) {
+        const img = new Image()
+        img.src = `/pages/${page.book}/${String(n).padStart(3, '0')}.webp`
+      }
+    })
+  }, [page.printed, page.book, next, prev])
+
   const W = page.width
   const H = page.height
   const boxStyle = (b: { x: number; y: number; w: number; h: number }) => ({
