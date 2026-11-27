@@ -83,7 +83,19 @@ export const p141: ScanPage = {
   ],
   audio: [
   ],
-  fields: [],
+  fields: [
+    { id: 'f1', group: '8b', x: 478, y: 427, w: 88, h: 32, answer: 'die', label: '8b 1a' },
+    { id: 'f2', group: '8b', x: 368, y: 472, w: 85, h: 32, answer: 'kauft', label: '8b 1b' },
+    { id: 'f3', group: '8b', x: 178, y: 563, w: 100, h: 30, answer: 'den', label: '8b 2a' },
+    { id: 'f4', group: '8b', x: 373, y: 563, w: 180, h: 30, answer: 'verpassen', label: '8b 2b' },
+    { id: 'f5', group: '8b', x: 180, y: 609, w: 138, h: 26, answer: 'darf', label: '8b 2c' },
+    { id: 'f6', group: '8b', x: 263, y: 695, w: 115, h: 26, answer: 'das', label: '8b 3a' },
+    { id: 'f7', group: '8b', x: 183, y: 741, w: 295, h: 26, answer: 'besuchen möchte', label: '8b 3b' },
+    { id: 'f8', group: '8b', x: 270, y: 779, w: 115, h: 26, answer: 'die', label: '8b 4a' },
+    { id: 'f9', group: '8b', x: 185, y: 822, w: 140, h: 26, answer: 'kenne', label: '8b 4b' },
+    { id: 'f10', group: '8b', x: 330, y: 867, w: 115, h: 26, answer: 'die', label: '8b 5a' },
+    { id: 'f11', group: '8b', x: 185, y: 909, w: 135, h: 26, answer: 'lese', label: '8b 5b' },
+  ],
   matchings: [],
   patches: [],
   sentences: [
