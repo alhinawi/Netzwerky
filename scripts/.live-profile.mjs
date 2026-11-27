@@ -1,0 +1,10 @@
+import { chromium } from 'playwright'
+const b = await chromium.launch()
+const p = await b.newPage({ viewport: { width: 390, height: 844 }, deviceScaleFactor: 2, isMobile: true, hasTouch: true })
+await p.goto('https://netzwerky.pages.dev/read/a2-kb/54/', { waitUntil: 'networkidle' })
+await p.waitForTimeout(500)
+await p.evaluate(() => { const b = document.querySelector('button[aria-label="Profil"]'); b && b.click() })
+await p.waitForTimeout(600)
+await p.screenshot({ path: '/tmp/shots/live-profile.png' })
+console.log('ok')
+await b.close()

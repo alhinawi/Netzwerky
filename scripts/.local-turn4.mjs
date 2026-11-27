@@ -1,0 +1,17 @@
+import { chromium } from 'playwright'
+const b = await chromium.launch()
+const p = await b.newPage({ viewport: { width: 390, height: 844 }, deviceScaleFactor: 2, isMobile: true, hasTouch: true })
+await p.goto('http://localhost:8099/read/a2-kb/66/', { waitUntil: 'networkidle' })
+await p.waitForTimeout(400)
+await p.evaluate(() => { const b = document.querySelector('button[aria-label="Nächste Seite"]'); b && b.click() })
+// wait until the turn class is actually on the page container
+await p.waitForFunction(() => !!document.querySelector('.turn-next, .turn-prev'), null, { timeout: 8000 })
+await p.screenshot({ path: '/tmp/shots/u000.png' })
+await p.waitForTimeout(90)
+await p.screenshot({ path: '/tmp/shots/u090.png' })
+await p.waitForTimeout(120)
+await p.screenshot({ path: '/tmp/shots/u210.png' })
+await p.waitForTimeout(150)
+await p.screenshot({ path: '/tmp/shots/u360.png' })
+console.log('done', p.url())
+await b.close()

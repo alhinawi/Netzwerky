@@ -1,0 +1,11 @@
+import { chromium } from 'playwright'
+const b = await chromium.launch()
+const ctx = await b.newContext({ viewport: { width: 390, height: 844 }, deviceScaleFactor: 2, isMobile: true, hasTouch: true, recordVideo: { dir: '/tmp/shots/vid', size: { width: 390, height: 844 } } })
+const p = await ctx.newPage()
+await p.goto('http://localhost:8099/read/a2-kb/66/', { waitUntil: 'networkidle' })
+await p.waitForTimeout(700)
+await p.evaluate(() => { const b = document.querySelector('button[aria-label="Nächste Seite"]'); b && b.click() })
+await p.waitForTimeout(1600)
+await ctx.close()
+await b.close()
+console.log('video done')

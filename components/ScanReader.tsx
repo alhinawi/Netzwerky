@@ -40,7 +40,14 @@ export default function ScanReader({
   const [tab, setTab] = useState<'word' | 'sentence'>('word')
   const [zoom, setZoom] = useState(1)
   const [layout, setLayout] = useState<1 | 2 | 4>(1)
-  const [flip, setFlip] = useState<'none' | 'next' | 'prev'>('none')
+  const [flip, setFlip] = useState<'none' | 'next' | 'prev'>(() => {
+    if (typeof window === 'undefined') return 'none'
+    try {
+      const d = sessionStorage.getItem('nw-flip')
+      if (d === 'next' || d === 'prev') { sessionStorage.removeItem('nw-flip'); return d }
+    } catch {}
+    return 'none'
+  })
   const [shake, setShake] = useState(false)
   const [playing, setPlaying] = useState<string | null>(null)
   const [progress, setProgress] = useState(0)
@@ -186,16 +193,12 @@ export default function ScanReader({
     setFb(st.feedback)
   }, [])
 
-  // Play the page turn once after a route change: the direction is handed over
-  // through sessionStorage because the reader remounts for the new page.
+  // Clear the turn class once the animation has played.
   useEffect(() => {
-    let dir: string | null = null
-    try { dir = sessionStorage.getItem('nw-flip'); if (dir) sessionStorage.removeItem('nw-flip') } catch {}
-    if (dir !== 'next' && dir !== 'prev') return
-    setFlip(dir)
-    const t = window.setTimeout(() => setFlip('none'), 500)
+    if (flip === 'none') return
+    const t = window.setTimeout(() => setFlip('none'), 700)
     return () => window.clearTimeout(t)
-  }, [page.printed])
+  }, [flip])
 
   const go = (target?: number) => {
     if (!target) return

@@ -1,0 +1,63 @@
+import type { ScanPage } from '../types'
+
+export const p87: ScanPage = {
+  book: 'a2-kb',
+  printed: 87,
+  chapter: 7,
+  image: '/pages/a2-kb/087.jpg',
+  width: 1201,
+  height: 1649,
+  words: [
+    { id: 'w1', x: 149, y: 39, w: 841, h: 28, text: 'kurze Geschichten über Erlebnisse beim Zugfahren verstehen, eine Geschichte schreiben', ar: 'نفهم قصص قصيرة عن تجارب في ركوب القطر، ونكتب قصة' },
+    { id: 'w2', x: 132, y: 130, w: 330, h: 41, text: 'Zug-Geschichten', ar: 'قصص القطر' },
+    { id: 'w3', x: 54, y: 176, w: 1041, h: 62, text: '13a Sehen Sie die Fotos an und notieren Sie zu zweit vier bis fünf Wörter zu jedem Foto. Vergleichen Sie dann im Kurs.', ar: '١٣أ بصوا على الصور واكتبوا في توأدة من أربع لخمس كلمات لكل صورة. قارنوا في الكورس.' },
+    { id: 'w4', x: 110, y: 895, w: 605, h: 30, text: 'b Hören Sie die Zug-Geschichten. Ordnen Sie sie den Fotos zu.', ar: 'ب اسمعوا قصص القطر. وصّلوها بالصور.' },
+    { id: 'w5', x: 115, y: 963, w: 515, h: 28, text: 'c Hören Sie noch einmal und ergänzen Sie die Sätze.', ar: 'ج اسمعوا تاني وكملوا الجمل.' },
+    { id: 'w6', x: 157, y: 1000, w: 455, h: 30, text: '1. Im Zug kann man oft nicht arbeiten, weil ...', ar: '١. في القطر الواحد مش بيقدر يشتغل غالبًا، عشان ...' },
+    { id: 'w7', x: 158, y: 1028, w: 450, h: 29, text: '2. Die Menschen im Zug haben geklatscht, weil ...', ar: '٢. الناس في القطر صفقوا، عشان ...' },
+    { id: 'w8', x: 159, y: 1056, w: 455, h: 28, text: '3. Der Mann hat den Zug noch bekommen, aber ...', ar: '٣. الراجل لحق القطر، بس ...' },
+    { id: 'w9', x: 645, y: 1000, w: 433, h: 30, text: '4. Eine S-Bahn konnte nicht weiterfahren, weil ...', ar: '٤. قطار الـ S-Bahn مقدرش يكمل، عشان ...' },
+    { id: 'w10', x: 645, y: 1028, w: 462, h: 29, text: '5. Der Zug nach Berlin ist schneller gefahren, weil ...', ar: '٥. القطر اللي رايح برلين مشي أسرع، عشان ...' },
+    { id: 'w11', x: 645, y: 1056, w: 422, h: 28, text: '6. Der Zug ist in Berlin angekommen und war ...', ar: '٦. القطر وصل برلين وكان ...' },
+    { id: 'w12', x: 118, y: 1129, w: 345, h: 160, text: 'd Arbeiten Sie zu dritt. Wählen Sie ein Bild oder eine andere Situation im Zug. Überlegen Sie sich eine Geschichte. Sammeln Sie Ideen und machen Sie Notizen.', ar: 'د اشتغلوا في تلاتة. اختاروا صورة أو موقف تاني في القطر. فكروا في قصة. جمّعوا أفكار واكتبوا ملاحظات.' },
+    { id: 'w13', x: 506, y: 1149, w: 234, h: 19, text: 'eine Geschichte schreiben', ar: 'كتابة قصة' },
+    { id: 'w14', x: 506, y: 1177, w: 252, h: 20, text: '- Notieren Sie Stichpunkte.', ar: '- اكتبوا نقاط رئيسية.' },
+    { id: 'w15', x: 507, y: 1203, w: 545, h: 20, text: '- Sammeln Sie Wörter und Ausdrücke zu den Stichpunkten.', ar: '- جمّعوا كلمات وتعبيرات عن النقاط الرئيسية.' },
+    { id: 'w16', x: 507, y: 1230, w: 370, h: 21, text: '- Finden Sie eine passende Reihenfolge.', ar: '- لاقوا ترتيب مناسب.' },
+    { id: 'w17', x: 507, y: 1257, w: 634, h: 22, text: '- Überlegen Sie einen Anfang und einen Schluss für Ihre Geschichte.', ar: '- فكروا في بداية ونهاية لقصتكم.' },
+    { id: 'w18', x: 118, y: 1550, w: 860, h: 36, text: 'e Schreiben Sie Ihre Geschichte. Lesen Sie die Geschichte dann den anderen Gruppen vor.', ar: 'ه اكتبوا قصتكم. اقراوها بعدين للمجموعات التانية.' },
+    { id: 'w19', x: 915, y: 1593, w: 215, h: 24, text: 'siebenundachtzig 87', ar: 'سبعة وتمانين ٨٧' },
+  ],
+  audio: [
+  ],
+  fields: [
+  ],
+  matchings: [
+  ],
+  groups: [
+  ],
+  sentences: [
+    { id: 's1', text: 'kurze Geschichten über Erlebnisse beim Zugfahren verstehen, eine Geschichte schreiben', ar: 'نفهم قصص قصيرة عن تجارب في ركوب القطر، ونكتب قصة', words: ['w1'] },
+    { id: 's2', text: 'Zug-Geschichten', ar: 'قصص القطر', words: ['w2'] },
+    { id: 's3', text: '13a Sehen Sie die Fotos an und notieren Sie zu zweit vier bis fünf Wörter zu jedem Foto. Vergleichen Sie dann im Kurs.', ar: '١٣أ بصوا على الصور واكتبوا في توأدة من أربع لخمس كلمات لكل صورة. قارنوا في الكورس.', words: ['w3'] },
+    { id: 's4', text: 'b Hören Sie die Zug-Geschichten. Ordnen Sie sie den Fotos zu.', ar: 'ب اسمعوا قصص القطر. وصّلوها بالصور.', words: ['w4'] },
+    { id: 's5', text: 'c Hören Sie noch einmal und ergänzen Sie die Sätze.', ar: 'ج اسمعوا تاني وكملوا الجمل.', words: ['w5'] },
+    { id: 's6', text: '1. Im Zug kann man oft nicht arbeiten, weil ...', ar: '١. في القطر الواحد مش بيقدر يشتغل غالبًا، عشان ...', words: ['w6'] },
+    { id: 's7', text: '2. Die Menschen im Zug haben geklatscht, weil ...', ar: '٢. الناس في القطر صفقوا، عشان ...', words: ['w7'] },
+    { id: 's8', text: '3. Der Mann hat den Zug noch bekommen, aber ...', ar: '٣. الراجل لحق القطر، بس ...', words: ['w8'] },
+    { id: 's9', text: '4. Eine S-Bahn konnte nicht weiterfahren, weil ...', ar: '٤. قطار الـ S-Bahn مقدرش يكمل، عشان ...', words: ['w9'] },
+    { id: 's10', text: '5. Der Zug nach Berlin ist schneller gefahren, weil ...', ar: '٥. القطر اللي رايح برلين مشي أسرع، عشان ...', words: ['w10'] },
+    { id: 's11', text: '6. Der Zug ist in Berlin angekommen und war ...', ar: '٦. القطر وصل برلين وكان ...', words: ['w11'] },
+    { id: 's12', text: 'd Arbeiten Sie zu dritt. Wählen Sie ein Bild oder eine andere Situation im Zug. Überlegen Sie sich eine Geschichte. Sammeln Sie Ideen und machen Sie Notizen.', ar: 'د اشتغلوا في تلاتة. اختاروا صورة أو موقف تاني في القطر. فكروا في قصة. جمّعوا أفكار واكتبوا ملاحظات.', words: ['w12'] },
+    { id: 's13', text: 'eine Geschichte schreiben', ar: 'كتابة قصة', words: ['w13'] },
+    { id: 's14', text: '- Notieren Sie Stichpunkte.', ar: '- اكتبوا نقاط رئيسية.', words: ['w14'] },
+    { id: 's15', text: '- Sammeln Sie Wörter und Ausdrücke zu den Stichpunkten.', ar: '- جمّعوا كلمات وتعبيرات عن النقاط الرئيسية.', words: ['w15'] },
+    { id: 's16', text: '- Finden Sie eine passende Reihenfolge.', ar: '- لاقوا ترتيب مناسب.', words: ['w16'] },
+    { id: 's17', text: '- Überlegen Sie einen Anfang und einen Schluss für Ihre Geschichte.', ar: '- فكروا في بداية ونهاية لقصتكم.', words: ['w17'] },
+    { id: 's18', text: 'e Schreiben Sie Ihre Geschichte. Lesen Sie die Geschichte dann den anderen Gruppen vor.', ar: 'ه اكتبوا قصتكم. اقراوها بعدين للمجموعات التانية.', words: ['w18'] },
+    { id: 's19', text: 'siebenundachtzig 87', ar: 'سبعة وتمانين ٨٧', words: ['w19'] },
+  ],
+  patches: [
+    { x: 145, y: 822, w: 433, h: 42 },
+  ],
+}
