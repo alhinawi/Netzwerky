@@ -347,7 +347,8 @@ export default function ScanReader({
   // book audio lives under /audio/<level>/kb/ for every Kursbuch (a1-kb -> a1)
   const level = (page.book.split('-')[0] || 'a1').toUpperCase()
   // Plattform pages carry a half chapter (6.5 = Plattform 2, 9.5 = Plattform 3)
-  const chapterLabel = (n: number) => {
+  const chapterLabel = (n: number | string) => {
+    if (typeof n === 'string' && /^P\d$/.test(n)) return `PT${n.slice(1)}`
     const plat: Record<string, string> = { 'a2-kb:6.5': 'Plattform 2', 'a2-kb:9.5': 'Plattform 3', 'a2-kb:12.5': 'Plattform 4', 'a2-kb:13': 'Anhang', 'a1-kb:0': 'Anhang', 'a1-kb:3': 'Plattform 1', 'a2-kb:3.5': 'Plattform 1', 'a2-ab:0': 'Titel & Inhalt' }
     return plat[`${page.book}:${n}`] ?? `K${n}`
   }
@@ -411,7 +412,7 @@ export default function ScanReader({
               aria-expanded={chapterMenu}
               className="flex w-full items-center justify-between gap-1.5 rounded-md border border-neutral-300 bg-[#f7f3e8] px-2.5 py-1.5 text-[12px] font-medium text-neutral-700"
             >
-              <span className="truncate">{(library.find((b) => b.id === page.book)?.kind ?? 'Kursbuch')} · {chapterLabel(page.chapter)}</span>
+              <span className="truncate">{(library.find((b) => b.id === page.book)?.kind ?? 'Kursbuch')} · {chapterLabel(page.part ?? page.chapter)}</span>
               <span className={`shrink-0 text-[9px] text-neutral-400 transition-transform ${chapterMenu ? 'rotate-180' : ''}`}>▾</span>
             </button>
             {chapterMenu && (
