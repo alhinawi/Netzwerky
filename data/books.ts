@@ -31,6 +31,7 @@ const a1kb: Chapter[] = [
 ]
 
 const a2ab: Chapter[] = [
+  { n: 0, title: 'Titel & Inhalt', pages: '1–5', grammar: 'Umschlag, Inhaltsverzeichnis', ar: 'الغلاف والمحتوى' },
   { n: 1, title: 'Und was machst du?', pages: '6–17', grammar: 'Vorstellen · über Vergangenes berichten · sich verabreden', ar: 'إيه اللي بتعمله؟' },
   { n: 2, title: 'Nach der Schulzeit', pages: '18–29', grammar: 'über die Schulzeit sprechen · Meinung sagen · eine Mail schreiben', ar: 'بعد المدرسة' },
   { n: 3, title: 'Immer online?', pages: '30–41', grammar: 'über Medien sprechen · Vergleiche · Kommentare verstehen', ar: 'دايمًا أونلاين؟' },
@@ -39,13 +40,13 @@ const a2ab: Chapter[] = [
   { n: 5, title: 'Leben in der Stadt', pages: '58–69', grammar: 'Bilder beschreiben · Stellenanzeigen · höflich bitten', ar: 'الحياة في المدينة' },
   { n: 6, title: 'Arbeitswelten', pages: '70–81', grammar: 'über Arbeit und Freizeit sprechen · Durchsagen verstehen', ar: 'عوالم الشغل' },
   { n: 'P2', title: 'Prüfungstraining 2', pages: '82–85', grammar: 'prüfen und trainieren', ar: 'تدريب على الامتحان' },
-  { n: 7, title: 'Kapitel 7', pages: '86–97', grammar: 'Wortschatz und Übungen', ar: 'الكابيتل السابع' },
-  { n: 8, title: 'Kapitel 8', pages: '98–109', grammar: 'Wortschatz und Übungen', ar: 'الكابيتل التامن' },
-  { n: 9, title: 'Kapitel 9', pages: '110–121', grammar: 'Wortschatz und Übungen', ar: 'الكابيتل التاسع' },
+  { n: 7, title: 'Ganz schön mobil', pages: '86–97', grammar: 'Gespräche über Verkehrsmittel verstehen', ar: 'تنقّل على طول' },
+  { n: 8, title: 'Gelernt ist gelernt!', pages: '98–109', grammar: 'einen Chat über Lernen verstehen', ar: 'اللي اتعلمته اتعلمته' },
+  { n: 9, title: 'Sportlich, sportlich', pages: '110–121', grammar: 'über Sportarten sprechen', ar: 'رياضة رياضة' },
   { n: 'P3', title: 'Prüfungstraining 3', pages: '122–125', grammar: 'prüfen und trainieren', ar: 'تدريب على الامتحان' },
-  { n: 10, title: 'Kapitel 10', pages: '126–137', grammar: 'Wortschatz und Übungen', ar: 'الكابيتل العاشر' },
-  { n: 11, title: 'Kapitel 11', pages: '138–149', grammar: 'Wortschatz und Übungen', ar: 'الكابيتل الحداشر' },
-  { n: 12, title: 'Kapitel 12', pages: '150–161', grammar: 'Wortschatz und Übungen', ar: 'الكابيتل الاتناشر' },
+  { n: 10, title: 'Zusammen leben', pages: '126–137', grammar: 'Informationen zur Wohnsituation verstehen und geben', ar: 'نعيش مع بعض' },
+  { n: 11, title: 'Wie die Zeit vergeht!', pages: '138–149', grammar: 'über Lebensphasen und Aktivitäten sprechen', ar: 'الوقت بيجري!' },
+  { n: 12, title: 'Gute Unterhaltung!', pages: '150–161', grammar: 'ein Partnerinterview machen', ar: 'كلام يسلّي' },
   { n: 'P4', title: 'Prüfungstraining 4', pages: '162–165', grammar: 'prüfen und trainieren', ar: 'تدريب على الامتحان' },
 ]
 
