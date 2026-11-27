@@ -103,7 +103,7 @@ export default function ScanReader({
     requestAnimationFrame(() => {
       const el = audio.current
       if (!el) return
-      el.src = `/audio/a1/kb/${first}`
+      el.src = `${audioBase}/${first}`
       void el.play().catch(() => {})
     })
   }
@@ -112,7 +112,7 @@ export default function ScanReader({
     const nxt = queue.current.shift()
     if (nxt && audio.current) {
       setPlaying(nxt)
-      audio.current.src = `/audio/a1/kb/${nxt}`
+      audio.current.src = `${audioBase}/${nxt}`
       void audio.current.play().catch(() => {})
     } else {
       setPlaying(null)
@@ -188,6 +188,9 @@ export default function ScanReader({
       }
     })
   }, [page.printed, page.book, next, prev])
+
+  // book audio lives under /audio/<level>/kb/ for every Kursbuch (a1-kb -> a1)
+  const audioBase = `/audio/${page.book.split('-')[0]}/kb`
 
   const W = page.width
   const H = page.height
