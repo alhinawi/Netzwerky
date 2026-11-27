@@ -70,6 +70,8 @@ export default function ScanReader({
   const [navOpen, setNavOpen] = useState(false)
   const [pagesOpen, setPagesOpen] = useState(false)
   const [chapterMenu, setChapterMenu] = useState(false)
+  const [gloss, setGloss] = useState<Record<string, string> | null>(null)
+  const [wordHit, setWordHit] = useState<{ text: string; ar: string } | null>(null)
   const [profileOpen, setProfileOpen] = useState(false)
   const [sound, setSoundOn] = useState(true)
   const [fb, setFb] = useState(true)
@@ -198,6 +200,48 @@ export default function ScanReader({
     playTap()
   }
 
+  // the small German-Arabic glossary built from the books, loaded on first word tap
+  const glossReq = useRef<Promise<Record<string, string>> | null>(null)
+  const ensureGloss = () => {
+    if (gloss) return Promise.resolve(gloss)
+    try {
+      const cached = localStorage.getItem('nw-gloss')
+      if (cached) { const g = JSON.parse(cached); setGloss(g); return Promise.resolve(g) }
+    } catch {}
+    if (!glossReq.current) {
+      glossReq.current = fetch('/glossary.json').then((r) => r.json()).then((g) => {
+        setGloss(g)
+        try { localStorage.setItem('nw-gloss', JSON.stringify(g)) } catch {}
+        return g as Record<string, string>
+      }).catch(() => ({}))
+    }
+    return glossReq.current
+  }
+
+  /** look a tapped token up, tolerating articles and plural endings */
+  const glossFor = (g: Record<string, string> | null, tok: string) => {
+    if (!g) return null
+    const bare = tok.toLowerCase().replace(/[^a-zäöüß0-9-]/g, '')
+    const noArt = bare.replace(/^(der|die|das)/, '')
+    const tries = [bare, noArt, bare.replace(/(en|er|es|e|s|n)$/, ''), noArt.replace(/(en|er|es|e|s|n)$/, '')]
+    for (const k of tries) if (k && g[k]) return g[k]
+    return null
+  }
+
+  /** which word of a line box a tap landed on, proportional to character count */
+  const tokenAt = (text: string, frac: number) => {
+    const tokens = text.split(/\s+/).filter(Boolean)
+    if (tokens.length < 2) return null
+    const weights = tokens.map((t) => t.length + 1)
+    const total = weights.reduce((a, b) => a + b, 0)
+    let acc = 0
+    for (let i = 0; i < tokens.length; i++) {
+      acc += weights[i]
+      if (frac <= acc / total) return tokens[i]
+    }
+    return tokens[tokens.length - 1]
+  }
+
   useEffect(() => {
     const st = soundState()
     setSoundOn(st.master)
@@ -264,9 +308,13 @@ export default function ScanReader({
   const showSentence = Boolean(sentence)
   /** a box whose text is a whole sentence (Redemittel block) is a sentence, not a word */
   const boxIsSentence = Boolean(sentence && word && norm(sentence.text) === norm(word.text))
-  const effectiveTab: 'word' | 'sentence' = boxIsSentence ? 'sentence' : tab
-  const popupText = effectiveTab === 'sentence' && sentence ? sentence.text : word?.text ?? ''
-  const popupAr = effectiveTab === 'sentence' && sentence ? sentence.ar : word?.ar ?? ''
+  const effectiveTab: 'word' | 'sentence' = tab === 'sentence' && !sentence ? 'word' : tab
+  const popupText = effectiveTab === 'sentence' && sentence
+    ? sentence.text
+    : (wordHit?.text ?? word?.text ?? '')
+  const popupAr = effectiveTab === 'sentence' && sentence
+    ? sentence.ar
+    : (wordHit?.ar ?? word?.ar ?? '')
 
   /** keep the popup inside the page: shift it left when the word sits near an edge */
   const popupStyle = (w: { x: number; y: number; w: number; h: number }) => {
@@ -416,7 +464,21 @@ export default function ScanReader({
           {showWords && page.words.map((w) => (
             <button
               key={w.id}
-              onClick={(e) => { e.stopPropagation(); setActiveWord(activeWord === w.id ? null : w.id); playTap() }}
+              onClick={(e) => {
+                e.stopPropagation()
+                if (tab === 'word') {
+                  const rect = e.currentTarget.getBoundingClientRect()
+                  const frac = rect.width ? (e.clientX - rect.left) / rect.width : 0.5
+                  const tok = tokenAt(w.text, frac) ?? w.text
+                  const hit = glossFor(gloss, tok)
+                  if (hit) setWordHit({ text: tok, ar: hit })
+                  else {
+                    setWordHit({ text: tok, ar: '' })
+                    ensureGloss().then((g) => { const ar = glossFor(g, tok); if (ar) setWordHit({ text: tok, ar }) })
+                  }
+                } else setWordHit(null)
+                setActiveWord(activeWord === w.id ? null : w.id); playTap()
+              }}
               className={`absolute rounded-sm transition ${activeWord === w.id ? 'bg-amber-200/60 ring-2 ring-amber-400' : 'hover:bg-amber-100/50'}`}
               style={boxStyle(w)}
               aria-label={`${w.text} — Bedeutung`}
@@ -447,7 +509,7 @@ export default function ScanReader({
                 <button onClick={() => setActiveWord(null)} aria-label="اقفل" className="ml-auto rounded px-1.5 text-white/60 hover:text-white">×</button>
               </div>
               <div className="text-[13px] font-semibold leading-snug">{popupText}</div>
-              <div className="ar mt-1 text-[13px] leading-snug text-amber-200">{popupAr}</div>
+              <div className="ar mt-1 text-[13px] leading-snug text-amber-200">{popupAr || '—'}</div>
               <button
                 onClick={() => speak(popupText)}
                 aria-label="اسمع"
