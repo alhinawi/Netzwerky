@@ -14,7 +14,7 @@ type Answers = Record<string, string>
 type Results = Record<string, boolean>
 
 export default function ScanReader({
-  page, total, prev, next, pages, chapters,
+  page, total, prev, next, pages, chapters, pageChapters,
 }: {
   page: ScanPage
   total: number
@@ -22,6 +22,7 @@ export default function ScanReader({
   next?: number
   pages: number[]
   chapters: { n: number; first: number }[]
+  pageChapters: { printed: number; chapter: number }[]
 }) {
   const router = useRouter()
   const [answers, setAnswers] = useState<Answers>({})
@@ -42,8 +43,15 @@ export default function ScanReader({
   const [paused, setPaused] = useState(false)
   const [audioLabel, setAudioLabel] = useState<string | null>(null)
   const [sheetW, setSheetW] = useState(0)
+  const [navOpen, setNavOpen] = useState(false)
+  const [pagesOpen, setPagesOpen] = useState(false)
+  const currentPageRef = useRef<HTMLButtonElement | null>(null)
   const touch = useRef<{ x: number; y: number } | null>(null)
   const wrap = useRef<HTMLDivElement | null>(null)
+
+  useEffect(() => {
+    if (pagesOpen && currentPageRef.current) currentPageRef.current.scrollIntoView({ block: 'center' })
+  }, [pagesOpen])
 
   useEffect(() => {
     const on = () => setDebug(window.location.hash === '#boxes')
@@ -215,6 +223,9 @@ export default function ScanReader({
     <div className="pb-44">
       <div className="sticky top-0 z-30 border-b border-neutral-200 bg-white/95 backdrop-blur">
         <div className="mx-auto flex max-w-[1180px] items-center gap-1 px-2 py-1.5">
+          <button onClick={() => setNavOpen(true)} aria-label="Bibliothek" className="grid h-8 w-8 shrink-0 place-items-center rounded-md border border-neutral-300 text-neutral-600">
+            <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="1.8"><path d="M4 6h16M4 12h16M4 18h16" strokeLinecap="round" /></svg>
+          </button>
           <button onClick={() => router.push(`/book/${page.book}/`)} className="mr-1 shrink-0 text-[17px] font-extrabold tracking-tight text-neutral-900">
             Netzwerk<span className="text-nw">.</span>
           </button>
@@ -463,14 +474,15 @@ export default function ScanReader({
             <button onClick={() => go(prev)} disabled={!prev} aria-label="Vorherige Seite" className="grid h-9 w-9 shrink-0 place-items-center rounded-md border border-neutral-300 text-neutral-500 disabled:opacity-30">
               <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="1.8"><path d="M14 5l-7 7 7 7" strokeLinecap="round" strokeLinejoin="round" /></svg>
             </button>
-            <form
-              onSubmit={(e) => { e.preventDefault(); const v = Number(new FormData(e.currentTarget).get('p')); if (pages.includes(v)) go(v) }}
-              className="relative flex-1"
+            <button
+              onClick={() => setPagesOpen((v) => !v)}
+              aria-label="Seite wählen"
+              aria-expanded={pagesOpen}
+              className="flex flex-1 items-center justify-center gap-1 rounded-md border border-neutral-300 py-1.5 text-[13px] text-neutral-700"
             >
-              <input name="p" defaultValue={page.printed} key={page.printed} inputMode="numeric" aria-label="Seite"
-                className="w-full rounded-md border border-neutral-300 py-1.5 pl-2 pr-6 text-center text-[13px] text-neutral-700" />
-              <button type="button" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} aria-label="Nach oben" className="absolute right-1 top-1/2 -translate-y-1/2 text-[10px] text-neutral-400">▴</button>
-            </form>
+              {page.printed}
+              <span className={`text-[9px] text-neutral-400 transition-transform ${pagesOpen ? 'rotate-180' : ''}`}>▴</span>
+            </button>
             <button onClick={() => go(next)} disabled={!next} aria-label="Nächste Seite" className="grid h-9 w-9 shrink-0 place-items-center rounded-md border border-neutral-300 text-neutral-500 disabled:opacity-30">
               <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="1.8"><path d="M10 5l7 7-7 7" strokeLinecap="round" strokeLinejoin="round" /></svg>
             </button>
@@ -482,6 +494,67 @@ export default function ScanReader({
           </div>
         </div>
       </div>
+      {navOpen && (
+        <div className="fixed inset-0 z-40" role="dialog" aria-label="Bibliothek">
+          <div className="absolute inset-0 bg-black/30" onClick={() => setNavOpen(false)} />
+          <div className="absolute left-0 top-0 flex h-full w-[86%] max-w-[320px] flex-col bg-white shadow-2xl">
+            <div className="flex items-center justify-between border-b border-neutral-200 px-3 py-2">
+              <span className="text-[15px] font-bold text-neutral-900">Bibliothek</span>
+              <button onClick={() => setNavOpen(false)} aria-label="Schließen" className="grid h-8 w-8 place-items-center rounded-md text-lg text-neutral-500">×</button>
+            </div>
+            <div className="flex-1 overflow-y-auto px-3 py-2">
+              <button onClick={() => router.push(`/book/${page.book}/`)} className="mb-3 w-full rounded-md border border-neutral-300 px-2 py-2 text-left text-[13px] text-neutral-700">
+                Buchseite · {page.book.toUpperCase()}
+              </button>
+              {chapters.map((c) => {
+                const list = pageChapters.filter((x) => x.chapter === c.n).map((x) => x.printed)
+                if (list.length === 0) return null
+                return (
+                  <div key={c.n} className="mb-3">
+                    <div className="mb-1 text-[11px] font-semibold uppercase tracking-wide text-neutral-400">Kapitel {c.n}</div>
+                    <div className="grid grid-cols-5 gap-1">
+                      {list.map((n) => (
+                        <button
+                          key={n}
+                          onClick={() => { setNavOpen(false); if (n !== page.printed) go(n) }}
+                          className={`rounded-md border py-1.5 text-[12px] ${n === page.printed ? 'border-nw bg-nw text-white' : 'border-neutral-200 text-neutral-600'}`}
+                        >
+                          {n}
+                        </button>
+                      ))}
+                    </div>
+                  </div>
+                )
+              })}
+            </div>
+          </div>
+        </div>
+      )}
+
+      {pagesOpen && (
+        <div className="fixed inset-0 z-40" role="dialog" aria-label="Seite wählen">
+          <div className="absolute inset-0 bg-black/20" onClick={() => setPagesOpen(false)} />
+          <div className="absolute inset-x-0 bottom-[120px] mx-auto max-h-[55vh] w-[94%] max-w-[560px] overflow-y-auto rounded-2xl border border-neutral-200 bg-white p-3 shadow-2xl">
+            <div className="mb-2 flex items-center justify-between">
+              <span className="text-[13px] font-semibold text-neutral-700">Seite wählen</span>
+              <button onClick={() => setPagesOpen(false)} aria-label="Schließen" className="text-lg text-neutral-500">×</button>
+            </div>
+            <div className="grid grid-cols-6 gap-1.5">
+              {pages.map((n) => (
+                <button
+                  key={n}
+                  ref={n === page.printed ? currentPageRef : undefined}
+                  onClick={() => { setPagesOpen(false); if (n !== page.printed) go(n) }}
+                  className={`rounded-md border py-2 text-[13px] ${n === page.printed ? 'border-nw bg-nw text-white' : 'border-neutral-200 text-neutral-600'}`}
+                >
+                  {n}
+                </button>
+              ))}
+            </div>
+          </div>
+        </div>
+      )}
+
       <span className="hidden">{total}</span>
     </div>
   )
