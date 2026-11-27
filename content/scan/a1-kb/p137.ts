@@ -1,0 +1,48 @@
+import type { ScanPage } from '../types'
+
+export const p137: ScanPage = {
+  book: 'a1-kb',
+  printed: 137,
+  chapter: 12,
+  image: '/pages/a1-kb/137.jpg',
+  width: 1241,
+  height: 1753,
+  words: [
+    { id: 'w1', x: 83, y: 62, w: 217, h: 26, text: 'das Wetter beschreiben', ar: 'نوصف الجو' },
+    { id: 'w2', x: 325, y: 62, w: 362, h: 26, text: 'über Reiseziele sprechen und schreiben', ar: 'نتكلم ونكتب عن وجهات السفر' },
+    { id: 'w3', x: 207, y: 1039, w: 805, h: 29, text: '2a Koffer packen. Hören Sie das Gespräch. Wohin wollen Katharina und Johannes fahren?', ar: '٢أ نجهّز الشنطة. اسمع الحوار. كاترينا ويوهانس عايزين يسافروا فين؟' },
+    { id: 'w4', x: 206, y: 1071, w: 258, h: 24, text: 'Welches Foto aus 1a passt?', ar: 'أنهي صورة من ١أ مناسبة؟' },
+    { id: 'w5', x: 208, y: 1136, w: 654, h: 27, text: 'b Hören Sie noch einmal. Was packt Katharina ein? Machen Sie Notizen.', ar: 'ب اسمع تاني. كاترينا بتحط إيه في الشنطة؟ اكتب ملاحظات.' },
+    { id: 'w6', x: 207, y: 1205, w: 563, h: 23, text: 'c Was braucht Katharina für ihren Urlaub noch? Sammeln Sie.', ar: 'ج كاترينا محتاجة إيه كمان لإجازتها؟ اجمعوا أفكار.' },
+    { id: 'w7', x: 208, y: 1275, w: 257, h: 25, text: 'd Spielen Sie „Kofferpacken".', ar: 'د العبوا لعبة "تجهيز الشنطة".' },
+    { id: 'w8', x: 229, y: 1314, w: 220, h: 21, text: 'Ich fahre in Urlaub und', ar: 'أنا مسافر إجازة و' },
+    { id: 'w9', x: 241, y: 1343, w: 193, h: 24, text: 'packe eine Hose ein.', ar: 'هحط بنطلون في الشنطة.' },
+    { id: 'w10', x: 445, y: 1385, w: 278, h: 24, text: 'Ich fahre in Urlaub und packe', ar: 'أنا مسافر إجازة وهحط' },
+    { id: 'w11', x: 446, y: 1413, w: 275, h: 21, text: 'eine Hose und einen Pulli ein.', ar: 'بنطلون وبلوفر في الشنطة.' },
+    { id: 'w12', x: 738, y: 1458, w: 277, h: 24, text: 'Ich fahre in Urlaub und packe', ar: 'أنا مسافر إجازة وهحط' },
+    { id: 'w13', x: 724, y: 1486, w: 305, h: 24, text: 'eine Hose, einen Pulli und ... ein.', ar: 'بنطلون وبلوفر و ... في الشنطة.' },
+    { id: 'w14', x: 1028, y: 1542, w: 104, h: 20, text: 'Ich fahre ...', ar: 'أنا مسافر ...' },
+    { id: 'w15', x: 877, y: 1623, w: 286, h: 24, text: 'einhundertsiebenunddreißig 137', ar: '١٣٧ مية وسبعة وتلاتين' },
+  ],
+  audio: [
+    { id: 'a2057', x: 83, y: 1038, w: 34, h: 34, src: ['NWn_A1_KB_Audio_2-057.mp3'], label: 'Aufgabe 2a (2.57)' },
+  ],
+  fields: [],
+  matchings: [],
+  groups: [],
+  sentences: [
+    { id: 's1', text: 'das Wetter beschreiben', ar: 'نوصف الجو', words: ['w1'] },
+    { id: 's2', text: 'über Reiseziele sprechen und schreiben', ar: 'نتكلم ونكتب عن وجهات السفر', words: ['w2'] },
+    { id: 's3', text: '2a Koffer packen. Hören Sie das Gespräch. Wohin wollen Katharina und Johannes fahren? Welches Foto aus 1a passt?', ar: '٢أ نجهّز الشنطة. اسمع الحوار. كاترينا ويوهانس عايزين يسافروا فين؟ أنهي صورة من ١أ مناسبة؟', words: ['w3', 'w4'] },
+    { id: 's4', text: 'b Hören Sie noch einmal. Was packt Katharina ein? Machen Sie Notizen.', ar: 'ب اسمع تاني. كاترينا بتحط إيه في الشنطة؟ اكتب ملاحظات.', words: ['w5'] },
+    { id: 's5', text: 'c Was braucht Katharina für ihren Urlaub noch? Sammeln Sie.', ar: 'ج كاترينا محتاجة إيه كمان لإجازتها؟ اجمعوا أفكار.', words: ['w6'] },
+    { id: 's6', text: 'd Spielen Sie „Kofferpacken".', ar: 'د العبوا لعبة "تجهيز الشنطة".', words: ['w7'] },
+    { id: 's7', text: 'Ich fahre in Urlaub und packe eine Hose ein.', ar: 'أنا مسافر إجازة و هحط بنطلون في الشنطة.', words: ['w8', 'w9'] },
+    { id: 's8', text: 'Ich fahre in Urlaub und packe eine Hose und einen Pulli ein.', ar: 'أنا مسافر إجازة وهحط بنطلون وبلوفر في الشنطة.', words: ['w10', 'w11'] },
+    { id: 's9', text: 'Ich fahre in Urlaub und packe eine Hose, einen Pulli und ... ein.', ar: 'أنا مسافر إجازة وهحط بنطلون وبلوفر و ... في الشنطة.', words: ['w12', 'w13'] },
+    { id: 's10', text: 'Ich fahre ...', ar: 'أنا مسافر ...', words: ['w14'] },
+    { id: 's11', text: 'einhundertsiebenunddreißig 137', ar: '١٣٧ مية وسبعة وتلاتين', words: ['w15'] },
+  ],
+  patches: [
+  ],
+}
