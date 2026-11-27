@@ -1,0 +1,11 @@
+import { chromium } from 'playwright'
+const b = await chromium.launch()
+const ctx = await b.newContext({ viewport: { width: 390, height: 844 }, deviceScaleFactor: 2, isMobile: true, hasTouch: true, bypassCSP: false })
+await ctx.route('**/*', r => r.continue())
+const p = await ctx.newPage()
+await p.goto('https://netzwerky.pages.dev/read/a1-kb/9/?cb=' + Date.now(), { waitUntil: 'networkidle' })
+await p.waitForTimeout(1200)
+const info = await p.evaluate(() => ({ hamburger: !!document.querySelector('button[aria-label="Bibliothek"]'), texts: [...document.querySelectorAll('button,a')].map(x=>x.textContent.trim()).filter(t=>/ملاءمة|الأصل|Fit|Original/.test(t)) }))
+console.log(JSON.stringify(info))
+await p.screenshot({ path: '/tmp/shots/fresh-a1p9.png' })
+await b.close()
