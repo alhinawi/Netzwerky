@@ -22,10 +22,19 @@ export const p80: ScanPage = {
     { id: 'w12', x: 773, y: 1333, w: 215, h: 68, text: 'Ja, gerne! Kaufst du die Karten?', ar: 'أيوه، يعجبني! هتشتري التذاكر؟' },
     { id: 'w13', x: 170, y: 1415, w: 465, h: 45, text: 'b Sehen Sie die Fotos an. Was ist das Problem?', ar: 'ب بصّ على الصور. إيه المشكلة؟' },
     { id: 'w14', x: 170, y: 1480, w: 550, h: 48, text: 'c Hören Sie die Szenen und ordnen Sie sie den Fotos zu.', ar: 'ج اسمع المشاهد ووصّلها بالصور.' },
+    { id: 'au', x: 83, y: 1480, w: 28, h: 24, text: '🔊', ar: 'صوت' },
+    { id: 'al', x: 83, y: 1515, w: 26, h: 16, text: '2.1', ar: '2.1' },
     { id: 'w15', x: 85, y: 1628, w: 120, h: 34, text: '80 achtzig', ar: '٨٠ تمانين' },
   ],
   audio: [],
-  fields: [],
+  fields: [
+    { id: 'f1aA', group: '1a', x: 255, y: 1065, w: 31, h: 26, answer: '4', label: '1a A' },
+    { id: 'f1aB', group: '1a', x: 282, y: 1221, w: 23, h: 25, answer: '1', label: '1a B' },
+    { id: 'f1aC', group: '1a', x: 740, y: 1150, w: 21, h: 26, answer: '3', label: '1a C' },
+    { id: 'f1aD', group: '1a', x: 705, y: 1329, w: 22, h: 26, answer: '2', label: '1a D' },
+    { id: 'f1cA', group: '1c', x: 619, y: 915, w: 34, h: 31, answer: '5', label: '1c Foto A' },
+    { id: 'f1cB', group: '1c', x: 753, y: 915, w: 33, h: 32, answer: '1', label: '1c Foto B' },
+  ],
   matchings: [],
   groups: [],
   sentences: [
@@ -43,6 +52,7 @@ export const p80: ScanPage = {
     { id: 's12', text: 'Ja, gerne! Kaufst du die Karten?', ar: 'أيوه، يعجبني! هتشتري التذاكر؟', words: ['w12'] },
     { id: 's13', text: 'b Sehen Sie die Fotos an. Was ist das Problem?', ar: 'ب بصّ على الصور. إيه المشكلة؟', words: ['w13'] },
     { id: 's14', text: 'c Hören Sie die Szenen und ordnen Sie sie den Fotos zu.', ar: 'ج اسمع المشاهد ووصّلها بالصور.', words: ['w14'] },
+    { id: 's-al', text: '2.1', ar: '2.1', words: ['al'] },
     { id: 's15', text: '80 achtzig', ar: '٨٠ تمانين', words: ['w15'] },
   ],
   patches: [
