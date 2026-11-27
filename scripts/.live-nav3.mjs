@@ -1,0 +1,12 @@
+import { chromium } from 'playwright'
+const b = await chromium.launch()
+const p = await b.newPage({ viewport: { width: 390, height: 844 }, deviceScaleFactor: 2, isMobile: true, hasTouch: true })
+await p.goto('https://netzwerky.pages.dev/read/a2-kb/66/', { waitUntil: 'networkidle' })
+await p.waitForTimeout(500)
+const hasPicker = await p.evaluate(() => document.body.innerText.includes('Buchseite'))
+const labels = await p.$$eval('button, a', els => els.filter(e => (e.innerText||'').match(/Buchseite|S\.|Seite \d/)).map(e => ({ t: (e.innerText||'').slice(0,30), a: e.getAttribute('aria-label')||'', tag: e.tagName })))
+console.log(JSON.stringify({ hasPicker, labels: labels.slice(0,6) }))
+await p.evaluate(() => window.scrollTo(0, document.body.scrollHeight))
+await p.waitForTimeout(400)
+await p.screenshot({ path: '/tmp/shots/live-bottom.png' })
+await b.close()
