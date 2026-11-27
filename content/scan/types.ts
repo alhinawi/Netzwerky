@@ -32,4 +32,6 @@ export type ScanPage = {
   fields: ScanField[]
   matchings: ScanMatching[]
   groups: ScanGroup[]
+  /** weiße Flecken über handschriftlichen Eintragungen im Scan */
+  patches?: Box[]
 }

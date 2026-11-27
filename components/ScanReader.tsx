@@ -148,6 +148,10 @@ export default function ScanReader({
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src={page.image} alt={`Netzwerk neu A1, Seite ${page.printed}`} className="pointer-events-none absolute inset-0 h-full w-full" draggable={false} />
 
+          {(page.patches ?? []).map((b, i) => (
+            <div key={`patch-${i}`} className="pointer-events-none absolute bg-white" style={boxStyle(b)} />
+          ))}
+
           {debug && (
             <>
               {page.words.map((w) => (<div key={'dw'+w.id} className="absolute border border-rose-500" style={boxStyle(w)} />))}

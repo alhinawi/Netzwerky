@@ -28,5 +28,8 @@ export const p13: ScanPage = {
   ],
   fields: [],
   matchings: [],
+  patches: [
+    { x: 172, y: 1202, w: 268, h: 66 },
+  ],
   groups: [],
 }
