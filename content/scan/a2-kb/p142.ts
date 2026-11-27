@@ -53,7 +53,16 @@ export const p142: ScanPage = {
   ],
   audio: [
   ],
-  fields: [],
+  fields: [
+    { id: 'cb1', group: '10b', x: 185, y: 316, w: 21, h: 21, answer: '', label: '10b 1', kind: 'check' },
+    { id: 'cb2', group: '10b', x: 185, y: 347, w: 21, h: 21, answer: 'x', label: '10b 2', kind: 'check' },
+    { id: 'cb3', group: '10b', x: 185, y: 377, w: 21, h: 21, answer: '', label: '10b 3', kind: 'check' },
+    { id: 'mc1', group: '10c', x: 348, y: 499, w: 46, h: 24, answer: 'B', label: '10c 1' },
+    { id: 'mc2', group: '10c', x: 598, y: 543, w: 62, h: 24, answer: 'E', label: '10c 2' },
+    { id: 'mc3', group: '10c', x: 393, y: 596, w: 53, h: 24, answer: 'D', label: '10c 3' },
+    { id: 'mc4', group: '10c', x: 486, y: 634, w: 44, h: 24, answer: 'A', label: '10c 4' },
+    { id: 'mc5', group: '10c', x: 588, y: 674, w: 44, h: 24, answer: 'C', label: '10c 5' },
+  ],
   matchings: [],
   patches: [],
   sentences: [

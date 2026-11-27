@@ -50,7 +50,18 @@ export const p144: ScanPage = {
   ],
   audio: [
   ],
-  fields: [],
+  fields: [
+    { id: 'c1', group: '12c', x: 590, y: 683, w: 300, h: 28, answer: 'ein Boot', label: '12c 1a' },
+    { id: 'c2', group: '12c', x: 435, y: 728, w: 310, h: 28, answer: 'gefällt', label: '12c 1b' },
+    { id: 'c3', group: '12c', x: 550, y: 773, w: 320, h: 28, answer: 'Menschen', label: '12c 2a' },
+    { id: 'c4', group: '12c', x: 820, y: 820, w: 330, h: 28, answer: 'alleine', label: '12c 2b' },
+    { id: 'c5', group: '12c', x: 430, y: 865, w: 290, h: 28, answer: 'schöne Haus', label: '12c 3a' },
+    { id: 'c6', group: '12c', x: 280, y: 908, w: 300, h: 28, answer: 'übernachtest', label: '12c 3b' },
+    { id: 'c7', group: '12c', x: 745, y: 950, w: 310, h: 28, answer: 'den Strand', label: '12c 3c' },
+    { id: 'w1', group: '13a', x: 250, y: 1350, w: 290, h: 28, answer: 'Luca', label: '13a 1' },
+    { id: 'w2', group: '13a', x: 565, y: 1350, w: 280, h: 28, answer: 'Max', label: '13a 2' },
+    { id: 'w3', group: '13a', x: 885, y: 1350, w: 275, h: 28, answer: 'die neue Mitbewohnerin', label: '13a 3' },
+  ],
   matchings: [],
   patches: [],
   sentences: [
