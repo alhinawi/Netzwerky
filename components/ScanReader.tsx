@@ -286,7 +286,7 @@ export default function ScanReader({
   return (
     <div className="pb-44">
       <div className="sticky top-0 z-30 border-b border-neutral-200 bg-white/95 backdrop-blur">
-        <div className="mx-auto flex max-w-[1180px] flex-wrap items-center gap-1 px-2 py-1.5">
+        <div className="mx-auto flex max-w-[1180px] flex-wrap items-center justify-between gap-1 px-2 py-1.5">
           <button onClick={() => setNavOpen(true)} aria-label="Bibliothek" className="grid h-8 w-8 shrink-0 place-items-center rounded-md border border-neutral-300 text-neutral-600">
             <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="1.8"><path d="M4 6h16M4 12h16M4 18h16" strokeLinecap="round" /></svg>
           </button>
@@ -576,7 +576,7 @@ export default function ScanReader({
           </div>
         </div>
         <div className="border-t border-neutral-200">
-          <div className="mx-auto flex max-w-[1180px] items-center gap-1 px-2 py-1.5">
+          <div className="mx-auto flex max-w-[1180px] items-center justify-between gap-1 px-2 py-1.5">
             <button onClick={() => setProfileOpen(true)} aria-label="Profil" className="grid h-9 w-9 shrink-0 place-items-center rounded-full border border-neutral-300 text-neutral-500">
               <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="1.7"><circle cx="12" cy="8.5" r="3.2" /><path d="M5.5 19c1.2-3.2 3.6-4.6 6.5-4.6s5.3 1.4 6.5 4.6" strokeLinecap="round" /></svg>
             </button>
@@ -608,7 +608,7 @@ export default function ScanReader({
             </button>
             <button onClick={() => { setShowWords(true); setTab(tab === 'word' ? 'sentence' : 'word'); setActiveWord(null) }}
               aria-pressed={tab === 'sentence'} aria-label={tab === 'word' ? 'Wortmodus, tippen fuer Satz' : 'Satzmodus, tippen fuer Wort'}
-              className={`h-9 shrink-0 rounded-md border px-2.5 text-[13px] ${tab === 'sentence' ? 'border-nw bg-nw text-white' : 'border-neutral-300 text-neutral-600'}`}>{tab === 'word' ? 'Word' : 'Sentence'}</button>
+              className="h-9 w-[5.75rem] shrink-0 rounded-md border border-neutral-300 bg-white text-[13px] text-neutral-700">{tab === 'word' ? 'Word' : 'Sentence'}</button>
             {(page.fields.length > 0 || page.matchings.length > 0) && (
               <button onClick={() => check()} aria-label="Prüfen" className="h-9 shrink-0 rounded-md border border-nw bg-nw px-2.5 text-[13px] font-semibold text-white">Prüfen</button>
             )}
