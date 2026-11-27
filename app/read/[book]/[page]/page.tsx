@@ -12,12 +12,18 @@ export default async function Page({ params }: { params: Promise<{ book: string;
     return <div className="p-10 text-center text-neutral-500">Diese Seite ist noch nicht gebaut.</div>
   }
   const numbers = pageNumbers(book)
+  const chapters: { n: number; first: number }[] = []
+  for (const p of pagesOf(book)) {
+    if (!chapters.some((c) => c.n === p.chapter)) chapters.push({ n: p.chapter, first: p.printed })
+  }
+  chapters.sort((a, b) => a.n - b.n)
   const i = numbers.indexOf(current.printed)
   return (
     <ScanReader
       page={current}
       total={numbers.length}
       pages={numbers}
+      chapters={chapters}
       prev={numbers[i - 1]}
       next={numbers[i + 1]}
     />
