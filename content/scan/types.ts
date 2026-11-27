@@ -5,7 +5,8 @@ export type ScanAudio = Box & { id: string; src: string[]; label: string }
 export type ScanField = Box & {
   id: string
   group: string
-  answer: string
+  /** expected answer; leave empty when the official key does not cover the item */
+  answer?: string
   label?: string
   kind?: 'text' | 'select' | 'check'
   options?: string[]

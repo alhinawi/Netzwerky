@@ -169,6 +169,8 @@ export default function ScanReader({
     const nextRes: Results = {}
     let allOk = true
     for (const f of page.fields) {
+      // a field without an official answer is not judged, only kept as typed
+      if (!f.answer) continue
       const ok = f.answer.split('|').some((a) => norm(a) === norm(answers[f.id] || ''))
       nextRes[f.id] = ok
       if (!ok) allOk = false
