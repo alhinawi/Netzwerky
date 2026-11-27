@@ -90,7 +90,13 @@ export const p131: ScanPage = {
   ],
   audio: [
   ],
-  fields: [],
+  fields: [
+    { id: 'f1', group: '9b', x: 868, y: 767, w: 309, h: 32, answer: 'Dingen und Ereignissen', label: '9b wo(r) + Präposition: Frage nach' },
+    { id: 'f2', group: '9b', x: 906, y: 836, w: 271, h: 32, answer: 'Personen', label: '9b Präposition + Fragewort: Frage nach' },
+    { id: 'f3', group: '9c', x: 605, y: 1021, w: 168, h: 32, answer: 'Mit wem', label: '9c 2' },
+    { id: 'f4', group: '9c', x: 605, y: 1062, w: 168, h: 32, answer: 'Auf wen', label: '9c 3' },
+    { id: 'f5', group: '9c', x: 605, y: 1101, w: 168, h: 32, answer: 'Worauf', label: '9c 4' },
+  ],
   matchings: [],
   groups: [],
   sentences: [

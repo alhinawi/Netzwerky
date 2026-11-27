@@ -39,7 +39,20 @@ export const p133: ScanPage = {
   ],
   audio: [
   ],
-  fields: [],
+  fields: [
+    { id: 'f1', group: '12a', x: 90, y: 630, w: 28, h: 30, answer: 'e', label: '12a Bild A' },
+    { id: 'f2', group: '12a', x: 138, y: 1059, w: 30, h: 30, answer: 'f', label: '12a Bild B' },
+    { id: 'f3', group: '12a', x: 479, y: 607, w: 30, h: 28, answer: 'd', label: '12a Bild C' },
+    { id: 'f4', group: '12a', x: 481, y: 825, w: 30, h: 30, answer: 'c', label: '12a Bild D' },
+    { id: 'f5', group: '12a', x: 865, y: 648, w: 31, h: 30, answer: 'b', label: '12a Bild E' },
+    { id: 'f6', group: '12a', x: 864, y: 1050, w: 30, h: 30, answer: 'a', label: '12a Bild F' },
+    { id: 'f7', group: '12b', x: 594, y: 1175, w: 58, h: 28, answer: 'b', label: '12b 1' },
+    { id: 'f8', group: '12b', x: 799, y: 1215, w: 56, h: 28, answer: 'a', label: '12b 2' },
+    { id: 'f9', group: '12b', x: 802, y: 1259, w: 62, h: 28, answer: 'e', label: '12b 3' },
+    { id: 'f10', group: '12b', x: 549, y: 1307, w: 46, h: 28, answer: 'c', label: '12b 4' },
+    { id: 'f11', group: '12b', x: 633, y: 1346, w: 56, h: 28, answer: 'f', label: '12b 5' },
+    { id: 'f12', group: '12b', x: 744, y: 1386, w: 48, h: 28, answer: 'd', label: '12b 6' },
+  ],
   matchings: [],
   groups: [],
   sentences: [
