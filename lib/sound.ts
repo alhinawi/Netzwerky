@@ -1,3 +1,22 @@
+// Two user settings gate every sound: master switch and answer feedback.
+let master = true
+let feedback = true
+if (typeof window !== 'undefined') {
+  try {
+    master = localStorage.getItem('nw-sound') !== 'off'
+    feedback = localStorage.getItem('nw-feedback') !== 'off'
+  } catch {}
+}
+export const soundState = () => ({ master, feedback })
+export const setSound = (on: boolean) => {
+  master = on
+  try { localStorage.setItem('nw-sound', on ? 'on' : 'off') } catch {}
+}
+export const setFeedback = (on: boolean) => {
+  feedback = on
+  try { localStorage.setItem('nw-feedback', on ? 'on' : 'off') } catch {}
+}
+
 let ctx: AudioContext | null = null
 function ac(): AudioContext | null {
   if (typeof window === 'undefined') return null
@@ -26,6 +45,6 @@ function tone(freq: number, start: number, dur: number, gain = 0.12, type: Oscil
   osc.stop(t0 + dur + 0.05)
 }
 
-export const playCorrect = () => { tone(660, 0, 0.12); tone(880, 0.09, 0.14); tone(1320, 0.2, 0.22) }
-export const playWrong = () => { tone(220, 0, 0.18, 0.14, 'triangle'); tone(165, 0.12, 0.26, 0.12, 'triangle') }
-export const playTap = () => tone(520, 0, 0.06, 0.06)
+export const playCorrect = () => { if (!master || !feedback) return; tone(660, 0, 0.12); tone(880, 0.09, 0.14); tone(1320, 0.2, 0.22) }
+export const playWrong = () => { if (!master || !feedback) return; tone(220, 0, 0.18, 0.14, 'triangle'); tone(165, 0.12, 0.26, 0.12, 'triangle') }
+export const playTap = () => { if (!master) return; tone(520, 0, 0.06, 0.06) }

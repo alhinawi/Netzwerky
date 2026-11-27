@@ -2,7 +2,7 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { useRouter } from 'next/navigation'
 import type { ScanPage } from '@/content/scan/types'
-import { playCorrect, playWrong, playTap } from '@/lib/sound'
+import { playCorrect, playWrong, playTap, soundState, setSound, setFeedback } from '@/lib/sound'
 import { pronounceUrl } from '@/lib/pronounce'
 
 type LibBook = {
@@ -54,6 +54,9 @@ export default function ScanReader({
   const [sheetW, setSheetW] = useState(0)
   const [navOpen, setNavOpen] = useState(false)
   const [pagesOpen, setPagesOpen] = useState(false)
+  const [profileOpen, setProfileOpen] = useState(false)
+  const [sound, setSoundOn] = useState(true)
+  const [fb, setFb] = useState(true)
   const currentPageRef = useRef<HTMLButtonElement | null>(null)
   const touch = useRef<{ x: number; y: number } | null>(null)
   const wrap = useRef<HTMLDivElement | null>(null)
@@ -177,6 +180,12 @@ export default function ScanReader({
     playTap()
   }
 
+  useEffect(() => {
+    const st = soundState()
+    setSoundOn(st.master)
+    setFb(st.feedback)
+  }, [])
+
   // Play the page turn once after a route change: the direction is handed over
   // through sessionStorage because the reader remounts for the new page.
   useEffect(() => {
@@ -253,7 +262,7 @@ export default function ScanReader({
   return (
     <div className="pb-44">
       <div className="sticky top-0 z-30 border-b border-neutral-200 bg-white/95 backdrop-blur">
-        <div className="mx-auto flex max-w-[1180px] items-center gap-1 px-2 py-1.5">
+        <div className="mx-auto flex max-w-[1180px] flex-wrap items-center gap-1 px-2 py-1.5">
           <button onClick={() => setNavOpen(true)} aria-label="Bibliothek" className="grid h-8 w-8 shrink-0 place-items-center rounded-md border border-neutral-300 text-neutral-600">
             <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="1.8"><path d="M4 6h16M4 12h16M4 18h16" strokeLinecap="round" /></svg>
           </button>
@@ -264,16 +273,18 @@ export default function ScanReader({
             value={page.chapter}
             onChange={(e) => { const c = chapters.find((x) => x.n === Number(e.target.value)); if (c) go(c.first) }}
             aria-label="Kapitel"
-            className="shrink-0 rounded-md border border-neutral-300 bg-[#f7f3e8] px-1 py-1 text-[12px] font-medium text-neutral-700"
+            className="min-w-0 max-w-[42vw] shrink rounded-md border border-neutral-300 bg-[#f7f3e8] px-1 py-1 text-[12px] font-medium text-neutral-700"
           >
             {chapters.map((c) => <option key={c.n} value={c.n}>{level} KB · {chapterLabel(c.n)}</option>)}
           </select>
-          <div className="ml-auto flex items-center gap-0.5 text-[13px]">
+          <div className="ml-auto flex shrink-0 items-center gap-0.5 text-[13px]">
             <button onClick={() => setZoom((z) => Math.max(0.8, +(z - 0.25).toFixed(2)))} aria-label="Verkleinern" className="rounded px-1.5 py-1 text-neutral-600">−</button>
-            <span className="w-9 text-center tabular-nums text-neutral-500">{Math.round(zoom * 100)}%</span>
+            <span className="w-8 shrink-0 text-center tabular-nums text-neutral-500">{Math.round(zoom * 100)}%</span>
             <button onClick={() => setZoom((z) => Math.min(3, +(z + 0.25).toFixed(2)))} aria-label="Vergrößern" className="rounded px-1.5 py-1 text-neutral-600">+</button>
             <button onClick={() => setZoom(1)} className={`ml-1 whitespace-nowrap rounded-md border px-2 py-1 ${zoom === 1 ? 'border-nw bg-nw text-white' : 'border-neutral-300 text-neutral-600'}`}>Fit</button>
-            <a href={page.image} target="_blank" rel="noreferrer" className="ml-1 whitespace-nowrap rounded-md border border-neutral-300 px-2 py-1 text-neutral-600">Original ↗</a>
+            <a href={page.image} target="_blank" rel="noreferrer" aria-label="Original" className="ml-1 whitespace-nowrap rounded-md border border-neutral-300 px-2 py-1 text-neutral-600">
+              <span className="hidden sm:inline">Original </span>↗
+            </a>
           </div>
         </div>
         <div className="mx-auto hidden max-w-[1180px] items-center gap-1 px-2 pb-1 sm:flex">
@@ -473,6 +484,24 @@ export default function ScanReader({
           </div>
           <div className="flex items-center gap-3 pb-2 pt-1">
             <button
+              onClick={() => setProfileOpen(true)}
+              aria-label="Profil"
+              className="grid h-9 w-9 shrink-0 place-items-center overflow-hidden rounded-full border border-neutral-300 bg-neutral-100 text-[12px] font-bold text-neutral-600"
+            >
+              MA
+            </button>
+            <button
+              onClick={() => { const on = !sound; setSound(on); setSoundOn(on) }}
+              aria-label={sound ? 'Ton aus' : 'Ton an'}
+              aria-pressed={sound}
+              className={`grid h-9 w-9 shrink-0 place-items-center rounded-md border ${sound ? 'border-nw text-nw' : 'border-neutral-300 text-neutral-400'}`}
+            >
+              <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="1.7">
+                <path d="M4 9.5h3l4.5-3.5v12L7 14.5H4z" strokeLinejoin="round" />
+                {sound ? <><path d="M15.5 9a4 4 0 0 1 0 6" strokeLinecap="round" /><path d="M18 6.5a7.5 7.5 0 0 1 0 11" strokeLinecap="round" /></> : <path d="M16 9l5 6M21 9l-5 6" strokeLinecap="round" />}
+              </svg>
+            </button>
+            <button
               onClick={() => {
                 const el = audio.current
                 if (!el || !playing) { const first = page.audio[0]; if (first) play(first.src, first.label); return }
@@ -494,13 +523,6 @@ export default function ScanReader({
           <div className="mx-auto flex max-w-[1180px] items-center gap-1 px-2 py-1.5">
             <button onClick={() => router.push(`/book/${page.book}/`)} aria-label="Kapitel" className="grid h-9 w-9 shrink-0 place-items-center rounded-full border border-neutral-300 text-neutral-500">
               <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="1.7"><circle cx="12" cy="8.5" r="3.2" /><path d="M5.5 19c1.2-3.2 3.6-4.6 6.5-4.6s5.3 1.4 6.5 4.6" strokeLinecap="round" /></svg>
-            </button>
-            <button
-              onClick={() => { const first = page.audio[0]; if (first) play(first.src, first.label) }}
-              aria-label="Audio"
-              className="grid h-9 w-9 shrink-0 place-items-center rounded-md border border-neutral-300 text-neutral-500"
-            >
-              <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="1.7"><path d="M4 9.5h3l4.5-3.5v12L7 14.5H4z" strokeLinejoin="round" /><path d="M15.5 9a4 4 0 0 1 0 6" strokeLinecap="round" /></svg>
             </button>
             <button onClick={() => go(prev)} disabled={!prev} aria-label="Vorherige Seite" className="grid h-9 w-9 shrink-0 place-items-center rounded-md border border-neutral-300 text-neutral-500 disabled:opacity-30">
               <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="1.8"><path d="M14 5l-7 7 7 7" strokeLinecap="round" strokeLinejoin="round" /></svg>
@@ -593,10 +615,72 @@ export default function ScanReader({
         </div>
       )}
 
+      {profileOpen && (
+        <div className="fixed inset-0 z-40" role="dialog" aria-label="Profil">
+          <div className="absolute inset-0 bg-black/30" onClick={() => setProfileOpen(false)} />
+          <div className="absolute bottom-[92px] left-1/2 max-h-[72vh] w-[94vw] max-w-[520px] -translate-x-1/2 overflow-y-auto rounded-2xl border border-neutral-200 bg-white p-4 shadow-2xl">
+            <div className="mb-3 flex items-center justify-between">
+              <span className="text-[15px] font-semibold text-neutral-800">الملف</span>
+              <button onClick={() => setProfileOpen(false)} aria-label="Schließen" className="text-lg text-neutral-500">×</button>
+            </div>
+            <div className="mb-3 flex flex-col items-center">
+              <span className="grid h-14 w-14 place-items-center rounded-full bg-neutral-100 text-[18px] font-bold text-neutral-500">MA</span>
+              <span className="mt-2 text-[15px] font-semibold text-neutral-800">Mohamed Alhinawi</span>
+              <span className="text-[12px] text-neutral-500">alhinaawi@gmail.com</span>
+              <span className="mt-1 flex items-center gap-1 text-[12px] text-neutral-500">
+                محفوظ على هذا الجهاز <span className="inline-block h-2 w-2 rounded-full bg-emerald-500" />
+              </span>
+            </div>
+            <div className="mb-3 border-t border-neutral-200 pt-2">
+              <div className="mb-1 text-[12px] font-semibold text-neutral-400">الإعدادات</div>
+              <div className="flex items-center justify-between py-2">
+                <span className="text-[13px] text-neutral-700">الصوت</span>
+                <button
+                  onClick={() => { const on = !sound; setSound(on); setSoundOn(on) }}
+                  aria-label="Ton"
+                  aria-pressed={sound}
+                  className={`relative h-6 w-11 rounded-full transition-colors ${sound ? 'bg-nw' : 'bg-neutral-300'}`}
+                >
+                  <span className={`absolute top-0.5 h-5 w-5 rounded-full bg-white transition-all ${sound ? 'left-[22px]' : 'left-0.5'}`} />
+                </button>
+              </div>
+              <div className="flex items-center justify-between py-2">
+                <span className="text-[13px] text-neutral-700">تعليقات صوتية عند الحل</span>
+                <button
+                  onClick={() => { const on = !fb; setFeedback(on); setFb(on) }}
+                  aria-label="Rückmeldung"
+                  aria-pressed={fb}
+                  className={`relative h-6 w-11 rounded-full transition-colors ${fb ? 'bg-nw' : 'bg-neutral-300'}`}
+                >
+                  <span className={`absolute top-0.5 h-5 w-5 rounded-full bg-white transition-all ${fb ? 'left-[22px]' : 'left-0.5'}`} />
+                </button>
+              </div>
+              <div className="py-2">
+                <div className="mb-1 text-[12px] font-semibold text-neutral-400">اللغة</div>
+                <div className="flex gap-2">
+                  <span className="flex-1 rounded-lg border border-neutral-300 py-1.5 text-center text-[12px] text-neutral-600">Deutsch</span>
+                  <span className="flex-1 rounded-lg border border-neutral-300 py-1.5 text-center text-[12px] text-neutral-600">English</span>
+                  <span className="flex-1 rounded-lg border border-nw bg-nw/5 py-1.5 text-center text-[12px] font-semibold text-nw">العربية</span>
+                </div>
+                <div className="mt-1 text-[11px] text-neutral-400">Die Oberfläche ist derzeit deutsch; die Sprachumschaltung kommt mit dem nächsten Schritt.</div>
+              </div>
+            </div>
+            <div className="space-y-1 border-t border-neutral-200 pt-2">
+              <button onClick={() => { setProfileOpen(false); router.push('/') }} className="flex w-full items-center justify-between rounded-lg px-2 py-2 text-left text-[13px] text-neutral-700">
+                <span>اختيار الكتاب</span><span className="text-neutral-400">›</span>
+              </button>
+              <button onClick={() => { setProfileOpen(false); router.push('/hilfe/') }} className="flex w-full items-center justify-between rounded-lg px-2 py-2 text-left text-[13px] text-neutral-700">
+                <span>دليل الاستخدام</span><span className="text-neutral-400">›</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+
       {pagesOpen && (
         <div className="fixed inset-0 z-40" role="dialog" aria-label="Seite wählen">
           <div className="absolute inset-0 bg-black/20" onClick={() => setPagesOpen(false)} />
-          <div className="absolute inset-x-0 bottom-[120px] mx-auto max-h-[55vh] w-[94%] max-w-[560px] overflow-y-auto rounded-2xl border border-neutral-200 bg-white p-3 shadow-2xl">
+          <div className="absolute bottom-[120px] left-1/2 max-h-[55vh] w-[94vw] max-w-[560px] -translate-x-1/2 overflow-y-auto rounded-2xl border border-neutral-200 bg-white p-3 shadow-2xl">
             <div className="mb-2 flex items-center justify-between">
               <span className="text-[13px] font-semibold text-neutral-700">Seite wählen</span>
               <button onClick={() => setPagesOpen(false)} aria-label="Schließen" className="text-lg text-neutral-500">×</button>
