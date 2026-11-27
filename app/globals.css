@@ -30,13 +30,15 @@ body {
 @keyframes fade { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
 
 /* page turn, in the spirit of Menscheny: the new page swings in from the spine */
-.turn-next { animation: turnNext .42s cubic-bezier(.22,.61,.36,1) both; transform-origin: left center; }
-.turn-prev { animation: turnPrev .42s cubic-bezier(.22,.61,.36,1) both; transform-origin: right center; }
+.turn-next { animation: turnNext .58s cubic-bezier(.3,.7,.25,1) both; transform-origin: left center; }
+.turn-prev { animation: turnPrev .58s cubic-bezier(.3,.7,.25,1) both; transform-origin: right center; }
 @keyframes turnNext {
-  from { transform: perspective(1500px) rotateY(-16deg) translateX(2%); opacity: .45; box-shadow: 12px 0 24px rgba(0,0,0,.18); }
-  to   { transform: none; opacity: 1; box-shadow: none; }
+  0%   { transform: perspective(1100px) rotateY(-38deg) translateX(7%) scale(.98); opacity: .25; box-shadow: 26px 0 34px rgba(0,0,0,.32); }
+  55%  { transform: perspective(1100px) rotateY(-10deg) translateX(1.5%) scale(1); opacity: .85; box-shadow: 8px 0 16px rgba(0,0,0,.18); }
+  100% { transform: none; opacity: 1; box-shadow: none; }
 }
 @keyframes turnPrev {
-  from { transform: perspective(1500px) rotateY(16deg) translateX(-2%); opacity: .45; box-shadow: -12px 0 24px rgba(0,0,0,.18); }
-  to   { transform: none; opacity: 1; box-shadow: none; }
+  0%   { transform: perspective(1100px) rotateY(38deg) translateX(-7%) scale(.98); opacity: .25; box-shadow: -26px 0 34px rgba(0,0,0,.32); }
+  55%  { transform: perspective(1100px) rotateY(10deg) translateX(-1.5%) scale(1); opacity: .85; box-shadow: -8px 0 16px rgba(0,0,0,.18); }
+  100% { transform: none; opacity: 1; box-shadow: none; }
 }
