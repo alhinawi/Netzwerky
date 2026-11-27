@@ -14,13 +14,14 @@ type Answers = Record<string, string>
 type Results = Record<string, boolean>
 
 export default function ScanReader({
-  page, total, prev, next, pages,
+  page, total, prev, next, pages, chapters,
 }: {
   page: ScanPage
   total: number
   prev?: number
   next?: number
   pages: number[]
+  chapters: { n: number; first: number }[]
 }) {
   const router = useRouter()
   const [answers, setAnswers] = useState<Answers>({})
@@ -37,6 +38,9 @@ export default function ScanReader({
   const [spoken, setSpoken] = useState<string | null>(null)
   const [askClear, setAskClear] = useState(false)
   const [debug, setDebug] = useState(false)
+  const [showWords, setShowWords] = useState(true)
+  const [paused, setPaused] = useState(false)
+  const [audioLabel, setAudioLabel] = useState<string | null>(null)
   const [sheetW, setSheetW] = useState(0)
   const touch = useRef<{ x: number; y: number } | null>(null)
   const wrap = useRef<HTMLDivElement | null>(null)
@@ -81,10 +85,12 @@ export default function ScanReader({
 
   const save = (id: string, v: string) => setAnswers((a) => ({ ...a, [id]: v }))
 
-  const play = (src: string[]) => {
+  const play = (src: string[], label?: string) => {
     queue.current = [...src]
     const first = queue.current.shift()
     if (!first) return
+    setAudioLabel(label ?? null)
+    setPaused(false)
     setPlaying(first)
     requestAnimationFrame(() => {
       const el = audio.current
@@ -191,38 +197,44 @@ export default function ScanReader({
   }, [layout, pages, page.printed])
 
   return (
-    <div className="mx-auto max-w-[1180px] px-2 pb-28 pt-3 sm:px-4">
-      <div className="mb-2 flex items-center justify-between text-sm">
-        <button onClick={() => router.push(`/book/${page.book}/`)} className="text-neutral-500 hover:text-nw">← Kapitel</button>
-        <span className="text-neutral-400">Netzwerk neu A1 · Kursbuch</span>
-        <span className="text-neutral-400">S. {page.printed}</span>
-      </div>
-
-      {/* Werkzeugleiste: Zoom, Seitenlayout, Original */}
-      <div className="mb-2 flex flex-wrap items-center justify-between gap-2 rounded-lg border border-neutral-200 bg-white px-2 py-1 text-[13px]">
-        <div className="flex items-center gap-1">
-          <button onClick={() => setZoom((z) => Math.max(0.8, +(z - 0.25).toFixed(2)))} aria-label="Verkleinern" className="rounded px-2 py-1 text-neutral-600 hover:bg-neutral-100">−</button>
-          <span className="w-11 text-center tabular-nums text-neutral-500">{Math.round(zoom * 100)}%</span>
-          <button onClick={() => setZoom((z) => Math.min(3, +(z + 0.25).toFixed(2)))} aria-label="Vergrößern" className="rounded px-2 py-1 text-neutral-600 hover:bg-neutral-100">+</button>
-          <button onClick={() => setZoom(1)} className={`ml-1 rounded px-2 py-1 ${zoom === 1 ? 'bg-nw text-white' : 'text-neutral-600 hover:bg-neutral-100'}`}>Fit</button>
+    <div className="pb-44">
+      <div className="sticky top-0 z-30 border-b border-neutral-200 bg-white/95 backdrop-blur">
+        <div className="mx-auto flex max-w-[1180px] items-center gap-1 px-2 py-1.5">
+          <button onClick={() => router.push(`/book/${page.book}/`)} className="mr-1 shrink-0 text-[17px] font-extrabold tracking-tight text-neutral-900">
+            Netzwerk<span className="text-nw">.</span>
+          </button>
+          <select
+            value={page.chapter}
+            onChange={(e) => { const c = chapters.find((x) => x.n === Number(e.target.value)); if (c) go(c.first) }}
+            aria-label="Kapitel"
+            className="shrink-0 rounded-md border border-neutral-300 bg-[#f7f3e8] px-1 py-1 text-[12px] font-medium text-neutral-700"
+          >
+            {chapters.map((c) => <option key={c.n} value={c.n}>A1 KB · K{c.n}</option>)}
+          </select>
+          <div className="ml-auto flex items-center gap-0.5 text-[13px]">
+            <button onClick={() => setZoom((z) => Math.max(0.8, +(z - 0.25).toFixed(2)))} aria-label="Verkleinern" className="rounded px-1.5 py-1 text-neutral-600">−</button>
+            <span className="w-9 text-center tabular-nums text-neutral-500">{Math.round(zoom * 100)}%</span>
+            <button onClick={() => setZoom((z) => Math.min(3, +(z + 0.25).toFixed(2)))} aria-label="Vergrößern" className="rounded px-1.5 py-1 text-neutral-600">+</button>
+            <button onClick={() => setZoom(1)} className={`ml-1 whitespace-nowrap rounded-md border px-2 py-1 ${zoom === 1 ? 'border-nw bg-nw text-white' : 'border-neutral-300 text-neutral-600'}`}>Fit</button>
+            <a href={page.image} target="_blank" rel="noreferrer" className="ml-1 whitespace-nowrap rounded-md border border-neutral-300 px-2 py-1 text-neutral-600">Original ↗</a>
+          </div>
         </div>
-        <div className="flex items-center gap-1">
-          <span className="hidden text-neutral-400 sm:inline">Ansicht</span>
+        <div className="mx-auto hidden max-w-[1180px] items-center gap-1 px-2 pb-1 sm:flex">
+          <span className="text-[11px] text-neutral-400">Ansicht</span>
           {([1, 2, 4] as const).map((n) => (
             <button
               key={n}
               onClick={() => { setLayout(n); setZoom(1) }}
               aria-label={n === 1 ? 'Eine Seite' : n === 2 ? 'Zwei Seiten' : 'Vier Seiten'}
-              className={`rounded px-2 py-1 ${layout === n ? 'bg-nw text-white' : 'text-neutral-600 hover:bg-neutral-100'}`}
+              className={`rounded px-2 py-0.5 ${layout === n ? 'bg-nw text-white' : 'text-neutral-600 hover:bg-neutral-100'}`}
             >
-              <svg viewBox="0 0 20 16" className="h-4 w-5" fill="none" stroke="currentColor" strokeWidth="1.6">
+              <svg viewBox="0 0 20 16" className="h-3.5 w-4" fill="none" stroke="currentColor" strokeWidth="1.6">
                 {n === 1 && <rect x="4" y="1" width="12" height="14" rx="1" />}
                 {n === 2 && (<><rect x="1" y="2" width="8" height="12" rx="1" /><rect x="11" y="2" width="8" height="12" rx="1" /></>)}
                 {n === 4 && (<><rect x="1" y="1" width="8" height="6" rx="1" /><rect x="11" y="1" width="8" height="6" rx="1" /><rect x="1" y="9" width="8" height="6" rx="1" /><rect x="11" y="9" width="8" height="6" rx="1" /></>)}
               </svg>
             </button>
           ))}
-          <a href={page.image} target="_blank" rel="noreferrer" className="ml-1 rounded px-2 py-1 text-neutral-600 hover:bg-neutral-100">Original ↗</a>
         </div>
       </div>
 
@@ -241,7 +253,7 @@ export default function ScanReader({
           ))}
         </div>
       ) : (
-      <div className="overflow-auto rounded-lg bg-[#f0eeec] p-1 paper" ref={wrap}>
+      <div className="overflow-auto bg-[#f0eeec] paper" ref={wrap}>
         <div
           className={`relative mx-auto select-none bg-white ${shake ? 'shake' : ''} ${flip === 'none' ? 'fade-in' : ''}`}
           style={{ width: `${zoom * 100}%`, aspectRatio: `${W} / ${H}` }}
@@ -274,7 +286,7 @@ export default function ScanReader({
               {page.matchings.flatMap((m) => m.left.map((it,i)=>(<div key={'dl'+m.id+i} className="absolute border border-violet-500" style={boxStyle(it)} />)))}
             </>
           )}
-          {page.words.map((w) => (
+          {showWords && page.words.map((w) => (
             <button
               key={w.id}
               onClick={(e) => { e.stopPropagation(); setTab('word'); setActiveWord(activeWord === w.id ? null : w.id); playTap() }}
@@ -369,26 +381,6 @@ export default function ScanReader({
       </div>
       )}
 
-      {playing && (
-        <div className="paper fixed inset-x-0 bottom-14 z-20 mx-auto flex max-w-md items-center gap-3 rounded-full bg-white px-4 py-2 text-sm shadow-lg">
-          <span className="flex-1 truncate text-neutral-600">▶ {playing.replace('NWn_A1_KB_Audio_', 'Aufgabe ').replace('.mp3', '')}</span>
-          <span className="tabular-nums text-xs text-neutral-400">{fmt(audio.current?.currentTime ?? 0)} / {fmt(duration)}</span>
-          <button
-            onClick={() => {
-              const el = audio.current
-              if (!el) return
-              if (el.paused) void el.play().catch(() => {})
-              else el.pause()
-            }}
-            aria-label="Pause"
-            className="text-neutral-500 hover:text-nw"
-          >Ⅱ</button>
-          <button onClick={() => { audio.current?.pause(); queue.current = []; setPlaying(null); setProgress(0) }} aria-label="Stop" className="text-neutral-400 hover:text-nw">✕</button>
-          <span className="absolute inset-x-4 bottom-1 h-0.5 overflow-hidden rounded bg-neutral-200">
-            <span className="block h-full bg-nw transition-[width]" style={{ width: `${Math.round(progress * 100)}%` }} />
-          </span>
-        </div>
-      )}
       <audio
         ref={audio}
         onEnded={onEnded}
@@ -401,36 +393,64 @@ export default function ScanReader({
       />
       <audio ref={pron} onEnded={() => setSpoken(null)} className="hidden" />
 
-      <div className="fixed inset-x-0 bottom-0 z-20 border-t border-neutral-200 bg-white/95 backdrop-blur">
-        <div className="mx-auto flex max-w-[1180px] flex-wrap items-center justify-between gap-2 px-3 py-2">
-          <div className="flex items-center gap-1">
-            <button onClick={() => go(prev)} disabled={!prev} aria-label="Vorherige Seite" className="rounded-md px-3 py-2 text-sm text-neutral-600 hover:bg-neutral-100 disabled:opacity-30">‹</button>
+      <div className="fixed inset-x-0 bottom-0 z-30 border-t border-neutral-200 bg-white">
+        <div className="mx-auto max-w-[1180px] px-3 pt-2">
+          <div className="flex items-center justify-between text-[12px] text-neutral-600">
+            <span className="truncate">{audioLabel ?? page.audio[0]?.label ?? 'CD1 · Track —'}</span>
+            <span className="shrink-0 tabular-nums text-neutral-400">
+              {fmt(audio.current?.currentTime ?? 0)} / {duration ? fmt(duration) : '0:00'}
+            </span>
+          </div>
+          <div className="flex items-center gap-3 pb-2 pt-1">
+            <button
+              onClick={() => {
+                const el = audio.current
+                if (!el || !playing) { const first = page.audio[0]; if (first) play(first.src, first.label); return }
+                if (el.paused) { void el.play().catch(() => {}); setPaused(false) } else { el.pause(); setPaused(true) }
+              }}
+              aria-label={paused ? 'Abspielen' : 'Pause'}
+              className="grid h-11 w-11 shrink-0 place-items-center rounded-full border-2 border-neutral-300 text-neutral-500"
+            >
+              {paused || !playing ? <span className="ml-0.5 block h-0 w-0 border-y-[7px] border-l-[11px] border-y-transparent border-l-neutral-500" /> : <span className="block h-3 w-3 bg-neutral-500" />}
+            </button>
+            <input
+              type="range" min={0} max={1000} value={Math.round(progress * 1000)} aria-label="Fortschritt"
+              onChange={(e) => { const el = audio.current; if (!el || !el.duration) return; el.currentTime = (Number(e.target.value) / 1000) * el.duration }}
+              className="h-1.5 flex-1 accent-nw"
+            />
+          </div>
+        </div>
+        <div className="border-t border-neutral-200">
+          <div className="mx-auto flex max-w-[1180px] items-center gap-1 px-2 py-1.5">
+            <button onClick={() => router.push(`/book/${page.book}/`)} aria-label="Kapitel" className="grid h-9 w-9 shrink-0 place-items-center rounded-full border border-neutral-300 text-neutral-500">
+              <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="1.7"><circle cx="12" cy="8.5" r="3.2" /><path d="M5.5 19c1.2-3.2 3.6-4.6 6.5-4.6s5.3 1.4 6.5 4.6" strokeLinecap="round" /></svg>
+            </button>
+            <button
+              onClick={() => { const first = page.audio[0]; if (first) play(first.src, first.label) }}
+              aria-label="Audio"
+              className="grid h-9 w-9 shrink-0 place-items-center rounded-md border border-neutral-300 text-neutral-500"
+            >
+              <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="1.7"><path d="M4 9.5h3l4.5-3.5v12L7 14.5H4z" strokeLinejoin="round" /><path d="M15.5 9a4 4 0 0 1 0 6" strokeLinecap="round" /></svg>
+            </button>
+            <button onClick={() => go(prev)} disabled={!prev} aria-label="Vorherige Seite" className="grid h-9 w-9 shrink-0 place-items-center rounded-md border border-neutral-300 text-neutral-500 disabled:opacity-30">
+              <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="1.8"><path d="M14 5l-7 7 7 7" strokeLinecap="round" strokeLinejoin="round" /></svg>
+            </button>
             <form
               onSubmit={(e) => { e.preventDefault(); const v = Number(new FormData(e.currentTarget).get('p')); if (pages.includes(v)) go(v) }}
-              className="flex items-center gap-1 text-sm text-neutral-500"
+              className="relative flex-1"
             >
-              <input name="p" defaultValue={page.printed} key={page.printed} className="w-12 rounded border border-neutral-300 px-1 py-1 text-center" aria-label="Seite" />
-              <span>/ {pages[pages.length - 1]}</span>
+              <input name="p" defaultValue={page.printed} key={page.printed} inputMode="numeric" aria-label="Seite"
+                className="w-full rounded-md border border-neutral-300 py-1.5 pl-2 pr-6 text-center text-[13px] text-neutral-700" />
+              <button type="button" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} aria-label="Nach oben" className="absolute right-1 top-1/2 -translate-y-1/2 text-[10px] text-neutral-400">▴</button>
             </form>
-            <button onClick={() => go(next)} disabled={!next} aria-label="Nächste Seite" className="rounded-md px-3 py-2 text-sm text-neutral-600 hover:bg-neutral-100 disabled:opacity-30">›</button>
-            <button onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} aria-label="Nach oben" className="ml-1 rounded-md px-2 py-2 text-sm text-neutral-400 hover:bg-neutral-100">▴</button>
-          </div>
-
-          <div className="flex items-center gap-2">
-            {graded.length > 0 && (
-              askClear ? (
-                <>
-                  <span className="text-xs text-neutral-500">Alles löschen?</span>
-                  <button onClick={reset} className="rounded-md bg-rose-600 px-3 py-2 text-sm font-semibold text-white hover:bg-rose-700">Ja</button>
-                  <button onClick={() => setAskClear(false)} className="rounded-md border border-neutral-300 px-3 py-2 text-sm text-neutral-600">Nein</button>
-                </>
-              ) : (
-                <>
-                  <button onClick={() => setAskClear(true)} className="rounded-md border border-neutral-300 px-3 py-2 text-sm text-neutral-600 hover:border-nw hover:text-nw">Zurücksetzen</button>
-                  <button onClick={check} className="rounded-md bg-emerald-600 px-4 py-2 text-sm font-semibold text-white hover:bg-emerald-700">✓ Prüfen</button>
-                </>
-              )
-            )}
+            <button onClick={() => go(next)} disabled={!next} aria-label="Nächste Seite" className="grid h-9 w-9 shrink-0 place-items-center rounded-md border border-neutral-300 text-neutral-500 disabled:opacity-30">
+              <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="1.8"><path d="M10 5l7 7-7 7" strokeLinecap="round" strokeLinejoin="round" /></svg>
+            </button>
+            <button onClick={() => setShowWords((v) => !v)} aria-pressed={showWords}
+              className={`h-9 shrink-0 rounded-md border px-2.5 text-[13px] ${showWords ? 'border-nw bg-nw text-white' : 'border-neutral-300 text-neutral-600'}`}>Word</button>
+            <button onClick={() => setAskClear(true)} aria-label="Zurücksetzen" className="grid h-9 w-9 shrink-0 place-items-center rounded-md border border-neutral-300 text-neutral-500">
+              <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="1.7"><path d="M4 10a8 8 0 1 1 2.3 6.3" strokeLinecap="round" /><path d="M4 5v5h5" strokeLinecap="round" strokeLinejoin="round" /></svg>
+            </button>
           </div>
         </div>
       </div>
