@@ -79,7 +79,14 @@ export const p138: ScanPage = {
   ],
   audio: [
   ],
-  fields: [],
+  fields: [
+    { id: 'f1', group: '3a', x: 178, y: 587, w: 257, h: 30, answer: 'Metal und Hardrock', label: '3a Wacken Musik' },
+    { id: 'f2', group: '3a', x: 178, y: 714, w: 260, h: 30, answer: '220 €|220 Euro|220', label: '3a Wacken Preis' },
+    { id: 'f3', group: '3a', x: 555, y: 627, w: 257, h: 30, answer: 'meistens im Juni|im Juni|Juni', label: '3a Rock im Park Zeit' },
+    { id: 'f4', group: '3a', x: 555, y: 712, w: 257, h: 30, answer: '149 €|149 Euro|149', label: '3a Rock im Park Preis' },
+    { id: 'f5', group: '3a', x: 935, y: 620, w: 262, h: 30, answer: '1.–4. August', label: '3a Apple Tree Zeit' },
+    { id: 'f6', group: '3a', x: 935, y: 705, w: 262, h: 30, answer: '90 €|90 Euro|90', label: '3a Apple Tree Preis' },
+  ],
   matchings: [],
   patches: [],
   sentences: [
