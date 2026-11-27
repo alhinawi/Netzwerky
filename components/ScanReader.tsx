@@ -5,6 +5,14 @@ import type { ScanPage } from '@/content/scan/types'
 import { playCorrect, playWrong, playTap } from '@/lib/sound'
 import { pronounceUrl } from '@/lib/pronounce'
 
+type LibBook = {
+  id: string
+  level: string
+  kind: string
+  cover: string | null
+  chapters: { n: number; first: number; last: number; title: string }[]
+}
+
 const norm = (s: string) =>
   s.normalize('NFC').toLowerCase().trim().replace(/[.!?]+$/, '').replace(/\s+/g, ' ')
 
@@ -14,7 +22,7 @@ type Answers = Record<string, string>
 type Results = Record<string, boolean>
 
 export default function ScanReader({
-  page, total, prev, next, pages, chapters, pageChapters,
+  page, total, prev, next, pages, chapters, pageChapters, library,
 }: {
   page: ScanPage
   total: number
@@ -23,6 +31,7 @@ export default function ScanReader({
   pages: number[]
   chapters: { n: number; first: number }[]
   pageChapters: { printed: number; chapter: number }[]
+  library: LibBook[]
 }) {
   const router = useRouter()
   const [answers, setAnswers] = useState<Answers>({})
@@ -507,34 +516,65 @@ export default function ScanReader({
         <div className="fixed inset-0 z-40" role="dialog" aria-label="Bibliothek">
           <div className="absolute inset-0 bg-black/30" onClick={() => setNavOpen(false)} />
           <div className="absolute left-0 top-0 flex h-full w-[86%] max-w-[320px] flex-col bg-white shadow-2xl">
-            <div className="flex items-center justify-between border-b border-neutral-200 px-3 py-2">
-              <span className="text-[15px] font-bold text-neutral-900">Bibliothek</span>
-              <button onClick={() => setNavOpen(false)} aria-label="Schließen" className="grid h-8 w-8 place-items-center rounded-md text-lg text-neutral-500">×</button>
+            <div className="flex items-center justify-between border-b border-neutral-200 px-4 py-3">
+              <span className="text-[19px] font-black tracking-tight text-neutral-900">Netzwerk<span className="text-nw">.</span></span>
+              <button onClick={() => setNavOpen(false)} aria-label="Schließen" className="grid h-9 w-9 place-items-center rounded-full border border-neutral-300 text-lg text-neutral-600">×</button>
             </div>
-            <div className="flex-1 overflow-y-auto px-3 py-2">
-              <button onClick={() => router.push(`/book/${page.book}/`)} className="mb-3 w-full rounded-md border border-neutral-300 px-2 py-2 text-left text-[13px] text-neutral-700">
-                Buchseite · {page.book.toUpperCase()}
-              </button>
-              {chapters.map((c) => {
-                const list = pageChapters.filter((x) => x.chapter === c.n).map((x) => x.printed)
-                if (list.length === 0) return null
-                return (
-                  <div key={c.n} className="mb-3">
-                    <div className="mb-1 text-[11px] font-semibold uppercase tracking-wide text-neutral-400">Kapitel {c.n}</div>
-                    <div className="grid grid-cols-5 gap-1">
-                      {list.map((n) => (
-                        <button
-                          key={n}
-                          onClick={() => { setNavOpen(false); if (n !== page.printed) go(n) }}
-                          className={`rounded-md border py-1.5 text-[12px] ${n === page.printed ? 'border-nw bg-nw text-white' : 'border-neutral-200 text-neutral-600'}`}
-                        >
-                          {n}
-                        </button>
-                      ))}
-                    </div>
-                  </div>
-                )
-              })}
+            <div className="flex-1 overflow-y-auto px-4 py-3">
+              <div className="mb-2 text-[12px] font-semibold text-neutral-400">اختيار كتابك</div>
+              <div className="grid grid-cols-2 gap-2">
+                {library.map((b) => {
+                  const active = b.id === page.book
+                  return (
+                    <button
+                      key={b.id}
+                      onClick={() => { const first = b.chapters[0]?.first; if (first && !active) { setNavOpen(false); router.push(`/read/${b.id}/${first}/`) } }}
+                      className={`flex items-center gap-2 rounded-xl border px-2 py-2 text-left ${active ? 'border-nw bg-nw/5' : b.chapters.length ? 'border-neutral-200' : 'border-neutral-200 opacity-50'}`}
+                    >
+                      {b.cover ? (
+                        // eslint-disable-next-line @next/next/no-img-element
+                        <img src={b.cover} alt="" className="h-9 w-7 rounded border border-neutral-200 object-cover" />
+                      ) : (
+                        <span className="h-9 w-7 rounded border border-dashed border-neutral-300" />
+                      )}
+                      <span className="min-w-0">
+                        <span className="block truncate text-[12px] font-semibold text-neutral-800">{b.kind}</span>
+                        <span className="block text-[11px] text-neutral-500">{b.level}</span>
+                      </span>
+                    </button>
+                  )
+                })}
+              </div>
+
+              <div className="my-3 border-t border-neutral-200 pt-3 text-[12px] font-semibold text-neutral-400">الغلاف</div>
+              <div className="mb-1 text-[11px] font-semibold uppercase tracking-wide text-neutral-500">
+                {library.find((b) => b.id === page.book)?.kind ?? 'Kursbuch'} · {level}
+              </div>
+              <div className="space-y-1">
+                {chapters.map((c) => {
+                  const list = pageChapters.filter((x) => x.chapter === c.n).map((x) => x.printed)
+                  if (list.length === 0) return null
+                  const meta = library.find((b) => b.id === page.book)?.chapters.find((x) => x.n === c.n)
+                  const current = page.chapter === c.n
+                  return (
+                    <button
+                      key={c.n}
+                      onClick={() => { setNavOpen(false); if (c.first !== page.printed) go(c.first) }}
+                      className={`flex w-full items-center gap-3 rounded-lg px-2 py-2 text-left ${current ? 'bg-nw/10' : ''}`}
+                    >
+                      <span className={`grid h-7 w-7 shrink-0 place-items-center rounded-full border text-[12px] font-bold ${current ? 'border-nw bg-nw text-white' : 'border-neutral-300 text-neutral-600'}`}>
+                        {Number.isInteger(c.n) ? c.n : '★'}
+                      </span>
+                      <span className="min-w-0 flex-1">
+                        <span className="block truncate text-[13px] text-neutral-800">
+                          {Number.isInteger(c.n) ? `الدرس ${c.n}` : 'بلاتفورم'} {meta?.title ? `· ${meta.title}` : ''}
+                        </span>
+                      </span>
+                      <span className="shrink-0 text-[11px] text-neutral-500">{list[0]}–{list[list.length - 1]}</span>
+                    </button>
+                  )
+                })}
+              </div>
             </div>
           </div>
         </div>
