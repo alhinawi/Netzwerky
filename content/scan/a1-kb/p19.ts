@@ -37,5 +37,14 @@ export const p19: ScanPage = {
   fields: [],
   matchings: [],
   patches: [],
+  sentences: [
+    { id: 's-h9', text: 'ins Kino gehen', ar: 'نروح السينما', words: ['h9'] },
+    { id: 's-b1', text: 'Hörst du gern Musik?', ar: 'بتحب تسمع موسيقى؟', words: ['b1'] },
+    { id: 's-b2', text: 'Gehst du gern ins Kino?', ar: 'بتحب تروح السينما؟', words: ['b2'] },
+    { id: 's-b3', text: 'Liest du gern?', ar: 'بتحب تقرا؟', words: ['b3'] },
+    { id: 's-b4', text: 'Ja, sehr gern. Und du?', ar: 'أيوه، بحبها جداً. وانت؟', words: ['b4'] },
+    { id: 's-b5', text: 'Nein, nicht so gern.', ar: 'لأ، مش قوي.', words: ['b5'] },
+    { id: 's-b6', text: 'Es geht so.', ar: 'عادي.', words: ['b6'] },
+  ],
   groups: [],
 }

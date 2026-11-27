@@ -18,6 +18,14 @@ export type ScanMatching = {
   right: ScanMatchItem[]
   answers: string[]
 }
+export type ScanSentence = {
+  id: string
+  text: string
+  ar: string
+  /** ids of the words that make up the sentence, so a tap can open its sentence */
+  words?: string[]
+}
+
 export type ScanGroup = { id: string; label: string; ar: string }
 
 export type ScanPage = {
@@ -32,6 +40,8 @@ export type ScanPage = {
   fields: ScanField[]
   matchings: ScanMatching[]
   groups: ScanGroup[]
+  /** whole-sentence translations for the sentence tab in the word popup */
+  sentences?: ScanSentence[]
   /** weiße Flecken über handschriftlichen Eintragungen im Scan */
   patches?: Box[]
 }
