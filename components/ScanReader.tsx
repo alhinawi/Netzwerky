@@ -369,9 +369,9 @@ export default function ScanReader({
               onClick={() => setChapterMenu((v) => !v)}
               aria-label="Kapitel wählen"
               aria-expanded={chapterMenu}
-              className="flex w-[8.25rem] items-center justify-between gap-1 rounded-md border border-neutral-300 bg-[#f7f3e8] px-2 py-1 text-[12px] font-medium text-neutral-700"
+              className="flex w-[9.75rem] items-center justify-between gap-1 rounded-md border border-neutral-300 bg-[#f7f3e8] px-2 py-1 text-[12px] font-medium text-neutral-700"
             >
-              <span className="truncate">Kursbuch · {chapterLabel(page.chapter)}</span>
+              <span className="truncate">{(library.find((b) => b.id === page.book)?.kind ?? 'Kursbuch')} · {chapterLabel(page.chapter)}</span>
               <span className={`text-[9px] text-neutral-400 transition-transform ${chapterMenu ? 'rotate-180' : ''}`}>▾</span>
             </button>
             {chapterMenu && (
