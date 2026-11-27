@@ -1,0 +1,15 @@
+import { chromium } from 'playwright'
+const b = await chromium.launch()
+const p = await b.newPage({ viewport: { width: 390, height: 844 }, deviceScaleFactor: 2, isMobile: true, hasTouch: true })
+await p.goto('http://localhost:8099/read/a2-kb/66/', { waitUntil: 'networkidle' })
+await p.waitForTimeout(400)
+// click next and grab a frame mid-animation
+await p.evaluate(() => { const b = document.querySelector('button[aria-label="Nächste Seite"]'); b && b.click() })
+await p.waitForTimeout(110)
+await p.screenshot({ path: '/tmp/shots/turn-mid.png' })
+const cls = await p.evaluate(() => { const el = document.querySelector('img[src*="/pages/"]')?.closest('div'); return el ? el.className : null })
+await p.waitForTimeout(700)
+await p.screenshot({ path: '/tmp/shots/turn-done.png' })
+const url = p.url()
+console.log(JSON.stringify({ cls, url }))
+await b.close()

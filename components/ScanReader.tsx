@@ -177,9 +177,22 @@ export default function ScanReader({
     playTap()
   }
 
+  // Play the page turn once after a route change: the direction is handed over
+  // through sessionStorage because the reader remounts for the new page.
+  useEffect(() => {
+    let dir: string | null = null
+    try { dir = sessionStorage.getItem('nw-flip'); if (dir) sessionStorage.removeItem('nw-flip') } catch {}
+    if (dir !== 'next' && dir !== 'prev') return
+    setFlip(dir)
+    const t = window.setTimeout(() => setFlip('none'), 500)
+    return () => window.clearTimeout(t)
+  }, [page.printed])
+
   const go = (target?: number) => {
     if (!target) return
-    setFlip(target > page.printed ? 'next' : 'prev')
+    const dir = target > page.printed ? 'next' : 'prev'
+    setFlip(dir)
+    try { sessionStorage.setItem('nw-flip', dir) } catch {}
     router.push(`/read/${page.book}/${target}/`)
   }
 
@@ -299,7 +312,7 @@ export default function ScanReader({
       ) : (
       <div className="overflow-auto bg-[#f0eeec] paper" ref={wrap}>
         <div
-          className={`relative mx-auto select-none bg-white ${shake ? 'shake' : ''} ${flip === 'none' ? 'fade-in' : ''}`}
+          className={`relative mx-auto select-none bg-white ${shake ? 'shake' : ''} ${flip === 'next' ? 'turn-next' : flip === 'prev' ? 'turn-prev' : 'fade-in'}`}
           style={{ width: `${zoom * 100}%`, aspectRatio: `${W} / ${H}` }}
           onClick={() => setActiveWord(null)}
           onTouchStart={(e) => { const t = e.touches[0]; touch.current = { x: t.clientX, y: t.clientY } }}
