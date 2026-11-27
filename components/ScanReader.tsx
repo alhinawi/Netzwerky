@@ -190,7 +190,8 @@ export default function ScanReader({
   }, [page.printed, page.book, next, prev])
 
   // book audio lives under /audio/<level>/kb/ for every Kursbuch (a1-kb -> a1)
-  const audioBase = `/audio/${page.book.split('-')[0]}/kb`
+  const level = (page.book.split('-')[0] || 'a1').toUpperCase()
+  const audioBase = `/audio/${level.toLowerCase()}/kb`
 
   const W = page.width
   const H = page.height
@@ -238,7 +239,7 @@ export default function ScanReader({
             aria-label="Kapitel"
             className="shrink-0 rounded-md border border-neutral-300 bg-[#f7f3e8] px-1 py-1 text-[12px] font-medium text-neutral-700"
           >
-            {chapters.map((c) => <option key={c.n} value={c.n}>A1 KB · K{c.n}</option>)}
+            {chapters.map((c) => <option key={c.n} value={c.n}>{level} KB · K{c.n}</option>)}
           </select>
           <div className="ml-auto flex items-center gap-0.5 text-[13px]">
             <button onClick={() => setZoom((z) => Math.max(0.8, +(z - 0.25).toFixed(2)))} aria-label="Verkleinern" className="rounded px-1.5 py-1 text-neutral-600">−</button>
