@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { bookById } from '@/data/books'
+import { pageNumbers } from '@/content/scan'
 
 export default function BookHome({ bookId }: { bookId: string }) {
   const book = bookById(bookId)
@@ -11,7 +12,8 @@ export default function BookHome({ bookId }: { bookId: string }) {
       <p className="mt-1 text-sm text-neutral-500">{book.ready ? 'Kapitel 1 ist live' : 'In Vorbereitung'}</p>
       <ul className="paper mt-6 divide-y divide-neutral-200 overflow-hidden rounded-lg bg-white">
         {book.chapters.map((c) => {
-          const live = book.ready && c.n === 1
+          const first = pageNumbers(book.id)[0]
+          const live = book.ready && c.n === 1 && !!first
           const body = (
             <>
               <span className={`mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-md text-sm font-bold ${live ? 'bg-nw text-white' : 'bg-neutral-100 text-neutral-500'}`}>
@@ -28,7 +30,7 @@ export default function BookHome({ bookId }: { bookId: string }) {
           return (
             <li key={String(c.n)}>
               {live ? (
-                <Link href={`/read/${book.id}/11/`} className="flex w-full items-start gap-4 px-4 py-3 text-left hover:bg-nw-soft/50">{body}</Link>
+                <Link href={`/read/${book.id}/${first}/`} className="flex w-full items-start gap-4 px-4 py-3 text-left hover:bg-nw-soft/50">{body}</Link>
               ) : (
                 <div className="flex w-full items-start gap-4 px-4 py-3 text-left opacity-60">{body}</div>
               )}
