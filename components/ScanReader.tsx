@@ -300,7 +300,7 @@ export default function ScanReader({
               aria-expanded={chapterMenu}
               className="flex w-[8.25rem] items-center justify-between gap-1 rounded-md border border-neutral-300 bg-[#f7f3e8] px-2 py-1 text-[12px] font-medium text-neutral-700"
             >
-              <span className="truncate">KB {level} · {chapterLabel(page.chapter)}</span>
+              <span className="truncate">Kursbuch · {chapterLabel(page.chapter)}</span>
               <span className={`text-[9px] text-neutral-400 transition-transform ${chapterMenu ? 'rotate-180' : ''}`}>▾</span>
             </button>
             {chapterMenu && (
