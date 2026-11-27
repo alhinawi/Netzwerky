@@ -37,7 +37,7 @@ export default function ScanReader({
   const [answers, setAnswers] = useState<Answers>({})
   const [results, setResults] = useState<Results>({})
   /** one line of plain feedback under the page */
-  const [msg, setMsg] = useState<string | null>(null)
+  const [msg, setMsg] = useState<{ text: string; ar: string; ok: boolean } | null>(null)
   /** per exercise: how many answers were right, shown next to its check button */
   const [scores, setScores] = useState<Record<string, { ok: number; answered: number; open: number }>>({})
   const [activeWord, setActiveWord] = useState<string | null>(null)
@@ -225,12 +225,20 @@ export default function ScanReader({
     return { res, ok, answered, open }
   }
 
+  /** 3 -> ٣, so the Arabic half of a message reads naturally */
+  const arNum = (n: number) => String(n).replace(/[0-9]/g, (d) => '٠١٢٣٤٥٦٧٨٩'[Number(d)])
+
   const checkGroup = (key: string, fields: typeof page.fields, matchings: typeof page.matchings) => {
     const { res, ok, answered, open } = grade(fields, matchings)
     setResults((prev) => ({ ...prev, ...res }))
     setScores((prev) => ({ ...prev, [key]: { ok, answered, open } }))
-    if (answered === 0) return
-    if (ok === answered) playCorrect()
+    if (answered === 0) {
+      setMsg({ text: 'Noch nichts eingetragen', ar: 'لسه مكتبتش حاجة', ok: false })
+      return
+    }
+    const good = ok === answered
+    setMsg({ text: `${ok} von ${answered} richtig`, ar: `${arNum(ok)} من ${arNum(answered)} صح`, ok: good })
+    if (good) playCorrect()
     else playWrong()
   }
 
@@ -640,7 +648,7 @@ export default function ScanReader({
               title={a.label}
               aria-label={a.label}
             >
-              ▶
+              <svg viewBox="0 0 24 24" className="h-3 w-3" fill="currentColor" aria-hidden><path d="M8 5.5v13l11-6.5z" /></svg>
             </button>
           ))}
 
@@ -740,8 +748,14 @@ export default function ScanReader({
 
       <div className="fixed inset-x-0 bottom-0 z-30 border-t border-neutral-200 bg-white">
         {msg && (
-          <div className="border-b border-neutral-200 bg-neutral-50 px-3 py-1.5 text-center text-[12px] font-semibold text-neutral-700">
-            {msg}
+          <div className={`flex items-center justify-center gap-1.5 border-b px-3 py-1.5 text-[12px] font-semibold ${msg.ok ? 'border-emerald-200 bg-emerald-50 text-emerald-800' : 'border-nw/20 bg-nw-soft text-nw-dark'}`}>
+            {msg.ok ? (
+              <svg viewBox="0 0 24 24" className="h-3.5 w-3.5 shrink-0" fill="none" stroke="currentColor" strokeWidth="3"><path d="M4.5 12.5l5 5 10-11" strokeLinecap="round" strokeLinejoin="round" /></svg>
+            ) : (
+              <svg viewBox="0 0 24 24" className="h-3.5 w-3.5 shrink-0" fill="none" stroke="currentColor" strokeWidth="2.6"><circle cx="12" cy="12" r="9" /><path d="M12 7.5v6" strokeLinecap="round" /><path d="M12 16.5h.01" strokeLinecap="round" /></svg>
+            )}
+            <span>{msg.text}</span>
+            <span className="ar text-[12px] opacity-80">{msg.ar}</span>
           </div>
         )}
         <div className={`mx-auto max-w-[1180px] px-3 pt-2 ${page.audio.length ? '' : 'hidden'}`}>
@@ -772,7 +786,7 @@ export default function ScanReader({
         </div>
         <div className="border-t border-neutral-200">
           <div className="mx-auto flex max-w-[1180px] flex-nowrap items-center justify-between gap-1 px-1.5 py-1.5 sm:px-2">
-            <button onClick={() => setProfileOpen(true)} aria-label="Profil" className="grid h-8 w-8 shrink-0 place-items-center rounded-full border border-neutral-300 text-neutral-500 sm:h-9 sm:w-9">
+            <button onClick={() => setProfileOpen(true)} aria-label="Profil" className="grid h-9 w-9 shrink-0 place-items-center rounded-full border border-neutral-300 text-neutral-500 sm:h-10 sm:w-10">
               <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="1.7"><circle cx="12" cy="8.5" r="3.2" /><path d="M5.5 19c1.2-3.2 3.6-4.6 6.5-4.6s5.3 1.4 6.5 4.6" strokeLinecap="round" /></svg>
             </button>
             <button
@@ -798,7 +812,7 @@ export default function ScanReader({
               {page.printed}
               <span className={`text-[9px] text-neutral-400 transition-transform ${pagesOpen ? 'rotate-180' : ''}`}>▴</span>
             </button>
-            <button onClick={() => go(next)} disabled={!next} aria-label="Nächste Seite" className="grid h-9 w-9 shrink-0 place-items-center rounded-md border border-neutral-300 text-neutral-500 disabled:opacity-30">
+            <button onClick={() => go(next)} disabled={!next} aria-label="Nächste Seite" className="grid h-9 w-9 shrink-0 place-items-center rounded-md border border-neutral-300 text-neutral-500 disabled:opacity-30 sm:h-10 sm:w-10">
               <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="1.8"><path d="M10 5l7 7-7 7" strokeLinecap="round" strokeLinejoin="round" /></svg>
             </button>
             <button onClick={() => { setShowWords(true); setTab(tab === 'word' ? 'sentence' : 'word'); setActiveWord(null) }}
