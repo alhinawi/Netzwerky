@@ -57,4 +57,15 @@ export const p17: ScanPage = {
   matchings: [],
   patches: [],
   groups: [],
+  sentences: [
+    { id: 's-g3d', text: 'Mein Name ist Nina Weber.', ar: 'اسمي نينا فيبر.', words: ['g3d'] },
+    { id: 's-g4f', text: 'Wer ist das?', ar: 'مين ده؟', words: ['g4f'] },
+    { id: 's-g4i', text: 'Ich spreche Deutsch und Russisch.', ar: 'بتكلم ألماني وروسي.', words: ['g4i'] },
+    { id: 's-g4l', text: 'Das ist Selina Lang.', ar: 'دي سيلينا لانج.', words: ['g4l'] },
+    { id: 's-g5b', text: 'Danke, sehr gut.', ar: 'شكراً، كويس جداً.', words: ['g5b'] },
+    { id: 's-t1a', text: 'Wer bist du? · Wie heißt du? · Woher kommt Frau Tanaka? · Wo wohnen Sie? · Welche Sprachen sprechen Sie?', ar: 'أمثلة: مين انت؟ اسمك إيه؟ منين مدام تاناكا؟ ساكنين فين؟ بتتكلموا أنهي لغات؟', words: ['t1a'] },
+    { id: 's-t2a', text: 'Ich bin Julia. · Ich heiße Niklas. · Sie kommt aus Japan. · Ich wohne in Zürich. · Ich spreche Deutsch.', ar: 'أمثلة: أنا جوليا. اسمي نيكلاس. هي من اليابان. ساكن في زيورخ. بتكلم ألماني.', words: ['t2a'] },
+    { id: 's-t4a', text: 'Das ist Frau Lang. Sie kommt aus Deutschland. Sie wohnt in Frankfurt.', ar: 'دي مدام لانج. هي من ألمانيا. ساكنة في فرانكفورت.', words: ['t4a'] },
+    { id: 's-t4b', text: 'Das ist Jan. Er kommt aus Frankfurt. Er wohnt in Zürich.', ar: 'ده يان. هو من فرانكفورت. ساكن في زيورخ.', words: ['t4b'] },
+  ],
 }

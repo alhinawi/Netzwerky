@@ -25,4 +25,7 @@ export const p8: ScanPage = {
   fields: [],
   matchings: [],
   groups: [],
+  sentences: [
+    { id: 's-a1', text: 'Deutsch international. Was gehört zusammen? Ordnen Sie zu.', ar: 'كلمات ألمانية في لغات تانية: وصّل الكلمة بالصورة.', words: ['a1'] },
+  ],
 }

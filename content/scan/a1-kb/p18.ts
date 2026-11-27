@@ -27,4 +27,7 @@ export const p18: ScanPage = {
   matchings: [],
   patches: [],
   groups: [],
+  sentences: [
+    { id: 's-i1', text: '1 Was machen die Leute gern? Hören Sie und notieren Sie.', ar: 'الناس بتحب تعمل إيه؟ اسمع واكتب.', words: ['i1'] },
+  ],
 }

@@ -51,4 +51,14 @@ export const p15: ScanPage = {
   matchings: [],
   patches: [],
   groups: [],
+  sentences: [
+    { id: 's-boris', text: 'Boris Walder kommt aus Österreich. Er wohnt in Salzburg. Er spricht Deutsch und Englisch. Er lernt Arabisch.', ar: 'بوريس فالدَر من النمسا. ساكن في سالزبورج. بيتكلم ألماني وإنجليزي. وبيتعلم عربي.', words: ['boris'] },
+    { id: 's-saki', text: 'Saki Tanaka wohnt in Berlin. Sie kommt aus Japan, aus Tokio. Sie spricht Japanisch und Deutsch. Sie lernt Englisch.', ar: 'ساكي تاناكا ساكنة في برلين. هي من اليابان، من طوكيو. بتتكلم ياباني وألماني. وبتتعلم إنجليزي.', words: ['saki'] },
+    { id: 's-kateb', text: 'Kateb Brahim kommt aus Algerien. Er spricht Arabisch, Französisch und lernt Deutsch. Er wohnt in Paris.', ar: 'كاتب إبراهيم من الجزائر. بيتكلم عربي وفرنساوي وبيتعلم ألماني. ساكن في باريس.', words: ['kateb'] },
+    { id: 's-ib', text: 'b Ergänzen Sie Land oder Sprache.', ar: 'كمّل: البلد أو اللغة.', words: ['ib'] },
+    { id: 's-ic', text: 'c Sprechen Sie zu zweit. Woher kommen Sie? Welche Sprachen sprechen Sie? Welche Sprachen lernen Sie?', ar: 'اتكلموا في شكل ثنائيات: انتوا منين؟ بتتكلموا أنهي لغات؟ وبتتعلموا إيه؟', words: ['ic'] },
+    { id: 's-b1', text: 'Welche Sprachen sprichst du?', ar: 'بتتكلم أنهي لغات؟', words: ['b1'] },
+    { id: 's-id', text: 'd Wie heißen die Länder aus 8b in Ihrer Sprache?', ar: 'أسماء البلاد من تمرين 8b بلغتك إيه؟', words: ['id'] },
+    { id: 's-ie', text: 'e Wer sind Sie? Schreiben Sie einen kurzen Text.', ar: 'انت مين؟ اكتب نص قصير عن نفسك.', words: ['ie'] },
+  ],
 }

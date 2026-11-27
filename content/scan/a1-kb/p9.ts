@@ -25,4 +25,8 @@ export const p9: ScanPage = {
   fields: [],
   matchings: [],
   groups: [],
+  sentences: [
+    { id: 's-b', text: 'Wie heißen die Wörter in Ihrer Sprache?', ar: 'الكلمات دي اسمها إيه في لغتك؟', words: ['b'] },
+    { id: 's-c', text: 'Kennen Sie andere deutsche Wörter? Sammeln Sie und machen Sie ein Kursplakat.', ar: 'تعرف كلمات ألمانية تانية؟ اجمعها واعمل بوستر للفصل.', words: ['c'] },
+  ],
 }
