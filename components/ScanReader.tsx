@@ -247,7 +247,7 @@ export default function ScanReader({
               className="relative overflow-hidden rounded-lg border border-neutral-200 bg-white"
             >
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src={pageSrc(n)} alt={`Seite ${n}`} className="w-full" />
+              <img src={pageSrc(n)} alt={`Seite ${n}`} className="w-full" loading="lazy" decoding="async" />
               <span className="absolute bottom-1 left-1 rounded bg-white/90 px-1.5 text-xs text-neutral-600">{n}</span>
             </button>
           ))}
@@ -271,8 +271,20 @@ export default function ScanReader({
             else go(prev)
           }}
         >
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src={`${page.image}?v=2`} alt={`Netzwerk neu A1, Seite ${page.printed}`} className="pointer-events-none absolute inset-0 h-full w-full" draggable={false} />
+          <picture>
+            <source type="image/webp" srcSet={page.image.replace(/\.jpg$/, '.webp')} />
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={page.image}
+              alt={`Netzwerk neu A1, Seite ${page.printed}`}
+              className="pointer-events-none absolute inset-0 h-full w-full"
+              width={page.width}
+              height={page.height}
+              decoding="async"
+              fetchPriority="high"
+              draggable={false}
+            />
+          </picture>
 
           {(page.patches ?? []).map((b, i) => (
             <div key={`patch-${i}`} className="pointer-events-none absolute bg-white" style={boxStyle(b)} />
@@ -383,6 +395,7 @@ export default function ScanReader({
 
       <audio
         ref={audio}
+        preload="none"
         onEnded={onEnded}
         onTimeUpdate={(e) => {
           const el = e.currentTarget
@@ -391,7 +404,7 @@ export default function ScanReader({
         }}
         className="hidden"
       />
-      <audio ref={pron} onEnded={() => setSpoken(null)} className="hidden" />
+      <audio ref={pron} preload="none" onEnded={() => setSpoken(null)} className="hidden" />
 
       <div className="fixed inset-x-0 bottom-0 z-30 border-t border-neutral-200 bg-white">
         <div className="mx-auto max-w-[1180px] px-3 pt-2">
