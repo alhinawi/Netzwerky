@@ -67,6 +67,9 @@ export const p12: ScanPage = {
       answers: ['B', 'A', 'C'],
     },
   ],
+  patches: [
+    { x: 518, y: 900, w: 140, h: 52 },
+  ],
   groups: [
     { id: '4a', label: '4a', ar: 'وصّل السؤال بالإجابة' },
     { id: '4c', label: '4c', ar: 'كمّل الأفعال' },
