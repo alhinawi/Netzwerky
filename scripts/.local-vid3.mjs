@@ -1,0 +1,9 @@
+import { chromium } from 'playwright'
+const b = await chromium.launch()
+const ctx = await b.newContext({ viewport: { width: 390, height: 700 }, recordVideo: { dir: '/tmp/shots/vid5', size: { width: 390, height: 700 } } })
+const p = await ctx.newPage()
+await p.goto('http://localhost:8099/read/a2-kb/66/', { waitUntil: 'networkidle' })
+await p.waitForTimeout(1500)
+await p.evaluate(() => document.querySelector('button[aria-label="Nächste Seite"]').click())
+await p.waitForTimeout(1400)
+await ctx.close(); await b.close(); console.log('done')

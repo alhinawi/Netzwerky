@@ -1,0 +1,48 @@
+import type { ScanPage } from '../types'
+
+export const p98: ScanPage = {
+  book: 'a1-kb',
+  printed: 98,
+  chapter: 8,
+  image: '/pages/a1-kb/098.jpg',
+  width: 1241,
+  height: 1753,
+  words: [
+    { id: 'goal', x: 215, y: 98, w: 168, h: 24, text: 'hören und sehen', ar: 'سمع ومشاهدة' },
+    { id: 't', x: 215, y: 172, w: 330, h: 40, text: 'Die Netzwerk-WG', ar: 'شقة نتزويرك المشتركة' },
+    { id: 'h14a', x: 215, y: 238, w: 430, h: 70, text: 'Aua! Sehen Sie die Fotos an. Vermuten Sie: Was ist Lucas Problem? Was macht Max? Sprechen Sie zu zweit.', ar: 'آآه! بص على الصور. خمّن: مشكلة لوكا إيه؟ ماكس بيعمل إيه؟ اتكلموا اتنين.' },
+    { id: 'h14b', x: 175, y: 466, w: 658, h: 24, text: 'Was denken Sie? Wer sagt was? Notieren Sie Luca oder Max.', ar: 'رأيك إيه؟ مين بيقول إيه؟ اكتب Luca أو Max.' },
+    { id: 'n1', x: 215, y: 508, w: 528, h: 24, text: '1. ___: Ja, gerne! Da unten ist eine Schokolade!', ar: '١. ___: يلا حاضر! تحت في شوكولاتة!' },
+    { id: 'n3', x: 215, y: 588, w: 218, h: 24, text: '3. ___: Komm!', ar: '٣. ___: يلا!' },
+    { id: 'n4', x: 215, y: 628, w: 358, h: 24, text: '4. ___: Was ist denn mit dir los?', ar: '٤. ___: مالك في إيه؟' },
+    { id: 'n5', x: 740, y: 508, w: 338, h: 24, text: '5. ___: Kann ich dir helfen?', ar: '٥. ___: أقدر أساعدك؟' },
+    { id: 'n6', x: 740, y: 548, w: 168, h: 24, text: '6. ___: Luca?', ar: '٦. ___: لوكا؟' },
+    { id: 'n7', x: 740, y: 588, w: 388, h: 24, text: '7. ___: Aua, mein Rücken tut so weh!', ar: '٧. ___: آه، ضهري بيوجعني جداً!' },
+    { id: 'n8', x: 740, y: 628, w: 338, h: 24, text: '8. ___: Hallo Max, alles klar?', ar: '٨. ___: أهلاً ماكس، عامل إيه؟' },
+    { id: 'h14c', x: 180, y: 668, w: 558, h: 24, text: 'Sehen Sie nun Szene 18 und ordnen Sie den Dialog.', ar: 'دلوقتي شوف المشهد 18 ورتّب الحوار.' },
+    { id: 'h15a', x: 180, y: 760, w: 900, h: 56, text: 'Hol bitte …! Sehen Sie Szene 19. Was möchte Luca haben? Was müssen Max und Anna holen? Was muss Bea machen? Sprechen Sie zu zweit.', ar: 'هات لو سمحت …! شوف المشهد 19. لوكا عايز إيه؟ ماكس وآنا لازم يجيبوا إيه؟ بيا لازم تعمل إيه؟ اتكلموا اتنين.' },
+    { id: 'v1', x: 680, y: 888, w: 238, h: 24, text: 'das Fenster aufmachen', ar: 'يفتح الشباك' },
+    { id: 'v2', x: 930, y: 888, w: 208, h: 24, text: 'die Tür zumachen', ar: 'يقفل الباب' },
+    { id: 'v3', x: 365, y: 918, w: 98, h: 24, text: 'die Decke', ar: 'البطانية' },
+    { id: 'v4', x: 235, y: 938, w: 108, h: 24, text: 'das Kissen', ar: 'المخدة' },
+    { id: 'v5', x: 900, y: 1013, w: 178, h: 24, text: 'die Zeitschriften', ar: 'المجلات' },
+    { id: 'bb1', x: 280, y: 998, w: 248, h: 24, text: 'Luca möchte … haben.', ar: 'لوكا عايز …' },
+    { id: 'bb2', x: 570, y: 993, w: 158, h: 24, text: 'Max holt …', ar: 'ماكس بيجيب …' },
+    { id: 'h15b', x: 170, y: 1063, w: 858, h: 24, text: 'Sehen Sie die Szene noch einmal. Was hat Luca gesagt? Notieren Sie die Aufforderungen.', ar: 'شوف المشهد كمان مرة. لوكا قال إيه؟ اكتب الطلبات.' },
+    { id: 'h16a', x: 215, y: 1398, w: 708, h: 24, text: 'Der arme Luca. Sehen Sie Szene 20. Was ist richtig? Kreuzen Sie an.', ar: 'لوكا المسكين. شوف المشهد 20. إيه الصح؟ علّم.' },
+    { id: 'm1', x: 215, y: 1438, w: 648, h: 24, text: '1. Die Freunde möchten Luca: weiter helfen. / nicht mehr helfen.', ar: '١. صحابه عايزين يساعدوا لوكا تاني. / مش عايزين يساعدوه تاني.' },
+    { id: 'm2', x: 215, y: 1473, w: 608, h: 24, text: '2. Luca geht es: nicht sehr schlecht. / sehr schlecht.', ar: '٢. لوكا حالته مش وحشة أوي. / وحشة جداً.' },
+    { id: 'm3', x: 215, y: 1503, w: 708, h: 24, text: '3. Luca: bleibt auf dem Sofa. / steht auf und geht zu seinen Freunden.', ar: '٣. لوكا بيفضل على الكنبة. / بيقوم ويروح لصحابه.' },
+    { id: 'm4', x: 215, y: 1533, w: 588, h: 24, text: '4. Luca: versteht den Spaß. / versteht den Spaß nicht.', ar: '٤. لوكا فاهم الهزار. / مش فاهم الهزار.' },
+    { id: 'h16b', x: 175, y: 1576, w: 758, h: 24, text: 'Arbeiten Sie zu viert. Verteilen Sie die Rollen und spielen Sie Szene 18–20.', ar: 'اشتغلوا أربعة. وزّعوا الأدوار ومثّلوا المشاهد 18-20.' },
+  ],
+  audio: [
+  ],
+  fields: [
+  ],
+  matchings: [],
+  groups: [],
+  sentences: [
+  ],
+  patches: [],
+}

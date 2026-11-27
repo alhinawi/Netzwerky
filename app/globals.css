@@ -30,11 +30,13 @@ body {
 @keyframes fade { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
 
 /* page turn, in the spirit of Menscheny: the new page swings in from the spine */
+.turn-under { animation: turnUnder .58s ease-out both; z-index: 0; }
+@keyframes turnUnder { 0% { opacity: 1; } 50% { opacity: 1; } 100% { opacity: 0; } }
 .turn-next { animation: turnNext .58s cubic-bezier(.3,.7,.25,1) both; transform-origin: left center; }
 .turn-prev { animation: turnPrev .58s cubic-bezier(.3,.7,.25,1) both; transform-origin: right center; }
 @keyframes turnNext {
-  0%   { transform: perspective(1100px) rotateY(-38deg) translateX(7%) scale(.98); opacity: .25; box-shadow: 26px 0 34px rgba(0,0,0,.32); }
-  55%  { transform: perspective(1100px) rotateY(-10deg) translateX(1.5%) scale(1); opacity: .85; box-shadow: 8px 0 16px rgba(0,0,0,.18); }
+  0%   { transform: perspective(1100px) rotateY(-34deg) translateX(6%) scale(.99); opacity: 1; box-shadow: 26px 0 34px rgba(0,0,0,.32); }
+  55%  { transform: perspective(1100px) rotateY(-9deg) translateX(1.5%) scale(1); opacity: 1; box-shadow: 8px 0 16px rgba(0,0,0,.18); }
   100% { transform: none; opacity: 1; box-shadow: none; }
 }
 @keyframes turnPrev {
