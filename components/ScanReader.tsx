@@ -453,15 +453,9 @@ export default function ScanReader({
           )}
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src={`${webBase}-tiny.webp`} alt="" aria-hidden className="pointer-events-none absolute inset-0 h-full w-full object-cover blur-[2px] scale-[1.02] opacity-90" draggable={false} />
-          <picture>
-            <source
-              type="image/webp"
-              srcSet={`${webBase}-900.webp 900w, ${webBase}.webp ${page.width}w`}
-              sizes="(max-width: 640px) 100vw, 900px"
-            />
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src={page.image}
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+              src={zoom > 1 ? `${webBase}.webp` : `${webBase}-900.webp`}
               alt={`Netzwerk neu A1, Seite ${page.printed}`}
               className="pointer-events-none absolute inset-0 h-full w-full"
               width={page.width}
@@ -470,7 +464,6 @@ export default function ScanReader({
               fetchPriority="high"
               draggable={false}
             />
-          </picture>
 
           {(page.patches ?? []).map((b, i) => (
             <div key={`patch-${i}`} className="pointer-events-none absolute bg-white" style={boxStyle(b)} />
