@@ -33,6 +33,8 @@ export type ScanPage = {
   book: string
   printed: number
   chapter: number
+  /** set on Prüfungstraining pages: P1..P4, so they group apart from the chapter before them */
+  part?: string
   image: string
   width: number
   height: number
