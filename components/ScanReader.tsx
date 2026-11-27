@@ -277,9 +277,6 @@ export default function ScanReader({
     <div className="pb-44">
       <div className="sticky top-0 z-30 border-b border-neutral-200 bg-white/95 backdrop-blur">
         <div className="mx-auto flex max-w-[1180px] flex-wrap items-center gap-1 px-2 py-1.5">
-          <button onClick={() => setNavOpen(true)} aria-label="Bibliothek" className="grid h-8 w-8 shrink-0 place-items-center rounded-md border border-neutral-300 text-neutral-600">
-            <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="1.8"><path d="M4 6h16M4 12h16M4 18h16" strokeLinecap="round" /></svg>
-          </button>
           <button onClick={() => router.push(`/book/${page.book}/`)} className="mr-1 shrink-0 text-[17px] font-extrabold tracking-tight text-neutral-900">
             Netzwerk<span className="text-nw">.</span>
           </button>
@@ -289,15 +286,15 @@ export default function ScanReader({
             aria-label="Kapitel"
             className="min-w-0 max-w-[42vw] shrink rounded-md border border-neutral-300 bg-[#f7f3e8] px-1 py-1 text-[12px] font-medium text-neutral-700"
           >
-            {chapters.map((c) => <option key={c.n} value={c.n}>{level} KB · {chapterLabel(c.n)}</option>)}
+            {chapters.map((c) => <option key={c.n} value={c.n}>KB {level} · {chapterLabel(c.n)}</option>)}
           </select>
           <div className="ml-auto flex shrink-0 items-center gap-0.5 text-[13px]">
             <button onClick={() => setZoom((z) => Math.max(0.8, +(z - 0.25).toFixed(2)))} aria-label="Verkleinern" className="rounded px-1.5 py-1 text-neutral-600">−</button>
             <span className="w-8 shrink-0 text-center tabular-nums text-neutral-500">{Math.round(zoom * 100)}%</span>
             <button onClick={() => setZoom((z) => Math.min(3, +(z + 0.25).toFixed(2)))} aria-label="Vergrößern" className="rounded px-1.5 py-1 text-neutral-600">+</button>
-            <button onClick={() => setZoom(1)} className={`ml-1 whitespace-nowrap rounded-md border px-2 py-1 ${zoom === 1 ? 'border-nw bg-nw text-white' : 'border-neutral-300 text-neutral-600'}`}>Fit</button>
+            <button onClick={() => setZoom(1)} className={`ml-1 whitespace-nowrap rounded-md border px-2 py-1 ${zoom === 1 ? 'border-nw bg-nw text-white' : 'border-neutral-300 text-neutral-600'}`}>ملاءمة</button>
             <a href={page.image} target="_blank" rel="noreferrer" aria-label="Original" className="ml-1 whitespace-nowrap rounded-md border border-neutral-300 px-2 py-1 text-neutral-600">
-              Original ↗
+              الأصل ↗
             </a>
           </div>
         </div>
