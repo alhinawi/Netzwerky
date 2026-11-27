@@ -229,8 +229,12 @@ export default function ScanReader({
       'requestIdleCallback' in window ? (window as any).requestIdleCallback(cb, { timeout: 2500 }) : setTimeout(cb, 1200)
     idle(() => {
       for (const n of nbrs) {
-        const img = new Image()
-        img.src = `/pages/${page.book}/${String(n).padStart(3, '0')}-900.webp`
+        const small = new Image()
+        small.src = `/pages/${page.book}/${String(n).padStart(3, '0')}-900.webp`
+        small.decode?.().then(() => {
+          const full = new Image()
+          full.src = `/pages/${page.book}/${String(n).padStart(3, '0')}.webp`
+        }).catch(() => {})
       }
     })
   }, [page.printed, page.book, next, prev])
@@ -374,7 +378,7 @@ export default function ScanReader({
             <img src={under.image} alt="" aria-hidden className="turn-under pointer-events-none absolute inset-0 h-full w-full" draggable={false} />
           )}
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src={`${webBase}-tiny.webp`} alt="" aria-hidden className="pointer-events-none absolute inset-0 h-full w-full object-cover blur-[6px] scale-[1.03]" draggable={false} />
+          <img src={`${webBase}-tiny.webp`} alt="" aria-hidden className="pointer-events-none absolute inset-0 h-full w-full object-cover blur-[2px] scale-[1.02] opacity-90" draggable={false} />
           <picture>
             <source
               type="image/webp"
