@@ -220,14 +220,14 @@ export default function ScanReader({
   // Warm the next and previous page images once the current one is on screen,
   // so flipping a page does not wait for the download.
   useEffect(() => {
-    const nbrs = [next, prev].filter((n) => n && n !== page.printed)
+    const nbrs = [next, next ? next + 1 : null, prev].filter((n) => n && n !== page.printed)
     if (nbrs.length === 0) return
     const idle = (cb: () => void) =>
       'requestIdleCallback' in window ? (window as any).requestIdleCallback(cb, { timeout: 2500 }) : setTimeout(cb, 1200)
     idle(() => {
       for (const n of nbrs) {
         const img = new Image()
-        img.src = `/pages/${page.book}/${String(n).padStart(3, '0')}.webp`
+        img.src = `/pages/${page.book}/${String(n).padStart(3, '0')}-900.webp`
       }
     })
   }, [page.printed, page.book, next, prev])
@@ -243,6 +243,8 @@ export default function ScanReader({
 
   const W = page.width
   const H = page.height
+  // phone-sized webp variant (900px wide) next to the full-size scan
+  const webBase = page.image.replace(/\.jpg$/, '')
   const boxStyle = (b: { x: number; y: number; w: number; h: number }) => ({
     left: pct(b.x, W), top: pct(b.y, H), width: pct(b.w, W), height: pct(b.h, H),
   })
@@ -356,7 +358,11 @@ export default function ScanReader({
             <img src={under.image} alt="" aria-hidden className="turn-under pointer-events-none absolute inset-0 h-full w-full" draggable={false} />
           )}
           <picture>
-            <source type="image/webp" srcSet={page.image.replace(/\.jpg$/, '.webp')} />
+            <source
+              type="image/webp"
+              srcSet={`${webBase}-900.webp 900w, ${webBase}.webp ${page.width}w`}
+              sizes="(max-width: 640px) 100vw, 900px"
+            />
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src={page.image}
