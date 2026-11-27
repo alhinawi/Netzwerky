@@ -228,6 +228,27 @@ export default function ScanReader({
     return null
   }
 
+  /** pronounce a tapped word: the book's own word audio first, then German TTS */
+  const speakWord = (text: string, boxText: string) => {
+    if (!sound) return
+    const slug = (w: string) => w.toLowerCase().replace(/[^a-zäöüß0-9]+/g, '-').replace(/^-+|-+$/g, '')
+    const urls = [`/audio/de/${slug(text)}.mp3`, `/audio/de/${slug(boxText)}.mp3`]
+    const say = () => {
+      try {
+        const u = new SpeechSynthesisUtterance(text.replace(/[^A-Za-zÄÖÜäöüßß -]/g, ''))
+        u.lang = 'de-DE'; u.rate = 0.9
+        window.speechSynthesis.cancel()
+        window.speechSynthesis.speak(u)
+      } catch {}
+    }
+    const tryAt = (i: number) => {
+      if (i >= urls.length) return say()
+      const a = new Audio(urls[i])
+      a.play().catch(() => tryAt(i + 1))
+    }
+    tryAt(0)
+  }
+
   /** which word of a line box a tap landed on, proportional to character count */
   const tokenAt = (text: string, frac: number) => {
     const tokens = text.split(/\s+/).filter(Boolean)
@@ -334,14 +355,16 @@ export default function ScanReader({
   return (
     <div className="pb-44">
       <div className="sticky top-0 z-30 border-b border-neutral-200 bg-white/95 backdrop-blur">
-        <div className="mx-auto flex max-w-[1180px] flex-wrap items-center justify-between gap-1 px-2 py-1.5">
+        <div className="relative mx-auto flex max-w-[1180px] items-center gap-1 px-2 py-1.5">
+          <div className="flex min-w-0 flex-1 items-center gap-1">
           <button onClick={() => setNavOpen(true)} aria-label="Bibliothek" className="grid h-8 w-8 shrink-0 place-items-center rounded-md border border-neutral-300 text-neutral-600">
             <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="1.8"><path d="M4 6h16M4 12h16M4 18h16" strokeLinecap="round" /></svg>
           </button>
-          <button onClick={() => router.push(`/book/${page.book}/`)} className="mr-1 shrink-0 text-[17px] font-extrabold tracking-tight text-neutral-900">
+          <button onClick={() => router.push(`/book/${page.book}/`)} className="mr-1 hidden shrink-0 text-[17px] font-extrabold tracking-tight text-neutral-900 min-[380px]:block">
             Netzwerk<span className="text-nw">.</span>
           </button>
-          <div className="relative shrink-0">
+          </div>
+          <div className="absolute left-1/2 top-1/2 z-20 -translate-x-1/2 -translate-y-1/2">
             <button
               onClick={() => setChapterMenu((v) => !v)}
               aria-label="Kapitel wählen"
@@ -366,7 +389,7 @@ export default function ScanReader({
               </div>
             )}
           </div>
-          <div className="ml-auto flex shrink-0 items-center gap-1 text-[13px]">
+          <div className="flex flex-1 items-center justify-end gap-1 text-[13px]">
             <a href={page.image} target="_blank" rel="noreferrer" aria-label="Original" className="ml-1 whitespace-nowrap rounded-md border border-neutral-300 px-2 py-1 text-neutral-600">
               الأصل ↗
             </a>
@@ -470,6 +493,7 @@ export default function ScanReader({
                   const rect = e.currentTarget.getBoundingClientRect()
                   const frac = rect.width ? (e.clientX - rect.left) / rect.width : 0.5
                   const tok = tokenAt(w.text, frac) ?? w.text
+                  speakWord(tok, w.text)
                   const hit = glossFor(gloss, tok)
                   if (hit) setWordHit({ text: tok, ar: hit })
                   else {
