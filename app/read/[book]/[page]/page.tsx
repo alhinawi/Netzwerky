@@ -21,7 +21,7 @@ function library() {
       id: b.id,
       level: b.level,
       kind: b.kind,
-      cover: pages[0]?.image.replace('.jpg', '.webp') ?? null,
+      cover: pages[0]?.image.replace('.jpg', '-cover.webp') ?? null,
       chapters: groups,
     }
   })
