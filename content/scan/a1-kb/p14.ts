@@ -25,4 +25,11 @@ export const p14: ScanPage = {
   matchings: [],
   patches: [],
   groups: [],
+  sentences: [
+    { id: 's-olivia', text: 'Olivia Miller kommt aus den USA. Sie wohnt in San Francisco. Sie spricht Englisch und Deutsch. Sie lernt Spanisch.', ar: 'أوليفيا ميللر من أمريكا. ساكنة في سان فرانسيسكو. بتتكلم إنجليزي وألماني. وبتتعلم إسباني.', words: ['olivia'] },
+    { id: 's-gabriel', text: 'Gabriel Santos kommt aus Brasilien. Er wohnt in Deutschland, in Köln. Er spricht Portugiesisch, Deutsch und Englisch.', ar: 'جابرييل سانتوس من البرازيل. ساكن في ألمانيا، في كولونيا. بيتكلم برتغالي وألماني وإنجليزي.', words: ['gabriel'] },
+    { id: 's-alessia', text: 'Alessia Conti spricht Italienisch, Französisch und Deutsch. Sie kommt aus der Schweiz und wohnt in Lugano.', ar: 'أليسيا كونتي بتتكلم إيطالي وفرنساوي وألماني. هي من سويسرا وساكنة في لوجانو.', words: ['alessia'] },
+    { id: 's-i8a', text: '8a Lesen Sie. Woher kommen die Personen? Wo wohnen sie? Welche Sprachen sprechen und lernen sie?', ar: 'اقرا: الأشخاص دول منين؟ ساكنين فين؟ وبيتكلموا وبيتعلموا إيه؟', words: ['i8a'] },
+    { id: 's-i8a2', text: 'Ergänzen Sie die Tabelle.', ar: 'كمّل الجدول.', words: ['i8a2'] },
+  ],
 }

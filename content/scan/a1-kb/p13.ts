@@ -32,4 +32,8 @@ export const p13: ScanPage = {
     { x: 172, y: 1202, w: 268, h: 66 },
   ],
   groups: [],
+  sentences: [
+    { id: 's-g1', text: 'Gut gesagt: Wie bitte?', ar: 'لو مفهمتش: Entschuldigung, noch einmal bitte. / Das verstehe ich nicht. / Bitte ein bisschen langsamer.', words: ['g1'] },
+    { id: 's-d1', text: 'Wie heißt du? · Und wie ist deine E-Mail-Adresse?', ar: 'اسمك إيه وإيميلك إيه؟ — Wie bitte? Kannst du das buchstabieren? (نعم؟ تقدر تهجّيها؟)', words: ['d1'] },
+  ],
 }
