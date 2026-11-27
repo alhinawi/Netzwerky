@@ -8,3 +8,4 @@ shot*.mjs
 live.mjs
 verify*.mjs
 dump.ts
+content/scan/index.ts
