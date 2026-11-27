@@ -718,7 +718,7 @@ export default function ScanReader({
                     >
                       {b.cover ? (
                         // eslint-disable-next-line @next/next/no-img-element
-                        <img src={b.cover} alt="" className="h-9 w-7 rounded border border-neutral-200 object-cover" />
+                        <img src={b.cover} alt="" width={160} height={226} loading="lazy" decoding="async" className="h-9 w-7 rounded border border-neutral-200 object-cover" />
                       ) : (
                         <span className="h-9 w-7 rounded border border-dashed border-neutral-300" />
                       )}
