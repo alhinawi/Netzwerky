@@ -61,6 +61,8 @@ export const p96: ScanPage = {
     { id: 'w51', x: 220, y: 1617, w: 151, h: 25, text: 'Wo gibt es das?', ar: 'فين موجود ده؟' },
     { id: 'w52', x: 456, y: 1622, w: 225, h: 33, text: 'Was machen die Leute?', ar: 'الناس بتعمل إيه؟' },
     { id: 'w53', x: 768, y: 1646, w: 188, h: 37, text: 'Was bieten sie an?', ar: 'بيقدّموا إيه؟' },
+    { id: 'au', x: 95, y: 1240, w: 50, h: 32, text: '🔊', ar: 'صوت' },
+    { id: 'al', x: 97, y: 1283, w: 44, h: 20, text: '2.17', ar: '2.17' },
   ],
   audio: [
   ],
@@ -121,6 +123,7 @@ export const p96: ScanPage = {
     { id: 's-w51', text: 'Wo gibt es das?', ar: 'فين موجود ده؟', words: ['w51'] },
     { id: 's-w52', text: 'Was machen die Leute?', ar: 'الناس بتعمل إيه؟', words: ['w52'] },
     { id: 's-w53', text: 'Was bieten sie an?', ar: 'بيقدّموا إيه؟', words: ['w53'] },
+    { id: 's-al', text: '2.17', ar: '2.17', words: ['al'] },
   ],
   groups: [],
 }
