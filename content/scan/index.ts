@@ -9,9 +9,10 @@ import { p14 } from './a1-kb/p14'
 import { p15 } from './a1-kb/p15'
 import { p16 } from './a1-kb/p16'
 import { p17 } from './a1-kb/p17'
+import { p18 } from './a1-kb/p18'
 
 const registry: Record<string, ScanPage[]> = {
-  'a1-kb': [p8, p9, p10, p11, p12, p13, p14, p15, p16, p17],
+  'a1-kb': [p8, p9, p10, p11, p12, p13, p14, p15, p16, p17, p18],
 }
 
 export function pagesOf(book: string): ScanPage[] {
