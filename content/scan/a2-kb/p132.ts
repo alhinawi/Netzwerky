@@ -64,7 +64,20 @@ export const p132: ScanPage = {
   ],
   audio: [
   ],
-  fields: [],
+  fields: [
+    { id: 'f1', group: '11a', x: 309, y: 599, w: 39, h: 35, answer: 'zu Fuß gehen', label: '11a Text A (1)' },
+    { id: 'f2', group: '11a', x: 196, y: 626, w: 41, h: 39, answer: 'Anzeige', label: '11a Text A (2)' },
+    { id: 'f3', group: '11a', x: 1119, y: 305, w: 38, h: 37, answer: 'Brot', label: '11a Text A (3)' },
+    { id: 'f4', group: '11a', x: 994, y: 488, w: 38, h: 36, answer: 'Supermarkt', label: '11a Text A (4)' },
+    { id: 'f5', group: '11a', x: 906, y: 553, w: 36, h: 35, answer: 'Heizung', label: '11a Text A (5)' },
+    { id: 'f6', group: '11a', x: 781, y: 680, w: 38, h: 34, answer: 'Internet', label: '11a Text A (6)' },
+    { id: 'f7', group: '11a', x: 784, y: 1257, w: 84, h: 26, answer: 'Zeitung', label: '11a Text B (1)' },
+    { id: 'f8', group: '11a', x: 922, y: 1152, w: 90, h: 26, answer: 'Dorf', label: '11a Text B (2)' },
+    { id: 'f9', group: '11a', x: 402, y: 1097, w: 86, h: 26, answer: 'Gemüse', label: '11a Text B (3)' },
+    { id: 'f10', group: '11a', x: 482, y: 1017, w: 86, h: 26, answer: 'Auto', label: '11a Text B (4)' },
+    { id: 'f11', group: '11a', x: 626, y: 988, w: 84, h: 26, answer: 'Winter', label: '11a Text B (5)' },
+    { id: 'f12', group: '11a', x: 798, y: 909, w: 84, h: 26, answer: 'Computer', label: '11a Text B (6)' },
+  ],
   matchings: [],
   groups: [],
   sentences: [
