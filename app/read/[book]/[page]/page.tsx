@@ -1,8 +1,11 @@
 import ScanReader from '@/components/ScanReader'
 import { pageOf, pageNumbers, pagesOf } from '@/content/scan'
+import { books } from '@/data/books'
 
 export function generateStaticParams() {
-  return pagesOf('a1-kb').map((p) => ({ book: 'a1-kb', page: String(p.printed) }))
+  return books.flatMap((b) =>
+    pagesOf(b.id).map((p) => ({ book: b.id, page: String(p.printed) })),
+  )
 }
 
 export default async function Page({ params }: { params: Promise<{ book: string; page: string }> }) {

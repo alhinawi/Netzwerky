@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { books } from '@/data/books'
+import { pagesOf } from '@/content/scan'
 
 const spine: Record<string, string> = { A1: 'bg-[#d7344f]', A2: 'bg-[#c2691f]', B1: 'bg-[#2f6f6a]' }
 
@@ -20,7 +21,7 @@ export default function Library() {
             </div>
             <div className="p-4">
               <h2 className="text-[15px] font-semibold leading-snug">{b.title}</h2>
-              <p className="mt-1 text-[12.5px] text-neutral-500">{b.ready ? `${b.chapters.length} Kapitel` : 'kommt bald'}</p>
+              <p className="mt-1 text-[12.5px] text-neutral-500">{b.ready ? `${new Set(pagesOf(b.id).map((p) => p.chapter)).size || b.chapters.length} Kapitel` : 'kommt bald'}</p>
               {b.note && <p className="mt-2 text-[12px] text-neutral-400">{b.note}</p>}
             </div>
           </Link>
