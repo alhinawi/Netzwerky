@@ -393,7 +393,7 @@ export default function ScanReader({
           {showWords && page.words.map((w) => (
             <button
               key={w.id}
-              onClick={(e) => { e.stopPropagation(); setTab('word'); setActiveWord(activeWord === w.id ? null : w.id); playTap() }}
+              onClick={(e) => { e.stopPropagation(); setActiveWord(activeWord === w.id ? null : w.id); playTap() }}
               className={`absolute rounded-sm transition ${activeWord === w.id ? 'bg-amber-200/60 ring-2 ring-amber-400' : 'hover:bg-amber-100/50'}`}
               style={boxStyle(w)}
               aria-label={`${w.text} — Bedeutung`}
@@ -508,13 +508,6 @@ export default function ScanReader({
           </div>
           <div className="flex items-center gap-3 pb-2 pt-1">
             <button
-              onClick={() => setProfileOpen(true)}
-              aria-label="Profil"
-              className="grid h-9 w-9 shrink-0 place-items-center overflow-hidden rounded-full border border-neutral-300 bg-neutral-100 text-[12px] font-bold text-neutral-600"
-            >
-              MA
-            </button>
-            <button
               onClick={() => { const on = !sound; setSound(on); setSoundOn(on) }}
               aria-label={sound ? 'Ton aus' : 'Ton an'}
               aria-pressed={sound}
@@ -563,8 +556,9 @@ export default function ScanReader({
             <button onClick={() => go(next)} disabled={!next} aria-label="Nächste Seite" className="grid h-9 w-9 shrink-0 place-items-center rounded-md border border-neutral-300 text-neutral-500 disabled:opacity-30">
               <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="1.8"><path d="M10 5l7 7-7 7" strokeLinecap="round" strokeLinejoin="round" /></svg>
             </button>
-            <button onClick={() => setShowWords((v) => !v)} aria-pressed={showWords}
-              className={`h-9 shrink-0 rounded-md border px-2.5 text-[13px] ${showWords ? 'border-nw bg-nw text-white' : 'border-neutral-300 text-neutral-600'}`}>Word</button>
+            <button onClick={() => { setShowWords(true); setTab(tab === 'word' ? 'sentence' : 'word'); setActiveWord(null) }}
+              aria-pressed={tab === 'sentence'} aria-label={tab === 'word' ? 'Wortmodus, tippen fuer Satz' : 'Satzmodus, tippen fuer Wort'}
+              className={`h-9 shrink-0 rounded-md border px-2.5 text-[13px] ${tab === 'sentence' ? 'border-nw bg-nw text-white' : 'border-neutral-300 text-neutral-600'}`}>{tab === 'word' ? 'Word' : 'Sentence'}</button>
             <button onClick={() => setAskClear(true)} aria-label="Zurücksetzen" className="grid h-9 w-9 shrink-0 place-items-center rounded-md border border-neutral-300 text-neutral-500">
               <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="1.7"><path d="M4 10a8 8 0 1 1 2.3 6.3" strokeLinecap="round" /><path d="M4 5v5h5" strokeLinecap="round" strokeLinejoin="round" /></svg>
             </button>
