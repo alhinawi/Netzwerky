@@ -43,7 +43,10 @@ export const p90: ScanPage = {
   ],
   audio: [
   ],
-  fields: [],
+  fields: [
+    { id: 'f1', group: '1', x: 516, y: 372, w: 31, h: 33, answer: '', label: '1 Foto A' },
+    { id: 'f2', group: '1', x: 1167, y: 352, w: 38, h: 32, answer: '', label: '1 Foto B' },
+  ],
   matchings: [],
   patches: [],
   sentences: [
@@ -65,5 +68,7 @@ export const p90: ScanPage = {
     { id: 's-w6', text: 'Karl Eberl', ar: 'كارل إيبرل', words: ['w6'] },
     { id: 's-w7', text: 'Bilder bearbeiten', ar: 'يعدّل صور', words: ['w7'] },
   ],
-  groups: [],
+  groups: [
+    { id: '1', label: '1', ar: 'اكتب جنب كل صورة الشخص بيتعلم إيه' },
+  ],
 }
