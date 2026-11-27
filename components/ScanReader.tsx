@@ -69,6 +69,7 @@ export default function ScanReader({
   const [sheetW, setSheetW] = useState(0)
   const [navOpen, setNavOpen] = useState(false)
   const [pagesOpen, setPagesOpen] = useState(false)
+  const [chapterMenu, setChapterMenu] = useState(false)
   const [profileOpen, setProfileOpen] = useState(false)
   const [sound, setSoundOn] = useState(true)
   const [fb, setFb] = useState(true)
@@ -255,8 +256,11 @@ export default function ScanReader({
       (page.sentences ?? []).find((s) => s.text.includes(word.text))
     : undefined
   const showSentence = Boolean(sentence)
-  const popupText = tab === 'sentence' && sentence ? sentence.text : word?.text ?? ''
-  const popupAr = tab === 'sentence' && sentence ? sentence.ar : word?.ar ?? ''
+  /** a box whose text is a whole sentence (Redemittel block) is a sentence, not a word */
+  const boxIsSentence = Boolean(sentence && word && norm(sentence.text) === norm(word.text))
+  const effectiveTab: 'word' | 'sentence' = boxIsSentence ? 'sentence' : tab
+  const popupText = effectiveTab === 'sentence' && sentence ? sentence.text : word?.text ?? ''
+  const popupAr = effectiveTab === 'sentence' && sentence ? sentence.ar : word?.ar ?? ''
 
   /** keep the popup inside the page: shift it left when the word sits near an edge */
   const popupStyle = (w: { x: number; y: number; w: number; h: number }) => {
@@ -280,19 +284,32 @@ export default function ScanReader({
           <button onClick={() => router.push(`/book/${page.book}/`)} className="mr-1 shrink-0 text-[17px] font-extrabold tracking-tight text-neutral-900">
             Netzwerk<span className="text-nw">.</span>
           </button>
-          <select
-            value={page.chapter}
-            onChange={(e) => { const c = chapters.find((x) => x.n === Number(e.target.value)); if (c) go(c.first) }}
-            aria-label="Kapitel"
-            className="min-w-0 max-w-[42vw] shrink rounded-md border border-neutral-300 bg-[#f7f3e8] px-1 py-1 text-[12px] font-medium text-neutral-700"
-          >
-            {chapters.map((c) => <option key={c.n} value={c.n}>KB {level} · {chapterLabel(c.n)}</option>)}
-          </select>
-          <div className="ml-auto flex shrink-0 items-center gap-0.5 text-[13px]">
-            <button onClick={() => setZoom((z) => Math.max(0.8, +(z - 0.25).toFixed(2)))} aria-label="Verkleinern" className="rounded px-1.5 py-1 text-neutral-600">−</button>
-            <span className="w-8 shrink-0 text-center tabular-nums text-neutral-500">{Math.round(zoom * 100)}%</span>
-            <button onClick={() => setZoom((z) => Math.min(3, +(z + 0.25).toFixed(2)))} aria-label="Vergrößern" className="rounded px-1.5 py-1 text-neutral-600">+</button>
-            <button onClick={() => setZoom(1)} className={`ml-1 whitespace-nowrap rounded-md border px-2 py-1 ${zoom === 1 ? 'border-nw bg-nw text-white' : 'border-neutral-300 text-neutral-600'}`}>ملاءمة</button>
+          <div className="relative shrink-0">
+            <button
+              onClick={() => setChapterMenu((v) => !v)}
+              aria-label="Kapitel wählen"
+              aria-expanded={chapterMenu}
+              className="flex w-[8.25rem] items-center justify-between gap-1 rounded-md border border-neutral-300 bg-[#f7f3e8] px-2 py-1 text-[12px] font-medium text-neutral-700"
+            >
+              <span className="truncate">KB {level} · {chapterLabel(page.chapter)}</span>
+              <span className={`text-[9px] text-neutral-400 transition-transform ${chapterMenu ? 'rotate-180' : ''}`}>▾</span>
+            </button>
+            {chapterMenu && (
+              <div className="absolute left-0 top-full z-40 mt-1 max-h-[60vh] w-44 overflow-y-auto rounded-xl border border-neutral-200 bg-white p-1 shadow-xl">
+                {chapters.map((c) => (
+                  <button
+                    key={c.n}
+                    onClick={() => { setChapterMenu(false); go(c.first) }}
+                    className={`flex w-full items-center justify-between rounded-lg px-2 py-1.5 text-left text-[12px] ${c.n === page.chapter ? 'bg-nw/10 font-semibold text-nw' : 'text-neutral-700'}`}
+                  >
+                    <span>{chapterLabel(c.n)}</span>
+                    <span className="text-[11px] text-neutral-400">{c.first}</span>
+                  </button>
+                ))}
+              </div>
+            )}
+          </div>
+          <div className="ml-auto flex shrink-0 items-center gap-1 text-[13px]">
             <a href={page.image} target="_blank" rel="noreferrer" aria-label="Original" className="ml-1 whitespace-nowrap rounded-md border border-neutral-300 px-2 py-1 text-neutral-600">
               الأصل ↗
             </a>
@@ -406,14 +423,14 @@ export default function ScanReader({
               <div className="mb-1 flex items-center gap-1 text-[12px]">
                 <button
                   onClick={() => setTab('word')}
-                  className={`rounded px-2 py-0.5 ${tab === 'word' ? 'bg-white/20 font-semibold' : 'text-white/60'}`}
+                  className={`rounded px-2 py-0.5 ${effectiveTab === 'word' ? 'bg-white/20 font-semibold' : 'text-white/60'}`}
                 >
                   كلمة
                 </button>
                 {showSentence && (
                   <button
                     onClick={() => setTab('sentence')}
-                    className={`rounded px-2 py-0.5 ${tab === 'sentence' ? 'bg-white/20 font-semibold' : 'text-white/60'}`}
+                    className={`rounded px-2 py-0.5 ${effectiveTab === 'sentence' ? 'bg-white/20 font-semibold' : 'text-white/60'}`}
                   >
                     جملة
                   </button>
