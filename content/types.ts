@@ -7,6 +7,8 @@ export type Body =
   | { kind: 'gaps'; items: { before: string; answer: string; after: string; ar: string }[] }
   | { kind: 'plain'; de: string; ar?: string }
   | { kind: 'play'; label: string; audio: string }
+  | { kind: 'numbers'; items: { n: number; word: string }[] }
+  | { kind: 'alphabet'; items: { letter: string; name: string }[] }
 
 export type Block =
   | { kind: 'band'; chapter: number; text: string }

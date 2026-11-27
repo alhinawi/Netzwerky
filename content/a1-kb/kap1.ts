@@ -216,4 +216,133 @@ export const p12: BookPage = {
   ],
 }
 
-export const pages = [p11, p12]
+
+export const p13: BookPage = {
+  id: 'a1-kb-p13',
+  printed: 13,
+  chapter: 1,
+  title: 'Zahlen und Buchstaben',
+  blocks: [
+    { kind: 'band', chapter: 1, text: 'Zahlen bis 20, Telefonnummer und Mail-Adresse nennen, buchstabieren' },
+    { kind: 'title', text: 'Zahlen und Buchstaben', ar: 'الأرقام والحروف' },
+    {
+      kind: 'exercise',
+      id: 'p13-6a',
+      label: '6a',
+      audio: ['NWn_A1_KB_Audio_1-008.mp3'],
+      instruction: 'Die Zahlen. Hören Sie die Zahlen und sprechen Sie dann laut mit.',
+      instructionAr: 'الأرقام. اسمع الأرقام وبعدين قولها بصوت عالي.',
+      body: [
+        {
+          kind: 'numbers',
+          items: [
+            { n: 0, word: 'null' }, { n: 1, word: 'eins' }, { n: 2, word: 'zwei' }, { n: 3, word: 'drei' },
+            { n: 4, word: 'vier' }, { n: 5, word: 'fünf' }, { n: 6, word: 'sechs' }, { n: 7, word: 'sieben' },
+            { n: 8, word: 'acht' }, { n: 9, word: 'neun' }, { n: 10, word: 'zehn' }, { n: 11, word: 'elf' },
+            { n: 12, word: 'zwölf' }, { n: 13, word: 'dreizehn' }, { n: 14, word: 'vierzehn' }, { n: 15, word: 'fünfzehn' },
+            { n: 16, word: 'sechzehn' }, { n: 17, word: 'siebzehn' }, { n: 18, word: 'achtzehn' }, { n: 19, word: 'neunzehn' },
+            { n: 20, word: 'zwanzig' },
+          ],
+        },
+      ],
+    },
+    {
+      kind: 'note',
+      title: 'Zahlen lesen und sprechen',
+      titleAr: 'قراءة الأرقام',
+      items: [{ de: '14 → vierzehn', ar: 'أربعتاشر: من 13 لـ 19 بنضيف zehn على الرقم' }],
+    },
+    {
+      kind: 'exercise',
+      id: 'p13-6b',
+      label: '6b',
+      audio: ['NWn_A1_KB_Audio_1-009.mp3', 'NWn_A1_KB_Audio_1-010.mp3'],
+      instruction: 'Hören Sie. Notieren Sie die Handynummern.',
+      instructionAr: 'استمع واكتب أرقام الموبايل.',
+      body: [{ kind: 'plain', de: 'Herr Klein: ____________   Frau Groß: ____________', ar: 'مستر كلاين: ... — مدام جروس: ...' }],
+    },
+    {
+      kind: 'exercise',
+      id: 'p13-6c',
+      label: '6c',
+      instruction: 'Fragen Sie Ihren Partner / Ihre Partnerin nach der Telefonnummer. Notieren Sie.',
+      instructionAr: 'اسأل زميلك عن رقم تليفونه واكتبه.',
+      body: [{ kind: 'plain', de: 'Wie ist deine Telefonnummer? — Null acht … — Wie ist deine Handynummer?', ar: 'رقم تليفونك إيه؟ — صفر تمانية … — رقم موبايلك إيه؟' }],
+    },
+    {
+      kind: 'exercise',
+      id: 'p13-7a',
+      label: '7a',
+      audio: ['NWn_A1_KB_Audio_1-011.mp3'],
+      instruction: 'Das Alphabet. Hören Sie zuerst und lesen Sie dann laut mit.',
+      instructionAr: 'الحروف الأبجدية. اسمع الأول وبعدين اقرأ بصوت عالي.',
+      body: [
+        {
+          kind: 'alphabet',
+          items: [
+            { letter: 'Aa', name: 'a' }, { letter: 'Bb', name: 'be' }, { letter: 'Cc', name: 'tse' }, { letter: 'Dd', name: 'de' },
+            { letter: 'Ee', name: 'e' }, { letter: 'Ff', name: 'ef' }, { letter: 'Gg', name: 'ge' }, { letter: 'Hh', name: 'ha' },
+            { letter: 'Ii', name: 'i' }, { letter: 'Jj', name: 'jot' }, { letter: 'Kk', name: 'ka' }, { letter: 'Ll', name: 'el' },
+            { letter: 'Mm', name: 'em' }, { letter: 'Nn', name: 'en' }, { letter: 'Oo', name: 'o' }, { letter: 'Pp', name: 'pe' },
+            { letter: 'Qq', name: 'ku' }, { letter: 'Rr', name: 'er' }, { letter: 'Ss', name: 'es' }, { letter: 'Tt', name: 'te' },
+            { letter: 'Uu', name: 'u' }, { letter: 'Vv', name: 'fau' }, { letter: 'Ww', name: 'we' }, { letter: 'Xx', name: 'iks' },
+            { letter: 'Yy', name: 'ypsilon' }, { letter: 'Zz', name: 'tset' }, { letter: 'Ää', name: 'ä' }, { letter: 'Öö', name: 'ö' },
+            { letter: 'Üü', name: 'ü' }, { letter: 'ß', name: 'eszett' },
+          ],
+        },
+      ],
+    },
+    {
+      kind: 'exercise',
+      id: 'p13-7b',
+      label: '7b',
+      audio: ['NWn_A1_KB_Audio_1-012.mp3'],
+      instruction: 'Hören Sie das Gespräch. Notieren Sie die E-Mail-Adressen.',
+      instructionAr: 'استمع للمحادثة واكتب الإيميلات.',
+      body: [{ kind: 'plain', de: 'ruben-gonzalez@…', ar: 'اكتب الإيميل اللي بتسمعه' }],
+    },
+    {
+      kind: 'exercise',
+      id: 'p13-7c',
+      label: '7c',
+      instruction: 'Variieren Sie den Dialog.',
+      instructionAr: 'غيّر في الحوار.',
+      body: [
+        {
+          kind: 'lines',
+          lines: [
+            { speaker: 'o', text: 'Wie heißt du?', ar: 'اسمك إيه؟' },
+            { speaker: 'dot', text: 'Alexis Barbos.', ar: 'ألكسيس باربوس.' },
+            { speaker: 'o', text: 'Und wie ist deine E-Mail-Adresse?', ar: 'وإيميلك إيه؟' },
+            { speaker: 'dot', text: 'alexis_barbos@quinnet.com.', ar: 'alexis_barbos@quinnet.com' },
+            { speaker: 'o', text: 'Wie bitte? Kannst du das buchstabieren?', ar: 'نعم؟ تقدر تهجّيها؟' },
+            { speaker: 'dot', text: 'A L E …', ar: 'A L E …' },
+          ],
+        },
+      ],
+    },
+    {
+      kind: 'note',
+      title: 'E-Mail-Adresse sagen',
+      titleAr: 'إزاي تنطق الإيميل',
+      items: [
+        { de: 'Man schreibt @ — Man sagt ä', ar: '@ بتتقال "آت"' },
+        { de: '. Punkt', ar: 'النقطة "بونكت"' },
+        { de: '- minus', ar: 'الشرطة "مينوس"' },
+        { de: '_ Unterstrich', ar: 'الشرطة السفلية "أونترشتريش"' },
+      ],
+    },
+    {
+      kind: 'note',
+      title: 'Gut gesagt: Wie bitte?',
+      titleAr: 'إزاي تقول: نعم؟ (مفهمتش)',
+      items: [
+        { de: 'Entschuldigung, noch einmal bitte.', ar: 'لو سمحت، تاني من فضلك.' },
+        { de: 'Das verstehe ich nicht.', ar: 'أنا مش فاهم ده.' },
+        { de: 'Bitte ein bisschen langsamer.', ar: 'شوية على مهلك من فضلك.' },
+      ],
+    },
+  ],
+}
+
+export const pages = [p11, p12, p13]

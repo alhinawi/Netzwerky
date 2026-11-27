@@ -181,6 +181,43 @@ export function Gaps({
   )
 }
 
+
+function Numbers({ items }: { items: { n: number; word: string }[] }) {
+  const [active, setActive] = useState<number | null>(null)
+  return (
+    <div className="mb-4 grid grid-cols-5 gap-1.5 sm:grid-cols-7">
+      {items.map((it) => (
+        <button
+          key={it.n}
+          onClick={() => { setActive(active === it.n ? null : it.n); playTap() }}
+          className={`rounded border px-1 py-2 text-center transition ${active === it.n ? 'border-nw bg-nw-soft' : 'border-neutral-200 hover:border-nw/60'}`}
+        >
+          <span className="block text-[19px] font-semibold leading-none text-nw">{it.n}</span>
+          <span className="mt-1 block text-[11.5px] text-neutral-600">{it.word}</span>
+        </button>
+      ))}
+    </div>
+  )
+}
+
+function Alphabet({ items }: { items: { letter: string; name: string }[] }) {
+  const [active, setActive] = useState<string | null>(null)
+  return (
+    <div className="mb-4 grid grid-cols-7 gap-1.5 sm:grid-cols-9">
+      {items.map((it) => (
+        <button
+          key={it.letter}
+          onClick={() => { setActive(active === it.letter ? null : it.letter); playTap() }}
+          className={`rounded border px-1 py-2 text-center transition ${active === it.letter ? 'border-nw bg-nw-soft' : 'border-neutral-200 hover:border-nw/60'}`}
+        >
+          <span className="block text-[15px] font-semibold leading-none text-nw">{it.letter}</span>
+          <span className="mt-1 block text-[10.5px] uppercase tracking-wide text-neutral-500">{it.name}</span>
+        </button>
+      ))}
+    </div>
+  )
+}
+
 export function Exercise({
   block, state, setState, checked, onPlay,
 }: {
@@ -234,6 +271,10 @@ function BodyView({ body, state, setState, checked, onPlay }: { body: Body; stat
       return <Match pairs={body.pairs} options={body.options} value={state ?? {}} onChange={setState} checked={checked} />
     case 'gaps':
       return <Gaps items={body.items} values={state ?? {}} onChange={setState} checked={checked} />
+    case 'numbers':
+      return <Numbers items={body.items} />
+    case 'alphabet':
+      return <Alphabet items={body.items} />
     case 'play':
       return (
         <button onClick={() => onPlay(body.audio)} className="mb-3 rounded-md bg-nw px-3 py-1.5 text-sm text-white">
