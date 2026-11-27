@@ -35,6 +35,8 @@ export const p150: ScanPage = {
     { id: 'w25', x: 178, y: 1583, w: 42, h: 31, text: 'c', ar: 'ج' },
     { id: 'w26', x: 220, y: 1585, w: 890, h: 31, text: 'Welches Gedicht gefällt Ihnen besser? Warum? Tragen Sie das Gedicht vor.', ar: 'أنهي قصيدة عجبتكم أكتر؟ ليه؟ ألقوا القصيدة.' },
     { id: 'w27', x: 92, y: 1686, w: 362, h: 31, text: '150 einhundertfünfzig', ar: '١٥٠ مية وخمسين' },
+    { id: 'ic7a', x: 60, y: 200, w: 38, h: 32, text: '🔊', ar: 'صوت' },
+    { id: 'tr7a', x: 62, y: 243, w: 66, h: 22, text: '2.58-59', ar: 'المسارات 2.58-59' },
   ],
   audio: [
   ],
