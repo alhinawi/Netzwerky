@@ -578,6 +578,28 @@ export default function ScanReader({
                 </button>
               )
             }
+            if (f.kind === 'select' && f.options?.length) {
+              return (
+                <select
+                  key={f.id}
+                  value={answers[f.id] || ''}
+                  onChange={(e) => save(f.id, e.target.value)}
+                  onClick={(e) => e.stopPropagation()}
+                  aria-label={f.label || f.id}
+                  className={`absolute rounded-sm bg-white/90 px-0.5 text-center text-[clamp(9px,1.35vw,17px)] outline-none focus:z-20 ${
+                    status === undefined
+                      ? 'border-b-2 border-dashed border-nw/60'
+                      : status
+                        ? 'border-b-2 border-emerald-600 bg-emerald-50 text-emerald-800'
+                        : 'border-b-2 border-rose-600 bg-rose-50 text-rose-800'
+                  }`}
+                  style={{ ...boxStyle(f), minHeight: 22 }}
+                >
+                  <option value="">—</option>
+                  {f.options.map((o) => (<option key={o} value={o}>{o}</option>))}
+                </select>
+              )
+            }
             return (
               <input
                 key={f.id}

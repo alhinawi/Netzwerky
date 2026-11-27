@@ -55,7 +55,14 @@ export const p92: ScanPage = {
   ],
   audio: [
   ],
-  fields: [],
+  fields: [
+    { id: 'f1', group: '3a', x: 208, y: 275, w: 56, h: 26, answer: 'C', label: '3a 1' },
+    { id: 'f2', group: '3a', x: 208, y: 313, w: 56, h: 26, answer: 'B', label: '3a 2' },
+    { id: 'f3', group: '3a', x: 208, y: 365, w: 56, h: 26, answer: 'C', label: '3a 3' },
+    { id: 'f4', group: '3a', x: 208, y: 403, w: 56, h: 26, answer: 'A', label: '3a 4' },
+    { id: 'f5', group: '3a', x: 208, y: 450, w: 56, h: 26, answer: 'B', label: '3a 5' },
+    { id: 'f6', group: '3a', x: 208, y: 495, w: 56, h: 26, answer: 'A', label: '3a 6' },
+  ],
   matchings: [],
   patches: [],
   sentences: [

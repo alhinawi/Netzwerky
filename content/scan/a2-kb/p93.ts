@@ -64,7 +64,12 @@ export const p93: ScanPage = {
   ],
   audio: [
   ],
-  fields: [],
+  fields: [
+    { id: 'f1', group: '4a', x: 162, y: 201, w: 56, h: 26, answer: 'C', label: '4a ka_otin13' },
+    { id: 'f2', group: '4a', x: 165, y: 378, w: 56, h: 26, answer: 'A', label: '4a Lernhelfer' },
+    { id: 'f3', group: '4a', x: 168, y: 545, w: 56, h: 26, answer: 'D', label: '4a Erikson123' },
+    { id: 'f4', group: '4a', x: 170, y: 745, w: 56, h: 26, answer: 'B', label: '4a eule93' },
+  ],
   matchings: [],
   patches: [],
   sentences: [
