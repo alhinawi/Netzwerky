@@ -175,7 +175,29 @@ export default function ScanReader({
     let okCount = 0
     let answered = 0
     let open = 0
+    // richtig/falsch toggles come in pairs and the key marks the box that has to
+    // be ticked, so the pair is graded as one answer, not each box on its own
+    const pairs = new Map<string, typeof page.fields>()
     for (const f of page.fields) {
+      if (f.kind !== 'check') continue
+      const key = (f.label || f.id).replace(/\s*(richtig|falsch)\s*$/i, '')
+      pairs.set(key, [...(pairs.get(key) ?? []), f])
+    }
+    for (const members of pairs.values()) {
+      const keyed = members.find((m) => m.answer === 'x')
+      const ticked = members.filter((m) => (answers[m.id] || '') === 'x')
+      if (ticked.length === 0) { open++; continue }
+      if (keyed && ticked.length === 1 && ticked[0].id === keyed.id) {
+        nextRes[keyed.id] = true
+        okCount++
+        answered++
+      } else {
+        for (const t of ticked) nextRes[t.id] = false
+        answered++
+      }
+    }
+    for (const f of page.fields) {
+      if (f.kind === 'check') continue
       // a field without an official answer is not judged, only kept as typed
       if (!f.answer) continue
       const given = answers[f.id] || ''
