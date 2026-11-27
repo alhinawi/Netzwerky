@@ -146,7 +146,7 @@ export default function ScanReader({
           onClick={() => setActiveWord(null)}
         >
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src={page.image} alt={`Netzwerk neu A1, Seite ${page.printed}`} className="pointer-events-none absolute inset-0 h-full w-full" draggable={false} />
+          <img src={`${page.image}?v=2`} alt={`Netzwerk neu A1, Seite ${page.printed}`} className="pointer-events-none absolute inset-0 h-full w-full" draggable={false} />
 
           {(page.patches ?? []).map((b, i) => (
             <div key={`patch-${i}`} className="pointer-events-none absolute bg-white" style={boxStyle(b)} />
