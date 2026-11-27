@@ -357,6 +357,8 @@ export default function ScanReader({
             /* eslint-disable-next-line @next/next/no-img-element */
             <img src={under.image} alt="" aria-hidden className="turn-under pointer-events-none absolute inset-0 h-full w-full" draggable={false} />
           )}
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src={`${webBase}-tiny.webp`} alt="" aria-hidden className="pointer-events-none absolute inset-0 h-full w-full object-cover blur-[6px] scale-[1.03]" draggable={false} />
           <picture>
             <source
               type="image/webp"
