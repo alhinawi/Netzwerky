@@ -62,13 +62,6 @@ export default function ScanReader({
   const [duration, setDuration] = useState(0)
   const [spoken, setSpoken] = useState<string | null>(null)
   const [askClear, setAskClear] = useState(false)
-  type Field = { id: string; x: number; y: number; text: string }
-  const [fields, setFields] = useState<Record<string, Field[]>>(() => {
-    if (typeof window === 'undefined') return {}
-    try { return JSON.parse(localStorage.getItem('nw-fields') || '{}') } catch { return {} }
-  })
-  const [answerMode, setAnswerMode] = useState(false)
-  const [checked, setChecked] = useState(false)
   const [debug, setDebug] = useState(false)
   const [showWords, setShowWords] = useState(true)
   const [paused, setPaused] = useState(false)
@@ -208,10 +201,6 @@ export default function ScanReader({
     setFb(st.feedback)
   }, [])
 
-  useEffect(() => {
-    try { localStorage.setItem('nw-fields', JSON.stringify(fields)) } catch {}
-  }, [fields])
-
   // Clear the turn class once the animation has played.
   useEffect(() => {
     if (flip === 'none') return
@@ -252,23 +241,6 @@ export default function ScanReader({
   }
   const audioBase = `/audio/${level.toLowerCase()}/kb`
 
-  const fieldKey = `${page.book}:${page.printed}`
-  const pageFields = fields[fieldKey] ?? []
-  const norm = (t: string) => t.toLowerCase().replace(/[^a-zäöüß0-9 ]/g, '').trim()
-  const fieldOk = (text: string) => {
-    const n = norm(text)
-    if (!n) return false
-    if (page.words.some((w) => norm(w.text) === n)) return true
-    return (page.sentences ?? []).some((x) => norm(x.text).includes(n))
-  }
-  const addField = (e: React.MouseEvent<HTMLDivElement>) => {
-    const el = e.currentTarget.getBoundingClientRect()
-    const x = ((e.clientX - el.left) / el.width) * W
-    const y = ((e.clientY - el.top) / el.height) * H
-    const id = `${Date.now()}`
-    setFields((f) => ({ ...f, [fieldKey]: [...(f[fieldKey] ?? []), { id, x, y, text: '' }] }))
-    setChecked(false)
-  }
   const W = page.width
   const H = page.height
   // phone-sized webp variant (900px wide) next to the full-size scan
@@ -364,7 +336,7 @@ export default function ScanReader({
         <div
           className={`relative mx-auto select-none bg-white ${shake ? 'shake' : ''} ${flip === 'next' ? 'turn-next' : flip === 'prev' ? 'turn-prev' : 'fade-in'}`}
           style={{ width: `${zoom * 100}%`, aspectRatio: `${W} / ${H}` }}
-          onClick={(e) => { setActiveWord(null); if (answerMode) addField(e) }}
+          onClick={() => setActiveWord(null)}
           onTouchStart={(e) => { const t = e.touches[0]; touch.current = { x: t.clientX, y: t.clientY } }}
           onTouchEnd={(e) => {
             const start = touch.current
@@ -418,31 +390,10 @@ export default function ScanReader({
           {showWords && page.words.map((w) => (
             <button
               key={w.id}
-              onClick={(e) => {
-                e.stopPropagation()
-                if (answerMode) {
-                  const id = `${Date.now()}`
-                  setFields((f) => ({ ...f, [fieldKey]: [...(f[fieldKey] ?? []), { id, x: w.x, y: w.y + w.h * 0.55, text: '' }] }))
-                  setChecked(false)
-                  return
-                }
-                setActiveWord(activeWord === w.id ? null : w.id); playTap()
-              }}
+              onClick={(e) => { e.stopPropagation(); setActiveWord(activeWord === w.id ? null : w.id); playTap() }}
               className={`absolute rounded-sm transition ${activeWord === w.id ? 'bg-amber-200/60 ring-2 ring-amber-400' : 'hover:bg-amber-100/50'}`}
               style={boxStyle(w)}
               aria-label={`${w.text} — Bedeutung`}
-            />
-          ))}
-
-          {pageFields.map((f) => (
-            <input
-              key={f.id}
-              value={f.text}
-              onChange={(e) => { const v = e.target.value; setFields((all) => ({ ...all, [fieldKey]: (all[fieldKey] ?? []).map((x) => x.id === f.id ? { ...x, text: v } : x) })); setChecked(false) }}
-              onClick={(e) => e.stopPropagation()}
-              placeholder="…"
-              style={{ left: pct(f.x, W), top: pct(f.y, H), width: pct(W * 0.3, W) }}
-              className={`absolute z-10 rounded border bg-white/95 px-1 py-0.5 text-[12px] leading-tight outline-none ${checked ? (fieldOk(f.text) ? 'border-emerald-500 ring-1 ring-emerald-400' : 'border-red-500 ring-1 ring-red-400') : 'border-dashed border-neutral-400'}`}
             />
           ))}
 
@@ -611,14 +562,10 @@ export default function ScanReader({
             <button onClick={() => { setShowWords(true); setTab(tab === 'word' ? 'sentence' : 'word'); setActiveWord(null) }}
               aria-pressed={tab === 'sentence'} aria-label={tab === 'word' ? 'Wortmodus, tippen fuer Satz' : 'Satzmodus, tippen fuer Wort'}
               className={`h-9 shrink-0 rounded-md border px-2.5 text-[13px] ${tab === 'sentence' ? 'border-nw bg-nw text-white' : 'border-neutral-300 text-neutral-600'}`}>{tab === 'word' ? 'Word' : 'Sentence'}</button>
-            <button onClick={() => { setAnswerMode((v) => !v); setActiveWord(null) }} aria-pressed={answerMode} aria-label="Antwortfeld setzen"
-              className={`grid h-9 w-9 shrink-0 place-items-center rounded-md border ${answerMode ? 'border-nw bg-nw text-white' : 'border-neutral-300 text-neutral-500'}`}>
-              <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="1.7"><path d="M4 20h4l10-10-4-4L4 16z" strokeLinejoin="round" /><path d="M14 6l4 4" strokeLinecap="round" /></svg>
-            </button>
-            {pageFields.length > 0 && (
-              <button onClick={() => setChecked(true)} aria-label="Prüfen" className="h-9 shrink-0 rounded-md border border-nw bg-nw px-2.5 text-[13px] font-semibold text-white">Prüfen</button>
+            {(page.fields.length > 0 || page.matchings.length > 0) && (
+              <button onClick={() => check()} aria-label="Prüfen" className="h-9 shrink-0 rounded-md border border-nw bg-nw px-2.5 text-[13px] font-semibold text-white">Prüfen</button>
             )}
-            <button onClick={() => { setFields((f) => ({ ...f, [fieldKey]: [] })); setChecked(false); setAskClear(false) }} aria-label="Zurücksetzen" className="grid h-9 w-9 shrink-0 place-items-center rounded-md border border-neutral-300 text-neutral-500">
+            <button onClick={() => { setAnswers({}); setResults({}); setAskClear(false) }} aria-label="Zurücksetzen" className="grid h-9 w-9 shrink-0 place-items-center rounded-md border border-neutral-300 text-neutral-500">
               <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="1.7"><path d="M4 10a8 8 0 1 1 2.3 6.3" strokeLinecap="round" /><path d="M4 5v5h5" strokeLinecap="round" strokeLinejoin="round" /></svg>
             </button>
           </div>
