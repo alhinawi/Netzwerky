@@ -193,7 +193,7 @@ export default function ScanReader({
   const level = (page.book.split('-')[0] || 'a1').toUpperCase()
   // Plattform pages carry a half chapter (6.5 = Plattform 2, 9.5 = Plattform 3)
   const chapterLabel = (n: number) => {
-    const plat: Record<string, string> = { 'a2-kb:6.5': 'Plattform 2', 'a2-kb:9.5': 'Plattform 3', 'a2-kb:12.5': 'Plattform 4', 'a1-kb:3': 'Plattform 1' }
+    const plat: Record<string, string> = { 'a2-kb:6.5': 'Plattform 2', 'a2-kb:9.5': 'Plattform 3', 'a2-kb:12.5': 'Plattform 4', 'a2-kb:13': 'Anhang', 'a1-kb:0': 'Anhang', 'a1-kb:3': 'Plattform 1' }
     return plat[`${page.book}:${n}`] ?? `K${n}`
   }
   const audioBase = `/audio/${level.toLowerCase()}/kb`
