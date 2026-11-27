@@ -297,7 +297,7 @@ export default function ScanReader({
             <button onClick={() => setZoom((z) => Math.min(3, +(z + 0.25).toFixed(2)))} aria-label="Vergrößern" className="rounded px-1.5 py-1 text-neutral-600">+</button>
             <button onClick={() => setZoom(1)} className={`ml-1 whitespace-nowrap rounded-md border px-2 py-1 ${zoom === 1 ? 'border-nw bg-nw text-white' : 'border-neutral-300 text-neutral-600'}`}>Fit</button>
             <a href={page.image} target="_blank" rel="noreferrer" aria-label="Original" className="ml-1 whitespace-nowrap rounded-md border border-neutral-300 px-2 py-1 text-neutral-600">
-              <span className="hidden sm:inline">Original </span>↗
+              Original ↗
             </a>
           </div>
         </div>
@@ -427,9 +427,15 @@ export default function ScanReader({
               <div className="ar mt-1 text-[13px] leading-snug text-amber-200">{popupAr}</div>
               <button
                 onClick={() => speak(popupText)}
-                className={`mt-2 flex items-center gap-1 rounded-md px-2 py-1 text-[12px] font-semibold ${spoken === popupText ? 'bg-emerald-600' : 'bg-white/15 hover:bg-white/25'}`}
+                aria-label="اسمع"
+                title="اسمع"
+                className={`mt-2 grid h-9 w-9 place-items-center rounded-full ${spoken === popupText ? 'bg-emerald-600 text-white' : 'bg-white/15 text-white hover:bg-white/25'}`}
               >
-                ♫ اسمع
+                <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="1.7">
+                  <path d="M4 9.5h3l4.5-3.5v12L7 14.5H4z" strokeLinejoin="round" />
+                  <path d="M15.5 9a4 4 0 0 1 0 6" strokeLinecap="round" />
+                  <path d="M18 6.5a7.5 7.5 0 0 1 0 11" strokeLinecap="round" />
+                </svg>
               </button>
             </div>
           )}
