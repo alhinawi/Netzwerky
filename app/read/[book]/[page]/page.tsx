@@ -24,6 +24,7 @@ export default async function Page({ params }: { params: Promise<{ book: string;
       total={numbers.length}
       pages={numbers}
       chapters={chapters}
+      pageChapters={pagesOf(book).map((p) => ({ printed: p.printed, chapter: p.chapter }))}
       prev={numbers[i - 1]}
       next={numbers[i + 1]}
     />
