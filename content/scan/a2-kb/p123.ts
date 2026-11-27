@@ -104,7 +104,16 @@ export const p123: ScanPage = {
   ],
   audio: [
   ],
-  fields: [],
+  fields: [
+    { id: 'fa0', group: '12b', x: 681, y: 1114, w: 22, h: 22, answer: 'x', label: '12b 1 Text A', kind: 'check' },
+    { id: 'fb0', group: '12b', x: 769, y: 1114, w: 22, h: 22, answer: '', label: '12b 1 Text B', kind: 'check' },
+    { id: 'fa1', group: '12b', x: 681, y: 1143, w: 22, h: 22, answer: 'x', label: '12b 2 Text A', kind: 'check' },
+    { id: 'fb1', group: '12b', x: 769, y: 1143, w: 22, h: 22, answer: '', label: '12b 2 Text B', kind: 'check' },
+    { id: 'fa2', group: '12b', x: 681, y: 1170, w: 22, h: 22, answer: 'x', label: '12b 3 Text A', kind: 'check' },
+    { id: 'fb2', group: '12b', x: 769, y: 1170, w: 22, h: 22, answer: '', label: '12b 3 Text B', kind: 'check' },
+    { id: 'fa3', group: '12b', x: 681, y: 1198, w: 22, h: 22, answer: 'x', label: '12b 4 Text A', kind: 'check' },
+    { id: 'fb3', group: '12b', x: 769, y: 1198, w: 22, h: 22, answer: '', label: '12b 4 Text B', kind: 'check' },
+  ],
   matchings: [],
   patches: [],
   sentences: [
