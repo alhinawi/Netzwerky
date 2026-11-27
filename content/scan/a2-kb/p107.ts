@@ -66,7 +66,14 @@ export const p107: ScanPage = {
   ],
   audio: [
   ],
-  fields: [],
+  fields: [
+    { id: 'f1', group: '13a', x: 151, y: 1178, w: 22, h: 24, label: '13a 2a', kind: 'check' },
+    { id: 'f2', group: '13a', x: 151, y: 1207, w: 22, h: 24, label: '13a 2b', kind: 'check' },
+    { id: 'f3', group: '13a', x: 151, y: 1237, w: 22, h: 24, answer: 'x', label: '13a 2c', kind: 'check' },
+    { id: 'f4', group: '13a', x: 151, y: 1338, w: 22, h: 24, label: '13a 3a', kind: 'check' },
+    { id: 'f5', group: '13a', x: 151, y: 1367, w: 22, h: 24, label: '13a 3b', kind: 'check' },
+    { id: 'f6', group: '13a', x: 151, y: 1396, w: 22, h: 24, answer: 'x', label: '13a 3c', kind: 'check' },
+  ],
   matchings: [],
   patches: [],
   sentences: [
