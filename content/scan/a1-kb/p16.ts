@@ -46,12 +46,7 @@ export const p16: ScanPage = {
     { id: 'b4', x: 393, y: 1496, w: 355, h: 26, text: '4. Ah, du bist neu hier. Ich bin Luca.', ar: '٤. آه، انت جديد هنا. أنا لوكا.' },
     { id: 'b5', x: 208, y: 1554, w: 285, h: 26, text: '5. Und wie ist deine Nummer?', ar: '٥. ورقمك إيه؟' },
   ],
-  audio: [
-    { id: 'a1', x: 72, y: 224, w: 48, h: 34, src: ['NWn_A1_KB_Audio_1-004.mp3'], label: 'Szene 1 hören (1.4)' },
-    { id: 'a2', x: 72, y: 538, w: 48, h: 34, src: ['NWn_A1_KB_Audio_1-005.mp3'], label: 'Szene 2 hören (1.5)' },
-    { id: 'a3', x: 72, y: 792, w: 48, h: 34, src: ['NWn_A1_KB_Audio_1-006.mp3'], label: 'Szene 3 hören (1.6)' },
-    { id: 'a4', x: 72, y: 1054, w: 62, h: 34, src: ['NWn_A1_KB_Audio_1-004.mp3', 'NWn_A1_KB_Audio_1-005.mp3', 'NWn_A1_KB_Audio_1-006.mp3'], label: 'Alle drei Szenen hören (1.4–1.6)' },
-  ],
+  audio: [],
   fields: [],
   matchings: [],
   patches: [],
