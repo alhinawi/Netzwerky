@@ -505,14 +505,14 @@ export default function ScanReader({
                 aria-label={f.label || f.id}
                 autoComplete="off"
                 spellCheck={false}
-                className={`absolute rounded-sm bg-white/85 px-1 text-center text-[clamp(9px,1.35vw,17px)] outline-none transition ${
+                className={`absolute rounded-sm bg-white/85 px-1 text-center text-[clamp(9px,1.35vw,17px)] outline-none transition focus:z-20 focus:min-w-[7.5rem] focus:bg-white ${
                   status === undefined
                     ? 'border-b-2 border-dashed border-nw/60 focus:border-nw focus:bg-white'
                     : status
                       ? 'border-b-2 border-emerald-600 bg-emerald-50 text-emerald-800'
                       : 'border-b-2 border-rose-600 bg-rose-50 text-rose-800'
                 }`}
-                style={boxStyle(f)}
+                style={{ ...boxStyle(f), minHeight: 22 }}
               />
             )
           })}
