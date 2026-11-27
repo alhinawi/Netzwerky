@@ -394,7 +394,7 @@ export default function ScanReader({
   }, [layout, pages, page.printed])
 
   return (
-    <div className="pb-44">
+    <div className="overflow-x-hidden pb-44">
       <div className="sticky top-0 z-30 border-b border-neutral-200 bg-white/95 backdrop-blur">
         <div className="mx-auto flex max-w-[1180px] items-center gap-2 px-3 py-2">
           <div className="flex shrink-0 items-center gap-2">
@@ -472,7 +472,7 @@ export default function ScanReader({
       ) : (
       <div className="overflow-auto bg-[#f0eeec] paper" ref={wrap}>
         <div
-          className={`relative mx-auto select-none bg-white ${shake ? 'shake' : ''} ${flip === 'next' ? 'turn-next' : flip === 'prev' ? 'turn-prev' : 'fade-in'}`}
+          className={`relative mx-auto select-none overflow-hidden bg-white ${shake ? 'shake' : ''} ${flip === 'next' ? 'turn-next' : flip === 'prev' ? 'turn-prev' : 'fade-in'}`}
           style={{ width: `${zoom * 100}%`, aspectRatio: `${W} / ${H}` }}
           onClick={() => setActiveWord(null)}
           onTouchStart={(e) => { const t = e.touches[0]; touch.current = { x: t.clientX, y: t.clientY } }}
@@ -723,8 +723,8 @@ export default function ScanReader({
           </div>
         </div>
         <div className="border-t border-neutral-200">
-          <div className="mx-auto flex max-w-[1180px] items-center justify-between gap-1 px-1.5 py-1.5 sm:px-2">
-            <button onClick={() => setProfileOpen(true)} aria-label="Profil" className="grid h-9 w-9 shrink-0 place-items-center rounded-full border border-neutral-300 text-neutral-500">
+          <div className="mx-auto flex max-w-[1180px] flex-nowrap items-center justify-between gap-1 px-1.5 py-1.5 sm:px-2">
+            <button onClick={() => setProfileOpen(true)} aria-label="Profil" className="grid h-8 w-8 shrink-0 place-items-center rounded-full border border-neutral-300 text-neutral-500 sm:h-9 sm:w-9">
               <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="1.7"><circle cx="12" cy="8.5" r="3.2" /><path d="M5.5 19c1.2-3.2 3.6-4.6 6.5-4.6s5.3 1.4 6.5 4.6" strokeLinecap="round" /></svg>
             </button>
             <button
@@ -745,7 +745,7 @@ export default function ScanReader({
               onClick={() => setPagesOpen((v) => !v)}
               aria-label="Seite wählen"
               aria-expanded={pagesOpen}
-              className="flex w-[3.75rem] shrink-0 items-center justify-center gap-0.5 rounded-md border border-neutral-300 py-1.5 text-[13px] text-neutral-700"
+              className="flex w-[3.25rem] shrink-0 items-center justify-center gap-0.5 rounded-md border border-neutral-300 py-1.5 text-[12.5px] text-neutral-700 sm:w-[3.75rem] sm:text-[13px]"
             >
               {page.printed}
               <span className={`text-[9px] text-neutral-400 transition-transform ${pagesOpen ? 'rotate-180' : ''}`}>▴</span>
@@ -757,7 +757,7 @@ export default function ScanReader({
               aria-pressed={tab === 'sentence'} aria-label={tab === 'word' ? 'Wortmodus, tippen fuer Satz' : 'Satzmodus, tippen fuer Wort'}
               className={`h-9 min-w-0 flex-1 rounded-md border text-[13px] font-semibold ${tab === 'word' ? 'border-nw bg-nw text-white' : 'border-neutral-300 bg-white text-neutral-700'}`}>{tab === 'word' ? 'Word' : 'Sentence'}</button>
             {(page.fields.length > 0 || page.matchings.length > 0) && (
-              <button onClick={() => check()} aria-label="Prüfen" className="h-9 shrink-0 rounded-md border border-nw bg-nw px-2.5 text-[13px] font-semibold text-white">Prüfen</button>
+              <button onClick={() => check()} aria-label="Prüfen" className="h-8 shrink-0 rounded-md border border-nw bg-nw px-2 text-[12.5px] font-semibold text-white sm:h-9 sm:px-2.5 sm:text-[13px]">Prüfen</button>
             )}
             <button onClick={() => { setAnswers({}); setResults({}); setAskClear(false) }} aria-label="Zurücksetzen" className="grid h-9 w-9 shrink-0 place-items-center rounded-md border border-neutral-300 text-neutral-500">
               <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="1.7"><path d="M4 10a8 8 0 1 1 2.3 6.3" strokeLinecap="round" /><path d="M4 5v5h5" strokeLinecap="round" strokeLinejoin="round" /></svg>
