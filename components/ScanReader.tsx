@@ -36,8 +36,10 @@ export default function ScanReader({
   const router = useRouter()
   const [answers, setAnswers] = useState<Answers>({})
   const [results, setResults] = useState<Results>({})
-  /** one line of plain feedback under the page after Prüfen */
+  /** one line of plain feedback under the page */
   const [msg, setMsg] = useState<string | null>(null)
+  /** per exercise: how many answers were right, shown next to its check button */
+  const [scores, setScores] = useState<Record<string, { ok: number; answered: number; open: number }>>({})
   const [activeWord, setActiveWord] = useState<string | null>(null)
   const [tab, setTab] = useState<'word' | 'sentence'>('word')
   const [zoom, setZoom] = useState(1)
@@ -113,6 +115,7 @@ export default function ScanReader({
     }
     setResults({})
     setMsg(null)
+    setScores({})
     setActiveWord(null)
     setFlip('none')
     setAskClear(false)
@@ -170,15 +173,16 @@ export default function ScanReader({
     return ids
   }, [page])
 
-  const check = () => {
-    const nextRes: Results = {}
-    let okCount = 0
+  /** grade one set of fields and matchings: the same rules for the whole page and for a single exercise */
+  const grade = (fields: typeof page.fields, matchings: typeof page.matchings) => {
+    const res: Results = {}
+    let ok = 0
     let answered = 0
     let open = 0
     // richtig/falsch toggles come in pairs and the key marks the box that has to
     // be ticked, so the pair is graded as one answer, not each box on its own
     const pairs = new Map<string, typeof page.fields>()
-    for (const f of page.fields) {
+    for (const f of fields) {
       if (f.kind !== 'check') continue
       const key = (f.label || f.id).replace(/\s*(richtig|falsch)\s*$/i, '')
       pairs.set(key, [...(pairs.get(key) ?? []), f])
@@ -188,48 +192,46 @@ export default function ScanReader({
       const ticked = members.filter((m) => (answers[m.id] || '') === 'x')
       if (ticked.length === 0) { open++; continue }
       if (keyed && ticked.length === 1 && ticked[0].id === keyed.id) {
-        nextRes[keyed.id] = true
-        okCount++
+        res[keyed.id] = true
+        ok++
         answered++
       } else {
-        for (const t of ticked) nextRes[t.id] = false
+        for (const t of ticked) res[t.id] = false
         answered++
       }
     }
-    for (const f of page.fields) {
+    for (const f of fields) {
       if (f.kind === 'check') continue
-      // a field without an official answer is not judged, only kept as typed
       if (!f.answer) continue
       const given = answers[f.id] || ''
-      // nothing written yet: leave it neutral, it is not a wrong answer
       if (!given) { open++; continue }
-      const ok = f.answer.split('|').some((a) => norm(a) === norm(given))
-      nextRes[f.id] = ok
+      // a key like "2, 7, 9, 11" is a set: order, spacing and separators do not matter
+      const asSet = (v: string) => v.split(/[,;/\s-]+/).filter(Boolean).map((x) => x.toLowerCase()).sort().join(',')
+      const good = f.answer.split('|').some((a) => (a.includes(',') ? asSet(a) === asSet(given) : norm(a) === norm(given)))
+      res[f.id] = good
       answered++
-      if (ok) okCount++
+      if (good) ok++
     }
-    for (const m of page.matchings) {
+    for (const m of matchings) {
       m.left.forEach((_, i) => {
         const given = answers[`${m.id}-${i}`] || ''
         if (!given) { open++; return }
-        const ok = given === m.answers[i]
-        nextRes[`${m.id}-${i}`] = ok
+        const good = given === m.answers[i]
+        res[`${m.id}-${i}`] = good
         answered++
-        if (ok) okCount++
+        if (good) ok++
       })
     }
-    setResults(nextRes)
-    if (answered === 0) {
-      setMsg(`Noch nichts eingetragen – ${open} ${open === 1 ? 'Feld' : 'Felder'} offen`)
-      return
-    }
-    setMsg(`${okCount} von ${answered} richtig${open ? ` · ${open} offen` : ''}`)
-    if (okCount === answered) playCorrect()
-    else {
-      playWrong()
-      setShake(true)
-      window.setTimeout(() => setShake(false), 430)
-    }
+    return { res, ok, answered, open }
+  }
+
+  const checkGroup = (key: string, fields: typeof page.fields, matchings: typeof page.matchings) => {
+    const { res, ok, answered, open } = grade(fields, matchings)
+    setResults((prev) => ({ ...prev, ...res }))
+    setScores((prev) => ({ ...prev, [key]: { ok, answered, open } }))
+    if (answered === 0) return
+    if (ok === answered) playCorrect()
+    else playWrong()
   }
 
   const reset = () => {
@@ -353,6 +355,20 @@ export default function ScanReader({
     return plat[`${page.book}:${n}`] ?? `K${n}`
   }
   const audioBase = `/audio/${level.toLowerCase()}/kb`
+
+  /** one check button per exercise, positioned at that exercise's first field */
+  const exerciseGroups = useMemo(() => {
+    const map = new Map<string, { key: string; fields: typeof page.fields; matchings: typeof page.matchings; x: number; y: number }>()
+    const touch = (key: string, box: { x: number; y: number }) => {
+      const g = map.get(key)
+      if (!g) map.set(key, { key, fields: [], matchings: [], x: box.x, y: box.y })
+      else { g.x = Math.min(g.x, box.x); g.y = Math.min(g.y, box.y) }
+      return map.get(key)!
+    }
+    for (const f of page.fields) touch(f.group || f.id, f).fields.push(f)
+    for (const m of page.matchings) touch(m.group || m.id, m.left[0] ?? { x: 0, y: 0 }).matchings.push(m)
+    return [...map.values()]
+  }, [page])
 
   const W = page.width
   const H = page.height
@@ -505,6 +521,38 @@ export default function ScanReader({
               fetchPriority="high"
               draggable={false}
             />
+
+          {/* one check per exercise, in the right margin beside its first field */}
+          {exerciseGroups.map((g) => {
+            const sc = scores[g.key]
+            const done = sc && sc.answered > 0
+            const good = done && sc.ok === sc.answered
+            return (
+              <button
+                key={'chk-' + g.key}
+                onClick={(e) => { e.stopPropagation(); checkGroup(g.key, g.fields, g.matchings) }}
+                aria-label={`Aufgabe ${g.key} prüfen`}
+                className={`absolute z-20 grid place-items-center rounded-full border-2 ${done ? (good ? 'border-emerald-600 bg-emerald-600 text-white' : 'border-nw bg-nw text-white') : 'border-nw bg-white/95 text-nw'}`}
+                style={{ left: pct(W - 72, W), top: pct(g.y - 6, H), width: pct(64, W), height: pct(64, W) }}
+              >
+                <svg viewBox="0 0 24 24" className="h-[64%] w-[64%]" fill="none" stroke="currentColor" strokeWidth="3.4"><path d="M4.5 12.5l5 5 10-11" strokeLinecap="round" strokeLinejoin="round" /></svg>
+              </button>
+            )
+          })}
+          {exerciseGroups.map((g) => {
+            const sc = scores[g.key]
+            if (!sc || sc.answered === 0) return null
+            const good = sc.ok === sc.answered
+            return (
+              <span
+                key={'sc-' + g.key}
+                className={`pointer-events-none absolute z-20 rounded px-1 font-bold ${good ? 'bg-emerald-600 text-white' : 'bg-nw text-white'}`}
+                style={{ left: pct(W - 140, W), top: pct(g.y + 12, H), fontSize: pct(30, W), lineHeight: 1.1 }}
+              >
+                {sc.ok}/{sc.answered}
+              </span>
+            )
+          })}
 
           {(page.patches ?? []).map((b, i) => (
             <div key={`patch-${i}`} className="pointer-events-none absolute bg-white" style={boxStyle(b)} />
@@ -756,9 +804,6 @@ export default function ScanReader({
             <button onClick={() => { setShowWords(true); setTab(tab === 'word' ? 'sentence' : 'word'); setActiveWord(null) }}
               aria-pressed={tab === 'sentence'} aria-label={tab === 'word' ? 'Wortmodus, tippen fuer Satz' : 'Satzmodus, tippen fuer Wort'}
               className={`h-9 min-w-0 flex-1 rounded-md border text-[13px] font-semibold ${tab === 'word' ? 'border-nw bg-nw text-white' : 'border-neutral-300 bg-white text-neutral-700'}`}>{tab === 'word' ? 'Word' : 'Sentence'}</button>
-            {(page.fields.length > 0 || page.matchings.length > 0) && (
-              <button onClick={() => check()} aria-label="Prüfen" className="h-8 shrink-0 rounded-md border border-nw bg-nw px-2 text-[12.5px] font-semibold text-white sm:h-9 sm:px-2.5 sm:text-[13px]">Prüfen</button>
-            )}
             <button onClick={() => { setAnswers({}); setResults({}); setAskClear(false) }} aria-label="Zurücksetzen" className="grid h-9 w-9 shrink-0 place-items-center rounded-md border border-neutral-300 text-neutral-500">
               <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="1.7"><path d="M4 10a8 8 0 1 1 2.3 6.3" strokeLinecap="round" /><path d="M4 5v5h5" strokeLinecap="round" strokeLinejoin="round" /></svg>
             </button>

@@ -86,7 +86,7 @@ export const p97: ScanPage = {
     { id: 'f7', group: '10a', x: 811, y: 379, w: 26, h: 24, answer: 'x', label: '10a 4 richtig', kind: 'check' },
     { id: 'f8', group: '10a', x: 915, y: 379, w: 26, h: 24, answer: '', label: '10a 4 falsch', kind: 'check' },
     { id: 'f9', group: '10b', x: 205, y: 975, w: 220, h: 26, answer: '2, 7, 9, 11', label: '10b Phase 1' },
-    { id: 'f10', group: '10b', x: 540, y: 978, w: 220, h: 26, answer: '3, 4, 8', label: '10b Phase 2 (1 printed)' },
+    { id: 'f10', group: '10b', x: 540, y: 978, w: 220, h: 26, answer: '1, 3, 4, 8|3, 4, 8', label: '10b Phase 2 (1 printed)' },
     { id: 'f11', group: '10b', x: 870, y: 975, w: 220, h: 26, answer: '5, 6, 10, 12', label: '10b Phase 3' },
   ],
   matchings: [],
