@@ -326,7 +326,7 @@ export default function ScanReader({
   const level = (page.book.split('-')[0] || 'a1').toUpperCase()
   // Plattform pages carry a half chapter (6.5 = Plattform 2, 9.5 = Plattform 3)
   const chapterLabel = (n: number) => {
-    const plat: Record<string, string> = { 'a2-kb:6.5': 'Plattform 2', 'a2-kb:9.5': 'Plattform 3', 'a2-kb:12.5': 'Plattform 4', 'a2-kb:13': 'Anhang', 'a1-kb:0': 'Anhang', 'a1-kb:3': 'Plattform 1', 'a2-kb:3.5': 'Plattform 1' }
+    const plat: Record<string, string> = { 'a2-kb:6.5': 'Plattform 2', 'a2-kb:9.5': 'Plattform 3', 'a2-kb:12.5': 'Plattform 4', 'a2-kb:13': 'Anhang', 'a1-kb:0': 'Anhang', 'a1-kb:3': 'Plattform 1', 'a2-kb:3.5': 'Plattform 1', 'a2-ab:0': 'Titel & Inhalt' }
     return plat[`${page.book}:${n}`] ?? `K${n}`
   }
   const audioBase = `/audio/${level.toLowerCase()}/kb`
@@ -474,7 +474,7 @@ export default function ScanReader({
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
               src={zoom > 1 ? `${webBase}.webp` : `${webBase}-900.webp`}
-              alt={`Netzwerk neu A1, Seite ${page.printed}`}
+              alt={`Netzwerk neu ${page.book.split('-')[0].toUpperCase()}, Seite ${page.printed}`}
               className="pointer-events-none absolute inset-0 h-full w-full"
               width={page.width}
               height={page.height}

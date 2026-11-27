@@ -57,7 +57,7 @@ export const books: Book[] = [
   { id: 'a1-kb', level: 'A1', kind: 'Kursbuch', title: 'Netzwerk neu A1 · Kursbuch', chapters: a1kb, ready: true, note: 'Kapitel 1 ist live — der Rest folgt Kapitel für Kapitel.' },
   { id: 'a1-ab', level: 'A1', kind: 'Arbeitsbuch', title: 'Netzwerk neu A1 · Arbeitsbuch', chapters: empty('A1'), ready: false },
   { id: 'a2-kb', level: 'A2', kind: 'Kursbuch', title: 'Netzwerk neu A2 · Kursbuch', chapters: empty('A2'), ready: true, note: 'Kapitel 6-8 zuerst, der Rest folgt.' },
-  { id: 'a2-ab', level: 'A2', kind: 'Arbeitsbuch', title: 'Netzwerk neu A2 · Arbeitsbuch', chapters: a2ab, ready: true, note: 'Kapitel 1–12 mit Prüfungstraining, alle Seiten live.', cover: '/covers/a2-ab.webp' },
+  { id: 'a2-ab', level: 'A2', kind: 'Arbeitsbuch', title: 'Netzwerk neu A2 · Arbeitsbuch', chapters: a2ab, ready: true, note: 'Reader – nur Seiten: Kapitel 1–12 und Prüfungstraining 1–4 sind lesbar, Lösungen, Wort-Taps und Audio fehlen noch.', cover: '/covers/a2-ab.webp' },
   { id: 'b1-kb', level: 'B1', kind: 'Kursbuch', title: 'Netzwerk neu B1 · Kursbuch', chapters: empty('B1'), ready: false },
   { id: 'b1-ab', level: 'B1', kind: 'Arbeitsbuch', title: 'Netzwerk neu B1 · Arbeitsbuch', chapters: empty('B1'), ready: false, cover: '/covers/b1-ab.webp' },
 ]
