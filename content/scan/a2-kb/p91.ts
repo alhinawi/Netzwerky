@@ -25,6 +25,8 @@ export const p91: ScanPage = {
     { id: 'q12', x: 42, y: 1206, w: 373, h: 28, text: 'Eigentlich ist es gar nicht so schwer!“', ar: 'في الحقيقة مش صعب أوي!“' },
     { id: 'qa', x: 407, y: 1226, w: 141, h: 28, text: '(Karl Eberl, 65)', ar: '(كارل إيبرل، 65 سنة)' },
     { id: 'n5', x: 651, y: 1211, w: 90, h: 28, text: 'Karl Eberl', ar: 'كارل إيبرل' },
+    { id: 'au', x: 36, y: 1404, w: 26, h: 26, text: '🔊', ar: 'صوت' },
+    { id: 'al', x: 37, y: 1446, w: 50, h: 16, text: '2.10-12', ar: '2.10-12' },
     { id: 't1c', x: 158, y: 1405, w: 865, h: 34, text: 'Und die anderen Personen? Hören Sie und ergänzen Sie die Informationen in der Tabelle.', ar: 'وبالنسبة للناس التانيين؟ اسمع وكمّل المعلومات في الجدول.' },
     { id: 'vid', x: 38, y: 1485, w: 38, h: 24, text: 'Video 20', ar: 'فيديو 20' },
     { id: 't2a', x: 158, y: 1470, w: 870, h: 40, text: 'Sprechen Sie zu zweit. Machen Sie Notizen und berichten Sie im Kurs von Ihrem Partner /', ar: 'اتكلموا اتنين اتنين. اكتبوا ملاحظات وقولوا للكورس عن شريككم /' },
@@ -36,7 +38,11 @@ export const p91: ScanPage = {
   ],
   audio: [
   ],
-  fields: [],
+  fields: [
+    { id: 'f1', group: '1', x: 445, y: 302, w: 32, h: 33, answer: '', label: '1 Foto C' },
+    { id: 'f2', group: '1', x: 986, y: 237, w: 31, h: 32, answer: '', label: '1 Foto D' },
+    { id: 'f3', group: '1', x: 1066, y: 817, w: 31, h: 32, answer: '', label: '1 Foto E' },
+  ],
   matchings: [],
   patches: [],
   sentences: [
@@ -46,11 +52,14 @@ export const p91: ScanPage = {
     { id: 's-qa', text: '(Karl Eberl, 65)', ar: '(كارل إيبرل، 65 سنة)', words: ['qa'] },
     { id: 's-n5', text: 'Karl Eberl', ar: 'كارل إيبرل', words: ['n5'] },
     { id: 's-t1c', text: 'Und die anderen Personen? Hören Sie und ergänzen Sie die Informationen in der Tabelle.', ar: 'وبالنسبة للناس التانيين؟ اسمع وكمّل المعلومات في الجدول.', words: ['t1c'] },
+    { id: 's-al', text: '2.10-12', ar: '2.10-12', words: ['al'] },
     { id: 's-t2', text: 'Sprechen Sie zu zweit. Machen Sie Notizen und berichten Sie im Kurs von Ihrem Partner / Ihrer Partnerin.', ar: 'اتكلموا اتنين اتنين. اكتبوا ملاحظات وقولوا للكورس عن شريككم / شريكتكم.', words: ['t2a', 't2b'] },
     { id: 's-b0', text: '- Was haben Sie wann gelernt (zwei Beispiele)?', ar: '- إيه اللي اتعلمته وإمتى (مثالين)؟', words: ['b0'] },
     { id: 's-b1', text: '- Wie haben Sie das gelernt?', ar: '- اتعلمته إزاي؟', words: ['b1'] },
     { id: 's-b2', text: '- Was war einfach? Was war schwierig?', ar: '- إيه كان سهل؟ وإيه كان صعب؟', words: ['b2'] },
     { id: 's-b3', text: '- Was möchten Sie gern noch lernen? Warum?', ar: '- إيه اللي عايز تتعلمه كمان؟ ليه؟', words: ['b3'] },
   ],
-  groups: [],
+  groups: [
+    { id: '1', label: '1', ar: 'اكتب جنب كل صورة الشخص بيتعلم إيه' },
+  ],
 }
