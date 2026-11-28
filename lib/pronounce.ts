@@ -1,4 +1,6 @@
-/** German pronunciation clips live in public/audio/de/, one mp3 per text.
+import { audioUrl } from './audio'
+
+/** German pronunciation clips live on the audio project under /audio/de/, one mp3 per text.
  *  The filename is a slug of the text; scripts/gen_audio.py builds the files
  *  with exactly this rule, so the reader can find a clip without a manifest. */
 export function slug(text: string): string {
@@ -15,4 +17,4 @@ export function slug(text: string): string {
   return s || 'x'
 }
 
-export const pronounceUrl = (text: string) => `/audio/de/${slug(text)}.mp3`
+export const pronounceUrl = (text: string) => audioUrl(`/audio/de/${slug(text)}.mp3`)

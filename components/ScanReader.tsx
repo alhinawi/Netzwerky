@@ -2,6 +2,7 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { useRouter } from 'next/navigation'
 import type { ScanPage } from '@/content/scan/types'
+import { audioUrl } from '@/lib/audio'
 import { playCorrect, playWrong, playTap, soundState, setSound, setFeedback } from '@/lib/sound'
 import { pronounceUrl } from '@/lib/pronounce'
 
@@ -139,7 +140,7 @@ export default function ScanReader({
     requestAnimationFrame(() => {
       const el = audio.current
       if (!el) return
-      el.src = `${audioBase}/${first}`
+      el.src = audioUrl(first, audioBase)
       void el.play().catch(() => {})
     })
   }
@@ -148,7 +149,7 @@ export default function ScanReader({
     const nxt = queue.current.shift()
     if (nxt && audio.current) {
       setPlaying(nxt)
-      audio.current.src = `${audioBase}/${nxt}`
+      audio.current.src = audioUrl(nxt, audioBase)
       void audio.current.play().catch(() => {})
     } else {
       setPlaying(null)
@@ -282,7 +283,7 @@ export default function ScanReader({
   const speakWord = (text: string, boxText: string) => {
     if (!sound) return
     const slug = (w: string) => w.toLowerCase().replace(/[^a-zäöüß0-9]+/g, '-').replace(/^-+|-+$/g, '')
-    const urls = [`/audio/de/${slug(text)}.mp3`, `/audio/de/${slug(boxText)}.mp3`]
+    const urls = [audioUrl(`/audio/de/${slug(text)}.mp3`), audioUrl(`/audio/de/${slug(boxText)}.mp3`)]
     const say = () => {
       try {
         const u = new SpeechSynthesisUtterance(text.replace(/[^A-Za-zÄÖÜäöüßß -]/g, ''))
