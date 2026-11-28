@@ -274,6 +274,19 @@ SPECS['/read/a2-kb/139/'] = [['2.53', 0.5, null, 'none'], ['2.54', 0.5, null, 'n
 SPECS['/read/a2-kb/142/'] = [['2.55', 0.5, null, 'none']]
 SPECS['/read/a2-kb/149/'] = [['2.56', 0.5, null, 'none'], ['2.57', 0.5, null, 'none']]
 
+// K5 round 3d: einund* unit-1 compounds + digit-word combo footers
+SPECS['/read/a2-kb/131/'] = [['einhunderteinunddreißig', 0.5, null, 'none']]
+SPECS['/read/a2-kb/141/'] = [['einhunderteinundvierzig', 0.5, null, 'none']]
+SPECS['/read/a2-kb/100/'] = [['100 einhundert', 0.5, null, 'none']]
+SPECS['/read/a2-kb/150/'] = [['150 einhundertfünfzig', 0.5, null, 'none']]
+SPECS['/read/a2-kb/40/'] = [['40 vierzig', 0.5, null, 'none']]
+SPECS['/read/a2-kb/21/'].push(['einundzwanzig', 0.5, null, 'none'])
+SPECS['/read/b1-kb/21/'] = [['einundzwanzig', 0.5, null, 'none']]
+SPECS['/read/b1-kb/31/'] = [['einunddreißig', 0.5, null, 'none']]
+SPECS['/read/b1-kb/41/'] = [['einundvierzig', 0.5, null, 'none']]
+SPECS['/read/b1-kb/51/'] = [['einundfünfzig', 0.5, null, 'none']]
+SPECS['/read/b1-kb/58/'] = [['58 achtundfünfzig', 0.5, null, 'none']]
+
 const cases = SPECS[location.pathname]
 if (!cases) return 'no spec for ' + location.pathname
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms))

@@ -9,7 +9,6 @@ export const p172: ScanPage = {
   height: 1755,
   words: [
     { id: 'w1', x: 202, y: 50, w: 362, h: 31, text: 'alphabetische Wortliste', ar: 'قايمة الكلمات الأبجدية' },
-    { id: 'w2', x: 70, y: 1687, w: 418, h: 31, text: '172 einhundertzweiundsiebzig', ar: '١٧٢ مية واتنين وسبعين' },
     { id: 'w3', x: 72, y: 139, w: 369, h: 25, text: 'Rufnummer, die, -n 12/3a ÜB', ar: 'رقم تليفون' },
     { id: 'w4', x: 72, y: 166, w: 369, h: 25, text: 'Ruhe, die (Sg.) 5/8b', ar: 'هدوء' },
     { id: 'w5', x: 72, y: 192, w: 369, h: 25, text: 'Runde, die, -n 3/11c', ar: 'جولة' },
@@ -172,7 +171,6 @@ export const p172: ScanPage = {
   groups: [],
   sentences: [
     { id: 's1', text: 'alphabetische Wortliste', ar: 'قايمة الكلمات الأبجدية', words: ['w1'] },
-    { id: 's2', text: '172 einhundertzweiundsiebzig', ar: '١٧٢ مية واتنين وسبعين', words: ['w2'] },
     { id: 's3', text: 'Rufnummer, die, -n 12/3a ÜB', ar: 'رقم تليفون', words: ['w3'] },
     { id: 's4', text: 'Ruhe, die (Sg.) 5/8b', ar: 'هدوء', words: ['w4'] },
     { id: 's5', text: 'Runde, die, -n 3/11c', ar: 'جولة', words: ['w5'] },

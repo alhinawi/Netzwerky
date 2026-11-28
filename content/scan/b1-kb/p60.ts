@@ -44,7 +44,6 @@ export const p60: ScanPage = {
     { id: 'b37', x: 172, y: 1479, w: 15, h: 21, text: "b", ar: "b" },
     { id: 'b38', x: 214, y: 1484, w: 935, h: 29, text: "Wie ist das Wetter in Ihrem Land? Welches Wetter mögen Sie besonders gern? Warum? Erzählen Sie.", ar: "الجو إيه في بلدكم؟ أنهي جو بتحبوه أكتر؟ ليه؟ احكوا." },
     { id: 'b39', x: 352, y: 1532, w: 645, h: 36, text: "Bei uns oft ... Ich mag ... besonders gern, weil", ar: "عندنا غالبًا ... أنا بحب ... جامد، لأن" },
-    { id: 'b40', x: 92, y: 1576, w: 109, h: 21, text: "60 sechzig", ar: "٦٠ ستين" },
     { id: 'b41', x: 645, y: 97, w: 351, h: 75, text: "Gut gesagt: Small Talk über das Wetter", ar: "كلام حلو: هزار خفيف عن الجو" },
     { id: 'b42', x: 909, y: 210, w: 256, h: 25, text: "Was für ein Wetter heute!", ar: "يا لهوي على الجو النهارده!" },
     { id: 'b43', x: 219, y: 1072, w: 400, h: 24, text: "Wetterbesserung ab: ________", ar: "تحسن الجو ابتداءً من: __" },

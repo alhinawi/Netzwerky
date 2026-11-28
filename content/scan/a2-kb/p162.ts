@@ -72,7 +72,6 @@ export const p162: ScanPage = {
     { id: 'w62', x: 520, y: 1531, w: 321, h: 56, text: 'Ohne Ihren Pass / Ohne ihn können Sie nicht reisen.', ar: 'من غير جواز سفركم / من غيره ماتقدروش تسافروا.' },
     { id: 'w63', x: 864, y: 1523, w: 335, h: 31, text: 'Mit wem fährt Laura?', ar: 'لورا بتسافر مع مين؟' },
     { id: 'w64', x: 864, y: 1554, w: 335, h: 70, text: 'Sie fährt mit einem Freund und einer Freundin / mit mir.', ar: 'هي بتسافر مع صاحب وصاحبة / معايا.' },
-    { id: 'w65', x: 98, y: 1688, w: 405, h: 31, text: '162 einhundertzweiundsechzig', ar: '١٦٢ مية واتنين وستين' },
   ],
   audio: [
   ],
@@ -144,7 +143,6 @@ export const p162: ScanPage = {
     { id: 's62', text: 'Ohne Ihren Pass / Ohne ihn können Sie nicht reisen.', ar: 'من غير جواز سفركم / من غيره ماتقدروش تسافروا.', words: ['w62'] },
     { id: 's63', text: 'Mit wem fährt Laura?', ar: 'لورا بتسافر مع مين؟', words: ['w63'] },
     { id: 's64', text: 'Sie fährt mit einem Freund und einer Freundin / mit mir.', ar: 'هي بتسافر مع صاحب وصاحبة / معايا.', words: ['w64'] },
-    { id: 's65', text: '162 einhundertzweiundsechzig', ar: '١٦٢ مية واتنين وستين', words: ['w65'] },
   ],
   patches: [
   ],

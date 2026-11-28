@@ -67,7 +67,6 @@ export const p114: ScanPage = {
   matchings: [],
   patches: [],
   sentences: [
-    { id: 's-t0', text: '3', ar: '3', words: ['t0'] },
     { id: 's-t1', text: 'Plattform', ar: 'منصة', words: ['t1'] },
     { id: 's-t2', text: 'Zu Fuß über die Alpen', ar: 'على الأقدام عبر جبال الألب', words: ['t2'] },
     { id: 's-t3', text: 'Oberstdorf', ar: 'أوبرشتدورف', words: ['t3'] },

@@ -75,7 +75,6 @@ export const p151: ScanPage = {
     { id: 's21', text: 'Sie ist schon sehr alt und nicht sehr schön, aber super bequem.', ar: 'هو قديم أوي ومش حلو أوي، بس مريح جداً.', words: ['w21'] },
     { id: 's22', text: 'c', ar: 'ج', words: ['w22'] },
     { id: 's23', text: 'Daheim bin ich, wenn ... Scheiben Sie drei Sätze.', ar: 'أنا في بيتي لما ... اكتبوا ٣ جمل. (مكتوب Scheiben في الكتاب كما هو)', words: ['w23'] },
-    { id: 's24', text: '9', ar: '٩', words: ['w24'] },
     { id: 's25', text: 'Welchen Text aus 7 und 8 finden Sie am interessantesten? Lesen Sie die Informationen über die', ar: 'أنهي نص من 7 و 8 شايفينه أمتع؟ اقروا المعلومات عن', words: ['w25'] },
     { id: 's26', text: 'Autoren. Recherchieren Sie ein anderes Gedicht oder einen anderen kurzen Text von „Ihrem“ Autor /', ar: 'المؤلفين. دوّروا على قصيدة تانية أو نص قصير تاني للمؤلف بتاعكم /', words: ['w26'] },
     { id: 's27', text: '„Ihrer“ Autorin und stellen Sie es/ihn im Kurs vor. Sagen Sie auch etwas über den Autor / die Autorin.', ar: 'المؤلفة بتاعتكم وقدّموه في الفصل. وقولوا كمان حاجة عن المؤلف/المؤلفة.', words: ['w27'] },

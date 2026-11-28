@@ -40,7 +40,6 @@ export const p148: ScanPage = {
     { id: 'w29', x: 238, y: 1553, w: 990, h: 31, text: 'Wie war das damals bei Ihnen? Schreiben Sie fünf Sätze zu den Satzteilen mit als und wenn in 3a.', ar: 'إزاي كان الحال زمان عندكم؟ اكتبوا ٥ جمل بأجزاء الجمل بـ als و wenn في 3a.' },
     { id: 'w30', x: 238, y: 1584, w: 990, h: 31, text: 'Tauschen Sie dann mit einem Partner / einer Partnerin und korrigieren Sie die Sätze.', ar: 'بعدين بدّلوا مع زميل/زميلة وصحّحوا الجمل.' },
     { id: 'w31', x: 238, y: 1635, w: 905, h: 31, text: 'Ich habe in Freiburg studiert, als ich meine beste Freundin kennengelernt habe.', ar: 'أنا درست في Freiburg لما قابلت أحسن صاحبة ليا.' },
-    { id: 'w32', x: 107, y: 1691, w: 424, h: 28, text: '148 einhundertachtundvierzig', ar: '١٤٨ مية وتمانية وأربعين' },
   ],
   audio: [
   ],
@@ -79,7 +78,6 @@ export const p148: ScanPage = {
     { id: 's29', text: 'Wie war das damals bei Ihnen? Schreiben Sie fünf Sätze zu den Satzteilen mit als und wenn in 3a.', ar: 'إزاي كان الحال زمان عندكم؟ اكتبوا ٥ جمل بأجزاء الجمل بـ als و wenn في 3a.', words: ['w29'] },
     { id: 's30', text: 'Tauschen Sie dann mit einem Partner / einer Partnerin und korrigieren Sie die Sätze.', ar: 'بعدين بدّلوا مع زميل/زميلة وصحّحوا الجمل.', words: ['w30'] },
     { id: 's31', text: 'Ich habe in Freiburg studiert, als ich meine beste Freundin kennengelernt habe.', ar: 'أنا درست في Freiburg لما قابلت أحسن صاحبة ليا.', words: ['w31'] },
-    { id: 's32', text: '148 einhundertachtundvierzig', ar: '١٤٨ مية وتمانية وأربعين', words: ['w32'] },
   ],
   patches: [
   ],

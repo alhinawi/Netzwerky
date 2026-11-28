@@ -64,7 +64,6 @@ export const p160: ScanPage = {
     { id: 'w54', x: 159, y: 1522, w: 850, h: 31, text: 'Die Antwort auf Fragen mit Was für ein/e hat meistens den unbestimmten Artikel:', ar: 'الإجابة على أسئلة Was für ein/e غالباً بتبقى بأداة التنكير:' },
     { id: 'w55', x: 181, y: 1554, w: 627, h: 31, text: 'Was für ein Filmprojekt möchten Sie gern mal übersetzen?', ar: 'أي نوع مشروع فيلم تحبوا تترجموه؟' },
     { id: 'w56', x: 181, y: 1584, w: 627, h: 31, text: 'Am liebsten eine romantische Komödie mit Bradley Cooper.', ar: 'الأفضل كوميديا رومانسية مع براد ليه كوبر.' },
-    { id: 'w57', x: 92, y: 1687, w: 404, h: 31, text: '160 einhundertsechzig', ar: '١٦٠ مية وستين' },
   ],
   audio: [
   ],
@@ -128,7 +127,6 @@ export const p160: ScanPage = {
     { id: 's54', text: 'Die Antwort auf Fragen mit Was für ein/e hat meistens den unbestimmten Artikel:', ar: 'الإجابة على أسئلة Was für ein/e غالباً بتبقى بأداة التنكير:', words: ['w54'] },
     { id: 's55', text: 'Was für ein Filmprojekt möchten Sie gern mal übersetzen?', ar: 'أي نوع مشروع فيلم تحبوا تترجموه؟', words: ['w55'] },
     { id: 's56', text: 'Am liebsten eine romantische Komödie mit Bradley Cooper.', ar: 'الأفضل كوميديا رومانسية مع براد ليه كوبر.', words: ['w56'] },
-    { id: 's57', text: '160 einhundertsechzig', ar: '١٦٠ مية وستين', words: ['w57'] },
   ],
   patches: [
   ],

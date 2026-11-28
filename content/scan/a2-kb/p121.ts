@@ -111,7 +111,6 @@ export const p121: ScanPage = {
     { id: 'v4', x: 142, y: 1598, w: 607, h: 22, text: '4. Vera hat in der Schule nicht so gut Französisch gesprochen.', ar: '4. فيرا ماكانتش بتتكلم فرنساوي كويس في المدرسة.' },
     { id: 'n9c', x: 100, y: 1654, w: 26, h: 28, text: 'c', ar: 'ج' },
     { id: 'c9', x: 144, y: 1648, w: 690, h: 20, text: 'Lesen Sie die Sätze in 9a und b laut und achten Sie auf die Betonung.', ar: 'اقرا الجمل في 9a و b بصوت عالي وانتبه للنبرة.' },
-    { id: 'pw', x: 872, y: 1700, w: 232, h: 13, text: 'einhunderteinundzwanzig', ar: 'مية وواحد وعشرين' },
   ],
   audio: [
   ],
@@ -216,7 +215,6 @@ export const p121: ScanPage = {
     { id: 's-v3', text: '3. Vera hat sich in Fribourg verirrt und musste nach dem Weg fragen.', ar: '3. فيرا تاهت في فريبورج واضطرت تسأل عن الطريق.', words: ['v3'] },
     { id: 's-v4', text: '4. Vera hat in der Schule nicht so gut Französisch gesprochen.', ar: '4. فيرا ماكانتش بتتكلم فرنساوي كويس في المدرسة.', words: ['v4'] },
     { id: 's-c9', text: 'Lesen Sie die Sätze in 9a und b laut und achten Sie auf die Betonung.', ar: 'اقرا الجمل في 9a و b بصوت عالي وانتبه للنبرة.', words: ['c9'] },
-    { id: 's-pw', text: 'einhunderteinundzwanzig', ar: 'مية وواحد وعشرين', words: ['pw'] },
   ],
   groups: [],
 }

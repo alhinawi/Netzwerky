@@ -71,7 +71,6 @@ export const p48: ScanPage = {
     { id: 'w60', x: 243, y: 1582, w: 732, h: 50, text: 'Keine Ahnung. Meine Schwester feiert auch. Wohin soll ich gehen? …', ar: 'معرفش. أختي كمان بتعمل حفلة. أروح فين؟ …' },
     { id: 'w61', x: 218, y: 1610, w: 717, h: 52, text: 'Vielen Dank für die Einladung. Leider müssen wir jetzt gehen. Also …', ar: 'شكراً أوي على الدعوة. للأسف لازم نمشي دلوقتي. يعني …' },
     { id: 'w62', x: 243, y: 1637, w: 262, h: 33, text: 'Schön, dass ihr da wart!', ar: 'حلو إنكم كنتوا هنا!' },
-    { id: 'w63', x: 88, y: 1690, w: 182, h: 26, text: '48 achtundvierzig', ar: '٤٨ ثمانية وأربعون' },
   ],
   audio: [
     { id: 'a1_32_78', x: 78, y: 582, w: 30, h: 28, src: ['NWn_A2_KB_Audio_1-032.mp3'], label: 'Aufgabe 5b (1.32)' },
@@ -149,7 +148,6 @@ export const p48: ScanPage = {
     { id: 's-w60', text: 'Keine Ahnung. Meine Schwester feiert auch. Wohin soll ich gehen? …', ar: 'معرفش. أختي كمان بتعمل حفلة. أروح فين؟ …', words: ['w60'] },
     { id: 's-w61', text: 'Vielen Dank für die Einladung. Leider müssen wir jetzt gehen. Also …', ar: 'شكراً أوي على الدعوة. للأسف لازم نمشي دلوقتي. يعني …', words: ['w61'] },
     { id: 's-w62', text: 'Schön, dass ihr da wart!', ar: 'حلو إنكم كنتوا هنا!', words: ['w62'] },
-    { id: 's-w63', text: '48 achtundvierzig', ar: '٤٨ ثمانية وأربعون', words: ['w63'] },
   ],
   groups: [],
 }

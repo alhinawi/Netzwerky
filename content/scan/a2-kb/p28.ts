@@ -42,7 +42,6 @@ export const p28: ScanPage = {
     { id: 'w32', x: 229, y: 1683, w: 560, h: 36, text: 'und notieren Sie. Was haben die beiden online gemacht?', ar: 'واكتبوا ملاحظات. الاتنين عملوا إيه أونلاين؟' },
     { id: 'w33', x: 822, y: 1671, w: 280, h: 39, text: 'Nora: Zeitung gelesen …', ar: 'نورا: قرت الجرنان …' },
     { id: 'w34', x: 821, y: 1703, w: 86, h: 26, text: 'Sven: …', ar: 'سفين: …' },
-    { id: 'w35', x: 100, y: 1733, w: 198, h: 26, text: '28 achtundzwanzig', ar: '٢٨ ثمانية وعشرين' },
   ],
   audio: [
     { id: 'a1_18_97', x: 97, y: 1660, w: 32, h: 30, src: ['NWn_A2_KB_Audio_1-018.mp3'], label: 'Aufgabe 2a (1.18)' },
@@ -96,7 +95,6 @@ export const p28: ScanPage = {
     { id: 's-w32', text: 'und notieren Sie. Was haben die beiden online gemacht?', ar: 'واكتبوا ملاحظات. الاتنين عملوا إيه أونلاين؟', words: ['w32'] },
     { id: 's-w33', text: 'Nora: Zeitung gelesen …', ar: 'نورا: قرت الجرنان …', words: ['w33'] },
     { id: 's-w34', text: 'Sven: …', ar: 'سفين: …', words: ['w34'] },
-    { id: 's-w35', text: '28 achtundzwanzig', ar: '٢٨ ثمانية وعشرين', words: ['w35'] },
   ],
   groups: [],
 }

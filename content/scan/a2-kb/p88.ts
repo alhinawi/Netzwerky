@@ -32,7 +32,6 @@ export const p88: ScanPage = {
     { id: 'w22', x: 180, y: 1300, w: 560, h: 80, text: 'c Bea, Luca und Anna treffen Max zu Hause und erzählen ihm, was passiert ist. Arbeiten Sie zu viert. Spielen Sie das Gespräch.', ar: 'ج بيا ولوقا وأننا بيقابلوا ماكس في البيت وبيحكوله اللي حصل. اشتغلوا في أربعة. مثّلوا المحادثة.' },
     { id: 'w23', x: 246, y: 1398, w: 450, h: 30, text: 'Bea und ich sind heute spazieren gegangen. ...', ar: 'أنا وبيا اتمشينا النهاردة. ...' },
     { id: 'w24', x: 181, y: 1478, w: 990, h: 58, text: 'd Wann sind Sie schon mal zu spät gekommen? Was sind typische Gründe, warum man zu spät kommt? Sprechen Sie im Kurs.', ar: 'د إمتى اتأخرتوا قبل كده؟ إيه الأسباب النمطية للتأخير؟ اتكلموا في الكورس.' },
-    { id: 'w25', x: 95, y: 1606, w: 190, h: 26, text: '88 achtundachtzig', ar: '٨٨ تمانية وتمانين' },
   ],
   audio: [
   ],
@@ -80,7 +79,6 @@ export const p88: ScanPage = {
     { id: 's22', text: 'c Bea, Luca und Anna treffen Max zu Hause und erzählen ihm, was passiert ist. Arbeiten Sie zu viert. Spielen Sie das Gespräch.', ar: 'ج بيا ولوقا وأننا بيقابلوا ماكس في البيت وبيحكوله اللي حصل. اشتغلوا في أربعة. مثّلوا المحادثة.', words: ['w22'] },
     { id: 's23', text: 'Bea und ich sind heute spazieren gegangen. ...', ar: 'أنا وبيا اتمشينا النهاردة. ...', words: ['w23'] },
     { id: 's24', text: 'd Wann sind Sie schon mal zu spät gekommen? Was sind typische Gründe, warum man zu spät kommt? Sprechen Sie im Kurs.', ar: 'د إمتى اتأخرتوا قبل كده؟ إيه الأسباب النمطية للتأخير؟ اتكلموا في الكورس.', words: ['w24'] },
-    { id: 's25', text: '88 achtundachtzig', ar: '٨٨ تمانية وتمانين', words: ['w25'] },
   ],
   patches: [
   ],

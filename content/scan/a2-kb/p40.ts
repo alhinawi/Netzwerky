@@ -62,7 +62,6 @@ export const p40: ScanPage = {
     { id: 'wr8', x: 730, y: 1570, w: 383, h: 28, text: 'eine gute/schlechte Note bekommen', ar: 'ياخد درجة كويسة/وحشة' },
     { id: 'e1', x: 270, y: 1608, w: 347, h: 32, text: 'Warum bist du zu spät gekommen?', ar: 'ليه اتأخرت؟' },
     { id: 'e2', x: 688, y: 1640, w: 452, h: 58, text: 'Weil der Bus nicht gefahren ist. Warum …?', ar: 'لأن الأتوبيس ما مشيش. ليه …؟' },
-    { id: 'pn', x: 98, y: 1686, w: 114, h: 26, text: '40 vierzig', ar: '٤٠ أربعين' },
   ],
   audio: [
   ],
@@ -105,7 +104,6 @@ export const p40: ScanPage = {
     { id: 's-wr8', text: 'eine gute/schlechte Note bekommen', ar: 'ياخد درجة كويسة/وحشة', words: ['wr8'] },
     { id: 's-e1', text: 'Warum bist du zu spät gekommen?', ar: 'ليه اتأخرت؟', words: ['e1'] },
     { id: 's-e2', text: 'Weil der Bus nicht gefahren ist. Warum …?', ar: 'لأن الأتوبيس ما مشيش. ليه …؟', words: ['e2'] },
-    { id: 's-pn', text: '40 vierzig', ar: '٤٠ أربعين', words: ['pn'] },
   ],
   groups: [],
 }

@@ -9,7 +9,6 @@ export const p170: ScanPage = {
   height: 1755,
   words: [
     { id: 'w1', x: 188, y: 47, w: 363, h: 31, text: 'alphabetische Wortliste', ar: 'قايمة الكلمات الأبجدية' },
-    { id: 'w2', x: 84, y: 1692, w: 419, h: 31, text: '170 einhundertsiebzig', ar: '١٧٠ مية وسبعين' },
     { id: 'w3', x: 59, y: 137, w: 384, h: 25, text: 'Konzertsaal, der, -säle 7/1a', ar: 'قاعة حفلات' },
     { id: 'w4', x: 59, y: 165, w: 384, h: 25, text: 'kopieren 3/1a', ar: 'ينسخ' },
     { id: 'w5', x: 59, y: 193, w: 384, h: 25, text: 'Kosename, der, -n 10/10c', ar: 'اسم دلع' },
@@ -173,7 +172,6 @@ export const p170: ScanPage = {
   groups: [],
   sentences: [
     { id: 's1', text: 'alphabetische Wortliste', ar: 'قايمة الكلمات الأبجدية', words: ['w1'] },
-    { id: 's2', text: '170 einhundertsiebzig', ar: '١٧٠ مية وسبعين', words: ['w2'] },
     { id: 's3', text: 'Konzertsaal, der, -säle 7/1a', ar: 'قاعة حفلات', words: ['w3'] },
     { id: 's4', text: 'kopieren 3/1a', ar: 'ينسخ', words: ['w4'] },
     { id: 's5', text: 'Kosename, der, -n 10/10c', ar: 'اسم دلع', words: ['w5'] },

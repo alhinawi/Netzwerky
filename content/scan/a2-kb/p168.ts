@@ -9,7 +9,6 @@ export const p168: ScanPage = {
   height: 1755,
   words: [
     { id: 'w1', x: 195, y: 50, w: 363, h: 28, text: 'alphabetische Wortliste', ar: 'قايمة الكلمات الأبجدية' },
-    { id: 'w2', x: 92, y: 1691, w: 418, h: 28, text: '168 einhundertachtundsechzig', ar: '١٦٨ مية وتمانية وستين' },
     { id: 'w3', x: 64, y: 141, w: 377, h: 25, text: 'Fernfahrerin, die, -nen 6/7a', ar: 'سواقة مسافات طويلة' },
     { id: 'w4', x: 64, y: 167, w: 377, h: 52, text: 'fest (1) (Oliver hat in der Firma kein festes Büro.) 6/13b', ar: 'ثابت' },
     { id: 'w5', x: 64, y: 222, w: 377, h: 53, text: 'fest (2) (Zum Wandern brauchen Sie feste Schuhe.) 9/12a', ar: 'متين' },
@@ -168,7 +167,6 @@ export const p168: ScanPage = {
   groups: [],
   sentences: [
     { id: 's1', text: 'alphabetische Wortliste', ar: 'قايمة الكلمات الأبجدية', words: ['w1'] },
-    { id: 's2', text: '168 einhundertachtundsechzig', ar: '١٦٨ مية وتمانية وستين', words: ['w2'] },
     { id: 's3', text: 'Fernfahrerin, die, -nen 6/7a', ar: 'سواقة مسافات طويلة', words: ['w3'] },
     { id: 's4', text: 'fest (1) (Oliver hat in der Firma kein festes Büro.) 6/13b', ar: 'ثابت', words: ['w4'] },
     { id: 's5', text: 'fest (2) (Zum Wandern brauchen Sie feste Schuhe.) 9/12a', ar: 'متين', words: ['w5'] },

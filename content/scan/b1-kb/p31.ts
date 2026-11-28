@@ -64,7 +64,6 @@ export const p31: ScanPage = {
     { id: 'b54', x: 605, y: 1438, w: 335, h: 24, text: '- Stadtfest begeisterte die Besucher', ar: 'مهرجان المدينة عجّب الزوار' },
     { id: 'b55', x: 175, y: 1485, w: 385, h: 26, text: 'Stadtfest begeisterte die Besucher', ar: 'مهرجان المدينة عجّب الزوار' },
     { id: 'b56', x: 175, y: 1512, w: 865, h: 28, text: 'Gestern fand das beliebte Stadtfest in der historischen Altstadt statt. Viele Besucher ...', ar: 'إمبارح مهرجان المدينة المحبوب اتعمل في المدينة القديمة التاريخية. زوار كتير ...' },
-    { id: 'b57', x: 974, y: 1581, w: 130, h: 20, text: 'einunddreißig', ar: 'واحد وتلاتين' },
   ],
   audio: [],
   fields: [],

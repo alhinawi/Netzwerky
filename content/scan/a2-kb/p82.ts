@@ -53,7 +53,6 @@ export const p82: ScanPage = {
     { id: 'w42', x: 173, y: 1466, w: 1010, h: 98, text: 'b Auf Reisen. Spielen Sie zu zweit. Jede/r schreibt drei W-Fragen auf verschiedene Zettel. Mischen Sie die Zettel. A zieht einen Zettel und bildet einen indirekten Fragesatz. B antwortet und zieht den nächsten Zettel.', ar: 'ب في السفر. العبوا في توأدة. كل واحد يكتب تلات أسئلة استفهام على ورق مختلف. اخلطوا الورق. A يسحب ورقة ويعمل سؤال غير مباشر. B يجاوب ويسحب الورقة اللي بعدها.' },
     { id: 'w43', x: 388, y: 1540, w: 225, h: 66, text: 'Könnten Sie mir sagen, wo der Bahnhof ist?', ar: 'ممكن تقولي محطة القطر فين؟' },
     { id: 'w44', x: 735, y: 1566, w: 255, h: 36, text: 'Das weiß ich leider nicht.', ar: 'للأسف مش عارف.' },
-    { id: 'w45', x: 92, y: 1623, w: 185, h: 28, text: '82 zweiundachtzig', ar: '٨٢ اتنين وتمانين' },
   ],
   audio: [],
   fields: [
@@ -113,7 +112,6 @@ export const p82: ScanPage = {
     { id: 's42', text: 'b Auf Reisen. Spielen Sie zu zweit. Jede/r schreibt drei W-Fragen auf verschiedene Zettel. Mischen Sie die Zettel. A zieht einen Zettel und bildet einen indirekten Fragesatz. B antwortet und zieht den nächsten Zettel.', ar: 'ب في السفر. العبوا في توأدة. كل واحد يكتب تلات أسئلة استفهام على ورق مختلف. اخلطوا الورق. A يسحب ورقة ويعمل سؤال غير مباشر. B يجاوب ويسحب الورقة اللي بعدها.', words: ['w42'] },
     { id: 's43', text: 'Könnten Sie mir sagen, wo der Bahnhof ist?', ar: 'ممكن تقولي محطة القطر فين؟', words: ['w43'] },
     { id: 's44', text: 'Das weiß ich leider nicht.', ar: 'للأسف مش عارف.', words: ['w44'] },
-    { id: 's45', text: '82 zweiundachtzig', ar: '٨٢ اتنين وتمانين', words: ['w45'] },
   ],
   patches: [
     { x: 552, y: 845, w: 400, h: 48 },

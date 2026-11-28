@@ -59,7 +59,6 @@ export const p52: ScanPage = {
     { id: 'w48', x: 217, y: 1685, w: 508, h: 40, text: 'für mindestens fünf Personen. Sprechen Sie zu zweit.', ar: 'لخمس أشخاص على الأقل. اتكلموا مع بعض.' },
     { id: 'w49', x: 775, y: 1688, w: 410, h: 40, text: 'Für meinen Bruder kaufe ich Kinotickets,', ar: 'لأخويا هشتري تذاكر سينما،' },
     { id: 'w50', x: 848, y: 1725, w: 282, h: 35, text: 'weil er gern ins Kino geht.', ar: 'لأنه بيحب يروح السينما.' },
-    { id: 'w51', x: 88, y: 1708, w: 184, h: 32, text: '52 zweiundfünfzig', ar: '٥٢ اتنين وخمسين' },
   ],
   audio: [
   ],
@@ -131,7 +130,6 @@ export const p52: ScanPage = {
     { id: 's-w48', text: 'für mindestens fünf Personen. Sprechen Sie zu zweit.', ar: 'لخمس أشخاص على الأقل. اتكلموا مع بعض.', words: ['w48'] },
     { id: 's-w49', text: 'Für meinen Bruder kaufe ich Kinotickets,', ar: 'لأخويا هشتري تذاكر سينما،', words: ['w49'] },
     { id: 's-w50', text: 'weil er gern ins Kino geht.', ar: 'لأنه بيحب يروح السينما.', words: ['w50'] },
-    { id: 's-w51', text: '52 zweiundfünfzig', ar: '٥٢ اتنين وخمسين', words: ['w51'] },
   ],
   groups: [],
 }

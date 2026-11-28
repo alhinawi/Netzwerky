@@ -62,16 +62,26 @@ for (const [k, v] of Object.entries(gloss)) {
 //    gate keeps them from coming back.
 const numWords = (() => {
   const ones = ['','eins','zwei','drei','vier','fünf','sechs','sieben','acht','neun','zehn','elf','zwölf','dreizehn','vierzehn','fünfzehn','sechzehn','siebzehn','achtzehn','neunzehn','zwanzig']
+  // compound unit before 'und' drops the s: einundzwanzig, not einsundzwanzig
+  const u = o => (o === 1 ? 'ein' : ones[o])
   const tens = ['','','zwanzig','dreißig','vierzig','fünfzig','sechzig','siebzig','achtzig','neunzig']
   const w = new Set(ones.slice(1))
-  for (const t of tens.slice(2)) { w.add(t); for (let o = 1; o < 10; o++) w.add(ones[o] + 'und' + t) }
+  w.add('hundert'); w.add('tausend')
+  for (const t of tens.slice(2)) { w.add(t); for (let o = 1; o < 10; o++) w.add(u(o) + 'und' + t) }
   for (let h = 1; h < 10; h++) {
     const hu = (h === 1 ? 'ein' : ones[h]) + 'hundert'; w.add(hu)
     for (let o = 1; o < 20; o++) w.add(hu + ones[o])
-    for (const t of tens.slice(2)) { w.add(hu + t); for (let o = 1; o < 10; o++) w.add(hu + ones[o] + 'und' + t) }
+    for (const t of tens.slice(2)) { w.add(hu + t); for (let o = 1; o < 10; o++) w.add(hu + u(o) + 'und' + t) }
   }
   return w
 })()
+// footer combos like '100 einhundert' or 'einhundertfünf 105'
+const isFooterNum = t => {
+  const tl = t.trim().toLowerCase()
+  if (numWords.has(tl) || /^\d+$/.test(tl)) return true
+  const p = tl.split(' ')
+  return p.length === 2 && ((/^\d+$/.test(p[0]) && numWords.has(p[1])) || (/^\d+$/.test(p[1]) && numWords.has(p[0])))
+}
 const boxRe = /\{ id: '[^']+', x: (\d+), y: (\d+), w: (\d+), h: (\d+), text: ('[^']*'|"[^"]*"), ar: ('[^']*'|"[^"]*")/
 for (const book of fs.readdirSync('content/scan')) {
   const dir = `content/scan/${book}`
@@ -84,9 +94,9 @@ for (const book of fs.readdirSync('content/scan')) {
       if (!m) return
       const y = +m[2], txt = m[5].slice(1, -1).trim(), ar = m[6].slice(1, -1).trim()
       const t = txt.toLowerCase()
-      if (y >= 1550 && (numWords.has(t) || /^\d+$/.test(t)))
+      if (y >= 1550 && isFooterNum(txt))
         violations.push({ key: `${book}/${f}:${i + 1}`, value: txt, rule: 'footer-page-number-box' })
-      if (/^\d{1,2}\.\d{1,2}$/.test(txt) && ar === txt)
+      if (/^\d{1,2}\.\d{1,2}$/.test(txt))
         violations.push({ key: `${book}/${f}:${i + 1}`, value: txt, rule: 'standalone-track-box' })
     })
   }
@@ -111,9 +121,9 @@ for (const book of fs.readdirSync('content/scan')) {
       if (!m) return
       const txt = m[2].slice(1, -1).trim(), ar = m[3].slice(1, -1).trim()
       const refs = (m[4] || '').split(',').map((r) => r.trim().replace(/^'|'$/g, '')).filter(Boolean)
-      if (/^\d{1,2}\.\d{1,2}$/.test(txt) && ar === txt)
+      if (/^\d{1,2}\.\d{1,2}$/.test(txt))
         violations.push({ key: `${book}/${f}:${i + 1}`, value: txt, rule: 'track-sentence' })
-      if (numWords.has(txt.toLowerCase()))
+      if (isFooterNum(txt))
         violations.push({ key: `${book}/${f}:${i + 1}`, value: txt, rule: 'footer-number-sentence' })
       if (refs.length && refs.every((r) => !defined.has(r)))
         violations.push({ key: `${book}/${f}:${i + 1}`, value: `${txt} -> [${refs}]`, rule: 'orphan-sentence-words' })

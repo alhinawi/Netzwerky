@@ -38,7 +38,6 @@ export const p102: ScanPage = {
     { id: 'w28', x: 958, y: 1282, w: 200, h: 30, text: 'Das ist echt schade.', ar: 'ده حرام بجد.' },
     { id: 'w29', x: 170, y: 1355, w: 920, h: 80, text: '4 So ein Glück – so ein Pech! Arbeiten Sie zu zweit. Wählen Sie drei Situationen und lesen Sie sie vor. Ihr Partner / Ihre Partnerin reagiert. Wechseln Sie dann.', ar: '٤ يا سعدك – يا حظك! اشتغلوا اتنين اتنين. اختاروا تلات مواقف واقرأوها بصوت عالي. شريكك/شريكتك يرد. بعدين بدّلوا.' },
     { id: 'w30', x: 170, y: 1428, w: 920, h: 170, text: 'Ihre Lieblingsband gibt ein Konzert in Ihrer Stadt. | Das Konzert von Ihrer Lieblingsband fällt aus, der Sänger ist krank. | Ihre Lieblingsschauspielerin spielt vielleicht bald in Ihrer Lieblingsserie mit. | Sie haben eine Reise nach Berlin gewonnen. | Sie wollen mit Freunden eine Radtour machen. Ihr Fahrrad ist kaputt. | Sie wollen mit Freunden klettern, aber es regnet. Der Wetterbericht ist aber gut. | Ihr Lieblingsverein hat ein wichtiges Spiel verloren. | Sie haben Ihr Handy verloren. Sie suchen es zusammen mit einem Freund.', ar: 'الفريق الموسيقي المفضل بتاعك بيعمل حفلة في مدينتك. | حفلة فريقك المفضل اتلغت، المغني عيان. | ممثلتك المفضلة ممكن تمثل قريب في مسلسلك المفضل. | كسبت رحلة لبرلين. | عايز تعمل رحلة عجل مع صحابك، بس عجلتك خربانة. | عايز تتسلق مع صحابك بس الدنيا بتمطر، بس النشرة الجوية كويسة. | فريقك المفضل خسر ماتش مهم. | موبايلك ضاع وبتدور عليه مع صاحبك.' },
-    { id: 'w31', x: 85, y: 1612, w: 190, h: 35, text: '102 einhundertzwei', ar: '١٠٢ مية واتنين' },
   ],
   audio: [
   ],
@@ -97,7 +96,6 @@ export const p102: ScanPage = {
     { id: 's28', text: 'Das ist echt schade.', ar: 'ده حرام بجد.', words: ['w28'] },
     { id: 's29', text: '4 So ein Glück – so ein Pech! Arbeiten Sie zu zweit. Wählen Sie drei Situationen und lesen Sie sie vor. Ihr Partner / Ihre Partnerin reagiert. Wechseln Sie dann.', ar: '٤ يا سعدك – يا حظك! اشتغلوا اتنين اتنين. اختاروا تلات مواقف واقرأوها بصوت عالي. شريكك/شريكتك يرد. بعدين بدّلوا.', words: ['w29'] },
     { id: 's30', text: 'Ihre Lieblingsband gibt ein Konzert in Ihrer Stadt. | Das Konzert von Ihrer Lieblingsband fällt aus, der Sänger ist krank. | Ihre Lieblingsschauspielerin spielt vielleicht bald in Ihrer Lieblingsserie mit. | Sie haben eine Reise nach Berlin gewonnen. | Sie wollen mit Freunden eine Radtour machen. Ihr Fahrrad ist kaputt. | Sie wollen mit Freunden klettern, aber es regnet. Der Wetterbericht ist aber gut. | Ihr Lieblingsverein hat ein wichtiges Spiel verloren. | Sie haben Ihr Handy verloren. Sie suchen es zusammen mit einem Freund.', ar: 'الفريق الموسيقي المفضل بتاعك بيعمل حفلة في مدينتك. | حفلة فريقك المفضل اتلغت، المغني عيان. | ممثلتك المفضلة ممكن تمثل قريب في مسلسلك المفضل. | كسبت رحلة لبرلين. | عايز تعمل رحلة عجل مع صحابك، بس عجلتك خربانة. | عايز تتسلق مع صحابك بس الدنيا بتمطر، بس النشرة الجوية كويسة. | فريقك المفضل خسر ماتش مهم. | موبايلك ضاع وبتدور عليه مع صاحبك.', words: ['w30'] },
-    { id: 's31', text: '102 einhundertzwei', ar: '١٠٢ مية واتنين', words: ['w31'] },
   ],
   patches: [
   ],

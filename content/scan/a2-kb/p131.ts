@@ -83,7 +83,6 @@ export const p131: ScanPage = {
     { id: 'w74', x: 125, y: 1642, w: 16, h: 30, text: 'c', ar: 'ج' },
     { id: 'w75', x: 163, y: 1634, w: 793, h: 46, text: 'Arbeiten Sie zu zweit. Sagen Sie drei Sätze über sich und betonen Sie die wichtige', ar: 'اشتغلوا اتنين اتنين. قولوا تلات جمل عن نفسكم وشدّدوا على المعلومة المهمة.' },
     { id: 'w76', x: 165, y: 1670, w: 633, h: 30, text: 'Information. Der/Die andere sagt, welche Information wichtig ist.', ar: 'والتاني يقول أنهي معلومة مهمة.' },
-    { id: 'w77', x: 885, y: 1655, w: 218, h: 30, text: 'einhunderteinunddreißig', ar: 'مية وواحد وتلاتين' },
   ],
   audio: [
   ],

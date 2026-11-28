@@ -90,7 +90,6 @@ export const p21: ScanPage = {
     { id: 'b82', x: 935, y: 1472, w: 180, h: 20, text: 'richtig installiert?', ar: 'اتثبّت صح؟' },
     { id: 'b83', x: 935, y: 1506, w: 90, h: 20, text: 'Quittung?', ar: 'الإيصال؟' },
     { id: 'b84', x: 935, y: 1534, w: 85, h: 20, text: 'Garantie?', ar: 'الضمان؟' },
-    { id: 'b85', x: 955, y: 1584, w: 125, h: 21, text: 'einundzwanzig', ar: 'واحد وعشرين' },
   ],
   audio: [],
   fields: [],

@@ -75,7 +75,6 @@ export const p38: ScanPage = {
     { id: 'q13b', x: 690, y: 1602, w: 535, h: 40, text: 'Ich spiele nicht so viel Computer … mein Bruder.', ar: 'مبلعبش كمبيوتر قد … أخويا.' },
     { id: 'q14', x: 380, y: 1616, w: 460, h: 36, text: '14. Nennen Sie drei Medien: der Fernseher, …', ar: '١٤. اذكروا ثلاث وسائل إعلام: der Fernseher، …' },
     { id: 'q15', x: 380, y: 1640, w: 738, h: 65, text: '15. Ergänzen Sie: Sarah hat gesagt, … sie oft Bilder im Internet postet.', ar: '١٥. كمّلوا: سارة قالت، … هي بتنشر صور كتير على الإنترنت.' },
-    { id: 'pn', x: 95, y: 1696, w: 187, h: 24, text: '38 achtunddreißig', ar: '٣٨ ثمانية وثلاثون' },
   ],
   audio: [
   ],
@@ -140,7 +139,6 @@ export const p38: ScanPage = {
     { id: 's-q13b', text: 'Ich spiele nicht so viel Computer … mein Bruder.', ar: 'مبلعبش كمبيوتر قد … أخويا.', words: ['q13b'] },
     { id: 's-q14', text: '14. Nennen Sie drei Medien: der Fernseher, …', ar: '١٤. اذكروا ثلاث وسائل إعلام: der Fernseher، …', words: ['q14'] },
     { id: 's-q15', text: '15. Ergänzen Sie: Sarah hat gesagt, … sie oft Bilder im Internet postet.', ar: '١٥. كمّلوا: سارة قالت، … هي بتنشر صور كتير على الإنترنت.', words: ['q15'] },
-    { id: 's-pn', text: '38 achtunddreißig', ar: '٣٨ ثمانية وثلاثون', words: ['pn'] },
   ],
   groups: [],
 }

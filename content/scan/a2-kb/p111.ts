@@ -96,7 +96,6 @@ export const p111: ScanPage = {
   patches: [],
   sentences: [
     { id: 's-t0', text: 'Plattform', ar: 'منصة', words: ['t0'] },
-    { id: 's-t1', text: '3', ar: '3', words: ['t1'] },
     { id: 's-t2', text: 'Ziel', ar: 'الهدف', words: ['t2'] },
     { id: 's-t3', text: 'Formulieren Sie höfliche Bitten an einen', ar: 'صيغ طلبات مؤدبة لـ', words: ['t3'] },
     { id: 's-t4', text: 'Freund / eine Freundin:', ar: 'صاحب / صاحبة:', words: ['t4'] },

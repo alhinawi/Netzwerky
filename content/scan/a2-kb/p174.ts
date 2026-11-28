@@ -9,7 +9,6 @@ export const p174: ScanPage = {
   height: 1755,
   words: [
     { id: 'w1', x: 210, y: 56, w: 239, h: 31, text: 'alphabetische Wortliste', ar: 'قايمة الكلمات الأبجدية' },
-    { id: 'w2', x: 81, y: 1690, w: 278, h: 31, text: '174 einhundertvierundsiebzig', ar: '١٧٤ مية وأربعة وسبعين' },
     { id: 'w3', x: 72, y: 131, w: 376, h: 25, text: 'Videokonferenz, die, -en 6/13b', ar: 'مؤتمر فيديو' },
     { id: 'w4', x: 72, y: 157, w: 376, h: 25, text: 'virtuell 6/13b', ar: 'افتراضي' },
     { id: 'w5', x: 72, y: 185, w: 376, h: 25, text: 'Visum, das, Visa 5/5e', ar: 'تأشيرة' },
@@ -161,7 +160,6 @@ export const p174: ScanPage = {
   groups: [],
   sentences: [
     { id: 's1', text: 'alphabetische Wortliste', ar: 'قايمة الكلمات الأبجدية', words: ['w1'] },
-    { id: 's2', text: '174 einhundertvierundsiebzig', ar: '١٧٤ مية وأربعة وسبعين', words: ['w2'] },
     { id: 's3', text: 'Videokonferenz, die, -en 6/13b', ar: 'مؤتمر فيديو', words: ['w3'] },
     { id: 's4', text: 'virtuell 6/13b', ar: 'افتراضي', words: ['w4'] },
     { id: 's5', text: 'Visum, das, Visa 5/5e', ar: 'تأشيرة', words: ['w5'] },

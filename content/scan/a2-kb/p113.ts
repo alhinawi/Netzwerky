@@ -56,8 +56,6 @@ export const p113: ScanPage = {
   patches: [],
   sentences: [
     { id: 's-t0', text: 'Plattform', ar: 'منصة', words: ['t0'] },
-    { id: 's-t1', text: '3', ar: '3', words: ['t1'] },
-    { id: 's-t2', text: '6', ar: '6', words: ['t2'] },
     { id: 's-t3', text: 'Sprechen Sie zu dritt. Sie brauchen die Dinge auf den Fotos, aber Sie wissen nicht, wie sie auf Deutsch', ar: 'اتكلموا تلاتة تلاتة. محتاجين الحاجات اللي في الصور، بس مش عارفين اسمها بالألماني', words: ['t3'] },
     { id: 's-t4', text: 'heißen. Erklären Sie Ihrer Gruppe, was Sie brauchen. Die anderen in der Gruppe zeigen auf den', ar: 'اشرحوا لمجموعتكم محتاجين إيه. التانيين في المجموعة يشاوروا على', words: ['t4'] },
     { id: 's-t5', text: 'Gegenstand, wenn sie die Erklärung verstanden haben. Am Schluss können Sie auf der letzten Seite', ar: 'الحاجة لما يفهموا الشرح. في الآخر تقدروا تشوفوا في الصفحة الأخيرة', words: ['t5'] },
@@ -68,7 +66,6 @@ export const p113: ScanPage = {
     { id: 's-t10', text: 'Erklären Sie den Gegenstand mit Gesten und Mimik.', ar: 'اشرح الحاجة بالإشارات وتعبيرات الوش.', words: ['t10'] },
     { id: 's-t11', text: 'Nennen Sie das Wort in anderen Fremdsprachen.', ar: 'قول الكلمة بلغات أجنبية تانية.', words: ['t11'] },
     { id: 's-t12', text: 'Sprachmittlung', ar: 'وساطة لغوية', words: ['t12'] },
-    { id: 's-t13', text: '7', ar: '7', words: ['t13'] },
     { id: 's-t14', text: 'Wählen Sie.', ar: 'اختار.', words: ['t14'] },
     { id: 's-t15', text: 'A', ar: 'A', words: ['t15'] },
     { id: 's-t16', text: 'Hören Sie Sportnachrichten in Ihrer Sprache. Informieren', ar: 'اسمع أخبار رياضة بلغتك. بلّغ', words: ['t16'] },

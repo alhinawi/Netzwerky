@@ -57,7 +57,6 @@ export const p86: ScanPage = {
     { id: 'w47', x: 478, y: 1408, w: 700, h: 52, text: 'Die meisten / Über ... Prozent / Nur ... Prozent finden die Zeit für den Weg zur Arbeit ...', ar: 'معظم / أكتر من ... في المية / بس ... في المية شايفين إن وقت طريق الشغل ...' },
     { id: 'w48', x: 478, y: 1465, w: 660, h: 26, text: 'Wenn der Weg zur Arbeit länger/weniger als ... Minuten dauert, finden ...', ar: 'لما طريق الشغل ياخد أطول/أقل من ... دقيقة، بيبقوا ...' },
     { id: 'w49', x: 165, y: 1558, w: 980, h: 60, text: 'c Ihr Weg zum Kurs. Machen Sie fünf typische Fotos und beschreiben Sie den Weg. Präsentieren Sie in Gruppen.', ar: 'ج طريقكوا للكورس. اعملوا خمس صور تقليدية واوصفوا الطريق. قدّموا في مجموعات.' },
-    { id: 'w50', x: 90, y: 1610, w: 215, h: 28, text: '86 sechsundachtzig', ar: '٨٦ ستة وتمانين' },
   ],
   audio: [
   ],
@@ -117,7 +116,6 @@ export const p86: ScanPage = {
     { id: 's47', text: 'Die meisten / Über ... Prozent / Nur ... Prozent finden die Zeit für den Weg zur Arbeit ...', ar: 'معظم / أكتر من ... في المية / بس ... في المية شايفين إن وقت طريق الشغل ...', words: ['w47'] },
     { id: 's48', text: 'Wenn der Weg zur Arbeit länger/weniger als ... Minuten dauert, finden ...', ar: 'لما طريق الشغل ياخد أطول/أقل من ... دقيقة، بيبقوا ...', words: ['w48'] },
     { id: 's49', text: 'c Ihr Weg zum Kurs. Machen Sie fünf typische Fotos und beschreiben Sie den Weg. Präsentieren Sie in Gruppen.', ar: 'ج طريقكوا للكورس. اعملوا خمس صور تقليدية واوصفوا الطريق. قدّموا في مجموعات.', words: ['w49'] },
-    { id: 's50', text: '86 sechsundachtzig', ar: '٨٦ ستة وتمانين', words: ['w50'] },
   ],
   patches: [
   ],

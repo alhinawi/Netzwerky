@@ -74,7 +74,6 @@ export const p112: ScanPage = {
   matchings: [],
   patches: [],
   sentences: [
-    { id: 's-t0', text: '3', ar: '3', words: ['t0'] },
     { id: 's-t1', text: 'Plattform', ar: 'منصة', words: ['t1'] },
     { id: 's-t2', text: 'Sag mal was!', ar: 'قول حاجة!', words: ['t2'] },
     { id: 's-t3', text: 'Arbeiten Sie zu zweit. Formulieren Sie abwechselnd einen indirekten Fragesatz und reagieren Sie.', ar: 'اشتغلوا اتنين اتنين. كوّنوا بالتناوب جملة سؤال غير مباشرة وردوا عليها.', words: ['t3'] },
@@ -94,7 +93,6 @@ export const p112: ScanPage = {
     { id: 's-t17', text: 'welche Hobbys du hast', ar: 'إيه هواياتك', words: ['t17'] },
     { id: 's-t18', text: 'Kannst du mir sagen, wo man hier in der Nähe wandern kann?', ar: 'تقدر تقولي فين نقدر نتمشى هنا قريب؟', words: ['t18'] },
     { id: 's-t19', text: 'Wandern? Keine Ahnung!', ar: 'نتمشى؟ معنديش فكرة!', words: ['t19'] },
-    { id: 's-t20', text: '3', ar: '3', words: ['t20'] },
     { id: 's-t21', text: 'Jede/r notiert eine Frage mit Wer? zu jedem Thema. Bilden Sie dann einen Kreis. Stellen Sie', ar: 'كل واحد يكتب سؤال بـ Wer؟ عن كل موضوع. كوّنوا دايرة. اسألوا', words: ['t21'] },
     { id: 's-t22', text: 'abwechselnd Ihre Fragen. Stehen Sie auf und wechseln Sie den Platz, wenn die Frage zu Ihnen passt.', ar: 'بالتناوب أسئلتكم. قوموا وغيّروا مكانكم لو السؤال ينطبق عليكم.', words: ['t22'] },
     { id: 's-t23', text: 'Wer fährt oft mit dem Bus?', ar: 'مين بيركب الأتوبيس كتير؟', words: ['t23'] },
@@ -109,7 +107,6 @@ export const p112: ScanPage = {
     { id: 's-t32', text: 'Nein!', ar: 'لأ!', words: ['t32'] },
     { id: 's-t33', text: 'neu?', ar: 'جديد؟', words: ['t33'] },
     { id: 's-t34', text: 'Ja!', ar: 'أيوه!', words: ['t34'] },
-    { id: 's-t35', text: '5', ar: '5', words: ['t35'] },
     { id: 's-t36', text: 'Sprechen Sie zu zweit und verbinden Sie die Sätze. Es gibt mehrere Möglichkeiten.', ar: 'اتكلموا اتنين اتنين واربطوا الجمل. في احتمالات كتير.', words: ['t36'] },
     { id: 's-t37', text: 'Das Wetter ist schön.', ar: 'الجو حلو.', words: ['t37'] },
     { id: 's-t38', text: 'Morgen ist Freitag.', ar: 'بكرة الجمعة.', words: ['t38'] },

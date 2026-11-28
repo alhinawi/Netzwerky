@@ -21,7 +21,6 @@ export const p100: ScanPage = {
     { id: 'w11', x: 735, y: 1558, w: 450, h: 28, text: '4. … kann so nach der Arbeit gut entspannen.', ar: '٤. … يقدر يرتاح كويس بعد الشغل.' },
     { id: 'w12', x: 735, y: 1584, w: 440, h: 28, text: '5. … findet Sport gut für die Gesundheit.', ar: '٥. … شايف إن الرياضة كويسة للصحة.' },
     { id: 'w13', x: 735, y: 1628, w: 460, h: 32, text: '6. … lernt seine/ihre Grenzen besser kennen.', ar: '٦. … بيتعرف على حدوده أحسن.' },
-    { id: 'w14', x: 90, y: 1662, w: 200, h: 32, text: '100 einhundert', ar: '100 · مية' },
   ],
   audio: [
   ],
@@ -63,7 +62,6 @@ export const p100: ScanPage = {
     { id: 's11', text: '4. … kann so nach der Arbeit gut entspannen.', ar: '٤. … يقدر يرتاح كويس بعد الشغل.', words: ['w11'] },
     { id: 's12', text: '5. … findet Sport gut für die Gesundheit.', ar: '٥. … شايف إن الرياضة كويسة للصحة.', words: ['w12'] },
     { id: 's13', text: '6. … lernt seine/ihre Grenzen besser kennen.', ar: '٦. … بيتعرف على حدوده أحسن.', words: ['w13'] },
-    { id: 's14', text: '100 einhundert', ar: '100 · مية', words: ['w14'] },
   ],
   patches: [
   ],

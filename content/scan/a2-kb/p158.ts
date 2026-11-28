@@ -62,7 +62,6 @@ export const p158: ScanPage = {
     { id: 'w52', x: 484, y: 1524, w: 657, h: 31, text: 'sich interessieren für + Akk., sich kümmern um + Akk.,', ar: 'يهتم بـ، يعتني بـ،' },
     { id: 'w53', x: 484, y: 1555, w: 657, h: 31, text: 'träumen von + Dat., verbringen mit + Dat., verzichten auf + Akk.,', ar: 'يحلم بـ، يقضي وقت مع، يتنازل عن،' },
     { id: 'w54', x: 484, y: 1586, w: 657, h: 31, text: 'sich vorbereiten auf + Akk., warten auf + Akk. ...', ar: 'يستعد لـ، يستنى ...' },
-    { id: 'w55', x: 89, y: 1698, w: 406, h: 31, text: '158 einhundertachtundfünfzig', ar: '١٥٨ مية وتمانية وخمسين' },
   ],
   audio: [
   ],
@@ -124,7 +123,6 @@ export const p158: ScanPage = {
     { id: 's52', text: 'sich interessieren für + Akk., sich kümmern um + Akk.,', ar: 'يهتم بـ، يعتني بـ،', words: ['w52'] },
     { id: 's53', text: 'träumen von + Dat., verbringen mit + Dat., verzichten auf + Akk.,', ar: 'يحلم بـ، يقضي وقت مع، يتنازل عن،', words: ['w53'] },
     { id: 's54', text: 'sich vorbereiten auf + Akk., warten auf + Akk. ...', ar: 'يستعد لـ، يستنى ...', words: ['w54'] },
-    { id: 's55', text: '158 einhundertachtundfünfzig', ar: '١٥٨ مية وتمانية وخمسين', words: ['w55'] },
   ],
   patches: [
   ],

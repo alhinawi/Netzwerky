@@ -81,7 +81,6 @@ export const p89: ScanPage = {
   groups: [],
   sentences: [
     { id: 's1', text: 'kurz und klar: Redemittel und Grammatik', ar: 'مختصر وواضح: تعبيرات وقواعد', words: ['w1'] },
-    { id: 's2', text: '7', ar: '٧', words: ['w2'] },
     { id: 's3', text: 'Informationen erfragen', ar: 'نسأل عن معلومات', words: ['w3'] },
     { id: 's4', text: 'Könnten Sie / Könntest du mir sagen, …?', ar: 'ممكن تقول لي …؟ (رسمي / غير رسمي)', words: ['w4'] },
     { id: 's5', text: 'Können Sie / Kannst du mir sagen, …?', ar: 'تقدر تقول لي …؟ (رسمي / غير رسمي)', words: ['w5'] },
