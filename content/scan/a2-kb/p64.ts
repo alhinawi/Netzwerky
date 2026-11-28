@@ -38,7 +38,6 @@ export const p64: ScanPage = {
     { id: 'w27', x: 785, y: 1577, w: 413, h: 30, text: '6. Wie läuft’s in Köln? Kein Ärger mit den', ar: '٦. الدنيا ماشية إزاي في كولن؟ مفيش مشاكل مع' },
     { id: 'w28', x: 785, y: 1610, w: 398, h: 30, text: 'Schülern? Bin noch im Büro, viel Arbeit', ar: 'الطلاب؟ أنا لسه في المكتب، شغل كتير' },
     { id: 'w29', x: 785, y: 1642, w: 357, h: 30, text: 'auf meiner Lieblingsbaustelle. 🙂', ar: 'على موقع البناء المفضل عندي. 🙂' },
-    { id: 'w30', x: 98, y: 1745, w: 187, h: 30, text: '64 vierundsechzig', ar: '٦٤ أربعة وستين' },
   ],
   audio: [
   ],
@@ -80,7 +79,6 @@ export const p64: ScanPage = {
     { id: 's-w27', text: '6. Wie läuft’s in Köln? Kein Ärger mit den', ar: '٦. الدنيا ماشية إزاي في كولن؟ مفيش مشاكل مع', words: ['w27'] },
     { id: 's-w28', text: 'Schülern? Bin noch im Büro, viel Arbeit', ar: 'الطلاب؟ أنا لسه في المكتب، شغل كتير', words: ['w28'] },
     { id: 's-w29', text: 'auf meiner Lieblingsbaustelle. 🙂', ar: 'على موقع البناء المفضل عندي. 🙂', words: ['w29'] },
-    { id: 's-w30', text: '64 vierundsechzig', ar: '٦٤ أربعة وستين', words: ['w30'] },
   ],
   groups: [],
 }

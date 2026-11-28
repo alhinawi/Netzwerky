@@ -105,7 +105,6 @@ export const p110: ScanPage = {
   matchings: [],
   patches: [],
   sentences: [
-    { id: 's-t0', text: '3', ar: '3', words: ['t0'] },
     { id: 's-t1', text: 'Plattform', ar: 'منصة', words: ['t1'] },
     { id: 's-t2', text: 'Wiederholungsspiel', ar: 'لعبة مراجعة', words: ['t2'] },
     { id: 's-t3', text: 'Kopf oder Zahl? Spielen Sie zu zweit oder zu viert (zwei Paare).', ar: 'وش ولا كتابة؟ العبوا اتنين اتنين أو أربعة (زوجين).', words: ['t3'] },

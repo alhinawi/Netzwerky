@@ -70,7 +70,6 @@ export const p115: ScanPage = {
   patches: [],
   sentences: [
     { id: 's-t0', text: 'Plattform', ar: 'منصة', words: ['t0'] },
-    { id: 's-t1', text: '3', ar: '3', words: ['t1'] },
     { id: 's-t2', text: 'E', ar: 'E', words: ['t2'] },
     { id: 's-t3', text: 'F', ar: 'F', words: ['t3'] },
     { id: 's-t4', text: 'G', ar: 'G', words: ['t4'] },

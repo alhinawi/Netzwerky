@@ -70,7 +70,6 @@ export const p156: ScanPage = {
     { id: 'w60', x: 851, y: 1439, w: 280, h: 28, text: 'weitere Modalverben:', ar: 'أفعال مساعدة تانية:' },
     { id: 'w61', x: 851, y: 1467, w: 350, h: 78, text: 'möchten: ich möchte, du möchtest, er/es/sie möchte, wir möchten, ihr möchtet, sie/Sie möchten', ar: 'möchten: عايز/ة (بأدب) بكل الضمائر' },
     { id: 'w62', x: 851, y: 1551, w: 350, h: 90, text: 'mögen: ich mag, du magst, er/es/sie mag, wir mögen, ihr mögt, sie/Sie mögen', ar: 'mögen: بيحب بكل الضمائر' },
-    { id: 'w63', x: 98, y: 1688, w: 392, h: 31, text: '156 einhundertsechsundfünfzig', ar: '١٥٦ مية وستة وخمسين' },
   ],
   audio: [
   ],
@@ -140,7 +139,6 @@ export const p156: ScanPage = {
     { id: 's60', text: 'weitere Modalverben:', ar: 'أفعال مساعدة تانية:', words: ['w60'] },
     { id: 's61', text: 'möchten: ich möchte, du möchtest, er/es/sie möchte, wir möchten, ihr möchtet, sie/Sie möchten', ar: 'möchten: عايز/ة (بأدب) بكل الضمائر', words: ['w61'] },
     { id: 's62', text: 'mögen: ich mag, du magst, er/es/sie mag, wir mögen, ihr mögt, sie/Sie mögen', ar: 'mögen: بيحب بكل الضمائر', words: ['w62'] },
-    { id: 's63', text: '156 einhundertsechsundfünfzig', ar: '١٥٦ مية وستة وخمسين', words: ['w63'] },
   ],
   patches: [
   ],

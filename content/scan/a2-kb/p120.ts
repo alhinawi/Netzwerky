@@ -88,7 +88,6 @@ export const p120: ScanPage = {
     { id: 's-um', text: 'Umzug', ar: 'انتقال', words: ['um'] },
     { id: 's-mm1', text: 'sich anmelden', ar: 'يسجّل نفسه', words: ['mm1'] },
     { id: 's-mm2', text: 'Kisten packen', ar: 'يعبّي صناديق', words: ['mm2'] },
-    { id: 's-t28', text: '28', ar: '28', words: ['t28'] },
     { id: 's-b1', text: 'Lesen Sie die Anzeige von Vera. Was hat sie vor? Welche Antwort ist für Vera interessant? Kreuzen Sie an.', ar: 'اقرا إعلان فيرا. ناوية تعمل إيه؟ أنهي رد يهم فيرا؟ علّم.', words: ['b1'] },
     { id: 's-ad1', text: 'Voll möbliertes Zimmer, 18 qm in 3er-WG, 380 € / Monat (+ 80 € Nebenkosten).', ar: 'أوضة مفروشة بالكامل، 18 م² في سكن مشترك لتلاتة، 380 يورو في الشهر (+ 80 يورو مصاريف).', words: ['ad1'] },
     { id: 's-ad2', text: 'Suche Mieter/in von September–Februar, Heidelberg zentrale Lage – bin für ein Erasmus-Semester in Fribourg.', ar: 'بدوّر على مستأجر من سبتمبر لفبراير، هايدلبيرج في مكان مركزي – أنا في فريبورج لفصل إيراسموس.', words: ['ad2'] },

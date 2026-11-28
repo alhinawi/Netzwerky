@@ -56,7 +56,6 @@ export const p42: ScanPage = {
     { id: 'ty5', x: 97, y: 1443, w: 395, h: 30, text: 'Privatklinik, aber in Wirklichkeit ist es ein', ar: 'عيادة خاصة، بس في الحقيقة هو' },
     { id: 'ty6', x: 97, y: 1470, w: 111, h: 30, text: 'Restaurant.', ar: 'مطعم.' },
     { id: 'B', x: 625, y: 1669, w: 34, h: 34, text: 'B', ar: 'B' },
-    { id: 'pn', x: 75, y: 1707, w: 189, h: 30, text: '42 zweiundvierzig', ar: '٤٢ اتنين وأربعين' },
   ],
   audio: [
   ],
@@ -126,7 +125,6 @@ export const p42: ScanPage = {
     { id: 's-ty3', text: 'Österreich: Einige Szenen spielen in Sölden', ar: 'النمسا: بعض المشاهد بتدور في سولدن', words: ['ty3'] },
     { id: 's-ty4', text: 'in den Alpen. Im Film ist das Gebäude eine', ar: 'في جبال الألب. في الفيلم المبنى', words: ['ty4'] },
     { id: 's-ty5', text: 'Privatklinik, aber in Wirklichkeit ist es ein', ar: 'عيادة خاصة، بس في الحقيقة هو', words: ['ty5'] },
-    { id: 's-pn', text: '42 zweiundvierzig', ar: '٤٢ اتنين وأربعين', words: ['pn'] },
   ],
   groups: [],
 }

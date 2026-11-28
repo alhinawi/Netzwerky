@@ -62,7 +62,6 @@ export const p66: ScanPage = {
     { id: 'w51', x: 752, y: 1575, w: 435, h: 40, text: 'Wo möchten Sie sitzen: Gang oder Fenster?', ar: 'تحب تقعد فين: الممر ولا الشباك؟' },
     { id: 'w52', x: 728, y: 1609, w: 274, h: 36, text: 'Haben Sie eine BahnCard?', ar: 'معاك BahnCard؟' },
     { id: 'w53', x: 728, y: 1665, w: 299, h: 40, text: '… Euro. / Das macht … Euro.', ar: '… يورو. / ده بيطلع … يورو.' },
-    { id: 'w54', x: 95, y: 1687, w: 197, h: 32, text: '66 sechsundsechzig', ar: '٦٦ ستة وستين' },
   ],
   audio: [
     { id: 'a1_53_55', x: 55, y: 205, w: 45, h: 65, src: ['NWn_A2_KB_Audio_1-053.mp3'], label: 'Aufgabe 3a (1.53)' },
@@ -135,7 +134,6 @@ export const p66: ScanPage = {
     { id: 's-w51', text: 'Wo möchten Sie sitzen: Gang oder Fenster?', ar: 'تحب تقعد فين: الممر ولا الشباك؟', words: ['w51'] },
     { id: 's-w52', text: 'Haben Sie eine BahnCard?', ar: 'معاك BahnCard؟', words: ['w52'] },
     { id: 's-w53', text: '… Euro. / Das macht … Euro.', ar: '… يورو. / ده بيطلع … يورو.', words: ['w53'] },
-    { id: 's-w54', text: '66 sechsundsechzig', ar: '٦٦ ستة وستين', words: ['w54'] },
   ],
   groups: [],
 }

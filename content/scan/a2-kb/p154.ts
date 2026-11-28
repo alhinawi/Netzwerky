@@ -80,7 +80,6 @@ export const p154: ScanPage = {
     { id: 'w70', x: 159, y: 1553, w: 1030, h: 31, text: 'Für mehrmalige Ereignisse in der Vergangenheit verwendet man wenn. In Sätzen mit wenn in der', ar: 'للأحداث اللي اتكررت في الماضي بنستخدم wenn. في الجمل بـ wenn في' },
     { id: 'w71', x: 159, y: 1584, w: 1030, h: 31, text: 'Vergangenheit gibt es oft Wörter wie oft, meistens, immer ...: Wenn sie glücklich war, hat sie oft getanzt.', ar: 'الماضي كتير بتيجي كلمات زي oft، meistens، immer...: لما كانت سعيدة، كانت بترقص كتير.' },
     { id: 'w72', x: 159, y: 1612, w: 501, h: 31, text: 'Im Präsens verwendet man immer wenn.', ar: 'في المضارع بنستخدم دايماً wenn.' },
-    { id: 'w73', x: 89, y: 1687, w: 362, h: 31, text: '154 einhundertvierundfünfzig', ar: '١٥٤ مية وأربعة وخمسين' },
   ],
   audio: [
   ],
@@ -160,7 +159,6 @@ export const p154: ScanPage = {
     { id: 's70', text: 'Für mehrmalige Ereignisse in der Vergangenheit verwendet man wenn. In Sätzen mit wenn in der', ar: 'للأحداث اللي اتكررت في الماضي بنستخدم wenn. في الجمل بـ wenn في', words: ['w70'] },
     { id: 's71', text: 'Vergangenheit gibt es oft Wörter wie oft, meistens, immer ...: Wenn sie glücklich war, hat sie oft getanzt.', ar: 'الماضي كتير بتيجي كلمات زي oft، meistens، immer...: لما كانت سعيدة، كانت بترقص كتير.', words: ['w71'] },
     { id: 's72', text: 'Im Präsens verwendet man immer wenn.', ar: 'في المضارع بنستخدم دايماً wenn.', words: ['w72'] },
-    { id: 's73', text: '154 einhundertvierundfünfzig', ar: '١٥٤ مية وأربعة وخمسين', words: ['w73'] },
   ],
   patches: [
   ],

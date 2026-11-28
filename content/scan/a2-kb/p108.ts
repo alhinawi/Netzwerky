@@ -23,7 +23,6 @@ export const p108: ScanPage = {
     { id: 'w13', x: 95, y: 1040, w: 1060, h: 40, text: '16a Hallo? Sehen Sie Szene 25. Was vereinbaren die beiden? Ergänzen Sie dann das Telefongespräch.', ar: '١٦ا ألو؟ بصوا على مشهد ٢٥. الاتنين اتفقوا على إيه؟ بعدين كملوا المكالمة التليفون.' },
     { id: 'w14', x: 170, y: 1080, w: 390, h: 340, text: '○ Ja? Hallo? | ○ Wer? | ○ Ach, Christof, hallo! Ja? | ○ In den Kletterpark? Mit dir? | ○ Ja, gerne. Wann denn? | ○ Morgen um drei? Ja, da kann ich. | ○ Ja, ich mich auch. | ○ Ja, schön, dann bis morgen. | ○ Ja, ciao.', ar: 'ألو؟ | مين؟ | آه، كريستوف، أهلاً! أيوه؟ | لملعب التسلق؟ معاك؟ | أيوه، بحب. امتى بقى؟ | بكرة الساعة تلاتة؟ أيوه، أقدر. | أيوه، أنا كمان. | جميل، يبقى لحد بكرة. | أيوه، باي.' },
     { id: 'w15', x: 180, y: 1465, w: 600, h: 65, text: 'b Wer denkt was? Notieren Sie je einen Satz für Anna und ihre Freundin, für Bea und für Christof.', ar: 'ب مين بيفكر في إيه؟ اكتبوا جملة لأنا وصاحبتها، ولبيا، ولكريستوف.' },
-    { id: 'w16', x: 100, y: 1598, w: 180, h: 30, text: '108 einhundertacht', ar: '١٠٨ مية وتمانية' },
   ],
   audio: [
   ],
@@ -73,7 +72,6 @@ export const p108: ScanPage = {
     { id: 's13', text: '16a Hallo? Sehen Sie Szene 25. Was vereinbaren die beiden? Ergänzen Sie dann das Telefongespräch.', ar: '١٦ا ألو؟ بصوا على مشهد ٢٥. الاتنين اتفقوا على إيه؟ بعدين كملوا المكالمة التليفون.', words: ['w13'] },
     { id: 's14', text: '○ Ja? Hallo? | ○ Wer? | ○ Ach, Christof, hallo! Ja? | ○ In den Kletterpark? Mit dir? | ○ Ja, gerne. Wann denn? | ○ Morgen um drei? Ja, da kann ich. | ○ Ja, ich mich auch. | ○ Ja, schön, dann bis morgen. | ○ Ja, ciao.', ar: 'ألو؟ | مين؟ | آه، كريستوف، أهلاً! أيوه؟ | لملعب التسلق؟ معاك؟ | أيوه، بحب. امتى بقى؟ | بكرة الساعة تلاتة؟ أيوه، أقدر. | أيوه، أنا كمان. | جميل، يبقى لحد بكرة. | أيوه، باي.', words: ['w14'] },
     { id: 's15', text: 'b Wer denkt was? Notieren Sie je einen Satz für Anna und ihre Freundin, für Bea und für Christof.', ar: 'ب مين بيفكر في إيه؟ اكتبوا جملة لأنا وصاحبتها، ولبيا، ولكريستوف.', words: ['w15'] },
-    { id: 's16', text: '108 einhundertacht', ar: '١٠٨ مية وتمانية', words: ['w16'] },
   ],
   patches: [
   ],

@@ -120,7 +120,6 @@ export const p164: ScanPage = {
     { id: 'w110', x: 684, y: 1581, w: 494, h: 24, text: 'wiegen, er wiegt, hat gewogen', ar: 'يزن' },
     { id: 'w111', x: 684, y: 1608, w: 494, h: 24, text: 'wissen, er weiß, hat gewusst', ar: 'يعرف (معلومة)' },
     { id: 'w112', x: 684, y: 1634, w: 494, h: 24, text: 'ziehen, er zieht, hat/ist gezogen', ar: 'يسحب / ينتقل' },
-    { id: 'w113', x: 92, y: 1691, w: 417, h: 31, text: '164 einhundertvierundsechzig', ar: '١٦٤ مية وأربعة وستين' },
   ],
   audio: [
   ],
@@ -240,7 +239,6 @@ export const p164: ScanPage = {
     { id: 's110', text: 'wiegen, er wiegt, hat gewogen', ar: 'يزن', words: ['w110'] },
     { id: 's111', text: 'wissen, er weiß, hat gewusst', ar: 'يعرف (معلومة)', words: ['w111'] },
     { id: 's112', text: 'ziehen, er zieht, hat/ist gezogen', ar: 'يسحب / ينتقل', words: ['w112'] },
-    { id: 's113', text: '164 einhundertvierundsechzig', ar: '١٦٤ مية وأربعة وستين', words: ['w113'] },
   ],
   patches: [
   ],

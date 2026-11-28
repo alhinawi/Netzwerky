@@ -63,7 +63,6 @@ export const p61: ScanPage = {
     { id: 'rb11', x: 785, y: 1496, w: 367, h: 24, text: 'Was finden Sie schön / weniger schön?', ar: 'إيه اللي شايفه حلو / أقل حلاوة؟' },
     { id: 'rb12', x: 785, y: 1525, w: 390, h: 24, text: 'Ich finde schön / weniger schön, dass …', ar: 'شايف حلو / أقل حلاوة إن …' },
     { id: 'rb13', x: 785, y: 1554, w: 320, h: 24, text: '… finde ich (nicht so) gut, weil …', ar: '… شايفه (مش أوي) كويس عشان …' },
-    { id: 'pgw', x: 1000, y: 1684, w: 127, h: 28, text: 'einundsechzig', ar: 'واحد وستين' },
   ],
   audio: [
   ],

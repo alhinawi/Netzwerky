@@ -73,7 +73,6 @@ export const p41: ScanPage = {
     { id: 'b63', x: 708, y: 1452, w: 231, h: 21, text: 'anstrengend/..., wenn ...', ar: 'متعبة / ...، لما ...' },
     { id: 'b64', x: 684, y: 1470, w: 442, h: 29, text: 'Anders als in Deutschland ist es bei uns für viele', ar: 'على عكس ألمانيا، عندنا كتير بيكون' },
     { id: 'b65', x: 709, y: 1506, w: 199, h: 20, text: 'normal, dass/wenn ...', ar: 'عادي إن / لما ...' },
-    { id: 'b66', x: 993, y: 1558, w: 130, h: 22, text: 'einundvierzig', ar: 'واحد وأربعين' },
   ],
   audio: [],
   fields: [],

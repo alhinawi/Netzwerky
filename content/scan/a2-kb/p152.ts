@@ -63,7 +63,6 @@ export const p152: ScanPage = {
     { id: 'w53', x: 166, y: 1550, w: 124, h: 28, text: 'Position 1', ar: 'المكان ١' },
     { id: 'w54', x: 713, y: 1556, w: 111, h: 28, text: 'Satzende', ar: 'آخر الجملة' },
     { id: 'w55', x: 149, y: 1592, w: 691, h: 30, text: 'Im Imperativsatz steht das konjugierte Verb auf Position 1.', ar: 'في جملة الأمر الفعل المتصرّف في المكان ١.' },
-    { id: 'w56', x: 86, y: 1686, w: 359, h: 28, text: '152 einhundertzweiundfünfzig', ar: '١٥٢ مية واتنين وخمسين' },
   ],
   audio: [
   ],
@@ -126,7 +125,6 @@ export const p152: ScanPage = {
     { id: 's53', text: 'Position 1', ar: 'المكان ١', words: ['w53'] },
     { id: 's54', text: 'Satzende', ar: 'آخر الجملة', words: ['w54'] },
     { id: 's55', text: 'Im Imperativsatz steht das konjugierte Verb auf Position 1.', ar: 'في جملة الأمر الفعل المتصرّف في المكان ١.', words: ['w55'] },
-    { id: 's56', text: '152 einhundertzweiundfünfzig', ar: '١٥٢ مية واتنين وخمسين', words: ['w56'] },
   ],
   patches: [
   ],

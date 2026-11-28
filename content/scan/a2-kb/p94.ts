@@ -27,7 +27,6 @@ export const p94: ScanPage = {
     { id: 'w17', x: 1010, y: 1356, w: 125, h: 36, text: 'Nachteile', ar: 'العيوب' },
     { id: 'w18', x: 154, y: 1370, w: 255, h: 42, text: 'Gebärdendolmetscher', ar: 'مترجم لغة إشارة' },
     { id: 'w19', x: 168, y: 1560, w: 830, h: 44, text: 'c Stellen Sie Ihre Person vor. Die anderen ergänzen die Informationen in der Tabelle in 6b.', ar: 'ج قدموا الشخص بتاعكم. والباقي يكمل المعلومات في جدول ٦ب.' },
-    { id: 'w20', x: 96, y: 1614, w: 232, h: 44, text: '94 vierundneunzig', ar: '٩٤ أربعة وتسعين' },
   ],
   audio: [
   ],
@@ -76,7 +75,6 @@ export const p94: ScanPage = {
     { id: 's17', text: 'Nachteile', ar: 'العيوب', words: ['w17'] },
     { id: 's18', text: 'Gebärdendolmetscher', ar: 'مترجم لغة إشارة', words: ['w18'] },
     { id: 's19', text: 'c Stellen Sie Ihre Person vor. Die anderen ergänzen die Informationen in der Tabelle in 6b.', ar: 'ج قدموا الشخص بتاعكم. والباقي يكمل المعلومات في جدول ٦ب.', words: ['w19'] },
-    { id: 's20', text: '94 vierundneunzig', ar: '٩٤ أربعة وتسعين', words: ['w20'] },
   ],
   patches: [
   ],

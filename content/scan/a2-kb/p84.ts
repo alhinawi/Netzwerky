@@ -45,7 +45,6 @@ export const p84: ScanPage = {
     { id: 'w33', x: 1025, y: 1516, w: 165, h: 34, text: '7. Platzreservierung', ar: '٧. حجز مكان' },
     { id: 'w34', x: 1025, y: 1552, w: 160, h: 32, text: '8. Wegbeschreibung', ar: '٨. وصف طريق' },
     { id: 'w35', x: 163, y: 1582, w: 815, h: 48, text: 'b Wählen Sie vier Wörter aus 9a und lesen Sie sie erst langsam und dann schnell.', ar: 'ب اختار أربع كلمات من ٩أ واقراهم الأول ببطء وبعدين بسرعة.' },
-    { id: 'w36', x: 81, y: 1625, w: 185, h: 32, text: '84 vierundachtzig', ar: '٨٤ أربعة وتمانين' },
   ],
   audio: [],
   fields: [
@@ -99,7 +98,6 @@ export const p84: ScanPage = {
     { id: 's33', text: '7. Platzreservierung', ar: '٧. حجز مكان', words: ['w33'] },
     { id: 's34', text: '8. Wegbeschreibung', ar: '٨. وصف طريق', words: ['w34'] },
     { id: 's35', text: 'b Wählen Sie vier Wörter aus 9a und lesen Sie sie erst langsam und dann schnell.', ar: 'ب اختار أربع كلمات من ٩أ واقراهم الأول ببطء وبعدين بسرعة.', words: ['w35'] },
-    { id: 's36', text: '84 vierundachtzig', ar: '٨٤ أربعة وتمانين', words: ['w36'] },
   ],
   patches: [
     { x: 274, y: 1494, w: 10, h: 38 },

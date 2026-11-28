@@ -66,7 +66,6 @@ export const p30: ScanPage = {
     { id: 'w56', x: 175, y: 1464, w: 20, h: 25, text: 'b', ar: 'ب' },
     { id: 'q3', x: 221, y: 1468, w: 471, h: 42, text: 'Vergleichen Sie die Sachen. Schreiben Sie Sätze', ar: 'قارنوا بين الحاجات. اكتبوا جمل' },
     { id: 'q4', x: 690, y: 1496, w: 324, h: 42, text: 'und sprechen Sie dann zu zweit.', ar: 'وبعدين اتكلموا مع بعض.' },
-    { id: 'w59', x: 93, y: 1696, w: 115, h: 23, text: '30 dreißig', ar: '٣٠ تلاتين' },
   ],
   audio: [
     { id: 'a1_19_21_80', x: 80, y: 552, w: 28, h: 28, src: ['NWn_A2_KB_Audio_1-019.mp3','NWn_A2_KB_Audio_1-020.mp3','NWn_A2_KB_Audio_1-021.mp3'], label: 'Aufgabe 4b (1.19-21)' },
@@ -133,7 +132,6 @@ export const p30: ScanPage = {
     { id: 's-w55', text: 'D als das Smartphone.', ar: 'D من الموبايل.', words: ['w55'] },
     { id: 's-q3', text: 'Vergleichen Sie die Sachen. Schreiben Sie Sätze', ar: 'قارنوا بين الحاجات. اكتبوا جمل', words: ['q3'] },
     { id: 's-q4', text: 'und sprechen Sie dann zu zweit.', ar: 'وبعدين اتكلموا مع بعض.', words: ['q4'] },
-    { id: 's-w59', text: '30 dreißig', ar: '٣٠ تلاتين', words: ['w59'] },
   ],
   groups: [],
 }

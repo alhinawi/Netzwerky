@@ -30,7 +30,6 @@ export const p146: ScanPage = {
     { id: 'w19', x: 953, y: 259, w: 237, h: 28, text: 'ich mehr Zeit hätte, …', ar: 'كان عندي وقت أكتر، …' },
     { id: 'w20', x: 167, y: 688, w: 84, h: 33, text: 'Start', ar: 'البداية' },
     { id: 'w21', x: 1042, y: 1587, w: 70, h: 33, text: 'Ziel', ar: 'الهدف' },
-    { id: 'w22', x: 89, y: 1692, w: 362, h: 28, text: '146 einhundertsechsundvierzig', ar: '١٤٦ مية وستة وأربعين' },
   ],
   audio: [
   ],
@@ -59,7 +58,6 @@ export const p146: ScanPage = {
     { id: 's19', text: 'ich mehr Zeit hätte, …', ar: 'كان عندي وقت أكتر، …', words: ['w19'] },
     { id: 's20', text: 'Start', ar: 'البداية', words: ['w20'] },
     { id: 's21', text: 'Ziel', ar: 'الهدف', words: ['w21'] },
-    { id: 's22', text: '146 einhundertsechsundvierzig', ar: '١٤٦ مية وستة وأربعين', words: ['w22'] },
   ],
   patches: [
   ],

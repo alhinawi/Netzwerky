@@ -58,7 +58,6 @@ export const p149: ScanPage = {
   groups: [],
   sentences: [
     { id: 's1', text: 'Plattform', ar: 'منصة (مراجعة)', words: ['w1'] },
-    { id: 's2', text: '4', ar: '٤', words: ['w2'] },
     { id: 's3', text: 'Was möchten Sie gern am Wochenende machen? Arbeiten Sie zu zweit. Jede/r wählt eine Karte.', ar: 'إنتوا عايزين تعملوا إيه في الويك إند؟ اشتغلوا اتنين اتنين. كل واحد يختار كارت.', words: ['w3'] },
     { id: 's4', text: 'Planen Sie das Gespräch und spielen Sie es im Kurs vor.', ar: 'خططوا للمحادثة ومثّلوها قدام الفصل.', words: ['w4'] },
     { id: 's5', text: 'A', ar: 'A', words: ['w5'] },
@@ -84,7 +83,6 @@ export const p149: ScanPage = {
     { id: 's25', text: 'Festival?', ar: 'مهرجان؟', words: ['w25'] },
     { id: 's26', text: 'Ja, genau.', ar: 'أيوه، بالظبط.', words: ['w26'] },
     { id: 's27', text: 'Sprachmittlung', ar: 'الوساطة اللغوية (نقل المعنى من لغة للغة)', words: ['w27'] },
-    { id: 's28', text: '6', ar: '٦', words: ['w28'] },
     { id: 's29', text: 'Wählen Sie.', ar: 'اختاروا.', words: ['w29'] },
     { id: 's30', text: 'A Hören Sie die Informationen zu zwei Musikveranstaltungen im', ar: 'اسمعوا المعلومات عن حفلتين موسيقيتين في الراديو.', words: ['w30'] },
     { id: 's31', text: 'Radio. Sie wollen mit einem Freund / einer Freundin aus Ihrem Land', ar: 'عايزين تروحوا مع صاحب/صاحبة من بلدكم.', words: ['w31'] },

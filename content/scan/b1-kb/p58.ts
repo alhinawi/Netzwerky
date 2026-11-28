@@ -49,7 +49,6 @@ export const p58: ScanPage = {
     { id: 'b39', x: 220, y: 1377, w: 275, h: 18, text: '- Kennen Sie ähnliche Ideen?', ar: '- تعرف أفكار شبهها؟' },
     { id: 'b40', x: 98, y: 1426, w: 999, h: 29, text: 'c Berichten Sie einem Freund / einer Freundin in Ihrer Sprache oder auf Deutsch von den Ideen', ar: 'ج احكي لصاحب أو صاحبة بلغتك أو بالألماني عن الأفكار' },
     { id: 'b41', x: 219, y: 1458, w: 65, h: 15, text: 'aus 8b.', ar: 'اللي في ٨ب.' },
-    { id: 'b42', x: 97, y: 1577, w: 172, h: 21, text: '58 achtundfünfzig', ar: '٥٨ ثمانية وخمسين' },
   ],
   audio: [],
   fields: [],

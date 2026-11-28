@@ -62,7 +62,6 @@ export const p54: ScanPage = {
     { id: 'w52', x: 950, y: 1620, w: 143, h: 23, text: 'die Mülltonne', ar: 'صندوق الزبالة' },
     { id: 'w53', x: 720, y: 1617, w: 266, h: 55, text: 'der Beamte / die Beamtin', ar: 'الموظف / الموظفة الحكومية' },
     { id: 'w54', x: 322, y: 1625, w: 362, h: 59, text: 'Die Müllabfuhr macht sauber und …', ar: 'جامعي الزبالة بينضّفوا و …' },
-    { id: 'w55', x: 74, y: 1700, w: 178, h: 24, text: '54 vierundfünfzig', ar: '٥٤ أربعة وخمسين' },
   ],
   audio: [
   ],
@@ -120,7 +119,6 @@ export const p54: ScanPage = {
     { id: 's48', text: 'die Mülltonne', ar: 'صندوق الزبالة', words: ['w52'] },
     { id: 's49', text: 'der Beamte / die Beamtin', ar: 'الموظف / الموظفة الحكومية', words: ['w53'] },
     { id: 's50', text: 'Die Müllabfuhr macht sauber und …', ar: 'جامعي الزبالة بينضّفوا و …', words: ['w54'] },
-    { id: 's51', text: '54 vierundfünfzig', ar: '٥٤ أربعة وخمسين', words: ['w55'] },
   ],
   patches: [
   ],

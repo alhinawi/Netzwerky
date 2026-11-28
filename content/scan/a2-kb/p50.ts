@@ -59,7 +59,6 @@ export const p50: ScanPage = {
     { id: 'w48', x: 637, y: 1605, w: 158, h: 30, text: '… endet mit …', ar: '… بينتهي بـ …' },
     { id: 'w49', x: 637, y: 1633, w: 303, h: 32, text: '… macht (sicher) Spaß, weil …', ar: '… (أكيد) ممتع، لأن …' },
     { id: 'w50', x: 637, y: 1660, w: 598, h: 45, text: 'Das Fest / Die Veranstaltung ist kostenlos. / Ein Ticket kostet …', ar: 'الحفلة / الفعالية مجانية. / التذكرة بتكلّف …' },
-    { id: 'w51', x: 88, y: 1718, w: 117, h: 30, text: '50 fünfzig', ar: '٥٠ خمسين' },
   ],
   audio: [
     { id: 'a1_39_80', x: 80, y: 1106, w: 30, h: 28, src: ['NWn_A2_KB_Audio_1-039.mp3'], label: 'Aufgabe 10b (1.39)' },
@@ -112,7 +111,6 @@ export const p50: ScanPage = {
     { id: 's-w48', text: '… endet mit …', ar: '… بينتهي بـ …', words: ['w48'] },
     { id: 's-w49', text: '… macht (sicher) Spaß, weil …', ar: '… (أكيد) ممتع، لأن …', words: ['w49'] },
     { id: 's-w50', text: 'Das Fest / Die Veranstaltung ist kostenlos. / Ein Ticket kostet …', ar: 'الحفلة / الفعالية مجانية. / التذكرة بتكلّف …', words: ['w50'] },
-    { id: 's-w51', text: '50 fünfzig', ar: '٥٠ خمسين', words: ['w51'] },
   ],
   groups: [],
 }

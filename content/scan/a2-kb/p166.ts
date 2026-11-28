@@ -9,7 +9,6 @@ export const p166: ScanPage = {
   height: 1755,
   words: [
     { id: 'w1', x: 200, y: 50, w: 363, h: 28, text: 'alphabetische Wortliste', ar: 'قايمة الكلمات الأبجدية' },
-    { id: 'w2', x: 92, y: 1696, w: 419, h: 28, text: '166 einhundertsechsundsechzig', ar: '١٦٦ مية وستة وستين' },
     { id: 'w3', x: 67, y: 135, w: 377, h: 25, text: 'Ausbildung, die, -en 1/1b', ar: 'تدريب مهني' },
     { id: 'w4', x: 67, y: 162, w: 377, h: 25, text: 'Ausblick, der, -e 12/11b', ar: 'منظر / توقّع' },
     { id: 'w5', x: 67, y: 190, w: 377, h: 25, text: 'aus', ar: 'drucken 5/6c' },
@@ -171,7 +170,6 @@ export const p166: ScanPage = {
   groups: [],
   sentences: [
     { id: 's1', text: 'alphabetische Wortliste', ar: 'قايمة الكلمات الأبجدية', words: ['w1'] },
-    { id: 's2', text: '166 einhundertsechsundsechzig', ar: '١٦٦ مية وستة وستين', words: ['w2'] },
     { id: 's3', text: 'Ausbildung, die, -en 1/1b', ar: 'تدريب مهني', words: ['w3'] },
     { id: 's4', text: 'Ausblick, der, -e 12/11b', ar: 'منظر / توقّع', words: ['w4'] },
     { id: 's5', text: 'aus', ar: 'drucken 5/6c', words: ['w5'] },

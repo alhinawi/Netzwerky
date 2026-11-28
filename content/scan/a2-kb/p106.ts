@@ -18,7 +18,6 @@ export const p106: ScanPage = {
     { id: 'w8', x: 95, y: 1350, w: 480, h: 60, text: '13a Sankt Peter-Ording. Hören Sie. Was ist richtig? Kreuzen Sie an.', ar: '١٣ا سانت بيتر-أوردنج. اسمعوا. إيه الصح؟ علّموا.' },
     { id: 'w9', x: 215, y: 1420, w: 400, h: 60, text: '1. Wie viele Einwohner leben in Sankt Peter-Ording?', ar: '١. كام نسمة عايشة في سانت بيتر-أوردنج؟' },
     { id: 'w10', x: 245, y: 1473, w: 400, h: 85, text: 'a 700 Personen. | b 4.000 Personen. | c 17.000 Personen.', ar: 'أ ٧٠٠ شخص. | ب ٤٬٠٠٠ شخص. | ج ١٧٬٠٠٠ شخص.' },
-    { id: 'w11', x: 95, y: 1592, w: 190, h: 32, text: '106 einhundertsechs', ar: '١٠٦ مية وستة' },
   ],
   audio: [
   ],
@@ -42,7 +41,6 @@ export const p106: ScanPage = {
     { id: 's8', text: '13a Sankt Peter-Ording. Hören Sie. Was ist richtig? Kreuzen Sie an.', ar: '١٣ا سانت بيتر-أوردنج. اسمعوا. إيه الصح؟ علّموا.', words: ['w8'] },
     { id: 's9', text: '1. Wie viele Einwohner leben in Sankt Peter-Ording?', ar: '١. كام نسمة عايشة في سانت بيتر-أوردنج؟', words: ['w9'] },
     { id: 's10', text: 'a 700 Personen. | b 4.000 Personen. | c 17.000 Personen.', ar: 'أ ٧٠٠ شخص. | ب ٤٬٠٠٠ شخص. | ج ١٧٬٠٠٠ شخص.', words: ['w10'] },
-    { id: 's11', text: '106 einhundertsechs', ar: '١٠٦ مية وستة', words: ['w11'] },
   ],
   patches: [
   ],

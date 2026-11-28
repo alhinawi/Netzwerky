@@ -78,7 +78,6 @@ export const p51: ScanPage = {
     { id: 'b68', x: 144, y: 1492, w: 980, h: 30, text: 'e Jemand aus dem Kurs war bei der Präsentation der Tipps nicht dabei. Was ist für die Person wichtig?', ar: 'ه حد من الكورس ماكانش موجود وقت عرض النصايح. إيه المهم للشخص ده؟' },
     { id: 'b69', x: 187, y: 1521, w: 882, h: 28, text: 'Berichten Sie von den wichtigsten Tipps für ein Vorstellungsgespräch auf Deutsch oder in Ihrer', ar: 'احكوا عن أهم نصايح الإنترفيو بالألماني أو' },
     { id: 'b70', x: 186, y: 1558, w: 80, h: 20, text: 'Sprache.', ar: 'بلغتكم.' },
-    { id: 'b71', x: 976, y: 1574, w: 120, h: 21, text: 'einundfünfzig', ar: 'واحد وخمسين' },
   ],
   audio: [],
   fields: [],
