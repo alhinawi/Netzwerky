@@ -408,7 +408,7 @@ export default function ScanReader({
     : (wordHit?.text ?? word?.text ?? '')
   const popupAr = effectiveTab === 'sentence' && sentence
     ? sentence.ar
-    : (wordHit?.ar ?? word?.ar ?? '')
+    : ((wordHit?.ar || word?.ar) ?? '')
 
   /** keep the popup inside the page: shift it left when the word sits near an edge */
   const popupStyle = (w: { x: number; y: number; w: number; h: number }) => {
