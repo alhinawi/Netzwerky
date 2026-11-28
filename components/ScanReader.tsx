@@ -11,7 +11,7 @@ type LibBook = {
   level: string
   kind: string
   cover: string | null
-  chapters: { n: number; first: number; last: number; title: string }[]
+  chapters: { n: number | string; first: number; last: number; title: string }[]
 }
 
 const norm = (s: string) =>
@@ -30,7 +30,7 @@ export default function ScanReader({
   prev?: number
   next?: number
   pages: number[]
-  chapters: { n: number; first: number }[]
+  chapters: { n: number | string; first: number }[]
   pageChapters: { printed: number; chapter: number }[]
   library: LibBook[]
 }) {
@@ -453,7 +453,7 @@ export default function ScanReader({
                   <button
                     key={c.n}
                     onClick={() => { setChapterMenu(false); go(c.first) }}
-                    className={`flex w-full items-center justify-between rounded-lg px-2 py-1.5 text-left text-[12px] ${c.n === page.chapter ? 'bg-nw/10 font-semibold text-nw' : 'text-neutral-700'}`}
+                    className={`flex w-full items-center justify-between rounded-lg px-2 py-1.5 text-left text-[12px] ${String(c.n) === String(page.part ?? page.chapter) ? 'bg-nw/10 font-semibold text-nw' : 'text-neutral-700'}`}
                   >
                     <span>{chapterLabel(c.n)}</span>
                     <span className="text-[11px] text-neutral-400">{c.first}</span>

@@ -6,16 +6,20 @@ function library() {
   return books.map((b) => {
     const pages = pagesOf(b.id)
     const meta = bookById(b.id)?.chapters ?? []
-    const groups: { n: number; first: number; last: number; title: string }[] = []
+    // Plattform pages share their chapter number with the chapter before them but
+    // carry a part tag, so group on the part when there is one: they get their own
+    // menu row (PT1..PT4) instead of stretching the chapter over them.
+    const groups: { n: number | string; first: number; last: number; title: string }[] = []
     for (const p of pages) {
-      const g = groups.find((x) => x.n === p.chapter)
+      const key = p.part ?? p.chapter
+      const g = groups.find((x) => x.n === key)
       if (g) g.last = p.printed
-      else groups.push({ n: p.chapter, first: p.printed, last: p.printed, title: '' })
+      else groups.push({ n: key, first: p.printed, last: p.printed, title: '' })
     }
-    groups.sort((a, b) => a.n - b.n)
+    groups.sort((a, b) => a.first - b.first)
     for (const g of groups) {
-      const hit = meta.find((c) => Number(c.n) === g.n)
-      g.title = hit?.title ?? (Number.isInteger(g.n) ? `Kapitel ${g.n}` : 'Plattform')
+      const hit = meta.find((c) => String(c.n) === String(g.n))
+      g.title = hit?.title ?? (typeof g.n === 'number' ? `Kapitel ${g.n}` : 'Plattform')
     }
     return {
       id: b.id,
