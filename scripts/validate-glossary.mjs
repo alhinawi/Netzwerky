@@ -101,7 +101,9 @@ for (const book of fs.readdirSync('content/scan')) {
       // no empty popups (reviewer): a digit/dot/dash-only or letter-marker box
       // never echoes its own text as the gloss — it carries the Arabic-Indic
       // digit / Arabic letter form or the box is removed
-      if (txt === ar && (/^[\d\s.,\u2013\u2014\-/:]+$/.test(txt) || /^\d{0,2}\s*\)?\s*[A-Za-z]\s*\)?$/.test(txt) || /^\d{1,2}\)\s*[A-Za-z]$/.test(txt)))
+      if (/^(…|\.\.\.)$/.test(txt))
+        violations.push({ key: `${book}/${f}:${i + 1}`, value: txt, rule: 'ellipsis-box' })
+      if (txt === ar && (/^[\d\s.,\u2013\u2014\-/:.()]+$/.test(txt) || /^\d{0,2}\s*\)?\s*[A-Za-z]\s*\)?$/.test(txt) || /^\d{1,2}\)\s*[A-Za-z]$/.test(txt) || /^\(\d{1,2}\)$/.test(txt)))
         violations.push({ key: `${book}/${f}:${i + 1}`, value: txt, rule: 'echo-gloss-box' })
     })
   }

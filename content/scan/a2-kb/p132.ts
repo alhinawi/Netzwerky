@@ -44,7 +44,7 @@ export const p132: ScanPage = {
     { id: 'w33', x: 928, y: 392, w: 266, h: 30, text: 'sie mal einkaufen müssen,', ar: 'يحتاجوا يشتروا حاجة،' },
     { id: 'w34', x: 928, y: 421, w: 266, h: 30, text: 'fahren sie mit der Kutsche', ar: 'بيروحوا بالعربية الحنطور' },
     { id: 'w35', x: 928, y: 448, w: 266, h: 30, text: 'oder den Fahrrädern zum', ar: 'أو العجل لـ' },
-    { id: 'w36', x: 928, y: 476, w: 74, h: 30, text: '(4)', ar: '(4)' },
+    { id: 'w36', x: 928, y: 476, w: 74, h: 30, text: '(4)', ar: '(٤)' },
     { id: 'w37', x: 680, y: 507, w: 514, h: 30, text: 'Das Haus ist alt, die Räume sind niedrig, die Möbel', ar: 'البيت قديم، والأوض واطية، والأثاث' },
     { id: 'w38', x: 680, y: 537, w: 514, h: 30, text: 'altmodisch. Eine (5) haben sie nicht, sie machen', ar: 'قديم. معندهمش (5)، بيولعوا' },
     { id: 'w39', x: 680, y: 570, w: 514, h: 30, text: 'Feuer und heizen mit Holz. Im Winter wird es oft kühl', ar: 'نار ويدفوا بالخشب. في الشتا بيبقى كتير بارد' },
