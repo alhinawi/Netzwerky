@@ -26,7 +26,6 @@ export const p18: ScanPage = {
     { id: 'b16', x: 223, y: 1415, w: 340, h: 19, text: '3. Alles hören und keinen stören!', ar: '3. تسمع كل حاجة وماتضايقش حد! ___' },
     { id: 'b17', x: 222, y: 1456, w: 300, h: 18, text: '4. Der Rücken dankt!___', ar: '4. ضهرك هيقولك متشكر! ___' },
     { id: 'b18', x: 223, y: 1496, w: 557, h: 26, text: '5. Nie wieder Tasten drücken, meine Stimme ist genug! __', ar: '5. مش هتدوس زراير تاني، صوتي كفاية! ___' },
-    { id: 'b20', x: 136, y: 1575, w: 85, h: 17, text: 'achtzehn', ar: 'طمنتاشر' },
   ],
   audio: [],
   fields: [],

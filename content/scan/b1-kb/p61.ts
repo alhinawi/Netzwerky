@@ -41,7 +41,6 @@ export const p61: ScanPage = {
     { id: 'b31', x: 183, y: 1083, w: 263, h: 20, text: "beantworten Sie die Fragen.", ar: "جاوبوا على الأسئلة." },
     { id: 'b32', x: 146, y: 1132, w: 879, h: 26, text: "C Hören Sie den Beitrag über eine weitere Aktion. Welche Sätze sind richtig? Kreuzen Sie an.", ar: "ج اسمعوا التقرير عن حملة تانية. أنهي جمل صح؟ علّموا." },
     { id: 'b33', x: 62, y: 1135, w: 23, h: 20, text: "4)", ar: "4)" },
-    { id: 'b34', x: 63, y: 1170, w: 30, h: 14, text: "1.44", ar: "1.44" },
     { id: 'b35', x: 214, y: 1176, w: 438, h: 24, text: "1. „Plogging” bedeutet „beim Joggen aufheben“.", ar: "١. \"البلوجينج\" معناها \"تلقط وانت بتجري\"." },
     { id: 'b36', x: 214, y: 1202, w: 588, h: 25, text: "2. Plogging ist ein aufwändiger Sport, man benötigt viele Dinge.", ar: "٢. البلوجينج رياضة مكلّفة، محتاج حاجات كتير." },
     { id: 'b37', x: 215, y: 1231, w: 427, h: 23, text: "3. Beim Plogging geht es um Geschwindigkeit.", ar: "٣. البلوجينج موضوعه السرعة." },

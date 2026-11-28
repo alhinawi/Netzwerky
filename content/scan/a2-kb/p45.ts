@@ -27,7 +27,6 @@ export const p45: ScanPage = {
     { id: 'q4', x: 157, y: 1448, w: 33, h: 25, text: '…?', ar: '…؟' },
     { id: 'x1', x: 382, y: 1503, w: 415, h: 28, text: 'Bei uns in Indonesien dauert eine Hochzeit', ar: 'عندنا في إندونيسيا الفرح بيستمر' },
     { id: 'x2', x: 403, y: 1532, w: 372, h: 27, text: 'oft drei Tage oder länger. Die Gäste …', ar: 'غالبًا تلات أيام أو أكتر. الضيوف …' },
-    { id: 'pt', x: 980, y: 1677, w: 128, h: 24, text: 'fünfundvierzig', ar: '٤٥' },
   ],
   audio: [
   ],

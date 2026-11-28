@@ -92,7 +92,6 @@ export const p23: ScanPage = {
     { id: 'bc', x: 128, y: 1578, w: 19, h: 28, text: 'b', ar: 'ب' },
     { id: 'bct1', x: 174, y: 1556, w: 952, h: 42, text: 'Wählen Sie eine Präsentation aus 10a und notieren Sie wichtige Informationen für einen Freund /', ar: 'اختاروا عرض من ١٠أ واكتبوا معلومات مهمة لصاحب /' },
     { id: 'bct2', x: 174, y: 1592, w: 480, h: 36, text: 'eine Freundin in Ihrer Sprache oder auf Deutsch.', ar: 'صاحبة بلغتكم أو بالألمانية.' },
-    { id: 'fw', x: 985, y: 1675, w: 138, h: 26, text: 'dreiundzwanzig', ar: 'تلاتة وعشرين' },
   ],
   audio: [
     { id: 'a1_17_3', x: 3, y: 262, w: 30, h: 28, src: ['NWn_A2_KB_Audio_1-017.mp3'], label: 'Aufgabe 8b (1.17)' },

@@ -75,7 +75,6 @@ export const p20: ScanPage = {
     { id: 'b65', x: 389, y: 1540, w: 277, h: 21, text: 'Lässt du dein Rad reparieren?', ar: 'بتصلّح عجلتك عند حد؟' },
     { id: 'b66', x: 767, y: 1558, w: 44, h: 18, text: 'Nein,', ar: 'لأ،' },
     { id: 'b67', x: 818, y: 1558, w: 197, h: 17, text: 'Ich mache das selbst.', ar: 'أنا بعملها بنفسي.' },
-    { id: 'b69', x: 146, y: 1583, w: 67, h: 17, text: 'zwanzig', ar: 'عشرين' },
   ],
   audio: [],
   fields: [],

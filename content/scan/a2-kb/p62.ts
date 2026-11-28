@@ -68,7 +68,6 @@ export const p62: ScanPage = {
     { id: 'd7', x: 255, y: 1549, w: 157, h: 24, text: 'Wiedersehen. (7)', ar: 'مع السلامة. (7)' },
     { id: 'c11', x: 190, y: 1618, w: 16, h: 28, text: 'c', ar: 'c' },
     { id: 'i11c0', x: 232, y: 1618, w: 396, h: 26, text: 'Spielen Sie zu zweit ähnliche Gespräche.', ar: 'مثّلوا مع زميل محادثات شبه كده.' },
-    { id: 'pgw', x: 153, y: 1684, w: 142, h: 28, text: 'zweiundsechzig', ar: 'اتنين وستين' },
   ],
   audio: [
   ],

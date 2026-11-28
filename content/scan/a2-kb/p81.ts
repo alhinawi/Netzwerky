@@ -37,7 +37,6 @@ export const p81: ScanPage = {
     { id: 'w27', x: 605, y: 1553, w: 155, h: 24, text: 'eine App nutzen', ar: 'نستخدم أبلكيشن' },
     { id: 'w28', x: 204, y: 1566, w: 375, h: 68, text: 'Ich fahre meistens mit dem Bus. Das ist praktisch, aber ich muss ...', ar: 'أنا غالبًا بتحرك بالأتوبيس. ده عملي، بس لازم ...' },
     { id: 'au', x: 53, y: 987, w: 30, h: 22, text: '🔊', ar: 'صوت' },
-    { id: 'al', x: 54, y: 1014, w: 30, h: 17, text: '2.2', ar: '2.2' },
   ],
   audio: [],
   fields: [

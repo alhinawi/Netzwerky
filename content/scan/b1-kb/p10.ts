@@ -82,7 +82,6 @@ export const p10: ScanPage = {
     { id: 'b72', x: 183, y: 1511, w: 22, h: 26, text: 'b', ar: 'ب' },
     { id: 'b73', x: 226, y: 1511, w: 550, h: 20, text: 'Gehen Sie durch den Kursraum und stellen Sie jede Frage', ar: 'اتحركوا في الفصل واسألوا كل سؤال' },
     { id: 'b74', x: 224, y: 1543, w: 467, h: 19, text: 'einer anderen Person. Berichten Sie dann im Kurs.', ar: 'لشخص تاني. وبعدين احكوا في المجموعة.' },
-    { id: 'b76', x: 133, y: 1581, w: 55, h: 18, text: 'zehn', ar: 'عشرة' },
   ],
   audio: [],
   fields: [],

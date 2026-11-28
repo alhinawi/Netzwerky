@@ -35,7 +35,6 @@ export const p40: ScanPage = {
     { id: 'b25', x: 812, y: 455, w: 150, h: 24, text: 'SIGMA DELTA PLUS', ar: 'SIGMA DELTA PLUS' },
     { id: 'b26', x: 963, y: 1310, w: 148, h: 30, text: 'Atmen Sie durch!', ar: 'خدوا نفس!' },
     { id: 'b27', x: 210, y: 1539, w: 408, h: 32, text: '1. So geht das nicht! Wenn Sie grillen, ...', ar: '١. كده ماينفعش! لما حضرتكم بتشووا، ...' },
-    { id: 'b29', x: 121, y: 1566, w: 69, h: 22, text: 'vierzig', ar: 'أربعين' },
   ],
   audio: [],
   fields: [],

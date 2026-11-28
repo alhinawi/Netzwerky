@@ -10,7 +10,6 @@ export const p82: ScanPage = {
   words: [
     { id: 'w1', x: 192, y: 45, w: 225, h: 30, text: 'Informationen erfragen', ar: 'نسأل ونعرف معلومات' },
     { id: 'au', x: 803, y: 139, w: 30, h: 27, text: '🔊', ar: 'صوت' },
-    { id: 'al', x: 803, y: 174, w: 27, h: 18, text: '2.3', ar: '2.3' },
     { id: 'w2', x: 193, y: 135, w: 215, h: 52, text: 'Unterwegs', ar: 'في الطريق' },
     { id: 'w3', x: 868, y: 128, w: 300, h: 34, text: 'Gut gesagt: Sie sind ungeduldig.', ar: 'كلام مظبوط: إنتوا مش صابرين.' },
     { id: 'w4', x: 868, y: 160, w: 305, h: 30, text: 'Mensch, wann geht es weiter?', ar: 'يا راجل، هنتحرك إمتى؟' },

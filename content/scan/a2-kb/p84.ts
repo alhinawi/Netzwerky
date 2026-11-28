@@ -9,9 +9,7 @@ export const p84: ScanPage = {
   height: 1692,
   words: [
     { id: 'au', x: 88, y: 367, w: 33, h: 24, text: '🔊', ar: 'صوت' },
-    { id: 'al', x: 87, y: 404, w: 26, h: 17, text: '2.4', ar: '2.4' },
     { id: 'au2', x: 79, y: 1429, w: 23, h: 27, text: '🔊', ar: 'صوت' },
-    { id: 'al2', x: 78, y: 1469, w: 29, h: 17, text: '2.5', ar: '2.5' },
     { id: 'w1', x: 216, y: 45, w: 425, h: 30, text: 'eine Wegbeschreibung verstehen und geben', ar: 'نفهم ونقول وصف طريق' },
     { id: 'w2', x: 217, y: 133, w: 395, h: 40, text: 'So findest du zu mir', ar: 'كده هتوصل ليا' },
     { id: 'w3', x: 148, y: 180, w: 775, h: 40, text: '8a Lesen Sie die SMS von Jana und fassen Sie sie in einem Satz zusammen.', ar: '٨أ اقرا رسالة يانا ولخّصها في جملة واحدة.' },

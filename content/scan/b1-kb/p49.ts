@@ -64,7 +64,6 @@ export const p49: ScanPage = {
     { id: 'b54', x: 167, y: 1454, w: 870, h: 24, text: 'sich freuen auf/über | sich kümmern um | sich melden bei | träumen von | verzichten auf |', ar: 'يتشوق لـ/يفرح بـ | يهتم بـ | يتواصل مع | يحلم بـ | يستغنى عن |' },
     { id: 'b55', x: 167, y: 1481, w: 150, h: 22, text: 'warten auf | ...', ar: 'ينتظر | ...' },
     { id: 'b56', x: 158, y: 1526, w: 725, h: 26, text: '1. Ich ärgere mich darüber, dass ich noch keine Stelle gefunden habe.', ar: '١. أنا متنرفز بسبب إني لسه ملقتش وظيفة.' },
-    { id: 'b57', x: 942, y: 1590, w: 130, h: 22, text: 'neunundvierzig', ar: 'تسعة وأربعين' },
   ],
   audio: [],
   fields: [],

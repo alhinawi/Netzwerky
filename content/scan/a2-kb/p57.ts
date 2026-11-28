@@ -84,7 +84,6 @@ export const p57: ScanPage = {
     { id: 'w74', x: 617, y: 1592, w: 298, h: 28, text: 'Es liegt auf dem kleinen Tisch.', ar: 'هو على الترابيزة الصغيرة.' },
     { id: 'w75', x: 617, y: 1622, w: 289, h: 25, text: 'Wer sieht den grauen Mantel?', ar: 'مين شايف المعطف الرمادي؟' },
     { id: 'w76', x: 232, y: 1636, w: 240, h: 31, text: 'Wo ist das grüne Buch?', ar: 'فين الكتاب الأخضر؟' },
-    { id: 'w77', x: 964, y: 1700, w: 159, h: 20, text: 'siebenundfünfzig', ar: 'سبعة وخمسين' },
   ],
   audio: [
   ],

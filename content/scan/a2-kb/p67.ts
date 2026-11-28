@@ -106,7 +106,6 @@ export const p67: ScanPage = {
     { id: 'w95', x: 842, y: 1573, w: 288, h: 30, text: 'die Ausstellung ∣ die Sehens-', ar: 'المعرض ∣ المعالم' },
     { id: 'w96', x: 842, y: 1603, w: 263, h: 30, text: 'würdigkeit ∣ das Theater ∣', ar: 'السياحية ∣ المسرح ∣' },
     { id: 'w97', x: 842, y: 1631, w: 247, h: 30, text: 'das Café ∣ das Kino ∣ …', ar: 'الكافيه ∣ السينما ∣ …' },
-    { id: 'w98', x: 947, y: 1677, w: 158, h: 30, text: 'siebenundsechzig', ar: 'سبعة وستين' },
   ],
   audio: [
     { id: 'a1_55_22', x: 22, y: 893, w: 40, h: 55, src: ['NWn_A2_KB_Audio_1-055.mp3'], label: 'Aufgabe 5b (1.55)' },

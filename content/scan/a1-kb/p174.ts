@@ -171,7 +171,6 @@ export const p174: ScanPage = {
     { id: 'w160', x: 810, y: 1505, w: 85, h: 20, text: 'zweit', ar: 'اتنين (مع بعض)' },
     { id: 'w161', x: 810, y: 1529, w: 206, h: 17, text: 'Zwiebel, die, -n', ar: 'البصلة' },
     { id: 'w162', x: 810, y: 1552, w: 118, h: 21, text: 'zwischen', ar: 'بين' },
-    { id: 'w163', x: 810, y: 1576, w: 85, h: 18, text: 'zwölf', ar: 'اتناشر' },
   ],
   audio: [],
   fields: [],

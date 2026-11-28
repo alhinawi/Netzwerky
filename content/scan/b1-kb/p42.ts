@@ -41,7 +41,6 @@ export const p42: ScanPage = {
     { id: 'b31', x: 458, y: 1524, w: 30, h: 26, text: 'A', ar: 'A' },
     { id: 'b32', x: 494, y: 1524, w: 30, h: 26, text: 'B', ar: 'B' },
     { id: 'b33', x: 974, y: 1542, w: 30, h: 26, text: 'C', ar: 'C' },
-    { id: 'b35', x: 115, y: 1559, w: 130, h: 17, text: 'zweiundvierzig', ar: 'اتنين وأربعين' },
   ],
   audio: [],
   fields: [],

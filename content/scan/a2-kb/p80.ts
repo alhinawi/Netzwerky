@@ -23,7 +23,6 @@ export const p80: ScanPage = {
     { id: 'w13', x: 170, y: 1415, w: 465, h: 45, text: 'b Sehen Sie die Fotos an. Was ist das Problem?', ar: 'ب بصّ على الصور. إيه المشكلة؟' },
     { id: 'w14', x: 170, y: 1480, w: 550, h: 48, text: 'c Hören Sie die Szenen und ordnen Sie sie den Fotos zu.', ar: 'ج اسمع المشاهد ووصّلها بالصور.' },
     { id: 'au', x: 83, y: 1480, w: 28, h: 24, text: '🔊', ar: 'صوت' },
-    { id: 'al', x: 83, y: 1515, w: 26, h: 16, text: '2.1', ar: '2.1' },
     { id: 'w15', x: 85, y: 1628, w: 120, h: 34, text: '80 achtzig', ar: '٨٠ تمانين' },
   ],
   audio: [],

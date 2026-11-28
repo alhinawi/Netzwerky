@@ -64,7 +64,6 @@ export const p68: ScanPage = {
     { id: 'w53', x: 225, y: 1668, w: 465, h: 30, text: 'Ich denke, das ist eine/keine gute Entscheidung.', ar: 'أنا شايف ده قرار كويس/مش كويس.' },
     { id: 'w54', x: 815, y: 1635, w: 310, h: 30, text: 'Ich kann das nicht verstehen.', ar: 'مقدرش أفهم ده.' },
     { id: 'w55', x: 785, y: 1660, w: 370, h: 30, text: 'Herr Studer hat früher viel verdient.', ar: 'السيد شتودر كان بيكسب كتير زمان.' },
-    { id: 'w57', x: 147, y: 1698, w: 136, h: 30, text: 'achtundsechzig', ar: 'ثمانية وستين' },
   ],
   audio: [
   ],

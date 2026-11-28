@@ -51,7 +51,6 @@ export const p32: ScanPage = {
     { id: 'b41', x: 249, y: 1355, w: 430, h: 30, text: 'Präpositionen mit Dativ (vor der Arbeit):', ar: 'حروف الجر مع Dativ (زي vor der Arbeit):' },
     { id: 'b42', x: 740, y: 1355, w: 60, h: 28, text: 'ab,', ar: 'من / ابتداءً من' },
     { id: 'b43', x: 249, y: 1451, w: 463, h: 22, text: 'Präpositionen mit Genitiv (außerhalb des Urlaubs):', ar: 'حروف الجر مع Genitiv (زي außerhalb des Urlaubs):' },
-    { id: 'b45', x: 135, y: 1583, w: 140, h: 21, text: 'zweiunddreißig', ar: 'اتنين وتلاتين' },
   ],
   audio: [],
   fields: [],

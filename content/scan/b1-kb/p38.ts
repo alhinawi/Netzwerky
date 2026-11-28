@@ -39,7 +39,6 @@ export const p38: ScanPage = {
     { id: 'b29', x: 531, y: 1355, w: 205, h: 185, text: '17 Wie heißen die Nomen? berichten – der ... studieren – das ...', ar: '١٧ الأسماء إيه؟ يحكي/يبلّغ - الـ ... يدرس - الـ ...' },
     { id: 'b30', x: 300, y: 1355, w: 210, h: 185, text: '18 Stimmt die Aussage? Man kann seinen Vorgesetzten das Du anbieten.', ar: '١٨ الجملة دي صح؟ الواحد يقدر يعرض على مديره الـ "انتَ".' },
     { id: 'b31', x: 136, y: 1439, w: 51, h: 26, text: 'Ziel', ar: 'النهاية' },
-    { id: 'b33', x: 133, y: 1586, w: 140, h: 21, text: 'achtunddreißig', ar: 'تمانية وتلاتين' },
   ],
   audio: [],
   fields: [],

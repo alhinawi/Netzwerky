@@ -61,7 +61,6 @@ export const p36: ScanPage = {
     { id: 'w51', x: 861, y: 1608, w: 198, h: 40, text: 'Hey Max, hier ist es', ar: 'هاي ماكس، ده' },
     { id: 'w52', x: 861, y: 1650, w: 293, h: 40, text: 'Lernst du noch oder kannst', ar: 'لسه بتذاكر ولا تقدر' },
     { id: 'w53', x: 861, y: 1671, w: 156, h: 40, text: 'du kommen?', ar: 'تيجي؟' },
-    { id: 'w55', x: 140, y: 1714, w: 147, h: 22, text: 'sechsunddreißig', ar: 'ستة وتلاتين' },
   ],
   audio: [
   ],

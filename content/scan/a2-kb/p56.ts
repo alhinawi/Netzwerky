@@ -85,7 +85,6 @@ export const p56: ScanPage = {
     { id: 'w75', x: 357, y: 1623, w: 240, h: 33, text: 'bunte Kleidung tragen.', ar: 'تلبس هدوم ملونة.' },
     { id: 'w76', x: 208, y: 1695, w: 76, h: 20, text: '6. Valentina findet', ar: '٦. فالنتينا شايفة' },
     { id: 'w77', x: 375, y: 1650, w: 211, h: 35, text: 'die Bezahlung okay.', ar: 'إن المرتب كويس.' },
-    { id: 'w79', x: 137, y: 1689, w: 148, h: 33, text: 'sechsundfünfzig', ar: 'ستة وخمسين' },
   ],
   audio: [
     { id: 'a1043', x: 80, y: 1265, w: 36, h: 36, src: ['NWn_A2_KB_Audio_1-043.mp3'], label: 'Aufgabe 3b (1.43)' },

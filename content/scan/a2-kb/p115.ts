@@ -15,7 +15,6 @@ export const p115: ScanPage = {
     { id: 't3', x: 22, y: 868, w: 27, h: 13, text: 'F', ar: 'F' },
     { id: 't4', x: 520, y: 863, w: 29, h: 13, text: 'G', ar: 'G' },
     { id: 't5', x: 138, y: 948, w: 574, h: 13, text: 'Hören Sie. Was erzählen Florian und Ines? Kreuzen Sie an.', ar: 'اسمع. فلوريان وإينيس بيحكوا إيه؟ علّم بـ x.' },
-    { id: 't6', x: 28, y: 973, w: 26, h: 13, text: '2.29', ar: '2.29' },
     { id: 't7', x: 140, y: 993, w: 174, h: 15, text: '1. Florian erzählt,', ar: '1. فلوريان بيحكي' },
     { id: 't8', x: 577, y: 977, w: 542, h: 13, text: 'dass sie jeden Tag ungefähr gleich lang gewandert sind.', ar: 'إنهم مشيوا كل يوم تقريباً نفس المدة.' },
     { id: 't9', x: 577, y: 1005, w: 562, h: 15, text: 'dass sie an einem Tag neun Stunden lang gewandert sind.', ar: 'إنهم مشيوا يوم واحد تسع ساعات.' },

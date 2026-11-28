@@ -49,7 +49,6 @@ export const p72: ScanPage = {
     { id: 'w38', x: 195, y: 1599, w: 17, h: 32, text: 'b', ar: 'ب' },
     { id: 'w39', x: 237, y: 1613, w: 958, h: 46, text: 'Finden Sie eigene Gebärden für zwei Gegenstände aus dem Kursraum. Zeigen Sie Ihre Gebärden. Die', ar: 'اخترعوا إشارات لشيئين من الفصل. وريوا إشاراتكم.' },
     { id: 'w40', x: 237, y: 1630, w: 141, h: 30, text: 'anderen raten.', ar: 'التانيين يخمنوا.' },
-    { id: 'w42', x: 160, y: 1669, w: 132, h: 32, text: 'zweiundsiebzig', ar: 'اتنين وسبعين' },
   ],
   audio: [
   ],

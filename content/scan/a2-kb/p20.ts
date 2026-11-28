@@ -93,7 +93,6 @@ export const p20: ScanPage = {
     { id: 'hw6', x: 548, y: 1605, w: 95, h: 36, text: 'ich durfte', ar: 'أنا كان مسموح لي' },
     { id: 'hw7', x: 232, y: 1630, w: 51, h: 29, text: 'du ...', ar: 'انت ...' },
     { id: 'hw8', x: 548, y: 1645, w: 58, h: 28, text: 'du ...', ar: 'انت ...' },
-    { id: 'fw', x: 141, y: 1680, w: 72, h: 21, text: 'zwanzig', ar: 'عشرين' },
     { id: 'G', x: 888, y: 1448, w: 35, h: 33, text: 'G', ar: 'G' },
     { id: 'g1', x: 878, y: 1503, w: 278, h: 34, text: 'Modalverben im Präteritum', ar: 'الأفعال المساعدة في الـ Präteritum' },
     { id: 'g2', x: 878, y: 1530, w: 78, h: 26, text: 'müssen', ar: 'يجب' },

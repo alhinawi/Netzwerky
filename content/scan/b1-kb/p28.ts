@@ -31,7 +31,6 @@ export const p28: ScanPage = {
     { id: 'b21', x: 240, y: 1468, w: 480, h: 28, text: 'Im Vergleich zu früher ist / gibt es heute ...', ar: 'بالمقارنة بزمان بقى فيه دلوقتي ...' },
     { id: 'b22', x: 725, y: 1468, w: 380, h: 28, text: 'Ich habe gehört, dass früher ...', ar: 'سمعت إن زمان ...' },
     { id: 'b23', x: 240, y: 1495, w: 390, h: 26, text: 'Heute ist ... leichter/schwieriger.', ar: 'دلوقتي ... أسهل/أصعب.' },
-    { id: 'b25', x: 135, y: 1576, w: 138, h: 22, text: 'achtundzwanzig', ar: 'تمانية وعشرين' },
   ],
   audio: [],
   fields: [],
