@@ -28,7 +28,7 @@ const SPECS = {
   // stray scan pipes never leak into a gloss (PR 161 reviewer)
   '/read/b1-kb/21/': [['die Powerbank', 0.5, 'الباور بانك']],
   // a conjugation-table form shows the verb gloss, never the whole row (PR 161 reviewer)
-  '/read/b1-kb/27/': [['er/es/sie lässt | sie/Sie lassen', 0.25, 'يترك / يخلّي']],
+  '/read/b1-kb/27/': [['er/es/sie lässt | sie/Sie lassen', 0.4, 'يترك / يخلّي']],
 }
 
 const cases = SPECS[location.pathname]
