@@ -614,8 +614,12 @@ export default function ScanReader({
                 const hasSentence = (page.sentences ?? []).some((s) => (s.words ?? []).includes(w.id) || s.text.includes(w.text))
                 const open = (gg: Record<string, string> | null) => {
                   // the clicked word's own entry first, then the box meaning, then a stemmed guess
-                  const boxAr = w.ar && w.ar.trim().toLowerCase() !== w.text.trim().toLowerCase() ? w.ar : ''
-                  const ar = glossExact(gg, tok) || boxAr || glossStem(gg, tok) || ''
+                  const boxAr = w.ar && !/^[ـ\-—–\s]+$/.test(w.ar.trim()) && w.ar.trim().toLowerCase() !== w.text.trim().toLowerCase() ? w.ar : ''
+                  // a list marker like "6." maps to the number itself, never to a word gloss
+                  const bareTok = bareKey(tok)
+                  const ar = /^[0-9]+[.,]?$/.test(bareTok)
+                    ? arNum(Number(bareTok.replace(/[^0-9]/g, '')))
+                    : glossExact(gg, tok) || boxAr || glossStem(gg, tok) || ''
                   if (!ar && !hasSentence) { setWordHit(null); return false } // no gloss: show nothing
                   setWordHit({ text: tok, ar })
                   return true

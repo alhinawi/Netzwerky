@@ -17,6 +17,9 @@ for (const dir of roots) {
       if (ar.trim().toLowerCase() === text.trim().toLowerCase()) continue
       // "a ｜ b ｜ c" boxes carry one meaning per segment: index each pair
       const add = (de, meaning) => {
+        // never index placeholders or pure numbers/markers as words
+        if (!/[a-zäöüßA-ZÄÖÜ]/.test(de)) return
+        if (/^[ـ\-—–…\s.,;:!?]+$/.test(meaning)) return
         const words = de.split(/\s+/).filter(Boolean)
         const bare = (w) => w.toLowerCase().replace(/[^a-zäöüß0-9-]/g, '')
         const keys = [words.length === 1 ? bare(de) : de.toLowerCase()]
@@ -40,6 +43,12 @@ for (const dir of roots) {
       add(text, ar)
     }
   }
+}
+// single-word glosses recovered from the official Klett A1/A2 Arabic glossaries
+// (content/scan/glossary-official.json); page data keeps priority
+const official = JSON.parse(fs.readFileSync('content/scan/glossary-official.json', 'utf8'))
+for (const [k, v] of Object.entries(official)) {
+  if (!seen.has(k)) { seen.add(k); gloss[k] = v }
 }
 fs.mkdirSync('public', { recursive: true })
 fs.writeFileSync('public/glossary.json', JSON.stringify(gloss))
