@@ -23,7 +23,7 @@ export const p43: ScanPage = {
     { id: 'b13', x: 258, y: 452, w: 30, h: 22, text: '2', ar: '٢' },
     { id: 'b14', x: 288, y: 455, w: 802, h: 22, text: 'Im Reichstagsgebäude tagt seit 1999 das Parlament der Bundesrepublik. Wenn man sich', ar: 'في مبنى الرايخستاج بيجتمع من 1999 برلمان الجمهورية الاتحادية. لما الواحد' },
     { id: 'b15', x: 208, y: 485, w: 884, h: 21, text: 'online anmeldet, kann man im großen Saal den Politikern und Politikerinnen bei ihren Debatten', ar: 'يسجل أونلاين، يقدر في القاعة الكبيرة يتفرج على السياسيين والسياسيات في مناقشاتهم' },
-    { id: 'b16', x: 209, y: 512, w: 885, h: 22, text: 'im Bundestag zusehen und in die moderne Glaskuppel gehen. Es lohnt sich: Die Aussicht von der', ar: 'في البرلمان ويطلع على القبة الزجاج الحديثة. تستاهل: المنظر من فوق' },
+    { id: 'b16', x: 209, y: 512, w: 885, h: 22, text: 'im Bundestag zusehen und in die moderne Glaskuppel gehen. Es lohnt sich: Die Aussicht von der', ar: 'في البرلمان ويطلع على القبة الزجاجية الحديثة. تستاهل: المنظر من فوق' },
     { id: 'b17', x: 209, y: 541, w: 130, h: 20, text: 'Kuppel ist toll!', ar: 'القبة تحفة!' },
     { id: 'b18', x: 258, y: 566, w: 30, h: 22, text: '3', ar: '٣' },
     { id: 'b19', x: 288, y: 569, w: 804, h: 22, text: 'Die Gedenkstätte Berliner Mauer erinnert an die deutsche Teilung und liegt im Zentrum', ar: 'نصب سور برلين التذكاري بيفكّر بتقسيم ألمانيا ومكانه في وسط' },
