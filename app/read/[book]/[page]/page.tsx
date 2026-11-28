@@ -44,11 +44,12 @@ export default async function Page({ params }: { params: Promise<{ book: string;
     return <div className="p-10 text-center text-neutral-500">Diese Seite ist noch nicht gebaut.</div>
   }
   const numbers = pageNumbers(book)
-  const chapters: { n: number; first: number }[] = []
+  const chapters: { n: number | string; first: number }[] = []
   for (const p of pagesOf(book)) {
-    if (!chapters.some((c) => c.n === p.chapter)) chapters.push({ n: p.chapter, first: p.printed })
+    const key = p.part ?? p.chapter
+    if (!chapters.some((c) => c.n === key)) chapters.push({ n: key, first: p.printed })
   }
-  chapters.sort((a, b) => a.n - b.n)
+  chapters.sort((a, b) => a.first - b.first)
   const i = numbers.indexOf(current.printed)
   return (
     <ScanReader
