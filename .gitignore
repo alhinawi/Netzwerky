@@ -9,3 +9,7 @@ live.mjs
 verify*.mjs
 dump.ts
 content/scan/index.ts
+
+# generated audio + build cache (audio is served from the netzwerky-audio Pages project, never committed)
+public/audio/
+tsconfig.tsbuildinfo
