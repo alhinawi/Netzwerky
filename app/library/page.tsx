@@ -1,5 +1,5 @@
-import { redirect } from 'next/navigation'
+import GoHome from '@/components/GoHome'
 
 export default function Page() {
-  redirect('/')
+  return <GoHome />
 }

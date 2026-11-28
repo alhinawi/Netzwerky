@@ -1,4 +1,4 @@
-import { redirect } from 'next/navigation'
+import GoHome from '@/components/GoHome'
 import { books } from '@/data/books'
 
 export function generateStaticParams() {
@@ -6,5 +6,5 @@ export function generateStaticParams() {
 }
 
 export default function Page() {
-  redirect('/')
+  return <GoHome />
 }
