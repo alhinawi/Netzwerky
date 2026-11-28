@@ -29,7 +29,7 @@ const a1kb: Chapter[] = [
   { n: 11, title: 'Die Jacke gefällt mir!', pages: '126–135', grammar: 'Welcher? Welches? Welche? · Personalpronomen im Dativ', ar: 'الجاكيت عاجبني' },
   { n: 12, title: 'Ab in den Urlaub!', pages: '136–145', grammar: 'Pronomen man · Sätze verbinden: denn · Präpositionen mit Dativ', ar: 'يلا في إجازة' },
   { n: 'P4', title: 'Plattform 4', pages: '146–151', grammar: 'wiederholen und trainieren', ar: 'مراجعة' },
-  { n: 14, title: 'Anhang', pages: '152–175', grammar: 'Grammatikübersicht · unregelmäßige Verben · alphabetische Wortliste · Quellenverzeichnis', ar: 'الملحق' },
+  { n: 13, title: 'Anhang', pages: '152–175', grammar: 'Grammatikübersicht · unregelmäßige Verben · alphabetische Wortliste · Quellenverzeichnis', ar: 'الملحق' },
 ]
 
 const a2kb: Chapter[] = [

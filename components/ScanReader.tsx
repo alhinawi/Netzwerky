@@ -367,7 +367,7 @@ export default function ScanReader({
   // Plattform pages carry a half chapter (6.5 = Plattform 2, 9.5 = Plattform 3)
   const chapterLabel = (n: number | string) => {
     if (typeof n === 'string' && /^P\d$/.test(n)) return `PT${n.slice(1)}`
-    const plat: Record<string, string> = { 'a2-kb:6.5': 'Plattform 2', 'a2-kb:9.5': 'Plattform 3', 'a2-kb:12.5': 'Plattform 4', 'a2-kb:13': 'Anhang', 'a1-kb:0': 'Umschlag & Inhalt', 'a1-kb:14': 'Anhang', 'a2-kb:3.5': 'Plattform 1', 'a2-ab:0': 'Titel & Inhalt' }
+    const plat: Record<string, string> = { 'a2-kb:6.5': 'Plattform 2', 'a2-kb:9.5': 'Plattform 3', 'a2-kb:12.5': 'Plattform 4', 'a2-kb:13': 'Anhang', 'a1-kb:0': 'Umschlag & Inhalt', 'a1-kb:13': 'Anhang', 'a2-kb:3.5': 'Plattform 1', 'a2-ab:0': 'Titel & Inhalt' }
     return plat[`${page.book}:${n}`] ?? `K${n}`
   }
   const audioBase = `/audio/${level.toLowerCase()}/kb`
