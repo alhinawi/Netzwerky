@@ -191,8 +191,8 @@ SPECS['/read/b1-kb/59/'].push(
   ['neunundfünfzig 59', 0.9, null, 'none'],
 )
 SPECS['/read/b1-kb/61/'].push(
-  // ihrem: clean word gloss, no (Dativ) fragment
-  ['b Tauschen Sie Ihre Fragen mit Ihrem Partner / Ihrer Partnerin.', 0.53, 'بتاعته / بتاعتها / بتاعتك'],
+  // ihrem: clean word gloss, no (Dativ) fragment (word spans are OCR-based, not char-proportional)
+  ['b Tauschen Sie Ihre Fragen mit Ihrem Partner / Ihrer Partnerin.', 0.34, 'بتاعته / بتاعتها / بتاعتك'],
   // sendung: gloss with separator
   ['Sendung verpasst?', 0.2, 'برنامج / بث'],
   ['einundsechzig 61', 0.9, null, 'none'],
