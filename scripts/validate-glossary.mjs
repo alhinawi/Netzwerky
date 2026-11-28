@@ -91,6 +91,35 @@ for (const book of fs.readdirSync('content/scan')) {
     })
   }
 }
+// 10. sentence-level gate: no standalone track-number sentences, no
+//     footer page-number sentences, and no sentence whose word boxes are
+//     all missing (orphan left after a box removal).
+const sentRe = /^\s*\{ id: '([^']+)', text: ('[^']*'|"[^"]*"), ar: ('[^']*'|"[^"]*")(?:, words: \[([^\]]*)\])?\s*\},?\s*$/
+for (const book of fs.readdirSync('content/scan')) {
+  const dir = `content/scan/${book}`
+  if (!fs.statSync(dir).isDirectory()) continue
+  for (const f of fs.readdirSync(dir)) {
+    if (!/^p\d+\.ts$/.test(f)) continue
+    const lines = fs.readFileSync(`${dir}/${f}`, 'utf8').split('\n')
+    const defined = new Set()
+    for (const line of lines) {
+      const d = line.match(/^\s*\{ id: '([^']+)', x: \d+, y: \d+, w: \d+, h: \d+, text:/)
+      if (d) defined.add(d[1])
+    }
+    lines.forEach((line, i) => {
+      const m = line.match(sentRe)
+      if (!m) return
+      const txt = m[2].slice(1, -1).trim(), ar = m[3].slice(1, -1).trim()
+      const refs = (m[4] || '').split(',').map((r) => r.trim().replace(/^'|'$/g, '')).filter(Boolean)
+      if (/^\d{1,2}\.\d{1,2}$/.test(txt) && ar === txt)
+        violations.push({ key: `${book}/${f}:${i + 1}`, value: txt, rule: 'track-sentence' })
+      if (numWords.has(txt.toLowerCase()))
+        violations.push({ key: `${book}/${f}:${i + 1}`, value: txt, rule: 'footer-number-sentence' })
+      if (refs.length && refs.every((r) => !defined.has(r)))
+        violations.push({ key: `${book}/${f}:${i + 1}`, value: `${txt} -> [${refs}]`, rule: 'orphan-sentence-words' })
+    })
+  }
+}
 if (violations.length) {
   console.error(`glossary violations: ${violations.length}`)
   for (const x of violations) console.error(`  [${x.rule}] ${JSON.stringify(x.key)} => ${JSON.stringify(x.value)}`)

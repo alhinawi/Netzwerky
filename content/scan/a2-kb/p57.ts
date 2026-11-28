@@ -160,7 +160,6 @@ export const p57: ScanPage = {
     { id: 's49', text: 'Spielen Sie in Gruppen. Jede/r sieht sich im Kursraum um und stellt Fragen. Wer weiß die Antwort? Er/Sie stellt die nächste Frage.', ar: 'العبوا في مجموعات. كل واحد يبص حواليه في الفصل ويسأل أسئلة. مين يعرف الإجابة؟ هو/هي يسأل السؤال اللي بعده.', words: ['w72', 'w73'] },
     { id: 's50', text: 'Es liegt auf dem kleinen Tisch. Wer sieht den grauen Mantel?', ar: 'هو على الترابيزة الصغيرة. مين شايف المعطف الرمادي؟', words: ['w74', 'w75'] },
     { id: 's51', text: 'Wo ist das grüne Buch?', ar: 'فين الكتاب الأخضر؟', words: ['w76'] },
-    { id: 's52', text: 'siebenundfünfzig', ar: 'سبعة وخمسين', words: ['w77'] },
   ],
   patches: [
   ],

@@ -122,7 +122,6 @@ export const p96: ScanPage = {
     { id: 's-w51', text: 'Wo gibt es das?', ar: 'فين موجود ده؟', words: ['w51'] },
     { id: 's-w52', text: 'Was machen die Leute?', ar: 'الناس بتعمل إيه؟', words: ['w52'] },
     { id: 's-w53', text: 'Was bieten sie an?', ar: 'بيقدّموا إيه؟', words: ['w53'] },
-    { id: 's-al', text: '2.17', ar: '2.17', words: ['al'] },
   ],
   groups: [],
 }

@@ -76,7 +76,6 @@ export const p115: ScanPage = {
     { id: 's-t3', text: 'F', ar: 'F', words: ['t3'] },
     { id: 's-t4', text: 'G', ar: 'G', words: ['t4'] },
     { id: 's-t5', text: 'Hören Sie. Was erzählen Florian und Ines? Kreuzen Sie an.', ar: 'اسمع. فلوريان وإينيس بيحكوا إيه؟ علّم بـ x.', words: ['t5'] },
-    { id: 's-t6', text: '2.29', ar: '2.29', words: ['t6'] },
     { id: 's-t7', text: '1. Florian erzählt,', ar: '1. فلوريان بيحكي', words: ['t7'] },
     { id: 's-t8', text: 'dass sie jeden Tag ungefähr gleich lang gewandert sind.', ar: 'إنهم مشيوا كل يوم تقريباً نفس المدة.', words: ['t8'] },
     { id: 's-t9', text: 'dass sie an einem Tag neun Stunden lang gewandert sind.', ar: 'إنهم مشيوا يوم واحد تسع ساعات.', words: ['t9'] },

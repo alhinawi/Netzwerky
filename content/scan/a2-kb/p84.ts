@@ -64,8 +64,6 @@ export const p84: ScanPage = {
     { id: '8d', label: '8d', ar: 'كمّل الحالة في القاعدة' },
   ],
   sentences: [
-    { id: 's-al', text: '2.4', ar: '2.4', words: ['al'] },
-    { id: 's-al2', text: '2.5', ar: '2.5', words: ['al2'] },
     { id: 's1', text: 'eine Wegbeschreibung verstehen und geben', ar: 'نفهم ونقول وصف طريق', words: ['w1'] },
     { id: 's2', text: 'So findest du zu mir', ar: 'كده هتوصل ليا', words: ['w2'] },
     { id: 's3', text: '8a Lesen Sie die SMS von Jana und fassen Sie sie in einem Satz zusammen.', ar: '٨أ اقرا رسالة يانا ولخّصها في جملة واحدة.', words: ['w3'] },

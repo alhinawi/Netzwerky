@@ -160,7 +160,6 @@ export const p56: ScanPage = {
     { id: 's51', text: '4. Valentina arbeitet nächsten Donnerstag im Restaurant.', ar: '٤. فالنتينا هتشتغل الخميس الجاي في المطعم.', words: ['w72', 'w73'] },
     { id: 's52', text: '5. Valentina darf bunte Kleidung tragen.', ar: '٥. فالنتينا مسموحلها تلبس هدوم ملونة.', words: ['w74', 'w75'] },
     { id: 's53', text: '6. Valentina findet die Bezahlung okay.', ar: '٦. فالنتينا شايفة إن المرتب كويس.', words: ['w76', 'w77'] },
-    { id: 's55', text: 'sechsundfünfzig', ar: 'ستة وخمسين', words: ['w79'] },
   ],
   patches: [
   ],

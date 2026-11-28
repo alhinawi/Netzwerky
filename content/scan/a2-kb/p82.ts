@@ -114,7 +114,6 @@ export const p82: ScanPage = {
     { id: 's43', text: 'Könnten Sie mir sagen, wo der Bahnhof ist?', ar: 'ممكن تقولي محطة القطر فين؟', words: ['w43'] },
     { id: 's44', text: 'Das weiß ich leider nicht.', ar: 'للأسف مش عارف.', words: ['w44'] },
     { id: 's45', text: '82 zweiundachtzig', ar: '٨٢ اتنين وتمانين', words: ['w45'] },
-    { id: 's-al', text: '2.3', ar: '2.3', words: ['al'] },
   ],
   patches: [
     { x: 552, y: 845, w: 400, h: 48 },

@@ -51,7 +51,6 @@ export const p80: ScanPage = {
     { id: 's12', text: 'Ja, gerne! Kaufst du die Karten?', ar: 'أيوه، يعجبني! هتشتري التذاكر؟', words: ['w12'] },
     { id: 's13', text: 'b Sehen Sie die Fotos an. Was ist das Problem?', ar: 'ب بصّ على الصور. إيه المشكلة؟', words: ['w13'] },
     { id: 's14', text: 'c Hören Sie die Szenen und ordnen Sie sie den Fotos zu.', ar: 'ج اسمع المشاهد ووصّلها بالصور.', words: ['w14'] },
-    { id: 's-al', text: '2.1', ar: '2.1', words: ['al'] },
     { id: 's15', text: '80 achtzig', ar: '٨٠ تمانين', words: ['w15'] },
   ],
   patches: [
