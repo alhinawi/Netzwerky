@@ -1,7 +1,5 @@
 import type { ScanPage } from '../types'
 
-// Seite 51: echter A1-Scan, Wortkaesten und Felder folgen (die alten Kaesten
-// gehoerten zu einer A2-Seite und wurden entfernt).
 export const p51: ScanPage = {
   book: 'a1-kb',
   printed: 51,
@@ -9,11 +7,35 @@ export const p51: ScanPage = {
   image: '/pages/a1-kb/051.jpg',
   width: 900,
   height: 1271,
-  words: [],
+  words: [
+    { id: 'goal', x: 546, y: 70, w: 198, h: 18, text: 'mit W-Fragen Texte verstehen', ar: 'فهم النصوص بأسئلة الـW' },
+    { id: 't', x: 141, y: 128, w: 328, h: 30, text: 'Berufe rund ums Essen', ar: 'مهن حوالين الأكل' },
+    { id: 't11', x: 147, y: 161, w: 678, h: 40, text: 'Koch am Bodensee. Lesen Sie den Text und die Fragen. Markieren Sie die Informationen im Text und beantworten Sie dann die Fragen.', ar: 'طباخ على بحيرة بودنزي. اقرأوا النص والأسئلة. علّموا على المعلومات في النص وبعدين جاوبوا على الأسئلة.' },
+    { id: 'q1', x: 147, y: 212, w: 240, h: 18, text: '1. Wo arbeitet Max Schmidt?', ar: '١. ماكس شميدت بيشتغل فين؟' },
+    { id: 'q2', x: 147, y: 238, w: 232, h: 18, text: '2. Was macht er auf dem Markt?', ar: '٢. بيعمل إيه في السوق؟' },
+    { id: 'q3', x: 147, y: 258, w: 236, h: 18, text: '3. Was macht er im Restaurant?', ar: '٣. بيعمل إيه في المطعم؟' },
+    { id: 'q4', x: 147, y: 278, w: 236, h: 18, text: '4. Wie findet er seinen Beruf?', ar: '٤. شايف مهنته إزاي؟' },
+    { id: 'q5', x: 147, y: 297, w: 152, h: 18, text: '5. Wann arbeitet er?', ar: '٥. بيشتغل امتى؟' },
+    { id: 'bbl', x: 151, y: 324, w: 266, h: 22, text: 'Max Schmidt arbeitet im Restaurant …', ar: 'ماكس شميدت بيشتغل في المطعم …' },
+    { id: 'tip', x: 688, y: 240, w: 202, h: 106, text: 'Wichtige Informationen in Texten verstehen. W-Fragen helfen: Wer? Was? Wann? Wo? Wie?', ar: 'فهم المعلومات المهمة في النصوص: أسئلة الـW بتساعد: مين؟ إيه؟ امتى؟ فين؟ إزاي؟' },
+    { id: 'at', x: 216, y: 390, w: 538, h: 32, text: 'Berufswahl leicht gemacht – von A–Z', ar: 'اختيار المهنة بقى سهل — من A لـ Z' },
+    { id: 'tabs', x: 143, y: 450, w: 686, h: 26, text: 'Bäcker · Hotelfachfrau · Koch · Kellner · Landwirt', ar: 'Bäcker (فرّان) · Hotelfachfrau (موظفة فنادق) · Koch (طباخ) · Kellner (جرسون) · Landwirt (فلاح)' },
+    { id: 'at1', x: 181, y: 490, w: 310, h: 148, text: 'Max Schmidt und sein Chef planen zusammen das Essen für die Woche. Dann geht Max Schmidt auf den Markt. Er kauft Tomaten, Champignons und Salat. Kartoffeln und Zwiebeln braucht er auch. Dann kauft er noch frischen Fisch. Max Schmidt arbeitet seit zwei Jahren als Koch im Restaurant „Esszimmer“ in', ar: 'ماكس شميدت وشيفه بيخططوا سوا أكل الأسبوع. بعدين ماكس شميدت بيروح السوق. بيشتري طماطم وماشروم وسلطة. وبطاطس وبصل كمان محتاجهم. وبعدين بيشتري سمك طازة. ماكس شميدت شغال من سنتين طباخ في مطعم „Esszimmer“ في' },
+    { id: 'at1b', x: 351, y: 634, w: 158, h: 100, text: 'der Altstadt von Konstanz. Da gibt es jeden Tag ein anderes Fischgericht: Fische frisch aus dem Bodensee.', ar: 'البلد القديمة في كونستانز. هناك فيه كل يوم طبق سمك مختلف: سمك طازة من بحيرة بودنزي.' },
+    { id: 'at2', x: 361, y: 752, w: 420, h: 76, text: 'Zurück im Restaurant wäscht, schält und schneidet er das Gemüse. Der Chef bereitet den Fisch zu. Paula, eine Kollegin, macht das Dessert. Max mag seine Arbeit. Er sagt: „Kochen ist mein Beruf, aber auch mein Hobby.“', ar: 'رجع المطعم بيغسل وبيّقشر وبيقطع الخضار. الشيف بيطبخ السمك. باولا، زميلته، بتعمل الحلو. ماكس بيحب شغله. بيقول: „الطبخ مهنتي، بس كمان هوايتي.“' },
+    { id: 'at3', x: 366, y: 846, w: 142, h: 102, text: '„Ich arbeite gern in einem kleinen Team und die Kollegen sind sehr nett. Kochen ist auch', ar: '„بحب أشتغل في فريق صغير والزمايل كويسين جدًا. الطبخ كمان' },
+    { id: 'at3b', x: 181, y: 944, w: 168, h: 66, text: 'sehr kreativ – das macht viel Spaß. Ich probiere gerne neue Gerichte. Oft haben wir viele Gäste. Das ist dann echt stressig!', ar: 'كرياتيف جدًا — وده ممتع أوي. بحب أجرب أطباق جديدة. كتير بيكون عندنا ضيوف كتير. وساعتها بيكون الموضوع مرهق فعلًا!' },
+    { id: 'at4', x: 161, y: 1024, w: 632, h: 68, text: 'Und die Arbeitszeiten sind nicht toll. Ich arbeite normalerweise von 6 bis 15 Uhr oder von 13 bis 22 Uhr. Am Wochenende arbeite ich abends oft noch länger. Das ist natürlich nicht so schön. Ich habe nicht viel Freizeit und wenig Zeit für meine Freunde.“', ar: 'ومواعيد الشغل مش حلوة. بشتغل عادة من 6 لـ 3 الضهر أو من 1 لـ 10 بالليل. في الويك إند بشتغل بالليل كمان أكتر. وده طبعًا مش حلو. معنديش وقت فراغ كتير ووقت قليل لصحابي.“' },
+  ],
   audio: [],
   fields: [],
   matchings: [],
-  patches: [],
-  sentences: [],
   groups: [],
+  sentences: [
+    { id: 's-q1', text: 'Wo arbeitet Max Schmidt?', ar: 'ماكس شميدت بيشتغل فين؟', words: ['q1'] },
+    { id: 's-q5', text: 'Wann arbeitet er?', ar: 'بيشتغل امتى؟', words: ['q5'] },
+    { id: 's-at1', text: 'Max Schmidt arbeitet seit zwei Jahren als Koch im Restaurant „Esszimmer“ in der Altstadt von Konstanz.', ar: 'ماكس شميدت شغال من سنتين طباخ في مطعم „Esszimmer“ في البلد القديمة في كونستانز.', words: ['at1', 'at1b'] },
+    { id: 's-at2', text: 'Kochen ist mein Beruf, aber auch mein Hobby.', ar: 'الطبخ مهنتي، بس كمان هوايتي.', words: ['at2'] },
+    { id: 's-at4', text: 'Ich arbeite normalerweise von 6 bis 15 Uhr oder von 13 bis 22 Uhr.', ar: 'بشتغل عادة من 6 لـ 3 الضهر أو من 1 لـ 10 بالليل.', words: ['at4'] },
+  ],
 }
