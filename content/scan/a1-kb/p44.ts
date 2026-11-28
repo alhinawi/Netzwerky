@@ -5,8 +5,8 @@ export const p44: ScanPage = {
   printed: 44,
   chapter: 4,
   image: '/pages/a1-kb/044.jpg',
-  width: 1241,
-  height: 1753,
+  width: 900,
+  height: 1271,
   words: [
     { id: 'goals', x: 83, y: 72, w: 1005, h: 52, text: 'einen Einkauf planen | Gespräche beim Einkauf führen | Gespräche beim Essen führen | über Vorlieben beim Essen sprechen | über Essen sprechen | Strategien: Wörter ordnen und lernen |', ar: 'تخطط لمشترياتك | تقود محادثات أثناء الشراء | تقود محادثات على الأكل | تتكلم عن الأكل اللي بتحبه | تتكلم عن الأكل | استراتيجيات: ترتيب الكلمات وحفظها' },
     { id: 't', x: 83, y: 192, w: 610, h: 75, text: 'Guten Appetit!', ar: 'بالهنا والشفا!' },
