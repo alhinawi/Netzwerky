@@ -45,8 +45,9 @@ const SPECS = {
   ],
   // a list marker maps to the number itself, never to a word gloss (PR 152)
   '/read/a1-kb/54/': [['6. Er besucht seine Oma.', 0.03, '٦']],
-  // preposition "zu", not the zuhören verb fragment (PR 157)
-  '/read/b1-kb/16/': [['Sehen Sie die Szene noch einmal', 0.99, 'لـ / إلى']],
+  // a separable prefix alone at the end of a box is no word gloss (round 4);
+  // the labeled sentence opens instead
+  '/read/b1-kb/16/': [['Sehen Sie die Szene noch einmal', 0.99, 'شوفوا المشهد كمان مرة. إيه مهام فلوريان هوفمان؟ رتّبوا.', 'sentence']],
   // article + noun: the noun wins (der Hafen -> الميناء)
   '/read/a1-kb/28/': [['der Hafen', 0.5, 'الميناء']],
   // official Klett glossary entry stays reachable
@@ -144,7 +145,7 @@ SPECS['/read/a2-kb/68/'] = [
 ]
 SPECS['/read/a1-kb/162/'] = [
   // akku box gloss stays clean (round 4)
-  ['Akku, der, -s', 0.1, 'البطارية'],
+  ['Akku, der, -s', 0.1, 'بطارية قابلة للشحن'],
 ]
 
 const cases = SPECS[location.pathname]

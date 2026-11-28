@@ -663,7 +663,7 @@ export default function ScanReader({
                     ? arNum(Number(tok.replace(/[^0-9]/g, '')))
                     : glossExact(gg, tok) || glossStem(gg, tok) || shortBox || ''
                   // "es" alone is هو / ده; only "es gibt" means فيه
-                  const arCtx = bareTok === 'es' ? (/es gibt|gibt es/i.test(w.text) ? 'فيه' : 'هو / ده') : arRaw
+                  const arCtx = !skipWord && bareTok === 'es' ? (/es gibt|gibt es/i.test(w.text) ? 'فيه' : 'هو / ده') : arRaw
                   // stray list separators from the scan never leak into a gloss
                   const ar = arCtx.replace(/^[\s|｜]+/, '').replace(/[\s|｜]+$/, '')
                   if (!ar) {
