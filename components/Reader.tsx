@@ -1,5 +1,6 @@
 'use client'
 import { useEffect, useMemo, useRef, useState } from 'react'
+import { audioUrl } from '@/lib/audio'
 import { useRouter } from 'next/navigation'
 import type { BookPage } from '../content/types'
 import { pages as a1kbPages } from '@/content/a1-kb/kap1'
@@ -65,7 +66,7 @@ export default function Reader({ bookId, pageNo }: { bookId: string; pageNo: num
     requestAnimationFrame(() => {
       const el = audio.current
       if (!el) return
-      el.src = `/audio/a1/kb/${src}`
+      el.src = audioUrl(`/audio/a1/kb/${src}`)
       void el.play().catch(() => {})
     })
   }
