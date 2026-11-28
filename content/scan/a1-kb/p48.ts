@@ -1,7 +1,5 @@
 import type { ScanPage } from '../types'
 
-// Seite 48: echter A1-Scan, Wortkaesten und Felder folgen (die alten Kaesten
-// gehoerten zu einer A2-Seite und wurden entfernt).
 export const p48: ScanPage = {
   book: 'a1-kb',
   printed: 48,
@@ -9,11 +7,46 @@ export const p48: ScanPage = {
   image: '/pages/a1-kb/048.jpg',
   width: 900,
   height: 1271,
-  words: [],
-  audio: [],
-  fields: [],
+  words: [
+    { id: 'goal', x: 150, y: 76, w: 450, h: 16, text: 'Gespräche beim Essen führen, über Vorlieben beim Essen sprechen', ar: 'حوارات على الأكل والكلام عن الأكل المفضل' },
+    { id: 't', x: 152, y: 133, w: 186, h: 28, text: 'Die Grillparty', ar: 'حفلة الشواء' },
+    { id: 't7a', x: 150, y: 169, w: 474, h: 18, text: 'Schmeckt’s? Hören Sie und lesen Sie die Dialoge. Welches Foto passt?', ar: 'طعمه حلو؟ اسمعوا واقرأوا الحوارات. أنهي صورة مناسبة؟' },
+    { id: 'fotoA', x: 160, y: 382, w: 22, h: 18, text: 'A', ar: 'صورة A' },
+    { id: 'fotoC', x: 396, y: 382, w: 22, h: 18, text: 'C', ar: 'صورة C' },
+    { id: 'fotoB', x: 713, y: 382, w: 22, h: 18, text: 'B', ar: 'صورة B' },
+    { id: 'd1', x: 152, y: 405, w: 216, h: 120, text: '1. Guten Appetit! – Danke, gleichfalls! – Schmeckt’s? – Mmh, ja, das Fleisch schmeckt sehr gut!', ar: '١ · بالهنا! · شكرًا، وانت كمان! · طعمه حلو؟ · هممم، أيوه، اللحمة طعمها جميل جدًا!' },
+    { id: 'd2', x: 390, y: 405, w: 215, h: 145, text: '2. Möchtet ihr noch ein Würstchen? – Ja, gerne, die Würstchen sind wirklich lecker. – Und du, Lukas? – Nein, danke, ich bin satt.', ar: '٢ · لسه عايزين لانشون؟ · أيوه، بحبها، اللانشون لذيذ فعلًا. · وانت يا لوكاس؟ · لأ، شكرًا، أنا شبعان.' },
+    { id: 'd3', x: 630, y: 405, w: 192, h: 88, text: '3. Möchtest du Salat? – Nein, danke. Ich esse keine Gurken.', ar: '٣ · تحب سلطة؟ · لأ، شكرًا. أنا مش بياكل خيار.' },
+    { id: 't7b', x: 150, y: 561, w: 138, h: 20, text: 'Spielen Sie Dialoge.', ar: 'مثّلوا الحوارات.' },
+    { id: 'pb1', x: 165, y: 632, w: 172, h: 100, text: 'Guten Appetit! Möchtet ihr (noch) …? Möchtest du (noch) …?', ar: 'بالهنا! · عايزين (كمان) …؟ · تحب (كمان) …؟' },
+    { id: 'pb2', x: 342, y: 632, w: 245, h: 152, text: 'Danke, gleichfalls! Ja, bitte. … schmeckt/schmecken sehr gut. Ja, gerne. … ist/sind sehr lecker. Nein, danke. Ich esse keinen/kein/keine … Nein, danke. Ich bin satt.', ar: 'شكرًا، وانت كمان! · أيوه، لو سمحت. · الـ … طعمه/طعمهم جميل جدًا. · أيوه، بحبها. · الـ … لذيذ/لذيذين. · لأ، شكرًا. أنا مش بياكل … · لأ، شكرًا. أنا شبعان.' },
+    { id: 'gsg', x: 622, y: 588, w: 250, h: 185, text: 'Gut gesagt: Beim Essen. Prost! · Zum Wohl! · Guten Appetit! · Mahlzeit!', ar: 'كلام حلو وقت الأكل: Prost! (صحتين في الكاسة) · Zum Wohl! (بالهنا) · Guten Appetit! (بالهنا) · Mahlzeit! (تحية وقت الأكل)' },
+    { id: 't8a', x: 150, y: 818, w: 324, h: 20, text: 'Wer möchte was? Hören Sie und ergänzen Sie.', ar: 'مين عايز إيه؟ اسمعوا وكمّلوا.' },
+    { id: 'l8a1', x: 150, y: 848, w: 165, h: 20, text: '1. Der Mann möchte ein …', ar: '١. الراجل عايز …' },
+    { id: 'l8a2', x: 150, y: 873, w: 172, h: 20, text: '2. Die Frau trinkt gern …', ar: '٢. الست بتحب تشرب …' },
+    { id: 'l8a3', x: 150, y: 896, w: 180, h: 20, text: '3. Der Mann möchte keine …', ar: '٣. الراجل مش عايز …' },
+    { id: 'gm', x: 612, y: 852, w: 272, h: 90, text: 'möchten: ich möchte · du möchtest · er/es/sie möchte · wir möchten · ihr möchtet · sie/Sie möchten', ar: 'möchten (عايز بأدب): أنا möchte · انت/انتِ möchtest · هو/هي möchte · احنا möchten · انتوا möchtet · هم/حضرتك möchten' },
+    { id: 't8b', x: 150, y: 958, w: 665, h: 34, text: 'Was essen und trinken Sie gern? Machen Sie ein Interview mit Ihrem Partner / Ihrer Partnerin und berichten Sie.', ar: 'بتاكلوا وبتشربوا إيه بحب؟ اعملوا إنترفيو مع زميلكم/زميلتكم وقولوا النتايج.' },
+    { id: 'ibq', x: 155, y: 1050, w: 240, h: 92, text: 'Essen/Trinken Sie gern …? Isst/Trinkst du gern …? Was essen Sie / isst du gern? Was trinken Sie / trinkst du gern?', ar: '؟ بتاكل/بتشرب … بحب؟ · إيه اللي بتاكله بحب؟ · إيه اللي بتشربه بحب؟' },
+    { id: 'iby', x: 408, y: 1050, w: 195, h: 92, text: 'Ja, sehr gern. Ich esse/trinke gern …', ar: '☺ أيوه، قوي. · بياكل/بشرب … بحب.' },
+    { id: 'ibn', x: 600, y: 1050, w: 190, h: 92, text: 'Nein, nicht so gern. Ich esse/trinke nicht gern …', ar: '☹ لأ، مش قوي. · مش بياكل/بشرب … بحب.' },
+  ],
+  audio: [
+    { id: 'a7a', x: 55, y: 194, w: 52, h: 26, src: ['/audio/a1/kb/NWn_A1_KB_Audio_1-053.mp3', '/audio/a1/kb/NWn_A1_KB_Audio_1-054.mp3', '/audio/a1/kb/NWn_A1_KB_Audio_1-055.mp3'], label: '7a' },
+    { id: 'agsg', x: 586, y: 582, w: 30, h: 20, src: ['/audio/a1/kb/NWn_A1_KB_Audio_1-056.mp3'], label: 'Gut gesagt' },
+    { id: 'a8a', x: 55, y: 836, w: 52, h: 28, src: ['/audio/a1/kb/NWn_A1_KB_Audio_1-057.mp3', '/audio/a1/kb/NWn_A1_KB_Audio_1-058.mp3', '/audio/a1/kb/NWn_A1_KB_Audio_1-059.mp3'], label: '8a' },
+  ],
+  fields: [
+    { id: 'f8a1', group: 'g8a', x: 318, y: 848, w: 250, h: 20, label: '1. Der Mann möchte ein …', kind: 'text' },
+    { id: 'f8a2', group: 'g8a', x: 325, y: 873, w: 243, h: 20, label: '2. Die Frau trinkt gern …', kind: 'text' },
+    { id: 'f8a3', group: 'g8a', x: 333, y: 896, w: 235, h: 20, label: '3. Der Mann möchte keine …', kind: 'text' },
+  ],
   matchings: [],
-  patches: [],
-  sentences: [],
-  groups: [],
+  groups: [{ id: 'g8a', label: '8a', ar: 'التمرين ٨a' }],
+  sentences: [
+    { id: 's-d1', text: 'Schmeckt’s? – Mmh, ja, das Fleisch schmeckt sehr gut!', ar: 'طعمه حلو؟ · هممم، أيوه، اللحمة طعمها جميل جدًا!', words: ['d1'] },
+    { id: 's-d2', text: 'Möchtet ihr noch ein Würstchen? – Ja, gerne, die Würstchen sind wirklich lecker.', ar: 'لسه عايزين لانشون؟ · أيوه، بحبها، اللانشون لذيذ فعلًا.', words: ['d2'] },
+    { id: 's-d3', text: 'Möchtest du Salat? – Nein, danke. Ich esse keine Gurken.', ar: 'تحب سلطة؟ · لأ، شكرًا. أنا مش بياكل خيار.', words: ['d3'] },
+    { id: 's-t8a', text: 'Wer möchte was? Hören Sie und ergänzen Sie.', ar: 'مين عايز إيه؟ اسمعوا وكمّلوا.', words: ['t8a'] },
+  ],
 }
