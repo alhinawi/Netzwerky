@@ -106,7 +106,7 @@ const extra = {
   geworden: 'صار / أصبح',
   darf: 'مسموح له / يجوز له',
   soll: 'المفروض',
-  'würde': 'كان هـ…',
+  'würde': 'كان هـ',
   // reviewer word-tap list (K1-K3 running text): single-word glosses for words
   // whose taps used to show the whole sentence translation (self-written, listed for review)
   'gedenkstätte': 'النصب التذكاري',
@@ -133,3 +133,13 @@ fs.mkdirSync('public', { recursive: true })
 fs.writeFileSync('public/glossary.json', JSON.stringify(gloss))
 // REMINDER: when this output changes, bump the nw-gloss-vN cache key in components/ScanReader.tsx
 console.log('glossary entries', Object.keys(gloss).length)
+
+// quality gate: fail the build on glossary violations (see scripts/validate-glossary.mjs)
+const { execFileSync } = await import('node:child_process')
+try {
+  const out = execFileSync('node', ['scripts/validate-glossary.mjs'], { encoding: 'utf8' })
+  console.log(out.trim())
+} catch (e) {
+  console.error(e.stdout || e.message)
+  process.exit(1)
+}

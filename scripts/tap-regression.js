@@ -11,7 +11,7 @@
 const SPECS = {
   // "Es" must be the neuter pronoun, never a tatweel placeholder (PR 157 regression)
   '/read/a1-kb/120/': [
-    ['Es', 0.5, 'هو / فيه (es gibt)'],
+    ['Es', 0.5, 'هو / ده'],
     // "ist" is the verb, natural Egyptian (K4 reviewer round 3)
     ['ist', 0.5, 'هو / ده'],
   ],
@@ -95,7 +95,7 @@ SPECS['/read/b1-kb/50/'] = [
 SPECS['/read/b1-kb/51/'] = [
   ['Gespräch an etwas Positives. Vielen Bewerbern', 0.03, 'محادثة'],
   ['Staus oder andere Verkehrsprobleme. Bei einem', 0.33, 'تاني / تانيين'],
-  ['d Welche anderen Tipps zu Vorstellungsgesprächen gibt es? Recherchieren Sie und erstellen Sie in', 0.57, 'هو / فيه (es gibt)'],
+  ['d Welche anderen Tipps zu Vorstellungsgesprächen gibt es? Recherchieren Sie und erstellen Sie in', 0.57, 'فيه'],
   ['Tipps für ein erfolgreiches Vorstellungsgespräch', 0.04, 'نصايح'],
   ['beste Verbindung heraus und denken Sie auch an', 0.05, 'الأفضل'],
   ['üben. Wenn Sie im Gespräch vor lauter Aufregung', 0.34, 'أصحابها. ولو من التوتر في المقابلة', 'sentence'],
@@ -109,7 +109,42 @@ SPECS['/read/b1-kb/53/'] = [
   ['(Es) Tut mir (sehr/schrecklich) leid.', 0.05, 'متآسف (جدا/أوي).', 'sentence'],
   ['nach Informationen fragen', 0.05, 'بعد / عن'],
   ['Ich würde gern wissen, ...', 0.75, 'يعرف'],
-  ['Ich würde gern wissen, ...', 0.2, 'كان هـ…'],
+  ['Ich würde gern wissen, ...', 0.2, 'كان هـ'],
+]
+
+SPECS['/read/a2-kb/156/'].push(
+  // modal verbs without the echoed German label (K4 reviewer round 4)
+  ['wollen', 0.5, 'يريد / عايز'],
+  ['sollen', 0.5, 'المفروض / لازم'],
+)
+SPECS['/read/a1-kb/165/'] = [
+  // "es" alone is هو / ده (round 4 context rule)
+  ['es', 0.5, 'هو / ده'],
+  // suffix token of a noun entry opens no popup at all (round 4)
+  ['Festspiel, das, -e', 0.93, null, 'none'],
+  // fit: short natural gloss, no leftover fragments (round 4)
+  ['fit', 0.5, 'فت / لياقة كويسة'],
+]
+SPECS['/read/a1-kb/125/'] = [
+  // "ist" as a perfect-tense auxiliary is not هو / ده: labeled sentence instead (round 4)
+  ['fahren – ist gefahren, gehen – ist gegangen, kommen – ist gekommen, …', 0.18, 'يروح – راح، يمشي – مشي، ييجي – جه، …', 'sentence'],
+]
+SPECS['/read/a2-kb/10/'] = [
+  // a separable prefix alone at the end of a box is no word gloss (round 4)
+  ['früher dort gelebt und spricht perfekt Spanisch. Wir haben ein', 0.97, 'عاشت هناك زمان وبتتكلم إسباني ممتاز. أجّرنا', 'sentence'],
+]
+SPECS['/read/a2-kb/166/'] = [
+  // glossary cleanup round 4: clean Behinderung gloss, suffix token silent
+  ['Behinderung, die, -en 2/7a', 0.1, 'إعاقة جسدية'],
+  ['Behinderung, die, -en 2/7a', 0.7, null, 'none'],
+]
+SPECS['/read/a2-kb/68/'] = [
+  // no stray question mark in a word gloss (round 4)
+  ['Der Traumberuf?', 0.3, 'وظيفة الحلم'],
+]
+SPECS['/read/a1-kb/162/'] = [
+  // akku box gloss stays clean (round 4)
+  ['Akku, der, -s', 0.1, 'البطارية'],
 ]
 
 const cases = SPECS[location.pathname]
