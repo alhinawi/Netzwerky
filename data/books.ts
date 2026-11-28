@@ -32,6 +32,27 @@ const a1kb: Chapter[] = [
   { n: 14, title: 'Anhang', pages: '152–175', grammar: 'Grammatikübersicht · unregelmäßige Verben · alphabetische Wortliste · Quellenverzeichnis', ar: 'الملحق' },
 ]
 
+const a2kb: Chapter[] = [
+  { n: 0, title: 'Umschlag & Inhalt', pages: '1–7', grammar: '', ar: 'الغلاف والمحتوى' },
+  { n: 1, title: 'Und was machst du?', pages: '8–17', grammar: 'Genitiv: Name + s · Wiederholung: Perfekt · Nebensatz mit weil', ar: 'إيه اللي بتعمله؟' },
+  { n: 2, title: 'Nach der Schulzeit', pages: '18–27', grammar: 'Modalverben im Präteritum · Wiederholung: Artikel · Possessivartikel im Dativ', ar: 'بعد المدرسة' },
+  { n: 3, title: 'Immer online?', pages: '28–37', grammar: 'Adjektive: Komparativ und Superlativ · Vergleiche mit als und wie · Nebensatz mit dass', ar: 'دايمًا أونلاين؟' },
+  { n: 'P1', title: 'Plattform 1', pages: '38–43', grammar: 'wiederholen und trainieren', ar: 'مراجعة' },
+  { n: 4, title: 'Große und kleine Gefühle', pages: '44–53', grammar: 'Nebensatz mit wenn · reflexive Verben', ar: 'مشاعر كبيرة وصغيرة' },
+  { n: 5, title: 'Leben in der Stadt', pages: '54–63', grammar: 'Adjektive nach dem bestimmten Artikel · Präpositionen ohne + Akkusativ und mit + Dativ · Konjunktiv II: könnte', ar: 'الحياة في المدينة' },
+  { n: 6, title: 'Arbeitswelten', pages: '64–73', grammar: 'Adjektive nach dem unbestimmten Artikel · werden', ar: 'عوالم الشغل' },
+  { n: 'P2', title: 'Plattform 2', pages: '74–79', grammar: 'wiederholen und trainieren', ar: 'مراجعة' },
+  { n: 7, title: 'Ganz schön mobil', pages: '80–89', grammar: 'indirekte Fragesätze: W-Fragen und Ja/Nein-Fragen mit ob · Ortsangaben: Präpositionen', ar: 'موبايل خالص' },
+  { n: 8, title: 'Gelernt ist gelernt!', pages: '90–99', grammar: 'Konjunktiv II: sollte (Ratschläge) · Interrogativartikel Was für ein(e)?', ar: 'اللي اتعلمته اتعلمته' },
+  { n: 9, title: 'Sportlich, sportlich', pages: '100–109', grammar: 'Sätze verbinden: deshalb, trotzdem · Verben mit Dativ und Akkusativ', ar: 'رياضة رياضة' },
+  { n: 'P3', title: 'Plattform 3', pages: '110–115', grammar: 'wiederholen und trainieren', ar: 'مراجعة' },
+  { n: 10, title: 'Zusammen leben', pages: '116–125', grammar: 'Wechselpräpositionen · Positions- und Richtungsverben · Nebensatz mit als und wenn', ar: 'عيشة سوا' },
+  { n: 11, title: 'Wie die Zeit vergeht!', pages: '126–135', grammar: 'Konjunktiv II · Verben mit Präposition · W-Fragen mit Präposition', ar: 'الوقت بيمر بسرعة' },
+  { n: 12, title: 'Gute Unterhaltung!', pages: '136–145', grammar: 'Indefinitpronomen · Relativsätze im Nominativ und Akkusativ', ar: 'تسلية حلوة' },
+  { n: 'P4', title: 'Plattform 4', pages: '146–151', grammar: 'wiederholen und trainieren', ar: 'مراجعة' },
+  { n: 13, title: 'Anhang', pages: '152–178', grammar: 'Grammatikübersicht · unregelmäßige Verben · alphabetische Wortliste · Quellenverzeichnis', ar: 'الملحق' },
+]
+
 const a2ab: Chapter[] = [
   { n: 0, title: 'Titel & Inhalt', pages: '1–5', grammar: 'Umschlag, Inhaltsverzeichnis', ar: 'الغلاف والمحتوى' },
   { n: 1, title: 'Und was machst du?', pages: '6–17', grammar: 'Vorstellen · über Vergangenes berichten · sich verabreden', ar: 'إيه اللي بتعمله؟' },
@@ -59,7 +80,7 @@ const empty = (level: string): Chapter[] => [
 export const books: Book[] = [
   { id: 'a1-kb', level: 'A1', kind: 'Kursbuch', title: 'Netzwerk neu A1 · Kursbuch', chapters: a1kb, ready: true, note: 'Kapitel 1 ist live — der Rest folgt Kapitel für Kapitel.' },
   { id: 'a1-ab', level: 'A1', kind: 'Arbeitsbuch', title: 'Netzwerk neu A1 · Arbeitsbuch', chapters: empty('A1'), ready: false },
-  { id: 'a2-kb', level: 'A2', kind: 'Kursbuch', title: 'Netzwerk neu A2 · Kursbuch', chapters: empty('A2'), ready: true, note: 'Kapitel 6-8 zuerst, der Rest folgt.' },
+  { id: 'a2-kb', level: 'A2', kind: 'Kursbuch', title: 'Netzwerk neu A2 · Kursbuch', chapters: a2kb, ready: true, note: 'Kapitel 6-8 zuerst, der Rest folgt.' },
   { id: 'a2-ab', level: 'A2', kind: 'Arbeitsbuch', title: 'Netzwerk neu A2 · Arbeitsbuch', chapters: a2ab, ready: true, note: 'Reader – nur Seiten: Kapitel 1–12 und Prüfungstraining 1–4 sind lesbar, Lösungen, Wort-Taps und Audio fehlen noch.', cover: '/covers/a2-ab.webp' },
   { id: 'b1-kb', level: 'B1', kind: 'Kursbuch', title: 'Netzwerk neu B1 · Kursbuch', chapters: empty('B1'), ready: false },
   { id: 'b1-ab', level: 'B1', kind: 'Arbeitsbuch', title: 'Netzwerk neu B1 · Arbeitsbuch', chapters: empty('B1'), ready: false, cover: '/covers/b1-ab.webp' },

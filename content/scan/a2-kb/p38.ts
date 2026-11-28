@@ -4,6 +4,7 @@ export const p38: ScanPage = {
   book: 'a2-kb',
   printed: 38,
   chapter: 3,
+  part: 'P1',
   image: '/pages/a2-kb/038.jpg',
   width: 1241,
   height: 1752,
