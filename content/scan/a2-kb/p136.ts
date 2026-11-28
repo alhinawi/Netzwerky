@@ -63,7 +63,6 @@ export const p136: ScanPage = {
     { id: 't52', x: 192, y: 1595, w: 18, h: 13, text: 'c', ar: 'ج' },
     { id: 't53', x: 232, y: 1597, w: 899, h: 27, text: 'Geben Sie Ihre Fragen einer anderen Gruppe. Die Gruppe antwortet, Sie kontrollieren. Welche', ar: 'اديوا أسئلتكم لمجموعة تانية. المجموعة بتجاوب وانتوا بتراجعوا. أنهي' },
     { id: 't54', x: 232, y: 1621, w: 415, h: 15, text: 'Gruppe hat alle Fragen richtig beantwortet?', ar: 'مجموعة جاوبت كل الأسئلة صح؟' },
-    { id: 't56', x: 150, y: 1705, w: 244, h: 13, text: 'einhundertsechsunddreißig', ar: 'مية وستة وتلاتين' },
   ],
   audio: [
   ],
@@ -129,7 +128,6 @@ export const p136: ScanPage = {
     { id: 's-t52', text: 'c', ar: 'ج', words: ['t52'] },
     { id: 's-t53', text: 'Geben Sie Ihre Fragen einer anderen Gruppe. Die Gruppe antwortet, Sie kontrollieren. Welche', ar: 'اديوا أسئلتكم لمجموعة تانية. المجموعة بتجاوب وانتوا بتراجعوا. أنهي', words: ['t53'] },
     { id: 's-t54', text: 'Gruppe hat alle Fragen richtig beantwortet?', ar: 'مجموعة جاوبت كل الأسئلة صح؟', words: ['t54'] },
-    { id: 's-t56', text: 'einhundertsechsunddreißig', ar: 'مية وستة وتلاتين', words: ['t56'] },
   ],
   groups: [],
 }

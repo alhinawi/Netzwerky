@@ -102,7 +102,6 @@ export const p122: ScanPage = {
     { id: 'n11d', x: 210, y: 1619, w: 26, h: 28, text: 'd', ar: 'د' },
     { id: 'rc1', x: 247, y: 1632, w: 875, h: 36, text: 'Recherchieren Sie Informationen zu Haustieren in Ihrem Land und vergleichen Sie mit den', ar: 'ابحث عن معلومات عن الحيوانات الأليفة في بلدك وقارنها بـ' },
     { id: 'rc2', x: 247, y: 1656, w: 747, h: 45, text: 'Informationen in 11b. Präsentieren Sie drei interessante Ergebnisse im Kurs.', ar: 'المعلومات في 11b. قدّم تلات نتايج مثيرة في الكورس.' },
-    { id: 'pw', x: 163, y: 1701, w: 243, h: 13, text: 'einhundertzweiundzwanzig', ar: 'مية واتنين وعشرين' },
   ],
   audio: [
   ],
@@ -189,7 +188,6 @@ export const p122: ScanPage = {
     { id: 's-o9', text: 'dass …', ar: 'إن …', words: ['o9'] },
     { id: 's-r1', text: 'Recherchieren Sie Informationen zu Haustieren in Ihrem Land und vergleichen Sie mit den', ar: 'ابحث عن معلومات عن الحيوانات الأليفة في بلدك وقارنها بـ', words: ['rc1'] },
     { id: 's-r2', text: 'Informationen in 11b. Präsentieren Sie drei interessante Ergebnisse im Kurs.', ar: 'المعلومات في 11b. قدّم تلات نتايج مثيرة في الكورس.', words: ['rc2'] },
-    { id: 's-pw', text: 'einhundertzweiundzwanzig', ar: 'مية واتنين وعشرين', words: ['pw'] },
   ],
   groups: [],
 }

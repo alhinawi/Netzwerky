@@ -51,7 +51,6 @@ export const p115: ScanPage = {
     { id: 't40', x: 935, y: 1511, w: 121, h: 13, text: 'Wanderung …', ar: 'المشي …' },
     { id: 't41', x: 902, y: 1541, w: 257, h: 16, text: 'Man sollte … reservieren.', ar: 'المفروض تحجز …' },
     { id: 't42', x: 902, y: 1568, w: 232, h: 15, text: '… kann man … sehen.', ar: '… تقدر تشوف …' },
-    { id: 't43', x: 925, y: 1681, w: 174, h: 13, text: 'einhundertfünfzehn', ar: 'مية وخمستاشر' },
   ],
   audio: [
   ],
@@ -112,7 +111,6 @@ export const p115: ScanPage = {
     { id: 's-t40', text: 'Wanderung …', ar: 'المشي …', words: ['t40'] },
     { id: 's-t41', text: 'Man sollte … reservieren.', ar: 'المفروض تحجز …', words: ['t41'] },
     { id: 's-t42', text: '… kann man … sehen.', ar: '… تقدر تشوف …', words: ['t42'] },
-    { id: 's-t43', text: 'einhundertfünfzehn', ar: 'مية وخمستاشر', words: ['t43'] },
   ],
   groups: [],
 }

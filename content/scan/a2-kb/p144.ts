@@ -45,7 +45,6 @@ export const p144: ScanPage = {
     { id: 'tc22', x: 232, y: 1520, w: 350, h: 22, text: 'Warum gefällt Ihnen das Bild so gut?', ar: 'ليه الصورة عاجباكم أوي كده؟' },
     { id: 'ex1', x: 462, y: 1572, w: 488, h: 34, text: 'Ich habe das Bild „Nighthawks“ von Edward Hopper', ar: 'أنا جبت صورة «Nighthawks» لإدوارد هوبر' },
     { id: 'ex2', x: 590, y: 1606, w: 228, h: 33, text: 'mitgebracht. Es zeigt …', ar: 'معايا. بتعرض …' },
-    { id: 'pgw', x: 150, y: 1691, w: 222, h: 28, text: 'einhundertvierundvierzig', ar: 'مية وأربعة وأربعين' },
   ],
   audio: [
   ],

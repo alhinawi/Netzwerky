@@ -38,7 +38,6 @@ export const p113: ScanPage = {
     { id: 't26', x: 790, y: 1531, w: 394, h: 15, text: 'Sprache. Vielleicht versteht Ihr Partner /', ar: 'يمكن شريكك يفهمها /' },
     { id: 't27', x: 790, y: 1559, w: 399, h: 15, text: 'Ihre Partnerin das. Oder erklären Sie das', ar: 'شريكتك. أو اشرح' },
     { id: 't28', x: 790, y: 1586, w: 264, h: 15, text: 'Wort mit Gestik und Mimik.', ar: 'الكلمة بالإشارات وتعبيرات الوش.' },
-    { id: 't29', x: 925, y: 1679, w: 174, h: 13, text: 'einhundertdreizehn', ar: 'مية وتلاتاشر' },
     { id: 'L0', x: 141, y: 771, w: 30, h: 28, text: 'A', ar: 'A' },
     { id: 'L1', x: 486, y: 769, w: 30, h: 28, text: 'D', ar: 'D' },
     { id: 'L2', x: 823, y: 766, w: 30, h: 28, text: 'G', ar: 'G' },
@@ -85,7 +84,6 @@ export const p113: ScanPage = {
     { id: 's-t26', text: 'Sprache. Vielleicht versteht Ihr Partner /', ar: 'يمكن شريكك يفهمها /', words: ['t26'] },
     { id: 's-t27', text: 'Ihre Partnerin das. Oder erklären Sie das', ar: 'شريكتك. أو اشرح', words: ['t27'] },
     { id: 's-t28', text: 'Wort mit Gestik und Mimik.', ar: 'الكلمة بالإشارات وتعبيرات الوش.', words: ['t28'] },
-    { id: 's-t29', text: 'einhundertdreizehn', ar: 'مية وتلاتاشر', words: ['t29'] },
   ],
   groups: [],
 }

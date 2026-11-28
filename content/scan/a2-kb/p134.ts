@@ -50,7 +50,6 @@ export const p134: ScanPage = {
     { id: 'w39', x: 950, y: 1582, w: 25, h: 26, text: 'D', ar: 'D' },
     { id: 'w40', x: 180, y: 1608, w: 22, h: 30, text: 'b', ar: 'ب' },
     { id: 'w41', x: 222, y: 1610, w: 844, h: 30, text: 'Welches Sprichwort sagt Luca? Gibt es ein ähnliches Sprichwort auch in Ihrer Sprache?', ar: 'أنهي مثل قاله لوكا؟ فيه مثل شبهه في لغتكم؟' },
-    { id: 'w43', x: 147, y: 1652, w: 221, h: 30, text: 'einhundertvierunddreißig', ar: 'مية وأربعة وتلاتين' },
   ],
   audio: [
   ],

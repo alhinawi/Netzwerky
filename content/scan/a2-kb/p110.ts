@@ -90,7 +90,6 @@ export const p110: ScanPage = {
     { id: 't78', x: 874, y: 1546, w: 310, h: 13, text: 'Was denken Sie: Was kann man', ar: 'إيه رأيك: إيه اللي ممكن' },
     { id: 't79', x: 874, y: 1578, w: 305, h: 13, text: 'nur schwer lernen? Nennen Sie', ar: 'الواحد يتعلمه بصعوبة بس؟ اذكر' },
     { id: 't80', x: 874, y: 1608, w: 125, h: 13, text: 'drei „Dinge“.', ar: 'تلات «حاجات».' },
-    { id: 't82', x: 152, y: 1676, w: 142, h: 13, text: 'einhundertzehn', ar: 'مية وعشرة' },
     { id: 'n0', x: 760, y: 396, w: 40, h: 28, text: '1', ar: '1' },
     { id: 'n1', x: 760, y: 508, w: 40, h: 28, text: '2', ar: '2' },
     { id: 'n2', x: 760, y: 688, w: 40, h: 28, text: '3', ar: '3' },
@@ -187,7 +186,6 @@ export const p110: ScanPage = {
     { id: 's-t78', text: 'Was denken Sie: Was kann man', ar: 'إيه رأيك: إيه اللي ممكن', words: ['t78'] },
     { id: 's-t79', text: 'nur schwer lernen? Nennen Sie', ar: 'الواحد يتعلمه بصعوبة بس؟ اذكر', words: ['t79'] },
     { id: 's-t80', text: 'drei „Dinge“.', ar: 'تلات «حاجات».', words: ['t80'] },
-    { id: 's-t82', text: 'einhundertzehn', ar: 'مية وعشرة', words: ['t82'] },
   ],
   groups: [],
 }

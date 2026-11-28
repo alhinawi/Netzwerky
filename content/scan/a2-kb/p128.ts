@@ -99,7 +99,6 @@ export const p128: ScanPage = {
     { id: 'w88', x: 1037, y: 1529, w: 163, h: 30, text: 'würden besuchen', ar: 'كانوا هيزوروا' },
     { id: 'w89', x: 745, y: 1560, w: 455, h: 36, text: 'Bei Wünschen mit Konjunktiv II verwendet man', ar: 'في الأمنيات مع Konjunktiv II بنستخدم دايماً' },
     { id: 'w90', x: 745, y: 1594, w: 365, h: 36, text: 'immer gern: Ich hätte gern mehr Zeit.', ar: 'gern: Ich hätte gern mehr Zeit.' },
-    { id: 'w92', x: 147, y: 1640, w: 231, h: 30, text: 'einhundertachtundzwanzig', ar: 'مية وتمانية وعشرين' },
   ],
   audio: [
   ],

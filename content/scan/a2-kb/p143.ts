@@ -68,7 +68,6 @@ export const p143: ScanPage = {
     { id: 'e41', x: 890, y: 1519, w: 308, h: 22, text: '– Was gefällt Ihnen besonders/', ar: '– إيه اللي عاجبكم بشكل خاص/' },
     { id: 'e42', x: 913, y: 1546, w: 99, h: 22, text: 'nicht gut?', ar: 'مش عاجبكم؟' },
     { id: 'e5', x: 890, y: 1575, w: 217, h: 16, text: '– Was fällt Ihnen auf?', ar: '– إيه اللي ملفت نظركم؟' },
-    { id: 'pgw', x: 885, y: 1684, w: 218, h: 28, text: 'einhundertdreiundvierzig', ar: 'مية وتلاتة وأربعين' },
   ],
   audio: [
   ],

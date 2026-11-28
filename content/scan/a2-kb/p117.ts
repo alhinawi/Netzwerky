@@ -54,7 +54,6 @@ export const p117: ScanPage = {
     { id: 'n2b', x: 125, y: 1651, w: 22, h: 28, text: 'b', ar: 'ب' },
     { id: 'j1', x: 165, y: 1636, w: 544, h: 40, text: 'Wo möchten Sie gern wohnen? Warum? Erzählen Sie.', ar: 'فين تحب تسكن؟ ليه؟ احكوا.' },
     { id: 'j2', x: 410, y: 1683, w: 459, h: 31, text: 'Ich möchte in einem Haus am Strand wohnen.', ar: 'أنا عايز أسكن في بيت على البحر.' },
-    { id: 'pw', x: 960, y: 1701, w: 191, h: 13, text: 'einhundertsiebzehn', ar: 'مية وسبعتاشر' },
   ],
   audio: [
   ],
@@ -112,7 +111,6 @@ export const p117: ScanPage = {
     { id: 's-r4', text: '5. in der Wagenburg', ar: '5. في الـ Wagenburg', words: ['r4'] },
     { id: 's-j1', text: 'Wo möchten Sie gern wohnen? Warum? Erzählen Sie.', ar: 'فين تحب تسكن؟ ليه؟ احكوا.', words: ['j1'] },
     { id: 's-j2', text: 'Ich möchte in einem Haus am Strand wohnen.', ar: 'أنا عايز أسكن في بيت على البحر.', words: ['j2'] },
-    { id: 's-pw', text: 'einhundertsiebzehn', ar: 'مية وسبعتاشر', words: ['pw'] },
   ],
   groups: [],
 }

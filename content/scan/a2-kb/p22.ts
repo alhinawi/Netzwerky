@@ -34,7 +34,6 @@ export const p22: ScanPage = {
     { id: 'v8', x: 780, y: 674, w: 159, h: 28, text: 'Geld verdienen', ar: 'يكسب فلوس' },
     { id: 'v9', x: 210, y: 726, w: 171, h: 28, text: 'jemandem helfen', ar: 'يساعد حد' },
     { id: 'v10', x: 463, y: 726, w: 214, h: 28, text: 'Vorlesungen besuchen', ar: 'يحضر محاضرات' },
-    { id: 'l16', x: 84, y: 833, w: 27, h: 18, text: '1.16', ar: '١.١٦' },
     { id: 'b', x: 168, y: 798, w: 20, h: 28, text: 'b', ar: 'ب' },
     { id: 'bt1', x: 213, y: 797, w: 1006, h: 35, text: 'Hören Sie die Radiosendung „Schule aus – und nun?“. Was machen Maike, Vida und Sara? Ergänzen Sie', ar: 'اسمعوا برنامج الراديو «انتهت المدرسة – وبعدين؟». مايكه وفيدا وسارة بيعملوا إيه؟ كمّلوا' },
     { id: 'bt2', x: 213, y: 828, w: 164, h: 29, text: 'die Namen in 7a.', ar: 'الأسامي في ٧أ.' },

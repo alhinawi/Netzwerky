@@ -37,7 +37,6 @@ export const p139: ScanPage = {
     { id: 'e1', x: 203, y: 750, w: 299, h: 24, text: 'Kann mir bitte jemand helfen?', ar: 'ممكن حد يساعدني؟' },
     { id: 'e2', x: 625, y: 746, w: 240, h: 27, text: 'Ja, klar. Was ist denn los?', ar: 'أيوه طبعًا. إيه اللي حصل؟' },
     { id: 'ic3', x: 706, y: 566, w: 26, h: 26, text: '🔊', ar: 'صوت' },
-    { id: 'tr3', x: 712, y: 596, w: 34, h: 28, text: '2.53', ar: 'المسار 2.53' },
     { id: 'gg', x: 775, y: 564, w: 225, h: 28, text: 'Gut gesagt: etwas/was', ar: 'قولتها كويس: etwas/was' },
     { id: 'q1', x: 775, y: 595, w: 127, h: 23, text: 'Hast du was?', ar: 'إنت فيك حاجة؟' },
     { id: 'q1b', x: 918, y: 593, w: 212, h: 23, text: 'Geht es dir nicht gut?', ar: 'إنت مش كويس؟' },
@@ -49,7 +48,6 @@ export const p139: ScanPage = {
     { id: 'ic5', x: 35, y: 826, w: 26, h: 26, text: '🔊', ar: 'صوت' },
     { id: 'ic5b', x: 55, y: 826, w: 26, h: 26, text: '💬', ar: 'حوار' },
     { id: 'n5a', x: 88, y: 826, w: 40, h: 28, text: '5 a', ar: '5 أ' },
-    { id: 'tr5', x: 38, y: 858, w: 40, h: 28, text: '2.54', ar: 'المسار 2.54' },
     { id: 't5', x: 152, y: 827, w: 523, h: 26, text: 'Aussprache: Rückfragen. Hören Sie und lesen Sie mit.', ar: 'النطق: الأسئلة الرجعية. اسمعوا واقروا معاهم.' },
     { id: 'l1', x: 160, y: 873, w: 290, h: 24, text: 'Wer spielt auf dem Festival?', ar: 'مين بيعزف في المهرجان؟' },
     { id: 'l2', x: 160, y: 905, w: 95, h: 22, text: 'Namika.', ar: 'ناميكا.' },
@@ -97,7 +95,6 @@ export const p139: ScanPage = {
     { id: 'tc2', x: 163, y: 1594, w: 987, h: 35, text: 'Ihr Lieblingslied. Arbeiten Sie zu zweit. Erzählen Sie auf Deutsch: Worum geht es in Ihrem Lieblingslied?', ar: 'أغنيتكم المفضلة. اشتغلوا اتنين اتنين. احكوا بالألماني: أغنيتكم المفضلة بتتكلم عن إيه؟' },
     { id: 'ex31', x: 305, y: 1631, w: 500, h: 38, text: 'Mein Lieblingslied heißt „Quem me dera“ von Mariza.', ar: 'أغنيتي المفضلة اسمها \'Quem me dera\' لماريزا.' },
     { id: 'ex32', x: 432, y: 1665, w: 251, h: 28, text: 'In dem Lied geht es um …', ar: 'الأغنية بتتكلم عن …' },
-    { id: 'pgw', x: 870, y: 1692, w: 232, h: 28, text: 'einhundertneununddreißig', ar: 'مية وتسعة وتلاتين' },
   ],
   audio: [
   ],

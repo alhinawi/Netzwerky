@@ -260,6 +260,20 @@ SPECS['/read/a2-kb/122/'] = [['2.40', 0.5, null, 'none'], ['2.41', 0.5, null, 'n
 SPECS['/read/b1-kb/23/'].push(['1.17', 0.5, null, 'none'])
 SPECS['/read/b1-kb/57/'] = [['1.37', 0.5, null, 'none'], ['1.38', 0.5, null, 'none']]
 
+// K5 round 3c: einhundert* footers (generator bug had missed pages 100+)
+// and the remaining track boxes with translated ar
+SPECS['/read/a2-kb/115/'].push(['einhundertfünfzehn', 0.5, null, 'none'])
+SPECS['/read/a2-kb/121/'].push(['einhunderteinundzwanzig', 0.5, null, 'none'])
+SPECS['/read/a2-kb/122/'].push(['einhundertzweiundzwanzig', 0.5, null, 'none'])
+SPECS['/read/a2-kb/21/'] = [['1.13', 0.5, null, 'none'], ['1.14', 0.5, null, 'none'], ['1.15', 0.5, null, 'none']]
+SPECS['/read/a2-kb/22/'] = [['1.16', 0.5, null, 'none']]
+SPECS['/read/a2-kb/23/'] = [['1.17', 0.5, null, 'none']]
+SPECS['/read/a2-kb/43/'] = [['1.28', 0.5, null, 'none']]
+SPECS['/read/a2-kb/138/'] = [['2.52', 0.5, null, 'none']]
+SPECS['/read/a2-kb/139/'] = [['2.53', 0.5, null, 'none'], ['2.54', 0.5, null, 'none']]
+SPECS['/read/a2-kb/142/'] = [['2.55', 0.5, null, 'none']]
+SPECS['/read/a2-kb/149/'] = [['2.56', 0.5, null, 'none'], ['2.57', 0.5, null, 'none']]
+
 const cases = SPECS[location.pathname]
 if (!cases) return 'no spec for ' + location.pathname
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms))

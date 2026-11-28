@@ -91,7 +91,6 @@ export const p132: ScanPage = {
     { id: 'w80', x: 192, y: 1575, w: 18, h: 30, text: 'd', ar: 'د' },
     { id: 'w81', x: 233, y: 1574, w: 839, h: 40, text: 'Worauf könnten Sie gut/nicht verzichten und warum? Schreiben Sie einen kurzen Text.', ar: 'إيه اللي تقدروا/مش تقدروا تستغنوا عنه وليه؟ اكتبوا نص قصير.' },
     { id: 'w82', x: 232, y: 1608, w: 850, h: 46, text: 'Ich finde das Leben von Familie Ketterer interessant, aber ich könnte nicht ...', ar: 'أنا شايف حياة عيلة كيتيرر مثيرة للاهتمام، بس أنا مش هقدر ...' },
-    { id: 'w84', x: 155, y: 1640, w: 229, h: 30, text: 'einhundertzweiunddreißig', ar: 'مية واتنين وتلاتين' },
   ],
   audio: [
   ],

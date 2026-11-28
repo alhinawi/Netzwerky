@@ -45,7 +45,6 @@ export const p116: ScanPage = {
     { id: 'ic', x: 93, y: 1453, w: 26, h: 28, text: '📄', ar: 'نص' },
     { id: 'b1', x: 222, y: 1464, w: 717, h: 32, text: 'Lesen Sie die Texte. Was ist besonders an den verschiedenen Wohnorten?', ar: 'اقروا النصوص. إيه المميز في أماكن السكن المختلفة؟' },
     { id: 'e2', x: 543, y: 1521, w: 291, h: 28, text: 'Die Insel ist sehr klein und ...', ar: 'الجزيرة صغيرة أوي و ...' },
-    { id: 'pw', x: 145, y: 1703, w: 179, h: 13, text: 'einhundertsechzehn', ar: 'مية وستاشر' },
   ],
   audio: [
   ],
@@ -85,7 +84,6 @@ export const p116: ScanPage = {
     { id: 's-e1', text: 'Mir gefällt der Bauernhof, weil ...', ar: 'عاجبني المزرعة لأن ...', words: ['e1'] },
     { id: 's-b1', text: 'Lesen Sie die Texte. Was ist besonders an den verschiedenen Wohnorten?', ar: 'اقروا النصوص. إيه المميز في أماكن السكن المختلفة؟', words: ['b1'] },
     { id: 's-e2', text: 'Die Insel ist sehr klein und ...', ar: 'الجزيرة صغيرة أوي و ...', words: ['e2'] },
-    { id: 's-pw', text: 'einhundertsechzehn', ar: 'مية وستاشر', words: ['pw'] },
   ],
   groups: [],
 }

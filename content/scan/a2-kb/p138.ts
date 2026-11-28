@@ -35,7 +35,6 @@ export const p138: ScanPage = {
     { id: 'v20', x: 935, y: 580, w: 225, h: 30, text: 'Indie, Rock, Elektro', ar: 'إندي وروك وإلكترو' },
     { id: 'v22', x: 935, y: 667, w: 90, h: 30, text: 'Diepholz', ar: 'دييبهولتس' },
     { id: 'ic1', x: 80, y: 822, w: 26, h: 26, text: '🔊', ar: 'صوت' },
-    { id: 'tr1', x: 80, y: 853, w: 60, h: 30, text: '2.52', ar: 'المسار 2.52' },
     { id: 'nb', x: 167, y: 820, w: 28, h: 30, text: 'b', ar: 'ب' },
     { id: 'tb1', x: 211, y: 822, w: 434, h: 26, text: 'Hören Sie das Gespräch von Marek und Lina.', ar: 'اسمعوا محادثة ماريك ولينا.' },
     { id: 'tb2', x: 211, y: 852, w: 394, h: 25, text: 'Welches Festival möchten sie besuchen?', ar: 'أنهي مهرجان عايزين يزوروه؟' },
@@ -74,7 +73,6 @@ export const p138: ScanPage = {
     { id: 'mE1', x: 810, y: 1515, w: 332, h: 26, text: 'Für die Übernachtung müssen wir', ar: 'للمبيت مش لازم' },
     { id: 'mE2', x: 810, y: 1545, w: 342, h: 26, text: 'nichts mitbringen, oder? Sollen wir', ar: 'نجيب حاجة، صح؟ نجيب' },
     { id: 'mE3', x: 810, y: 1575, w: 338, h: 24, text: 'deinen Freunden etwas schenken?', ar: 'لأصحابك هدية؟' },
-    { id: 'pgw', x: 145, y: 1685, w: 228, h: 30, text: 'einhundertachtunddreißig', ar: 'مية وتمانية وتلاتين' },
   ],
   audio: [
   ],
