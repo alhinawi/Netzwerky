@@ -3,7 +3,7 @@ import type { ScanPage } from '../types'
 export const p154: ScanPage = {
   book: 'a1-kb',
   printed: 154,
-  chapter: 0,
+  chapter: 14,
   image: '/pages/a1-kb/154.jpg',
   width: 1241,
   height: 1753,
