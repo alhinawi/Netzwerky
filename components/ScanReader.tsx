@@ -2,7 +2,7 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { useRouter } from 'next/navigation'
 import type { ScanPage } from '@/content/scan/types'
-import { audioUrl } from '@/lib/audio'
+import { audioUrl, seekableSrc } from '@/lib/audio'
 import { playCorrect, playWrong, playTap, soundState, setSound, setFeedback } from '@/lib/sound'
 import { pronounceUrl } from '@/lib/pronounce'
 
@@ -140,8 +140,11 @@ export default function ScanReader({
     requestAnimationFrame(() => {
       const el = audio.current
       if (!el) return
-      el.src = audioUrl(first, audioBase)
-      void el.play().catch(() => {})
+      void seekableSrc(audioUrl(first, audioBase)).then((src) => {
+        if (audio.current !== el) return
+        el.src = src
+        void el.play().catch(() => {})
+      })
     })
   }
 
@@ -149,8 +152,12 @@ export default function ScanReader({
     const nxt = queue.current.shift()
     if (nxt && audio.current) {
       setPlaying(nxt)
-      audio.current.src = audioUrl(nxt, audioBase)
-      void audio.current.play().catch(() => {})
+      const el = audio.current
+      void seekableSrc(audioUrl(nxt, audioBase)).then((src) => {
+        if (audio.current !== el) return
+        el.src = src
+        void el.play().catch(() => {})
+      })
     } else {
       setPlaying(null)
       setProgress(0)
