@@ -76,6 +76,29 @@ const extra = {
   herunter: 'لتحت',
   runter: 'لتحت',
   'rügen': 'جزيرة روجن',
+  // conjugation-table forms (kurz und klar / appendix tables): the tapped form
+  // shows the verb's own gloss, never the whole table row
+  lasse: 'يترك / يخلّي',
+  'lässt': 'يترك / يخلّي',
+  lasst: 'يترك / يخلّي',
+  lassen: 'يترك / يخلّي',
+  gelassen: 'يترك / يخلّي',
+  'weißt': 'يعرف',
+  wisst: 'يعرف',
+  gewusst: 'يعرف',
+  hatte: 'كان عنده',
+  hattest: 'كان عندك',
+  hatten: 'كان عندهم',
+  hattet: 'كان عندكم',
+  gehabt: 'كان عنده',
+  warst: 'كان (إنت)',
+  waren: 'كانوا',
+  wart: 'كنتوا',
+  gewesen: 'كان (تصريف ثالث)',
+  geworden: 'صار / أصبح',
+  darf: 'مسموح له / يجوز له',
+  soll: 'المفروض',
+  'würde': 'حـ (شرطية)',
 }
 for (const [k, v] of Object.entries(extra)) {
   if (!seen.has(k)) { seen.add(k); gloss[k] = v }

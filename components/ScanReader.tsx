@@ -263,13 +263,13 @@ export default function ScanReader({
   const ensureGloss = () => {
     if (gloss) return Promise.resolve(gloss)
     try {
-      const cached = localStorage.getItem('nw-gloss-v8')
+      const cached = localStorage.getItem('nw-gloss-v9')
       if (cached) { const g = JSON.parse(cached); setGloss(g); return Promise.resolve(g) }
     } catch {}
     if (!glossReq.current) {
       glossReq.current = fetch('/glossary.json').then((r) => r.json()).then((g) => {
         setGloss(g)
-        try { localStorage.setItem('nw-gloss-v8', JSON.stringify(g)) } catch {}
+        try { localStorage.setItem('nw-gloss-v9', JSON.stringify(g)) } catch {}
         return g as Record<string, string>
       }).catch(() => ({}))
     }
@@ -617,9 +617,11 @@ export default function ScanReader({
                   const boxAr = w.ar && !/^[ـ\-—–\s]+$/.test(w.ar.trim()) && w.ar.trim().toLowerCase() !== w.text.trim().toLowerCase() ? w.ar : ''
                   // a list marker like "6." maps to the number itself, never to a word gloss
                   const bareTok = bareKey(tok)
-                  const ar = /^[0-9]+[.,]?$/.test(bareTok)
+                  const arRaw = /^[0-9]+[.,]?$/.test(bareTok)
                     ? arNum(Number(bareTok.replace(/[^0-9]/g, '')))
                     : glossExact(gg, tok) || boxAr || glossStem(gg, tok) || ''
+                  // stray list separators from the scan never leak into a gloss
+                  const ar = arRaw.replace(/^[\s|｜]+/, '').replace(/[\s|｜]+$/, '')
                   if (!ar && !hasSentence) { setWordHit(null); return false } // no gloss: show nothing
                   setWordHit({ text: tok, ar })
                   return true
