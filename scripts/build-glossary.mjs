@@ -1,7 +1,7 @@
 import fs from 'node:fs'
 import path from 'node:path'
 
-const roots = ['content/scan/a1-kb', 'content/scan/a2-kb']
+const roots = ['content/scan/a1-kb', 'content/scan/a2-kb', 'content/scan/b1-kb']
 const gloss = {}
 const seen = new Set()
 for (const dir of roots) {
