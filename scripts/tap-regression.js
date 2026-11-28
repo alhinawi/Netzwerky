@@ -309,6 +309,17 @@ SPECS['/read/b1-kb/59/'] = [['2.12-13', 0.5, null, 'none']]
 SPECS['/read/b1-kb/14/'] = [['1.9–12', 0.5, null, 'none']]
 SPECS['/read/b1-kb/46/'] = [['1.27–29', 0.5, null, 'none']]
 
+// reviewer empty-popup fix: digit/dot/dash and marker boxes carry Arabic glosses
+SPECS['/read/b1-kb/9/'] = [['1–3', 0.5, '١–٣']]
+SPECS['/read/b1-kb/20/'] = [['4–5', 0.5, '٤–٥']]
+SPECS['/read/b1-kb/31/'] = [['6-8', 0.5, '٦-٨']]
+SPECS['/read/b1-kb/45/'] = [['9–11', 0.5, '٩–١١']]
+SPECS['/read/b1-kb/60/'].push(['4) b', 0.2, '٤) ب'])
+SPECS['/read/b1-kb/50/'].push(['0551–29 19 39 93', 0.1, '٠٥٥١–٢٩ ١٩ ٣٩ ٩٣'])
+SPECS['/read/a2-kb/20/'] = [['1989–1998', 0.5, '١٩٨٩–١٩٩٨']]
+SPECS['/read/a2-kb/12/'] = [['10:08', 0.5, '١٠:٠٨']]
+SPECS['/read/b1-kb/23/'].push(['B', 0.5, 'ب'])
+
 const cases = SPECS[location.pathname]
 if (!cases) return 'no spec for ' + location.pathname
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms))
@@ -332,13 +343,3 @@ for (const [label, frac, expect, mode] of cases) {
 }
 return results
 
-// reviewer empty-popup fix: digit/dot/dash and marker boxes carry Arabic glosses
-SPECS['/read/b1-kb/9/'] = [['1–3', 0.5, '١–٣']]
-SPECS['/read/b1-kb/20/'] = [['4–5', 0.5, '٤–٥']]
-SPECS['/read/b1-kb/31/'] = [['6-8', 0.5, '٦-٨']]
-SPECS['/read/b1-kb/45/'] = [['9–11', 0.5, '٩–١١']]
-SPECS['/read/b1-kb/60/'].push(['4) b', 0.2, '٤) ب'])
-SPECS['/read/b1-kb/50/'].push(['0551–29 19 39 93', 0.1, '٠٥٥١–٢٩ ١٩ ٣٩ ٩٣'])
-SPECS['/read/a2-kb/20/'] = [['1989–1998', 0.5, '١٩٨٩–١٩٩٨']]
-SPECS['/read/a2-kb/12/'] = [['10:08', 0.5, '١٠:٠٨']]
-SPECS['/read/b1-kb/23/'].push(['B', 0.5, 'ب'])
