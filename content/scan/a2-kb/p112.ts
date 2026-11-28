@@ -64,7 +64,6 @@ export const p112: ScanPage = {
     { id: 't52', x: 820, y: 1464, w: 247, h: 17, text: 'Wir bleiben zu Hause.', ar: 'إحنا هنفضل في البيت.' },
     { id: 't53', x: 820, y: 1491, w: 156, h: 17, text: 'Wir freuen uns.', ar: 'إحنا مبسوطين.' },
     { id: 't54', x: 820, y: 1520, w: 262, h: 16, text: 'Wir gehen ins Restaurant.', ar: 'إحنا رايحين المطعم.' },
-    { id: 't55', x: 820, y: 1553, w: 34, h: 13, text: '…', ar: '…' },
     { id: 't56', x: 460, y: 1590, w: 539, h: 48, text: 'Draußen ist es sehr kalt, trotzdem gehen wir spazieren.', ar: 'برا برد جداً، برغم كده هنتمشى.' },
   ],
   audio: [
@@ -126,7 +125,6 @@ export const p112: ScanPage = {
     { id: 's-t52', text: 'Wir bleiben zu Hause.', ar: 'إحنا هنفضل في البيت.', words: ['t52'] },
     { id: 's-t53', text: 'Wir freuen uns.', ar: 'إحنا مبسوطين.', words: ['t53'] },
     { id: 's-t54', text: 'Wir gehen ins Restaurant.', ar: 'إحنا رايحين المطعم.', words: ['t54'] },
-    { id: 's-t55', text: '…', ar: '…', words: ['t55'] },
     { id: 's-t56', text: 'Draußen ist es sehr kalt, trotzdem gehen wir spazieren.', ar: 'برا برد جداً، برغم كده هنتمشى.', words: ['t56'] },
   ],
   groups: [],

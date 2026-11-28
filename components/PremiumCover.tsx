@@ -32,7 +32,7 @@ export default function PremiumCover() {
   }
   const open = () => {
     try { localStorage.setItem(STORE_KEY, book.id) } catch {}
-    router.push(`/read/${book.id}/1/`)
+    router.push(`/read/${book.id}/${book.firstPage ?? 1}/`)
   }
 
   return (

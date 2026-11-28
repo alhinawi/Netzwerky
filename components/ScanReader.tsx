@@ -619,8 +619,14 @@ export default function ScanReader({
               key={w.id}
               onClick={(e) => {
                 e.stopPropagation()
-                // boxes holding only separators (a bare hyphen, pipe, dashes) open nothing in any mode
-                if (!/[a-zäöüßA-ZÄÖÜ0-9]/.test(w.text)) { setWordHit(null); return }
+                // boxes holding only separators (a bare hyphen, pipe, dashes) open
+                // nothing — unless the box itself carries a real gloss to show
+                if (!/[a-zäöüßA-ZÄÖÜ0-9]/.test(w.text)) {
+                  setWordHit(null)
+                  const bareAr = w.ar && w.ar.trim().toLowerCase() !== w.text.trim().toLowerCase() ? w.ar.trim() : ''
+                  if (bareAr) { setForceSent(true); setActiveWord(activeWord === w.id ? null : w.id); playTap() }
+                  return
+                }
                 if (tab !== 'word') {
                   setWordHit(null)
                   if (activeWord === w.id) setForceSent(false)
@@ -633,8 +639,13 @@ export default function ScanReader({
                 const res = tokenAt(w.text, frac)
                 // an article in front of a noun is not a tap target: use the noun after it
                 let tok = res?.tok ?? w.text
-                // taps on separator tokens (|, /, dashes, bullets) open nothing
-                if (res && !/[a-zäöüßA-ZÄÖÜ0-9]/.test(res.tok)) { setWordHit(null); return }
+                // taps on separator tokens (|, /, dashes, bullets) open nothing —
+                // but a box with a real gloss still shows its meaning
+                if (res && !/[a-zäöüßA-ZÄÖÜ0-9]/.test(res.tok)) {
+                  setWordHit(null)
+                  if (w.ar && w.ar.trim().toLowerCase() !== w.text.trim().toLowerCase()) { setForceSent(true); setActiveWord(activeWord === w.id ? null : w.id); playTap() }
+                  return
+                }
                 // a suffix token of a noun entry ("Festspiel, das, -e") opens no popup at all
                 if (res && /^[-–—]/.test(res.tok)) { setWordHit(null); return }
                 if (res && /^(der|die|das)$/i.test(res.tok) && res.idx < res.tokens.length - 1) tok = res.tokens[res.idx + 1]

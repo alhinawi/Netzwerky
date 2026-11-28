@@ -9,6 +9,8 @@ export type Book = {
   note?: string
   /** thumbnail for the book picker when the book has no scanned page yet */
   cover?: string
+  /** first existing reader page (a2-kb has no pages 1-7) */
+  firstPage?: number
 }
 
 const a1kb: Chapter[] = [
@@ -100,7 +102,7 @@ const empty = (level: string): Chapter[] => [
 export const books: Book[] = [
   { id: 'a1-kb', level: 'A1', kind: 'Kursbuch', title: 'Netzwerk neu A1 · Kursbuch', chapters: a1kb, ready: true, note: 'Interaktive Seiten folgen Kapitel für Kapitel — mit Wort-Taps, Lösungen und Audio.', cover: '/pages/a1-kb/001.jpg' },
   { id: 'a1-ab', level: 'A1', kind: 'Arbeitsbuch', title: 'Netzwerk neu A1 · Arbeitsbuch', chapters: empty('A1'), ready: false },
-  { id: 'a2-kb', level: 'A2', kind: 'Kursbuch', title: 'Netzwerk neu A2 · Kursbuch', chapters: a2kb, ready: true, note: 'Interaktive Seiten folgen Kapitel für Kapitel — mit Wort-Taps, Lösungen und Audio.', cover: '/pages/a2-kb/008.jpg' },
+  { id: 'a2-kb', level: 'A2', kind: 'Kursbuch', title: 'Netzwerk neu A2 · Kursbuch', chapters: a2kb, ready: true, note: 'Interaktive Seiten folgen Kapitel für Kapitel — mit Wort-Taps, Lösungen und Audio.', firstPage: 8 },
   { id: 'a2-ab', level: 'A2', kind: 'Arbeitsbuch', title: 'Netzwerk neu A2 · Arbeitsbuch', chapters: a2ab, ready: true, note: 'Reader – nur Seiten: Kapitel 1–12 und Prüfungstraining 1–4 sind lesbar, Lösungen, Wort-Taps und Audio fehlen noch.', cover: '/covers/a2-ab.webp' },
   { id: 'b1-kb', level: 'B1', kind: 'Kursbuch', title: 'Netzwerk neu B1 · Kursbuch', chapters: b1kb, ready: true, note: 'Reader – nur Seiten: Kapitel 1–12 und Plattform 1–4 sind lesbar, Wort-Taps, Lösungen und Audio folgen Kapitel für Kapitel.', cover: '/pages/b1-kb/001.jpg' },
   { id: 'b1-ab', level: 'B1', kind: 'Arbeitsbuch', title: 'Netzwerk neu B1 · Arbeitsbuch', chapters: empty('B1'), ready: false, cover: '/covers/b1-ab.webp' },

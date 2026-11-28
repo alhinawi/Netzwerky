@@ -44,7 +44,6 @@ export const p41: ScanPage = {
     { id: 'ls4', x: 165, y: 1080, w: 248, h: 28, text: 'Bücher – Zeitungen lesen', ar: 'يقرأ كتب – جرايد' },
     { id: 'ls5', x: 165, y: 1108, w: 195, h: 28, text: 'Berlin – Wien reisen', ar: 'يسافر برلين – فيينا' },
     { id: 'ls6', x: 165, y: 1137, w: 192, h: 28, text: 'Kaffee – Tee trinken', ar: 'يشرب قهوة – شاي' },
-    { id: 'ls7', x: 165, y: 1168, w: 22, h: 28, text: '…', ar: '…' },
     { id: 'd1', x: 453, y: 961, w: 214, h: 30, text: 'Was siehst du lieber:', ar: 'تفضّل تتفرج على إيه:' },
     { id: 'd2', x: 465, y: 990, w: 178, h: 30, text: 'Filme oder Serien?', ar: 'أفلام ولا مسلسلات؟' },
     { id: 'd3', x: 847, y: 960, w: 320, h: 30, text: 'Filme! Aber am liebsten sehe ich', ar: 'أفلام! بس أكتر حاجة بتفرج عليها' },

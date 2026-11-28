@@ -17,7 +17,7 @@ export const p66: ScanPage = {
     { id: 'w6', x: 198, y: 318, w: 697, h: 44, text: 'Hören Sie das Gespräch noch einmal und ergänzen Sie die Nachricht.', ar: 'اسمعوا الحوار تاني وكمّلوا الرسالة.' },
     { id: 'w7', x: 240, y: 389, w: 156, h: 32, text: 'Isa, ich kann (1)', ar: 'إيزا، أنا (1)' },
     { id: 'w8', x: 605, y: 360, w: 593, h: 40, text: 'leider nicht kommen, ich muss mit David nach Wiesbaden', ar: 'للأسف مش هقدر آجي، لازم أروح مع ديفيد على فيسبادن' },
-    { id: 'w9', x: 240, y: 432, w: 32, h: 32, text: '(2)', ar: '(2)' },
+    { id: 'w9', x: 240, y: 432, w: 32, h: 32, text: '(2)', ar: '(٢)' },
     { id: 'w10', x: 480, y: 425, w: 132, h: 36, text: '. Wichtige (3)', ar: '. (3) مهم' },
     { id: 'w11', x: 828, y: 410, w: 164, h: 36, text: '! Ich komme (4)', ar: '! هرجع (4)' },
     { id: 'w12', x: 240, y: 472, w: 442, h: 32, text: 'zurück und rufe dich an. Tut mir leid, Andreas', ar: 'وهكلمك. آسف، أندرياس' },
