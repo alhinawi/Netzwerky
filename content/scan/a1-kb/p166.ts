@@ -8,7 +8,7 @@ export const p166: ScanPage = {
   width: 1241,
   height: 1753,
   words: [
-    { id: 'hdr', x: 800, y: 78, w: 240, h: 24, text: 'alphabetische Wortliste', ar: 'قائمة الكلمات مرتبة أبجديًا' },
+    { id: 'hdr', x: 208, y: 82, w: 240, h: 24, text: 'alphabetische Wortliste', ar: 'قائمة الكلمات مرتبة أبجديًا' },
     { id: 'w1', x: 75, y: 174, w: 340, h: 42, text: 'frei (2) (Leider ist am Montag kein Termin frei.)', ar: 'فاضي (للأسف مفيش ميعاد فاضي يوم الاتنين)' },
     { id: 'w2', x: 75, y: 221, w: 340, h: 42, text: 'frei|haben, er hat frei, hat freigehabt', ar: 'يكون في أجازة' },
     { id: 'w3', x: 75, y: 269, w: 206, h: 21, text: 'Freitag, der, -e', ar: 'يوم الجمعة' },
