@@ -47,7 +47,7 @@ const SPECS = {
     ['Die Gedenkstätte Berliner Mauer erinnert', 0.43, 'نصب سور برلين التذكاري بيفكّر بتقسيم ألمانيا ومكانه في وسط', 'sentence'],
     ['Die Gedenkstätte Berliner Mauer erinnert', 0.12, 'النصب التذكاري'],
     // "einem" labeled as Dativ, "Glaskuppel" with the full adjective (reviewer OK-fixes)
-    ['Der Checkpoint Charlie war ein Grenzübergang zwischen Ost- und West-Berlin. Mit einem', 0.93, 'أداة نكرة (Dativ)'],
+    ['Der Checkpoint Charlie war ein Grenzübergang zwischen Ost- und West-Berlin. Mit einem', 0.97, 'أداة نكرة (Dativ)'],
     ['im Bundestag zusehen und in die moderne Glaskuppel gehen. Es lohnt sich: Die Aussicht von der', 0.51, 'القبة الزجاجية'],
   ],
   '/read/b1-kb/28/': [
