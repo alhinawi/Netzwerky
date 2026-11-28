@@ -29,22 +29,35 @@ const SPECS = {
   '/read/b1-kb/21/': [['die Powerbank', 0.5, 'الباور بانك']],
   // a conjugation-table form shows the verb gloss, never the whole row (PR 161 reviewer)
   '/read/b1-kb/27/': [['er/es/sie lässt | sie/Sie lassen', 0.4, 'يترك / يخلّي']],
+  // word taps give word-level glosses; an unglossed word opens the labeled sentence,
+  // and a tap on a list separator opens nothing (PR 163 reviewer)
+  '/read/b1-kb/43/': [
+    ['Die Gedenkstätte Berliner Mauer erinnert', 0.12, 'النصب التذكاري'],
+    ['Die Gedenkstätte Berliner Mauer erinnert', 0.43, 'نصب سور برلين التذكاري بيفكّر بتقسيم ألمانيا ومكانه في وسط', 'sentence'],
+  ],
+  '/read/b1-kb/28/': [
+    ['Berichte über Veränderungen im Leben verstehen |', 0.2, 'التغييرات'],
+    ['Berichte über Veränderungen im Leben verstehen |', 0.485, null, 'none'],
+  ],
 }
 
 const cases = SPECS[location.pathname]
 if (!cases) return 'no spec for ' + location.pathname
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms))
 const results = []
-for (const [label, frac, expect] of cases) {
+for (const [label, frac, expect, mode] of cases) {
   const btn = [...document.querySelectorAll('button')].find((b) => (b.getAttribute('aria-label') || '').startsWith(label))
   if (!btn) { results.push({ label, pass: false, err: 'button not found' }); continue }
   const r = btn.getBoundingClientRect()
   btn.dispatchEvent(new MouseEvent('click', { bubbles: true, cancelable: true, clientX: r.left + r.width * frac, clientY: r.top + r.height / 2 }))
   await sleep(1400)
   const pop = document.querySelector('[class*="bg-neutral-900/95"]')
+  if (mode === 'none') { results.push({ label, frac, expect: null, pass: !pop }); continue }
   const de = pop ? (pop.querySelector('div.font-semibold') || {}).textContent : null
   const ar = pop ? (pop.querySelector('div.ar') || {}).textContent : null
-  results.push({ label, frac, de, ar, expect, pass: ar === expect })
+  const sentTab = pop && [...pop.querySelectorAll('button')].find((b) => b.textContent.trim() === 'جملة')
+  const sentActive = Boolean(sentTab && /font-semibold/.test(sentTab.className))
+  results.push({ label, frac, de, ar, expect, mode, sentActive, pass: ar === expect && (mode !== 'sentence' || sentActive) })
   const x = pop && [...pop.querySelectorAll('button')].find((b) => b.getAttribute('aria-label') === 'اقفل')
   if (x) { x.dispatchEvent(new MouseEvent('click', { bubbles: true })); await sleep(250) }
 }
