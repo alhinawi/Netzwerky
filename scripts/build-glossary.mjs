@@ -99,6 +99,22 @@ const extra = {
   darf: 'مسموح له / يجوز له',
   soll: 'المفروض',
   'würde': 'حـ (شرطية)',
+  // reviewer word-tap list (K1-K3 running text): single-word glosses for words
+  // whose taps used to show the whole sentence translation (self-written, listed for review)
+  'gedenkstätte': 'النصب التذكاري',
+  'reichstagsgebäude': 'مبنى البرلمان (الرايخستاج)',
+  'glaskuppel': 'القبة الزجاج',
+  fotos: 'صور',
+  stunden: 'ساعات',
+  einem: 'أداة نكرة (حالة الجر)',
+  'veränderung': 'تغيير',
+  'veränderungen': 'تغييرات',
+  unterschiede: 'فروق / اختلافات',
+  vergleich: 'مقارنة',
+  je: 'كل / لكل',
+  arbeitet: 'بيشتغل / بتشتغل',
+  'verhältnis': 'نسبة / علاقة',
+  besonderer: 'مميز / خاص',
 }
 for (const [k, v] of Object.entries(extra)) {
   if (!seen.has(k)) { seen.add(k); gloss[k] = v }

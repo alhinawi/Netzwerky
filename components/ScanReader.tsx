@@ -263,13 +263,13 @@ export default function ScanReader({
   const ensureGloss = () => {
     if (gloss) return Promise.resolve(gloss)
     try {
-      const cached = localStorage.getItem('nw-gloss-v9')
+      const cached = localStorage.getItem('nw-gloss-v10')
       if (cached) { const g = JSON.parse(cached); setGloss(g); return Promise.resolve(g) }
     } catch {}
     if (!glossReq.current) {
       glossReq.current = fetch('/glossary.json').then((r) => r.json()).then((g) => {
         setGloss(g)
-        try { localStorage.setItem('nw-gloss-v9', JSON.stringify(g)) } catch {}
+        try { localStorage.setItem('nw-gloss-v10', JSON.stringify(g)) } catch {}
         return g as Record<string, string>
       }).catch(() => ({}))
     }
@@ -408,18 +408,26 @@ export default function ScanReader({
   const word = page.words.find((w) => w.id === activeWord)
   const sentence = word
     ? (page.sentences ?? []).find((s) => (s.words ?? []).includes(word.id)) ??
-      (page.sentences ?? []).find((s) => s.text.includes(word.text))
+      (page.sentences ?? []).find((s) => s.text.includes(word.text)) ??
+      // a line box whose ar is a sentence translation is itself the sentence view:
+      // the tap falls back here, never into the word popup (reviewer rule)
+      (word.ar && word.ar.trim().length > 25 && word.ar.trim().toLowerCase() !== word.text.trim().toLowerCase()
+        ? { id: `box-${word.id}`, text: word.text, ar: word.ar, words: [word.id] }
+        : undefined)
     : undefined
   const showSentence = Boolean(sentence)
   /** a box whose text is a whole sentence (Redemittel block) is a sentence, not a word */
   const boxIsSentence = Boolean(sentence && word && norm(sentence.text) === norm(word.text))
-  const effectiveTab: 'word' | 'sentence' = tab === 'sentence' && !sentence ? 'word' : tab
+  const effectiveTab: 'word' | 'sentence' =
+    tab === 'sentence' && !sentence ? 'word' : tab === 'word' && !wordHit && sentence ? 'sentence' : tab
   const popupText = effectiveTab === 'sentence' && sentence
     ? sentence.text
     : (wordHit?.text ?? word?.text ?? '')
+  // the word tab shows word-level glosses only; a sentence-length box ar is
+  // never a word gloss (it belongs to the sentence tab)
   const popupAr = effectiveTab === 'sentence' && sentence
     ? sentence.ar
-    : ((wordHit?.ar || word?.ar) ?? '')
+    : (wordHit?.ar ?? (word && word.ar.trim().length <= 25 ? word.ar : '') ?? '')
 
   /** keep the popup inside the page: shift it left when the word sits near an edge */
   const popupStyle = (w: { x: number; y: number; w: number; h: number }) => {
@@ -609,21 +617,32 @@ export default function ScanReader({
                 const res = tokenAt(w.text, frac)
                 // an article in front of a noun is not a tap target: use the noun after it
                 let tok = res?.tok ?? w.text
+                // taps on separator tokens (|, /, dashes, bullets) open nothing
+                if (res && !/[a-zäöüßA-ZÄÖÜ0-9]/.test(res.tok)) { setWordHit(null); return }
                 if (res && /^(der|die|das)$/i.test(res.tok) && res.idx < res.tokens.length - 1) tok = res.tokens[res.idx + 1]
                 speakWord(tok, w.text)
                 const hasSentence = (page.sentences ?? []).some((s) => (s.words ?? []).includes(w.id) || s.text.includes(w.text))
                 const open = (gg: Record<string, string> | null) => {
                   // the clicked word's own entry first, then the box meaning, then a stemmed guess
-                  const boxAr = w.ar && !/^[ـ\-—–\s]+$/.test(w.ar.trim()) && w.ar.trim().toLowerCase() !== w.text.trim().toLowerCase() ? w.ar : ''
+                  const boxAr = w.ar && !/^[ـ\-—–\s]+$/.test(w.ar.trim()) && w.ar.trim().toLowerCase() !== w.text.trim().toLowerCase() ? w.ar.trim() : ''
+                  // the box meaning counts as a word gloss only when it is short
+                  // (about 25 chars or less); longer ones are sentence translations
+                  const shortBox = boxAr && boxAr.length <= 25 ? boxAr : ''
                   // a list marker like "6." maps to the number itself, never to a word gloss
                   const bareTok = bareKey(tok)
                   const arRaw = /^[0-9]+[.,]?$/.test(bareTok)
                     ? arNum(Number(bareTok.replace(/[^0-9]/g, '')))
-                    : glossExact(gg, tok) || boxAr || glossStem(gg, tok) || ''
+                    : glossExact(gg, tok) || glossStem(gg, tok) || shortBox || ''
                   // stray list separators from the scan never leak into a gloss
                   const ar = arRaw.replace(/^[\s|｜]+/, '').replace(/[\s|｜]+$/, '')
-                  if (!ar && !hasSentence) { setWordHit(null); return false } // no gloss: show nothing
+                  if (!ar) {
+                    // no word-level gloss: open the box as a labeled sentence, never the word popup
+                    setWordHit(null)
+                    if (boxAr || hasSentence) { setTab('sentence'); return true }
+                    return false // no gloss and no sentence: show nothing
+                  }
                   setWordHit({ text: tok, ar })
+                  setTab('word')
                   return true
                 }
                 const toggle = () => setActiveWord((prev) => (prev === w.id ? null : w.id))
@@ -644,12 +663,14 @@ export default function ScanReader({
               onClick={(e) => e.stopPropagation()}
             >
               <div className="mb-1 flex items-center gap-1 text-[12px]">
-                <button
-                  onClick={() => setTab('word')}
-                  className={`rounded px-2 py-0.5 ${effectiveTab === 'word' ? 'bg-white/20 font-semibold' : 'text-white/60'}`}
-                >
-                  كلمة
-                </button>
+                {wordHit && (
+                  <button
+                    onClick={() => setTab('word')}
+                    className={`rounded px-2 py-0.5 ${effectiveTab === 'word' ? 'bg-white/20 font-semibold' : 'text-white/60'}`}
+                  >
+                    كلمة
+                  </button>
+                )}
                 {showSentence && (
                   <button
                     onClick={() => setTab('sentence')}
