@@ -8,7 +8,7 @@ export const p123: ScanPage = {
   width: 1241,
   height: 1753,
   words: [
-    { id: 'n10', x: 1130, y: 31, w: 70, h: 28, text: '10', ar: '10' },
+    { id: 'n10', x: 1130, y: 31, w: 70, h: 28, text: '10', ar: '١٠' },
     { id: 'h', x: 622, y: 66, w: 420, h: 14, text: 'eine Geschichte schreiben und verbessern', ar: 'نكتب حكاية ونحسّنها' },
     { id: 'ti', x: 135, y: 144, w: 334, h: 28, text: 'Tiergeschichten', ar: 'حكايات حيوانات' },
     { id: 'n12', x: 52, y: 191, w: 52, h: 28, text: '12 a', ar: '12 أ' },

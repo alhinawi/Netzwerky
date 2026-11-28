@@ -89,7 +89,8 @@ SPECS['/read/b1-kb/47/'] = [
 ]
 SPECS['/read/b1-kb/50/'] = [
   ['Haben Sie denn schon in diesem Bereich', 0.03, 'عندك / عندكم'],
-  ['0551–893 022 99', 0.1, null, 'none'],
+  // a phone number shows its Arabic-Indic digits (reviewer: no empty popup)
+  ['0551–893 022 99', 0.1, '٠٥٥١–٨٩٣ ٠٢٢ ٩٩'],
   ['Freie Zeiteinteilung zwischen', 0.1, 'حرة / فاضية'],
   ['Ja, die Stelle ist noch nicht besetzt.', 0.03, 'أيوه، الوظيفة لسه فاضية.', 'sentence'],
 ]
@@ -330,3 +331,14 @@ for (const [label, frac, expect, mode] of cases) {
   if (x) { x.dispatchEvent(new MouseEvent('click', { bubbles: true })); await sleep(250) }
 }
 return results
+
+// reviewer empty-popup fix: digit/dot/dash and marker boxes carry Arabic glosses
+SPECS['/read/b1-kb/9/'] = [['1–3', 0.5, '١–٣']]
+SPECS['/read/b1-kb/20/'] = [['4–5', 0.5, '٤–٥']]
+SPECS['/read/b1-kb/31/'] = [['6-8', 0.5, '٦-٨']]
+SPECS['/read/b1-kb/45/'] = [['9–11', 0.5, '٩–١١']]
+SPECS['/read/b1-kb/60/'].push(['4) b', 0.2, '٤) ب'])
+SPECS['/read/b1-kb/50/'].push(['0551–29 19 39 93', 0.1, '٠٥٥١–٢٩ ١٩ ٣٩ ٩٣'])
+SPECS['/read/a2-kb/20/'] = [['1989–1998', 0.5, '١٩٨٩–١٩٩٨']]
+SPECS['/read/a2-kb/12/'] = [['10:08', 0.5, '١٠:٠٨']]
+SPECS['/read/b1-kb/23/'].push(['B', 0.5, 'ب'])

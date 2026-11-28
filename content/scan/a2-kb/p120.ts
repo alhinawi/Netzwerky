@@ -8,7 +8,7 @@ export const p120: ScanPage = {
   width: 1241,
   height: 1753,
   words: [
-    { id: 'n10', x: 55, y: 46, w: 100, h: 28, text: '10', ar: '10' },
+    { id: 'n10', x: 55, y: 46, w: 100, h: 28, text: '10', ar: '١٠' },
     { id: 'h', x: 210, y: 63, w: 299, h: 15, text: 'Erfahrungsberichte verstehen', ar: 'نفهم تقارير تجارب' },
     { id: 'ti', x: 212, y: 165, w: 260, h: 16, text: 'Zimmer frei!', ar: 'أوضة فاضية!' },
     { id: 'n6a', x: 143, y: 208, w: 60, h: 28, text: '6 a', ar: '6 أ' },
@@ -19,7 +19,7 @@ export const p120: ScanPage = {
     { id: 'mm1', x: 965, y: 85, w: 179, h: 18, text: 'sich anmelden', ar: 'يسجّل نفسه' },
     { id: 'mm2', x: 748, y: 319, w: 173, h: 20, text: 'Kisten packen', ar: 'يعبّي صناديق' },
     { id: 'v28', x: 90, y: 392, w: 36, h: 28, text: '▶', ar: '28' },
-    { id: 't28', x: 104, y: 401, w: 26, h: 13, text: '28', ar: '28' },
+    { id: 't28', x: 104, y: 401, w: 26, h: 13, text: '28', ar: '٢٨' },
     { id: 'n6b', x: 180, y: 391, w: 26, h: 28, text: 'b', ar: 'ب' },
     { id: 'b1', x: 218, y: 378, w: 1038, h: 36, text: 'Lesen Sie die Anzeige von Vera. Was hat sie vor? Welche Antwort ist für Vera interessant? Kreuzen Sie an.', ar: 'اقرا إعلان فيرا. ناوية تعمل إيه؟ أنهي رد يهم فيرا؟ علّم.' },
     { id: 'ad1', x: 165, y: 438, w: 759, h: 38, text: 'Voll möbliertes Zimmer, 18 qm in 3er-WG, 380 € / Monat (+ 80 € Nebenkosten).', ar: 'أوضة مفروشة بالكامل، 18 م² في سكن مشترك لتلاتة، 380 يورو في الشهر (+ 80 يورو مصاريف).' },

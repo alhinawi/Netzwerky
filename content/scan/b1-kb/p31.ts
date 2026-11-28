@@ -25,7 +25,7 @@ export const p31: ScanPage = {
     { id: 'b15', x: 175, y: 500, w: 712, h: 21, text: 'aktiv. Das alles macht sie neben ihrer Arbeit als Polizistin. Auch ihr Privatleben', ar: 'ناشطة. وده كله بجانب شغلها كشرطية. وحياتها الخاصة برضه' },
     { id: 'b16', x: 175, y: 527, w: 681, h: 23, text: 'blieb unverändert und sie möchte später mit ihrem Mann Kinder bekommen.', ar: 'ماتغيّرتش وعايزة بعدين تنجب أطفال مع جوزها.' },
     { id: 'b17', x: 140, y: 603, w: 26, h: 30, text: 'd', ar: 'د' },
-    { id: 'b18', x: 62, y: 614, w: 43, h: 18, text: '6-8', ar: '6-8' },
+    { id: 'b18', x: 62, y: 614, w: 43, h: 18, text: '6-8', ar: '٦-٨' },
     { id: 'b19', x: 183, y: 607, w: 763, h: 25, text: 'Welche Lebensgeschichte finden Sie interessanter? Warum? Sprechen Sie im Kurs.', ar: 'أنهي قصة حياة عجبتكم أكتر؟ ليه؟ اتكلموا في المجموعة.' },
     { id: 'b20', x: 121, y: 664, w: 610, h: 23, text: '4a Lesen Sie noch einmal „Ihren" Text in 3c und markieren Sie', ar: 'اقرأوا نص "بتاعكم" في 3c تاني وعلّموا على' },
     { id: 'b21', x: 183, y: 691, w: 534, h: 20, text: 'die Verben im Präteritum. Ordnen Sie die Verben. Sind sie', ar: 'الأفعال في الماضي البسيط. رتّبوا الأفعال. هل هي' },

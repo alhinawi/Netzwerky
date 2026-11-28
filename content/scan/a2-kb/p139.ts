@@ -9,11 +9,11 @@ export const p139: ScanPage = {
   height: 1753,
   words: [
     { id: 'hd', x: 155, y: 46, w: 872, h: 34, text: 'nachfragen, über Musik sprechen, einen Musiker / eine Musikerin / eine Band vorstellen', ar: 'نسأل، نتكلم عن الموسيقى، نقدّم موسيقي / موسيقية / فرقة' },
-    { id: 'n12', x: 1115, y: 20, w: 75, h: 70, text: '12', ar: '12' },
+    { id: 'n12', x: 1115, y: 20, w: 75, h: 70, text: '12', ar: '١٢' },
     { id: 'nc', x: 92, y: 141, w: 20, h: 28, text: 'c', ar: 'ج' },
     { id: 'tc1', x: 130, y: 139, w: 1025, h: 30, text: 'Markieren Sie in 4b die Pronomen jemand, niemand und alles, etwas, nichts. Lesen Sie dann die Regel', ar: 'علّموا في 4ب الضمائر jemand وniemand وalles وetwas وnichts. اقروا بعدين القاعدة' },
     { id: 'tc2', x: 130, y: 173, w: 202, h: 22, text: 'und kreuzen Sie an.', ar: 'وحطوا علامة.' },
-    { id: 'G', x: 160, y: 215, w: 50, h: 45, text: 'G', ar: 'G' },
+    { id: 'G', x: 160, y: 215, w: 50, h: 45, text: 'G', ar: 'جي' },
     { id: 'gt', x: 162, y: 271, w: 190, h: 28, text: 'Indefinitpronomen', ar: 'ضمائر غير محددة' },
     { id: 'g1', x: 162, y: 303, w: 375, h: 26, text: 'man, jemand und niemand stehen für', ar: 'man وjemand وniemand بتقصد' },
     { id: 'g1a', x: 613, y: 308, w: 78, h: 28, text: 'Sachen.', ar: 'أشياء.' },

@@ -47,7 +47,7 @@ export const p42: ScanPage = {
     { id: 'tx6', x: 862, y: 1023, w: 343, h: 30, text: 'alten Chemiefabrik bei Berlin. Die', ar: 'مصنع كيماويات قديم جنب برلين.' },
     { id: 'tx7', x: 862, y: 1053, w: 353, h: 30, text: 'Atmosphäre von diesen Orten kann', ar: 'جو الأماكن دي ممكن' },
     { id: 'tx8', x: 862, y: 1084, w: 295, h: 30, text: 'man in den Filmszenen spüren.', ar: 'نحسّه في مشاهد الفيلم.' },
-    { id: 'A', x: 83, y: 1221, w: 34, h: 34, text: 'A', ar: 'A' },
+    { id: 'A', x: 83, y: 1221, w: 34, h: 34, text: 'A', ar: 'أ' },
     { id: 'ty0', x: 95, y: 1297, w: 72, h: 30, text: '2____', ar: '٢____' },
     { id: 'ty1', x: 97, y: 1330, w: 400, h: 30, text: 'James Bond reist in seinen Filmen um die', ar: 'جيمس بوند بيسافر في أفلامه حوالين' },
     { id: 'ty2', x: 97, y: 1358, w: 410, h: 30, text: 'ganze Welt. Für „Spectre“ war er auch in', ar: 'العالم كله. في فيلم «Spectre» كان كمان في' },
@@ -55,7 +55,7 @@ export const p42: ScanPage = {
     { id: 'ty4', x: 97, y: 1417, w: 412, h: 30, text: 'in den Alpen. Im Film ist das Gebäude eine', ar: 'في جبال الألب. في الفيلم المبنى' },
     { id: 'ty5', x: 97, y: 1443, w: 395, h: 30, text: 'Privatklinik, aber in Wirklichkeit ist es ein', ar: 'عيادة خاصة، بس في الحقيقة هو' },
     { id: 'ty6', x: 97, y: 1470, w: 111, h: 30, text: 'Restaurant.', ar: 'مطعم.' },
-    { id: 'B', x: 625, y: 1669, w: 34, h: 34, text: 'B', ar: 'B' },
+    { id: 'B', x: 625, y: 1669, w: 34, h: 34, text: 'B', ar: 'ب' },
   ],
   audio: [
   ],

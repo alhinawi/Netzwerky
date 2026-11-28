@@ -8,7 +8,7 @@ export const p141: ScanPage = {
   width: 1241,
   height: 1753,
   words: [
-    { id: 'n12', x: 1110, y: 20, w: 80, h: 70, text: '12', ar: '12' },
+    { id: 'n12', x: 1110, y: 20, w: 80, h: 70, text: '12', ar: '١٢' },
     { id: 'hd', x: 600, y: 55, w: 427, h: 30, text: 'genauere Informationen zu Personen geben', ar: 'ونديّ معلومات أدق عن الناس' },
     { id: 'n8a', x: 78, y: 136, w: 36, h: 28, text: '8 a', ar: '8 أ' },
     { id: 't8', x: 140, y: 137, w: 832, h: 34, text: 'Lesen Sie die Sätze und markieren Sie im zweiten Satz das Verb und den Akkusativ.', ar: 'اقروا الجمل وعلّموا في الجملة التانية الفعل والمفعول (Akkusativ).' },
@@ -32,7 +32,7 @@ export const p141: ScanPage = {
     { id: 'b42', x: 185, y: 822, w: 418, h: 22, text: '________, spielt auf der Seebühne.', ar: '________، بتعزف على مسرح البحيرة.' },
     { id: 'b51', x: 158, y: 867, w: 442, h: 22, text: '5. In der Zeitung, ________ ich jeden Morgen', ar: '5. في الجرنال، ________ أنا كل صباح' },
     { id: 'b52', x: 185, y: 909, w: 610, h: 22, text: '________, stehen oft Meldungen über bekannte Personen.', ar: '________، أخبار كتير عن ناس مشهورين.' },
-    { id: 'G', x: 650, y: 430, w: 50, h: 50, text: 'G', ar: 'G' },
+    { id: 'G', x: 650, y: 430, w: 50, h: 50, text: 'G', ar: 'جي' },
     { id: 'gt', x: 651, y: 486, w: 235, h: 28, text: 'Relativsatz im Akkusativ', ar: 'الجملة الموصولة في حالة المفعول' },
     { id: 'g1', x: 651, y: 513, w: 532, h: 22, text: 'Peter Veit ist ein Radiosprecher. Viele Leute kennen ihn.', ar: 'بيتر فايت مذيع راديو. ناس كتير بتعرفه.' },
     { id: 'g2', x: 651, y: 573, w: 534, h: 28, text: 'Peter Veit ist ein Radiosprecher, den viele Leute kennen.', ar: 'بيتر فايت مذيع راديو، اللي ناس كتير بتعرفه.' },

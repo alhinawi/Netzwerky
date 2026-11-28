@@ -8,7 +8,7 @@ export const p122: ScanPage = {
   width: 1241,
   height: 1753,
   words: [
-    { id: 'n10', x: 45, y: 44, w: 90, h: 28, text: '10', ar: '10' },
+    { id: 'n10', x: 45, y: 44, w: 90, h: 28, text: '10', ar: '١٠' },
     { id: 'h', x: 202, y: 45, w: 544, h: 29, text: 'über Haustiere sprechen, auf Informationen reagieren', ar: 'نتكلم عن الحيوانات الأليفة ونرد على معلومات' },
     { id: 'ti', x: 213, y: 128, w: 709, h: 33, text: 'Die Deutschen und ihre Haustiere', ar: 'الألمان وحيواناتهم الأليفة' },
     { id: 'ic1', x: 92, y: 193, w: 28, h: 28, text: '🔊', ar: '2.40' },

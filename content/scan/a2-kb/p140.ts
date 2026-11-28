@@ -8,7 +8,7 @@ export const p140: ScanPage = {
   width: 1241,
   height: 1753,
   words: [
-    { id: 'n12', x: 55, y: 25, w: 90, h: 80, text: '12', ar: '12' },
+    { id: 'n12', x: 55, y: 25, w: 90, h: 80, text: '12', ar: '١٢' },
     { id: 'hd', x: 205, y: 33, w: 737, h: 53, text: 'Zeitungsmeldungen verstehen, genauere Informationen zu Personen geben', ar: 'نفهم أخبار الجرايد، ونديّ معلومات أدق عن الناس' },
     { id: 'ti', x: 207, y: 154, w: 290, h: 36, text: 'Kurz gemeldet', ar: 'أخبار قصيرة' },
     { id: 'n7a', x: 140, y: 204, w: 45, h: 28, text: '7 a', ar: '7 أ' },
@@ -77,7 +77,7 @@ export const p140: ScanPage = {
     { id: 'd51', x: 228, y: 1551, w: 392, h: 22, text: '5. Die Band freut sich über die Zuschauer.', ar: '5. الفرقة مبسوطة بالجمهور.' },
     { id: 'd52', x: 254, y: 1580, w: 398, h: 22, text: 'Die Zuschauer klatschen nach jedem Lied.', ar: 'الجمهور بيصقف بعد كل أغنية.' },
     { id: 'hw', x: 230, y: 1632, w: 592, h: 46, text: '1. Peter Veit hat eine Tochter, die nicht schlafen konnte.', ar: '1. بيتر فايت عنده بنت، اللي ماقدرتش تنام.' },
-    { id: 'G', x: 713, y: 1278, w: 48, h: 52, text: 'G', ar: 'G' },
+    { id: 'G', x: 713, y: 1278, w: 48, h: 52, text: 'G', ar: 'جي' },
     { id: 'gt', x: 713, y: 1341, w: 250, h: 28, text: 'Relativsätze im Nominativ', ar: 'الجمل الموصولة في حالة الفاعل' },
     { id: 'g1', x: 713, y: 1366, w: 300, h: 31, text: 'Peter Veit ist ein Radiosprecher.', ar: 'بيتر فايت مذيع راديو.' },
     { id: 'g2', x: 713, y: 1389, w: 352, h: 37, text: 'Der Radiosprecher ist eingeschlafen.', ar: 'المذيع نام.' },

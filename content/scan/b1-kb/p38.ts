@@ -16,7 +16,7 @@ export const p38: ScanPage = {
     { id: 'b6', x: 70, y: 291, w: 585, h: 20, text: 'jede/r eine Route: A oder B. Werfen Sie abwechselnd eine Münze.', ar: 'بيختار طريق: A أو B. ارموا العملة بالتناوب.' },
     { id: 'b7', x: 842, y: 288, w: 296, h: 32, text: 'Zahl? Gehen Sie ein Feld vor.', ar: 'رقم؟ امشوا خانة قدّام.' },
     { id: 'b8', x: 131, y: 435, w: 74, h: 26, text: 'Start', ar: 'البداية' },
-    { id: 'b9', x: 163, y: 498, w: 22, h: 28, text: 'A', ar: 'A' },
+    { id: 'b9', x: 163, y: 498, w: 22, h: 28, text: 'A', ar: 'أ' },
     { id: 'b10', x: 305, y: 385, w: 215, h: 172, text: '1 Im Urlaub – Wie heißen die Wörter? Ergänzen Sie. ent___a___en ü___r_ach___', ar: '١ في الأجازة - الكلمات دي اسمها إيه؟ كمّلوا الحروف الناقصة.' },
     { id: 'b11', x: 535, y: 385, w: 200, h: 172, text: '2 Bilden Sie den Satz mit Infinitiv mit zu. ich – keine Zeit haben – in den Urlaub fahren', ar: '٢ كوّنوا الجملة بمصدر مع zu. أنا - معنديش وقت - أروح في أجازة' },
     { id: 'b12', x: 764, y: 385, w: 200, h: 172, text: '3 Im Reisebüro – Welches Wort fehlt? Was können Sie mir ...?', ar: '٣ في مكتب السفر - أنهي كلمة ناقصة؟ إيه اللي تقدروا ... ليّا؟' },

@@ -13,7 +13,7 @@ export const p149: ScanPage = {
     { id: 'w2', x: 89, y: 128, w: 42, h: 33, text: '4', ar: '٤' },
     { id: 'w3', x: 134, y: 128, w: 1004, h: 31, text: 'Was möchten Sie gern am Wochenende machen? Arbeiten Sie zu zweit. Jede/r wählt eine Karte.', ar: 'إنتوا عايزين تعملوا إيه في الويك إند؟ اشتغلوا اتنين اتنين. كل واحد يختار كارت.' },
     { id: 'w4', x: 134, y: 162, w: 585, h: 31, text: 'Planen Sie das Gespräch und spielen Sie es im Kurs vor.', ar: 'خططوا للمحادثة ومثّلوها قدام الفصل.' },
-    { id: 'w5', x: 145, y: 212, w: 418, h: 28, text: 'A', ar: 'A' },
+    { id: 'w5', x: 145, y: 212, w: 418, h: 28, text: 'A', ar: 'أ' },
     { id: 'w6', x: 145, y: 248, w: 502, h: 209, text: 'Sie möchten am Samstag einkaufen und entspannen. Am Sonntag möchten Sie mit einem Freund / einer Freundin zu einem Musikfestival. Dort spielen drei Rock-Bands. Es gibt noch Karten für 55 Euro. Das Festival ist 50 km entfernt. Sie können zusammen mit Ihrem Auto fahren.', ar: 'يوم السبت عايز/ة تتسوق وترتاح. يوم الأحد عايز/ة تروح مع صاحب/صاحبة مهرجان موسيقى. هناك بتغني ٣ فرق روك. لسه فيه تذاكر بـ ٥٥ يورو. المهرجان بعيد ٥٠ كم. تقدروا تروحوا سوا بعربيتك.' },
     { id: 'w7', x: 683, y: 212, w: 474, h: 258, text: 'Sie müssen am Wochenende lernen, denn Sie haben nächste Woche eine Prüfung. Nur am Samstagabend möchten Sie etwas mit einem Freund / einer Freundin unternehmen. Ihre Lieblingssängerin gibt ein Konzert in Ihrer Stadt. Ein Ticket kostet 30 Euro.', ar: 'لازم تذاكر في الويك إند لأن عندك امتحان الأسبوع الجاي. بس مساء السبت عايز/ة تعمل حاجة مع صاحب/صاحبة. مطربتك المفضلة بتعمل حفلة في مدينتك. التذكرة بـ ٣٠ يورو. (الكارت مطبوع مقلوب)' },
     { id: 'w8', x: 81, y: 502, w: 56, h: 33, text: '5 a', ar: '٥ أ' },

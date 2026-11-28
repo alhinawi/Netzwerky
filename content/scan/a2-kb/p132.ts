@@ -20,7 +20,7 @@ export const p132: ScanPage = {
     { id: 'w9', x: 955, y: 179, w: 262, h: 30, text: 'nicht? Lesen Sie weiter. Oft', ar: 'كملوا قراءة. كتير' },
     { id: 'w10', x: 955, y: 208, w: 262, h: 30, text: 'können Sie die Wörter über', ar: 'تقدروا تفهموا الكلمات من' },
     { id: 'w11', x: 955, y: 237, w: 243, h: 30, text: 'den Kontext erschließen.', ar: 'السياق.' },
-    { id: 'w12', x: 130, y: 273, w: 26, h: 30, text: 'A', ar: 'A' },
+    { id: 'w12', x: 130, y: 273, w: 26, h: 30, text: 'A', ar: 'أ' },
     { id: 'w13', x: 518, y: 275, w: 290, h: 40, text: 'Leben wie damals', ar: 'حياة زي زمان' },
     { id: 'w14', x: 150, y: 327, w: 506, h: 30, text: 'Unser Leben ist heute viel einfacher als früher: Wir', ar: 'حياتنا النهارده أسهل بكتير من زمان: إحنا' },
     { id: 'w15', x: 150, y: 354, w: 506, h: 30, text: 'arbeiten weniger, haben mehr Urlaub und besitzen', ar: 'بنشتغل أقل، وعندنا إجازات أكتر، وعندنا' },

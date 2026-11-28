@@ -68,7 +68,7 @@ export const p103: ScanPage = {
     { id: 'phC', x: 670, y: 1238, w: 30, h: 28, text: 'C', ar: 'صورة C' },
     { id: 'phD', x: 929, y: 1233, w: 30, h: 28, text: 'D', ar: 'صورة D' },
     { id: 'hw', x: 150, y: 1288, w: 345, h: 37, text: 'A Es regnet stark, trotzdem ...', ar: 'A الدنيا بتمطر جامد، ومع ذلك ...' },
-    { id: 'n6', x: 105, y: 1354, w: 22, h: 30, text: '6', ar: '6' },
+    { id: 'n6', x: 105, y: 1354, w: 22, h: 30, text: '6', ar: '٦' },
     { id: 't61', x: 150, y: 1334, w: 1010, h: 49, text: 'Welche bekannte Person (Sportler/in, Musiker/in ...) finden Sie gut? Schreiben Sie einen Kommentar für', ar: 'أنهي شخصية مشهورة (رياضي/ة، موسيقي/ة ...) شايفها كويسة؟ اكتب تعليق لـ' },
     { id: 't62', x: 150, y: 1365, w: 1000, h: 48, text: 'die Fanseite. Hängen Sie alle Texte auf und lesen Sie sie. Welche Personen kennen oder mögen Sie auch?', ar: 'صفحة الفانز. علّق كل النصوص واقراها. أنهي أشخاص تعرفهم أو بتحبهم كمان؟' },
     { id: 'n7a', x: 88, y: 1445, w: 40, h: 30, text: '7 a', ar: '7 أ' },

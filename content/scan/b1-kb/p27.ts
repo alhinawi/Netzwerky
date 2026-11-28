@@ -36,7 +36,6 @@ export const p27: ScanPage = {
     { id: 'b26', x: 121, y: 625, w: 451, h: 22, text: '… wirkt auf mich am modernsten/kreativsten/…', ar: '... شكله بالنسبالي الأكثر عصرية/إبداعًا/...' },
     { id: 'b27', x: 120, y: 648, w: 463, h: 32, text: 'Ich finde den Text / die Idee ausgezeichnet/lustig/', ar: 'أنا شايف النص / الفكرة ممتازة/مضحكة/' },
     { id: 'b28', x: 143, y: 684, w: 140, h: 21, text: 'witzig/frech/…', ar: 'ظريفة/جريئة/...' },
-    { id: 'b29', x: 642, y: 461, w: 14, h: 16, text: '-', ar: '-' },
     { id: 'b30', x: 642, y: 481, w: 441, h: 24, text: 'Ich finde die Werbung … sehr langweilig / nicht', ar: 'أنا شايف إن الإعلان ... ممل جدًا / مش' },
     { id: 'b31', x: 665, y: 508, w: 417, h: 24, text: 'interessant / seltsam/merkwürdig/…, weil …', ar: 'مثير للاهتمام / غريب/عجيب/...، لأن ...' },
     { id: 'b32', x: 642, y: 537, w: 418, h: 24, text: 'Die Werbung für … gefällt mir am wenigsten,', ar: 'إعلان ... أقل حاجة عجبتني،' },

@@ -9,7 +9,7 @@ export const p125: ScanPage = {
   height: 1753,
   words: [
     { id: 'h', x: 620, y: 60, w: 411, h: 14, text: 'kurz und klar: Redemittel und Grammatik', ar: 'باختصار ووضوح: عبارات وقواعد' },
-    { id: 'n10', x: 1110, y: 31, w: 70, h: 28, text: '10', ar: '10' },
+    { id: 'n10', x: 1110, y: 31, w: 70, h: 28, text: '10', ar: '١٠' },
     { id: 'a0', x: 62, y: 168, w: 254, h: 17, text: 'um einen Gefallen bitten', ar: 'نطلب خدمة' },
     { id: 'a1', x: 62, y: 205, w: 397, h: 15, text: 'Könnten Sie mir einen Gefallen tun? …', ar: 'ممكن تعملي خدمة؟ …' },
     { id: 'a2', x: 62, y: 235, w: 294, h: 15, text: 'Könnte ich / Könnten Sie …?', ar: 'ممكن أنا / ممكن حضرتك …؟' },
