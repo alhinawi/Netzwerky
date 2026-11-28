@@ -5,8 +5,8 @@ export const p45: ScanPage = {
   printed: 45,
   chapter: 4,
   image: '/pages/a1-kb/045.jpg',
-  width: 1241,
-  height: 1753,
+  width: 900,
+  height: 1271,
   words: [
     { id: 'sh', x: 85, y: 68, w: 390, h: 25, text: 'mit W-Fragen Texte verstehen', ar: 'تفهم النصوص بأسئلة الاستفهام' },
     { id: 'knum', x: 1075, y: 155, w: 80, h: 105, text: '4', ar: 'الوحدة ٤' },
