@@ -33,7 +33,6 @@ const a1kb: Chapter[] = [
 ]
 
 const a2kb: Chapter[] = [
-  { n: 0, title: 'Umschlag & Inhalt', pages: '1–7', grammar: '', ar: 'الغلاف والمحتوى' },
   { n: 1, title: 'Und was machst du?', pages: '8–17', grammar: 'Genitiv: Name + s · Wiederholung: Perfekt · Nebensatz mit weil', ar: 'إيه اللي بتعمله؟' },
   { n: 2, title: 'Nach der Schulzeit', pages: '18–27', grammar: 'Modalverben im Präteritum · Wiederholung: Artikel · Possessivartikel im Dativ', ar: 'بعد المدرسة' },
   { n: 3, title: 'Immer online?', pages: '28–37', grammar: 'Adjektive: Komparativ und Superlativ · Vergleiche mit als und wie · Nebensatz mit dass', ar: 'دايمًا أونلاين؟' },
@@ -80,7 +79,7 @@ const empty = (level: string): Chapter[] => [
 export const books: Book[] = [
   { id: 'a1-kb', level: 'A1', kind: 'Kursbuch', title: 'Netzwerk neu A1 · Kursbuch', chapters: a1kb, ready: true, note: 'Interaktive Seiten folgen Kapitel für Kapitel — mit Wort-Taps, Lösungen und Audio.', cover: '/pages/a1-kb/001.jpg' },
   { id: 'a1-ab', level: 'A1', kind: 'Arbeitsbuch', title: 'Netzwerk neu A1 · Arbeitsbuch', chapters: empty('A1'), ready: false },
-  { id: 'a2-kb', level: 'A2', kind: 'Kursbuch', title: 'Netzwerk neu A2 · Kursbuch', chapters: a2kb, ready: true, note: 'Interaktive Seiten folgen Kapitel für Kapitel — mit Wort-Taps, Lösungen und Audio.', cover: '/pages/a2-kb/001.jpg' },
+  { id: 'a2-kb', level: 'A2', kind: 'Kursbuch', title: 'Netzwerk neu A2 · Kursbuch', chapters: a2kb, ready: true, note: 'Interaktive Seiten folgen Kapitel für Kapitel — mit Wort-Taps, Lösungen und Audio.', cover: '/pages/a2-kb/008.jpg' },
   { id: 'a2-ab', level: 'A2', kind: 'Arbeitsbuch', title: 'Netzwerk neu A2 · Arbeitsbuch', chapters: a2ab, ready: true, note: 'Reader – nur Seiten: Kapitel 1–12 und Prüfungstraining 1–4 sind lesbar, Lösungen, Wort-Taps und Audio fehlen noch.', cover: '/covers/a2-ab.webp' },
   { id: 'b1-kb', level: 'B1', kind: 'Kursbuch', title: 'Netzwerk neu B1 · Kursbuch', chapters: empty('B1'), ready: false },
   { id: 'b1-ab', level: 'B1', kind: 'Arbeitsbuch', title: 'Netzwerk neu B1 · Arbeitsbuch', chapters: empty('B1'), ready: false, cover: '/covers/b1-ab.webp' },
