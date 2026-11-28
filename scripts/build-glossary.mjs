@@ -52,4 +52,5 @@ for (const [k, v] of Object.entries(official)) {
 }
 fs.mkdirSync('public', { recursive: true })
 fs.writeFileSync('public/glossary.json', JSON.stringify(gloss))
+// REMINDER: when this output changes, bump the nw-gloss-vN cache key in components/ScanReader.tsx
 console.log('glossary entries', Object.keys(gloss).length)
