@@ -89,7 +89,6 @@ export const p31: ScanPage = {
     { id: 'w79', x: 689, y: 1571, w: 430, h: 37, text: '5. Wer tippt am schnellsten Nachrichten auf', ar: '٥. مين بيكتب رسايل أسرع' },
     { id: 'w80', x: 714, y: 1600, w: 122, h: 34, text: 'dem Handy?', ar: 'على الموبايل؟' },
     { id: 'w81', x: 688, y: 1629, w: 444, h: 29, text: '6. Wer wohnt am nächsten zur Sprachschule?', ar: '٦. مين ساكن أقرب لمدرسة اللغة؟' },
-    { id: 'w82', x: 986, y: 1679, w: 176, h: 25, text: 'einunddreißig 31', ar: 'واحد وتلاتين ٣١' },
   ],
   audio: [
     { id: 'a1_23_831', x: 831, y: 1287, w: 30, h: 28, src: ['NWn_A2_KB_Audio_1-023.mp3'], label: 'Gut gesagt (1.23)' },
@@ -163,7 +162,6 @@ export const p31: ScanPage = {
     { id: 's-w79', text: '5. Wer tippt am schnellsten Nachrichten auf', ar: '٥. مين بيكتب رسايل أسرع', words: ['w79'] },
     { id: 's-w80', text: 'dem Handy?', ar: 'على الموبايل؟', words: ['w80'] },
     { id: 's-w81', text: '6. Wer wohnt am nächsten zur Sprachschule?', ar: '٦. مين ساكن أقرب لمدرسة اللغة؟', words: ['w81'] },
-    { id: 's-w82', text: 'einunddreißig 31', ar: 'واحد وتلاتين ٣١', words: ['w82'] },
   ],
   groups: [],
 }

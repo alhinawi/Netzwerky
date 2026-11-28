@@ -59,7 +59,6 @@ export const p9: ScanPage = {
     { id: 'b49', x: 180, y: 1525, w: 950, h: 28, text: 'Und Sie? Welcher Urlaubstyp passt zu Ihnen? Wo und wie machen Sie Urlaub? Arbeiten Sie zu viert und', ar: 'وانتوا؟ أنهي نوع مسافر يناسبكم؟ بتعملوا أجازة فين وإزاي؟ اشتغلوا أربعة أربعة' },
     { id: 'b50', x: 180, y: 1562, w: 119, h: 16, text: 'erzählen Sie.', ar: 'واحكوا.' },
     { id: 'b51', x: 1040, y: 1578, w: 48, h: 18, text: 'neun', ar: 'تسعة' },
-    { id: 'b52', x: 1116, y: 1578, w: 16, h: 18, text: '9', ar: '٩' },
   ],
   audio: [],
   fields: [],

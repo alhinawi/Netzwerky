@@ -74,7 +74,6 @@ export const p53: ScanPage = {
     { id: 'b64', x: 301, y: 1494, w: 285, h: 16, text: 'dass er eine Antwort bekommt.', ar: 'إنه يوصله رد.' },
     { id: 'b65', x: 124, y: 1521, w: 433, h: 19, text: 'Er wartet darauf, eine Antwort zu bekommen.', ar: 'مستني إنه يوصله رد.' },
     { id: 'b66', x: 958, y: 1588, w: 121, h: 18, text: 'dreiundfünfzig', ar: 'تلاتة وخمسين' },
-    { id: 'b67', x: 1104, y: 1585, w: 22, h: 17, text: '53', ar: '٥٣' },
   ],
   audio: [],
   fields: [],

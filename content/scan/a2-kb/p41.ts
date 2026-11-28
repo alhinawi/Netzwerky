@@ -70,7 +70,6 @@ export const p41: ScanPage = {
     { id: 'B2', x: 188, y: 1565, w: 959, h: 30, text: 'Recherchieren Sie in Ihrer Sprache fünf Informationen zu einer Person (Schauspieler/in, Sportler/in,', ar: 'ابحثوا بلغتكم عن خمس معلومات عن شخص (ممثل/ة، رياضي/ة،' },
     { id: 'B3', x: 188, y: 1592, w: 876, h: 30, text: 'Journalist/in …), machen Sie Notizen und geben Sie die Informationen auf Deutsch wieder.', ar: 'صحفي/ة …)، واكتبوا ملاحظات وقولوا المعلومات بالألماني.' },
     { id: 'E3', x: 103, y: 1637, w: 789, h: 40, text: 'Hast du schon mal von … gehört? Sie hat gerade … gewonnen. Sie kommt aus …', ar: 'سمعت قبل كده عن …؟ هي لسه كسبت …. هي من …' },
-    { id: 'pn', x: 1000, y: 1677, w: 174, h: 30, text: 'einundvierzig 41', ar: 'واحد وأربعين ٤١' },
   ],
   audio: [
   ],
@@ -122,7 +121,6 @@ export const p41: ScanPage = {
     { id: 's-B2', text: 'Recherchieren Sie in Ihrer Sprache fünf Informationen zu einer Person (Schauspieler/in, Sportler/in,', ar: 'ابحثوا بلغتكم عن خمس معلومات عن شخص (ممثل/ة، رياضي/ة،', words: ['B2'] },
     { id: 's-B3', text: 'Journalist/in …), machen Sie Notizen und geben Sie die Informationen auf Deutsch wieder.', ar: 'صحفي/ة …)، واكتبوا ملاحظات وقولوا المعلومات بالألماني.', words: ['B3'] },
     { id: 's-E3', text: 'Hast du schon mal von … gehört? Sie hat gerade … gewonnen. Sie kommt aus …', ar: 'سمعت قبل كده عن …؟ هي لسه كسبت …. هي من …', words: ['E3'] },
-    { id: 's-pn', text: 'einundvierzig 41', ar: 'واحد وأربعين ٤١', words: ['pn'] },
   ],
   groups: [],
 }

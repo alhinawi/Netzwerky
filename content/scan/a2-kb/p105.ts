@@ -29,7 +29,6 @@ export const p105: ScanPage = {
     { id: 'w19', x: 125, y: 1325, w: 520, h: 90, text: 'b Spielen Sie in Gruppen. A wirft einen Ball und stellt eine Frage. B antwortet, wirft den Ball zu C usw.', ar: 'ب العبوا في مجموعات. أ يرمي الكورة ويسأل سؤال. ب يجاوب ويرمي الكورة لـ ج وهكذا.' },
     { id: 'w20', x: 690, y: 1275, w: 480, h: 95, text: 'Leihst du mir den Stift? | Ja, ich leihe ihn dir.', ar: 'تعيرني القلم؟ | أيوه، هعيرهولك.' },
     { id: 'w21', x: 170, y: 1415, w: 360, h: 185, text: '1. Leihst du mir den Stift? | 2. Erklärst du mir die Hausaufgaben? | 3. Schickst du mir die Nachricht? | 4. Gibst du mir das Buch? | 5. Schenkst du mir das Blatt? | 6. Zeigst du mir die Fotos? | 7. …', ar: '١. تعيرني القلم؟ | ٢. تشرحلي الواجب؟ | ٣. تبعتلي الرسالة؟ | ٤. تديني الكتاب؟ | ٥. تهديني الورقة؟ | ٦. توريني الصور؟ | ٧. …' },
-    { id: 'w22', x: 930, y: 1600, w: 190, h: 35, text: 'einhundertfünf 105', ar: '١٠٥ مية وخمسة' },
   ],
   audio: [
   ],
@@ -67,7 +66,6 @@ export const p105: ScanPage = {
     { id: 's19', text: 'b Spielen Sie in Gruppen. A wirft einen Ball und stellt eine Frage. B antwortet, wirft den Ball zu C usw.', ar: 'ب العبوا في مجموعات. أ يرمي الكورة ويسأل سؤال. ب يجاوب ويرمي الكورة لـ ج وهكذا.', words: ['w19'] },
     { id: 's20', text: 'Leihst du mir den Stift? | Ja, ich leihe ihn dir.', ar: 'تعيرني القلم؟ | أيوه، هعيرهولك.', words: ['w20'] },
     { id: 's21', text: '1. Leihst du mir den Stift? | 2. Erklärst du mir die Hausaufgaben? | 3. Schickst du mir die Nachricht? | 4. Gibst du mir das Buch? | 5. Schenkst du mir das Blatt? | 6. Zeigst du mir die Fotos? | 7. …', ar: '١. تعيرني القلم؟ | ٢. تشرحلي الواجب؟ | ٣. تبعتلي الرسالة؟ | ٤. تديني الكتاب؟ | ٥. تهديني الورقة؟ | ٦. توريني الصور؟ | ٧. …', words: ['w21'] },
-    { id: 's22', text: 'einhundertfünf 105', ar: '١٠٥ مية وخمسة', words: ['w22'] },
   ],
   patches: [
   ],

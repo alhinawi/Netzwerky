@@ -68,7 +68,6 @@ export const p13: ScanPage = {
     { id: 'b58', x: 181, y: 1524, w: 950, h: 25, text: 'Arbeiten Sie zu zweit. Schreiben Sie drei Sätze mit Wörtern aus 10b. Diktieren Sie Ihre Sätze dann einem', ar: 'اشتغلوا اتنين اتنين. اكتبوا تلاتة جمل بكلمات من 10b. اعملوا إملاء بجملكم' },
     { id: 'b59', x: 181, y: 1560, w: 135, h: 16, text: 'anderen Team.', ar: 'لفريق تاني.' },
     { id: 'b60', x: 1015, y: 1577, w: 70, h: 18, text: 'dreizehn', ar: 'تلتاشر' },
-    { id: 'b61', x: 1100, y: 1577, w: 28, h: 18, text: '13', ar: '١٣' },
   ],
   audio: [],
   fields: [],

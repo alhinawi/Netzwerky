@@ -48,7 +48,6 @@ export const p43: ScanPage = {
     { id: 'b38', x: 237, y: 1546, w: 30, h: 26, text: 'D', ar: 'D' },
     { id: 'b39', x: 736, y: 1546, w: 30, h: 26, text: 'E', ar: 'E' },
     { id: 'b40', x: 957, y: 1589, w: 135, h: 21, text: 'dreiundvierzig', ar: 'تلاتة وأربعين' },
-    { id: 'b41', x: 1102, y: 1589, w: 26, h: 21, text: '43', ar: '٤٣' },
   ],
   audio: [],
   fields: [],

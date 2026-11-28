@@ -47,7 +47,6 @@ export const p59: ScanPage = {
     { id: 'b37', x: 243, y: 1471, w: 863, h: 31, text: "Standpunkt, dass ... dass ... Ich sehe das etwas anders: ...", ar: "الموقف، إن ... إن ... أنا شايفها شوية مختلف: ..." },
     { id: 'b38', x: 220, y: 1498, w: 886, h: 29, text: "Ich bin (nicht) davon Dieser Ansicht bin ich auch: ... In diesem Punkt hast du nicht", ar: "أنا (مش) مقتنع بكده أنا كمان من الرأي ده: ... في النقطة دي مش معاك" },
     { id: 'b39', x: 244, y: 1528, w: 688, h: 28, text: "überzeugt, dass ... recht, ...", ar: "إن ... حق، ..." },
-    { id: 'b40', x: 967, y: 1576, w: 177, h: 21, text: "neunundfünfzig 59", ar: "تسعة وخمسين ٥٩" },
   ],
   audio: [],
   fields: [],

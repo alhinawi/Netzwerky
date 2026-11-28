@@ -80,7 +80,6 @@ export const p50: ScanPage = {
     { id: 'b70', x: 240, y: 1445, w: 650, h: 24, text: 'Rollen vor. Markieren Sie in 12b mindestens drei Redemittel, die Sie', ar: 'أدواركم. علّموا في ١٢ب على تلات عبارات على الأقل عايزين' },
     { id: 'b71', x: 240, y: 1474, w: 300, h: 22, text: 'im Gespräch verwenden wollen.', ar: 'تستخدموها في المكالمة.' },
     { id: 'b72', x: 201, y: 1528, w: 410, h: 26, text: 'd Spielen Sie die Gespräche.', ar: 'د مثّلوا المحادثات.' },
-    { id: 'b73', x: 122, y: 1585, w: 28, h: 22, text: '50', ar: '٥٠' },
     { id: 'b74', x: 165, y: 1585, w: 80, h: 22, text: 'fünfzig', ar: 'خمسين' },
   ],
   audio: [],

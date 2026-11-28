@@ -79,7 +79,6 @@ export const p141: ScanPage = {
     { id: 'tb21', x: 168, y: 1633, w: 937, h: 40, text: 'Stellen Sie Ihre Fragen im Kurs, die anderen raten. Für jede richtige Antwort gibt es einen Punkt.', ar: 'اسألوا أسئلتكم في الصف والباقيين يخمّنوا. كل إجابة صح ليها نقطة.' },
     { id: 'tb22', x: 168, y: 1667, w: 430, h: 34, text: 'Das Paar mit den meisten Punkten gewinnt.', ar: 'الاتنين اللي معاهم أكتر نقط يكسبوا.' },
     { id: 'pgw', x: 898, y: 1684, w: 212, h: 28, text: 'einhunderteinundvierzig', ar: 'مية وواحد وأربعين' },
-    { id: 'pg', x: 1124, y: 1684, w: 36, h: 28, text: '141', ar: 'صفحة 141' },
   ],
   audio: [
   ],

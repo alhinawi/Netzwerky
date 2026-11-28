@@ -31,7 +31,6 @@ export const p19: ScanPage = {
     { id: 'b21', x: 314, y: 1430, w: 586, h: 22, text: 'Ich finde meine Smartwatch total praktisch, weil ich dort sofort', ar: 'أنا شايف الساعة الذكية بتاعتي عملية جدًا، عشان أقدر أقرا' },
     { id: 'b22', x: 323, y: 1457, w: 567, h: 21, text: 'alle Nachrichten lesen kann. Außerdem ist sie beim Sport toll,', ar: 'كل الرسايل عليها فورًا. وكمان جامدة في الرياضة.' },
     { id: 'b23', x: 1010, y: 1577, w: 80, h: 17, text: 'neunzehn', ar: 'تسعتاشر' },
-    { id: 'b24', x: 1095, y: 1577, w: 40, h: 17, text: '19', ar: '١٩' },
   ],
   audio: [],
   fields: [],

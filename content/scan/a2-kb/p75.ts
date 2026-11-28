@@ -90,7 +90,6 @@ export const p75: ScanPage = {
     { id: 'w78', x: 890, y: 1372, w: 162, h: 30, text: 'Sie mit drei Sätzen.', ar: 'في تلات جمل.' },
     { id: 'w79', x: 1100, y: 1554, w: 32, h: 34, text: 'E', ar: 'E' },
     { id: 'w80', x: 985, y: 1611, w: 123, h: 30, text: 'fünfundsiebzig', ar: 'خمسة وسبعين' },
-    { id: 'w81', x: 1133, y: 1609, w: 24, h: 30, text: '75', ar: '٧٥' },
   ],
   audio: [
   ],

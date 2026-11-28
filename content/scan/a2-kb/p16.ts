@@ -86,7 +86,6 @@ export const p16: ScanPage = {
     { id: 'b76', x: 222, y: 1620, w: 443, h: 34, text: 'kann man kalt oder warm auf einem Brot essen.', ar: 'ممكن تاكله بارد أو سخن على عيش.' },
     { id: 'b77', x: 665, y: 1653, w: 451, h: 34, text: 'Oder man brät es in der Pfanne und isst dazu', ar: 'أو بيتحمّر في الطاسة ويتاكل معاه' },
     { id: 'b78', x: 222, y: 1643, w: 352, h: 34, text: 'Kartoffeln und Gurken oder Apfelmus.', ar: 'بطاطس وخيار أو صلصة تفاح.' },
-    { id: 'b79', x: 94, y: 1673, w: 26, h: 28, text: '16', ar: '١٦' },
     { id: 'b80', x: 143, y: 1674, w: 83, h: 28, text: 'sechzehn', ar: 'ستاشر' },
   ],
   audio: [

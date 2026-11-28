@@ -68,7 +68,6 @@ export const p23: ScanPage = {
     { id: 'b58', x: 185, y: 1542, w: 430, h: 30, text: '1. Habt ihr jetzt um zehn kurz Zeit?', ar: '1. عندكم وقت قصير دلوقتي الساعة عشرة؟' },
     { id: 'b59', x: 663, y: 1542, w: 420, h: 30, text: '2. Fritz nutzt die Heizung in seinem Zimmer.', ar: '2. فريتز بيستخدم التدفئة في أوضته.' },
     { id: 'b60', x: 960, y: 1580, w: 140, h: 20, text: 'dreiundzwanzig', ar: 'تلاتة وعشرين' },
-    { id: 'b61', x: 1106, y: 1580, w: 30, h: 20, text: '23', ar: '٢٣' },
   ],
   audio: [],
   fields: [],

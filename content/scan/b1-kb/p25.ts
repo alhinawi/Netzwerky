@@ -92,7 +92,6 @@ export const p25: ScanPage = {
     { id: 'b82', x: 186, y: 1472, w: 865, h: 27, text: '- Sollte man Werbung für bestimmte/ungesunde Produkte verbieten? (Beispiel: Im deutschen', ar: '- المفروض يتمنع إعلان منتجات معينة/ضارة؟ (مثال: في التليفزيون' },
     { id: 'b83', x: 210, y: 1503, w: 442, h: 22, text: 'Fernsehen ist Werbung für Zigaretten verboten.)', ar: 'الألماني إعلان السجاير ممنوع.)' },
     { id: 'b84', x: 958, y: 1582, w: 132, h: 17, text: 'fünfundzwanzig', ar: 'خمسة وعشرين' },
-    { id: 'b85', x: 1115, y: 1579, w: 21, h: 16, text: '25', ar: '٢٥' },
   ],
   audio: [],
   fields: [],

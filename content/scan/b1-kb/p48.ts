@@ -57,7 +57,6 @@ export const p48: ScanPage = {
     { id: 'b47', x: 249, y: 1438, w: 745, h: 24, text: 'Viele Institutionen bieten Bewerbungstrainings an. Daran kann jeder teilnehmen.', ar: 'مؤسسات كتير بتقدم تدريبات تقديم. أي حد يقدر يشارك فيها.' },
     { id: 'b48', x: 248, y: 1478, w: 420, h: 24, text: '________: da(r) + Präposition', ar: '________: da(r) + حرف جر' },
     { id: 'b49', x: 250, y: 1509, w: 670, h: 24, text: 'Die Präposition beginnt mit einem Vokal: dar- (daran, darauf, darüber ...)', ar: 'حرف الجر بيبدأ بحرف متحرك: dar- (daran، darauf، darüber ...)' },
-    { id: 'b50', x: 101, y: 1581, w: 28, h: 22, text: '48', ar: '٤٨' },
     { id: 'b51', x: 148, y: 1582, w: 130, h: 22, text: 'achtundvierzig', ar: 'تمانية وأربعين' },
   ],
   audio: [],

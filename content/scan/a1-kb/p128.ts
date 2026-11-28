@@ -40,7 +40,7 @@ export const p128: ScanPage = {
     { id: 'g-r4', x: 660, y: 1112, w: 523, h: 30, text: 'die Schuhe · Welche? diese · Welche? diese', ar: 'الجزم · أنهي؟ هذه · أنهي؟ هذه' },
     { id: 'i4b', x: 206, y: 1236, w: 344, h: 30, text: 'b · Variieren Sie das Gespräch von 4a.', ar: 'ب · غيّر المحادثة اللي في ٤أ.' },
     { id: 'k1', x: 224, y: 1415, w: 96, h: 28, text: 'das Kleid', ar: 'الفستان' },
-    { id: 'k2', x: 347, y: 1415, w: 96, h: 28, text: 'der Rock', ar: 'الجونلة' },
+    { id: 'k2', x: 347, y: 1415, w: 96, h: 28, text: 'der Rock', ar: 'الجيبة' },
     { id: 'k3', x: 581, y: 1415, w: 96, h: 28, text: 'das Tuch', ar: 'الطرحة' },
     { id: 'k4', x: 726, y: 1415, w: 103, h: 28, text: 'der Schal', ar: 'الشال/الكوفية' },
     { id: 'k5', x: 919, y: 1415, w: 110, h: 28, text: 'das Hemd', ar: 'القميص' },

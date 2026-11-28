@@ -86,7 +86,6 @@ export const p27: ScanPage = {
     { id: 'b76', x: 700, y: 1500, w: 96, h: 21, text: 'gemütlich.', ar: 'مريحة.' },
     { id: 'b77', x: 126, y: 1541, w: 648, h: 28, text: 'Adjektive haben nach Artikelwörtern im Genitiv immer die Endung -en.', ar: 'الصفات بعد أدوات التعريف في الجينيتيف دايمًا آخرها en-.' },
     { id: 'b78', x: 943, y: 1576, w: 130, h: 22, text: 'siebenundzwanzig', ar: 'سبعة وعشرين' },
-    { id: 'b79', x: 1120, y: 1579, w: 24, h: 16, text: '27', ar: '٢٧' },
   ],
   audio: [],
   fields: [],

@@ -46,7 +46,6 @@ export const p43: ScanPage = {
     { id: 'v4', x: 708, y: 1500, w: 424, h: 30, text: '„Grindelwalds Verbrechen“ sehen. Aber auch', ar: '«جرائم غريندلفالد». بس كمان' },
     { id: 'v5', x: 708, y: 1529, w: 446, h: 30, text: 'viele Bollywood-Filme und einige James-Bond-', ar: 'أفلام بوليوود كتير وبعض أفلام جيمس بوند' },
     { id: 'v6', x: 708, y: 1557, w: 279, h: 30, text: 'Filme spielen in der Schweiz.', ar: 'بتدور في سويسرا.' },
-    { id: 'pn', x: 988, y: 1678, w: 184, h: 30, text: 'dreiundvierzig 43', ar: 'ثلاثة وأربعين ٤٣' },
   ],
   audio: [
     { id: 'a1_28_14', x: 14, y: 154, w: 30, h: 30, src: ['NWn_A2_KB_Audio_1-028.mp3'], label: 'Aufgabe 8b (1.28)' },
@@ -85,7 +84,6 @@ export const p43: ScanPage = {
     { id: 's-v4', text: '„Grindelwalds Verbrechen“ sehen. Aber auch', ar: '«جرائم غريندلفالد». بس كمان', words: ['v4'] },
     { id: 's-v5', text: 'viele Bollywood-Filme und einige James-Bond-', ar: 'أفلام بوليوود كتير وبعض أفلام جيمس بوند', words: ['v5'] },
     { id: 's-v6', text: 'Filme spielen in der Schweiz.', ar: 'بتدور في سويسرا.', words: ['v6'] },
-    { id: 's-pn', text: 'dreiundvierzig 43', ar: 'ثلاثة وأربعين ٤٣', words: ['pn'] },
   ],
   groups: [],
 }

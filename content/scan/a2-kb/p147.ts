@@ -108,7 +108,6 @@ export const p147: ScanPage = {
     { id: 'w97', x: 823, y: 1508, w: 359, h: 28, text: 'Das sieht so lecker aus, ich', ar: 'ده شكله لذيذ أوي، أنا' },
     { id: 'w98', x: 823, y: 1538, w: 331, h: 28, text: 'möchte … probieren.', ar: 'عايز أجرّب …' },
     { id: 'w99', x: 823, y: 1604, w: 359, h: 28, text: '16 Nennen Sie drei Haustiere.', ar: '١٦ قولوا ٣ حيوانات أليفة.' },
-    { id: 'w100', x: 878, y: 1696, w: 304, h: 28, text: 'einhundertsiebenundvierzig 147', ar: 'مية وسبعة وأربعين ١٤٧' },
   ],
   audio: [
   ],
@@ -215,7 +214,6 @@ export const p147: ScanPage = {
     { id: 's97', text: 'Das sieht so lecker aus, ich', ar: 'ده شكله لذيذ أوي، أنا', words: ['w97'] },
     { id: 's98', text: 'möchte … probieren.', ar: 'عايز أجرّب …', words: ['w98'] },
     { id: 's99', text: '16 Nennen Sie drei Haustiere.', ar: '١٦ قولوا ٣ حيوانات أليفة.', words: ['w99'] },
-    { id: 's100', text: 'einhundertsiebenundvierzig 147', ar: 'مية وسبعة وأربعين ١٤٧', words: ['w100'] },
   ],
   patches: [
   ],

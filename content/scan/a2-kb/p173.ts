@@ -9,7 +9,6 @@ export const p173: ScanPage = {
   height: 1755,
   words: [
     { id: 'w1', x: 807, y: 53, w: 236, h: 31, text: 'alphabetische Wortliste', ar: 'قايمة الكلمات الأبجدية' },
-    { id: 'w2', x: 890, y: 1686, w: 320, h: 31, text: 'einhundertdreiundsiebzig 173', ar: '١٧٣ مية وتلاتة وسبعين' },
     { id: 'w3', x: 21, y: 159, w: 369, h: 25, text: 'Studierende, der/die, -n 3/6a', ar: 'طالب جامعي' },
     { id: 'w4', x: 21, y: 185, w: 369, h: 25, text: 'Stummfilm, der, -e 8/7a', ar: 'فيلم صامت' },
     { id: 'w5', x: 21, y: 200, w: 369, h: 25, text: 'Stundenplan, der, ¨e 2/12a', ar: 'جدول الحصص' },
@@ -177,7 +176,6 @@ export const p173: ScanPage = {
   groups: [],
   sentences: [
     { id: 's1', text: 'alphabetische Wortliste', ar: 'قايمة الكلمات الأبجدية', words: ['w1'] },
-    { id: 's2', text: 'einhundertdreiundsiebzig 173', ar: '١٧٣ مية وتلاتة وسبعين', words: ['w2'] },
     { id: 's3', text: 'Studierende, der/die, -n 3/6a', ar: 'طالب جامعي', words: ['w3'] },
     { id: 's4', text: 'Stummfilm, der, -e 8/7a', ar: 'فيلم صامت', words: ['w4'] },
     { id: 's5', text: 'Stundenplan, der, ¨e 2/12a', ar: 'جدول الحصص', words: ['w5'] },

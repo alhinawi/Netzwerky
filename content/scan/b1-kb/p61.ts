@@ -56,7 +56,6 @@ export const p61: ScanPage = {
     { id: 'b46', x: 185, y: 1448, w: 440, h: 20, text: "Sie und stellen Sie eine Aktion in einem kurzen", ar: "وقّدموا حملة في نص" },
     { id: 'b47', x: 683, y: 1460, w: 299, h: 21, text: "Man kann ... mit ... vergleichen.", ar: "ممكن نقارن ... بـ ..." },
     { id: 'b48', x: 184, y: 1479, w: 77, h: 16, text: "Text vor.", ar: "قصير." },
-    { id: 'b50', x: 972, y: 1576, w: 164, h: 21, text: "einundsechzig 61", ar: "واحد وستين ٦١" },
   ],
   audio: [],
   fields: [],

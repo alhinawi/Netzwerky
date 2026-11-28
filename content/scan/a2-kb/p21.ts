@@ -112,7 +112,6 @@ export const p21: ScanPage = {
     { id: 'z2', x: 157, y: 1539, w: 476, h: 32, text: '2. Ich habe am Nachmittag viele Kurse gemacht.', ar: '٢. عملت كورسات كتير بعد الضهر.' },
     { id: 'z3', x: 157, y: 1568, w: 426, h: 32, text: '3. Ich musste auch am Wochenende lernen.', ar: '٣. كان لازم أذاكر كمان في عطلة الأسبوع.' },
     { id: 'fw', x: 985, y: 1692, w: 133, h: 22, text: 'einundzwanzig', ar: 'واحد وعشرين' },
-    { id: 'fn', x: 1144, y: 1690, w: 25, h: 26, text: '21', ar: '٢١' },
   ],
   audio: [
     { id: 'a1_13_892', x: 892, y: 588, w: 28, h: 26, src: ['NWn_A2_KB_Audio_1-013.mp3'], label: 'Gut gesagt (1.13)' },

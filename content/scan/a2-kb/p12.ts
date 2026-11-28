@@ -72,7 +72,6 @@ export const p12: ScanPage = {
     { id: 'b62', x: 690, y: 1536, w: 244, h: 48, text: 'C weil er arbeiten muss.', ar: 'C لأنه لازم يشتغل.' },
     { id: 'b63', x: 690, y: 1583, w: 374, h: 48, text: 'D weil er sie zum Essen einladen will.', ar: 'D لأنه عايز يعزمهم على الأكل.' },
     { id: 'b64', x: 690, y: 1628, w: 376, h: 48, text: 'E weil er Ben lang nicht gesehen hat.', ar: 'E لأنه ماشافش بن من زمان.' },
-    { id: 'b65', x: 96, y: 1679, w: 24, h: 28, text: '12', ar: '١٢' },
     { id: 'b66', x: 146, y: 1679, w: 46, h: 28, text: 'zwölf', ar: 'اتناشر' },
   ],
   audio: [

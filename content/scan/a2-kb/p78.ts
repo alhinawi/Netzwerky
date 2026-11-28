@@ -62,7 +62,6 @@ export const p78: ScanPage = {
     { id: 'w50', x: 649, y: 1565, w: 108, h: 30, text: '4. Silvester', ar: '٤. ليلة رأس السنة' },
     { id: 'w51', x: 192, y: 1622, w: 13, h: 30, text: 'e', ar: 'هـ' },
     { id: 'w52', x: 232, y: 1632, w: 898, h: 46, text: 'Was feiert man bei Ihnen auch? Was ist gleich? Was ist anders? Sprechen Sie in der Gruppe.', ar: 'إيه اللي بتحتفلوا بيه عندكم كمان؟ إيه المتشابه؟ إيه المختلف؟ اتكلموا في المجموعة.' },
-    { id: 'w53', x: 107, y: 1666, w: 25, h: 30, text: '78', ar: '٧٨' },
     { id: 'w54', x: 157, y: 1666, w: 130, h: 30, text: 'achtundsiebzig', ar: 'تمانية وسبعين' },
   ],
   audio: [

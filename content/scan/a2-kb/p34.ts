@@ -61,7 +61,6 @@ export const p34: ScanPage = {
     { id: 'w51', x: 893, y: 1554, w: 349, h: 38, text: 'fröhlich machen. Aber sie stirbt viel', ar: 'بس هي بتموت بدري قوي' },
     { id: 'w52', x: 894, y: 1584, w: 349, h: 40, text: 'zu jung. Der Film zeigt, dass Familie', ar: 'الفيلم بيوري إن العيلة' },
     { id: 'w53', x: 894, y: 1621, w: 115, h: 30, text: 'wichtig ist.', ar: 'مهمة.' },
-    { id: 'w54', x: 101, y: 1703, w: 28, h: 21, text: '34', ar: '٣٤' },
     { id: 'w55', x: 151, y: 1702, w: 133, h: 22, text: 'vierunddreißig', ar: 'أربعة وتلاتين' },
   ],
   audio: [

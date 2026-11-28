@@ -59,7 +59,6 @@ export const p58: ScanPage = {
     { id: 'w49', x: 221, y: 1550, w: 138, h: 23, text: 'Berichten Sie.', ar: 'احكوا.' },
     { id: 'w50', x: 523, y: 1601, w: 348, h: 68, text: 'Ich war mal bei der Behörde. Mein', ar: 'أنا كنت مرة في المصلحة الحكومية. التأشيرة' },
     { id: 'w51', x: 516, y: 1603, w: 361, h: 81, text: 'Visum war nicht mehr gültig und …', ar: 'بتاعتي مكانتش لسه شغالة و …' },
-    { id: 'w52', x: 93, y: 1694, w: 28, h: 21, text: '58', ar: '٥٨' },
     { id: 'w53', x: 142, y: 1697, w: 137, h: 20, text: 'achtundfünfzig', ar: 'ثمانية وخمسين' },
   ],
   audio: [
@@ -122,7 +121,6 @@ export const p58: ScanPage = {
     { id: 's44', text: 'Wann waren Sie bei einer Behörde, einer Bank oder bei der Polizei? Was haben Sie dort gemacht?', ar: 'إمتى كنتوا في مصلحة حكومية أو بنك أو في الشرطة؟ عملتوا إيه هناك؟', words: ['w47', 'w48'] },
     { id: 's45', text: 'Berichten Sie.', ar: 'احكوا.', words: ['w49'] },
     { id: 's46', text: 'Ich war mal bei der Behörde. Mein Visum war nicht mehr gültig und …', ar: 'أنا كنت مرة في المصلحة الحكومية. التأشيرة بتاعتي مكانتش لسه شغالة و …', words: ['w50', 'w51'] },
-    { id: 's47', text: '58', ar: '٥٨', words: ['w52'] },
     { id: 's48', text: 'achtundfünfzig', ar: 'ثمانية وخمسين', words: ['w53'] },
   ],
   patches: [

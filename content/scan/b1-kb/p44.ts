@@ -44,7 +44,6 @@ export const p44: ScanPage = {
     { id: 'b34', x: 725, y: 1462, w: 335, h: 26, text: 'Sind Sie mit dem Gehalt zufrieden?', ar: 'إنتِ مبسوطة من المرتب؟' },
     { id: 'b35', x: 725, y: 1488, w: 445, h: 26, text: 'Ich verdiene nicht schlecht, aber es könnte gern', ar: 'مكسبي مش وحش، بس ممكن يعني' },
     { id: 'b36', x: 725, y: 1513, w: 240, h: 26, text: 'ein bisschen mehr sein.', ar: 'يبقى أكتر شوية.' },
-    { id: 'b37', x: 114, y: 1588, w: 30, h: 24, text: '44', ar: '٤٤' },
     { id: 'b38', x: 150, y: 1588, w: 130, h: 24, text: 'vierundvierzig', ar: 'أربعة وأربعين' },
   ],
   audio: [],

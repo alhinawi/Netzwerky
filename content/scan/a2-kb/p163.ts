@@ -96,7 +96,6 @@ export const p163: ScanPage = {
     { id: 'w86', x: 862, y: 1533, w: 234, h: 30, text: 'Über den Lehrer.', ar: 'عن المدرس.' },
     { id: 'w87', x: 862, y: 1564, w: 234, h: 30, text: 'Mit Ben.', ar: 'مع بن.' },
     { id: 'w88', x: 85, y: 1641, w: 826, h: 30, text: 'Wenn die Präposition mit Vokal beginnt, braucht man ein „r“: worüber, worauf ...', ar: 'لو حرف الجر بيبدأ بحرف متحرك بنحتاج r: worüber، worauf ...' },
-    { id: 'w89', x: 881, y: 1679, w: 358, h: 30, text: 'einhundertdreiundsechzig 163', ar: '١٦٣ مية وتلاتة وستين' },
   ],
   audio: [
   ],
@@ -192,7 +191,6 @@ export const p163: ScanPage = {
     { id: 's86', text: 'Über den Lehrer.', ar: 'عن المدرس.', words: ['w86'] },
     { id: 's87', text: 'Mit Ben.', ar: 'مع بن.', words: ['w87'] },
     { id: 's88', text: 'Wenn die Präposition mit Vokal beginnt, braucht man ein „r“: worüber, worauf ...', ar: 'لو حرف الجر بيبدأ بحرف متحرك بنحتاج r: worüber، worauf ...', words: ['w88'] },
-    { id: 's89', text: 'einhundertdreiundsechzig 163', ar: '١٦٣ مية وتلاتة وستين', words: ['w89'] },
   ],
   patches: [
   ],

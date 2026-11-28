@@ -98,7 +98,6 @@ export const p63: ScanPage = {
     { id: 'e8', x: 97, y: 1474, w: 63, h: 24, text: 'könnte', ar: 'ممكن' },
     { id: 'e9', x: 403, y: 1463, w: 177, h: 24, text: 'Satzende: Infinitiv', ar: 'آخر الجملة: المصدر' },
     { id: 'pgw', x: 972, y: 1684, w: 133, h: 28, text: 'dreiundsechzig', ar: 'تلاتة وستين' },
-    { id: 'pg', x: 1132, y: 1684, w: 26, h: 28, text: '63', ar: 'صفحة 63' },
   ],
   audio: [
   ],

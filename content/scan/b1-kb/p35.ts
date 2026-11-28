@@ -72,7 +72,6 @@ export const p35: ScanPage = {
     { id: 'b62', x: 187, y: 1501, w: 900, h: 28, text: '„Benehmen im Alltag“ in D-A-CH. Erklären Sie einem Freund / einer Freundin in Ihrer Sprache die', ar: '"الذوق في الحياة اليومية" في ألمانيا والنمسا وسويسرا. اشرح لصاحب أو صاحبة بلغتك' },
     { id: 'b63', x: 187, y: 1542, w: 397, h: 24, text: 'wichtigsten Regeln aus dem Artikel in 10b.', ar: 'أهم القواعد من المقال في 10b.' },
     { id: 'b64', x: 968, y: 1576, w: 135, h: 20, text: 'fünfunddreißig', ar: 'خمسة وتلاتين' },
-    { id: 'b65', x: 1112, y: 1576, w: 26, h: 20, text: '35', ar: '٣٥' },
   ],
   audio: [],
   fields: [],

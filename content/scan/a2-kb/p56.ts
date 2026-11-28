@@ -85,7 +85,6 @@ export const p56: ScanPage = {
     { id: 'w75', x: 357, y: 1623, w: 240, h: 33, text: 'bunte Kleidung tragen.', ar: 'تلبس هدوم ملونة.' },
     { id: 'w76', x: 208, y: 1695, w: 76, h: 20, text: '6. Valentina findet', ar: '٦. فالنتينا شايفة' },
     { id: 'w77', x: 375, y: 1650, w: 211, h: 35, text: 'die Bezahlung okay.', ar: 'إن المرتب كويس.' },
-    { id: 'w78', x: 88, y: 1695, w: 29, h: 21, text: '56', ar: '٥٦' },
     { id: 'w79', x: 137, y: 1689, w: 148, h: 33, text: 'sechsundfünfzig', ar: 'ستة وخمسين' },
   ],
   audio: [
@@ -162,7 +161,6 @@ export const p56: ScanPage = {
     { id: 's51', text: '4. Valentina arbeitet nächsten Donnerstag im Restaurant.', ar: '٤. فالنتينا هتشتغل الخميس الجاي في المطعم.', words: ['w72', 'w73'] },
     { id: 's52', text: '5. Valentina darf bunte Kleidung tragen.', ar: '٥. فالنتينا مسموحلها تلبس هدوم ملونة.', words: ['w74', 'w75'] },
     { id: 's53', text: '6. Valentina findet die Bezahlung okay.', ar: '٦. فالنتينا شايفة إن المرتب كويس.', words: ['w76', 'w77'] },
-    { id: 's54', text: '56', ar: '٥٦', words: ['w78'] },
     { id: 's55', text: 'sechsundfünfzig', ar: 'ستة وخمسين', words: ['w79'] },
   ],
   patches: [

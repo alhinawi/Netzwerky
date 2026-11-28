@@ -75,7 +75,6 @@ export const p157: ScanPage = {
     { id: 'w65', x: 69, y: 1549, w: 276, h: 30, text: 'Perfekt von sein und haben', ar: 'الماضي التام لـ sein و haben' },
     { id: 'w66', x: 69, y: 1577, w: 787, h: 30, text: 'Die Perfektformen ich bin gewesen, ich habe gehabt verwendet man nur selten.', ar: 'صيغ الماضي التام ich bin gewesen و ich habe gehabt بنستخدمها نادراً.' },
     { id: 'w67', x: 69, y: 1607, w: 414, h: 30, text: 'Man verwendet ich war, ich hatte.', ar: 'بنستخدم ich war و ich hatte بدلها.' },
-    { id: 'w68', x: 845, y: 1693, w: 359, h: 30, text: 'einhundertsiebenundfünfzig 157', ar: '١٥٧ مية وسبعة وخمسين' },
   ],
   audio: [
   ],
@@ -150,7 +149,6 @@ export const p157: ScanPage = {
     { id: 's65', text: 'Perfekt von sein und haben', ar: 'الماضي التام لـ sein و haben', words: ['w65'] },
     { id: 's66', text: 'Die Perfektformen ich bin gewesen, ich habe gehabt verwendet man nur selten.', ar: 'صيغ الماضي التام ich bin gewesen و ich habe gehabt بنستخدمها نادراً.', words: ['w66'] },
     { id: 's67', text: 'Man verwendet ich war, ich hatte.', ar: 'بنستخدم ich war و ich hatte بدلها.', words: ['w67'] },
-    { id: 's68', text: 'einhundertsiebenundfünfzig 157', ar: '١٥٧ مية وسبعة وخمسين', words: ['w68'] },
   ],
   patches: [
   ],

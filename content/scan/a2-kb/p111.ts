@@ -78,7 +78,6 @@ export const p111: ScanPage = {
     { id: 't66', x: 688, y: 1559, w: 284, h: 13, text: 'mich nicht mehr konzentrieren.“', ar: 'قادر أركز تاني.»' },
     { id: 't67', x: 688, y: 1585, w: 258, h: 13, text: 'Geben Sie drei Ratschläge.', ar: 'اديله تلات نصايح.' },
     { id: 't68', x: 985, y: 1665, w: 122, h: 13, text: 'einhundertelf', ar: 'مية وحداشر' },
-    { id: 't69', x: 1122, y: 1665, w: 34, h: 13, text: '111', ar: '111' },
     { id: 'n0', x: 555, y: 256, w: 50, h: 28, text: '19', ar: '19' },
     { id: 'n1', x: 555, y: 401, w: 50, h: 28, text: '18', ar: '18' },
     { id: 'n2', x: 555, y: 541, w: 50, h: 28, text: '17', ar: '17' },
@@ -167,7 +166,6 @@ export const p111: ScanPage = {
     { id: 's-t66', text: 'mich nicht mehr konzentrieren.“', ar: 'قادر أركز تاني.»', words: ['t66'] },
     { id: 's-t67', text: 'Geben Sie drei Ratschläge.', ar: 'اديله تلات نصايح.', words: ['t67'] },
     { id: 's-t68', text: 'einhundertelf', ar: 'مية وحداشر', words: ['t68'] },
-    { id: 's-t69', text: '111', ar: '111', words: ['t69'] },
   ],
   groups: [],
 }

@@ -71,7 +71,6 @@ export const p129: ScanPage = {
     { id: 'w60', x: 728, y: 1475, w: 164, h: 36, text: 'Ich schlafe schlecht.', ar: 'أنا بنام وحش.' },
     { id: 'w61', x: 730, y: 1505, w: 160, h: 100, text: 'An deiner Stelle würde ich abends heiße Milch trinken.', ar: 'لو مكانك كنت شربت لبن سخن بالليل.' },
     { id: 'w62', x: 857, y: 1667, w: 243, h: 30, text: 'einhundertneunundzwanzig', ar: 'مية وتسعة وعشرين' },
-    { id: 'w63', x: 1112, y: 1667, w: 40, h: 30, text: '129', ar: '١٢٩' },
   ],
   audio: [
   ],

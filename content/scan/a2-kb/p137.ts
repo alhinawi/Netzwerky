@@ -55,7 +55,6 @@ export const p137: ScanPage = {
     { id: 't44', x: 470, y: 1583, w: 84, h: 13, text: 'Warum?', ar: 'ليه؟' },
     { id: 't45', x: 182, y: 1631, w: 852, h: 30, text: 'Ich war letztes Jahr in Wien und da habe ich das Schloss Schönbrunn besucht. Es ist …', ar: 'السنة اللي فاتت كنت في فيينا وزرت قصر شونبرون. هو …' },
     { id: 't46', x: 858, y: 1695, w: 254, h: 13, text: 'einhundertsiebenunddreißig', ar: 'مية وسبعة وتلاتين' },
-    { id: 't47', x: 1125, y: 1693, w: 37, h: 13, text: '137', ar: '137' },
   ],
   audio: [
   ],
@@ -114,7 +113,6 @@ export const p137: ScanPage = {
     { id: 's-t44', text: 'Warum?', ar: 'ليه؟', words: ['t44'] },
     { id: 's-t45', text: 'Ich war letztes Jahr in Wien und da habe ich das Schloss Schönbrunn besucht. Es ist …', ar: 'السنة اللي فاتت كنت في فيينا وزرت قصر شونبرون. هو …', words: ['t45'] },
     { id: 's-t46', text: 'einhundertsiebenunddreißig', ar: 'مية وسبعة وتلاتين', words: ['t46'] },
-    { id: 's-t47', text: '137', ar: '137', words: ['t47'] },
   ],
   groups: [],
 }

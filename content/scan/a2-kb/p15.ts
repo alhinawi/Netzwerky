@@ -54,7 +54,6 @@ export const p15: ScanPage = {
     { id: 'b44', x: 174, y: 1569, w: 918, h: 36, text: 'Eine Woche später: Welche Wörter wissen Sie noch? Welches Wort haben Sie gesehen, gefühlt,', ar: 'بعد أسبوع: إيه الكلمات اللي لسه فاكرينها؟ وإيه الكلمة اللي شفتوها، حسّيتوها،' },
     { id: 'b45', x: 174, y: 1603, w: 435, h: 28, text: 'gehört, geschmeckt, gerochen? Notieren Sie.', ar: 'سمعتوها، دوقتوها، شمّيتوها؟ اكتبوا.' },
     { id: 'b46', x: 1037, y: 1656, w: 80, h: 28, text: 'fünfzehn', ar: 'خمستاشر' },
-    { id: 'b47', x: 1141, y: 1655, w: 26, h: 28, text: '15', ar: '١٥' },
   ],
   audio: [
   ],

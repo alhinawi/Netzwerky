@@ -36,7 +36,6 @@ export const p29: ScanPage = {
     { id: 'w26', x: 324, y: 1608, w: 70, h: 23, text: 'mailen', ar: 'يبعت إيميل' },
     { id: 'w27', x: 484, y: 1599, w: 327, h: 26, text: 'Ich habe Ihnen die Informationen', ar: 'بعتلك المعلومات' },
     { id: 'w28', x: 483, y: 1631, w: 82, h: 28, text: 'gemailt.', ar: 'بالإيميل.' },
-    { id: 'w29', x: 964, y: 1696, w: 203, h: 25, text: 'neunundzwanzig 29', ar: 'تسعة وعشرين ٢٩' },
   ],
   audio: [
   ],
@@ -64,7 +63,6 @@ export const p29: ScanPage = {
     { id: 's-w24', text: 'Du kannst die Datei downloaden.', ar: 'تقدر تنزّل الملف.', words: ['w24'] },
     { id: 's-w25', text: 'to mail', ar: 'يبعت إيميل', words: ['w25'] },
     { id: 's-w27', text: 'Ich habe Ihnen die Informationen', ar: 'بعتلك المعلومات', words: ['w27'] },
-    { id: 's-w29', text: 'neunundzwanzig 29', ar: 'تسعة وعشرين ٢٩', words: ['w29'] },
   ],
   groups: [],
 }

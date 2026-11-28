@@ -69,7 +69,6 @@ export const p35: ScanPage = {
     { id: 'w59', x: 164, y: 1576, w: 618, h: 36, text: 'Sie wollen mit einem Freund / einer Freundin den Film aus 13e', ar: 'عايزين تتفرجوا مع صديق/صديقة على الفيلم من ١٣ هـ.' },
     { id: 'w60', x: 164, y: 1598, w: 562, h: 39, text: 'ansehen. Beschreiben Sie den Film kurz in Ihrer Sprache.', ar: 'صفوا الفيلم باختصار بلغتكم.' },
     { id: 'w61', x: 986, y: 1677, w: 135, h: 24, text: 'fünfunddreißig', ar: 'خمسة وتلاتين' },
-    { id: 'w62', x: 1143, y: 1676, w: 28, h: 22, text: '35', ar: '٣٥' },
   ],
   audio: [
     { id: 'a1_27_28', x: 28, y: 545, w: 32, h: 28, src: ['NWn_A2_KB_Audio_1-027.mp3'], label: 'Aufgabe 13a (1.27)' },

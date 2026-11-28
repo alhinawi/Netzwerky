@@ -41,6 +41,20 @@ for (const [k, v] of Object.entries(gloss)) {
   if (k.includes(' ')) continue
   for (const [name, bad] of rules) if (bad(v, k)) violations.push({ key: k, value: v, rule: name })
 }
+
+// 8. spellcheck-style pass (K5 reviewer round 2). A full edit-distance
+//    spellcheck is not feasible on Egyptian Arabic: 376 one-off glossary
+//    words sit one edit from an established word and nearly all are normal
+//    morphology (ب/ي prefixes, ة/ين endings, broken plurals), so a distance
+//    rule would fail every build on legit words. What IS precise: Arabic
+//    orthographic constraints. Hamza-on-ya (ئ) is never followed directly
+//    by ن mid-word in correct spelling: "مئنوية" (the p54 typo, for
+//    "مئوية") is the exact class. Word-FINAL ئن is fine (كائن، زبائن),
+//    as are ئل/ئم/ئا (عائلة، غائم، السجائر).
+for (const [k, v] of Object.entries(gloss)) {
+  if (k.includes(' ')) continue
+  if (/ئن[\u0621-\u064A]/.test(v)) violations.push({ key: k, value: v, rule: 'hamza-orthography' })
+}
 if (violations.length) {
   console.error(`glossary violations: ${violations.length}`)
   for (const x of violations) console.error(`  [${x.rule}] ${JSON.stringify(x.key)} => ${JSON.stringify(x.value)}`)

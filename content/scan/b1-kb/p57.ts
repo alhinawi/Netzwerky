@@ -79,7 +79,6 @@ export const p57: ScanPage = {
     { id: 'b69', x: 188, y: 1500, w: 541, h: 24, text: '2. a Unnötige Verpackungen sind nicht gut für die Umwelt.', ar: '٢. أ التغليف الزيادة مش كويس للبيئة.' },
     { id: 'b70', x: 212, y: 1523, w: 858, h: 28, text: 'b Unnötige Verpackungen sind nicht gut für die Umwelt, weil sie das Müllproblem verstärken.', ar: 'ب التغليف الزيادة مش كويس للبيئة، عشان بيزوّد مشكلة الزبالة.' },
     { id: 'b71', x: 949, y: 1575, w: 140, h: 20, text: 'siebenundfünfzig', ar: 'سبعة وخمسين' },
-    { id: 'b72', x: 1108, y: 1575, w: 28, h: 20, text: '57', ar: '٥٧' },
   ],
   audio: [],
   fields: [],

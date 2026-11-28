@@ -60,7 +60,6 @@ export const p26: ScanPage = {
     { id: 'b50', x: 187, y: 1468, w: 14, h: 22, text: 'd', ar: 'د' },
     { id: 'b51', x: 220, y: 1474, w: 857, h: 25, text: 'Gibt es in Ihrem Kursort auch ein Repair Café oder ähnliche Projekte? Recherchieren Sie und', ar: 'فيه في مكان كورسكم مقهى تصليح أو مشاريع شبهه؟ دوّروا و' },
     { id: 'b52', x: 220, y: 1501, w: 166, h: 17, text: 'stellen Sie sie vor.', ar: 'اعرضوها.' },
-    { id: 'b53', x: 99, y: 1580, w: 25, h: 16, text: '26', ar: '٢٦' },
     { id: 'b54', x: 146, y: 1583, w: 140, h: 18, text: 'sechsundzwanzig', ar: 'ستة وعشرين' },
   ],
   audio: [],

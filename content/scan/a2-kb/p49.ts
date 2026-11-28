@@ -66,7 +66,6 @@ export const p49: ScanPage = {
     { id: 'w55', x: 678, y: 1534, w: 182, h: 28, text: 'Das tut mir leid!', ar: 'أنا آسف!' },
     { id: 'w56', x: 158, y: 1593, w: 919, h: 32, text: 'Notieren Sie einen Satz. Sprechen Sie Ihren Satz mit Emotion. Die anderen raten die Emotion.', ar: 'اكتبوا جملة. قولوها بانفعال. والباقيين يخمّنوا الإحساس.' },
     { id: 'w57', x: 158, y: 1637, w: 257, h: 32, text: 'Ich suche ein Geschenk.', ar: 'أنا بدوّر على هدية.' },
-    { id: 'w58', x: 975, y: 1685, w: 185, h: 29, text: 'neunundvierzig 49', ar: 'تسعة وأربعون ٤٩' },
   ],
   audio: [
     { id: 'a1_33_34_28', x: 28, y: 405, w: 30, h: 28, src: ['NWn_A2_KB_Audio_1-033.mp3','NWn_A2_KB_Audio_1-034.mp3'], label: 'Aufgabe 8a (1.33-34)' },
@@ -153,7 +152,6 @@ export const p49: ScanPage = {
     { id: 's-w55', text: 'Das tut mir leid!', ar: 'أنا آسف!', words: ['w55'] },
     { id: 's-w56', text: 'Notieren Sie einen Satz. Sprechen Sie Ihren Satz mit Emotion. Die anderen raten die Emotion.', ar: 'اكتبوا جملة. قولوها بانفعال. والباقيين يخمّنوا الإحساس.', words: ['w56'] },
     { id: 's-w57', text: 'Ich suche ein Geschenk.', ar: 'أنا بدوّر على هدية.', words: ['w57'] },
-    { id: 's-w58', text: 'neunundvierzig 49', ar: 'تسعة وأربعون ٤٩', words: ['w58'] },
   ],
   groups: [],
 }

@@ -84,7 +84,6 @@ export const p32: ScanPage = {
     { id: 'w74', x: 1058, y: 1550, w: 185, h: 40, text: 'noch einmal „langsam“', ar: 'تاني «ببطء»' },
     { id: 'w75', x: 1058, y: 1580, w: 175, h: 40, text: 'und genau. Achten', ar: 'وبدقة. ركّزوا' },
     { id: 'w76', x: 1059, y: 1610, w: 146, h: 35, text: 'Sie auf Details.', ar: 'على التفاصيل.' },
-    { id: 'w77', x: 95, y: 1693, w: 191, h: 23, text: 'zweiunddreißig 32', ar: 'اتنين وتلاتين ٣٢' },
   ],
   audio: [
     { id: 'a1_24_75', x: 75, y: 196, w: 30, h: 28, src: ['NWn_A2_KB_Audio_1-024.mp3'], label: 'Aufgabe 8a (1.24)' },
@@ -163,7 +162,6 @@ export const p32: ScanPage = {
     { id: 's-w74', text: 'noch einmal „langsam“', ar: 'تاني «ببطء»', words: ['w74'] },
     { id: 's-w75', text: 'und genau. Achten', ar: 'وبدقة. ركّزوا', words: ['w75'] },
     { id: 's-w76', text: 'Sie auf Details.', ar: 'على التفاصيل.', words: ['w76'] },
-    { id: 's-w77', text: 'zweiunddreißig 32', ar: 'اتنين وتلاتين ٣٢', words: ['w77'] },
   ],
   groups: [],
 }

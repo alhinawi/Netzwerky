@@ -38,7 +38,6 @@ export const p39: ScanPage = {
     { id: 'b28', x: 760, y: 1345, w: 200, h: 185, text: '18 Stimmt die Aussage? Studierende siezen sich meistens.', ar: '١٨ الجملة دي صح؟ الطلبة في الغالب بيتكلموا بـ "حضرتك".' },
     { id: 'b29', x: 1030, y: 1430, w: 60, h: 26, text: 'Ziel', ar: 'النهاية' },
     { id: 'b30', x: 970, y: 1567, w: 140, h: 22, text: 'neununddreißig', ar: 'تسعة وتلاتين' },
-    { id: 'b31', x: 1115, y: 1567, w: 24, h: 22, text: '39', ar: '٣٩' },
   ],
   audio: [],
   fields: [],

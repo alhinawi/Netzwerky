@@ -85,7 +85,6 @@ export const p57: ScanPage = {
     { id: 'w75', x: 617, y: 1622, w: 289, h: 25, text: 'Wer sieht den grauen Mantel?', ar: 'مين شايف المعطف الرمادي؟' },
     { id: 'w76', x: 232, y: 1636, w: 240, h: 31, text: 'Wo ist das grüne Buch?', ar: 'فين الكتاب الأخضر؟' },
     { id: 'w77', x: 964, y: 1700, w: 159, h: 20, text: 'siebenundfünfzig', ar: 'سبعة وخمسين' },
-    { id: 'w78', x: 1144, y: 1697, w: 30, h: 22, text: '57', ar: '٥٧' },
   ],
   audio: [
   ],
@@ -163,7 +162,6 @@ export const p57: ScanPage = {
     { id: 's50', text: 'Es liegt auf dem kleinen Tisch. Wer sieht den grauen Mantel?', ar: 'هو على الترابيزة الصغيرة. مين شايف المعطف الرمادي؟', words: ['w74', 'w75'] },
     { id: 's51', text: 'Wo ist das grüne Buch?', ar: 'فين الكتاب الأخضر؟', words: ['w76'] },
     { id: 's52', text: 'siebenundfünfzig', ar: 'سبعة وخمسين', words: ['w77'] },
-    { id: 's53', text: '57', ar: '٥٧', words: ['w78'] },
   ],
   patches: [
   ],

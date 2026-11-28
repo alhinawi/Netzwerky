@@ -67,7 +67,6 @@ export const p47: ScanPage = {
     { id: 'd2', x: 160, y: 1610, w: 1002, h: 33, text: '2. Ein Freund / Eine Freundin hat Sie zu einer Geburtstagsparty eingeladen, aber Sie können nicht kommen.', ar: '٢. صاحب/صاحبة عزمكم على حفلة عيد ميلاد، بس مش هتقدروا تيجوا.' },
     { id: 'd3', x: 160, y: 1638, w: 870, h: 35, text: '3. Sie hatten Geburtstag und möchten sich bei Ihren Freunden für die Geschenke bedanken.', ar: '٣. كان عيد ميلادكم وعايزين تشكروا أصحابكم على الهدايا.' },
     { id: 'pt', x: 965, y: 1677, w: 147, h: 25, text: 'siebenundvierzig', ar: '٤٧' },
-    { id: 'pn', x: 1138, y: 1677, w: 27, h: 25, text: '47', ar: '٤٧' },
   ],
   audio: [
   ],

@@ -437,7 +437,7 @@ const extraK5 = {
   'wählt': 'يختار',
   'läden': 'محلات',
   'kamen': 'جابوا / جه',
-  'isst ': 'بياكل',
+  'isst': 'بياكل',
 }
 const extraK5b = {
   'alternative': 'بديل / بدائل',
@@ -512,12 +512,12 @@ const extraK5b = {
   'ersten': 'الأول',
   'ganzen': 'كل الـ / طول الـ',
   'hast': 'عندك',
-  'ihrem': 'بتاعته / في (Dativ)',
+  'ihrem': 'بتاعته / بتاعتها / بتاعتك',
   'ihren': 'بتوعهم / في (Dativ)',
   'ihrer': 'بتاعتهم / بتاعتها',
   'keinen': 'مفيش / ولا',
   'meiner': 'بتاعتي',
-  'ßenseite': 'الناحية الخارجية (Außenseite)',
+  'ßenseite': 'الناحية الخارجية',
   'namen': 'أسماء',
   'haupt': 'أساسي / رئيسي',
   'fast': 'تقريبًا',

@@ -9,7 +9,6 @@ export const p169: ScanPage = {
   height: 1755,
   words: [
     { id: 'w1', x: 810, y: 53, w: 277, h: 30, text: 'alphabetische Wortliste', ar: 'قايمة الكلمات الأبجدية' },
-    { id: 'w2', x: 887, y: 1679, w: 305, h: 30, text: 'einhundertneunundsechzig 169', ar: '١٦٩ مية وتسعة وستين' },
     { id: 'w3', x: 22, y: 133, w: 374, h: 54, text: 'hängen (1), er hängt, hat gehangen (Ein Poster hängt am Gartenhaus.) 10/5b', ar: 'يتعلّق' },
     { id: 'w4', x: 22, y: 188, w: 374, h: 51, text: 'hängen (2) (Sie hängen die Lampions in den Baum.) 10/5c', ar: 'يعلّق' },
     { id: 'w5', x: 22, y: 244, w: 374, h: 25, text: 'Hardrock, der (Sg.) 12/6b', ar: 'هارد روك' },
@@ -176,7 +175,6 @@ export const p169: ScanPage = {
   groups: [],
   sentences: [
     { id: 's1', text: 'alphabetische Wortliste', ar: 'قايمة الكلمات الأبجدية', words: ['w1'] },
-    { id: 's2', text: 'einhundertneunundsechzig 169', ar: '١٦٩ مية وتسعة وستين', words: ['w2'] },
     { id: 's3', text: 'hängen (1), er hängt, hat gehangen (Ein Poster hängt am Gartenhaus.) 10/5b', ar: 'يتعلّق', words: ['w3'] },
     { id: 's4', text: 'hängen (2) (Sie hängen die Lampions in den Baum.) 10/5c', ar: 'يعلّق', words: ['w4'] },
     { id: 's5', text: 'Hardrock, der (Sg.) 12/6b', ar: 'هارد روك', words: ['w5'] },

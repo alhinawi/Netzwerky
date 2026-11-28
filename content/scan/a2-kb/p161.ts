@@ -70,7 +70,6 @@ export const p161: ScanPage = {
     { id: 'w60', x: 88, y: 1652, w: 538, h: 30, text: 'Die Pluralendung ist nach einem Artikelwort immer -en:', ar: 'نهاية الجمع بعد أي كلمة تعريف دايماً en-:' },
     { id: 'w61', x: 684, y: 1588, w: 414, h: 30, text: 'Das ist ein/kein/sein schönes Restaurant.', ar: 'ده مطعم حلو / مش حلو / مطعمه الحلو.' },
     { id: 'w62', x: 684, y: 1618, w: 414, h: 30, text: 'Das sind die/keine/unsere günstigen Preise.', ar: 'دي الأسعار الكويسة / مش كويسة / بتاعتنا.' },
-    { id: 'w63', x: 888, y: 1687, w: 358, h: 30, text: 'einhunderteinundsechzig 161', ar: '١٦١ مية وواحد وستين' },
   ],
   audio: [
   ],
@@ -140,7 +139,6 @@ export const p161: ScanPage = {
     { id: 's60', text: 'Die Pluralendung ist nach einem Artikelwort immer -en:', ar: 'نهاية الجمع بعد أي كلمة تعريف دايماً en-:', words: ['w60'] },
     { id: 's61', text: 'Das ist ein/kein/sein schönes Restaurant.', ar: 'ده مطعم حلو / مش حلو / مطعمه الحلو.', words: ['w61'] },
     { id: 's62', text: 'Das sind die/keine/unsere günstigen Preise.', ar: 'دي الأسعار الكويسة / مش كويسة / بتاعتنا.', words: ['w62'] },
-    { id: 's63', text: 'einhunderteinundsechzig 161', ar: '١٦١ مية وواحد وستين', words: ['w63'] },
   ],
   patches: [
   ],
