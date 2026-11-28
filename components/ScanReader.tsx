@@ -31,7 +31,7 @@ export default function ScanReader({
   next?: number
   pages: number[]
   chapters: { n: number | string; first: number }[]
-  pageChapters: { printed: number; chapter: number }[]
+  pageChapters: { printed: number; chapter: number | string }[]
   library: LibBook[]
 }) {
   const router = useRouter()
@@ -875,7 +875,7 @@ export default function ScanReader({
                   const list = pageChapters.filter((x) => x.chapter === c.n).map((x) => x.printed)
                   if (list.length === 0) return null
                   const meta = library.find((b) => b.id === page.book)?.chapters.find((x) => x.n === c.n)
-                  const current = page.chapter === c.n
+                  const current = (page.part ?? page.chapter) === c.n
                   return (
                     <button
                       key={c.n}
@@ -883,11 +883,11 @@ export default function ScanReader({
                       className={`flex w-full items-center gap-3 rounded-lg px-2 py-2 text-left ${current ? 'bg-nw/10' : ''}`}
                     >
                       <span className={`grid h-7 w-7 shrink-0 place-items-center rounded-full border text-[12px] font-bold ${current ? 'border-nw bg-nw text-white' : 'border-neutral-300 text-neutral-600'}`}>
-                        {Number.isInteger(c.n) ? c.n : '★'}
+                        {c.n === 0 ? '–' : Number.isInteger(c.n) ? c.n : '★'}
                       </span>
                       <span className="min-w-0 flex-1">
                         <span className="block truncate text-[13px] text-neutral-800">
-                          {Number.isInteger(c.n) ? `الدرس ${c.n}` : 'بلاتفورم'} {meta?.title ? `· ${meta.title}` : ''}
+                          {c.n === 0 ? (meta?.title ?? '') : Number.isInteger(c.n) ? `الدرس ${c.n}` : 'بلاتفورم'} {c.n !== 0 && meta?.title ? `· ${meta.title}` : ''}
                         </span>
                       </span>
                       <span className="shrink-0 text-[11px] text-neutral-500">{list[0]}–{list[list.length - 1]}</span>
