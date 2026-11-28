@@ -12,7 +12,7 @@ export const p39: ScanPage = {
     { id: 't1', x: 850, y: 36, w: 188, h: 44, text: 'Plattform', ar: 'منصّة' },
     { id: 'n1', x: 1160, y: 33, w: 38, h: 49, text: '1', ar: '١' },
     { id: 'z1', x: 1070, y: 895, w: 68, h: 35, text: 'Ziel', ar: 'الهدف' },
-    { id: 'B1', x: 46, y: 1025, w: 22, h: 25, text: 'B', ar: 'B' },
+    { id: 'B1', x: 46, y: 1025, w: 22, h: 25, text: 'B', ar: 'ب' },
     { id: 'q1', x: 58, y: 1052, w: 767, h: 26, text: '1. Wie heißen die Verben? an der Uni st…, an einem Kurs t…, nette Leute k…', ar: '١. إيه الأفعال؟ an der Uni st…, an einem Kurs t…, nette Leute k…' },
     { id: 'q2', x: 58, y: 1074, w: 856, h: 24, text: '2. Wie heißt der Satz im Perfekt? Ben kommt nach Hamburg und findet eine Wohnung.', ar: '٢. إيه الجملة في الماضي التام (Perfekt)؟ بن بييجي هامبورج وبيلاقي شقة.' },
     { id: 'q3', x: 58, y: 1103, w: 1044, h: 24, text: '3. Bilden Sie Sätze im Perfekt: Jonas – nach London – fliegen ｜ er – dort viele Sehenswürdigkeiten – sehen', ar: '٣. كوّنوا جمل في الـ Perfekt: يوناس – لندن – يسافر ｜ هو – هناك مَعالم سياحية كتير – يشوف' },

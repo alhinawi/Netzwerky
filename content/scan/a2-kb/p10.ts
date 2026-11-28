@@ -51,7 +51,7 @@ export const p10: ScanPage = {
     { id: 'b41', x: 218, y: 1302, w: 242, h: 32, text: 'Partner / Ihrer Partnerin.', ar: 'زميلكم / زميلتكم.' },
     { id: 'b42', x: 218, y: 1344, w: 118, h: 31, text: 'Julia hat ...', ar: 'جوليا عملت ...' },
     { id: 'b43', x: 218, y: 1386, w: 192, h: 32, text: 'Julias Freundin ...', ar: 'صاحبة جوليا ...' },
-    { id: 'b44', x: 780, y: 1210, w: 52, h: 40, text: 'G', ar: 'G' },
+    { id: 'b44', x: 780, y: 1210, w: 52, h: 40, text: 'G', ar: 'جي' },
     { id: 'b45', x: 785, y: 1259, w: 170, h: 32, text: 'Genitiv: Name + s', ar: 'المضاف إليه: الاسم + s' },
     { id: 'b46', x: 790, y: 1299, w: 222, h: 32, text: 'die Schwester von Julia', ar: 'أخت جوليا' },
     { id: 'b47', x: 1048, y: 1302, w: 180, h: 32, text: '→ Julias Schwester', ar: '→ أخت جوليا' },

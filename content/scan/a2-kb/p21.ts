@@ -36,7 +36,7 @@ export const p21: ScanPage = {
     { id: 'c3m', x: 1100, y: 272, w: 68, h: 27, text: 'Fächer', ar: 'مواد' },
     { id: 'c3n', x: 543, y: 312, w: 73, h: 24, text: 'wählen', ar: 'تختار' },
     { id: 'c3o', x: 645, y: 312, w: 201, h: 26, text: 'das Handy benutzen', ar: 'تستخدم الموبايل' },
-    { id: 'c3p', x: 877, y: 320, w: 17, h: 14, text: '...', ar: '...' },
+    { id: 'c3p', x: 877, y: 320, w: 17, h: 14, text: '...', ar: '…' },
     { id: 'q1', x: 140, y: 350, w: 494, h: 33, text: '1. Musstest du viele Hausaufgaben machen?', ar: '١. كان لازم تعمل واجبات كتير؟' },
     { id: 'q2', x: 140, y: 382, w: 236, h: 29, text: '2. Wann konntest ...?', ar: '٢. إمتى كنت تقدر ...؟' },
     { id: 'b', x: 98, y: 455, w: 18, h: 23, text: 'b', ar: 'ب' },

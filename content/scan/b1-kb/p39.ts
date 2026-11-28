@@ -18,7 +18,7 @@ export const p39: ScanPage = {
     { id: 'b8', x: 284, y: 378, w: 200, h: 180, text: '3 Im Reisebüro – Welches Wort fehlt? Wie lange ... der Flug?', ar: '٣ في مكتب السفر - أنهي كلمة ناقصة؟ الطيارة بتاخد قد إيه ...؟' },
     { id: 'b9', x: 54, y: 385, w: 200, h: 180, text: '4 Was passt? Wir schwimmen im Meer, weil/obwohl das Wasser kalt ist.', ar: '٤ إيه الصح؟ بنعوم في البحر، "لأن" ولا "رغم إن" الماية ساقعة.' },
     { id: 'b10', x: 1028, y: 423, w: 73, h: 26, text: 'Start', ar: 'البداية' },
-    { id: 'b11', x: 1055, y: 475, w: 22, h: 28, text: 'B', ar: 'B' },
+    { id: 'b11', x: 1055, y: 475, w: 22, h: 28, text: 'B', ar: 'ب' },
     { id: 'b12', x: 57, y: 605, w: 340, h: 60, text: 'Oh nein! Sie müssen Ihrem Partner / Ihrer Partnerin einen Punkt abgeben.', ar: 'لأ للأسف! لازم تدوا صاحبكم نقطة من نقاطكم.' },
     { id: 'b13', x: 58, y: 695, w: 190, h: 200, text: '5 Ordnen Sie zu. erleben | feiern | liegen 1. am Strand 2. etwas Neues 3. eine Party', ar: '٥ وصّلوا الصح. يعيش تجربة/يحتفل/يرتاح - ١. على الشط ٢. حاجة جديدة ٣. حفلة' },
     { id: 'b14', x: 288, y: 700, w: 185, h: 195, text: '6 Wie heißen die Artikel? ... Reisebüro ... Gepäck ... Strand', ar: '٦ أدوات التعريف إيه؟ ... مكتب سفر ... شنط سفر ... شط' },

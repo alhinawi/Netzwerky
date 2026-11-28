@@ -8,7 +8,7 @@ export const p143: ScanPage = {
   width: 1241,
   height: 1753,
   words: [
-    { id: 'n12', x: 1098, y: 25, w: 80, h: 50, text: '12', ar: '12' },
+    { id: 'n12', x: 1098, y: 25, w: 80, h: 50, text: '12', ar: '١٢' },
     { id: 'hd', x: 487, y: 60, w: 526, h: 24, text: 'eine Bildbeschreibung verstehen, ein Bild beschreiben', ar: 'نفهم وصف صورة، ونوصف صورة' },
     { id: 'n11', x: 50, y: 146, w: 55, h: 28, text: '11 a', ar: '11 أ' },
     { id: 'ta1', x: 127, y: 139, w: 1001, h: 32, text: 'Bildbeschreibung. Arbeiten Sie zu zweit. A liest den ersten Abschnitt laut, B deutet auf die passende', ar: 'وصف صورة. اشتغلوا مع بعض. أ يقرأ الفقرة الأولى بصوت عالي، وب يشاور على المكان المناسب في' },

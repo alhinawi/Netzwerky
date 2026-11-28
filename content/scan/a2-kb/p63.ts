@@ -8,7 +8,7 @@ export const p63: ScanPage = {
   width: 1241,
   height: 1753,
   words: [
-    { id: 'h5', x: 1155, y: 28, w: 36, h: 28, text: '5', ar: '5' },
+    { id: 'h5', x: 1155, y: 28, w: 36, h: 28, text: '5', ar: '٥' },
     { id: 'h1', x: 620, y: 54, w: 408, h: 28, text: 'kurz und klar: Redemittel und Grammatik', ar: 'باختصار ووضوح: جمل وقواعد' },
     { id: 's1', x: 65, y: 175, w: 233, h: 24, text: 'höflich um etwas bitten', ar: 'طلب حاجة بأدب' },
     { id: 'b0', x: 130, y: 208, w: 257, h: 24, text: 'Gib mir bitte die Nummer.', ar: 'اديني الرقم لو سمحت.' },

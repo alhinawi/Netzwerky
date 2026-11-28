@@ -8,7 +8,7 @@ export const p145: ScanPage = {
   width: 1241,
   height: 1753,
   words: [
-    { id: 'n12', x: 1098, y: 25, w: 80, h: 50, text: '12', ar: '12' },
+    { id: 'n12', x: 1098, y: 25, w: 80, h: 50, text: '12', ar: '١٢' },
     { id: 'hd', x: 615, y: 59, w: 400, h: 25, text: 'kurz und klar: Redemittel und Grammatik', ar: 'باختصار ووضوح: عبارات وقواعد' },
     { id: 'h1', x: 66, y: 181, w: 536, h: 20, text: 'einen Musiker / eine Musikerin / eine Band vorstellen', ar: 'نقدّم موسيقي / موسيقية / فرقة' },
     { id: 'c0', x: 68, y: 209, w: 177, h: 14, text: 'Band / Musiker/in', ar: 'فرقة / موسيقي' },

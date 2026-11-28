@@ -37,7 +37,7 @@ export const p130: ScanPage = {
     { id: 'w26', x: 581, y: 665, w: 180, h: 30, text: 'D auf den Ausflug.', ar: 'د على الرحلة.' },
     { id: 'w27', x: 581, y: 705, w: 165, h: 30, text: 'E um die Tickets.', ar: 'هـ بالتذاكر.' },
     { id: 'w28', x: 581, y: 747, w: 108, h: 30, text: 'F mit Ben.', ar: 'و مع بن.' },
-    { id: 'w29', x: 918, y: 470, w: 48, h: 40, text: 'G', ar: 'G' },
+    { id: 'w29', x: 918, y: 470, w: 48, h: 40, text: 'G', ar: 'جي' },
     { id: 'w30', x: 918, y: 523, w: 228, h: 30, text: 'Verben mit Präposition', ar: 'أفعال مع حرف جر' },
     { id: 'w31', x: 918, y: 553, w: 213, h: 30, text: 'sich freuen auf + Akk.', ar: 'يفرح بـ (حاجة جاية) + مفعول' },
     { id: 'w32', x: 918, y: 581, w: 235, h: 30, text: 'Wir freuen uns auf dich.', ar: 'إحنا مستنيينك بفرحة.' },

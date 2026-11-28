@@ -9,7 +9,7 @@ export const p114: ScanPage = {
   width: 1241,
   height: 1753,
   words: [
-    { id: 't0', x: 60, y: 55, w: 39, h: 13, text: '3', ar: '3' },
+    { id: 't0', x: 60, y: 55, w: 39, h: 13, text: '3', ar: '٣' },
     { id: 't1', x: 215, y: 55, w: 189, h: 13, text: 'Plattform', ar: 'منصة' },
     { id: 't2', x: 215, y: 150, w: 457, h: 16, text: 'Zu Fuß über die Alpen', ar: 'على الأقدام عبر جبال الألب' },
     { id: 't3', x: 215, y: 233, w: 79, h: 13, text: 'Oberstdorf', ar: 'أوبرشتدورف' },
@@ -51,10 +51,10 @@ export const p114: ScanPage = {
     { id: 't39', x: 765, y: 1555, w: 414, h: 19, text: '6. Die Hütte ist nicht mehr weit! Ich freue', ar: '6. الكوخ مبقاش بعيد! أنا مبسوط' },
     { id: 't40', x: 790, y: 1597, w: 332, h: 17, text: 'mich schon auf das Abendessen.', ar: 'على العشا من دلوقتي.' },
     { id: 't41', x: 765, y: 1663, w: 394, h: 18, text: '7. Almrosen! Die riechen so wunderbar!', ar: '7. ورد الجبل! ريحته جميلة أوي!' },
-    { id: 'L0', x: 526, y: 827, w: 30, h: 28, text: 'A', ar: 'A' },
-    { id: 'L1', x: 611, y: 726, w: 30, h: 28, text: 'C', ar: 'C' },
-    { id: 'L2', x: 223, y: 1224, w: 30, h: 28, text: 'B', ar: 'B' },
-    { id: 'L3', x: 614, y: 1231, w: 30, h: 28, text: 'D', ar: 'D' },
+    { id: 'L0', x: 526, y: 827, w: 30, h: 28, text: 'A', ar: 'أ' },
+    { id: 'L1', x: 611, y: 726, w: 30, h: 28, text: 'C', ar: 'ج' },
+    { id: 'L2', x: 223, y: 1224, w: 30, h: 28, text: 'B', ar: 'ب' },
+    { id: 'L3', x: 614, y: 1231, w: 30, h: 28, text: 'D', ar: 'د' },
   ],
   audio: [
   ],

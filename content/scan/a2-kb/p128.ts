@@ -68,7 +68,7 @@ export const p128: ScanPage = {
     { id: 'w57', x: 222, y: 1470, w: 420, h: 30, text: 'Gehen Sie durch den Kursraum. Wer hat den', ar: 'امشوا في الفصل. مين كتب' },
     { id: 'w58', x: 222, y: 1502, w: 406, h: 30, text: 'Zettel geschrieben? Suchen Sie die Person.', ar: 'الورقة؟ دوّروا على الشخص.' },
     { id: 'w59', x: 245, y: 1548, w: 355, h: 30, text: 'Würdest du gern öfter tanzen gehen?', ar: 'كنت عايز تروح ترقص أكتر؟' },
-    { id: 'w60', x: 752, y: 1264, w: 23, h: 34, text: 'G', ar: 'G' },
+    { id: 'w60', x: 752, y: 1264, w: 23, h: 34, text: 'G', ar: 'جي' },
     { id: 'w61', x: 745, y: 1312, w: 133, h: 30, text: 'Konjunktiv II', ar: 'الكونيونكتيف الثاني (الافتراضي)' },
     { id: 'w62', x: 850, y: 1347, w: 60, h: 30, text: 'haben', ar: 'يكون عنده' },
     { id: 'w63', x: 945, y: 1350, w: 42, h: 30, text: 'sein', ar: 'يكون' },

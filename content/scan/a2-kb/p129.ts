@@ -45,7 +45,7 @@ export const p129: ScanPage = {
     { id: 'w34', x: 147, y: 1054, w: 520, h: 30, text: '3. Ich würde mit dem Chef über die Situation sprechen.', ar: '٣. أنا كنت اتكلمت مع المدير عن الوضع.' },
     { id: 'w35', x: 147, y: 1083, w: 470, h: 30, text: '4. An deiner Stelle würde ich mit der U-Bahn zur', ar: '٤. لو مكانك كنت ركبت المترو' },
     { id: 'w36', x: 173, y: 1117, w: 137, h: 30, text: 'Arbeit fahren.', ar: 'للشغل.' },
-    { id: 'w37', x: 722, y: 940, w: 40, h: 40, text: 'G', ar: 'G' },
+    { id: 'w37', x: 722, y: 940, w: 40, h: 40, text: 'G', ar: 'جي' },
     { id: 'w38', x: 718, y: 990, w: 254, h: 30, text: 'Konjunktiv II: Verwendung', ar: 'Konjunktiv II: الاستخدام' },
     { id: 'w39', x: 718, y: 1018, w: 128, h: 30, text: 'höfliche Bitte', ar: 'طلب مؤدب' },
     { id: 'w40', x: 868, y: 1016, w: 304, h: 30, text: 'Könntest du mir (bitte) helfen?', ar: 'ممكن تساعدني (لو سمحت)؟' },

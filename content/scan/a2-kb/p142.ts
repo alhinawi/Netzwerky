@@ -8,7 +8,7 @@ export const p142: ScanPage = {
   width: 1241,
   height: 1753,
   words: [
-    { id: 'n12', x: 15, y: 30, w: 95, h: 70, text: '12', ar: '12' },
+    { id: 'n12', x: 15, y: 30, w: 95, h: 70, text: '12', ar: '١٢' },
     { id: 'hd', x: 170, y: 32, w: 615, h: 53, text: 'Informationen über Malerei verstehen, über ein Bild sprechen', ar: 'نفهم معلومات عن الرسم، ونتكلم عن صورة' },
     { id: 'ti', x: 173, y: 140, w: 539, h: 56, text: 'Malerei gestern und heute', ar: 'الرسم زمان والنهارده' },
     { id: 'n10', x: 88, y: 206, w: 62, h: 28, text: '10 a', ar: '10 أ' },
@@ -34,7 +34,7 @@ export const p142: ScanPage = {
     { id: 'cD2', x: 720, y: 632, w: 328, h: 22, text: 'sie keine Fotos machen konnten.', ar: 'مكانش ينفع يصوروا.' },
     { id: 'cE1', x: 697, y: 661, w: 501, h: 29, text: 'E Tiere nicht direkt abgemalt. Sie haben sie genau', ar: 'هـ. ماكانوش بيرسموا الحيوانات مباشرة. بصّوا عليها كويس' },
     { id: 'cE2', x: 722, y: 695, w: 373, h: 22, text: 'angesehen und anschließend gemalt.', ar: 'وبعدين رسموها.' },
-    { id: 'v32', x: 75, y: 776, w: 40, h: 28, text: '32', ar: '32' },
+    { id: 'v32', x: 75, y: 776, w: 40, h: 28, text: '32', ar: '٣٢' },
     { id: 'nd', x: 157, y: 772, w: 18, h: 28, text: 'd', ar: 'د' },
     { id: 'td', x: 200, y: 766, w: 985, h: 30, text: 'Sehen Sie die Bilder an. Welches Bild gefällt Ihnen am besten? Welches gefällt Ihnen nicht? Warum?', ar: 'بصّوا على الصور. أنهي صورة عجبتكم أكتر؟ أنهي مش عاجباكم؟ ليه؟' },
     { id: 'k1', x: 43, y: 1224, w: 284, h: 27, text: 'Feldhase, Albrecht Dürer, 1502', ar: 'أرنب برّي، ألبريشت دورر، 1502' },

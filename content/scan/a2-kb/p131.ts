@@ -39,7 +39,7 @@ export const p131: ScanPage = {
     { id: 'w29', x: 885, y: 573, w: 276, h: 30, text: 'Ach, Mensch, das ist ja blöd!', ar: 'يا أخي، ده سخيف!' },
     { id: 'w30', x: 103, y: 653, w: 18, h: 30, text: 'b', ar: 'ب' },
     { id: 'w31', x: 143, y: 646, w: 948, h: 30, text: 'Markieren Sie die Fragewörter in 9a. Ergänzen Sie in der Regel Personen, Dingen und Ereignissen.', ar: 'علّموا كلمات السؤال في ٩أ. كمّلوا القاعدة بـ Personen وDingen وEreignissen.' },
-    { id: 'w32', x: 172, y: 688, w: 44, h: 44, text: 'G', ar: 'G' },
+    { id: 'w32', x: 172, y: 688, w: 44, h: 44, text: 'G', ar: 'جي' },
     { id: 'w33', x: 172, y: 742, w: 251, h: 30, text: 'W-Fragen mit Präposition', ar: 'أسئلة W مع حرف جر' },
     { id: 'w34', x: 197, y: 772, w: 229, h: 30, text: 'Worüber ärgert er sich?', ar: 'هو متضايق من إيه؟' },
     { id: 'w35', x: 197, y: 799, w: 304, h: 30, text: 'Er ärgert sich über die Prüfung.', ar: 'هو متضايق من الامتحان.' },

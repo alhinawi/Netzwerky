@@ -8,7 +8,7 @@ export const p124: ScanPage = {
   width: 1241,
   height: 1753,
   words: [
-    { id: 'n10', x: 50, y: 48, w: 70, h: 28, text: '10', ar: '10' },
+    { id: 'n10', x: 50, y: 48, w: 70, h: 28, text: '10', ar: '١٠' },
     { id: 'h', x: 205, y: 70, w: 174, h: 14, text: 'hören und sehen', ar: 'نسمع ونشوف' },
     { id: 'ti', x: 207, y: 161, w: 372, h: 31, text: 'Die Netzwerk-WG', ar: 'الشقة المشتركة نتسفيرك' },
     { id: 'n13', x: 120, y: 208, w: 62, h: 28, text: '13 a', ar: '13 أ' },

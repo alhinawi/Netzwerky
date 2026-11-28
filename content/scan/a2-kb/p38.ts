@@ -50,7 +50,7 @@ export const p38: ScanPage = {
     { id: 'l33', x: 60, y: 1404, w: 192, h: 26, text: 'Punkte. Wer hat die', ar: 'النقاط. مين عنده' },
     { id: 'l34', x: 60, y: 1431, w: 164, h: 28, text: 'meisten Punkte?', ar: 'أكتر نقط؟' },
     { id: 's1', x: 378, y: 430, w: 78, h: 32, text: 'Start', ar: 'بداية' },
-    { id: 'A1', x: 380, y: 950, w: 20, h: 24, text: 'A', ar: 'A' },
+    { id: 'A1', x: 380, y: 950, w: 20, h: 24, text: 'A', ar: 'أ' },
     { id: 'q1', x: 390, y: 985, w: 810, h: 27, text: '1. Wie heißen die Verben? eine Ausbildung mchean – als Bankkauffrau tenbeiar –', ar: '١. إيه الأفعال؟ eine Ausbildung mchean – als Bankkauffrau tenbeiar –' },
     { id: 'q1b', x: 648, y: 1012, w: 247, h: 28, text: 'zwei Sprachen snechpre', ar: 'بيتكلم لغتين' },
     { id: 'q2', x: 390, y: 1045, w: 820, h: 27, text: '2. Wie heißt der Satz im Perfekt? Marie wohnt in Berlin und studiert Mathematik.', ar: '٢. إيه الجملة في الماضي التام (Perfekt)؟ ماري بتسكن في برلين وبتدرس رياضيات.' },
