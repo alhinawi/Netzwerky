@@ -60,9 +60,9 @@ export const p137: ScanPage = {
   audio: [
   ],
   fields: [
-    { id: 'fD', group: '1a', x: 568, y: 405, w: 30, h: 30, answer: '', label: 'Bild D' },
-    { id: 'fC', group: '1a', x: 65, y: 872, w: 30, h: 30, answer: '', label: 'Bild C' },
-    { id: 'fE', group: '1a', x: 575, y: 865, w: 30, h: 30, answer: '', label: 'Bild E' },
+    { id: 'fD', group: '1a', x: 568, y: 405, w: 30, h: 30, answer: '3', label: 'Bild D' },
+    { id: 'fC', group: '1a', x: 65, y: 872, w: 30, h: 30, answer: '1', label: 'Bild C' },
+    { id: 'fE', group: '1a', x: 575, y: 865, w: 30, h: 30, answer: '2', label: 'Bild E' },
   ],
   matchings: [],
   patches: [],
