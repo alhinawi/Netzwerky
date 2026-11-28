@@ -143,6 +143,18 @@ SPECS['/read/a2-kb/68/'] = [
   // no stray question mark in a word gloss (round 4)
   ['Der Traumberuf?', 0.3, 'وظيفة الحلم'],
 ]
+SPECS['/read/a1-kb/165/'].push(
+  // a separable prefix inside a conjugation list gets the verb gloss (round 5)
+  ['ein|laden, er lädt ein, hat eingeladen', 0.54, 'يدعو'],
+)
+SPECS['/read/a1-kb/163/'] = [
+  // bestellung: clean short gloss, no repeat or stray fragment (round 5)
+  ['Bestellung, die, -en', 0.1, 'طلب / طلبية'],
+]
+SPECS['/read/b1-kb/44/'].push(
+  // formal Ihre: your (polite) first, not only their (round 5)
+  ['Begründen Sie Ihre Vermutung.', 0.5, 'بتاعتك / بتاعتكم (حضرتك) / بتاعتهم'],
+)
 SPECS['/read/a1-kb/162/'] = [
   // akku box gloss stays clean (round 4)
   ['Akku, der, -s', 0.1, 'بطارية قابلة للشحن'],

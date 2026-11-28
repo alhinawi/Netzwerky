@@ -266,13 +266,13 @@ export default function ScanReader({
   const ensureGloss = () => {
     if (gloss) return Promise.resolve(gloss)
     try {
-      const cached = localStorage.getItem('nw-gloss-v16')
+      const cached = localStorage.getItem('nw-gloss-v17')
       if (cached) { const g = JSON.parse(cached); setGloss(g); return Promise.resolve(g) }
     } catch {}
     if (!glossReq.current) {
       glossReq.current = fetch('/glossary.json').then((r) => r.json()).then((g) => {
         setGloss(g)
-        try { localStorage.setItem('nw-gloss-v16', JSON.stringify(g)) } catch {}
+        try { localStorage.setItem('nw-gloss-v17', JSON.stringify(g)) } catch {}
         return g as Record<string, string>
       }).catch(() => ({}))
     }
@@ -656,11 +656,17 @@ export default function ScanReader({
                   const sepPrefix = !!res && res.tokens.length > 1 && res.idx === res.tokens.length - 1 && /^(ein|an|auf|aus|mit|zu|vor|zurück|weg|daher|her)$/i.test(bareTok)
                   // "ist" as a perfect-tense auxiliary ("ist gefahren") is not هو / ده
                   const istAux = bareTok === 'ist' && !!res && !!res.tokens[res.idx + 1] && /^ge/i.test(bareKey(res.tokens[res.idx + 1]))
+                  const isPrefix = /^(ein|an|auf|aus|mit|zu|vor|zurück|weg|daher|her)$/i.test(bareTok)
+                  // a separable prefix inside a conjugation list ("ein|laden, er lädt ein, hat eingeladen")
+                  // gets the verb's gloss from the piped headword, else no word gloss
+                  const listVerb = isPrefix && /[|｜]/.test(w.text) ? (w.text.split(/\s+/).find((t) => /[|｜]/.test(t)) || '').replace(/[^a-zäöüßA-ZÄÖÜ]/g, '') : ''
                   const skipWord = /^[([]/.test(tok) || suffixTok || sepPrefix || istAux || (/[0-9]/.test(tok) && (!/^[0-9]+[.,]?$/.test(tok) || compositeNum))
                   const arRaw = skipWord
                     ? ''
                     : /^[0-9]+[.,]?$/.test(tok)
                     ? arNum(Number(tok.replace(/[^0-9]/g, '')))
+                    : listVerb
+                    ? glossExact(gg, listVerb) || glossStem(gg, listVerb) || ''
                     : glossExact(gg, tok) || glossStem(gg, tok) || shortBox || ''
                   // "es" alone is هو / ده; only "es gibt" means فيه
                   const arCtx = !skipWord && bareTok === 'es' ? (/es gibt|gibt es/i.test(w.text) ? 'فيه' : 'هو / ده') : arRaw
