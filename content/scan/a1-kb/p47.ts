@@ -1,7 +1,5 @@
 import type { ScanPage } from '../types'
 
-// Seite 47: echter A1-Scan, Wortkaesten und Felder folgen (die alten Kaesten
-// gehoerten zu einer A2-Seite und wurden entfernt).
 export const p47: ScanPage = {
   book: 'a1-kb',
   printed: 47,
@@ -9,11 +7,36 @@ export const p47: ScanPage = {
   image: '/pages/a1-kb/047.jpg',
   width: 900,
   height: 1271,
-  words: [],
-  audio: [],
+  words: [
+    { id: 'goal', x: 535, y: 69, w: 210, h: 14, text: 'Gespräche beim Einkauf führen', ar: 'حوارات وقت الشراء' },
+    { id: 'chn', x: 822, y: 54, w: 26, h: 34, text: '4', ar: 'الفصل ٤' },
+    { id: 't', x: 142, y: 126, w: 356, h: 30, text: 'Einkaufen im Supermarkt', ar: 'التسوق في السوبر ماركت' },
+    { id: 't6a', x: 142, y: 168, w: 386, h: 18, text: 'Hören Sie und lesen Sie die Dialoge. Welches Bild passt?', ar: 'اسمعوا واقرأوا الحوارات. أنهي صورة مناسبة؟' },
+    { id: 'd1', x: 345, y: 246, w: 440, h: 92, text: '1. Entschuldigung, ich brauche einen Euro für den Einkaufswagen. Können Sie wechseln, bitte? – Ja, Moment – hier bitte. – Danke.', ar: '١ · لو سمحت، محتاج يورو لعربية التسوق. ممكن تفكّها؟ · أيوه، ثانية – اتفضل. · شكرًا.' },
+    { id: 'bildA', x: 145, y: 355, w: 22, h: 20, text: 'A', ar: 'صورة A' },
+    { id: 'd2', x: 345, y: 416, w: 272, h: 116, text: '2. Entschuldigung, was kostet der Apfelsaft? – 99 Cent. – Und wie viel kostet der Orangensaft? – 1,09 Euro.', ar: '٢ · لو سمحت، عصير التفاح بكام؟ · ٩٩ سنت. · وعصير البرتقال بكام؟ · ١٫٠٩ يورو.' },
+    { id: 'bildB', x: 113, y: 552, w: 22, h: 20, text: 'B', ar: 'صورة B' },
+    { id: 'd3', x: 172, y: 574, w: 308, h: 176, text: '3. Wer kommt dran? – Ich, bitte. – Was möchten Sie? – Ich möchte ein Stück Emmentaler, bitte. – Sonst noch etwas? – Ja, ich nehme noch 150 Gramm Schinken. – Ist das alles? – Ja, danke.', ar: '٣ · مين دوره؟ · أنا، لو سمحت. · تحب إيه؟ · عايز قطعة جبنة إيمنتالر، لو سمحت. · أي حاجة تانية؟ · أيوه، هاخد كمان ١٥٠ جرام لحم مقدد. · كده تمام؟ · أيوه، شكرًا.' },
+    { id: 'bildC', x: 533, y: 709, w: 22, h: 20, text: 'C', ar: 'صورة C' },
+    { id: 'd4', x: 172, y: 781, w: 250, h: 84, text: '4. Entschuldigung, wo finde ich Reis? – Dort rechts. – Danke.', ar: '٤ · لو سمحت، ألاقي الرز فين؟ · هناك على اليمين. · شكرًا.' },
+    { id: 'bildD', x: 538, y: 925, w: 22, h: 20, text: 'D', ar: 'صورة D' },
+    { id: 'd5', x: 348, y: 946, w: 420, h: 122, text: '5. Ich brauche noch eine Tüte, bitte. – Hier bitte. Die kostet 35 Cent. – Wie bitte? 35 Cent? Das ist aber teuer! Also gut … – Das macht dann 18,65 Euro. Brauchen Sie den Kassenzettel? – Ja, bitte.', ar: '٥ · محتاج كيس كمان، لو سمحت. · اتفضل. بـ ٣٥ سنت. · إيه؟ ٣٥ سنت؟ ده غالي! ماشي … · يبقوا ١٨٫٦٥ يورو. محتاج الإيصال؟ · أيوه، لو سمحت.' },
+    { id: 'bildE', x: 115, y: 1057, w: 22, h: 20, text: 'E', ar: 'صورة E' },
+    { id: 'preise', x: 635, y: 432, w: 245, h: 82, text: 'Preise sprechen: 0,99 Euro → neunundneunzig Cent · 1,09 Euro → ein Euro neun · 2,20 Euro → zwei Euro zwanzig', ar: 'نطق الأسعار: ٠٫٩٩ يورو → تسعة وتسعين سنت · ١٫٠٩ يورو → يورو وتسعة · ٢٫٢٠ يورو → اتنين يورو وعشرين' },
+    { id: 't6b', x: 142, y: 1094, w: 276, h: 18, text: 'Spielen und variieren Sie die Dialoge in 6a.', ar: 'مثّلوا الحوارات اللي في ٦a وغيّروا فيها.' },
+    { id: 't6c', x: 142, y: 1144, w: 598, h: 18, text: 'Recherchieren Sie die Preise für drei bis fünf Lebensmittel in D-A-CH und berichten Sie.', ar: 'دوّروا على أسعار من ٣ لـ ٥ منتجات غذائية في ألمانيا–النمسا–سويسرا وقولوا النتايج.' },
+  ],
+  audio: [
+    { id: 'a6a', x: 55, y: 192, w: 44, h: 26, src: ['/audio/a1/kb/NWn_A1_KB_Audio_1-048.mp3', '/audio/a1/kb/NWn_A1_KB_Audio_1-049.mp3', '/audio/a1/kb/NWn_A1_KB_Audio_1-050.mp3', '/audio/a1/kb/NWn_A1_KB_Audio_1-051.mp3', '/audio/a1/kb/NWn_A1_KB_Audio_1-052.mp3'], label: '6a' },
+  ],
   fields: [],
   matchings: [],
-  patches: [],
-  sentences: [],
   groups: [],
+  sentences: [
+    { id: 's-d1', text: 'Entschuldigung, ich brauche einen Euro für den Einkaufswagen. Können Sie wechseln, bitte?', ar: 'لو سمحت، محتاج يورو لعربية التسوق. ممكن تفكّها؟', words: ['d1'] },
+    { id: 's-d3', text: 'Was möchten Sie? – Ich möchte ein Stück Emmentaler, bitte.', ar: 'تحب إيه؟ · عايز قطعة جبنة إيمنتالر، لو سمحت.', words: ['d3'] },
+    { id: 's-d4', text: 'Entschuldigung, wo finde ich Reis? – Dort rechts.', ar: 'لو سمحت، ألاقي الرز فين؟ · هناك على اليمين.', words: ['d4'] },
+    { id: 's-d5', text: 'Das macht dann 18,65 Euro. Brauchen Sie den Kassenzettel?', ar: 'يبقوا ١٨٫٦٥ يورو. محتاج الإيصال؟', words: ['d5'] },
+    { id: 's-t6c', text: 'Recherchieren Sie die Preise für drei bis fünf Lebensmittel in D-A-CH und berichten Sie.', ar: 'دوّروا على أسعار من ٣ لـ ٥ منتجات غذائية في ألمانيا–النمسا–سويسرا وقولوا النتايج.', words: ['t6c'] },
+  ],
 }
