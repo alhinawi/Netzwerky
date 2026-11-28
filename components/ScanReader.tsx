@@ -266,13 +266,13 @@ export default function ScanReader({
   const ensureGloss = () => {
     if (gloss) return Promise.resolve(gloss)
     try {
-      const cached = localStorage.getItem('nw-gloss-v12')
+      const cached = localStorage.getItem('nw-gloss-v17')
       if (cached) { const g = JSON.parse(cached); setGloss(g); return Promise.resolve(g) }
     } catch {}
     if (!glossReq.current) {
       glossReq.current = fetch('/glossary.json').then((r) => r.json()).then((g) => {
         setGloss(g)
-        try { localStorage.setItem('nw-gloss-v12', JSON.stringify(g)) } catch {}
+        try { localStorage.setItem('nw-gloss-v17', JSON.stringify(g)) } catch {}
         return g as Record<string, string>
       }).catch(() => ({}))
     }
@@ -409,12 +409,16 @@ export default function ScanReader({
   })
 
   const word = page.words.find((w) => w.id === activeWord)
+  const boxWordCount = word ? word.text.trim().split(/\s+/).length : 0
   const sentence = word
     ? (page.sentences ?? []).find((s) => (s.words ?? []).includes(word.id)) ??
       (page.sentences ?? []).find((s) => s.text.includes(word.text)) ??
       // a line box whose ar is a sentence translation is itself the sentence view:
-      // the tap falls back here, never into the word popup (reviewer rule)
-      (word.ar && word.ar.trim().length > 25 && word.ar.trim().toLowerCase() !== word.text.trim().toLowerCase()
+      // the tap falls back here, never into the word popup (reviewer rule).
+      // That is any box longer than two words with a real ar, whatever its length,
+      // and any box whose ar runs past ~25 chars (K4 reviewer: short sentence
+      // translations like "متآسف" must not surface as word glosses either)
+      (word.ar && !/^[ـ\-—–\s]+$/.test(word.ar.trim()) && word.ar.trim().toLowerCase() !== word.text.trim().toLowerCase() && (word.ar.trim().length > 25 || boxWordCount > 2)
         ? { id: `box-${word.id}`, text: word.text, ar: word.ar, words: [word.id] }
         : undefined)
     : undefined
@@ -430,7 +434,7 @@ export default function ScanReader({
   // never a word gloss (it belongs to the sentence tab)
   const popupAr = effectiveTab === 'sentence' && sentence
     ? sentence.ar
-    : (wordHit?.ar ?? (word && word.ar.trim().length <= 25 ? word.ar : '') ?? '')
+    : (wordHit?.ar ?? (word && word.ar.trim().length <= 25 && boxWordCount <= 2 ? word.ar : '') ?? '')
 
   /** keep the popup inside the page: shift it left when the word sits near an edge */
   const popupStyle = (w: { x: number; y: number; w: number; h: number }) => {
@@ -625,6 +629,8 @@ export default function ScanReader({
                 let tok = res?.tok ?? w.text
                 // taps on separator tokens (|, /, dashes, bullets) open nothing
                 if (res && !/[a-zäöüßA-ZÄÖÜ0-9]/.test(res.tok)) { setWordHit(null); return }
+                // a suffix token of a noun entry ("Festspiel, das, -e") opens no popup at all
+                if (res && /^[-–—]/.test(res.tok)) { setWordHit(null); return }
                 if (res && /^(der|die|das)$/i.test(res.tok) && res.idx < res.tokens.length - 1) tok = res.tokens[res.idx + 1]
                 speakWord(tok, w.text)
                 const hasSentence = (page.sentences ?? []).some((s) => (s.words ?? []).includes(w.id) || s.text.includes(w.text))
@@ -633,14 +639,39 @@ export default function ScanReader({
                   const boxAr = w.ar && !/^[ـ\-—–\s]+$/.test(w.ar.trim()) && w.ar.trim().toLowerCase() !== w.text.trim().toLowerCase() ? w.ar.trim() : ''
                   // the box meaning counts as a word gloss only when it is short
                   // (about 25 chars or less); longer ones are sentence translations
-                  const shortBox = boxAr && boxAr.length <= 25 ? boxAr : ''
-                  // a list marker like "6." maps to the number itself, never to a word gloss
+                  // ...and only from a short box (one or two words); a longer
+                  // box's ar is a sentence translation, never a word gloss
+                  const shortBox = boxAr && boxAr.length <= 25 && w.text.trim().split(/\s+/).length <= 2 ? boxAr : ''
+                  // a list marker like "6." maps to the number itself, never to a word gloss.
+                  // Track numbers ("1.33") and phone fragments ("0551-893") are not list
+                  // markers: inside a box with a composite number they open nothing
+                  // (reviewer: numbers show as written or not at all).
+                  // Parenthesized optional words like "(Es)" are no word tap target either.
                   const bareTok = bareKey(tok)
-                  const arRaw = /^[0-9]+[.,]?$/.test(bareTok)
-                    ? arNum(Number(bareTok.replace(/[^0-9]/g, '')))
+                  const compositeNum = /[0-9][.,–—-][0-9]/.test(w.text)
+                  // suffix tokens of noun entries ("Festspiel, das, -e") open nothing
+                  const suffixTok = /^[-–—]/.test(tok)
+                  // a separable prefix sitting alone at the end of a box
+                  // ("ein|laden ... ein") is part of the verb, no word gloss
+                  const sepPrefix = !!res && res.tokens.length > 1 && res.idx === res.tokens.length - 1 && /^(ein|an|auf|aus|mit|zu|vor|zurück|weg|daher|her)$/i.test(bareTok)
+                  // "ist" as a perfect-tense auxiliary ("ist gefahren") is not هو / ده
+                  const istAux = bareTok === 'ist' && !!res && !!res.tokens[res.idx + 1] && /^ge/i.test(bareKey(res.tokens[res.idx + 1]))
+                  const isPrefix = /^(ein|an|auf|aus|mit|zu|vor|zurück|weg|daher|her)$/i.test(bareTok)
+                  // a separable prefix inside a conjugation list ("ein|laden, er lädt ein, hat eingeladen")
+                  // gets the verb's gloss from the piped headword, else no word gloss
+                  const listVerb = isPrefix && /[|｜]/.test(w.text) ? (w.text.split(/\s+/).find((t) => /[|｜]/.test(t)) || '').replace(/[^a-zäöüßA-ZÄÖÜ]/g, '') : ''
+                  const skipWord = /^[([]/.test(tok) || suffixTok || sepPrefix || istAux || (/[0-9]/.test(tok) && (!/^[0-9]+[.,]?$/.test(tok) || compositeNum))
+                  const arRaw = skipWord
+                    ? ''
+                    : /^[0-9]+[.,]?$/.test(tok)
+                    ? arNum(Number(tok.replace(/[^0-9]/g, '')))
+                    : listVerb
+                    ? glossExact(gg, listVerb) || glossStem(gg, listVerb) || ''
                     : glossExact(gg, tok) || glossStem(gg, tok) || shortBox || ''
+                  // "es" alone is هو / ده; only "es gibt" means فيه
+                  const arCtx = !skipWord && bareTok === 'es' ? (/es gibt|gibt es/i.test(w.text) ? 'فيه' : 'هو / ده') : arRaw
                   // stray list separators from the scan never leak into a gloss
-                  const ar = arRaw.replace(/^[\s|｜]+/, '').replace(/[\s|｜]+$/, '')
+                  const ar = arCtx.replace(/^[\s|｜]+/, '').replace(/[\s|｜]+$/, '')
                   if (!ar) {
                     // no word-level gloss: open the box as a labeled sentence, never the word popup
                     setWordHit(null)

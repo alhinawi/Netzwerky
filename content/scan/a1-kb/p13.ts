@@ -13,7 +13,7 @@ export const p13: ScanPage = {
     { id: 'h1', x: 867, y: 179, w: 358, h: 151, text: 'Zahlen lesen und sprechen', ar: 'قراءة الأرقام: 14 = vierzehn' },
     { id: 'p1', x: 205, y: 638, w: 130, h: 28, text: 'Herr Klein', ar: 'مستر كلاين — اكتب رقم موبايله من الصوت' },
     { id: 'p2', x: 676, y: 638, w: 130, h: 28, text: 'Frau Groß', ar: 'مدام جروس — اكتب رقم موبايلها من الصوت' },
-    { id: 'a1', x: 200, y: 912, w: 945, h: 228, text: 'Das Alphabet', ar: 'الحروف الألمانية بأسمائها: a, be, tse, de, e, ef, ge, ha …' },
+    { id: 'a1', x: 200, y: 912, w: 945, h: 228, text: 'Das Alphabet', ar: 'الحروف الألمانية بأسمائها' },
     { id: 'm1', x: 205, y: 1200, w: 560, h: 30, text: 'ruben-gonzalez@…', ar: 'اكتب الإيميل اللي بتسمعه' },
     { id: 'e1', x: 866, y: 1178, w: 360, h: 252, text: 'E-Mail-Adresse sagen', ar: '@ بتتقال "آت"، النقطة "بونكت"، الشرطة "مينوس"، الشرطة السفلية "أونترشتريش"' },
     { id: 'g1', x: 866, y: 1445, w: 360, h: 142, text: 'Gut gesagt: Wie bitte?', ar: 'لو مفهمتش: Entschuldigung, noch einmal bitte. / Das verstehe ich nicht. / Bitte ein bisschen langsamer.' },

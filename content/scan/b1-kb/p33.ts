@@ -39,7 +39,7 @@ export const p33: ScanPage = {
     { id: 'b29', x: 805, y: 806, w: 60, h: 22, text: '1.23', ar: '1.23' },
     { id: 'b30', x: 243, y: 809, w: 555, h: 24, text: 'A Es ist wichtig, dass man im neuen Land beruflich aktiv ist.', ar: 'المهم إن الواحد يبقى نشيط في شغله في البلد الجديدة.' },
     { id: 'b31', x: 880, y: 779, w: 209, h: 21, text: 'Gut gesagt: Zuneigung', ar: 'قالها صح: التعبير عن المودة' },
-    { id: 'b32', x: 880, y: 803, w: 110, h: 21, text: 'ausdrücken', ar: 'للغالي عندك' },
+    { id: 'b32', x: 880, y: 803, w: 110, h: 21, text: 'ausdrücken', ar: 'يعبّر' },
     { id: 'b33', x: 244, y: 853, w: 600, h: 24, text: 'B Wenn man an einem neuen Ort lebt, ist viel neu und', ar: 'لما الواحد يعيش في مكان جديد، فيه حاجات كتير جديدة و' },
     { id: 'b34', x: 880, y: 828, w: 180, h: 21, text: 'Ich hab’ dich gern.', ar: 'غالي عليّ.' },
     { id: 'b35', x: 883, y: 863, w: 121, h: 21, text: 'Ich mag dich.', ar: 'أنا معجب بيك.' },
