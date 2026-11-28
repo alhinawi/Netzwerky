@@ -266,13 +266,13 @@ export default function ScanReader({
   const ensureGloss = () => {
     if (gloss) return Promise.resolve(gloss)
     try {
-      const cached = localStorage.getItem('nw-gloss-v11')
+      const cached = localStorage.getItem('nw-gloss-v12')
       if (cached) { const g = JSON.parse(cached); setGloss(g); return Promise.resolve(g) }
     } catch {}
     if (!glossReq.current) {
       glossReq.current = fetch('/glossary.json').then((r) => r.json()).then((g) => {
         setGloss(g)
-        try { localStorage.setItem('nw-gloss-v11', JSON.stringify(g)) } catch {}
+        try { localStorage.setItem('nw-gloss-v12', JSON.stringify(g)) } catch {}
         return g as Record<string, string>
       }).catch(() => ({}))
     }
@@ -609,6 +609,8 @@ export default function ScanReader({
               key={w.id}
               onClick={(e) => {
                 e.stopPropagation()
+                // boxes holding only separators (a bare hyphen, pipe, dashes) open nothing in any mode
+                if (!/[a-zäöüßA-ZÄÖÜ0-9]/.test(w.text)) { setWordHit(null); return }
                 if (tab !== 'word') {
                   setWordHit(null)
                   if (activeWord === w.id) setForceSent(false)

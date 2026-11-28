@@ -10,7 +10,17 @@
 //   3. every case must come back pass:true — a fail means a regression
 const SPECS = {
   // "Es" must be the neuter pronoun, never a tatweel placeholder (PR 157 regression)
-  '/read/a1-kb/120/': [['Es', 0.5, 'هو (محايد)']],
+  '/read/a1-kb/120/': [
+    ['Es', 0.5, 'هو (محايد)'],
+    // "ist" is the verb, never a tatweel fragment (reviewer OK-fixes)
+    ['ist', 0.5, 'يكون / هو'],
+  ],
+  // "zur" gloss is a real preposition gloss, not a fragment (reviewer OK-fixes)
+  '/read/a2-kb/19/': [['zur', 0.5, 'إلى ال']],
+  // a bare hyphen box opens nothing in any mode (reviewer OK-fixes)
+  '/read/b1-kb/23/': [['–', 0.5, null, 'none']],
+  // "natürlich" clean gloss (reviewer OK-fixes)
+  '/read/b1-kb/32/': [['Abend essen wir in einem guten Restaurant - natürlich mit einem leckeren Nachtisch.', 0.58, 'طبعا / طبيعي']],
   // article before a noun is never the separable verb (PR 157)
   '/read/b1-kb/17/': [
     ['ein Gespräch über die Reiseplanung führen', 0.03, 'أداة نكرة'],
@@ -36,6 +46,9 @@ const SPECS = {
     // lookup must still run (PR 165: the fallback must not flip the global mode)
     ['Die Gedenkstätte Berliner Mauer erinnert', 0.43, 'نصب سور برلين التذكاري بيفكّر بتقسيم ألمانيا ومكانه في وسط', 'sentence'],
     ['Die Gedenkstätte Berliner Mauer erinnert', 0.12, 'النصب التذكاري'],
+    // "einem" labeled as Dativ, "Glaskuppel" with the full adjective (reviewer OK-fixes)
+    ['Der Checkpoint Charlie war ein Grenzübergang zwischen Ost- und West-Berlin. Mit einem', 0.93, 'أداة نكرة (Dativ)'],
+    ['im Bundestag zusehen und in die moderne Glaskuppel gehen. Es lohnt sich: Die Aussicht von der', 0.51, 'القبة الزجاجية'],
   ],
   '/read/b1-kb/28/': [
     ['Berichte über Veränderungen im Leben verstehen |', 0.2, 'التغييرات'],

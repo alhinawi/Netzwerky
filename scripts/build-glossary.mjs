@@ -106,10 +106,10 @@ const extra = {
   // whose taps used to show the whole sentence translation (self-written, listed for review)
   'gedenkstätte': 'النصب التذكاري',
   'reichstagsgebäude': 'مبنى البرلمان (الرايخستاج)',
-  'glaskuppel': 'القبة الزجاج',
+  'glaskuppel': 'القبة الزجاجية',
   fotos: 'صور',
   stunden: 'ساعات',
-  einem: 'أداة نكرة (حالة الجر)',
+  einem: 'أداة نكرة (Dativ)',
   'veränderung': 'تغيير',
   'veränderungen': 'تغييرات',
   unterschiede: 'فروق / اختلافات',
