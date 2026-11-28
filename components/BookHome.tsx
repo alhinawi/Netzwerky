@@ -33,7 +33,7 @@ export default function BookHome({ bookId }: { bookId: string }) {
         )}
         <div>
           <h1 className="text-2xl font-semibold">{book.title}</h1>
-          <p className="mt-1 text-sm text-neutral-500">{book.ready ? (built.length > 0 ? `Reader · ${built.length} Seiten, nur Seiten zum Lesen – noch ohne Lösungen` : 'In Vorbereitung') : 'In Vorbereitung'}</p>
+          <p className="mt-1 text-sm text-neutral-500">{book.ready ? (built.length > 0 ? `Reader · ${built.length} Seiten` : 'In Vorbereitung') : 'In Vorbereitung'}</p>
         </div>
       </div>
       <div className="paper mt-6 rounded-lg bg-white px-5 py-4">
