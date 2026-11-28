@@ -517,6 +517,7 @@ const extraK5b = {
   'ihrer': 'بتاعتهم / بتاعتها',
   'keinen': 'مفيش / ولا',
   'meiner': 'بتاعتي',
+  'ßenseite': 'الناحية الخارجية (Außenseite)',
   'namen': 'أسماء',
   'haupt': 'أساسي / رئيسي',
   'fast': 'تقريبًا',
