@@ -19,7 +19,10 @@ for (const dir of roots) {
       const add = (de, meaning) => {
         // never index placeholders or pure numbers/markers as words
         if (!/[a-zäöüßA-ZÄÖÜ]/.test(de)) return
-        if (/^[ـ\-—–…\s.,;:!?]+$/.test(meaning)) return
+        // a gloss is Egyptian Arabic: boxes whose ar is German dictionary text
+        // (a2-kb appendix separable-verb fragments like "ein" -> "laden, er lädt ein, ...")
+        // must not become word glosses
+        if (!/[\u0600-\u06FF]/.test(meaning)) return
         const words = de.split(/\s+/).filter(Boolean)
         const bare = (w) => w.toLowerCase().replace(/[^a-zäöüß0-9-]/g, '')
         const keys = [words.length === 1 ? bare(de) : de.toLowerCase()]
@@ -48,6 +51,32 @@ for (const dir of roots) {
 // (content/scan/glossary-official.json); page data keeps priority
 const official = JSON.parse(fs.readFileSync('content/scan/glossary-official.json', 'utf8'))
 for (const [k, v] of Object.entries(official)) {
+  if (!seen.has(k)) { seen.add(k); gloss[k] = v }
+}
+// standalone function words and place names: correct single-word glosses.
+// Only fill keys no page box or official entry supplied (those win).
+const extra = {
+  ein: 'أداة نكرة',
+  mit: 'مع / بـ',
+  zu: 'لـ / إلى',
+  ab: 'من / ابتداءً من',
+  weg: 'بعيد / مش موجود',
+  um: 'حوالين / عند (الساعة)',
+  fern: 'بعيد',
+  statt: 'بدلًا من',
+  teil: 'جزء',
+  leid: 'آسف / زعلان',
+  weh: 'وجع',
+  vorbei: 'عدّى / خلص',
+  weiter: 'كمان / لقدّام',
+  zurecht: 'في مكانه / تمام',
+  bereit: 'جاهز / مستعد',
+  herein: 'لجوا',
+  herunter: 'لتحت',
+  runter: 'لتحت',
+  'rügen': 'جزيرة روجن',
+}
+for (const [k, v] of Object.entries(extra)) {
   if (!seen.has(k)) { seen.add(k); gloss[k] = v }
 }
 fs.mkdirSync('public', { recursive: true })
