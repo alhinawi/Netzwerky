@@ -12,19 +12,19 @@ const SPECS = {
   // "Es" must be the neuter pronoun, never a tatweel placeholder (PR 157 regression)
   '/read/a1-kb/120/': [['Es', 0.5, 'هو (محايد)']],
   // article before a noun is never the separable verb (PR 157)
-  '/read/b1-kb/17/': [['ein Gespräch über die Reiseplanung führen', 0.03, 'أداة نكرة']],
-  '/read/b1-kb/21/': [
+  '/read/b1-kb/17/': [
+    ['ein Gespräch über die Reiseplanung führen', 0.03, 'أداة نكرة'],
     // preposition "mit", not the mitbringen verb fragment (PR 157)
-    ['Ich bin mit ... leider gar nicht zufrieden.', 0.22, 'مع / بـ'],
-    // a list marker maps to the number itself, never to a word gloss (PR 152)
-    ['6. Mein E-Book-Reader funktioniert nicht, sodass ...', 0.03, '٦'],
+    ['Waren Sie schon mal in ...? / Wie wäre es mit ...? /', 0.84, 'مع / بـ'],
   ],
+  // a list marker maps to the number itself, never to a word gloss (PR 152)
+  '/read/a1-kb/54/': [['6. Er besucht seine Oma.', 0.03, '٦']],
   // preposition "zu", not the zuhören verb fragment (PR 157)
   '/read/b1-kb/16/': [['Sehen Sie die Szene noch einmal', 0.99, 'لـ / إلى']],
   // article + noun: the noun wins (der Hafen -> الميناء)
   '/read/a1-kb/28/': [['der Hafen', 0.5, 'الميناء']],
   // official Klett glossary entry stays reachable
-  '/read/b1-kb/20/': [['Was machen Sie, wenn etwas kaputt ist?', 0.42, 'شيئا ما ؛ بعض الشئ هل ترغب فى شئ']],
+  '/read/a1-kb/111/': [['Ihnen gefällt etwas sehr gut.', 0.21, 'شيئا ما ؛ بعض الشئ هل ترغب فى شئ']],
 }
 
 const cases = SPECS[location.pathname]
