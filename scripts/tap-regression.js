@@ -32,8 +32,10 @@ const SPECS = {
   // word taps give word-level glosses; an unglossed word opens the labeled sentence,
   // and a tap on a list separator opens nothing (PR 163 reviewer)
   '/read/b1-kb/43/': [
-    ['Die Gedenkstätte Berliner Mauer erinnert', 0.12, 'النصب التذكاري'],
+    // the sentence fallback first, then a word tap on the same box: the word
+    // lookup must still run (PR 165: the fallback must not flip the global mode)
     ['Die Gedenkstätte Berliner Mauer erinnert', 0.43, 'نصب سور برلين التذكاري بيفكّر بتقسيم ألمانيا ومكانه في وسط', 'sentence'],
+    ['Die Gedenkstätte Berliner Mauer erinnert', 0.12, 'النصب التذكاري'],
   ],
   '/read/b1-kb/28/': [
     ['Berichte über Veränderungen im Leben verstehen |', 0.2, 'التغييرات'],
