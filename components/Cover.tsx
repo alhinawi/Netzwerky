@@ -18,7 +18,7 @@ export default function Cover() {
               اختار المستوى وابدأ من أول Kapitel.
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
-              <Link href="/read/a1-kb/11/" className="rounded-lg bg-nw px-6 py-3 text-[15px] font-semibold text-white transition hover:bg-nw-dark">
+              <Link href="/book/a1-kb/" className="rounded-lg bg-nw px-6 py-3 text-[15px] font-semibold text-white transition hover:bg-nw-dark">
                 افتح الكتاب
               </Link>
               <Link href="/library/" className="rounded-lg border border-neutral-300 px-6 py-3 text-[15px] font-semibold text-neutral-700 transition hover:border-nw hover:text-nw">
