@@ -48,7 +48,7 @@ export const p163: ScanPage = {
     { id: 'w38', x: 74, y: 683, w: 482, h: 28, text: 'Ortsangaben: Präpositionen mit Akkusativ', ar: 'أماكن: حروف جر مع Akkusativ' },
     { id: 'w39', x: 1052, y: 674, w: 69, h: 28, text: 'A2 K7', ar: 'A2 ف٧' },
     { id: 'w40', x: 83, y: 727, w: 96, h: 28, text: 'Wohin?', ar: 'رايح فين؟' },
-    { id: 'w41', x: 184, y: 727, w: 69, h: 28, text: 'durch', ar: 'durch' },
+    { id: 'w41', x: 184, y: 727, w: 69, h: 28, text: 'durch', ar: 'خلال/عبر' },
     { id: 'w42', x: 358, y: 721, w: 344, h: 30, text: 'Sie geht durch den Park.', ar: 'هي بتمشي من خلال الحديقة.' },
     { id: 'w43', x: 74, y: 785, w: 427, h: 28, text: 'Wechselpräpositionen mit Akkusativ oder Dativ', ar: 'حروف جر بتاخد Akkusativ أو Dativ حسب المعنى' },
     { id: 'w44', x: 955, y: 774, w: 179, h: 28, text: 'A1 K7, K9 A2 K10', ar: 'A1 ف٧ و٩ و A2 ف١٠' },
