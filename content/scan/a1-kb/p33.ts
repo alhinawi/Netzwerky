@@ -48,7 +48,8 @@ export const p33: ScanPage = {
     { id: 'bub3', x: 943, y: 1431, w: 120, h: 22, text: 'Vielen Dank!', ar: 'شكراً جداً!' },
   ],
   audio: [
-    { id: 'a7a', x: 85, y: 232, w: 40, h: 36, src: ['/audio/a1/kb/NWn_A1_KB_Audio_1-030.mp3', '/audio/a1/kb/NWn_A1_KB_Audio_1-031.mp3', '/audio/a1/kb/NWn_A1_KB_Audio_1-032.mp3'], label: 'Aufgabe 7a (1.30–32)' },
+    // disabled: CD1 tracks 1-031..1-037 not deployed yet (waiting for the real Klett files)
+    { id: 'a7a', disabled: true, x: 85, y: 232, w: 40, h: 36, src: ['/audio/a1/kb/NWn_A1_KB_Audio_1-030.mp3', '/audio/a1/kb/NWn_A1_KB_Audio_1-031.mp3', '/audio/a1/kb/NWn_A1_KB_Audio_1-032.mp3'], label: 'Aufgabe 7a (1.30–32)' },
   ],
   fields: [
     { id: 'g1', group: '7a', kind: 'text', x: 300, y: 317, w: 190, h: 24 },

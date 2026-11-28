@@ -1,7 +1,13 @@
 export type Box = { x: number; y: number; w: number; h: number }
 
 export type ScanWord = Box & { id: string; text: string; ar: string }
-export type ScanAudio = Box & { id: string; src: string[]; label: string }
+export type ScanAudio = Box & {
+  id: string
+  src: string[]
+  label: string
+  /** track file not deployed yet: keep the data, hide the play button until it exists */
+  disabled?: boolean
+}
 export type ScanField = Box & {
   id: string
   group: string

@@ -371,6 +371,8 @@ export default function ScanReader({
     return plat[`${page.book}:${n}`] ?? `K${n}`
   }
   const audioBase = `/audio/${level.toLowerCase()}/kb`
+  // spots whose track file is not deployed yet stay in the data but render no button
+  const audioSpots = page.audio.filter((a) => !a.disabled)
 
   /** one check button per exercise, positioned at that exercise's first field */
   const exerciseGroups = useMemo(() => {
@@ -647,7 +649,7 @@ export default function ScanReader({
             </div>
           )}
 
-          {page.audio.map((a) => (
+          {audioSpots.map((a) => (
             <button
               key={a.id}
               onClick={(e) => { e.stopPropagation(); play(a.src) }}
@@ -766,9 +768,9 @@ export default function ScanReader({
             <span className="ar text-[12px] opacity-80">{msg.ar}</span>
           </div>
         )}
-        <div className={`mx-auto max-w-[1180px] px-3 pt-2 ${page.audio.length ? '' : 'hidden'}`}>
+        <div className={`mx-auto max-w-[1180px] px-3 pt-2 ${audioSpots.length ? '' : 'hidden'}`}>
           <div className="flex items-center justify-between text-[12px] text-neutral-600">
-            <span className="truncate">{audioLabel ?? page.audio[0]?.label ?? 'CD1 · Track —'}</span>
+            <span className="truncate">{audioLabel ?? audioSpots[0]?.label ?? 'CD1 · Track —'}</span>
             <span className="shrink-0 tabular-nums text-neutral-400">
               {fmt(audio.current?.currentTime ?? 0)} / {duration ? fmt(duration) : '0:00'}
             </span>
@@ -777,7 +779,7 @@ export default function ScanReader({
             <button
               onClick={() => {
                 const el = audio.current
-                if (!el || !playing) { const first = page.audio[0]; if (first) play(first.src, first.label); return }
+                if (!el || !playing) { const first = audioSpots[0]; if (first) play(first.src, first.label); return }
                 if (el.paused) { void el.play().catch(() => {}); setPaused(false) } else { el.pause(); setPaused(true) }
               }}
               aria-label={paused ? 'Abspielen' : 'Pause'}
