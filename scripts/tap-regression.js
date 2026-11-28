@@ -291,6 +291,8 @@ SPECS['/read/b1-kb/41/'] = [['einundvierzig', 0.5, null, 'none']]
 SPECS['/read/b1-kb/51/'] = [['einundfünfzig', 0.5, null, 'none']]
 SPECS['/read/b1-kb/58/'] = [['58 achtundfünfzig', 0.5, null, 'none']]
 
+SPECS['/read/a1-kb/22/'] = [['(ein)tausendzweihundertfünfzig', 0.5, '١٢٥٠']]
+
 const cases = SPECS[location.pathname]
 if (!cases) return 'no spec for ' + location.pathname
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms))
