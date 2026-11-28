@@ -266,13 +266,13 @@ export default function ScanReader({
   const ensureGloss = () => {
     if (gloss) return Promise.resolve(gloss)
     try {
-      const cached = localStorage.getItem('nw-gloss-v12')
+      const cached = localStorage.getItem('nw-gloss-v13')
       if (cached) { const g = JSON.parse(cached); setGloss(g); return Promise.resolve(g) }
     } catch {}
     if (!glossReq.current) {
       glossReq.current = fetch('/glossary.json').then((r) => r.json()).then((g) => {
         setGloss(g)
-        try { localStorage.setItem('nw-gloss-v12', JSON.stringify(g)) } catch {}
+        try { localStorage.setItem('nw-gloss-v13', JSON.stringify(g)) } catch {}
         return g as Record<string, string>
       }).catch(() => ({}))
     }
@@ -633,11 +633,21 @@ export default function ScanReader({
                   const boxAr = w.ar && !/^[ـ\-—–\s]+$/.test(w.ar.trim()) && w.ar.trim().toLowerCase() !== w.text.trim().toLowerCase() ? w.ar.trim() : ''
                   // the box meaning counts as a word gloss only when it is short
                   // (about 25 chars or less); longer ones are sentence translations
-                  const shortBox = boxAr && boxAr.length <= 25 ? boxAr : ''
-                  // a list marker like "6." maps to the number itself, never to a word gloss
+                  // ...and only from a short box (one or two words); a longer
+                  // box's ar is a sentence translation, never a word gloss
+                  const shortBox = boxAr && boxAr.length <= 25 && w.text.trim().split(/\s+/).length <= 2 ? boxAr : ''
+                  // a list marker like "6." maps to the number itself, never to a word gloss.
+                  // Track numbers ("1.33") and phone fragments ("0551-893") are not list
+                  // markers: inside a box with a composite number they open nothing
+                  // (reviewer: numbers show as written or not at all).
+                  // Parenthesized optional words like "(Es)" are no word tap target either.
                   const bareTok = bareKey(tok)
-                  const arRaw = /^[0-9]+[.,]?$/.test(bareTok)
-                    ? arNum(Number(bareTok.replace(/[^0-9]/g, '')))
+                  const compositeNum = /[0-9][.,–—-][0-9]/.test(w.text)
+                  const skipWord = /^[([]/.test(tok) || (/[0-9]/.test(tok) && (!/^[0-9]+[.,]?$/.test(tok) || compositeNum))
+                  const arRaw = skipWord
+                    ? ''
+                    : /^[0-9]+[.,]?$/.test(tok)
+                    ? arNum(Number(tok.replace(/[^0-9]/g, '')))
                     : glossExact(gg, tok) || glossStem(gg, tok) || shortBox || ''
                   // stray list separators from the scan never leak into a gloss
                   const ar = arRaw.replace(/^[\s|｜]+/, '').replace(/[\s|｜]+$/, '')

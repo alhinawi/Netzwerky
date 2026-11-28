@@ -12,11 +12,18 @@ const SPECS = {
   // "Es" must be the neuter pronoun, never a tatweel placeholder (PR 157 regression)
   '/read/a1-kb/120/': [
     ['Es', 0.5, 'هو (محايد)'],
-    // "ist" is the verb, never a tatweel fragment (reviewer OK-fixes)
-    ['ist', 0.5, 'يكون / هو'],
+    // "ist" is the verb, natural Egyptian order (K4 reviewer)
+    ['ist', 0.5, 'بيكون / هو'],
   ],
   // "zur" gloss is a real preposition gloss, not a fragment (reviewer OK-fixes)
-  '/read/a2-kb/19/': [['zur', 0.5, 'إلى ال']],
+  '/read/a2-kb/19/': [['zur', 0.5, 'إلى / لـ']],
+  // preposition "an" without meta text (K4 reviewer)
+  '/read/a1-kb/104/': [['an', 0.5, 'على / عند']],
+  // modal verbs without the echoed German label (K4 reviewer)
+  '/read/a2-kb/156/': [
+    ['können', 0.5, 'يقدر'],
+    ['werden', 0.5, 'يبقى / يصير'],
+  ],
   // a bare hyphen box opens nothing in any mode (reviewer OK-fixes)
   '/read/b1-kb/23/': [['–', 0.5, null, 'none']],
   // "natürlich" clean gloss (reviewer OK-fixes)
@@ -56,12 +63,44 @@ const SPECS = {
   ],
 }
 
+// K4 reviewer fixes: word-level glosses, no sentence leaks, numbers as written
+SPECS['/read/b1-kb/44/'] = [
+  ['Gespräche bei der Arbeit verstehen | Irreales ausdrücken | sich entschuldigen | auf Entschuldigungen reagieren |', 0.05, 'محادثات'],
+  ['Begründen Sie Ihre Vermutung.', 0.1, 'يبرّر'],
+  ['Frau Mersa, sind Sie zufrieden in Ihrem Beruf?', 0.05, 'السيدة'],
+]
+SPECS['/read/b1-kb/47/'] = [
+  // a track number opens nothing (numbers as written or not at all)
+  ['1.33', 0.5, null, 'none'],
+  // "(Es)" is no word tap target: the labeled sentence opens instead
+  ['(Es) Tut mir (sehr/schrecklich) leid.', 0.05, '(أنا) آسف (جامد/جدا).', 'sentence'],
+]
+SPECS['/read/b1-kb/50/'] = [
+  ['0551–893 022 99', 0.1, null, 'none'],
+  ['Freie Zeiteinteilung zwischen', 0.1, 'حرة / فاضية'],
+  ['Ja, die Stelle ist noch nicht besetzt.', 0.03, 'أيوه، الوظيفة لسه فاضية.', 'sentence'],
+]
+SPECS['/read/b1-kb/51/'] = [
+  ['Tipps für ein erfolgreiches Vorstellungsgespräch', 0.04, 'نصايح'],
+  ['beste Verbindung heraus und denken Sie auch an', 0.05, 'الأفضل'],
+  ['üben. Wenn Sie im Gespräch vor lauter Aufregung', 0.34, 'أصحابها. ولو من التوتر في المقابلة', 'sentence'],
+]
+SPECS['/read/b1-kb/52/'] = [
+  ['Laptop und schnelles Internet brauchen', 0.05, 'اللاب توب / الكمبيوتر المحمول'],
+]
+SPECS['/read/b1-kb/53/'] = [
+  ['Rufen Sie den Personalchef', 0.08, 'كلم مدير الموظفين', 'sentence'],
+  ['(Es) Tut mir (sehr/schrecklich) leid.', 0.05, 'متآسف (جدا/أوي).', 'sentence'],
+  ['nach Informationen fragen', 0.05, 'بعد / عن'],
+]
+
 const cases = SPECS[location.pathname]
 if (!cases) return 'no spec for ' + location.pathname
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms))
 const results = []
 for (const [label, frac, expect, mode] of cases) {
-  const btn = [...document.querySelectorAll('button')].find((b) => (b.getAttribute('aria-label') || '').startsWith(label))
+  const btns = [...document.querySelectorAll('button')]
+  const btn = btns.find((b) => (b.getAttribute('aria-label') || '') === label + ' — Bedeutung') || btns.find((b) => (b.getAttribute('aria-label') || '').startsWith(label))
   if (!btn) { results.push({ label, pass: false, err: 'button not found' }); continue }
   const r = btn.getBoundingClientRect()
   btn.dispatchEvent(new MouseEvent('click', { bubbles: true, cancelable: true, clientX: r.left + r.width * frac, clientY: r.top + r.height / 2 }))

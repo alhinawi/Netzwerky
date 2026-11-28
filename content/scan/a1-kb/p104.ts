@@ -21,7 +21,7 @@ export const p104: ScanPage = {
     { id: 'g1d', x: 901, y: 1090, w: 206, h: 25, text: 'Wo sind die Bücher?', ar: 'الكتب فين؟' },
     { id: 'g1e', x: 901, y: 1115, w: 275, h: 25, text: 'die Regale → In den Regalen.', ar: 'الأرفف → على الأرفف.' },
     { id: 'i6b', x: 204, y: 1032, w: 371, h: 30, text: 'Wo genau sind die Dinge? Erzählen Sie.', ar: 'الحاجات فين بالظبط؟ احكوا.' },
-    { id: 'an', x: 217, y: 1194, w: 55, h: 25, text: 'an', ar: 'على / عند / في (حسب الجملة)' },
+    { id: 'an', x: 217, y: 1194, w: 55, h: 25, text: 'an', ar: 'على / عند' },
     { id: 'auf', x: 337, y: 1194, w: 55, h: 25, text: 'auf', ar: 'على (فوق)' },
     { id: 'hinter', x: 443, y: 1194, w: 76, h: 25, text: 'hinter', ar: 'ورا' },
     { id: 'in', x: 553, y: 1194, w: 41, h: 25, text: 'in', ar: 'في/جوا' },
