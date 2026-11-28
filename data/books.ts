@@ -12,6 +12,7 @@ export type Book = {
 }
 
 const a1kb: Chapter[] = [
+  { n: 0, title: 'Umschlag & Inhalt', pages: '1–7', grammar: 'Umschlag, Impressum, Inhaltsverzeichnis', ar: 'الغلاف والمحتوى' },
   { n: 1, title: 'Guten Tag!', pages: '8–17', grammar: 'W-Frage · Aussagesatz · Verben und Personalpronomen', ar: 'التحيات والتعريف بالنفس' },
   { n: 2, title: 'Freunde, Kollegen und ich', pages: '18–27', grammar: 'unregelmäßige Verben · Artikel: der, das, die · haben und sein', ar: 'الأصدقاء والزملاء' },
   { n: 3, title: 'In Hamburg', pages: '28–37', grammar: 'unbestimmter Artikel · kein, keine · Imperativ mit Sie', ar: 'في هامبورج' },
@@ -28,6 +29,7 @@ const a1kb: Chapter[] = [
   { n: 11, title: 'Die Jacke gefällt mir!', pages: '126–135', grammar: 'Welcher? Welches? Welche? · Personalpronomen im Dativ', ar: 'الجاكيت عاجبني' },
   { n: 12, title: 'Ab in den Urlaub!', pages: '136–145', grammar: 'Pronomen man · Sätze verbinden: denn · Präpositionen mit Dativ', ar: 'يلا في إجازة' },
   { n: 'P4', title: 'Plattform 4', pages: '146–151', grammar: 'wiederholen und trainieren', ar: 'مراجعة' },
+  { n: 14, title: 'Anhang', pages: '152–175', grammar: 'Grammatikübersicht · unregelmäßige Verben · alphabetische Wortliste · Quellenverzeichnis', ar: 'الملحق' },
 ]
 
 const a2ab: Chapter[] = [
