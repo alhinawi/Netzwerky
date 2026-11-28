@@ -52,6 +52,27 @@ const a2kb: Chapter[] = [
   { n: 13, title: 'Anhang', pages: '152–178', grammar: 'Grammatikübersicht · unregelmäßige Verben · alphabetische Wortliste · Quellenverzeichnis', ar: 'الملحق' },
 ]
 
+const b1kb: Chapter[] = [
+  { n: 0, title: 'Umschlag & Inhalt', pages: '1–7', grammar: 'Umschlag, Impressum, Inhaltsverzeichnis', ar: 'الغلاف والمحتوى' },
+  { n: 1, title: 'Gute Reise!', pages: '8–17', grammar: 'Infinitiv mit zu · Nebensatz mit da/weil · Nebensatz obwohl', ar: 'رحلة سعيدة!' },
+  { n: 2, title: 'Das ist ja praktisch!', pages: '18–27', grammar: 'Verb lassen · Folgen ausdrücken: deshalb/daher/sodass · Genitiv · wegen/trotz + Genitiv', ar: 'ده عملي جدًا!' },
+  { n: 3, title: 'Veränderungen', pages: '28–37', grammar: 'Präteritum · Zeitangaben: Präpositionen mit Dativ und Genitiv', ar: 'تغييرات' },
+  { n: 'P1', title: 'Plattform 1', pages: '38–43', grammar: 'wiederholen und trainieren', ar: 'مراجعة' },
+  { n: 4, title: 'Arbeitswelt', pages: '44–53', grammar: 'Konjunktiv II · irreale Bedingungssätze · Pronomen und Pronominaladverbien · Verben mit Präposition und Nebensatz', ar: 'عالم الشغل' },
+  { n: 5, title: 'Umweltfreundlich?', pages: '54–63', grammar: 'Komparativ und Superlativ vor Nomen · Nebensatz mit damit und um … zu', ar: 'صديق للبيئة؟' },
+  { n: 6, title: 'Blick nach vorn', pages: '64–73', grammar: 'Futur I · n-Deklination · Relativsätze im Dativ und mit Präposition', ar: 'بص لقدام' },
+  { n: 'P2', title: 'Plattform 2', pages: '74–79', grammar: 'wiederholen und trainieren', ar: 'مراجعة' },
+  { n: 7, title: 'Zwischenmenschliches', pages: '80–89', grammar: 'Plusquamperfekt · temporale Nebensätze: bevor, bis, nachdem, seit/seitdem, während', ar: 'علاقات إنسانية' },
+  { n: 8, title: 'Rund um Körper und Geist', pages: '90–99', grammar: 'nicht/kein/nur + brauchen + zu + Infinitiv · Reflexivpronomen im Akkusativ und Dativ · zweiteilige Konnektoren', ar: 'الجسم والعقل' },
+  { n: 9, title: 'Kunststücke', pages: '100–109', grammar: 'Stellung von nicht im Satz · Adjektive ohne Artikel', ar: 'فنون وشطارة' },
+  { n: 'P3', title: 'Plattform 3', pages: '110–115', grammar: 'wiederholen und trainieren', ar: 'مراجعة' },
+  { n: 10, title: 'Miteinander', pages: '116–125', grammar: 'Passiv Präsens, Präteritum und Perfekt · Passiv mit Modalverb', ar: 'مع بعض' },
+  { n: 11, title: 'Stadt, Land, Fluss', pages: '126–135', grammar: 'Artikelwörter als Pronomen · irgendein/-eine/-welche · Adjektive als Nomen · Relativsätze mit was und wo', ar: 'مدينة وبلد ونهر' },
+  { n: 12, title: 'Geld regiert die Welt?', pages: '136–145', grammar: 'Sätze mit je …, desto/umso … · Partizip II als Adjektiv · Partizip I als Adjektiv', ar: 'الفلوس بتحكم العالم؟' },
+  { n: 'P4', title: 'Plattform 4', pages: '146–151', grammar: 'wiederholen und trainieren', ar: 'مراجعة' },
+  { n: 13, title: 'Anhang', pages: '152–176', grammar: 'Grammatikübersicht · unregelmäßige Verben · Verben mit Präposition · reflexive Verben · Quellenverzeichnis', ar: 'الملحق' },
+]
+
 const a2ab: Chapter[] = [
   { n: 0, title: 'Titel & Inhalt', pages: '1–5', grammar: 'Umschlag, Inhaltsverzeichnis', ar: 'الغلاف والمحتوى' },
   { n: 1, title: 'Und was machst du?', pages: '6–17', grammar: 'Vorstellen · über Vergangenes berichten · sich verabreden', ar: 'إيه اللي بتعمله؟' },
@@ -81,7 +102,7 @@ export const books: Book[] = [
   { id: 'a1-ab', level: 'A1', kind: 'Arbeitsbuch', title: 'Netzwerk neu A1 · Arbeitsbuch', chapters: empty('A1'), ready: false },
   { id: 'a2-kb', level: 'A2', kind: 'Kursbuch', title: 'Netzwerk neu A2 · Kursbuch', chapters: a2kb, ready: true, note: 'Interaktive Seiten folgen Kapitel für Kapitel — mit Wort-Taps, Lösungen und Audio.', cover: '/pages/a2-kb/008.jpg' },
   { id: 'a2-ab', level: 'A2', kind: 'Arbeitsbuch', title: 'Netzwerk neu A2 · Arbeitsbuch', chapters: a2ab, ready: true, note: 'Reader – nur Seiten: Kapitel 1–12 und Prüfungstraining 1–4 sind lesbar, Lösungen, Wort-Taps und Audio fehlen noch.', cover: '/covers/a2-ab.webp' },
-  { id: 'b1-kb', level: 'B1', kind: 'Kursbuch', title: 'Netzwerk neu B1 · Kursbuch', chapters: empty('B1'), ready: false },
+  { id: 'b1-kb', level: 'B1', kind: 'Kursbuch', title: 'Netzwerk neu B1 · Kursbuch', chapters: b1kb, ready: true, note: 'Reader – nur Seiten: Kapitel 1–12 und Plattform 1–4 sind lesbar, Wort-Taps, Lösungen und Audio folgen Kapitel für Kapitel.', cover: '/pages/b1-kb/001.jpg' },
   { id: 'b1-ab', level: 'B1', kind: 'Arbeitsbuch', title: 'Netzwerk neu B1 · Arbeitsbuch', chapters: empty('B1'), ready: false, cover: '/covers/b1-ab.webp' },
 ]
 
