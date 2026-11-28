@@ -32,6 +32,8 @@ const rules = [
   // a question mark belongs in the gloss only when the key itself is a
   // question ("wann? -> امتى؟" fine; "ihre -> ... ماذا تعنى هذه" is garbage)
   ['question-text', (v, k) => /[؟?]/.test(v) && !k.includes('?')],
+  // known OCR/extraction stray fragments (extend when new ones appear)
+  ['stray-fragment', (v) => /(^|\s)هته(\s|$)/.test(v)],
   ['over-40-chars', (v) => v.length > 40],
 ]
 const violations = []
