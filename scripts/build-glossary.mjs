@@ -21,8 +21,9 @@ for (const dir of roots) {
         if (!/[a-zäöüßA-ZÄÖÜ]/.test(de)) return
         // a gloss is Egyptian Arabic: boxes whose ar is German dictionary text
         // (a2-kb appendix separable-verb fragments like "ein" -> "laden, er lädt ein, ...")
-        // must not become word glosses
-        if (!/[\u0600-\u06FF]/.test(meaning)) return
+        // must not become word glosses; tatweel-only placeholders are no gloss either
+        // (U+0640 sits inside the Arabic block, so strip it before testing)
+        if (!/[\u0600-\u06FF]/.test(meaning.replace(/\u0640/g, ''))) return
         const words = de.split(/\s+/).filter(Boolean)
         const bare = (w) => w.toLowerCase().replace(/[^a-zäöüß0-9-]/g, '')
         const keys = [words.length === 1 ? bare(de) : de.toLowerCase()]
