@@ -1,5 +1,5 @@
-import Cover from '@/components/Cover'
+import PremiumCover from '@/components/PremiumCover'
 
 export default function Page() {
-  return <Cover />
+  return <PremiumCover />
 }
