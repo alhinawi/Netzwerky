@@ -31,7 +31,7 @@ export const p118: ScanPage = {
     { id: 'g-title', x: 761, y: 1276, w: 275, h: 30, text: 'Perfekt: Satzklammer', ar: 'الماضي التام: إطار الجملة' },
     { id: 'g1', x: 761, y: 1304, w: 454, h: 30, text: 'Der Professor hat immer geredet.', ar: 'البروفيسور كان بيتكلم طول الوقت.' },
     { id: 'g2', x: 761, y: 1351, w: 413, h: 30, text: 'Daniel hat sechs Stunden gelernt.', ar: 'دانيال ذاكر ست ساعات.' },
-    { id: 'g3', x: 892, y: 1392, w: 96, h: 28, text: 'haben', ar: 'هابن (فعل مساعد)' },
+    { id: 'g3', x: 892, y: 1392, w: 96, h: 28, text: 'haben', ar: 'عندك / عندكم' },
     { id: 'g4', x: 1090, y: 1392, w: 124, h: 28, text: 'Partizip II', ar: 'التصريف التاني' },
     { id: 'g5', x: 761, y: 1448, w: 316, h: 28, text: 'Partizip II: regelmäßige Verben', ar: 'التصريف التاني: الأفعال المنتظمة' },
     { id: 'g6', x: 761, y: 1472, w: 193, h: 28, text: 'machen gemacht', ar: 'يعمل / عمل' },

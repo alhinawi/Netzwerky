@@ -61,6 +61,7 @@ for (const [k, v] of Object.entries(official)) {
 // Only fill keys no page box or official entry supplied (those win).
 const extra = {
   ein: 'أداة نكرة',
+  'möglichkeiten': 'إمكانيات / احتمالات',
   nach: 'بعد / عن',
   tipps: 'نصايح',
   freie: 'حرة / فاضية',
@@ -105,7 +106,7 @@ const extra = {
   geworden: 'صار / أصبح',
   darf: 'مسموح له / يجوز له',
   soll: 'المفروض',
-  'würde': 'حـ (شرطية)',
+  'würde': 'كان هـ…',
   // reviewer word-tap list (K1-K3 running text): single-word glosses for words
   // whose taps used to show the whole sentence translation (self-written, listed for review)
   'gedenkstätte': 'النصب التذكاري',

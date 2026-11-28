@@ -36,7 +36,7 @@ export const p120: ScanPage = {
     { id: 'v4', x: 227, y: 1351, w: 96, h: 28, text: 'fliegen', ar: 'يسافر بالطيارة' },
     { id: 'v5', x: 227, y: 1391, w: 96, h: 28, text: '! bleiben', ar: '! يفضل' },
     { id: 'v6', x: 227, y: 1431, w: 110, h: 28, text: '! passieren', ar: '! يحصل' },
-    { id: 'hw-ist', x: 468, y: 1229, w: 83, h: 33, text: 'ist', ar: 'بيكون / هو' },
+    { id: 'hw-ist', x: 468, y: 1229, w: 83, h: 33, text: 'ist', ar: 'هو / ده' },
     { id: 't1', x: 592, y: 1232, w: 275, h: 28, text: 'zwei Stunden zur Arbeit', ar: 'ساعتين للشغل' },
     { id: 'hw-gef', x: 853, y: 1222, w: 151, h: 36, text: 'gefahren', ar: 'راحت' },
     { id: 'n2', x: 369, y: 1271, w: 83, h: 28, text: 'Freddy', ar: 'فريدي' },
