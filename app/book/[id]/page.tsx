@@ -1,11 +1,10 @@
-import BookHome from '@/components/BookHome'
+import { redirect } from 'next/navigation'
 import { books } from '@/data/books'
 
 export function generateStaticParams() {
   return books.map((b) => ({ id: b.id }))
 }
 
-export default async function Page({ params }: { params: Promise<{ id: string }> }) {
-  const { id } = await params
-  return <BookHome bookId={id} />
+export default function Page() {
+  redirect('/')
 }

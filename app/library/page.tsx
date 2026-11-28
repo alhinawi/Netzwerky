@@ -1,7 +1,5 @@
-import Library from '@/components/Library'
-
-export const metadata = { title: 'Bibliothek · Netzwerky' }
+import { redirect } from 'next/navigation'
 
 export default function Page() {
-  return <Library />
+  redirect('/')
 }

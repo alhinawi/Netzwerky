@@ -378,6 +378,9 @@ export default function ScanReader({
   }, [page.printed, page.book, next, prev])
 
   // book audio lives under /audio/<level>/kb/ for every Kursbuch (a1-kb -> a1)
+  // the cover screen at / opens the last-read book
+  useEffect(() => { try { localStorage.setItem('nw-book', page.book) } catch {} }, [page.book])
+
   const level = (page.book.split('-')[0] || 'a1').toUpperCase()
   // Plattform pages carry a half chapter (6.5 = Plattform 2, 9.5 = Plattform 3)
   const chapterLabel = (n: number | string) => {
