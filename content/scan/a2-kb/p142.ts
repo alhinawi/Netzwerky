@@ -11,7 +11,7 @@ export const p142: ScanPage = {
     { id: 'n12', x: 15, y: 30, w: 95, h: 70, text: '12', ar: '١٢' },
     { id: 'hd', x: 170, y: 32, w: 615, h: 53, text: 'Informationen über Malerei verstehen, über ein Bild sprechen', ar: 'نفهم معلومات عن الرسم، ونتكلم عن صورة' },
     { id: 'ti', x: 173, y: 140, w: 539, h: 56, text: 'Malerei gestern und heute', ar: 'الرسم زمان والنهارده' },
-    { id: 'n10', x: 88, y: 206, w: 62, h: 28, text: '10 a', ar: '10 أ' },
+    { id: 'n10', x: 88, y: 206, w: 62, h: 28, text: '10 a', ar: '١٠ أ' },
     { id: 't10', x: 175, y: 176, w: 975, h: 57, text: 'Welche interessante Ausstellung oder welches Museum haben Sie schon besucht? Erzählen Sie.', ar: 'أنهي معرض أو متحف مثير زرتوه قبل كده؟ احكوا.' },
     { id: 'ic', x: 45, y: 268, w: 30, h: 30, text: '🔊', ar: 'صوت' },
     { id: 'nb', x: 135, y: 269, w: 18, h: 28, text: 'b', ar: 'ب' },

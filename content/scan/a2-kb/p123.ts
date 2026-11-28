@@ -11,7 +11,7 @@ export const p123: ScanPage = {
     { id: 'n10', x: 1130, y: 31, w: 70, h: 28, text: '10', ar: '١٠' },
     { id: 'h', x: 622, y: 66, w: 420, h: 14, text: 'eine Geschichte schreiben und verbessern', ar: 'نكتب حكاية ونحسّنها' },
     { id: 'ti', x: 135, y: 144, w: 334, h: 28, text: 'Tiergeschichten', ar: 'حكايات حيوانات' },
-    { id: 'n12', x: 52, y: 191, w: 52, h: 28, text: '12 a', ar: '12 أ' },
+    { id: 'n12', x: 52, y: 191, w: 52, h: 28, text: '12 a', ar: '١٢ أ' },
     { id: 'i1', x: 135, y: 209, w: 681, h: 16, text: 'Wählen Sie einen Text und lesen Sie ihn. Welche Überschrift passt?', ar: 'اختار نص واقراه. أنهي عنوان مناسب؟' },
     { id: 't1', x: 137, y: 246, w: 229, h: 14, text: 'Ein neues Zuhause', ar: 'بيت جديد' },
     { id: 't2', x: 450, y: 258, w: 229, h: 14, text: '320 km in 14 Tagen', ar: '320 كم في 14 يوم' },

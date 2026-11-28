@@ -10,7 +10,7 @@ export const p141: ScanPage = {
   words: [
     { id: 'n12', x: 1110, y: 20, w: 80, h: 70, text: '12', ar: '١٢' },
     { id: 'hd', x: 600, y: 55, w: 427, h: 30, text: 'genauere Informationen zu Personen geben', ar: 'ونديّ معلومات أدق عن الناس' },
-    { id: 'n8a', x: 78, y: 136, w: 36, h: 28, text: '8 a', ar: '8 أ' },
+    { id: 'n8a', x: 78, y: 136, w: 36, h: 28, text: '8 a', ar: '٨ أ' },
     { id: 't8', x: 140, y: 137, w: 832, h: 34, text: 'Lesen Sie die Sätze und markieren Sie im zweiten Satz das Verb und den Akkusativ.', ar: 'اقروا الجمل وعلّموا في الجملة التانية الفعل والمفعول (Akkusativ).' },
     { id: 'a1', x: 143, y: 182, w: 657, h: 36, text: '1. Ein Mann sammelt alte Teller. Er kauft die Teller auf Flohmärkten.', ar: '1. راجل بيجمع أطباق قديمة. هو بيشتري الأطباق في أسواق الأنتيكات.' },
     { id: 'a2', x: 143, y: 218, w: 800, h: 31, text: '2. Ein Schauspieler wartet auf seinen Einsatz. Er darf den Einsatz nicht verpassen.', ar: '2. ممثل مستني دوره. مينفعش يفوّت دوره.' },
@@ -63,7 +63,7 @@ export const p141: ScanPage = {
     { id: 'x3', x: 1102, y: 1271, w: 25, h: 16, text: 'Ja.', ar: 'أيوه.' },
     { id: 'x4', x: 543, y: 1332, w: 60, h: 18, text: 'Elyas?', ar: 'إلياس؟' },
     { id: 'x5', x: 983, y: 1331, w: 54, h: 18, text: 'Noel?', ar: 'نويل؟' },
-    { id: 'n9a', x: 105, y: 1411, w: 36, h: 28, text: '9 a', ar: '9 أ' },
+    { id: 'n9a', x: 105, y: 1411, w: 36, h: 28, text: '9 a', ar: '٩ أ' },
     { id: 't9', x: 166, y: 1402, w: 736, h: 36, text: 'Das Prominenten-Quiz. Arbeiten Sie zu zweit. Notieren Sie fünf Quiz-Fragen.', ar: 'كويز المشاهير. اشتغلوا اتنين اتنين. اكتبوا خمس أسئلة.' },
     { id: 'q1', x: 165, y: 1452, w: 532, h: 29, text: 'Wie heißt die Sängerin, die … / der Sänger, der/den …?', ar: 'اسم المغنية اللي … / المغني اللي … إيه؟' },
     { id: 'q21', x: 165, y: 1486, w: 500, h: 22, text: 'Wer ist die Schauspielerin, die … / der Schauspieler,', ar: 'مين الممثلة اللي … / الممثل' },
