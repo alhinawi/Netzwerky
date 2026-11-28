@@ -83,7 +83,7 @@ export const p165: ScanPage = {
     { id: 'w72', x: 445, y: 695, w: 118, h: 18, text: 'erzählen', ar: 'يحكي' },
     { id: 'w73', x: 445, y: 719, w: 206, h: 20, text: 'Erzieher, der, -', ar: 'المربّي' },
     { id: 'w74', x: 445, y: 743, w: 261, h: 20, text: 'Erzieherin, die, -nen', ar: 'المربّية' },
-    { id: 'w75', x: 445, y: 767, w: 52, h: 17, text: 'es', ar: 'هو (محايد)' },
+    { id: 'w75', x: 445, y: 767, w: 52, h: 17, text: 'es', ar: 'هو / فيه (es gibt)' },
     { id: 'w76', x: 445, y: 791, w: 173, h: 17, text: 'Essen, das, -', ar: 'الأكل' },
     { id: 'w77', x: 445, y: 815, w: 330, h: 21, text: 'essen, er isst, hat gegessen', ar: 'ياكل' },
     { id: 'w78', x: 445, y: 839, w: 184, h: 19, text: 'Essig, der, -e', ar: 'الخل' },

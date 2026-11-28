@@ -11,9 +11,9 @@
 const SPECS = {
   // "Es" must be the neuter pronoun, never a tatweel placeholder (PR 157 regression)
   '/read/a1-kb/120/': [
-    ['Es', 0.5, 'هو (محايد)'],
-    // "ist" is the verb, natural Egyptian order (K4 reviewer)
-    ['ist', 0.5, 'بيكون / هو'],
+    ['Es', 0.5, 'هو / فيه (es gibt)'],
+    // "ist" is the verb, natural Egyptian (K4 reviewer round 3)
+    ['ist', 0.5, 'هو / ده'],
   ],
   // "zur" gloss is a real preposition gloss, not a fragment (reviewer OK-fixes)
   '/read/a2-kb/19/': [['zur', 0.5, 'إلى / لـ']],
@@ -24,6 +24,15 @@ const SPECS = {
     ['können', 0.5, 'يقدر'],
     ['werden', 0.5, 'يبقى / يصير'],
   ],
+  // Konjunktiv-II forms without 1st-person pronouns (K4 reviewer round 3)
+  '/read/a2-kb/27/': [
+    ['sollte', 0.5, 'كان المفروض'],
+    ['durfte', 0.5, 'كان مسموح'],
+  ],
+  // haben as a real Arabic gloss (K4 reviewer round 3)
+  '/read/a1-kb/118/': [['haben', 0.5, 'عندك / عندكم']],
+  // wählen = choose, not vote (K4 reviewer round 3)
+  '/read/a1-kb/174/': [['wählen', 0.5, 'يختار']],
   // a bare hyphen box opens nothing in any mode (reviewer OK-fixes)
   '/read/b1-kb/23/': [['–', 0.5, null, 'none']],
   // "natürlich" clean gloss (reviewer OK-fixes)
@@ -74,24 +83,33 @@ SPECS['/read/b1-kb/47/'] = [
   ['1.33', 0.5, null, 'none'],
   // "(Es)" is no word tap target: the labeled sentence opens instead
   ['(Es) Tut mir (sehr/schrecklich) leid.', 0.05, '(أنا) آسف (جامد/جدا).', 'sentence'],
+  // wählen = choose (K4 reviewer round 3)
+  ['d Arbeiten Sie zu zweit. Wählen Sie zwei Situationen und planen Sie die Gespräche. Spielen Sie die', 0.27, 'يختار'],
 ]
 SPECS['/read/b1-kb/50/'] = [
+  ['Haben Sie denn schon in diesem Bereich', 0.03, 'عندك / عندكم'],
   ['0551–893 022 99', 0.1, null, 'none'],
   ['Freie Zeiteinteilung zwischen', 0.1, 'حرة / فاضية'],
   ['Ja, die Stelle ist noch nicht besetzt.', 0.03, 'أيوه، الوظيفة لسه فاضية.', 'sentence'],
 ]
 SPECS['/read/b1-kb/51/'] = [
+  ['Gespräch an etwas Positives. Vielen Bewerbern', 0.03, 'محادثة'],
+  ['Staus oder andere Verkehrsprobleme. Bei einem', 0.33, 'تاني / تانيين'],
+  ['d Welche anderen Tipps zu Vorstellungsgesprächen gibt es? Recherchieren Sie und erstellen Sie in', 0.57, 'هو / فيه (es gibt)'],
   ['Tipps für ein erfolgreiches Vorstellungsgespräch', 0.04, 'نصايح'],
   ['beste Verbindung heraus und denken Sie auch an', 0.05, 'الأفضل'],
   ['üben. Wenn Sie im Gespräch vor lauter Aufregung', 0.34, 'أصحابها. ولو من التوتر في المقابلة', 'sentence'],
 ]
 SPECS['/read/b1-kb/52/'] = [
+  ['neue Möglichkeiten durch Technik haben', 0.3, 'إمكانيات / احتمالات'],
   ['Laptop und schnelles Internet brauchen', 0.05, 'اللاب توب / الكمبيوتر المحمول'],
 ]
 SPECS['/read/b1-kb/53/'] = [
   ['Rufen Sie den Personalchef', 0.08, 'كلم مدير الموظفين', 'sentence'],
   ['(Es) Tut mir (sehr/schrecklich) leid.', 0.05, 'متآسف (جدا/أوي).', 'sentence'],
   ['nach Informationen fragen', 0.05, 'بعد / عن'],
+  ['Ich würde gern wissen, ...', 0.75, 'يعرف'],
+  ['Ich würde gern wissen, ...', 0.2, 'كان هـ…'],
 ]
 
 const cases = SPECS[location.pathname]

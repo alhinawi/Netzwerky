@@ -13,7 +13,7 @@ export const p174: ScanPage = {
     { id: 'w2', x: 75, y: 188, w: 151, h: 41, text: 'vor|stellen', ar: 'يقدّم/يعرّف (حد)' },
     { id: 'w3', x: 75, y: 235, w: 206, h: 20, text: 'Vorteil, der, -e', ar: 'الميزة' },
     { id: 'w4', x: 75, y: 259, w: 74, h: 17, text: 'wach', ar: 'صاحي' },
-    { id: 'w5', x: 75, y: 282, w: 96, h: 18, text: 'wählen', ar: 'يختار/ينتخب' },
+    { id: 'w5', x: 75, y: 282, w: 96, h: 18, text: 'wählen', ar: 'يختار' },
     { id: 'w6', x: 75, y: 308, w: 107, h: 18, text: 'wandern', ar: 'يتمشّى في الطبيعة' },
     { id: 'w7', x: 75, y: 331, w: 74, h: 19, text: 'wann', ar: 'إمتى' },
     { id: 'w8', x: 75, y: 354, w: 173, h: 20, text: 'Ware, die, -n', ar: 'البضاعة' },
