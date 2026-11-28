@@ -35,7 +35,6 @@ export const p18: ScanPage = {
     { id: 'bs', x: 388, y: 1478, w: 365, h: 30, text: 'Wahrscheinlich sprechen sie über ...', ar: 'غالبًا بيتكلموا عن ...' },
     { id: 'c', x: 173, y: 1548, w: 17, h: 24, text: 'c', ar: 'ج' },
     { id: 'ct', x: 213, y: 1548, w: 616, h: 34, text: 'Hören Sie die fünf Gespräche und ergänzen Sie die Steckbriefe.', ar: 'اسمعوا المحادثات الخمسة وكمّلوا البطاقات التعريفية.' },
-    { id: 'l', x: 85, y: 1586, w: 48, h: 18, text: '1.8–12', ar: '١.٨–١٢' },
     { id: 'w1', x: 213, y: 1576, w: 200, h: 30, text: 'Informatik studieren', ar: 'يدرس علوم الكمبيوتر' },
     { id: 'w2', x: 442, y: 1576, w: 176, h: 30, text: 'Krankenschwester', ar: 'ممرضة' },
     { id: 'w3', x: 645, y: 1593, w: 296, h: 29, text: 'Grafikerin bei einer Zeitschrift', ar: 'مصمّمة جرافيك في مجلة' },

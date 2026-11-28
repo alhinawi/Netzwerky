@@ -22,7 +22,6 @@ export const p60: ScanPage = {
     { id: 'b14', x: 227, y: 325, w: 608, h: 26, text: "der Blitz | es donnert | der Donner | sonnig | die Sonne scheint", ar: "البرق | بترعد | الرعد | مشمس | الشمس طالعة" },
     { id: 'b15', x: 100, y: 839, w: 95, h: 25, text: "4) b", ar: "4) b" },
     { id: 'b16', x: 222, y: 848, w: 638, h: 24, text: "Hören Sie die Wettervorhersagen. Ordnen Sie sie den Fotos in 11a zu.", ar: "اسمعوا توقعات الجو. وصّلوها بالصور اللي في ١١أ." },
-    { id: 'b17', x: 100, y: 875, w: 57, h: 14, text: "1.40-43", ar: "1.40-43" },
     { id: 'b18', x: 222, y: 901, w: 709, h: 26, text: "Hören Sie die Vorhersagen noch einmal und ergänzen Sie die Informationen.", ar: "اسمعوا التوقعات مرة كمان وكمّلوا المعلومات." },
     { id: 'b19', x: 183, y: 902, w: 12, h: 15, text: "c", ar: "c" },
     { id: 'b20', x: 220, y: 943, w: 757, h: 26, text: "1. 3. Temperatur: __", ar: "١. ٣. درجة الحرارة: __" },

@@ -13,7 +13,6 @@ export const p47: ScanPage = {
     { id: 'b3', x: 119, y: 188, w: 690, h: 24, text: '6a Sehen Sie die Fotos an. Was ist das Problem? Sprechen Sie im Kurs.', ar: '٦أ بصوا على الصور. إيه المشكلة؟ اتكلموا في الكورس.' },
     { id: 'b4', x: 190, y: 468, w: 24, h: 24, text: 'A', ar: 'A' },
     { id: 'b5', x: 671, y: 468, w: 24, h: 24, text: 'B', ar: 'B' },
-    { id: 'b6', x: 52, y: 558, w: 58, h: 18, text: '1.30–31', ar: '1.30–31' },
     { id: 'b7', x: 143, y: 528, w: 705, h: 26, text: 'b Hören Sie die beiden Gespräche. Waren Ihre Vermutungen in 6a richtig?', ar: 'ب اسمعوا المحادثتين. كانت توقعاتكم في ٦أ صح؟' },
     { id: 'b8', x: 145, y: 579, w: 965, h: 25, text: 'c Pannen am Arbeitsplatz. Lesen Sie die Situationen. Was ist Ihnen auch schon passiert? Erzählen Sie.', ar: 'ج مواقف محرجة في الشغل. اقرأوا المواقف. إيه اللي حصل لكم قبل كده برضه؟ احكوا.' },
     { id: 'b9', x: 183, y: 626, w: 510, h: 24, text: '1. Sie haben einen Termin, aber Sie irren sich im Raum.', ar: '١. عندك معاد، بس اتلخبطت في الأوضة.' },

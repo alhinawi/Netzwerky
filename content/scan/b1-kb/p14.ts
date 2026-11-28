@@ -30,7 +30,6 @@ export const p14: ScanPage = {
     { id: 'b22', x: 412, y: 728, w: 592, h: 24, text: 'Im Zug bekommt man Informationen über Verspätungen und …', ar: 'في القطر بنوصلنا معلومات عن التأخيرات و…' },
     { id: 'b23', x: 188, y: 790, w: 22, h: 26, text: 'b', ar: 'ب' },
     { id: 'b24', x: 230, y: 790, w: 880, h: 30, text: 'Liz reist durch Deutschland. Lesen Sie zuerst die Aufgaben und hören Sie dann die Durchsagen.', ar: 'ليز بتسافر في ألمانيا. اقراوا المهام الأول وبعدين اسمعوا الإعلانات.' },
-    { id: 'b25', x: 48, y: 820, w: 70, h: 20, text: '1.9–12', ar: '1.9–12' },
     { id: 'b26', x: 230, y: 822, w: 250, h: 22, text: 'Lösen Sie die Aufgaben.', ar: 'حلّوا المهام.' },
     { id: 'b27', x: 229, y: 876, w: 200, h: 24, text: '1. Am Flughafen', ar: '1. في المطار' },
     { id: 'b28', x: 709, y: 878, w: 160, h: 24, text: '3. Im Zug', ar: '3. في القطر' },

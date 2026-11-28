@@ -266,13 +266,13 @@ export default function ScanReader({
   const ensureGloss = () => {
     if (gloss) return Promise.resolve(gloss)
     try {
-      const cached = localStorage.getItem('nw-gloss-v25')
+      const cached = localStorage.getItem('nw-gloss-v26')
       if (cached) { const g = JSON.parse(cached); setGloss(g); return Promise.resolve(g) }
     } catch {}
     if (!glossReq.current) {
       glossReq.current = fetch('/glossary.json').then((r) => r.json()).then((g) => {
         setGloss(g)
-        try { localStorage.setItem('nw-gloss-v25', JSON.stringify(g)) } catch {}
+        try { localStorage.setItem('nw-gloss-v26', JSON.stringify(g)) } catch {}
         return g as Record<string, string>
       }).catch(() => ({}))
     }
@@ -663,14 +663,16 @@ export default function ScanReader({
                   // a separable prefix inside a conjugation list ("ein|laden, er lädt ein, hat eingeladen")
                   // gets the verb's gloss from the piped headword, else no word gloss
                   const listVerb = isPrefix && /[|｜]/.test(w.text) ? (w.text.split(/\s+/).find((t) => /[|｜]/.test(t)) || '').replace(/[^a-zäöüßA-ZÄÖÜ]/g, '') : ''
-                  const skipWord = /^[([]/.test(tok) || suffixTok || sepPrefix || istAux || (/[0-9]/.test(tok) && (!/^[0-9]+[.,]?$/.test(tok) || compositeNum))
+                  const skipWord = /^[([][^)\]]*[)\]]$/.test(tok) || suffixTok || sepPrefix || istAux || (/[0-9]/.test(tok) && (!/^[0-9]+[.,]?$/.test(tok) || compositeNum))
                   const arRaw = skipWord
                     ? ''
                     : /^[0-9]+[.,]?$/.test(tok)
                     ? arNum(Number(tok.replace(/[^0-9]/g, '')))
                     : listVerb
                     ? glossExact(gg, listVerb) || glossStem(gg, listVerb) || ''
-                    : glossExact(gg, tok) || glossStem(gg, tok) || shortBox || ''
+                    // a number box whose own ar is the digit form wins over the
+                    // global glossary ("(ein)hundert" -> ١٠٠ here, مية in the Wortliste)
+                    : (shortBox && /^[0-9٠-٩.,]+$/.test(boxAr) ? shortBox : '') || glossExact(gg, tok) || glossStem(gg, tok) || shortBox || ''
                   // "es" alone is هو / ده; only "es gibt" means فيه
                   const arCtx = !skipWord && bareTok === 'es' ? (/es gibt|gibt es/i.test(w.text) ? 'فيه' : 'هو / ده') : arRaw
                   // stray list separators from the scan never leak into a gloss

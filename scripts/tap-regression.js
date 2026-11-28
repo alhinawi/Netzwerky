@@ -293,6 +293,21 @@ SPECS['/read/b1-kb/58/'] = [['58 achtundfünfzig', 0.5, null, 'none']]
 
 SPECS['/read/a1-kb/22/'] = [['(ein)tausendzweihundertfünfzig', 0.5, '١٢٥٠']]
 
+// K5 round 4: track ranges with dots/commas/dashes + paren number boxes
+SPECS['/read/a1-kb/22/'].push(['(ein)hundert', 0.5, '١٠٠'])
+SPECS['/read/a2-kb/77/'] = [['1,5', 0.5, null, 'none']]
+SPECS['/read/a2-kb/87/'] = [['2.6-9', 0.5, null, 'none']]
+SPECS['/read/a2-kb/91/'] = [['2.10-12', 0.5, null, 'none']]
+SPECS['/read/a2-kb/150/'].push(['2.58-59', 0.5, null, 'none'])
+SPECS['/read/a2-kb/117/'] = [['2.30–34', 0.5, null, 'none']]
+SPECS['/read/a2-kb/137/'] = [['2.47–51', 0.5, null, 'none']]
+SPECS['/read/a2-kb/44/'] = [['1.29–31', 0.5, null, 'none']]
+SPECS['/read/b1-kb/29/'] = [['1.19-21', 0.5, null, 'none']]
+SPECS['/read/b1-kb/60/'] = [['1.40-43', 0.5, null, 'none']]
+SPECS['/read/b1-kb/59/'] = [['2.12-13', 0.5, null, 'none']]
+SPECS['/read/b1-kb/14/'] = [['1.9–12', 0.5, null, 'none']]
+SPECS['/read/b1-kb/46/'] = [['1.27–29', 0.5, null, 'none']]
+
 const cases = SPECS[location.pathname]
 if (!cases) return 'no spec for ' + location.pathname
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms))

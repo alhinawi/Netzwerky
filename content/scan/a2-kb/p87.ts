@@ -27,7 +27,6 @@ export const p87: ScanPage = {
     { id: 'w17', x: 507, y: 1257, w: 634, h: 22, text: '- Überlegen Sie einen Anfang und einen Schluss für Ihre Geschichte.', ar: '- فكروا في بداية ونهاية لقصتكم.' },
     { id: 'w18', x: 118, y: 1550, w: 860, h: 36, text: 'e Schreiben Sie Ihre Geschichte. Lesen Sie die Geschichte dann den anderen Gruppen vor.', ar: 'ه اكتبوا قصتكم. اقراوها بعدين للمجموعات التانية.' },
     { id: 'au', x: 40, y: 905, w: 30, h: 26, text: '🔊', ar: 'صوت' },
-    { id: 'al', x: 40, y: 933, w: 46, h: 16, text: '2.6-9', ar: '2.6-9' },
   ],
   audio: [
   ],
@@ -61,7 +60,6 @@ export const p87: ScanPage = {
     { id: 's16', text: '- Finden Sie eine passende Reihenfolge.', ar: '- لاقوا ترتيب مناسب.', words: ['w16'] },
     { id: 's17', text: '- Überlegen Sie einen Anfang und einen Schluss für Ihre Geschichte.', ar: '- فكروا في بداية ونهاية لقصتكم.', words: ['w17'] },
     { id: 's18', text: 'e Schreiben Sie Ihre Geschichte. Lesen Sie die Geschichte dann den anderen Gruppen vor.', ar: 'ه اكتبوا قصتكم. اقراوها بعدين للمجموعات التانية.', words: ['w18'] },
-    { id: 's-al', text: '2.6-9', ar: '2.6-9', words: ['al'] },
   ],
   patches: [
     { x: 145, y: 822, w: 433, h: 42 },
