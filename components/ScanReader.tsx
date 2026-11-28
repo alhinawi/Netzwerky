@@ -263,26 +263,34 @@ export default function ScanReader({
   const ensureGloss = () => {
     if (gloss) return Promise.resolve(gloss)
     try {
-      const cached = localStorage.getItem('nw-gloss')
+      const cached = localStorage.getItem('nw-gloss-v2')
       if (cached) { const g = JSON.parse(cached); setGloss(g); return Promise.resolve(g) }
     } catch {}
     if (!glossReq.current) {
       glossReq.current = fetch('/glossary.json').then((r) => r.json()).then((g) => {
         setGloss(g)
-        try { localStorage.setItem('nw-gloss', JSON.stringify(g)) } catch {}
+        try { localStorage.setItem('nw-gloss-v2', JSON.stringify(g)) } catch {}
         return g as Record<string, string>
       }).catch(() => ({}))
     }
     return glossReq.current
   }
 
-  /** look a tapped token up, tolerating articles and plural endings */
-  const glossFor = (g: Record<string, string> | null, tok: string) => {
+  const bareKey = (tok: string) => tok.toLowerCase().replace(/[^a-zäöüß0-9-]/g, '')
+  /** exact glossary entry for a tapped token, tolerating a leading article */
+  const glossExact = (g: Record<string, string> | null, tok: string) => {
     if (!g) return null
-    const bare = tok.toLowerCase().replace(/[^a-zäöüß0-9-]/g, '')
+    const bare = bareKey(tok)
     const noArt = bare.replace(/^(der|die|das)/, '')
-    const tries = [bare, noArt, bare.replace(/(en|er|es|e|s|n)$/, ''), noArt.replace(/(en|er|es|e|s|n)$/, '')]
-    for (const k of tries) if (k && g[k]) return g[k]
+    for (const k of [bare, noArt]) if (k && g[k]) return g[k]
+    return null
+  }
+  /** last resort: the token minus a plural/verb ending */
+  const glossStem = (g: Record<string, string> | null, tok: string) => {
+    if (!g) return null
+    const bare = bareKey(tok)
+    const noArt = bare.replace(/^(der|die|das)/, '')
+    for (const k of [bare, noArt].map((k) => k.replace(/(en|er|es|e|s|n)$/, ''))) if (k && g[k]) return g[k]
     return null
   }
 
@@ -316,9 +324,10 @@ export default function ScanReader({
     let acc = 0
     for (let i = 0; i < tokens.length; i++) {
       acc += weights[i]
-      if (frac <= acc / total) return tokens[i]
+      if (frac <= acc / total) return { tok: tokens[i], idx: i, tokens }
     }
-    return tokens[tokens.length - 1]
+    const last = tokens.length - 1
+    return { tok: tokens[last], idx: last, tokens }
   }
 
   useEffect(() => {
@@ -589,19 +598,32 @@ export default function ScanReader({
               key={w.id}
               onClick={(e) => {
                 e.stopPropagation()
-                if (tab === 'word') {
-                  const rect = e.currentTarget.getBoundingClientRect()
-                  const frac = rect.width ? (e.clientX - rect.left) / rect.width : 0.5
-                  const tok = tokenAt(w.text, frac) ?? w.text
-                  speakWord(tok, w.text)
-                  const hit = glossFor(gloss, tok)
-                  if (hit) setWordHit({ text: tok, ar: hit })
-                  else {
-                    setWordHit({ text: tok, ar: '' })
-                    ensureGloss().then((g) => { const ar = glossFor(g, tok); if (ar) setWordHit({ text: tok, ar }) })
-                  }
-                } else setWordHit(null)
-                setActiveWord(activeWord === w.id ? null : w.id); playTap()
+                if (tab !== 'word') {
+                  setWordHit(null)
+                  setActiveWord(activeWord === w.id ? null : w.id)
+                  playTap()
+                  return
+                }
+                const rect = e.currentTarget.getBoundingClientRect()
+                const frac = rect.width ? (e.clientX - rect.left) / rect.width : 0.5
+                const res = tokenAt(w.text, frac)
+                // an article in front of a noun is not a tap target: use the noun after it
+                let tok = res?.tok ?? w.text
+                if (res && /^(der|die|das)$/i.test(res.tok) && res.idx < res.tokens.length - 1) tok = res.tokens[res.idx + 1]
+                speakWord(tok, w.text)
+                const hasSentence = (page.sentences ?? []).some((s) => (s.words ?? []).includes(w.id) || s.text.includes(w.text))
+                const open = (gg: Record<string, string> | null) => {
+                  // the clicked word's own entry first, then the box meaning, then a stemmed guess
+                  const boxAr = w.ar && w.ar.trim().toLowerCase() !== w.text.trim().toLowerCase() ? w.ar : ''
+                  const ar = glossExact(gg, tok) || boxAr || glossStem(gg, tok) || ''
+                  if (!ar && !hasSentence) { setWordHit(null); return false } // no gloss: show nothing
+                  setWordHit({ text: tok, ar })
+                  return true
+                }
+                const toggle = () => setActiveWord((prev) => (prev === w.id ? null : w.id))
+                if (gloss) { if (open(gloss)) toggle() }
+                else ensureGloss().then((gg) => { if (open(gg)) toggle() })
+                playTap()
               }}
               className={`absolute rounded-sm transition ${activeWord === w.id ? 'bg-amber-200/60 ring-2 ring-amber-400' : 'hover:bg-amber-100/50'}`}
               style={boxStyle(w)}
