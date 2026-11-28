@@ -26,7 +26,10 @@ for (const dir of roots) {
         if (!/[\u0600-\u06FF]/.test(meaning.replace(/\u0640/g, ''))) return
         const words = de.split(/\s+/).filter(Boolean)
         const bare = (w) => w.toLowerCase().replace(/[^a-zäöüß0-9-]/g, '')
-        const keys = [words.length === 1 ? bare(de) : de.toLowerCase()]
+        // single-word keys only for clean words: fragment boxes like
+        // 'Geschichte“?' or 'gefallen.' carry fragment translations, not word
+        // glosses, and must not pollute the glossary (PR 164 reviewer sample)
+        const keys = [words.length === 1 && /^[A-Za-zÄÖÜäöüß][A-Za-zÄÖÜäöüß-]*$/.test(de) ? bare(de) : de.toLowerCase()]
         // article + noun: index the noun on its own too ("die Zeitung" -> "zeitung")
         if (words.length === 2 && /^(der|die|das)$/i.test(words[0])) keys.push(bare(words[1]))
         for (const key of keys) {
@@ -115,6 +118,8 @@ const extra = {
   arbeitet: 'بيشتغل / بتشتغل',
   'verhältnis': 'نسبة / علاقة',
   besonderer: 'مميز / خاص',
+  geschichte: 'تاريخ / حكاية',
+  menschen: 'الناس',
 }
 for (const [k, v] of Object.entries(extra)) {
   if (!seen.has(k)) { seen.add(k); gloss[k] = v }
