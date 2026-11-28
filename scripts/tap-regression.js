@@ -24,7 +24,7 @@ const SPECS = {
   // article + noun: the noun wins (der Hafen -> الميناء)
   '/read/a1-kb/28/': [['der Hafen', 0.5, 'الميناء']],
   // official Klett glossary entry stays reachable
-  '/read/a1-kb/111/': [['Ihnen gefällt etwas sehr gut.', 0.21, 'شيئا ما ؛ بعض الشئ هل ترغب فى شئ']],
+  '/read/a1-kb/111/': [['Ihnen gefällt etwas sehr gut.', 0.21, 'حاجة / شيء ما']],
 }
 
 const cases = SPECS[location.pathname]
