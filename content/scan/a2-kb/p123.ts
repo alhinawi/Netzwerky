@@ -100,7 +100,6 @@ export const p123: ScanPage = {
     { id: 'e1', x: 147, y: 1626, w: 754, h: 21, text: 'Geben Sie Ihre Geschichte einem Partner / einer Partnerin. Er/Sie vergleicht', ar: 'ادّي قصتك لزميل / زميلة. هو/هي بيقارن' },
     { id: 'e2', x: 147, y: 1651, w: 607, h: 24, text: 'mit der Checkliste. Hat er/sie noch Verbesserungsvorschläge?', ar: 'بقايمة التحقق. عنده/عندها اقتراحات تحسين تانية؟' },
     { id: 'pw', x: 870, y: 1704, w: 241, h: 13, text: 'einhundertdreiundzwanzig', ar: 'مية وتلاتة وعشرين' },
-    { id: 'pg', x: 1123, y: 1693, w: 36, h: 28, text: '123', ar: 'صفحة 123' },
   ],
   audio: [
   ],

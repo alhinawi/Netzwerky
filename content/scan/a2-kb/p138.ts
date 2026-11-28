@@ -74,7 +74,6 @@ export const p138: ScanPage = {
     { id: 'mE1', x: 810, y: 1515, w: 332, h: 26, text: 'Für die Übernachtung müssen wir', ar: 'للمبيت مش لازم' },
     { id: 'mE2', x: 810, y: 1545, w: 342, h: 26, text: 'nichts mitbringen, oder? Sollen wir', ar: 'نجيب حاجة، صح؟ نجيب' },
     { id: 'mE3', x: 810, y: 1575, w: 338, h: 24, text: 'deinen Freunden etwas schenken?', ar: 'لأصحابك هدية؟' },
-    { id: 'pg', x: 95, y: 1680, w: 36, h: 30, text: '138', ar: 'صفحة 138' },
     { id: 'pgw', x: 145, y: 1685, w: 228, h: 30, text: 'einhundertachtunddreißig', ar: 'مية وتمانية وتلاتين' },
   ],
   audio: [

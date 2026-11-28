@@ -76,7 +76,6 @@ export const p33: ScanPage = {
     { id: 'b66', x: 186, y: 1484, w: 949, h: 25, text: 'Suchen und notieren Sie fünf Wörter mit mindestens drei Konsonanten hintereinander. Tauschen Sie die', ar: 'دوّروا واكتبوا خمس كلمات فيها على الأقل تلات حروف ساكنة ورا بعض. تبادلوا الـ' },
     { id: 'b67', x: 186, y: 1515, w: 644, h: 22, text: 'Wörter mit einem Partner / einer Partnerin und sprechen Sie sie laut.', ar: 'كلمات مع زميل أو زميلة وانطقوها بصوت عالي.' },
     { id: 'b68', x: 969, y: 1578, w: 135, h: 20, text: 'dreiunddreißig', ar: 'تلاتة وتلاتين' },
-    { id: 'b69', x: 1109, y: 1578, w: 26, h: 20, text: '33', ar: '٣٣' },
   ],
   audio: [],
   fields: [],

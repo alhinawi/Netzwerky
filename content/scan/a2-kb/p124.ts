@@ -67,7 +67,6 @@ export const p124: ScanPage = {
     { id: 'f1', x: 227, y: 1551, w: 867, h: 49, text: 'Ein neuer Mitbewohner / Eine neue Mitbewohnerin. Was ist für Sie besonders wichtig?', ar: 'مُشارك سكن جديد / مُشاركة سكن جديدة. إيه المهم بالنسبة لك بشكل خاص؟' },
     { id: 'f2', x: 227, y: 1579, w: 247, h: 14, text: 'Sprechen Sie in Gruppen.', ar: 'اتكلموا في مجموعات.' },
     { id: 'g', x: 545, y: 1633, w: 279, h: 27, text: 'Für mich ist wichtig, dass …', ar: 'المهم بالنسبة لي إن …' },
-    { id: 'pg', x: 100, y: 1693, w: 28, h: 28, text: '124', ar: 'صفحة 124' },
     { id: 'pw', x: 150, y: 1705, w: 236, h: 13, text: 'einhundertvierundzwanzig', ar: 'مية وأربعة وعشرين' },
   ],
   audio: [

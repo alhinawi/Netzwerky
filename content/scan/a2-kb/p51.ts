@@ -64,7 +64,6 @@ export const p51: ScanPage = {
     { id: 'w53', x: 148, y: 1592, w: 232, h: 32, text: 'an einem anderen Ort.', ar: 'في مكان تاني.' },
     { id: 'w54', x: 148, y: 1630, w: 980, h: 55, text: 'Hängen Sie alle Texte auf. Gehen Sie durch den Kursraum, lesen Sie drei Texte und tauschen Sie sich', ar: 'علّقوا كل النصوص. امشوا في الفصل، اقرؤوا تلات نصوص وتبادلوا' },
     { id: 'w55', x: 148, y: 1685, w: 484, h: 35, text: 'mit anderen Personen über die Erfahrungen aus.', ar: 'الكلام مع ناس تانيين عن التجارب.' },
-    { id: 'w56', x: 995, y: 1698, w: 177, h: 30, text: 'einundfünfzig 51', ar: 'واحد وخمسين ٥١' },
   ],
   audio: [
   ],
@@ -123,7 +122,6 @@ export const p51: ScanPage = {
     { id: 's-w53', text: 'an einem anderen Ort.', ar: 'في مكان تاني.', words: ['w53'] },
     { id: 's-w54', text: 'Hängen Sie alle Texte auf. Gehen Sie durch den Kursraum, lesen Sie drei Texte und tauschen Sie sich', ar: 'علّقوا كل النصوص. امشوا في الفصل، اقرؤوا تلات نصوص وتبادلوا', words: ['w54'] },
     { id: 's-w55', text: 'mit anderen Personen über die Erfahrungen aus.', ar: 'الكلام مع ناس تانيين عن التجارب.', words: ['w55'] },
-    { id: 's-w56', text: 'einundfünfzig 51', ar: 'واحد وخمسين ٥١', words: ['w56'] },
   ],
   groups: [],
 }

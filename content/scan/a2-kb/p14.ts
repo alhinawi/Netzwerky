@@ -63,7 +63,6 @@ export const p14: ScanPage = {
     { id: 'b53', x: 184, y: 1601, w: 16, h: 28, text: 'f', ar: 'و' },
     { id: 'b54', x: 220, y: 1598, w: 990, h: 70, text: 'Recherchieren Sie: Welche besonderen Restaurants gibt es bei Ihnen? Stellen Sie Ihre Ergebnisse im', ar: 'ابحثوا: إيه المطاعم المميزة عندكم؟ اعرضوا نتايجكم في' },
     { id: 'b55', x: 221, y: 1630, w: 74, h: 28, text: 'Kurs vor.', ar: 'الفصل.' },
-    { id: 'b56', x: 94, y: 1691, w: 26, h: 28, text: '14', ar: '١٤' },
     { id: 'b57', x: 144, y: 1691, w: 77, h: 28, text: 'vierzehn', ar: 'أربعتاشر' },
   ],
   audio: [

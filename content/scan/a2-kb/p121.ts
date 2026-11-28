@@ -115,7 +115,6 @@ export const p121: ScanPage = {
     { id: 'n9c', x: 100, y: 1654, w: 26, h: 28, text: 'c', ar: 'ج' },
     { id: 'c9', x: 144, y: 1648, w: 690, h: 20, text: 'Lesen Sie die Sätze in 9a und b laut und achten Sie auf die Betonung.', ar: 'اقرا الجمل في 9a و b بصوت عالي وانتبه للنبرة.' },
     { id: 'pw', x: 872, y: 1700, w: 232, h: 13, text: 'einhunderteinundzwanzig', ar: 'مية وواحد وعشرين' },
-    { id: 'pg', x: 1118, y: 1693, w: 36, h: 28, text: '121', ar: '121' },
   ],
   audio: [
   ],

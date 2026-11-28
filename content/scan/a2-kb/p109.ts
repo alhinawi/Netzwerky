@@ -24,7 +24,6 @@ export const p109: ScanPage = {
     { id: 'w14', x: 80, y: 1245, w: 760, h: 185, text: 'Akkusativ = Pronomen → Akkusativ vor Dativ | Nominativ: Wer? | Verb | Akkusativ: Was? | Dativ: Wem? | Die Regeln? Wir erklären sie den Gästen. | Die Helme? Wir leihen sie euch. | Sache | Person', ar: 'أكوزاتيف = ضمير ← أكوزاتيف قبل داتيف | نوميناتيف: مين؟ | فعل | أكوزاتيف: إيه؟ | داتيف: لمين؟ | القواعد؟ بنشرحها للضيوف. | الخوذ؟ بنعيرها ليكم. | حاجة | شخص' },
     { id: 'w15', x: 80, y: 1432, w: 780, h: 36, text: '! Der Akkusativ muss nicht immer eine Sache sein: Ich stelle dir meine Freunde vor.', ar: '! الأكوزاتيف مش لازم دايماً يكون حاجة: بقدملك صحابي.' },
     { id: 'w16', x: 78, y: 1470, w: 990, h: 80, text: 'weitere Verben: einer Person etwas bringen, empfehlen, geben, schenken, schicken, vorlesen, vorschlagen, vorstellen, wünschen, zeigen …', ar: 'أفعال كمان: توصل حاجة لشخص، تنصح، تدي، تهدي، تبعت، تقرا بصوت عالي، تقترح، تعرّف، تتمنى، توري …' },
-    { id: 'w17', x: 920, y: 1610, w: 190, h: 30, text: 'einhundertneun 109', ar: '١٠٩ مية وتسعة' },
   ],
   audio: [
   ],
@@ -51,7 +50,6 @@ export const p109: ScanPage = {
     { id: 's14', text: 'Akkusativ = Pronomen → Akkusativ vor Dativ | Nominativ: Wer? | Verb | Akkusativ: Was? | Dativ: Wem? | Die Regeln? Wir erklären sie den Gästen. | Die Helme? Wir leihen sie euch. | Sache | Person', ar: 'أكوزاتيف = ضمير ← أكوزاتيف قبل داتيف | نوميناتيف: مين؟ | فعل | أكوزاتيف: إيه؟ | داتيف: لمين؟ | القواعد؟ بنشرحها للضيوف. | الخوذ؟ بنعيرها ليكم. | حاجة | شخص', words: ['w14'] },
     { id: 's15', text: '! Der Akkusativ muss nicht immer eine Sache sein: Ich stelle dir meine Freunde vor.', ar: '! الأكوزاتيف مش لازم دايماً يكون حاجة: بقدملك صحابي.', words: ['w15'] },
     { id: 's16', text: 'weitere Verben: einer Person etwas bringen, empfehlen, geben, schenken, schicken, vorlesen, vorschlagen, vorstellen, wünschen, zeigen …', ar: 'أفعال كمان: توصل حاجة لشخص، تنصح، تدي، تهدي، تبعت، تقرا بصوت عالي، تقترح، تعرّف، تتمنى، توري …', words: ['w16'] },
-    { id: 's17', text: 'einhundertneun 109', ar: '١٠٩ مية وتسعة', words: ['w17'] },
   ],
   patches: [
   ],

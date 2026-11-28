@@ -69,7 +69,6 @@ export const p46: ScanPage = {
     { id: 'k4', x: 822, y: 1615, w: 343, h: 37, text: '4. Wenn das Wetter schön ist, …', ar: '٤. لما الجو يكون حلو، …' },
     { id: 'k5', x: 825, y: 1650, w: 275, h: 32, text: '5. Ich bin traurig, wenn …', ar: '٥. أنا حزين لما …' },
     { id: 'k6', x: 825, y: 1678, w: 303, h: 40, text: '6. Wenn …, muss ich lachen.', ar: '٦. لما …، لازم أضحك.' },
-    { id: 'pn', x: 98, y: 1705, w: 28, h: 26, text: '46', ar: '٤٦' },
     { id: 'pt', x: 148, y: 1708, w: 142, h: 25, text: 'sechsundvierzig', ar: '٤٦' },
   ],
   audio: [

@@ -71,7 +71,6 @@ export const p47: ScanPage = {
     { id: 'b61', x: 832, y: 1518, w: 260, h: 22, text: '3. Das war keine Absicht.', ar: '٣. مكانش قصدي.' },
     { id: 'b62', x: 860, y: 1544, w: 150, h: 22, text: 'Kein Problem.', ar: 'مفيش مشكلة.' },
     { id: 'b63', x: 947, y: 1586, w: 145, h: 22, text: 'siebenundvierzig', ar: 'سبعة وأربعين' },
-    { id: 'b64', x: 1109, y: 1586, w: 28, h: 22, text: '47', ar: '٤٧' },
   ],
   audio: [],
   fields: [],

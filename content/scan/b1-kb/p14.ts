@@ -56,7 +56,6 @@ export const p14: ScanPage = {
     { id: 'b46', x: 48, y: 1485, w: 40, h: 18, text: '1.13', ar: '1.13' },
     { id: 'b47', x: 224, y: 1485, w: 930, h: 26, text: 'die Straßenbahn und hören eine Durchsage. Fassen Sie den Inhalt der Durchsage für ihn/sie in Ihrer', ar: 'الترام وبتسمعوا إعلان. لخّصوا محتوى الإعلان ليه/لها' },
     { id: 'b48', x: 224, y: 1512, w: 185, h: 20, text: 'Sprache zusammen.', ar: 'بلغتكم.' },
-    { id: 'b49', x: 102, y: 1578, w: 30, h: 17, text: '14', ar: '١٤' },
     { id: 'b50', x: 140, y: 1578, w: 80, h: 17, text: 'vierzehn', ar: 'أربعتاشر' },
   ],
   audio: [],

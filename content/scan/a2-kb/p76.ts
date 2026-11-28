@@ -65,7 +65,6 @@ export const p76: ScanPage = {
     { id: 'w53', x: 458, y: 1603, w: 140, h: 30, text: 'schlafen gehen', ar: 'يروح ينام' },
     { id: 'w54', x: 788, y: 1586, w: 322, h: 34, text: 'Wenn ich die Geldbörse verliere,', ar: 'لو ضيّعت المحفظة،' },
     { id: 'w55', x: 828, y: 1616, w: 242, h: 34, text: 'dann gehe ich schlafen.', ar: 'هروح أنام.' },
-    { id: 'w56', x: 100, y: 1662, w: 25, h: 30, text: '76', ar: '٧٦' },
     { id: 'w57', x: 152, y: 1662, w: 140, h: 30, text: 'sechsundsiebzig', ar: 'ستة وسبعين' },
   ],
   audio: [

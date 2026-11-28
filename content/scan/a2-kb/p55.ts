@@ -20,7 +20,6 @@ export const p55: ScanPage = {
     { id: 'w10', x: 677, y: 1557, w: 349, h: 24, text: 'Eine Stadt braucht eine Feuerwehr.', ar: 'المدينة محتاجة فرقة مطافي.' },
     { id: 'w11', x: 755, y: 1588, w: 191, h: 22, text: 'Und Parks, denn …', ar: 'وحدائق، لأن …' },
     { id: 'w12', x: 987, y: 1696, w: 138, h: 20, text: 'fünfundfünfzig', ar: 'خمسة وخمسين' },
-    { id: 'w13', x: 1146, y: 1693, w: 29, h: 21, text: '55', ar: '٥٥' },
   ],
   audio: [
     { id: 'a1040', x: 30, y: 1225, w: 36, h: 36, src: ['NWn_A2_KB_Audio_1-040.mp3', 'NWn_A2_KB_Audio_1-041.mp3', 'NWn_A2_KB_Audio_1-042.mp3'], label: 'Aufgabe 1c (1.40-42)' },
@@ -43,7 +42,6 @@ export const p55: ScanPage = {
     { id: 's8', text: 'Ich finde eine Universität sehr wichtig. Da können die Leute studieren und …', ar: 'أنا شايف إن الجامعة مهمة جدًا. هناك الناس يقدروا يدرسوا و …', words: ['w8', 'w9'] },
     { id: 's9', text: 'Eine Stadt braucht eine Feuerwehr. Und Parks, denn …', ar: 'المدينة محتاجة فرقة مطافي. وحدائق، لأن …', words: ['w10', 'w11'] },
     { id: 's10', text: 'fünfundfünfzig', ar: 'خمسة وخمسين', words: ['w12'] },
-    { id: 's11', text: '55', ar: '٥٥', words: ['w13'] },
   ],
   patches: [
   ],

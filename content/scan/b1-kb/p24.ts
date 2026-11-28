@@ -62,7 +62,6 @@ export const p24: ScanPage = {
     { id: 'b52', x: 741, y: 1446, w: 240, h: 21, text: 'Ich finde sie unmodern/…', ar: 'أنا شايفه قديم/...' },
     { id: 'b53', x: 740, y: 1473, w: 360, h: 22, text: 'Ich mag bei dieser Werbung das Foto /', ar: 'أنا مش عاجبني في الإعلان ده الصورة /' },
     { id: 'b54', x: 763, y: 1500, w: 240, h: 22, text: 'die Farbe / den Text nicht.', ar: 'اللون / النص.' },
-    { id: 'b55', x: 98, y: 1580, w: 24, h: 16, text: '24', ar: '٢٤' },
     { id: 'b56', x: 146, y: 1583, w: 130, h: 18, text: 'vierundzwanzig', ar: 'أربعة وعشرين' },
   ],
   audio: [],

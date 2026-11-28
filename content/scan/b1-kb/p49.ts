@@ -65,7 +65,6 @@ export const p49: ScanPage = {
     { id: 'b55', x: 167, y: 1481, w: 150, h: 22, text: 'warten auf | ...', ar: 'ينتظر | ...' },
     { id: 'b56', x: 158, y: 1526, w: 725, h: 26, text: '1. Ich ärgere mich darüber, dass ich noch keine Stelle gefunden habe.', ar: '١. أنا متنرفز بسبب إني لسه ملقتش وظيفة.' },
     { id: 'b57', x: 942, y: 1590, w: 130, h: 22, text: 'neunundvierzig', ar: 'تسعة وأربعين' },
-    { id: 'b58', x: 1109, y: 1590, w: 28, h: 22, text: '49', ar: '٤٩' },
   ],
   audio: [],
   fields: [],

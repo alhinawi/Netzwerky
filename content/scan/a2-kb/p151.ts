@@ -45,7 +45,6 @@ export const p151: ScanPage = {
     { id: 'w34', x: 475, y: 1359, w: 318, h: 295, text: 'Ruck-Pauquèt war Zahnarzthelferin, hat in einem Modesalon gearbeitet und auch andere Berufe gehabt. Sie hat schon als Jugendliche geschrieben. Sie lebte lange in Bad Tölz und hat viele Kinderbücher, Gedichte und Hörspiele geschrieben. Die meisten Geschichten erzählen vom Anderssein.', ar: 'روك-باوكيه كانت مساعدة طبيب أسنان واشتغلت في صالون أزياء ومهن تانية. بدأت تكتب وهي مراهقة. عاشت فترة طويلة في باد تولتس وكتبت كتب أطفال وقصايد ومسرحيات إذاعية كتير. أغلب قصصها عن الاختلاف.' },
     { id: 'w35', x: 837, y: 1326, w: 318, h: 30, text: 'Franz Hohler (*1943)', ar: 'فرانتس هوهلر (مواليد ١٩٤٣)' },
     { id: 'w36', x: 828, y: 1356, w: 338, h: 221, text: 'Hohler kommt aus Biel in der Schweiz und lebt als Kabarettist und Schriftsteller in Zürich. Er schreibt auch Lieder und spielt gerne Cello auf der Bühne. Er hat schon viele Preise bekommen, z. B. den Salzburger Stier oder den Solothurner Literaturpreis.', ar: 'هوهلر من بيل في سويسرا وعايش في زيورخ كفنان كوميدي وكاتب. بيكتب أغاني كمان وبيحب يعزف التشيلو على المسرح. خد جوايز كتير، زي Salzburger Stier وجايزة Solothurner الأدبية.' },
-    { id: 'w37', x: 884, y: 1685, w: 331, h: 30, text: 'einhunderteinundfünfzig 151', ar: '١٥١ مية وواحد وخمسين' },
   ],
   audio: [
   ],
@@ -89,7 +88,6 @@ export const p151: ScanPage = {
     { id: 's34', text: 'Ruck-Pauquèt war Zahnarzthelferin, hat in einem Modesalon gearbeitet und auch andere Berufe gehabt. Sie hat schon als Jugendliche geschrieben. Sie lebte lange in Bad Tölz und hat viele Kinderbücher, Gedichte und Hörspiele geschrieben. Die meisten Geschichten erzählen vom Anderssein.', ar: 'روك-باوكيه كانت مساعدة طبيب أسنان واشتغلت في صالون أزياء ومهن تانية. بدأت تكتب وهي مراهقة. عاشت فترة طويلة في باد تولتس وكتبت كتب أطفال وقصايد ومسرحيات إذاعية كتير. أغلب قصصها عن الاختلاف.', words: ['w34'] },
     { id: 's35', text: 'Franz Hohler (*1943)', ar: 'فرانتس هوهلر (مواليد ١٩٤٣)', words: ['w35'] },
     { id: 's36', text: 'Hohler kommt aus Biel in der Schweiz und lebt als Kabarettist und Schriftsteller in Zürich. Er schreibt auch Lieder und spielt gerne Cello auf der Bühne. Er hat schon viele Preise bekommen, z. B. den Salzburger Stier oder den Solothurner Literaturpreis.', ar: 'هوهلر من بيل في سويسرا وعايش في زيورخ كفنان كوميدي وكاتب. بيكتب أغاني كمان وبيحب يعزف التشيلو على المسرح. خد جوايز كتير، زي Salzburger Stier وجايزة Solothurner الأدبية.', words: ['w36'] },
-    { id: 's37', text: 'einhunderteinundfünfzig 151', ar: '١٥١ مية وواحد وخمسين', words: ['w37'] },
   ],
   patches: [
   ],

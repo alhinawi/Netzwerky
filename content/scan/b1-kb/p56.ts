@@ -67,7 +67,6 @@ export const p56: ScanPage = {
     { id: 'b57', x: 216, y: 1456, w: 477, h: 21, text: '3. Von Hand zu spülen ist am umweltfreundlichsten.', ar: '٣. الغسيل بالإيد هو الأصدق للبيئة.' },
     { id: 'b58', x: 215, y: 1483, w: 646, h: 22, text: '4. Gedruckte Bücher haben immer eine bessere Ökobilanz als E-Books.', ar: '٤. الكتب المطبوعة دايما ميزانيتها البيئية أحسن من الكتب الإلكترونية.' },
     { id: 'b59', x: 216, y: 1510, w: 647, h: 26, text: '5. Am besten kauft man das Getränk mit dem kürzesten Transportweg.', ar: '٥. الأفضل تشتري المشروب اللي طريق نقله أقصر.' },
-    { id: 'b60', x: 94, y: 1575, w: 22, h: 16, text: '56', ar: '٥٦' },
     { id: 'b61', x: 141, y: 1578, w: 134, h: 18, text: 'sechsundfünfzig', ar: 'ستة وخمسين' },
   ],
   audio: [],

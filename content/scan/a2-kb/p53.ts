@@ -123,7 +123,6 @@ export const p53: ScanPage = {
     { id: 'w112', x: 378, y: 1526, w: 655, h: 30, text: 'sich entscheiden, sich entschuldigen, sich erinnern, sich langweilen,', ar: 'يقرر، يعتذر، يتذكر، يزهق،' },
     { id: 'w113', x: 378, y: 1557, w: 627, h: 30, text: 'sich streiten, sich treffen, sich unterhalten, sich verabschieden …', ar: 'يتخانق، يتقابل، يتحادث، يودّع …' },
     { id: 'w114', x: 980, y: 1697, w: 132, h: 30, text: 'dreiundfünfzig', ar: 'ثلاثة وخمسين' },
-    { id: 'w115', x: 1133, y: 1697, w: 29, h: 30, text: '53', ar: '٥٣' },
   ],
   audio: [
   ],

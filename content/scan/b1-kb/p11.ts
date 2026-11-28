@@ -84,7 +84,6 @@ export const p11: ScanPage = {
     { id: 'b74', x: 725, y: 1489, w: 135, h: 22, text: 'Vollpension/…', ar: 'إقامة كاملة/…' },
     { id: 'b75', x: 702, y: 1515, w: 239, h: 22, text: 'Gut, dann buchen wir das.', ar: 'تمام، يبقى هنحجز ده.' },
     { id: 'b76', x: 1065, y: 1579, w: 32, h: 18, text: 'elf', ar: 'حداشر' },
-    { id: 'b77', x: 1118, y: 1579, w: 20, h: 18, text: '11', ar: '١١' },
   ],
   audio: [],
   fields: [],

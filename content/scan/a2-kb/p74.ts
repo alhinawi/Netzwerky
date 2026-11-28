@@ -86,7 +86,6 @@ export const p74: ScanPage = {
     { id: 'w74', x: 1013, y: 1582, w: 127, h: 30, text: 'drei Möglich-', ar: 'احتمالات.' },
     { id: 'w75', x: 1013, y: 1615, w: 62, h: 30, text: 'keiten.', ar: '.' },
     { id: 'w76', x: 1013, y: 1677, w: 30, h: 34, text: 'B', ar: 'B' },
-    { id: 'w77', x: 92, y: 1665, w: 24, h: 30, text: '74', ar: '٧٤' },
     { id: 'w78', x: 142, y: 1667, w: 123, h: 30, text: 'vierundsiebzig', ar: 'أربعة وسبعين' },
   ],
   audio: [

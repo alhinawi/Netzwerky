@@ -54,7 +54,6 @@ export const p25: ScanPage = {
     { id: 'bu1', x: 440, y: 1567, w: 438, h: 34, text: 'In unserer Traumschule kann man die Fächer', ar: 'في مدرسة أحلامنا نقدر نختار المواد' },
     { id: 'bu2', x: 457, y: 1597, w: 404, h: 29, text: 'frei wählen. Der Unterricht beginnt um …', ar: 'بحرية. الدرس بيبدأ الساعة …' },
     { id: 'fw', x: 982, y: 1674, w: 141, h: 25, text: 'fünfundzwanzig', ar: 'خمسة وعشرين' },
-    { id: 'fn', x: 1147, y: 1672, w: 26, h: 26, text: '25', ar: '٢٥' },
   ],
   audio: [
   ],

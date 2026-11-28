@@ -79,7 +79,6 @@ export const p51: ScanPage = {
     { id: 'b69', x: 187, y: 1521, w: 882, h: 28, text: 'Berichten Sie von den wichtigsten Tipps für ein Vorstellungsgespräch auf Deutsch oder in Ihrer', ar: 'احكوا عن أهم نصايح الإنترفيو بالألماني أو' },
     { id: 'b70', x: 186, y: 1558, w: 80, h: 20, text: 'Sprache.', ar: 'بلغتكم.' },
     { id: 'b71', x: 976, y: 1574, w: 120, h: 21, text: 'einundfünfzig', ar: 'واحد وخمسين' },
-    { id: 'b72', x: 1115, y: 1574, w: 28, h: 21, text: '51', ar: '٥١' },
   ],
   audio: [],
   fields: [],

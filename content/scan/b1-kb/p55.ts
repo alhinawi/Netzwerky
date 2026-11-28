@@ -40,7 +40,6 @@ export const p55: ScanPage = {
     { id: 'b30', x: 147, y: 1358, w: 900, h: 30, text: '3 Wie umweltfreundlich leben Sie? Recherchieren Sie den Begriff „ökologischer Fußabdruck“.', ar: '٣ عايشين قد إيه بشكل صديق للبيئة؟ ابحثوا عن مصطلح "البصمة البيئية".' },
     { id: 'b31', x: 191, y: 1389, w: 801, h: 26, text: 'Berechnen Sie Ihren ökologischen Fußabdruck. Berichten und vergleichen Sie im Kurs.', ar: 'احسبوا بصمتكم البيئية. احكوا وقارنوا في الكورس.' },
     { id: 'b32', x: 973, y: 1575, w: 130, h: 20, text: 'fünfundfünfzig', ar: 'خمسة وخمسين' },
-    { id: 'b33', x: 1113, y: 1575, w: 28, h: 20, text: '55', ar: '٥٥' },
   ],
   audio: [],
   fields: [],

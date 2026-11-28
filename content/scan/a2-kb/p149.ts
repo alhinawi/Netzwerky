@@ -52,7 +52,6 @@ export const p149: ScanPage = {
     { id: 'tr6a', x: 45, y: 1408, w: 50, h: 26, text: '2.56', ar: 'المسار 2.56' },
     { id: 'ic6b', x: 48, y: 1500, w: 30, h: 30, text: '🔊', ar: 'صوت' },
     { id: 'tr6b', x: 45, y: 1535, w: 50, h: 26, text: '2.57', ar: 'المسار 2.57' },
-    { id: 'w40', x: 892, y: 1692, w: 362, h: 31, text: 'einhundertneunundvierzig 149', ar: '١٤٩ مية وتسعة وأربعين' },
   ],
   audio: [
   ],
@@ -99,7 +98,6 @@ export const p149: ScanPage = {
     { id: 's37', text: 'dem Hören Informationen über Mozart recherchieren.', ar: 'الاستماع تدوّروا على معلومات عن موتسارت.', words: ['w37'] },
     { id: 's38', text: 'Gezieltes Hören', ar: 'استماع مركّز', words: ['w38'] },
     { id: 's39', text: 'Hören Sie und überlegen Sie dann: Was ist für Ihren Freund / Ihre Freundin interessant? Hören Sie dann noch einmal genau und notieren Sie die passenden Informationen.', ar: 'اسمعوا وفكروا: إيه المهم لصاحبكم؟ اسمعوا تاني بتركيز وسجلوا المعلومات المناسبة.', words: ['w39'] },
-    { id: 's40', text: 'einhundertneunundvierzig 149', ar: '١٤٩ مية وتسعة وأربعين', words: ['w40'] },
   ],
   patches: [
   ],

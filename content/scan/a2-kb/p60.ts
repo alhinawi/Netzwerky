@@ -42,7 +42,6 @@ export const p60: ScanPage = {
     { id: 'w32', x: 945, y: 1613, w: 293, h: 40, text: 'Dort gibt es auch viele Bilder', ar: 'هناك كمان لوحات كتير' },
     { id: 'w33', x: 946, y: 1654, w: 253, h: 28, text: 'von Egon Schiele und anderen', ar: 'لإيجون شيله وغيره من' },
     { id: 'w34', x: 946, y: 1654, w: 253, h: 28, text: 'österreichischen Malern.', ar: 'الرسامين النمساويين.' },
-    { id: 'w35', x: 98, y: 1699, w: 30, h: 21, text: '60', ar: '٦٠' },
     { id: 'w36', x: 149, y: 1701, w: 71, h: 21, text: 'sechzig', ar: 'ستين' },
   ],
   audio: [
@@ -85,7 +84,6 @@ export const p60: ScanPage = {
     { id: 's32', text: 'Dort gibt es auch viele Bilder', ar: 'هناك كمان لوحات كتير', words: ['w32'] },
     { id: 's33', text: 'von Egon Schiele und anderen', ar: 'لإيجون شيله وغيره من', words: ['w33'] },
     { id: 's34', text: 'österreichischen Malern.', ar: 'الرسامين النمساويين.', words: ['w34'] },
-    { id: 's35', text: '60', ar: '٦٠', words: ['w35'] },
     { id: 's36', text: 'sechzig', ar: 'ستين', words: ['w36'] },
   ],
   patches: [

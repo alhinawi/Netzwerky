@@ -9,7 +9,6 @@ export const p171: ScanPage = {
   height: 1755,
   words: [
     { id: 'w1', x: 804, y: 50, w: 237, h: 31, text: 'alphabetische Wortliste', ar: 'قايمة الكلمات الأبجدية' },
-    { id: 'w2', x: 891, y: 1687, w: 320, h: 31, text: 'einhunderteinundsiebzig 171', ar: '١٧١ مية وواحد وسبعين' },
     { id: 'w3', x: 11, y: 136, w: 365, h: 25, text: 'Musikfestival, das, -s 12/3a', ar: 'مهرجان موسيقى' },
     { id: 'w4', x: 11, y: 163, w: 365, h: 25, text: 'Musikstil, der, -e 12/6b', ar: 'نوع موسيقى' },
     { id: 'w5', x: 11, y: 192, w: 365, h: 25, text: 'Nachrichtensprecher, der, - 12/7a', ar: 'مذيع أخبار' },
@@ -182,7 +181,6 @@ export const p171: ScanPage = {
   groups: [],
   sentences: [
     { id: 's1', text: 'alphabetische Wortliste', ar: 'قايمة الكلمات الأبجدية', words: ['w1'] },
-    { id: 's2', text: 'einhunderteinundsiebzig 171', ar: '١٧١ مية وواحد وسبعين', words: ['w2'] },
     { id: 's3', text: 'Musikfestival, das, -s 12/3a', ar: 'مهرجان موسيقى', words: ['w3'] },
     { id: 's4', text: 'Musikstil, der, -e 12/6b', ar: 'نوع موسيقى', words: ['w4'] },
     { id: 's5', text: 'Nachrichtensprecher, der, - 12/7a', ar: 'مذيع أخبار', words: ['w5'] },

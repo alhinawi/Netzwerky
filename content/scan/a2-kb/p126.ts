@@ -30,7 +30,6 @@ export const p126: ScanPage = {
     { id: 'w19', x: 225, y: 1560, w: 130, h: 30, text: 'Mit 47 Jahren:', ar: 'في سن ٤٧ سنة:' },
     { id: 'w20', x: 225, y: 1603, w: 130, h: 30, text: 'Mit 69 Jahren:', ar: 'في سن ٦٩ سنة:' },
     { id: 'w21', x: 510, y: 1650, w: 415, h: 30, text: 'Als Michael Klein 10 Jahre alt war, hat er …', ar: 'لما مايكل كلاين كان عنده ١٠ سنين، كان …' },
-    { id: 'w22', x: 100, y: 1690, w: 37, h: 30, text: '126', ar: '١٢٦' },
     { id: 'w23', x: 148, y: 1690, w: 245, h: 30, text: 'einhundertsechsundzwanzig', ar: 'مية وستة وعشرين' },
   ],
   audio: [

@@ -27,7 +27,7 @@ export const p27: ScanPage = {
     { id: 'kr1', x: 640, y: 425, w: 297, h: 26, text: 'Das ist interessant, denn ich …', ar: 'ده مثير للاهتمام، لأني …' },
     { id: 'kr2', x: 640, y: 455, w: 272, h: 26, text: 'Das überrascht mich, weil …', ar: 'ده بيفاجئني، لأن …' },
     { id: 'h3', x: 80, y: 509, w: 211, h: 28, text: 'seine Meinung sagen', ar: 'تقول رأيك' },
-    { id: 'h4', x: 536, y: 513, w: 107, h: 27, text: 'zustimmen', ar: 'توافق' },
+    { id: 'h4', x: 536, y: 513, w: 107, h: 27, text: 'zustimmen', ar: 'يوافق / يؤيد' },
     { id: 'h5', x: 848, y: 511, w: 91, h: 28, text: 'ablehnen', ar: 'ترفض' },
     { id: 'm0', x: 82, y: 541, w: 360, h: 26, text: 'Ich finde … (nicht) gut/schlecht/toll.', ar: 'أنا شايف … (مش) كويس/وحش/رائع.' },
     { id: 'm1', x: 82, y: 570, w: 231, h: 26, text: 'Das ist meine Meinung.', ar: 'ده رأيي.' },
@@ -125,7 +125,6 @@ export const p27: ScanPage = {
     { id: 'pr2', x: 585, y: 1472, w: 423, h: 26, text: 'Kann man in deiner Schule Abitur machen?', ar: 'ينفع تعمل أبيتور في مدرستك؟' },
     { id: 'pr3', x: 585, y: 1498, w: 506, h: 26, text: 'Im Sommer fahrt ihr mit euren Freunden nach Berlin.', ar: 'في الصيف هتسافروا مع أصحابكم برلين.' },
     { id: 'fw', x: 953, y: 1688, w: 160, h: 26, text: 'siebenundzwanzig', ar: 'سبعة وعشرين' },
-    { id: 'fn', x: 1138, y: 1686, w: 26, h: 26, text: '27', ar: '٢٧' },
   ],
   audio: [
   ],

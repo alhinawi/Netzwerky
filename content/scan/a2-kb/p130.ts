@@ -80,7 +80,7 @@ export const p130: ScanPage = {
     { id: 'w69', x: 880, y: 1258, w: 259, h: 30, text: 'Wir könnten doch auch ...', ar: 'ممكن كمان نـ ...' },
     { id: 'w70', x: 880, y: 1288, w: 263, h: 30, text: 'Ich habe eine andere Idee:', ar: 'عندي فكرة تانية:' },
     { id: 'w71', x: 908, y: 1317, w: 121, h: 30, text: 'Vielleicht ...', ar: 'يمكن ...' },
-    { id: 'w72', x: 257, y: 1343, w: 106, h: 30, text: 'zustimmen', ar: 'نوافق' },
+    { id: 'w72', x: 257, y: 1343, w: 106, h: 30, text: 'zustimmen', ar: 'يوافق / يؤيد' },
     { id: 'w73', x: 257, y: 1367, w: 97, h: 30, text: 'Klar, gern.', ar: 'طبعاً، بسرور.' },
     { id: 'w74', x: 257, y: 1396, w: 188, h: 30, text: 'Ich finde, ... ist gut.', ar: 'شايف إن ... كويس.' },
     { id: 'w75', x: 257, y: 1425, w: 125, h: 30, text: 'Ja, das passt!', ar: 'أيوه، ده مناسب!' },
@@ -98,7 +98,6 @@ export const p130: ScanPage = {
     { id: 'w87', x: 190, y: 1567, w: 16, h: 30, text: 'b', ar: 'ب' },
     { id: 'w88', x: 232, y: 1568, w: 963, h: 30, text: 'Jemand aus dem Kurs möchte mitkommen. Geben Sie ihm die wichtigsten Informationen aus Ihrem', ar: 'حد من الكورس عايز يجي معاكم. اديله أهم المعلومات من' },
     { id: 'w89', x: 232, y: 1595, w: 147, h: 30, text: 'Gespräch in 8a.', ar: 'محادثة ٨أ.' },
-    { id: 'w90', x: 108, y: 1640, w: 38, h: 30, text: '130', ar: '١٣٠' },
     { id: 'w91', x: 155, y: 1640, w: 156, h: 30, text: 'einhundertdreißig', ar: 'مية وتلاتين' },
   ],
   audio: [

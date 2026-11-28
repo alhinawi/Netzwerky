@@ -74,7 +74,6 @@ export const p71: ScanPage = {
     { id: 'w63', x: 155, y: 1595, w: 987, h: 44, text: 'Sie Schlüsselwörter und wichtige Informationen. Machen Sie dann das Buch zu und tauschen Sie sich', ar: 'كلمات مفتاحية ومعلومات مهمة. بعدين اقفلوا الكتاب وتبادلوا' },
     { id: 'w64', x: 155, y: 1624, w: 717, h: 44, text: 'über die Texte auf Deutsch oder in Ihrer Sprache aus. Ihre Notizen helfen.', ar: 'الكلام عن النصوص بالألماني أو بلغتكم. ملاحظاتكم هتساعد.' },
     { id: 'w65', x: 982, y: 1677, w: 120, h: 30, text: 'einundsiebzig', ar: 'واحد وسبعين' },
-    { id: 'w66', x: 1130, y: 1677, w: 23, h: 30, text: '71', ar: '٧١' },
   ],
   audio: [
   ],

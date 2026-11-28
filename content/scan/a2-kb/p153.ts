@@ -63,7 +63,6 @@ export const p153: ScanPage = {
     { id: 'w53', x: 94, y: 1398, w: 691, h: 30, text: 'Alle spielen schlecht. ↔ Sie haben gewonnen.', ar: 'الكل بيلعب وحش. ↔ هما كسبوا.' },
     { id: 'w54', x: 94, y: 1425, w: 691, h: 30, text: 'Alle spielen schlecht, trotzdem haben sie gewonnen.', ar: 'الكل بيلعب وحش، ومع ذلك كسبوا.' },
     { id: 'w55', x: 345, y: 1457, w: 263, h: 28, text: 'Widerspruch/Kontrast', ar: 'تناقض/تضاد' },
-    { id: 'w56', x: 884, y: 1689, w: 359, h: 30, text: 'einhundertdreiundfünfzig 153', ar: '١٥٣ مية وتلاتة وخمسين' },
   ],
   audio: [
   ],
@@ -126,7 +125,6 @@ export const p153: ScanPage = {
     { id: 's53', text: 'Alle spielen schlecht. ↔ Sie haben gewonnen.', ar: 'الكل بيلعب وحش. ↔ هما كسبوا.', words: ['w53'] },
     { id: 's54', text: 'Alle spielen schlecht, trotzdem haben sie gewonnen.', ar: 'الكل بيلعب وحش، ومع ذلك كسبوا.', words: ['w54'] },
     { id: 's55', text: 'Widerspruch/Kontrast', ar: 'تناقض/تضاد', words: ['w55'] },
-    { id: 's56', text: 'einhundertdreiundfünfzig 153', ar: '١٥٣ مية وتلاتة وخمسين', words: ['w56'] },
   ],
   patches: [
   ],

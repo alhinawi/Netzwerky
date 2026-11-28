@@ -69,7 +69,6 @@ export const p46: ScanPage = {
     { id: 'b59', x: 182, y: 1470, w: 995, h: 26, text: 'b Sie haben viel Zeit und Geld. Was würden Sie machen? Schreiben Sie drei Sätze. Sammeln Sie dann im', ar: 'ب عندكم وقت وفلوس كتير. كنت هتعملوا إيه؟ اكتبوا تلات جمل. بعدين اجمعوا في' },
     { id: 'b60', x: 224, y: 1502, w: 300, h: 20, text: 'Kurs. Wer hatte ähnliche Ideen?', ar: 'الكورس. مين كانت عنده أفكار شبه دي؟' },
     { id: 'b61', x: 223, y: 1540, w: 610, h: 24, text: 'Wenn ich viel Geld hätte, würde ich eine Weltreise machen.', ar: 'لو كان معايا فلوس كتير، كنت هعمل رحلة حوالين العالم.' },
-    { id: 'b62', x: 102, y: 1582, w: 28, h: 22, text: '46', ar: '٤٦' },
     { id: 'b63', x: 140, y: 1582, w: 140, h: 22, text: 'sechsundvierzig', ar: 'ستة وأربعين' },
   ],
   audio: [],

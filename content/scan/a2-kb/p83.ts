@@ -54,7 +54,6 @@ export const p83: ScanPage = {
     { id: 'w44', x: 929, y: 1488, w: 190, h: 24, text: 'Mich interessiert, ...', ar: 'مهتم أعرف ...' },
     { id: 'w45', x: 929, y: 1515, w: 235, h: 24, text: 'Kannst du mir sagen, ...?', ar: 'تقدر تقولي ...؟' },
     { id: 'w46', x: 929, y: 1542, w: 185, h: 24, text: 'Darf ich fragen, ...?', ar: 'ينفع أسأل ...؟' },
-    { id: 'w47', x: 952, y: 1612, w: 172, h: 28, text: 'dreiundachtzig 83', ar: '٨٣ تلاتة وتمانين' },
   ],
   audio: [
   ],
@@ -118,7 +117,6 @@ export const p83: ScanPage = {
     { id: 's44', text: 'Mich interessiert, ...', ar: 'مهتم أعرف ...', words: ['w44'] },
     { id: 's45', text: 'Kannst du mir sagen, ...?', ar: 'تقدر تقولي ...؟', words: ['w45'] },
     { id: 's46', text: 'Darf ich fragen, ...?', ar: 'ينفع أسأل ...؟', words: ['w46'] },
-    { id: 's47', text: 'dreiundachtzig 83', ar: '٨٣ تلاتة وتمانين', words: ['w47'] },
   ],
   patches: [
     { x: 800, y: 1340, w: 210, h: 45 },

@@ -85,7 +85,6 @@ export const p140: ScanPage = {
     { id: 'g41', x: 713, y: 1509, w: 502, h: 25, text: 'Die Relativpronomen im Nominativ haben die gleichen', ar: 'ضمائر الوصل في الـ Nominativ ليها نفس' },
     { id: 'g42', x: 713, y: 1539, w: 467, h: 24, text: 'Formen wie die bestimmten Artikel im Nominativ:', ar: 'أشكال أدوات التعريف في الـ Nominativ:' },
     { id: 'g5', x: 713, y: 1566, w: 147, h: 22, text: 'der, das, die, die.', ar: 'أدوات التعريف: المذكر، المحايد، المؤنث، الجمع.' },
-    { id: 'pg', x: 108, y: 1691, w: 36, h: 28, text: '140', ar: 'صفحة 140' },
     { id: 'pgw', x: 155, y: 1691, w: 152, h: 28, text: 'einhundertvierzig', ar: 'مية وأربعين' },
   ],
   audio: [

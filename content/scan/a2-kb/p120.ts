@@ -69,7 +69,6 @@ export const p120: ScanPage = {
     { id: 'V9', x: 187, y: 1602, w: 679, h: 40, text: 'Im Briefkasten war übrigens noch Post für dich. Soll ich sie dir schicken?', ar: 'في صندوق البريد كان فيه جواب ليك كمان. أبعتهولك؟' },
     { id: 'V10', x: 187, y: 1627, w: 155, h: 19, text: 'Herzliche Grüße', ar: 'مع أطيب التحيات' },
     { id: 'V11', x: 187, y: 1655, w: 47, h: 14, text: 'Vera', ar: 'فيرا' },
-    { id: 'pg', x: 110, y: 1693, w: 50, h: 28, text: '120', ar: '120' },
     { id: 'pw', x: 165, y: 1701, w: 164, h: 13, text: 'einhundertzwanzig', ar: 'مية وعشرين' },
   ],
   audio: [

@@ -72,7 +72,6 @@ export const p77: ScanPage = {
     { id: 'w60', x: 180, y: 1583, w: 593, h: 34, text: 'Lieder, Hobbys). Vergleichen Sie die Informationen in Gruppen', ar: 'أغاني، هوايات). قارنوا المعلومات في مجموعات' },
     { id: 'w61', x: 180, y: 1609, w: 506, h: 34, text: 'und schreiben Sie ein kurzes Porträt über Namika.', ar: 'واكتبوا بورتريه قصير عن Namika.' },
     { id: 'w62', x: 962, y: 1655, w: 148, h: 30, text: 'siebenundsiebzig', ar: 'سبعة وسبعين' },
-    { id: 'w63', x: 1138, y: 1655, w: 24, h: 30, text: '77', ar: '٧٧' },
   ],
   audio: [
     { id: 'a1_61_15', x: 15, y: 200, w: 45, h: 62, src: ['NWn_A2_KB_Audio_1-061.mp3'], label: 'Aufgabe 5a (1.61)' },

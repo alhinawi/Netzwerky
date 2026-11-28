@@ -61,7 +61,6 @@ export const p34: ScanPage = {
     { id: 'b51', x: 604, y: 1505, w: 486, h: 22, text: 'Vor diesem Tag ..., danach ... / Vorher ..., nachher ...', ar: 'قبل اليوم ده ...، بعده ... / قبل كده ...، بعد كده ...' },
     { id: 'b52', x: 604, y: 1531, w: 400, h: 21, text: 'Wenn ich an ... denke, dann fällt mir ... ein.', ar: 'لما بفتكر ...، بيجي في دماغي ... .' },
     { id: 'b53', x: 605, y: 1558, w: 353, h: 22, text: 'Das war (nicht) schön für mich, weil ...', ar: 'ده كان (مش) حلو بالنسبة لي، عشان ... .' },
-    { id: 'b54', x: 97, y: 1580, w: 26, h: 20, text: '34', ar: '٣٤' },
     { id: 'b55', x: 130, y: 1580, w: 130, h: 20, text: 'vierunddreißig', ar: 'أربعة وتلاتين' },
   ],
   audio: [],

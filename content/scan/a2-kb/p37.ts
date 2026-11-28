@@ -121,7 +121,6 @@ export const p37: ScanPage = {
     { id: 'w111', x: 108, y: 1560, w: 946, h: 40, text: 'Der Nebensatz beginnt mit dass, dann folgt das Subjekt. Das konjugierte Verb steht ganz am Ende.', ar: 'الجملة الفرعية بتبدأ بـ dass، وبعدين الفاعل. الفعل المصرّف في آخر الجملة خالص.' },
     { id: 'w112', x: 106, y: 1590, w: 507, h: 34, text: 'Trennbare Verben sind im Nebensatz nicht getrennt.', ar: 'الأفعال المنفصلة مش بتنفصل في الجملة الفرعية.' },
     { id: 'w113', x: 971, y: 1672, w: 155, h: 23, text: 'siebenunddreißig', ar: 'سبعة وتلاتين' },
-    { id: 'w114', x: 1149, y: 1670, w: 27, h: 22, text: '37', ar: '٣٧' },
   ],
   audio: [
   ],

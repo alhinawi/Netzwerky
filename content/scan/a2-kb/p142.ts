@@ -48,7 +48,6 @@ export const p142: ScanPage = {
     { id: 'r32', x: 858, y: 1549, w: 177, h: 22, text: 'komisch/langweilig/…', ar: 'غريبة/مملة/…' },
     { id: 'r4', x: 832, y: 1557, w: 413, h: 41, text: '… sieht realistisch/abstrakt/originell/… aus', ar: '… شكلها واقعي/تجريدي/أصلي/…' },
     { id: 'r5', x: 832, y: 1604, w: 358, h: 27, text: '… ist eine witzige/verrückte/… Idee.', ar: '… فكرة مضحكة/مجنونة/…' },
-    { id: 'pg', x: 97, y: 1691, w: 36, h: 28, text: '142', ar: 'صفحة 142' },
     { id: 'pgw', x: 145, y: 1691, w: 222, h: 28, text: 'einhundertzweiundvierzig', ar: 'مية واتنين وأربعين' },
   ],
   audio: [

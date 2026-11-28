@@ -66,7 +66,6 @@ export const p61: ScanPage = {
     { id: 'rb12', x: 785, y: 1525, w: 390, h: 24, text: 'Ich finde schön / weniger schön, dass …', ar: 'شايف حلو / أقل حلاوة إن …' },
     { id: 'rb13', x: 785, y: 1554, w: 320, h: 24, text: '… finde ich (nicht so) gut, weil …', ar: '… شايفه (مش أوي) كويس عشان …' },
     { id: 'pgw', x: 1000, y: 1684, w: 127, h: 28, text: 'einundsechzig', ar: 'واحد وستين' },
-    { id: 'pg', x: 1153, y: 1684, w: 26, h: 28, text: '61', ar: 'صفحة 61' },
   ],
   audio: [
   ],

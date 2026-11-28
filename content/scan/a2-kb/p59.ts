@@ -75,7 +75,6 @@ export const p59: ScanPage = {
     { id: 'w65', x: 139, y: 1521, w: 431, h: 31, text: 'beim Essen mit Freunden …). Formulieren', ar: 'وإنتوا بتاكلوا مع أصحاب …). صيغوا' },
     { id: 'w66', x: 139, y: 1557, w: 189, h: 25, text: 'Sie sehr höfliche Bitten.', ar: 'طلبات مؤدبة جدًا.' },
     { id: 'w67', x: 957, y: 1693, w: 144, h: 20, text: 'neunundfünfzig', ar: 'تسعة وخمسين' },
-    { id: 'w68', x: 1122, y: 1690, w: 29, h: 22, text: '59', ar: '٥٩' },
   ],
   audio: [
     { id: 'a1048', x: 12, y: 1172, w: 36, h: 36, src: ['NWn_A2_KB_Audio_1-048.mp3'], label: 'Aufgabe 7a (1.48)' },
@@ -150,7 +149,6 @@ export const p59: ScanPage = {
     { id: 's53', text: 'c', ar: 'ج', words: ['w62'] },
     { id: 's54', text: 'Die höflichen fünf Minuten. Wählen Sie eine Situation (im Unterricht, im Café, beim Essen mit Freunden …). Formulieren Sie sehr höfliche Bitten.', ar: 'الخمس دقايق المؤدبين. اختاروا موقف (في الدرس، في الكافيه، وإنتوا بتاكلوا مع أصحاب …). صيغوا طلبات مؤدبة جدًا.', words: ['w63', 'w64', 'w65', 'w66'] },
     { id: 's55', text: 'neunundfünfzig', ar: 'تسعة وخمسين', words: ['w67'] },
-    { id: 's56', text: '59', ar: '٥٩', words: ['w68'] },
   ],
   patches: [
   ],

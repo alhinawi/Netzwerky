@@ -33,7 +33,6 @@ export const p39: ScanPage = {
     { id: 'q15b', x: 82, y: 1548, w: 188, h: 34, text: 'Ich denke, dass …', ar: 'أنا أعتقد إن …' },
     { id: 'p1', x: 918, y: 1538, w: 46, h: 22, text: '698-€', ar: '٦٩٨ يورو' },
     { id: 'p2', x: 1096, y: 1548, w: 46, h: 22, text: '980-€', ar: '٩٨٠ يورو' },
-    { id: 'pn', x: 978, y: 1676, w: 194, h: 28, text: 'neununddreißig 39', ar: 'تسعة وثلاثون ٣٩' },
   ],
   audio: [
   ],
@@ -60,7 +59,6 @@ export const p39: ScanPage = {
     { id: 's-q14', text: '14. Was kann man online machen? Bilden Sie drei Sätze.', ar: '١٤. إيه اللي ممكن نعمله أونلاين؟ كوّنوا ثلاث جمل.', words: ['q14'] },
     { id: 's-q15', text: '15. Fotos von der Familie im Internet. Was ist Ihre Meinung? Bilden Sie einen Satz:', ar: '١٥. صور العيلة على الإنترنت. إيه رأيكم؟ كوّنوا جملة:', words: ['q15'] },
     { id: 's-q15b', text: 'Ich denke, dass …', ar: 'أنا أعتقد إن …', words: ['q15b'] },
-    { id: 's-pn', text: 'neununddreißig 39', ar: 'تسعة وثلاثون ٣٩', words: ['pn'] },
   ],
   groups: [],
 }

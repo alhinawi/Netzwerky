@@ -73,7 +73,6 @@ export const p89: ScanPage = {
     { id: 'w63', x: 104, y: 1587, w: 377, h: 31, text: 'Geh bis zum Kaufhaus und dann links.', ar: 'امشي لحد المول وبعدين شمال.' },
     { id: 'w64', x: 551, y: 1478, w: 220, h: 28, text: 'gegenüber von + Dativ', ar: 'قصاد + Dativ' },
     { id: 'w65', x: 553, y: 1576, w: 332, h: 25, text: 'Das Haus ist gegenüber vom Park.', ar: 'البيت قصاد الحديقة.' },
-    { id: 'w66', x: 979, y: 1689, w: 196, h: 23, text: 'neunundachtzig 89', ar: 'تسعة وتمانين ٨٩' },
   ],
   audio: [
   ],
@@ -146,7 +145,6 @@ export const p89: ScanPage = {
     { id: 's63', text: 'Geh bis zum Kaufhaus und dann links.', ar: 'امشي لحد المول وبعدين شمال.', words: ['w63'] },
     { id: 's64', text: 'gegenüber von + Dativ', ar: 'قصاد + Dativ', words: ['w64'] },
     { id: 's65', text: 'Das Haus ist gegenüber vom Park.', ar: 'البيت قصاد الحديقة.', words: ['w65'] },
-    { id: 's66', text: 'neunundachtzig 89', ar: 'تسعة وتمانين ٨٩', words: ['w66'] },
   ],
   patches: [
   ],

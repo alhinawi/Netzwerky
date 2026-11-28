@@ -98,7 +98,6 @@ export const p139: ScanPage = {
     { id: 'ex31', x: 305, y: 1631, w: 500, h: 38, text: 'Mein Lieblingslied heißt „Quem me dera“ von Mariza.', ar: 'أغنيتي المفضلة اسمها \'Quem me dera\' لماريزا.' },
     { id: 'ex32', x: 432, y: 1665, w: 251, h: 28, text: 'In dem Lied geht es um …', ar: 'الأغنية بتتكلم عن …' },
     { id: 'pgw', x: 870, y: 1692, w: 232, h: 28, text: 'einhundertneununddreißig', ar: 'مية وتسعة وتلاتين' },
-    { id: 'pg', x: 1118, y: 1692, w: 36, h: 28, text: '139', ar: 'صفحة 139' },
   ],
   audio: [
   ],

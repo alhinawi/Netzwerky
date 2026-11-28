@@ -66,7 +66,6 @@ export const p155: ScanPage = {
     { id: 'w56', x: 83, y: 1561, w: 1010, h: 30, text: 'wir wohnen arbeiten heißen holen ab sprechen fahren -en', ar: 'إحنا: النهاية en-' },
     { id: 'w57', x: 83, y: 1592, w: 1010, h: 30, text: 'ihr wohnt arbeitet heißt holt ab sprecht fahrt -(e)t', ar: 'إنتو: (النهاية t-)' },
     { id: 'w58', x: 83, y: 1621, w: 1010, h: 30, text: 'sie/Sie wohnen arbeiten heißen holen ab sprechen fahren -en', ar: 'هم/حضرتك: النهاية en-' },
-    { id: 'w59', x: 874, y: 1682, w: 360, h: 30, text: 'einhundertfünfundfünfzig 155', ar: '١٥٥ مية وخمسة وخمسين' },
   ],
   audio: [
   ],
@@ -132,7 +131,6 @@ export const p155: ScanPage = {
     { id: 's56', text: 'wir wohnen arbeiten heißen holen ab sprechen fahren -en', ar: 'إحنا: النهاية en-', words: ['w56'] },
     { id: 's57', text: 'ihr wohnt arbeitet heißt holt ab sprecht fahrt -(e)t', ar: 'إنتو: (النهاية t-)', words: ['w57'] },
     { id: 's58', text: 'sie/Sie wohnen arbeiten heißen holen ab sprechen fahren -en', ar: 'هم/حضرتك: النهاية en-', words: ['w58'] },
-    { id: 's59', text: 'einhundertfünfundfünfzig 155', ar: '١٥٥ مية وخمسة وخمسين', words: ['w59'] },
   ],
   patches: [
   ],

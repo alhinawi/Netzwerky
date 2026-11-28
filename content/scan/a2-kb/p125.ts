@@ -105,7 +105,6 @@ export const p125: ScanPage = {
     { id: 'p4', x: 87, y: 1554, w: 452, h: 27, text: 'stehen oft Wörter wie oft, meistens, immer …', ar: 'غالبًا فيه كلمات زي oft، meistens، immer …' },
     { id: 'p5', x: 87, y: 1602, w: 409, h: 21, text: 'Im Präsens verwendet man immer wenn.', ar: 'في المضارع بنستخدم دايمًا wenn.' },
     { id: 'pw', x: 887, y: 1701, w: 232, h: 13, text: 'einhundertfünfundzwanzig', ar: 'مية وخمسة وعشرين' },
-    { id: 'pg', x: 1140, y: 1690, w: 36, h: 28, text: '125', ar: 'صفحة 125' },
   ],
   audio: [
   ],

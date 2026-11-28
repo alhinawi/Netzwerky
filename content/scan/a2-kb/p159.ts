@@ -91,7 +91,6 @@ export const p159: ScanPage = {
     { id: 'w81', x: 291, y: 1625, w: 775, h: 30, text: 'mögen, nehmen, sehen, suchen ...', ar: 'يحب، ياخد، يشوف، يدوّر ...' },
     { id: 'w82', x: 75, y: 1661, w: 208, h: 28, text: 'Verben mit Dativ:', ar: 'أفعال مع Dativ:' },
     { id: 'w83', x: 291, y: 1658, w: 415, h: 30, text: 'gefallen, helfen, passen, stehen ...', ar: 'يعجب، يساعد، يناسب، يقف / يليق ...' },
-    { id: 'w84', x: 872, y: 1689, w: 360, h: 30, text: 'einhundertneunundfünfzig 159', ar: '١٥٩ مية وتسعة وخمسين' },
   ],
   audio: [
   ],
@@ -182,7 +181,6 @@ export const p159: ScanPage = {
     { id: 's81', text: 'mögen, nehmen, sehen, suchen ...', ar: 'يحب، ياخد، يشوف، يدوّر ...', words: ['w81'] },
     { id: 's82', text: 'Verben mit Dativ:', ar: 'أفعال مع Dativ:', words: ['w82'] },
     { id: 's83', text: 'gefallen, helfen, passen, stehen ...', ar: 'يعجب، يساعد، يناسب، يقف / يليق ...', words: ['w83'] },
-    { id: 's84', text: 'einhundertneunundfünfzig 159', ar: '١٥٩ مية وتسعة وخمسين', words: ['w84'] },
   ],
   patches: [
   ],

@@ -33,7 +33,6 @@ export const p45: ScanPage = {
     { id: 'b23', x: 181, y: 1440, w: 115, h: 24, text: 'im Kurs vor.', ar: 'للكورس.' },
     { id: 'b24', x: 181, y: 1472, w: 700, h: 26, text: 'Tierarzt: Tieren helfen, Stress aushalten, die Besitzer beruhigen ...', ar: 'دكتور بيطري: يساعد الحيوانات، يتحمّل الضغط، يطمّن أصحابها ...' },
     { id: 'b25', x: 963, y: 1588, w: 115, h: 24, text: 'fünfundvierzig', ar: 'خمسة وأربعين' },
-    { id: 'b26', x: 1105, y: 1588, w: 28, h: 24, text: '45', ar: '٤٥' },
   ],
   audio: [],
   fields: [],

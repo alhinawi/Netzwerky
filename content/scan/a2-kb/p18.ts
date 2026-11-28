@@ -48,7 +48,6 @@ export const p18: ScanPage = {
     { id: 'w10', x: 398, y: 1636, w: 238, h: 29, text: 'durch Südamerika reisen', ar: 'يسافر في أمريكا الجنوبية' },
     { id: 'w11', x: 663, y: 1646, w: 185, h: 29, text: 'auf Messen jobben', ar: 'يشتغل في المعارض' },
     { id: 'w12', x: 878, y: 1661, w: 185, h: 29, text: 'Medizin studieren', ar: 'يدرس طب' },
-    { id: 'fn', x: 87, y: 1722, w: 24, h: 24, text: '18', ar: '١٨' },
     { id: 'fw', x: 137, y: 1723, w: 81, h: 21, text: 'achtzehn', ar: 'ثمانية عشر' },
   ],
   audio: [

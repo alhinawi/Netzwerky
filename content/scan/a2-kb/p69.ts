@@ -72,7 +72,6 @@ export const p69: ScanPage = {
     { id: 'w61', x: 162, y: 1608, w: 608, h: 30, text: '3. Mit seinem neuen Lastwagen fährt Markus in andere Länder.', ar: '٣. بشاحنته الجديدة ماركوس بيسافر لبلاد تانية.' },
     { id: 'w62', x: 162, y: 1636, w: 795, h: 30, text: '4. Seinen schönen Lastwagen möchte er nicht mehr gegen den alten Job tauschen.', ar: '٤. مش عايز يبدّل شاحنته الحلوة بالوظيفة القديمة تاني.' },
     { id: 'w63', x: 965, y: 1670, w: 141, h: 30, text: 'neunundsechzig', ar: 'تسعة وستين' },
-    { id: 'w64', x: 1132, y: 1670, w: 25, h: 30, text: '69', ar: '٦٩' },
   ],
   audio: [
     { id: 'a1_56_28', x: 28, y: 1405, w: 45, h: 62, src: ['NWn_A2_KB_Audio_1-056.mp3'], label: 'Aufgabe 10a (1.56)' },

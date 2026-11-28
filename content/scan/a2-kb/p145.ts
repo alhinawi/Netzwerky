@@ -94,7 +94,6 @@ export const p145: ScanPage = {
     { id: 'ra3', x: 682, y: 1589, w: 208, h: 14, text: 'die wir treffen wollen.', ar: 'اللي عايزين نقابلها.' },
     { id: 'z0', x: 100, y: 1638, w: 937, h: 43, text: 'Die Relativpronomen haben die gleichen Formen wie die bestimmten Artikel: der/den, das, die, die.', ar: 'ضمائر الوصل ليها نفس أشكال أدوات التعريف: der/den، das، die، die.' },
     { id: 'pgw', x: 887, y: 1684, w: 220, h: 28, text: 'einhundertfünfundvierzig', ar: 'مية وخمسة وأربعين' },
-    { id: 'pg', x: 1120, y: 1684, w: 38, h: 28, text: '145', ar: 'صفحة 145' },
   ],
   audio: [
   ],

@@ -35,7 +35,7 @@ export const p135: ScanPage = {
     { id: 'w24', x: 763, y: 430, w: 245, h: 28, text: 'Wir könnten doch auch …', ar: 'ممكن برضه …' },
     { id: 'w25', x: 765, y: 458, w: 247, h: 28, text: 'Ich habe eine andere Idee.', ar: 'عندي فكرة تانية.' },
     { id: 'w26', x: 788, y: 487, w: 114, h: 28, text: 'Vielleicht …', ar: 'يمكن …' },
-    { id: 'w27', x: 87, y: 543, w: 103, h: 28, text: 'zustimmen', ar: 'نوافق' },
+    { id: 'w27', x: 87, y: 543, w: 103, h: 28, text: 'zustimmen', ar: 'يوافق / يؤيد' },
     { id: 'w28', x: 405, y: 538, w: 90, h: 28, text: 'ablehnen', ar: 'نرفض' },
     { id: 'w29', x: 765, y: 532, w: 108, h: 28, text: 'nachfragen', ar: 'نسأل' },
     { id: 'w30', x: 90, y: 572, w: 90, h: 28, text: 'Klar, gern.', ar: 'أكيد، بكل سرور.' },
@@ -116,7 +116,6 @@ export const p135: ScanPage = {
     { id: 'w105', x: 898, y: 1489, w: 88, h: 28, text: 'Mit Ben.', ar: 'مع بن.' },
     { id: 'w106', x: 125, y: 1566, w: 740, h: 28, text: 'Wenn die Präposition mit Vokal beginnt, braucht man ein „r“: worüber, worauf …', ar: 'لو حرف الجر بيبدأ بحرف علة لازم نزود «r»: worüber, worauf …' },
     { id: 'w107', x: 888, y: 1624, w: 220, h: 28, text: 'einhundertfünfunddreißig', ar: 'مية وخمسة وتلاتين' },
-    { id: 'w108', x: 1122, y: 1622, w: 35, h: 28, text: '135', ar: '١٣٥' },
   ],
   audio: [
   ],

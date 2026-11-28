@@ -17,7 +17,6 @@ export const p107: ScanPage = {
     { id: 'w7', x: 175, y: 1277, w: 400, h: 85, text: 'a Mit dem Zug. | b Mit dem Fahrrad. | c Mit dem Auto.', ar: 'أ بالقطر. | ب بالعجلة. | ج بالعربية.' },
     { id: 'w8', x: 95, y: 1380, w: 1010, h: 70, text: 'b Ein Freund / Eine Freundin aus Ihrem Land möchte Urlaub in D-A-CH machen. Schreiben Sie eine Mail und empfehlen Sie ihm/ihr ein Reiseziel aus 12a oder 13a in Ihrer Sprache.', ar: 'ب صاحب/صاحبة من بلدك عايز يقضي أجازة في ألمانيا-النمسا-سويسرا. اكتبوا إيميل واقترحوا عليه/عليها مكان سفر من ١٢ا أو ١٣ا بلغتكم.' },
     { id: 'w9', x: 95, y: 1470, w: 1010, h: 45, text: 'c Recherchieren Sie zu zweit ein Reiseziel in D-A-CH oder in Ihrem Land. Stellen Sie es im Kurs vor.', ar: 'ج دوّروا اتنين اتنين على مكان سفر في ألمانيا-النمسا-سويسرا أو في بلدكم. اعرضوه قدام الكورس.' },
-    { id: 'w10', x: 920, y: 1612, w: 210, h: 30, text: 'einhundertsieben 107', ar: '١٠٧ مية وسبعة' },
   ],
   audio: [
   ],
@@ -43,7 +42,6 @@ export const p107: ScanPage = {
     { id: 's7', text: 'a Mit dem Zug. | b Mit dem Fahrrad. | c Mit dem Auto.', ar: 'أ بالقطر. | ب بالعجلة. | ج بالعربية.', words: ['w7'] },
     { id: 's8', text: 'b Ein Freund / Eine Freundin aus Ihrem Land möchte Urlaub in D-A-CH machen. Schreiben Sie eine Mail und empfehlen Sie ihm/ihr ein Reiseziel aus 12a oder 13a in Ihrer Sprache.', ar: 'ب صاحب/صاحبة من بلدك عايز يقضي أجازة في ألمانيا-النمسا-سويسرا. اكتبوا إيميل واقترحوا عليه/عليها مكان سفر من ١٢ا أو ١٣ا بلغتكم.', words: ['w8'] },
     { id: 's9', text: 'c Recherchieren Sie zu zweit ein Reiseziel in D-A-CH oder in Ihrem Land. Stellen Sie es im Kurs vor.', ar: 'ج دوّروا اتنين اتنين على مكان سفر في ألمانيا-النمسا-سويسرا أو في بلدكم. اعرضوه قدام الكورس.', words: ['w9'] },
-    { id: 's10', text: 'einhundertsieben 107', ar: '١٠٧ مية وسبعة', words: ['w10'] },
   ],
   patches: [
   ],

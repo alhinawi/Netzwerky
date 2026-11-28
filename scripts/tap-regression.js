@@ -178,6 +178,34 @@ SPECS['/read/b1-kb/61/'] = [
   ['1. „Plogging” bedeutet „beim Joggen aufheben“.', 0.2, 'بلوجينج (جري ولقط زبالة)'],
 ]
 
+// K5 round 2 reviewer fixes
+SPECS['/read/b1-kb/54/'].push(
+  // official typo fixed: نسبة مئوية, no stray ن, the بس. box override is gone
+  ['Prozent.', 0.5, 'نسبة مئوية'],
+  // the printed page number opens nothing (footer box removed)
+  ['54', 0.5, null, 'none'],
+)
+SPECS['/read/b1-kb/59/'].push(
+  // zustimmen: يوافق / يؤيد everywhere, no a2-kb box precedence conflict left
+  ['die eigene Meinung äußern zustimmen widersprechen', 0.63, 'يوافق / يؤيد'],
+  ['neunundfünfzig 59', 0.9, null, 'none'],
+)
+SPECS['/read/b1-kb/61/'].push(
+  // ihrem: clean word gloss, no (Dativ) fragment
+  ['b Tauschen Sie Ihre Fragen mit Ihrem Partner / Ihrer Partnerin.', 0.53, 'بتاعته / بتاعتها / بتاعتك'],
+  // sendung: gloss with separator
+  ['Sendung verpasst?', 0.2, 'برنامج / بث'],
+  ['einundsechzig 61', 0.9, null, 'none'],
+)
+SPECS['/read/a1-kb/120/'].push(
+  // gefahren is the participle, not the sentence translation راحت
+  ['gefahren', 0.5, 'سافر / اتحرك'],
+)
+SPECS['/read/b1-kb/58/'] = [
+  // hyphenation half of Außenseite (the line starts with ßenseite, SUNNYBAG text)
+  ['ßenseite ein Solarpanel haben, um die Sonnenenergie zu nut-', 0.04, 'الناحية الخارجية'],
+]
+
 const cases = SPECS[location.pathname]
 if (!cases) return 'no spec for ' + location.pathname
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms))
@@ -185,7 +213,7 @@ const results = []
 for (const [label, frac, expect, mode] of cases) {
   const btns = [...document.querySelectorAll('button')]
   const btn = btns.find((b) => (b.getAttribute('aria-label') || '') === label + ' — Bedeutung') || btns.find((b) => (b.getAttribute('aria-label') || '').startsWith(label))
-  if (!btn) { results.push({ label, pass: false, err: 'button not found' }); continue }
+  if (!btn) { results.push({ label, pass: mode === 'none', note: mode === 'none' ? 'box removed, nothing to tap' : 'button not found' }); continue }
   const r = btn.getBoundingClientRect()
   btn.dispatchEvent(new MouseEvent('click', { bubbles: true, cancelable: true, clientX: r.left + r.width * frac, clientY: r.top + r.height / 2 }))
   await sleep(1400)

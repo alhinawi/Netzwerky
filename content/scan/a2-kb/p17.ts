@@ -104,7 +104,6 @@ export const p17: ScanPage = {
     { id: 'b92', x: 791, y: 1597, w: 145, h: 28, text: 'Verb: Satzende', ar: 'الفعل: آخر الجملة' },
     { id: 'ns', x: 95, y: 1650, w: 932, h: 42, text: 'Der Nebensatz beginnt mit weil, dann folgt das Subjekt. Das konjugierte Verb steht ganz am Ende.', ar: 'الـ Nebensatz بيبدأ بـ weil، وبعدين الفاعل. والفعل المصرّف بيجي في آخر الجملة خالص.' },
     { id: 'fw', x: 1043, y: 1694, w: 79, h: 28, text: 'siebzehn', ar: 'سبعتاشر' },
-    { id: 'fn', x: 1148, y: 1694, w: 26, h: 28, text: '17', ar: '١٧' },
   ],
   audio: [
   ],

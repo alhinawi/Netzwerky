@@ -38,7 +38,6 @@ export const p81: ScanPage = {
     { id: 'w28', x: 204, y: 1566, w: 375, h: 68, text: 'Ich fahre meistens mit dem Bus. Das ist praktisch, aber ich muss ...', ar: 'أنا غالبًا بتحرك بالأتوبيس. ده عملي، بس لازم ...' },
     { id: 'au', x: 53, y: 987, w: 30, h: 22, text: '🔊', ar: 'صوت' },
     { id: 'al', x: 54, y: 1014, w: 30, h: 17, text: '2.2', ar: '2.2' },
-    { id: 'w29', x: 954, y: 1602, w: 168, h: 26, text: 'einundachtzig 81', ar: '٨١ واحد وتمانين' },
   ],
   audio: [],
   fields: [
@@ -101,7 +100,6 @@ export const p81: ScanPage = {
     { id: 's27', text: 'eine App nutzen', ar: 'نستخدم أبلكيشن', words: ['w27'] },
     { id: 's28', text: 'Ich fahre meistens mit dem Bus. Das ist praktisch, aber ich muss ...', ar: 'أنا غالبًا بتحرك بالأتوبيس. ده عملي، بس لازم ...', words: ['w28'] },
     { id: 's-al', text: '2.2', ar: '2.2', words: ['al'] },
-    { id: 's29', text: 'einundachtzig 81', ar: '٨١ واحد وتمانين', words: ['w29'] },
   ],
   patches: [
   ],

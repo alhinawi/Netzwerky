@@ -61,7 +61,6 @@ export const p16: ScanPage = {
     { id: 'b51', x: 186, y: 1526, w: 22, h: 26, text: 'c', ar: 'ج' },
     { id: 'b52', x: 226, y: 1526, w: 900, h: 27, text: 'Stellen Sie im Kurs einen Nationalpark vor. Recherchieren Sie Informationen und gehen Sie dabei', ar: 'اعرضوا في المجموعة محمية طبيعية. دوّروا على معلومات وادخلوا في' },
     { id: 'b53', x: 224, y: 1553, w: 819, h: 25, text: 'auf die folgenden Punkte ein: Lage, Größe, weitere wichtige Daten und Besonderheiten.', ar: 'النقاط الجاية: المكان، المساحة، بيانات مهمة تانية والحاجات المميزة.' },
-    { id: 'b54', x: 102, y: 1578, w: 28, h: 17, text: '16', ar: '١٦' },
     { id: 'b55', x: 140, y: 1578, w: 86, h: 17, text: 'sechzehn', ar: 'ستاشر' },
   ],
   audio: [],

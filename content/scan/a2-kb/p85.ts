@@ -43,7 +43,6 @@ export const p85: ScanPage = {
     { id: 'w33', x: 179, y: 1471, w: 465, h: 34, text: 'Ich finde, dass E-Bikes eine tolle Idee sind, weil ...', ar: 'أنا شايف إن العجل الكهربائية فكرة تحفة، عشان ...' },
     { id: 'w34', x: 696, y: 1467, w: 410, h: 24, text: 'Für mich ist ein Fahrrad unpraktisch, weil ...', ar: 'بالنسبالي العجلة مش عملية، عشان ...' },
     { id: 'w35', x: 74, y: 1525, w: 880, h: 75, text: 'd Welche Informationen aus dem Text finden Sie besonders interessant? Berichten Sie einem Freund / einer Freundin in Ihrer Sprache oder auf Deutsch.', ar: 'د أنهي معلومات من النص مثيرة للاهتمام بالنسبالك؟ احكِ لصاحب أو صاحبة بلغتك أو بالألماني.' },
-    { id: 'w36', x: 941, y: 1604, w: 175, h: 24, text: 'fünfundachtzig 85', ar: '٨٥ خمسة وتمانين' },
   ],
   audio: [
   ],
@@ -89,7 +88,6 @@ export const p85: ScanPage = {
     { id: 's33', text: 'Ich finde, dass E-Bikes eine tolle Idee sind, weil ...', ar: 'أنا شايف إن العجل الكهربائية فكرة تحفة، عشان ...', words: ['w33'] },
     { id: 's34', text: 'Für mich ist ein Fahrrad unpraktisch, weil ...', ar: 'بالنسبالي العجلة مش عملية، عشان ...', words: ['w34'] },
     { id: 's35', text: 'd Welche Informationen aus dem Text finden Sie besonders interessant? Berichten Sie einem Freund / einer Freundin in Ihrer Sprache oder auf Deutsch.', ar: 'د أنهي معلومات من النص مثيرة للاهتمام بالنسبالك؟ احكِ لصاحب أو صاحبة بلغتك أو بالألماني.', words: ['w35'] },
-    { id: 's36', text: 'fünfundachtzig 85', ar: '٨٥ خمسة وتمانين', words: ['w36'] },
   ],
   patches: [
   ],

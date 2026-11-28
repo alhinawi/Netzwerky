@@ -115,7 +115,6 @@ export const p37: ScanPage = {
     { id: 'b105', x: 810, y: 1479, w: 212, h: 29, text: 'während eines Konzerts', ar: 'أثناء حفلة' },
     { id: 'b106', x: 560, y: 1508, w: 210, h: 17, text: 'innerhalb einer Stunde', ar: 'في خلال ساعة' },
     { id: 'b107', x: 945, y: 1583, w: 140, h: 21, text: 'siebenunddreißig', ar: 'سبعة وتلاتين' },
-    { id: 'b108', x: 1110, y: 1583, w: 27, h: 21, text: '37', ar: '٣٧' },
   ],
   audio: [],
   fields: [],

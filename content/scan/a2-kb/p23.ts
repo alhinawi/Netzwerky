@@ -32,7 +32,7 @@ export const p23: ScanPage = {
     { id: 'tp5', x: 1068, y: 711, w: 147, h: 24, text: 'verwenden Sie', ar: 'استخدموها' },
     { id: 'tp6', x: 1068, y: 739, w: 147, h: 24, text: 'sie regelmäßig.', ar: 'بانتظام.' },
     { id: 'r0', x: 178, y: 637, w: 216, h: 24, text: 'seine Meinung sagen', ar: 'تقول رأيك' },
-    { id: 'r00', x: 467, y: 635, w: 110, h: 24, text: 'zustimmen', ar: 'توافق' },
+    { id: 'r00', x: 467, y: 635, w: 110, h: 24, text: 'zustimmen', ar: 'يوافق / يؤيد' },
     { id: 'r000', x: 741, y: 632, w: 91, h: 22, text: 'ablehnen', ar: 'ترفض' },
     { id: 'r1', x: 212, y: 665, w: 236, h: 26, text: 'Ich finde … (nicht) gut/', ar: 'أنا شايف … (مش) كويس/' },
     { id: 'r2', x: 212, y: 697, w: 132, h: 22, text: 'schlecht/toll.', ar: 'وحش/رائع.' },
@@ -93,7 +93,6 @@ export const p23: ScanPage = {
     { id: 'bct1', x: 174, y: 1556, w: 952, h: 42, text: 'Wählen Sie eine Präsentation aus 10a und notieren Sie wichtige Informationen für einen Freund /', ar: 'اختاروا عرض من ١٠أ واكتبوا معلومات مهمة لصاحب /' },
     { id: 'bct2', x: 174, y: 1592, w: 480, h: 36, text: 'eine Freundin in Ihrer Sprache oder auf Deutsch.', ar: 'صاحبة بلغتكم أو بالألمانية.' },
     { id: 'fw', x: 985, y: 1675, w: 138, h: 26, text: 'dreiundzwanzig', ar: 'تلاتة وعشرين' },
-    { id: 'fn', x: 1145, y: 1670, w: 26, h: 27, text: '23', ar: '٢٣' },
   ],
   audio: [
     { id: 'a1_17_3', x: 3, y: 262, w: 30, h: 28, src: ['NWn_A2_KB_Audio_1-017.mp3'], label: 'Aufgabe 8b (1.17)' },

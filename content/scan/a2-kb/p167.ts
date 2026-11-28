@@ -9,7 +9,6 @@ export const p167: ScanPage = {
   height: 1755,
   words: [
     { id: 'w1', x: 807, y: 47, w: 236, h: 31, text: 'alphabetische Wortliste', ar: 'قايمة الكلمات الأبجدية' },
-    { id: 'w2', x: 876, y: 1686, w: 278, h: 31, text: 'einhundertsiebenundsechzig 167', ar: '١٦٧ مية وسبعة وستين' },
     { id: 'w3', x: 28, y: 129, w: 375, h: 25, text: 'Club, der, -s 4/5a', ar: 'نادي' },
     { id: 'w4', x: 28, y: 154, w: 375, h: 25, text: 'Clubdisco, die, -s 5/8b', ar: 'ديسكو نادي' },
     { id: 'w5', x: 28, y: 184, w: 375, h: 25, text: 'Cousin, der, -s 9/8a', ar: 'ابن عم / ابن خال' },
@@ -178,7 +177,6 @@ export const p167: ScanPage = {
   groups: [],
   sentences: [
     { id: 's1', text: 'alphabetische Wortliste', ar: 'قايمة الكلمات الأبجدية', words: ['w1'] },
-    { id: 's2', text: 'einhundertsiebenundsechzig 167', ar: '١٦٧ مية وسبعة وستين', words: ['w2'] },
     { id: 's3', text: 'Club, der, -s 4/5a', ar: 'نادي', words: ['w3'] },
     { id: 's4', text: 'Clubdisco, die, -s 5/8b', ar: 'ديسكو نادي', words: ['w4'] },
     { id: 's5', text: 'Cousin, der, -s 9/8a', ar: 'ابن عم / ابن خال', words: ['w5'] },

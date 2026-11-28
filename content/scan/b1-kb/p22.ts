@@ -89,7 +89,6 @@ export const p22: ScanPage = {
     { id: 'b79', x: 478, y: 1486, w: 470, h: 24, text: 'der Kühlschrank ｜ das Sofa ｜ der Herd', ar: 'التلاجة ｜ الكنبة ｜ البوتاجاز' },
     { id: 'b80', x: 955, y: 1486, w: 220, h: 24, text: 'steuern', ar: 'تحكم' },
     { id: 'b81', x: 225, y: 1531, w: 526, h: 27, text: 'Ich möchte die Farbe der Wände jeden Tag ändern.', ar: 'عايز أغيّر لون الحيطان كل يوم.' },
-    { id: 'b82', x: 103, y: 1587, w: 23, h: 16, text: '22', ar: '٢٢' },
     { id: 'b83', x: 151, y: 1590, w: 136, h: 18, text: 'zweiundzwanzig', ar: 'اتنين وعشرين' },
   ],
   audio: [],

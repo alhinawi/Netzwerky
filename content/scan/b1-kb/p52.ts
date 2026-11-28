@@ -51,7 +51,6 @@ export const p52: ScanPage = {
     { id: 'b41', x: 219, y: 1497, w: 747, h: 27, text: '– „Und das ganze Leben ist ja irgendwo ’ne Reise und man ist immer unterwegs.“', ar: '– "والحياة كلها يمكن رحلة والواحد دايما مسافر."' },
     { id: 'b42', x: 242, y: 1524, w: 357, h: 23, text: 'Was meint Markus mit dieser Aussage?', ar: 'ماركوس يقصد إيه بالكلام ده؟' },
     { id: 'b43', x: 219, y: 1550, w: 708, h: 26, text: '– Können Sie sich ein Leben als digitaler Nomade vorstellen? Warum (nicht)?', ar: '– تقدروا تتخيلوا حياة رحّال رقمي؟ ليه (لأ)؟' },
-    { id: 'b44', x: 98, y: 1575, w: 28, h: 22, text: '52', ar: '٥٢' },
     { id: 'b45', x: 140, y: 1575, w: 130, h: 22, text: 'zweiundfünfzig', ar: 'اتنين وخمسين' },
   ],
   audio: [],

@@ -19,7 +19,7 @@ export const p126: ScanPage = {
     { id: 'w6', x: 204, y: 1322, w: 991, h: 28, text: '6. Oh, hallo! Was machst du denn hier?', ar: '٦. أوه، أهلا! بتعمل إيه هنا؟' },
     { id: 'w7', x: 204, y: 1351, w: 991, h: 28, text: '7. Das ist aber schön! Und teuer! Egal, ich kaufe es.', ar: '٧. حلو أوي ده! وغالي كمان! مش مهم، هشتريه.' },
     { id: 'w8', x: 204, y: 1380, w: 991, h: 28, text: '8. Super T-Shirt.', ar: '٨. تيشيرت رائع.' },
-    { id: 'w9', x: 204, y: 1409, w: 991, h: 28, text: '9. Der Rock ist zu kurz. Und die Hose ist zu eng.', ar: '٩. الجونلة قصيرة زيادة. والبنطلون ضيق زيادة.' },
+    { id: 'w9', x: 204, y: 1409, w: 991, h: 28, text: '9. Der Rock ist zu kurz. Und die Hose ist zu eng.', ar: '٩. الجيبة قصيرة زيادة. والبنطلون ضيق زيادة.' },
     { id: 'w10', x: 204, y: 1438, w: 991, h: 28, text: '10. Ja, und du siehst auch toll aus!', ar: '١٠. أيوه، وانت كمان شكلك حلو قوي!' },
     { id: 'i1b', x: 204, y: 1486, w: 991, h: 33, text: 'b · Hören Sie zwei Gespräche. Welches Gespräch passt zu der Geschichte: 1 oder 2?', ar: 'ب · اسمع المحادثتين. أنهي محادثة تيجي مع القصة: ١ ولا ٢؟' },
   ],

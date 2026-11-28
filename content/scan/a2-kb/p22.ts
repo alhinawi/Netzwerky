@@ -94,7 +94,6 @@ export const p22: ScanPage = {
     { id: 'b6', x: 587, y: 1550, w: 121, h: 31, text: 'du ins Kino?', ar: 'السينما؟' },
     { id: 'b7', x: 1032, y: 1527, w: 106, h: 27, text: 'Mit seiner', ar: 'مع' },
     { id: 'b8', x: 1037, y: 1570, w: 97, h: 28, text: 'Freundin.', ar: 'صاحبته.' },
-    { id: 'fn', x: 92, y: 1678, w: 27, h: 25, text: '22', ar: '٢٢' },
     { id: 'fw', x: 143, y: 1680, w: 146, h: 21, text: 'zweiundzwanzig', ar: 'اتنين وعشرين' },
   ],
   audio: [
