@@ -28,7 +28,6 @@ export const p77: ScanPage = {
     { id: 'w16', x: 722, y: 752, w: 100, h: 30, text: '1,41 h / Tag', ar: '١٫٤١ ساعة/يوم' },
     { id: 'w17', x: 882, y: 723, w: 90, h: 30, text: '45.000 € /', ar: '٤٥٫٠٠٠ يورو /' },
     { id: 'w18', x: 910, y: 751, w: 38, h: 30, text: 'Jahr', ar: 'سنة' },
-    { id: 'w19', x: 1188, y: 747, w: 27, h: 30, text: '1,5', ar: '١٫٥' },
     { id: 'w20', x: 168, y: 852, w: 250, h: 30, text: 'Man gibt mir 81 Jahre hier,', ar: 'بيدوني ٨١ سنة هنا،' },
     { id: 'w21', x: 168, y: 883, w: 344, h: 30, text: 'Fünfzig-Stunden-Wochen, Arbeitstier¹,', ar: 'أسابيع ٥٠ ساعة، شغّيل¹،' },
     { id: 'w22', x: 168, y: 911, w: 372, h: 30, text: 'ich lächle so dreizehn Minuten pro Tag.', ar: 'بتبسم تلاتاشر دقيقة في اليوم.' },

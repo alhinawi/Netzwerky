@@ -14,7 +14,6 @@ export const p29: ScanPage = {
     { id: 'b4', x: 338, y: 1102, w: 700, h: 28, text: 'eine Gruppenarbeit machen | die Disziplin | streng sein | tolerant sein |', ar: 'أعمل شغل جماعي | الانضباط | أبقى صارم | أبقى متسامح |' },
     { id: 'b5', x: 338, y: 1133, w: 610, h: 28, text: 'eine Strafe bekommen | (keine) Angst haben | Medien nutzen', ar: 'أخد عقاب | (ما)أخاف | أستعمل الميديا' },
     { id: 'b6', x: 115, y: 1225, w: 1005, h: 32, text: '2a Hören Sie die Radiosendung über Veränderungen. Über welche Themen sprechen die Anrufer/innen?', ar: 'اسمعوا برنامج الراديو عن التغييرات. المتصلين بيتكلموا عن أنهي مواضيع؟' },
-    { id: 'b7', x: 58, y: 1258, w: 60, h: 22, text: '1.19-21', ar: '1.19-21' },
     { id: 'b8', x: 184, y: 1263, w: 120, h: 16, text: 'Notieren Sie.', ar: 'اكتبوا.' },
     { id: 'b9', x: 190, y: 1285, w: 150, h: 32, text: 'Ernst Lädke', ar: 'Ernst Lädke' },
     { id: 'b10', x: 520, y: 1285, w: 160, h: 32, text: 'Isabel Eickhoff', ar: 'Isabel Eickhoff' },

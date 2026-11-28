@@ -11,7 +11,6 @@ export const p46: ScanPage = {
     { id: 'b1', x: 233, y: 53, w: 510, h: 22, text: 'Gespräche bei der Arbeit verstehen, Irreales ausdrücken', ar: 'فهم المحادثات في الشغل، التعبير عن حاجات مش حقيقية' },
     { id: 'b2', x: 232, y: 134, w: 465, h: 40, text: 'Gespräche bei der Arbeit', ar: 'المحادثات في الشغل' },
     { id: 'b3', x: 111, y: 178, w: 860, h: 32, text: '4a Der Arbeitstag von Boris. Hören Sie und ordnen Sie die Gespräche den Fotos zu.', ar: '٤أ يوم شغل بوريس. اسمعوا واربطوا المحادثات بالصور.' },
-    { id: 'b4', x: 110, y: 218, w: 60, h: 16, text: '1.27–29', ar: '1.27–29' },
     { id: 'b5', x: 242, y: 523, w: 24, h: 24, text: 'A', ar: 'A' },
     { id: 'b6', x: 231, y: 574, w: 180, h: 22, text: 'Boris und Nadine', ar: 'Boris und Nadine' },
     { id: 'b7', x: 556, y: 523, w: 24, h: 24, text: 'B', ar: 'B' },

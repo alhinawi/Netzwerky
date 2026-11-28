@@ -96,7 +96,7 @@ for (const book of fs.readdirSync('content/scan')) {
       const t = txt.toLowerCase()
       if (y >= 1550 && isFooterNum(txt))
         violations.push({ key: `${book}/${f}:${i + 1}`, value: txt, rule: 'footer-page-number-box' })
-      if (/^\d{1,2}\.\d{1,2}$/.test(txt))
+      if (/^\d{1,2}[.,]\d{1,2}([\u2013\u2014-]\d{1,2})?$/.test(txt))
         violations.push({ key: `${book}/${f}:${i + 1}`, value: txt, rule: 'standalone-track-box' })
     })
   }
@@ -121,7 +121,7 @@ for (const book of fs.readdirSync('content/scan')) {
       if (!m) return
       const txt = m[2].slice(1, -1).trim(), ar = m[3].slice(1, -1).trim()
       const refs = (m[4] || '').split(',').map((r) => r.trim().replace(/^'|'$/g, '')).filter(Boolean)
-      if (/^\d{1,2}\.\d{1,2}$/.test(txt))
+      if (/^\d{1,2}[.,]\d{1,2}([\u2013\u2014-]\d{1,2})?$/.test(txt))
         violations.push({ key: `${book}/${f}:${i + 1}`, value: txt, rule: 'track-sentence' })
       if (isFooterNum(txt))
         violations.push({ key: `${book}/${f}:${i + 1}`, value: txt, rule: 'footer-number-sentence' })

@@ -32,7 +32,6 @@ export const p44: ScanPage = {
     { id: 'ex', x: 440, y: 1475, w: 315, h: 37, text: 'Auf dem Foto ist ein Kind mit …', ar: 'في الصورة فيه طفل مع …' },
     { id: 'bb', x: 172, y: 1560, w: 20, h: 24, text: 'b', ar: 'ب' },
     { id: 'j1', x: 215, y: 1560, w: 590, h: 50, text: 'Hören Sie die drei Gespräche. Zu welchen Fotos passen Sie?', ar: 'اسمعوا المحادثات التلاتة. إنتم مناسبين لأنهي صور؟' },
-    { id: 'l1', x: 85, y: 1595, w: 55, h: 19, text: '1.29–31', ar: '١.٢٩–٣١' },
     { id: 'g1', x: 215, y: 1605, w: 163, h: 27, text: 'Gespräch 1: Foto', ar: 'المحادثة ١: الصورة' },
     { id: 'g2', x: 515, y: 1610, w: 163, h: 28, text: 'Gespräch 2: Foto', ar: 'المحادثة ٢: الصورة' },
     { id: 'g3', x: 815, y: 1630, w: 177, h: 30, text: 'Gespräch 3: Foto', ar: 'المحادثة ٣: الصورة' },
