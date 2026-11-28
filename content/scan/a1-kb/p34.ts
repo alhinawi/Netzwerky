@@ -35,7 +35,8 @@ export const p34: ScanPage = {
     { id: 't9d', x: 209, y: 1572, w: 365, h: 22, text: 'Welches Event finden Sie interessant?', ar: 'أنهي فعالية عاجباك؟' },
   ],
   audio: [
-    { id: 'a9c', x: 94, y: 1214, w: 40, h: 36, src: ['/audio/a1/kb/NWn_A1_KB_Audio_1-033.mp3'], label: 'Aufgabe 9c (1.33)' },
+    // disabled: CD1 tracks 1-031..1-037 not deployed yet (waiting for the real Klett files)
+    { id: 'a9c', disabled: true, x: 94, y: 1214, w: 40, h: 36, src: ['/audio/a1/kb/NWn_A1_KB_Audio_1-033.mp3'], label: 'Aufgabe 9c (1.33)' },
   ],
   fields: [
     { id: 'f1', group: '9a', kind: 'text', x: 224, y: 566, w: 40, h: 22 },

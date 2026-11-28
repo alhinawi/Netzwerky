@@ -35,7 +35,8 @@ export const p35: ScanPage = {
     { id: 't10d', x: 204, y: 1540, w: 900, h: 44, text: 'Arbeiten Sie zu zweit mit dem Wörterbuch. Was machen Sie wann? Machen Sie ein Plakat zu den Jahreszeiten. Präsentieren Sie es im Kurs.', ar: 'اشتغلوا في ثنائي بالقاموس. بتعملوا إيه امتى؟ اعملوا بوستر عن فصول السنة وقدّموه في الكورس.' },
   ],
   audio: [
-    { id: 'a10c', x: 85, y: 1223, w: 40, h: 36, src: ['/audio/a1/kb/NWn_A1_KB_Audio_1-034.mp3', '/audio/a1/kb/NWn_A1_KB_Audio_1-035.mp3', '/audio/a1/kb/NWn_A1_KB_Audio_1-036.mp3', '/audio/a1/kb/NWn_A1_KB_Audio_1-037.mp3'], label: 'Aufgabe 10c (1.34–37)' },
+    // disabled: CD1 tracks 1-031..1-037 not deployed yet (waiting for the real Klett files)
+    { id: 'a10c', disabled: true, x: 85, y: 1223, w: 40, h: 36, src: ['/audio/a1/kb/NWn_A1_KB_Audio_1-034.mp3', '/audio/a1/kb/NWn_A1_KB_Audio_1-035.mp3', '/audio/a1/kb/NWn_A1_KB_Audio_1-036.mp3', '/audio/a1/kb/NWn_A1_KB_Audio_1-037.mp3'], label: 'Aufgabe 10c (1.34–37)' },
   ],
   fields: [
     { id: 'bA', group: '10b', kind: 'text', x: 250, y: 1118, w: 380, h: 26 },
