@@ -29,7 +29,7 @@ export const p44: ScanPage = {
     { id: 'b19', x: 236, y: 1273, w: 437, h: 26, text: 'Frau Mersa, sind Sie zufrieden in Ihrem Beruf?', ar: 'مدام ميرسا، إنتِ مبسوطة في شغلك؟' },
     { id: 'b20', x: 236, y: 1300, w: 400, h: 26, text: 'Ja, im Augenblick schon. Ich habe „meinen“', ar: 'أيوه، في الوقت الحالي مبسوطة. أنا لقيت «شغلانتي' },
     { id: 'b21', x: 236, y: 1327, w: 395, h: 26, text: 'Beruf gefunden. Ich denke, dass ich dabei', ar: 'المناسبة». حاسة إني هفضل' },
-    { id: 'b22', x: 236, y: 1352, w: 75, h: 26, text: 'bleibe.', ar: 'فيها.' },
+    { id: 'b22', x: 236, y: 1352, w: 75, h: 26, text: 'bleibe.', ar: 'أبقى.' },
     { id: 'b23', x: 236, y: 1408, w: 245, h: 26, text: 'Was ist denn so gut daran?', ar: 'إيه اللي كويس فيها كده؟' },
     { id: 'b24', x: 236, y: 1435, w: 405, h: 26, text: 'Ich arbeite sehr selbstständig und es gibt', ar: 'أنا بشتغل مستقلة جدًا وفي' },
     { id: 'b25', x: 236, y: 1460, w: 390, h: 26, text: 'immer wieder neue Herausforderungen und', ar: 'تحديات جديدة على طول و' },

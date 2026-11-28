@@ -10,7 +10,7 @@ export const p68: ScanPage = {
   words: [
     { id: 'w0', x: 190, y: 33, w: 540, h: 30, text: 'Texten Informationen entnehmen, Personen vorstellen', ar: 'فهم المعلومات من النصوص، تقديم الأشخاص' },
     { id: 'w1', x: 20, y: 20, w: 50, h: 60, text: '6', ar: '٦' },
-    { id: 'w2', x: 195, y: 145, w: 340, h: 30, text: 'Der Traumberuf?', ar: 'الوظيفة الحلم؟' },
+    { id: 'w2', x: 195, y: 145, w: 340, h: 30, text: 'Der Traumberuf?', ar: 'وظيفة الحلم' },
     { id: 'w3', x: 125, y: 200, w: 47, h: 30, text: '7 a', ar: '٧ أ' },
     { id: 'w4', x: 195, y: 168, w: 985, h: 44, text: 'Arbeiten Sie zu zweit. Jede/r liest einen Text. Markieren Sie im Text Informationen zu Name, Ausbildung,', ar: 'اشتغلوا مع بعض. كل واحد يقرأ نص. علّموا في النص معلومات عن الاسم والتعليم/التدريب،' },
     { id: 'w5', x: 195, y: 196, w: 975, h: 44, text: 'beruflichen Tätigkeiten und Berufswechsel. Notieren Sie die Informationen dann in der Tabelle.', ar: 'الأنشطة المهنية وتغيير الوظيفة. بعدين سجلوا المعلومات في الجدول.' },
@@ -84,7 +84,7 @@ export const p68: ScanPage = {
   ],
   sentences: [
     { id: 's-w0', text: 'Texten Informationen entnehmen, Personen vorstellen', ar: 'فهم المعلومات من النصوص، تقديم الأشخاص', words: ['w0'] },
-    { id: 's-w2', text: 'Der Traumberuf?', ar: 'الوظيفة الحلم؟', words: ['w2'] },
+    { id: 's-w2', text: 'Der Traumberuf?', ar: 'وظيفة الحلم', words: ['w2'] },
     { id: 's-w3', text: '7 a', ar: '٧ أ', words: ['w3'] },
     { id: 's-w4', text: 'Arbeiten Sie zu zweit. Jede/r liest einen Text. Markieren Sie im Text Informationen zu Name, Ausbildung,', ar: 'اشتغلوا مع بعض. كل واحد يقرأ نص. علّموا في النص معلومات عن الاسم والتعليم/التدريب،', words: ['w4'] },
     { id: 's-w5', text: 'beruflichen Tätigkeiten und Berufswechsel. Notieren Sie die Informationen dann in der Tabelle.', ar: 'الأنشطة المهنية وتغيير الوظيفة. بعدين سجلوا المعلومات في الجدول.', words: ['w5'] },

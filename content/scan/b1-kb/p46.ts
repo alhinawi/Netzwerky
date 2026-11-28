@@ -20,7 +20,7 @@ export const p46: ScanPage = {
     { id: 'b10', x: 856, y: 574, w: 195, h: 22, text: 'Boris und Frau Bauer', ar: 'Boris und Frau Bauer' },
     { id: 'b11', x: 185, y: 623, w: 470, h: 24, text: 'b Hören Sie noch einmal und kreuzen Sie an.', ar: 'ب اسمعوا تاني وعلّموا على الإجابة الصح.' },
     { id: 'b12', x: 227, y: 668, w: 245, h: 22, text: '1. Was ist schon fertig für', ar: '١. إيه اللي خلص خلاص' },
-    { id: 'b13', x: 255, y: 693, w: 140, h: 22, text: 'die Besprechung?', ar: 'للاجتماع؟' },
+    { id: 'b13', x: 255, y: 693, w: 140, h: 22, text: 'die Besprechung?', ar: 'الاجتماع' },
     { id: 'b14', x: 260, y: 720, w: 170, h: 22, text: 'a Die Präsentation.', ar: 'أ العرض التقديمي.' },
     { id: 'b15', x: 260, y: 746, w: 155, h: 22, text: 'b Das Programm.', ar: 'ب البرنامج.' },
     { id: 'b16', x: 260, y: 772, w: 155, h: 22, text: 'c Die Unterlagen.', ar: 'ج الأوراق.' },

@@ -266,13 +266,13 @@ export default function ScanReader({
   const ensureGloss = () => {
     if (gloss) return Promise.resolve(gloss)
     try {
-      const cached = localStorage.getItem('nw-gloss-v15')
+      const cached = localStorage.getItem('nw-gloss-v16')
       if (cached) { const g = JSON.parse(cached); setGloss(g); return Promise.resolve(g) }
     } catch {}
     if (!glossReq.current) {
       glossReq.current = fetch('/glossary.json').then((r) => r.json()).then((g) => {
         setGloss(g)
-        try { localStorage.setItem('nw-gloss-v15', JSON.stringify(g)) } catch {}
+        try { localStorage.setItem('nw-gloss-v16', JSON.stringify(g)) } catch {}
         return g as Record<string, string>
       }).catch(() => ({}))
     }
@@ -629,6 +629,8 @@ export default function ScanReader({
                 let tok = res?.tok ?? w.text
                 // taps on separator tokens (|, /, dashes, bullets) open nothing
                 if (res && !/[a-zäöüßA-ZÄÖÜ0-9]/.test(res.tok)) { setWordHit(null); return }
+                // a suffix token of a noun entry ("Festspiel, das, -e") opens no popup at all
+                if (res && /^[-–—]/.test(res.tok)) { setWordHit(null); return }
                 if (res && /^(der|die|das)$/i.test(res.tok) && res.idx < res.tokens.length - 1) tok = res.tokens[res.idx + 1]
                 speakWord(tok, w.text)
                 const hasSentence = (page.sentences ?? []).some((s) => (s.words ?? []).includes(w.id) || s.text.includes(w.text))
@@ -647,14 +649,23 @@ export default function ScanReader({
                   // Parenthesized optional words like "(Es)" are no word tap target either.
                   const bareTok = bareKey(tok)
                   const compositeNum = /[0-9][.,–—-][0-9]/.test(w.text)
-                  const skipWord = /^[([]/.test(tok) || (/[0-9]/.test(tok) && (!/^[0-9]+[.,]?$/.test(tok) || compositeNum))
+                  // suffix tokens of noun entries ("Festspiel, das, -e") open nothing
+                  const suffixTok = /^[-–—]/.test(tok)
+                  // a separable prefix sitting alone at the end of a box
+                  // ("ein|laden ... ein") is part of the verb, no word gloss
+                  const sepPrefix = !!res && res.tokens.length > 1 && res.idx === res.tokens.length - 1 && /^(ein|an|auf|aus|mit|zu|vor|zurück|weg|daher|her)$/i.test(bareTok)
+                  // "ist" as a perfect-tense auxiliary ("ist gefahren") is not هو / ده
+                  const istAux = bareTok === 'ist' && !!res && !!res.tokens[res.idx + 1] && /^ge/i.test(bareKey(res.tokens[res.idx + 1]))
+                  const skipWord = /^[([]/.test(tok) || suffixTok || sepPrefix || istAux || (/[0-9]/.test(tok) && (!/^[0-9]+[.,]?$/.test(tok) || compositeNum))
                   const arRaw = skipWord
                     ? ''
                     : /^[0-9]+[.,]?$/.test(tok)
                     ? arNum(Number(tok.replace(/[^0-9]/g, '')))
                     : glossExact(gg, tok) || glossStem(gg, tok) || shortBox || ''
+                  // "es" alone is هو / ده; only "es gibt" means فيه
+                  const arCtx = bareTok === 'es' ? (/es gibt|gibt es/i.test(w.text) ? 'فيه' : 'هو / ده') : arRaw
                   // stray list separators from the scan never leak into a gloss
-                  const ar = arRaw.replace(/^[\s|｜]+/, '').replace(/[\s|｜]+$/, '')
+                  const ar = arCtx.replace(/^[\s|｜]+/, '').replace(/[\s|｜]+$/, '')
                   if (!ar) {
                     // no word-level gloss: open the box as a labeled sentence, never the word popup
                     setWordHit(null)
