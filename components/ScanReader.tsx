@@ -77,6 +77,9 @@ export default function ScanReader({
   const [chapterMenu, setChapterMenu] = useState(false)
   const [gloss, setGloss] = useState<Record<string, string> | null>(null)
   const [wordHit, setWordHit] = useState<{ text: string; ar: string } | null>(null)
+  // per-popup sentence fallback: shows the box's sentence view without flipping
+  // the user's global كلمة/جملة mode (setTab would poison every later tap)
+  const [forceSent, setForceSent] = useState(false)
   const [profileOpen, setProfileOpen] = useState(false)
   const [sound, setSoundOn] = useState(true)
   const [fb, setFb] = useState(true)
@@ -419,7 +422,7 @@ export default function ScanReader({
   /** a box whose text is a whole sentence (Redemittel block) is a sentence, not a word */
   const boxIsSentence = Boolean(sentence && word && norm(sentence.text) === norm(word.text))
   const effectiveTab: 'word' | 'sentence' =
-    tab === 'sentence' && !sentence ? 'word' : tab === 'word' && !wordHit && sentence ? 'sentence' : tab
+    forceSent && sentence ? 'sentence' : tab === 'sentence' && !sentence ? 'word' : tab === 'word' && !wordHit && sentence ? 'sentence' : tab
   const popupText = effectiveTab === 'sentence' && sentence
     ? sentence.text
     : (wordHit?.text ?? word?.text ?? '')
@@ -608,6 +611,7 @@ export default function ScanReader({
                 e.stopPropagation()
                 if (tab !== 'word') {
                   setWordHit(null)
+                  if (activeWord === w.id) setForceSent(false)
                   setActiveWord(activeWord === w.id ? null : w.id)
                   playTap()
                   return
@@ -638,14 +642,15 @@ export default function ScanReader({
                   if (!ar) {
                     // no word-level gloss: open the box as a labeled sentence, never the word popup
                     setWordHit(null)
-                    if (boxAr || hasSentence) { setTab('sentence'); return true }
+                    if (boxAr || hasSentence) { setForceSent(true); return true } // labeled sentence view, global mode untouched
                     return false // no gloss and no sentence: show nothing
                   }
                   setWordHit({ text: tok, ar })
-                  setTab('word')
+                  setForceSent(false)
                   return true
                 }
                 const toggle = () => setActiveWord((prev) => (prev === w.id ? null : w.id))
+                if (activeWord === w.id) setForceSent(false) // this tap closes the popup
                 if (gloss) { if (open(gloss)) toggle() }
                 else ensureGloss().then((gg) => { if (open(gg)) toggle() })
                 playTap()
@@ -679,7 +684,7 @@ export default function ScanReader({
                     جملة
                   </button>
                 )}
-                <button onClick={() => setActiveWord(null)} aria-label="اقفل" className="ml-auto rounded px-1.5 text-white/60 hover:text-white">×</button>
+                <button onClick={() => { setActiveWord(null); setForceSent(false) }} aria-label="اقفل" className="ml-auto rounded px-1.5 text-white/60 hover:text-white">×</button>
               </div>
               <div className="text-[13px] font-semibold leading-snug">{popupText}</div>
               <div className="ar mt-1 text-[13px] leading-snug text-amber-200">{popupAr || '—'}</div>
