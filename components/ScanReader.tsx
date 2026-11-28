@@ -422,7 +422,7 @@ export default function ScanReader({
       <div className="sticky top-0 z-30 border-b border-neutral-200 bg-white/95 backdrop-blur">
         <div className="mx-auto flex max-w-[1180px] items-center gap-2 px-3 py-2">
           <div className="flex shrink-0 items-center gap-2">
-          <button onClick={() => setNavOpen(true)} aria-label="Bibliothek" className="grid h-8 w-8 shrink-0 place-items-center rounded-md border border-neutral-300 text-neutral-600">
+          <button onClick={() => setNavOpen(true)} aria-label="المكتبة" className="grid h-8 w-8 shrink-0 place-items-center rounded-md border border-neutral-300 text-neutral-600">
             <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="1.8"><path d="M4 6h16M4 12h16M4 18h16" strokeLinecap="round" /></svg>
           </button>
           <button onClick={() => router.push(`/book/${page.book}/`)} className="flex shrink-0 items-baseline gap-1 text-[15px] font-extrabold tracking-tight text-neutral-900">
@@ -432,7 +432,7 @@ export default function ScanReader({
           <div className="relative min-w-0 flex-1">
             <button
               onClick={() => setChapterMenu((v) => !v)}
-              aria-label="Kapitel wählen"
+              aria-label="اختيار الفصل"
               aria-expanded={chapterMenu}
               className="flex w-full items-center justify-between gap-1.5 rounded-md border border-neutral-300 bg-[#f7f3e8] px-2.5 py-1.5 text-[12px] font-medium text-neutral-700"
             >
@@ -461,12 +461,12 @@ export default function ScanReader({
           </div>
         </div>
         <div className="mx-auto hidden max-w-[1180px] items-center gap-1 px-2 pb-1 sm:flex">
-          <span className="text-[11px] text-neutral-400">Ansicht</span>
+          <span className="text-[11px] text-neutral-400">عرض</span>
           {([1, 2, 4] as const).map((n) => (
             <button
               key={n}
               onClick={() => { setLayout(n); setZoom(1) }}
-              aria-label={n === 1 ? 'Eine Seite' : n === 2 ? 'Zwei Seiten' : 'Vier Seiten'}
+              aria-label={n === 1 ? 'صفحة واحدة' : n === 2 ? 'صفحتان' : 'أربع صفحات'}
               className={`rounded px-2 py-0.5 ${layout === n ? 'bg-nw text-white' : 'text-neutral-600 hover:bg-neutral-100'}`}
             >
               <svg viewBox="0 0 20 16" className="h-3.5 w-4" fill="none" stroke="currentColor" strokeWidth="1.6">
@@ -805,19 +805,19 @@ export default function ScanReader({
             </button>
             <button
               onClick={() => setPagesOpen((v) => !v)}
-              aria-label="Seite wählen"
+              aria-label="اختيار الصفحة"
               aria-expanded={pagesOpen}
               className="flex w-[3.25rem] shrink-0 items-center justify-center gap-0.5 rounded-md border border-neutral-300 py-1.5 text-[12.5px] text-neutral-700 sm:w-[3.75rem] sm:text-[13px]"
             >
               {page.printed}
               <span className={`text-[9px] text-neutral-400 transition-transform ${pagesOpen ? 'rotate-180' : ''}`}>▴</span>
             </button>
-            <button onClick={() => go(next)} disabled={!next} aria-label="Nächste Seite" className="grid h-9 w-9 shrink-0 place-items-center rounded-md border border-neutral-300 text-neutral-500 disabled:opacity-30 sm:h-10 sm:w-10">
+            <button onClick={() => go(next)} disabled={!next} aria-label="الصفحة التالية" className="grid h-9 w-9 shrink-0 place-items-center rounded-md border border-neutral-300 text-neutral-500 disabled:opacity-30 sm:h-10 sm:w-10">
               <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="1.8"><path d="M10 5l7 7-7 7" strokeLinecap="round" strokeLinejoin="round" /></svg>
             </button>
             <button onClick={() => { setShowWords(true); setTab(tab === 'word' ? 'sentence' : 'word'); setActiveWord(null) }}
-              aria-pressed={tab === 'sentence'} aria-label={tab === 'word' ? 'Wortmodus, tippen fuer Satz' : 'Satzmodus, tippen fuer Wort'}
-              className={`h-9 min-w-0 flex-1 rounded-md border text-[13px] font-semibold ${tab === 'word' ? 'border-nw bg-nw text-white' : 'border-neutral-300 bg-white text-neutral-700'}`}>{tab === 'word' ? 'Word' : 'Sentence'}</button>
+              aria-pressed={tab === 'sentence'} aria-label={tab === 'word' ? 'وضع الكلمة، اضغط للجملة' : 'وضع الجملة، اضغط للكلمة'}
+              className={`h-9 min-w-0 flex-1 rounded-md border text-[13px] font-semibold ${tab === 'word' ? 'border-nw bg-nw text-white' : 'border-neutral-300 bg-white text-neutral-700'}`}>{tab === 'word' ? 'كلمة' : 'جملة'}</button>
             <button onClick={() => { setAnswers({}); setResults({}); setAskClear(false) }} aria-label="Zurücksetzen" className="grid h-9 w-9 shrink-0 place-items-center rounded-md border border-neutral-300 text-neutral-500">
               <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="1.7"><path d="M4 10a8 8 0 1 1 2.3 6.3" strokeLinecap="round" /><path d="M4 5v5h5" strokeLinecap="round" strokeLinejoin="round" /></svg>
             </button>
@@ -825,7 +825,7 @@ export default function ScanReader({
         </div>
       </div>
       {navOpen && (
-        <div className="fixed inset-0 z-40" role="dialog" aria-label="Bibliothek">
+        <div className="fixed inset-0 z-40" role="dialog" aria-label="المكتبة">
           <div className="absolute inset-0 bg-black/30" onClick={() => setNavOpen(false)} />
           <div className="absolute left-0 top-0 flex h-full w-[86%] max-w-[320px] flex-col bg-white shadow-2xl">
             <div className="flex items-center justify-between border-b border-neutral-200 px-4 py-3">
