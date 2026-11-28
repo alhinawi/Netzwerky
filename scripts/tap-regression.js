@@ -160,6 +160,24 @@ SPECS['/read/a1-kb/162/'] = [
   ['Akku, der, -s', 0.1, 'بطارية قابلة للشحن'],
 ]
 
+// K5 self-written vocabulary (pp 54-61)
+SPECS['/read/b1-kb/54/'] = [
+  ['... Trinkwasser verbraucht jeder Mensch in Deutsch-', 0.3, 'بيستهلك'],
+  ['1 Trinkwasser', 0.5, 'ماية شرب'],
+]
+SPECS['/read/b1-kb/59/'] = [
+  ['Die SUNNYBAG-Taschen haben einen Akku, damit man das Handy immer aufladen kann.', 0.48, 'بكده / عشان'],
+  ['Nebensätze mit damit und um ... zu', 0.1, 'جمل تابعة'],
+]
+SPECS['/read/b1-kb/60/'] = [
+  ['trocken | mild | warm | heiß | es schneit | kalt/kühl | es regnet |', 0.63, 'بينزل تلج'],
+  ['2. der Regen:', 0.6, 'المطر'],
+]
+SPECS['/read/b1-kb/61/'] = [
+  ['gibt es inzwischen immer mehr Mitfahrbänke, die auch immer mehr', 0.55, 'ترابيزات ركوب معانا'],
+  ['1. „Plogging” bedeutet „beim Joggen aufheben“.', 0.2, 'بلوجينج (جري ولقط زبالة)'],
+]
+
 const cases = SPECS[location.pathname]
 if (!cases) return 'no spec for ' + location.pathname
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms))
