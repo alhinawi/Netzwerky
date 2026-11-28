@@ -409,12 +409,16 @@ export default function ScanReader({
   })
 
   const word = page.words.find((w) => w.id === activeWord)
+  const boxWordCount = word ? word.text.trim().split(/\s+/).length : 0
   const sentence = word
     ? (page.sentences ?? []).find((s) => (s.words ?? []).includes(word.id)) ??
       (page.sentences ?? []).find((s) => s.text.includes(word.text)) ??
       // a line box whose ar is a sentence translation is itself the sentence view:
-      // the tap falls back here, never into the word popup (reviewer rule)
-      (word.ar && word.ar.trim().length > 25 && word.ar.trim().toLowerCase() !== word.text.trim().toLowerCase()
+      // the tap falls back here, never into the word popup (reviewer rule).
+      // That is any box longer than two words with a real ar, whatever its length,
+      // and any box whose ar runs past ~25 chars (K4 reviewer: short sentence
+      // translations like "متآسف" must not surface as word glosses either)
+      (word.ar && !/^[ـ\-—–\s]+$/.test(word.ar.trim()) && word.ar.trim().toLowerCase() !== word.text.trim().toLowerCase() && (word.ar.trim().length > 25 || boxWordCount > 2)
         ? { id: `box-${word.id}`, text: word.text, ar: word.ar, words: [word.id] }
         : undefined)
     : undefined
@@ -430,7 +434,7 @@ export default function ScanReader({
   // never a word gloss (it belongs to the sentence tab)
   const popupAr = effectiveTab === 'sentence' && sentence
     ? sentence.ar
-    : (wordHit?.ar ?? (word && word.ar.trim().length <= 25 ? word.ar : '') ?? '')
+    : (wordHit?.ar ?? (word && word.ar.trim().length <= 25 && boxWordCount <= 2 ? word.ar : '') ?? '')
 
   /** keep the popup inside the page: shift it left when the word sits near an edge */
   const popupStyle = (w: { x: number; y: number; w: number; h: number }) => {
