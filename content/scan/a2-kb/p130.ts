@@ -98,7 +98,6 @@ export const p130: ScanPage = {
     { id: 'w87', x: 190, y: 1567, w: 16, h: 30, text: 'b', ar: 'ب' },
     { id: 'w88', x: 232, y: 1568, w: 963, h: 30, text: 'Jemand aus dem Kurs möchte mitkommen. Geben Sie ihm die wichtigsten Informationen aus Ihrem', ar: 'حد من الكورس عايز يجي معاكم. اديله أهم المعلومات من' },
     { id: 'w89', x: 232, y: 1595, w: 147, h: 30, text: 'Gespräch in 8a.', ar: 'محادثة ٨أ.' },
-    { id: 'w91', x: 155, y: 1640, w: 156, h: 30, text: 'einhundertdreißig', ar: 'مية وتلاتين' },
   ],
   audio: [
   ],

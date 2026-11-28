@@ -91,7 +91,6 @@ export const p103: ScanPage = {
     { id: 'n4', x: 577, y: 1639, w: 238, h: 33, text: '4. Mo__itz B__eibt__eu', ar: 'اسم ناقص حروف r / l (كمّله)' },
     { id: 'n5', x: 960, y: 1589, w: 187, h: 32, text: '5. Pat__ick __ange', ar: 'اسم ناقص حروف r / l (كمّله)' },
     { id: 'n6', x: 960, y: 1629, w: 200, h: 32, text: '6. Danie__ B__üh__', ar: 'اسم ناقص حروف r / l (كمّله)' },
-    { id: 'pgw', x: 985, y: 1688, w: 130, h: 30, text: 'einhundertdrei', ar: 'مية وتلاتة' },
   ],
   audio: [
   ],

@@ -97,7 +97,6 @@ export const p119: ScanPage = {
     { id: 'n5e', x: 142, y: 1613, w: 20, h: 28, text: 'e', ar: 'هـ' },
     { id: 'f1', x: 182, y: 1596, w: 935, h: 40, text: 'Arbeiten Sie in Gruppen und bereiten Sie ein Kursfest vor. Wer macht was (Essen und Trinken,', ar: 'اشتغلوا في مجموعات وجهّزوا حفلة للكورس. مين هيعمل إيه (أكل وشرب،' },
     { id: 'f2', x: 182, y: 1626, w: 880, h: 37, text: 'Einladungen, Musik, Dekoration ...)? Was stellen Sie im Kursraum wohin? Sprechen Sie.', ar: 'دعوات، موسيقى، ديكور ...)؟ هتحطوا إيه فين في أوضة الكورس؟ اتكلموا.' },
-    { id: 'pw', x: 963, y: 1699, w: 188, h: 13, text: 'einhundertneunzehn', ar: 'مية وتسعتاشر' },
   ],
   audio: [
   ],
@@ -177,7 +176,6 @@ export const p119: ScanPage = {
     { id: 's-e2', text: 'Ja, stimmt.', ar: 'أيوه، صح.', words: ['e2'] },
     { id: 's-f1', text: 'Arbeiten Sie in Gruppen und bereiten Sie ein Kursfest vor. Wer macht was (Essen und Trinken,', ar: 'اشتغلوا في مجموعات وجهّزوا حفلة للكورس. مين هيعمل إيه (أكل وشرب،', words: ['f1'] },
     { id: 's-f2', text: 'Einladungen, Musik, Dekoration ...)? Was stellen Sie im Kursraum wohin? Sprechen Sie.', ar: 'دعوات، موسيقى، ديكور ...)؟ هتحطوا إيه فين في أوضة الكورس؟ اتكلموا.', words: ['f2'] },
-    { id: 's-pw', text: 'einhundertneunzehn', ar: 'مية وتسعتاشر', words: ['pw'] },
   ],
   groups: [],
 }

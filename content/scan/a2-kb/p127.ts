@@ -37,7 +37,6 @@ export const p127: ScanPage = {
     { id: 'w26', x: 147, y: 1565, w: 273, h: 30, text: 'sprechen Sie dann zu zweit.', ar: 'وبعدين اتكلموا اتنين اتنين.' },
     { id: 'w27', x: 330, y: 1603, w: 490, h: 30, text: 'Von Montag bis Freitag arbeite ich jeden Tag circa', ar: 'من الاثنين للجمعة بشتغل كل يوم تقريباً' },
     { id: 'w28', x: 352, y: 1625, w: 448, h: 30, text: '9 Stunden. Abends bin ich meistens zu Hause.', ar: '٩ ساعات. بالليل غالباً بكون في البيت.' },
-    { id: 'w29', x: 843, y: 1670, w: 257, h: 30, text: 'einhundertsiebenundzwanzig', ar: 'مية وسبعة وعشرين' },
   ],
   audio: [
   ],

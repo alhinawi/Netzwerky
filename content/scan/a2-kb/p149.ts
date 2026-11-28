@@ -49,9 +49,7 @@ export const p149: ScanPage = {
     { id: 'w38', x: 920, y: 1397, w: 321, h: 31, text: 'Gezieltes Hören', ar: 'استماع مركّز' },
     { id: 'w39', x: 920, y: 1436, w: 321, h: 209, text: 'Hören Sie und überlegen Sie dann: Was ist für Ihren Freund / Ihre Freundin interessant? Hören Sie dann noch einmal genau und notieren Sie die passenden Informationen.', ar: 'اسمعوا وفكروا: إيه المهم لصاحبكم؟ اسمعوا تاني بتركيز وسجلوا المعلومات المناسبة.' },
     { id: 'ic6a', x: 48, y: 1372, w: 30, h: 30, text: '🔊', ar: 'صوت' },
-    { id: 'tr6a', x: 45, y: 1408, w: 50, h: 26, text: '2.56', ar: 'المسار 2.56' },
     { id: 'ic6b', x: 48, y: 1500, w: 30, h: 30, text: '🔊', ar: 'صوت' },
-    { id: 'tr6b', x: 45, y: 1535, w: 50, h: 26, text: '2.57', ar: 'المسار 2.57' },
   ],
   audio: [
   ],

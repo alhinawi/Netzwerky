@@ -115,7 +115,6 @@ export const p135: ScanPage = {
     { id: 'w104', x: 896, y: 1460, w: 156, h: 28, text: 'Über den Lehrer.', ar: 'عن المدرس.' },
     { id: 'w105', x: 898, y: 1489, w: 88, h: 28, text: 'Mit Ben.', ar: 'مع بن.' },
     { id: 'w106', x: 125, y: 1566, w: 740, h: 28, text: 'Wenn die Präposition mit Vokal beginnt, braucht man ein „r“: worüber, worauf …', ar: 'لو حرف الجر بيبدأ بحرف علة لازم نزود «r»: worüber, worauf …' },
-    { id: 'w107', x: 888, y: 1624, w: 220, h: 28, text: 'einhundertfünfunddreißig', ar: 'مية وخمسة وتلاتين' },
   ],
   audio: [
   ],

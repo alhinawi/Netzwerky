@@ -104,7 +104,6 @@ export const p125: ScanPage = {
     { id: 'p3', x: 87, y: 1507, w: 1027, h: 42, text: 'Für mehrmalige Ereignisse in der Vergangenheit verwendet man Nebensätze mit wenn. In diesen Sätzen', ar: 'للأحداث اللي اتكررت في الماضي بنستخدم جمل wenn الفرعية. في الجمل دي' },
     { id: 'p4', x: 87, y: 1554, w: 452, h: 27, text: 'stehen oft Wörter wie oft, meistens, immer …', ar: 'غالبًا فيه كلمات زي oft، meistens، immer …' },
     { id: 'p5', x: 87, y: 1602, w: 409, h: 21, text: 'Im Präsens verwendet man immer wenn.', ar: 'في المضارع بنستخدم دايمًا wenn.' },
-    { id: 'pw', x: 887, y: 1701, w: 232, h: 13, text: 'einhundertfünfundzwanzig', ar: 'مية وخمسة وعشرين' },
   ],
   audio: [
   ],
@@ -207,7 +206,6 @@ export const p125: ScanPage = {
     { id: 's-p3', text: 'Für mehrmalige Ereignisse in der Vergangenheit verwendet man Nebensätze mit wenn. In diesen Sätzen', ar: 'للأحداث اللي اتكررت في الماضي بنستخدم جمل wenn الفرعية. في الجمل دي', words: ['p3'] },
     { id: 's-p4', text: 'stehen oft Wörter wie oft, meistens, immer …', ar: 'غالبًا فيه كلمات زي oft، meistens، immer …', words: ['p4'] },
     { id: 's-p5', text: 'Im Präsens verwendet man immer wenn.', ar: 'في المضارع بنستخدم دايمًا wenn.', words: ['p5'] },
-    { id: 's-pw', text: 'einhundertfünfundzwanzig', ar: 'مية وخمسة وعشرين', words: ['pw'] },
   ],
   groups: [],
 }

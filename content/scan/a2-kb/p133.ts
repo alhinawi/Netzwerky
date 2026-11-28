@@ -51,7 +51,6 @@ export const p133: ScanPage = {
     { id: 'w40', x: 112, y: 1563, w: 19, h: 30, text: 'd', ar: 'د' },
     { id: 'w41', x: 153, y: 1555, w: 973, h: 30, text: 'Arbeiten Sie zu zweit. Wählen Sie zwei Sprichwörter und schreiben Sie zwei kurze Dialoge mit je einem', ar: 'اشتغلوا اتنين اتنين. اختاروا مثلين واكتبوا حوارين قصيرين مع كل مثل' },
     { id: 'w42', x: 153, y: 1592, w: 370, h: 30, text: 'Sprichwort. Spielen Sie die Dialoge vor.', ar: 'ومثّلوا الحوارات.' },
-    { id: 'w43', x: 872, y: 1682, w: 227, h: 30, text: 'einhundertdreiunddreißig', ar: 'مية وتلاتة وتلاتين' },
   ],
   audio: [
   ],

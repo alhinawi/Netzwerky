@@ -14,7 +14,6 @@ export const p142: ScanPage = {
     { id: 'n10', x: 88, y: 206, w: 62, h: 28, text: '10 a', ar: '10 أ' },
     { id: 't10', x: 175, y: 176, w: 975, h: 57, text: 'Welche interessante Ausstellung oder welches Museum haben Sie schon besucht? Erzählen Sie.', ar: 'أنهي معرض أو متحف مثير زرتوه قبل كده؟ احكوا.' },
     { id: 'ic', x: 45, y: 268, w: 30, h: 30, text: '🔊', ar: 'صوت' },
-    { id: 'tr', x: 38, y: 306, w: 45, h: 28, text: '2.55', ar: 'المسار 2.55' },
     { id: 'nb', x: 135, y: 269, w: 18, h: 28, text: 'b', ar: 'ب' },
     { id: 'tb', x: 178, y: 239, w: 969, h: 57, text: 'Hören Sie den Audioguide zu einer Ausstellung über Tierbilder. Worum geht es? Kreuzen Sie an.', ar: 'اسمعوا الدليل الصوتي لمعرض عن صور الحيوانات. بيتكلم عن إيه؟ علّموا.' },
     { id: 'b1', x: 212, y: 311, w: 440, h: 28, text: '1. Berühmte Künstler, die Tiere gemalt haben', ar: '1. فنانين مشهورين رسموا حيوانات' },
@@ -48,7 +47,6 @@ export const p142: ScanPage = {
     { id: 'r32', x: 858, y: 1549, w: 177, h: 22, text: 'komisch/langweilig/…', ar: 'غريبة/مملة/…' },
     { id: 'r4', x: 832, y: 1557, w: 413, h: 41, text: '… sieht realistisch/abstrakt/originell/… aus', ar: '… شكلها واقعي/تجريدي/أصلي/…' },
     { id: 'r5', x: 832, y: 1604, w: 358, h: 27, text: '… ist eine witzige/verrückte/… Idee.', ar: '… فكرة مضحكة/مجنونة/…' },
-    { id: 'pgw', x: 145, y: 1691, w: 222, h: 28, text: 'einhundertzweiundvierzig', ar: 'مية واتنين وأربعين' },
   ],
   audio: [
   ],

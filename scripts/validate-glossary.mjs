@@ -66,7 +66,7 @@ const numWords = (() => {
   const w = new Set(ones.slice(1))
   for (const t of tens.slice(2)) { w.add(t); for (let o = 1; o < 10; o++) w.add(ones[o] + 'und' + t) }
   for (let h = 1; h < 10; h++) {
-    const hu = ones[h] + 'hundert'; w.add(hu)
+    const hu = (h === 1 ? 'ein' : ones[h]) + 'hundert'; w.add(hu)
     for (let o = 1; o < 20; o++) w.add(hu + ones[o])
     for (const t of tens.slice(2)) { w.add(hu + t); for (let o = 1; o < 10; o++) w.add(hu + ones[o] + 'und' + t) }
   }

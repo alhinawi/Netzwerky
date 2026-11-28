@@ -11,7 +11,6 @@ export const p43: ScanPage = {
   words: [
     { id: 't1', x: 848, y: 30, w: 189, h: 56, text: 'Plattform', ar: 'منصّة' },
     { id: 'n1', x: 1163, y: 30, w: 33, h: 56, text: '1', ar: '١' },
-    { id: 'l1', x: 14, y: 191, w: 34, h: 28, text: '1.28', ar: '١.٢٨' },
     { id: 'b', x: 100, y: 155, w: 27, h: 30, text: 'b', ar: 'ب' },
     { id: 'i1', x: 145, y: 157, w: 717, h: 30, text: 'Hören Sie die Radiosendung und kontrollieren Sie Ihre Antworten in 8a.', ar: 'اسمعوا برنامج الراديو وراجعوا إجاباتكم في ٨ أ.' },
     { id: 'c', x: 106, y: 229, w: 26, h: 30, text: 'c', ar: 'ج' },

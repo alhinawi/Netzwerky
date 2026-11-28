@@ -99,7 +99,6 @@ export const p123: ScanPage = {
     { id: 'ne', x: 103, y: 1618, w: 26, h: 28, text: 'e', ar: 'هـ' },
     { id: 'e1', x: 147, y: 1626, w: 754, h: 21, text: 'Geben Sie Ihre Geschichte einem Partner / einer Partnerin. Er/Sie vergleicht', ar: 'ادّي قصتك لزميل / زميلة. هو/هي بيقارن' },
     { id: 'e2', x: 147, y: 1651, w: 607, h: 24, text: 'mit der Checkliste. Hat er/sie noch Verbesserungsvorschläge?', ar: 'بقايمة التحقق. عنده/عندها اقتراحات تحسين تانية؟' },
-    { id: 'pw', x: 870, y: 1704, w: 241, h: 13, text: 'einhundertdreiundzwanzig', ar: 'مية وتلاتة وعشرين' },
   ],
   audio: [
   ],
@@ -191,7 +190,6 @@ export const p123: ScanPage = {
     { id: 's-d2', text: 'Checkliste aus 12b. Was können Sie verbessern?', ar: 'قايمة التحقق من 12b. إيه اللي تقدر تحسّنه؟', words: ['d2'] },
     { id: 's-e1', text: 'Geben Sie Ihre Geschichte einem Partner / einer Partnerin. Er/Sie vergleicht', ar: 'ادّي قصتك لزميل / زميلة. هو/هي بيقارن', words: ['e1'] },
     { id: 's-e2', text: 'mit der Checkliste. Hat er/sie noch Verbesserungsvorschläge?', ar: 'بقايمة التحقق. عنده/عندها اقتراحات تحسين تانية؟', words: ['e2'] },
-    { id: 's-pw', text: 'einhundertdreiundzwanzig', ar: 'مية وتلاتة وعشرين', words: ['pw'] },
   ],
   groups: [],
 }

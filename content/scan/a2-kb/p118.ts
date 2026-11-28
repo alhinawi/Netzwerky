@@ -69,7 +69,6 @@ export const p118: ScanPage = {
     { id: 'p1B', x: 473, y: 1656, w: 32, h: 28, text: '1B', ar: '1B' },
     { id: 'p2A', x: 755, y: 1679, w: 32, h: 28, text: '2A', ar: '2A' },
     { id: 'p2B', x: 1005, y: 1699, w: 32, h: 28, text: '2B', ar: '2B' },
-    { id: 'pw', x: 150, y: 1708, w: 179, h: 13, text: 'einhundertachtzehn', ar: 'مية وتمانية عشر' },
   ],
   audio: [
   ],
@@ -135,7 +134,6 @@ export const p118: ScanPage = {
     { id: 's-j6', text: 'vor der Tür stehen', ar: 'يقف قدام الباب', words: ['j6'] },
     { id: 's-j7', text: 'bellen', ar: 'ينبح', words: ['j7'] },
     { id: 's-j8', text: 'stinken', ar: 'ريحته وحشة', words: ['j8'] },
-    { id: 's-pw', text: 'einhundertachtzehn', ar: 'مية وتمانية عشر', words: ['pw'] },
   ],
   groups: [],
 }

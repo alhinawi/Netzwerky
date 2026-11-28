@@ -14,7 +14,6 @@ export const p23: ScanPage = {
     { id: 'a8a', x: 88, y: 140, w: 18, h: 28, text: 'a', ar: 'أ' },
     { id: 'a8t', x: 132, y: 142, w: 741, h: 32, text: 'Was kann man nach dem Schulabschluss machen? Sammeln Sie im Kurs.', ar: 'ممكن نعمل إيه بعد التخرج من المدرسة؟ اجمعوا أفكار في الفصل.' },
     { id: 'bu', x: 445, y: 187, w: 301, h: 28, text: 'Man kann eine Reise machen.', ar: 'ممكن نعمل رحلة.' },
-    { id: 'l17', x: 4, y: 298, w: 34, h: 22, text: '1.17', ar: '١.١٧' },
     { id: 'b', x: 93, y: 263, w: 20, h: 27, text: 'b', ar: 'ب' },
     { id: 'bt', x: 137, y: 265, w: 867, h: 32, text: 'Hören Sie das Gespräch von Vida, Alex und Fabian und antworten Sie in Stichpunkten.', ar: 'اسمعوا حوار فيدا وأليكس وفابيان وجاوبوا بنقاط.' },
     { id: 'q1', x: 140, y: 312, w: 425, h: 28, text: '1. Wie gefällt Vida das Studium in Leipzig?', ar: '١. إزاي فيدا شايفة الدراسة في لايبزيج؟' },
