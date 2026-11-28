@@ -19,7 +19,6 @@ export const p55: ScanPage = {
     { id: 'w9', x: 171, y: 1559, w: 356, h: 30, text: 'Da können die Leute studieren und …', ar: 'هناك الناس يقدروا يدرسوا و …' },
     { id: 'w10', x: 677, y: 1557, w: 349, h: 24, text: 'Eine Stadt braucht eine Feuerwehr.', ar: 'المدينة محتاجة فرقة مطافي.' },
     { id: 'w11', x: 755, y: 1588, w: 191, h: 22, text: 'Und Parks, denn …', ar: 'وحدائق، لأن …' },
-    { id: 'w12', x: 987, y: 1696, w: 138, h: 20, text: 'fünfundfünfzig', ar: 'خمسة وخمسين' },
   ],
   audio: [
     { id: 'a1040', x: 30, y: 1225, w: 36, h: 36, src: ['NWn_A2_KB_Audio_1-040.mp3', 'NWn_A2_KB_Audio_1-041.mp3', 'NWn_A2_KB_Audio_1-042.mp3'], label: 'Aufgabe 1c (1.40-42)' },

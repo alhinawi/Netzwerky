@@ -94,7 +94,6 @@ export const p22: ScanPage = {
     { id: 'b6', x: 587, y: 1550, w: 121, h: 31, text: 'du ins Kino?', ar: 'السينما؟' },
     { id: 'b7', x: 1032, y: 1527, w: 106, h: 27, text: 'Mit seiner', ar: 'مع' },
     { id: 'b8', x: 1037, y: 1570, w: 97, h: 28, text: 'Freundin.', ar: 'صاحبته.' },
-    { id: 'fw', x: 143, y: 1680, w: 146, h: 21, text: 'zweiundzwanzig', ar: 'اتنين وعشرين' },
   ],
   audio: [
     { id: 'a1_16_82', x: 82, y: 797, w: 28, h: 26, src: ['NWn_A2_KB_Audio_1-016.mp3'], label: 'Aufgabe 7b (1.16)' },

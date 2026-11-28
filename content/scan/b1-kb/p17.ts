@@ -76,7 +76,6 @@ export const p17: ScanPage = {
     { id: 'b66', x: 132, y: 1383, w: 371, h: 22, text: 'Melina hatte schöne Tage in Heringsdorf,', ar: 'ميلينا قضت أيام حلوة في هرينجسدورف،' },
     { id: 'b67', x: 598, y: 1379, w: 298, h: 19, text: 'obwohl das Wetter schlecht war.', ar: 'مع إن الجو كان وحش.' },
     { id: 'b68', x: 131, y: 1401, w: 853, h: 30, text: 'Obwohl die Geschäfte und Restaurants teuer sind, kommen viele Touristen nach Rothenburg.', ar: 'مع إن المحلات والمطاعم غالية، بيجي سياح كتير لروتنبورج.' },
-    { id: 'b69', x: 1014, y: 1574, w: 80, h: 19, text: 'siebzehn', ar: 'سبعتاشر' },
   ],
   audio: [],
   fields: [],

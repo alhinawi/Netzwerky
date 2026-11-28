@@ -55,6 +55,42 @@ for (const [k, v] of Object.entries(gloss)) {
   if (k.includes(' ')) continue
   if (/ئن[\u0621-\u064A]/.test(v)) violations.push({ key: k, value: v, rule: 'hamza-orthography' })
 }
+
+// 9. page-file gate (K5 reviewer round 3): footer page-number boxes and
+//    standalone audio-track boxes must never be tap targets. The printed
+//    marks stay on the scan; the overlay box is removed at source and this
+//    gate keeps them from coming back.
+const numWords = (() => {
+  const ones = ['','eins','zwei','drei','vier','fünf','sechs','sieben','acht','neun','zehn','elf','zwölf','dreizehn','vierzehn','fünfzehn','sechzehn','siebzehn','achtzehn','neunzehn','zwanzig']
+  const tens = ['','','zwanzig','dreißig','vierzig','fünfzig','sechzig','siebzig','achtzig','neunzig']
+  const w = new Set(ones.slice(1))
+  for (const t of tens.slice(2)) { w.add(t); for (let o = 1; o < 10; o++) w.add(ones[o] + 'und' + t) }
+  for (let h = 1; h < 10; h++) {
+    const hu = ones[h] + 'hundert'; w.add(hu)
+    for (let o = 1; o < 20; o++) w.add(hu + ones[o])
+    for (const t of tens.slice(2)) { w.add(hu + t); for (let o = 1; o < 10; o++) w.add(hu + ones[o] + 'und' + t) }
+  }
+  return w
+})()
+const boxRe = /\{ id: '[^']+', x: (\d+), y: (\d+), w: (\d+), h: (\d+), text: ('[^']*'|"[^"]*"), ar: ('[^']*'|"[^"]*")/
+for (const book of fs.readdirSync('content/scan')) {
+  const dir = `content/scan/${book}`
+  if (!fs.statSync(dir).isDirectory()) continue
+  for (const f of fs.readdirSync(dir)) {
+    if (!/^p\d+\.ts$/.test(f)) continue
+    const lines = fs.readFileSync(`${dir}/${f}`, 'utf8').split('\n')
+    lines.forEach((line, i) => {
+      const m = line.match(boxRe)
+      if (!m) return
+      const y = +m[2], txt = m[5].slice(1, -1).trim(), ar = m[6].slice(1, -1).trim()
+      const t = txt.toLowerCase()
+      if (y >= 1550 && (numWords.has(t) || /^\d+$/.test(t)))
+        violations.push({ key: `${book}/${f}:${i + 1}`, value: txt, rule: 'footer-page-number-box' })
+      if (/^\d{1,2}\.\d{1,2}$/.test(txt) && ar === txt)
+        violations.push({ key: `${book}/${f}:${i + 1}`, value: txt, rule: 'standalone-track-box' })
+    })
+  }
+}
 if (violations.length) {
   console.error(`glossary violations: ${violations.length}`)
   for (const x of violations) console.error(`  [${x.rule}] ${JSON.stringify(x.key)} => ${JSON.stringify(x.value)}`)

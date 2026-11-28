@@ -35,7 +35,6 @@ export const p8: ScanPage = {
     { id: 'b25', x: 228, y: 1519, w: 360, h: 25, text: 'muss die Aussicht von dort drüben sein?', ar: 'المنظر من هناك في الجهة التانية؟' },
     { id: 'b26', x: 682, y: 1492, w: 430, h: 23, text: '5 Hallo von der Küste! Wir sind ständig am Strand!', ar: '5 سلام من الساحل! إحنا طول الوقت على الشاط!' },
     { id: 'b27', x: 682, y: 1519, w: 455, h: 25, text: 'Sonne, Sand und Wind, für jeden ist etwas dabei.', ar: 'شمس ورمل وهوا، وكل واحد هيلاقي حاجة تعجبه.' },
-    { id: 'b29', x: 125, y: 1581, w: 52, h: 17, text: 'acht', ar: 'تمانية' },
   ],
   audio: [],
   fields: [],

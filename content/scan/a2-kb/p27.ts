@@ -124,7 +124,6 @@ export const p27: ScanPage = {
     { id: 'pr1', x: 585, y: 1443, w: 470, h: 26, text: 'Er ist nach seinem Praktikum nach Indien gereist.', ar: 'سافر الهند بعد التدريب العملي بتاعه.' },
     { id: 'pr2', x: 585, y: 1472, w: 423, h: 26, text: 'Kann man in deiner Schule Abitur machen?', ar: 'ينفع تعمل أبيتور في مدرستك؟' },
     { id: 'pr3', x: 585, y: 1498, w: 506, h: 26, text: 'Im Sommer fahrt ihr mit euren Freunden nach Berlin.', ar: 'في الصيف هتسافروا مع أصحابكم برلين.' },
-    { id: 'fw', x: 953, y: 1688, w: 160, h: 26, text: 'siebenundzwanzig', ar: 'سبعة وعشرين' },
   ],
   audio: [
   ],

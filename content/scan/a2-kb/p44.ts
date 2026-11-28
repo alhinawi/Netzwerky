@@ -38,7 +38,6 @@ export const p44: ScanPage = {
     { id: 'g3', x: 815, y: 1630, w: 177, h: 30, text: 'Gespräch 3: Foto', ar: 'المحادثة ٣: الصورة' },
     { id: 'cc', x: 172, y: 1682, w: 20, h: 24, text: 'c', ar: 'ج' },
     { id: 'k1', x: 215, y: 1685, w: 903, h: 60, text: 'Hören Sie noch einmal. Welche Wörter hören Sie? Markieren Sie die Wörter bei den Fotos.', ar: 'اسمعوا تاني. إيه الكلمات اللي بتسمعوها؟ علّموا الكلمات اللي جنب الصور.' },
-    { id: 'pt', x: 135, y: 1738, w: 127, h: 24, text: 'vierundvierzig', ar: '٤٤' },
   ],
   audio: [
     { id: 'a1_29_31_85', x: 85, y: 1553, w: 30, h: 28, src: ['NWn_A2_KB_Audio_1-029.mp3','NWn_A2_KB_Audio_1-030.mp3','NWn_A2_KB_Audio_1-031.mp3'], label: 'Aufgabe 1b (1.29-31)' },

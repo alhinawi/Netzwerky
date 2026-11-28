@@ -67,7 +67,6 @@ export const p12: ScanPage = {
     { id: 'b57', x: 221, y: 1466, w: 870, h: 30, text: 'Es macht keinen Spaß. | Ich habe nur wenig Zeit. | Es ist ziemlich teuer. | Es ist schon spät. |', ar: 'مش ممتع. | معنديش وقت كتير. | غالي شوية. | تأخر الوقت. |' },
     { id: 'b58', x: 220, y: 1493, w: 607, h: 24, text: 'Das Wetter ist schlecht. | Ich habe viel Arbeit. | Ich finde es blöd,', ar: 'الجو وحش. | عندي شغل كتير. | أنا شايف إنه غبي،' },
     { id: 'b59', x: 377, y: 1541, w: 507, h: 22, text: 'Obwohl es keinen Spaß macht, koche ich im Urlaub oft.', ar: 'مع إنه مش ممتع، أنا بطبخ كتير في الأجازة.' },
-    { id: 'b61', x: 145, y: 1583, w: 45, h: 16, text: 'zwölf', ar: 'اتناشر' },
   ],
   audio: [],
   fields: [],

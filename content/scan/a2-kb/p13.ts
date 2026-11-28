@@ -111,7 +111,6 @@ export const p13: ScanPage = {
     { id: 'b101', x: 759, y: 1567, w: 426, h: 28, text: 'zu einem Fußballspiel gehen | einen Kaffee | نروح ماتش كورة', ar: 'نشرب قهوة' },
     { id: 'b102', x: 759, y: 1596, w: 355, h: 28, text: 'trinken | auf den Flohmarkt gehen | | | نروح سوق الأنتيكات', ar: '' },
     { id: 'b103', x: 759, y: 1624, w: 441, h: 28, text: 'gemeinsam lernen | eine Party machen | … | نذاكر سوا | نعمل حفلة', ar: '…' },
-    { id: 'b104', x: 1032, y: 1681, w: 78, h: 28, text: 'dreizehn', ar: 'تلاتاشر' },
   ],
   audio: [
     { id: 'a1_6_30', x: 30, y: 1046, w: 32, h: 30, src: ['NWn_A2_KB_Audio_1-006.mp3'], label: 'Aufgabe 8a (1.6)' },

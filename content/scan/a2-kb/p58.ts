@@ -59,7 +59,6 @@ export const p58: ScanPage = {
     { id: 'w49', x: 221, y: 1550, w: 138, h: 23, text: 'Berichten Sie.', ar: 'احكوا.' },
     { id: 'w50', x: 523, y: 1601, w: 348, h: 68, text: 'Ich war mal bei der Behörde. Mein', ar: 'أنا كنت مرة في المصلحة الحكومية. التأشيرة' },
     { id: 'w51', x: 516, y: 1603, w: 361, h: 81, text: 'Visum war nicht mehr gültig und …', ar: 'بتاعتي مكانتش لسه شغالة و …' },
-    { id: 'w53', x: 142, y: 1697, w: 137, h: 20, text: 'achtundfünfzig', ar: 'ثمانية وخمسين' },
   ],
   audio: [
     { id: 'a1045', x: 82, y: 880, w: 36, h: 36, src: ['NWn_A2_KB_Audio_1-045.mp3', 'NWn_A2_KB_Audio_1-046.mp3', 'NWn_A2_KB_Audio_1-047.mp3'], label: 'Aufgabe 5b (1.45-47)' },

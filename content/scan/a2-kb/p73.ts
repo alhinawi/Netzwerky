@@ -122,7 +122,6 @@ export const p73: ScanPage = {
     { id: 'w111', x: 335, y: 1595, w: 190, h: 30, text: 'Sie wird arbeitslos.', ar: 'هتبقى عاطلة.' },
     { id: 'w112', x: 103, y: 1630, w: 219, h: 30, text: 'werden + Altersangabe:', ar: 'werden + العمر:' },
     { id: 'w113', x: 335, y: 1623, w: 205, h: 30, text: 'Sie wird 45 (Jahre alt).', ar: 'هتبقى ٤٥ سنة.' },
-    { id: 'w114', x: 980, y: 1658, w: 125, h: 30, text: 'dreiundsiebzig', ar: 'ثلاثة وسبعين' },
   ],
   audio: [
   ],

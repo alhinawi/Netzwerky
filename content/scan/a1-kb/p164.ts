@@ -110,7 +110,7 @@ export const p164: ScanPage = {
     { id: 'w99', x: 445, y: 1147, w: 151, h: 22, text: 'dein, deine', ar: 'بتاعك / بتاعتك' },
     { id: 'w100', x: 445, y: 1171, w: 340, h: 46, text: 'dem (Die Schiffe fahren auf dem Fluss.)', ar: 'الـ (مضاف إليه: المراكب ماشية في النهر)' },
     { id: 'w101', x: 445, y: 1219, w: 327, h: 22, text: 'Demonstrativartikel, der, -', ar: 'أداة الإشارة' },
-    { id: 'w102', x: 445, y: 1243, w: 63, h: 22, text: 'den', ar: 'الـ (مفعول مذكر)' },
+    { id: 'w102', x: 445, y: 1243, w: 63, h: 22, text: 'den', ar: 'الـ' },
     { id: 'w103', x: 445, y: 1268, w: 340, h: 22, text: 'denken, er denkt, hat gedacht', ar: 'يفكر / يفتكر' },
     { id: 'w104', x: 445, y: 1292, w: 250, h: 22, text: 'denn (1) (Was denn?)', ar: '(توكيد: إيه بقى؟)' },
     { id: 'w105', x: 445, y: 1316, w: 340, h: 46, text: 'denn (2) (In Basel ist es schön, denn man kann viel machen.)', ar: 'لأن (بازل حلوة لأن الواحد يقدر يعمل حاجات كتير)' },

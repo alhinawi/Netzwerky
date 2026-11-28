@@ -69,7 +69,6 @@ export const p24: ScanPage = {
     { id: 'r6', x: 258, y: 1637, w: 118, h: 28, text: 'nicht so gut', ar: 'مش كويس أوي' },
     { id: 'hw1', x: 415, y: 1610, w: 125, h: 32, text: 'Praktika', ar: 'تدريبات عملية' },
     { id: 'hw2', x: 415, y: 1638, w: 95, h: 30, text: 'Mathe', ar: 'رياضة' },
-    { id: 'fw', x: 143, y: 1696, w: 140, h: 24, text: 'vierundzwanzig', ar: 'أربعة وعشرين' },
   ],
   audio: [
   ],

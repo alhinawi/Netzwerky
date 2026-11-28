@@ -122,7 +122,6 @@ export const p53: ScanPage = {
     { id: 'w111', x: 378, y: 1495, w: 647, h: 30, text: 'weitere reflexive Verben: sich ärgern, sich ausruhen, sich bedanken,', ar: 'أفعال انعكاسية تانية: يتضايق، يرتاح، يشكر،' },
     { id: 'w112', x: 378, y: 1526, w: 655, h: 30, text: 'sich entscheiden, sich entschuldigen, sich erinnern, sich langweilen,', ar: 'يقرر، يعتذر، يتذكر، يزهق،' },
     { id: 'w113', x: 378, y: 1557, w: 627, h: 30, text: 'sich streiten, sich treffen, sich unterhalten, sich verabschieden …', ar: 'يتخانق، يتقابل، يتحادث، يودّع …' },
-    { id: 'w114', x: 980, y: 1697, w: 132, h: 30, text: 'dreiundfünfzig', ar: 'ثلاثة وخمسين' },
   ],
   audio: [
   ],

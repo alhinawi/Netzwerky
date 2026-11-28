@@ -51,7 +51,6 @@ export const p30: ScanPage = {
     { id: 'b41', x: 220, y: 1452, w: 523, h: 21, text: 'Situation wird von Jahr zu Jahr wesentlich schlechter. Er', ar: 'وضعها بيسوء من سنة لسنة. هو' },
     { id: 'b42', x: 220, y: 1478, w: 521, h: 19, text: 'möchte sich weiter für sie einsetzen und auch anderen', ar: 'عايز يفضل يدافع عنهم وكمان' },
     { id: 'b43', x: 220, y: 1506, w: 522, h: 22, text: 'Menschen Mut machen, das zu tun, was ihnen wichtig ist.', ar: 'يشجّع ناس تانية تعمل اللي مهم بالنسبة لها.' },
-    { id: 'b45', x: 136, y: 1581, w: 70, h: 21, text: 'dreißig', ar: 'تلاتين' },
   ],
   audio: [],
   fields: [],

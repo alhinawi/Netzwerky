@@ -36,7 +36,6 @@ export const p19: ScanPage = {
     { id: 'q2', x: 162, y: 1553, w: 444, h: 33, text: 'Wann hast du die Schule abgeschlossen?', ar: 'إمتى خلّصت المدرسة؟' },
     { id: 'q3', x: 162, y: 1576, w: 769, h: 33, text: 'Was hast du nach der Schule gemacht (Studium, Ausbildung, Reise ...)?', ar: 'عملت إيه بعد المدرسة (دراسة، تدريب مهني، سفر ...)؟' },
     { id: 'q4', x: 162, y: 1616, w: 255, h: 31, text: 'Was machst du jetzt?', ar: 'بتعمل إيه دلوقتي؟' },
-    { id: 'fw', x: 1033, y: 1696, w: 88, h: 22, text: 'neunzehn', ar: 'تسعة عشر' },
   ],
   audio: [
   ],

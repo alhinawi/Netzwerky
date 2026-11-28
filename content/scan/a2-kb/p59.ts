@@ -74,7 +74,6 @@ export const p59: ScanPage = {
     { id: 'w64', x: 138, y: 1494, w: 388, h: 32, text: 'eine Situation (im Unterricht, im Café,', ar: 'موقف (في الدرس، في الكافيه،' },
     { id: 'w65', x: 139, y: 1521, w: 431, h: 31, text: 'beim Essen mit Freunden …). Formulieren', ar: 'وإنتوا بتاكلوا مع أصحاب …). صيغوا' },
     { id: 'w66', x: 139, y: 1557, w: 189, h: 25, text: 'Sie sehr höfliche Bitten.', ar: 'طلبات مؤدبة جدًا.' },
-    { id: 'w67', x: 957, y: 1693, w: 144, h: 20, text: 'neunundfünfzig', ar: 'تسعة وخمسين' },
   ],
   audio: [
     { id: 'a1048', x: 12, y: 1172, w: 36, h: 36, src: ['NWn_A2_KB_Audio_1-048.mp3'], label: 'Aufgabe 7a (1.48)' },

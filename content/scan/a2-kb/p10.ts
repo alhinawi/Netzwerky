@@ -69,7 +69,6 @@ export const p10: ScanPage = {
     { id: 'b59', x: 762, y: 1522, w: 396, h: 44, text: '6. … ist von Bern nach Zürich gezogen.', ar: '6. … اتنقلت من برن لزيورخ.' },
     { id: 'b60', x: 762, y: 1552, w: 323, h: 44, text: '7. … hat im Sommer geheiratet.', ar: '7. … اتجوزت في الصيف.' },
     { id: 'b61', x: 762, y: 1581, w: 300, h: 43, text: '8. … hat ein Hobby gefunden.', ar: '8. … لقى هواية.' },
-    { id: 'b63', x: 145, y: 1685, w: 45, h: 32, text: 'zehn', ar: 'عشرة' },
   ],
   audio: [
   ],

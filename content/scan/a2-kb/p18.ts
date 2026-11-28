@@ -48,7 +48,6 @@ export const p18: ScanPage = {
     { id: 'w10', x: 398, y: 1636, w: 238, h: 29, text: 'durch Südamerika reisen', ar: 'يسافر في أمريكا الجنوبية' },
     { id: 'w11', x: 663, y: 1646, w: 185, h: 29, text: 'auf Messen jobben', ar: 'يشتغل في المعارض' },
     { id: 'w12', x: 878, y: 1661, w: 185, h: 29, text: 'Medizin studieren', ar: 'يدرس طب' },
-    { id: 'fw', x: 137, y: 1723, w: 81, h: 21, text: 'achtzehn', ar: 'ثمانية عشر' },
   ],
   audio: [
     { id: 'a1_8_12_80', x: 80, y: 1545, w: 34, h: 30, src: ['NWn_A2_KB_Audio_1-008.mp3','NWn_A2_KB_Audio_1-009.mp3','NWn_A2_KB_Audio_1-010.mp3','NWn_A2_KB_Audio_1-011.mp3','NWn_A2_KB_Audio_1-012.mp3'], label: 'Aufgabe 1c (1.8-12)' },

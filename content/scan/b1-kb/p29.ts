@@ -27,7 +27,6 @@ export const p29: ScanPage = {
     { id: 'b17', x: 184, y: 1476, w: 701, h: 22, text: 'Recherchieren Sie. Was finden Sie gut, was schlecht? Berichten Sie im Kurs.', ar: 'دوّروا واسألوا. إيه اللي عاجبكم وإيه اللي مش عاجبكم؟ احكوا في المجموعة.' },
     { id: 'b18', x: 190, y: 1506, w: 733, h: 28, text: 'Also, in ... hat sich in der Schule auch viel verändert. Vor 50 Jahren mussten die', ar: 'يعني، في ... المدرسة برضه اتغيّرت كتير. من ٥٠ سنة كان لازم ال' },
     { id: 'b19', x: 236, y: 1538, w: 644, h: 23, text: 'Kinder samstags in die Schule, das ist heute zum Glück nicht mehr so.', ar: 'أطفال يروحوا المدرسة يوم السبت، وده للحظ مش موجود دلوقتي.' },
-    { id: 'b20', x: 945, y: 1578, w: 150, h: 24, text: 'neunundzwanzig', ar: 'تسعة وعشرين' },
   ],
   audio: [],
   fields: [],

@@ -60,7 +60,6 @@ export const p15: ScanPage = {
     { id: 'b50', x: 633, y: 1481, w: 260, h: 24, text: 'Meine Tante in Griechenland hat viele', ar: 'طنطي في اليونان عندها' },
     { id: 'b51', x: 633, y: 1508, w: 260, h: 24, text: 'Olivenbäume. Da habe ich ihr schon mal', ar: 'زيتون كتير. ساعدتها قبل كده' },
     { id: 'b52', x: 633, y: 1535, w: 280, h: 24, text: 'in den Weihnachtsferien geholfen.', ar: 'في أجازة الكريسماس.' },
-    { id: 'b53', x: 1011, y: 1576, w: 75, h: 18, text: 'fünfzehn', ar: 'خمستاشر' },
   ],
   audio: [],
   fields: [],

@@ -101,7 +101,6 @@ export const p33: ScanPage = {
     { id: 'w91', x: 166, y: 1565, w: 968, h: 35, text: 'Spielen Sie „Stille Post". Flüstern Sie Ihrem Nachbarn / Ihrer Nachbarin ein Wort mit dem Anfangs-', ar: 'العبوا «التليفون المكسور». اهمسوا لجاركم/جارتكم بكلمة بحرف أول' },
     { id: 'w92', x: 166, y: 1588, w: 981, h: 40, text: 'buchstaben b oder w ins Ohr. Er/Sie flüstert das Wort weiter. Der/Die Letzte schreibt das Wort an die', ar: 'b أو w في ودنه. هو/هي يهمس بالكلمة لقدام. الأخير/الأخيرة يكتب الكلمة على' },
     { id: 'w93', x: 165, y: 1615, w: 650, h: 40, text: 'Tafel. Ist es richtig geschrieben? Danach beginnt eine neue Runde.', ar: 'السبورة. هل مكتوبة صح؟ وبعدها تبدأ جولة جديدة.' },
-    { id: 'w94', x: 983, y: 1680, w: 131, h: 23, text: 'dreiunddreißig', ar: 'تلاتة وتلاتين' },
   ],
   audio: [
     { id: 'a1_25_40', x: 40, y: 1233, w: 32, h: 28, src: ['NWn_A2_KB_Audio_1-025.mp3'], label: 'Aufgabe 11a (1.25)' },

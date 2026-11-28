@@ -92,7 +92,6 @@ export const p11: ScanPage = {
     { id: 'b82', x: 846, y: 1512, w: 352, h: 28, text: 'nach a, o, u und au → ch wie in acht', ar: 'بعد a, o, u و au → ch زي في acht' },
     { id: 'b83', x: 846, y: 1541, w: 317, h: 28, text: 'nach allen anderen Vokalen und', ar: 'بعد كل الحروف المتحركة التانية و' },
     { id: 'b84', x: 846, y: 1570, w: 284, h: 28, text: 'Konsonanten → ch wie in ich', ar: 'الحروف الساكنة → ch زي في ich' },
-    { id: 'b85', x: 1085, y: 1711, w: 25, h: 28, text: 'elf', ar: 'حداشر' },
   ],
   audio: [
     { id: 'a1_3_6', x: 6, y: 1245, w: 30, h: 32, src: ['NWn_A2_KB_Audio_1-003.mp3'], label: 'Aufgabe 5a (1.3)' },

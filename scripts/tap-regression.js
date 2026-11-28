@@ -206,6 +206,40 @@ SPECS['/read/b1-kb/58/'] = [
   ['ßenseite ein Solarpanel haben, um die Sonnenenergie zu nut-', 0.04, 'الناحية الخارجية'],
 ]
 
+// K5 round 3 reviewer fixes: footer page-number boxes and standalone
+// audio-track boxes are gone everywhere (validator gate keeps them out),
+// plus the four corrected glosses
+SPECS['/read/b1-kb/54/'].push(
+  // produktion: clean gloss, no إلنتاج typo, no leaked other-sense text
+  ['Liter, wenn man das Wasser für die Produktion von', 0.85, 'إنتاج'],
+  ['vierundfünfzig', 0.5, null, 'none'],
+)
+SPECS['/read/b1-kb/55/'] = [
+  // hälfte: alternatives joined by " / "
+  ['Rund die Hälfte der Kilometer verbrauchen die', 0.25, 'النصف / الشطر'],
+  ['fünfundfünfzig', 0.5, null, 'none'],
+]
+SPECS['/read/b1-kb/56/'] = [['sechsundfünfzig', 0.5, null, 'none']]
+SPECS['/read/b1-kb/57/'] = [['siebenundfünfzig', 0.5, null, 'none']]
+SPECS['/read/b1-kb/58/'].push(
+  // Waren (goods) not the verb كانوا
+  ['können diese Waren dann günstig kaufen. Damit die Waren in', 0.26, 'كانوا / بضاعة / سلع'],
+  // den: plain short article gloss, no grammar fragment
+  ['Wenn sie den Becher zurückbringen, bekommen sie ihr Geld', 0.17, 'الـ'],
+)
+SPECS['/read/b1-kb/59/'].push(
+  // standalone audio-track box removed, nothing to tap
+  ['1.36', 0.5, null, 'none'],
+)
+SPECS['/read/b1-kb/61/'].push(
+  ['1.44', 0.5, null, 'none'],
+)
+SPECS['/read/a2-kb/10/'].push(['zehn', 0.5, null, 'none'])
+SPECS['/read/a2-kb/20/'] = [['zwanzig', 0.5, null, 'none']]
+SPECS['/read/a2-kb/33/'] = [['dreiunddreißig', 0.5, null, 'none']]
+SPECS['/read/a2-kb/45/'] = [['fünfundvierzig', 0.5, null, 'none']]
+SPECS['/read/a2-kb/60/'] = [['sechzig', 0.5, null, 'none']]
+
 const cases = SPECS[location.pathname]
 if (!cases) return 'no spec for ' + location.pathname
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms))

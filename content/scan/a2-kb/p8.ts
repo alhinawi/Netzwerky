@@ -52,7 +52,6 @@ export const p8: ScanPage = {
     { id: 'b42', x: 430, y: 1550, w: 70, h: 36, text: 'lernen', ar: 'يتعلّم' },
     { id: 'b43', x: 610, y: 1570, w: 100, h: 36, text: 'Sprachen', ar: 'لغات' },
     { id: 'b44', x: 823, y: 1609, w: 99, h: 36, text: 'fließend', ar: 'بطلاقة' },
-    { id: 'b46', x: 138, y: 1688, w: 37, h: 26, text: 'acht', ar: 'تمانية' },
   ],
   audio: [
   ],

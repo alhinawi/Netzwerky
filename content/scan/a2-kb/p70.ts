@@ -79,7 +79,6 @@ export const p70: ScanPage = {
     { id: 'w68', x: 747, y: 1542, w: 478, h: 36, text: 'Können Sie später noch einmal anrufen? | Kann | ممكن تتصلوا تاني بعدين؟', ar: 'ممكن' },
     { id: 'w69', x: 747, y: 1575, w: 468, h: 36, text: 'Herr/Frau … Sie zurückrufen? | Die Durchwahl | السيد/السيدة … يرجعلكم؟', ar: 'الرقم الداخلي' },
     { id: 'w70', x: 750, y: 1602, w: 435, h: 36, text: 'ist … | Ich gebe Ihnen die Nummer von … | هو …', ar: 'هديكم رقم …' },
-    { id: 'w72', x: 158, y: 1658, w: 62, h: 34, text: 'siebzig', ar: 'سبعين' },
   ],
   audio: [
     { id: 'a1_58_59_88', x: 88, y: 775, w: 60, h: 70, src: ['NWn_A2_KB_Audio_1-058.mp3','NWn_A2_KB_Audio_1-059.mp3'], label: 'Aufgabe 12a (1.58-59)' },

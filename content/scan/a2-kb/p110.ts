@@ -98,7 +98,6 @@ export const p110: ScanPage = {
     { id: 'n4', x: 760, y: 1131, w: 40, h: 28, text: '5', ar: '5' },
     { id: 'n5', x: 760, y: 1321, w: 40, h: 28, text: '6', ar: '6' },
     { id: 'n6', x: 760, y: 1444, w: 40, h: 28, text: '7', ar: '7' },
-    { id: 'n7', x: 760, y: 1562, w: 40, h: 28, text: '8', ar: '8' },
   ],
   audio: [
   ],

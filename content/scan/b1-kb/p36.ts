@@ -56,7 +56,6 @@ export const p36: ScanPage = {
     { id: 'b46', x: 190, y: 1504, w: 24, h: 28, text: 'b', ar: 'ب' },
     { id: 'b47', x: 220, y: 1508, w: 881, h: 30, text: 'Lesen Sie die Lösung auf der letzten Seite im Buch und vergleichen Sie mit Ihrem Land. Welche', ar: 'اقرأوا الحل في آخر صفحة في الكتاب وقارنوا مع بلدكم. أنهي' },
     { id: 'b48', x: 217, y: 1540, w: 419, h: 20, text: 'Sportarten sind bei Ihnen besonders beliebt?', ar: 'رياضات مشهورة عندكم؟' },
-    { id: 'b50', x: 128, y: 1580, w: 140, h: 20, text: 'sechsunddreißig', ar: 'ستة وتلاتين' },
   ],
   audio: [],
   fields: [],

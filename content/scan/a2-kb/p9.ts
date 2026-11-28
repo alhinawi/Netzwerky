@@ -50,7 +50,6 @@ export const p9: ScanPage = {
     { id: 'b40', x: 167, y: 1551, w: 133, h: 28, text: 'Personen vor.', ar: 'لأشخاص.' },
     { id: 'b41', x: 432, y: 1591, w: 383, h: 28, text: 'Ich heiße Natascha. Ich bin verheiratet', ar: 'اسمي ناتاشا. أنا متجوزة' },
     { id: 'b42', x: 458, y: 1622, w: 327, h: 28, text: 'und habe einen Sohn. Er heißt …', ar: 'وعندي ابن. اسمه …' },
-    { id: 'b43', x: 1085, y: 1691, w: 45, h: 28, text: 'neun', ar: 'تسعة' },
   ],
   audio: [
     { id: 'a1_1_36', x: 36, y: 1196, w: 30, h: 32, src: ['NWn_A2_KB_Audio_1-001.mp3'], label: 'Aufgabe 2a (1.1)' },

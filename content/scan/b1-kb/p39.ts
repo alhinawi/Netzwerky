@@ -37,7 +37,6 @@ export const p39: ScanPage = {
     { id: 'b27', x: 528, y: 1350, w: 205, h: 180, text: '17 Wie heißen die Nomen? sich entscheiden – die ... arbeiten – die ...', ar: '١٧ الأسماء إيه؟ يقرر - الـ ... يشتغل - الـ ...' },
     { id: 'b28', x: 760, y: 1345, w: 200, h: 185, text: '18 Stimmt die Aussage? Studierende siezen sich meistens.', ar: '١٨ الجملة دي صح؟ الطلبة في الغالب بيتكلموا بـ "حضرتك".' },
     { id: 'b29', x: 1030, y: 1430, w: 60, h: 26, text: 'Ziel', ar: 'النهاية' },
-    { id: 'b30', x: 970, y: 1567, w: 140, h: 22, text: 'neununddreißig', ar: 'تسعة وتلاتين' },
   ],
   audio: [],
   fields: [],

@@ -56,7 +56,6 @@ export const p79: ScanPage = {
     { id: 'w44', x: 918, y: 1413, w: 252, h: 30, text: 'schon? Was möchte er/sie', ar: 'بالفعل؟ إيه اللي عايز/ة' },
     { id: 'w45', x: 918, y: 1442, w: 297, h: 30, text: 'wissen? Was müssen Sie ihm/', ar: 'يعرفه؟ إيه اللي لازم' },
     { id: 'w46', x: 918, y: 1470, w: 157, h: 30, text: 'ihr nicht sagen?', ar: 'ماتقولوه له/لها؟' },
-    { id: 'w47', x: 970, y: 1678, w: 140, h: 30, text: 'neunundsiebzig', ar: 'تسعة وسبعين' },
   ],
   audio: [
     { id: 'a1_62_20', x: 20, y: 1240, w: 45, h: 62, src: ['NWn_A2_KB_Audio_1-062.mp3'], label: '7A (1.62)' },

@@ -72,7 +72,6 @@ export const p97: ScanPage = {
     { id: 'w62', x: 679, y: 1576, w: 485, h: 24, text: 'flüssig? Lesen Sie nicht ab? Was können Sie besser', ar: 'بسلاسة؟ مش بتقرا من الورقة؟ إيه اللي ممكن تحسّنه' },
     { id: 'w63', x: 680, y: 1604, w: 281, h: 20, text: 'machen? Üben Sie mehrmals.', ar: 'اتمرن أكتر من مرة.' },
     { id: 'au', x: 18, y: 198, w: 48, h: 36, text: '🔊', ar: 'صوت' },
-    { id: 'al', x: 18, y: 242, w: 48, h: 20, text: '2.18', ar: '2.18' },
   ],
   audio: [
   ],

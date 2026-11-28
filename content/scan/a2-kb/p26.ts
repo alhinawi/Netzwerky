@@ -62,7 +62,6 @@ export const p26: ScanPage = {
     { id: 'c14', x: 187, y: 1614, w: 18, h: 23, text: 'c', ar: 'ج' },
     { id: 'c14t1', x: 228, y: 1610, w: 968, h: 47, text: 'Und Sie? Was hat Ihnen in der Schule Spaß gemacht, was nicht? Haben Sie auch Projekte gemacht?', ar: 'وإنتوا؟ إيه اللي استمتعتوا بيه في المدرسة وإيه اللي لأ؟ عملتوا مشاريع كمان؟' },
     { id: 'c14t2', x: 228, y: 1638, w: 421, h: 28, text: 'Wenn ja, welche? Berichten Sie in Gruppen.', ar: 'لو آه، إيه هي؟ احكوا في مجموعات.' },
-    { id: 'fw', x: 150, y: 1685, w: 156, h: 25, text: 'sechsundzwanzig', ar: 'ستة وعشرين' },
   ],
   audio: [
   ],

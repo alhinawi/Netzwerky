@@ -31,7 +31,6 @@ export const p65: ScanPage = {
     { id: 'w20', x: 158, y: 1557, w: 452, h: 30, text: 'Tätigkeiten. Vergleichen Sie dann in Gruppen.', ar: 'أنشطة. بعدين قارنوا في مجموعات.' },
     { id: 'w21', x: 160, y: 1603, w: 200, h: 30, text: '+ Vokabeln lernen', ar: '+ يذاكر المفردات' },
     { id: 'w22', x: 675, y: 1585, w: 189, h: 30, text: '– Mails schreiben', ar: '– يكتب إيميلات' },
-    { id: 'w23', x: 975, y: 1687, w: 139, h: 30, text: 'fünfundsechzig', ar: 'خمسة وستين' },
   ],
   audio: [
     { id: 'a1_52_22', x: 22, y: 1150, w: 48, h: 70, src: ['NWn_A2_KB_Audio_1-052.mp3'], label: 'Aufgabe 2a (1.52)' },
