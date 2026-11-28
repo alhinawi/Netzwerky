@@ -100,7 +100,7 @@ const extra = {
   hattet: 'كان عندكم',
   gehabt: 'كان عنده',
   warst: 'كان (إنت)',
-  waren: 'كانوا / بضاعة / سلع',
+  waren: 'كانوا',
   wart: 'كنتوا',
   gewesen: 'كان (تصريف ثالث)',
   geworden: 'صار / أصبح',
