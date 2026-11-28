@@ -61,6 +61,10 @@ for (const [k, v] of Object.entries(official)) {
 // Only fill keys no page box or official entry supplied (those win).
 const extra = {
   ein: 'أداة نكرة',
+  nach: 'بعد / عن',
+  tipps: 'نصايح',
+  freie: 'حرة / فاضية',
+  besten: 'الأفضل',
   mit: 'مع / بـ',
   zu: 'لـ / إلى',
   ab: 'من / ابتداءً من',

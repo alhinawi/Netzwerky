@@ -23,7 +23,7 @@ export const p19: ScanPage = {
     { id: 'k5', x: 868, y: 343, w: 15, h: 24, text: '5', ar: '٥' },
     { id: 'k5n', x: 893, y: 338, w: 171, h: 32, text: 'Frida Müller', ar: 'فريدا موللر' },
     { id: 'k5a', x: 868, y: 380, w: 295, h: 30, text: 'nach der Schule: Ausbildung', ar: 'بعد المدرسة: تدريب مهني' },
-    { id: 'k5b', x: 868, y: 415, w: 38, h: 28, text: 'zur', ar: 'إلى ال' },
+    { id: 'k5b', x: 868, y: 415, w: 38, h: 28, text: 'zur', ar: 'إلى / لـ' },
     { id: 'k5c', x: 868, y: 460, w: 51, h: 27, text: 'jetzt:', ar: 'دلوقتي:' },
     { id: 'd', x: 117, y: 1318, w: 18, h: 25, text: 'd', ar: 'د' },
     { id: 'dt', x: 161, y: 1318, w: 387, h: 28, text: 'Vergleichen Sie Ihre Notizen zu zweit.', ar: 'قارنوا ملاحظاتكم مع بعض.' },
