@@ -283,9 +283,12 @@ export default function ScanReader({
   /** exact glossary entry for a tapped token, tolerating a leading article */
   const glossExact = (g: Record<string, string> | null, tok: string) => {
     if (!g) return null
+    // exact-case first: a capitalized noun can carry its own entry
+    // ("Waren" = goods) distinct from the lowercase word ("waren" = were)
+    const exact = tok.replace(/[^a-zäöüßA-ZÄÖÜ0-9-]/g, '')
     const bare = bareKey(tok)
     const noArt = bare.replace(/^(der|die|das)/, '')
-    for (const k of [bare, noArt]) if (k && g[k]) return g[k]
+    for (const k of [exact, bare, noArt]) if (k && g[k]) return g[k]
     return null
   }
   /** last resort: the token minus a plural/verb ending */
