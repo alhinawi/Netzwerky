@@ -101,6 +101,9 @@ const extra = {
   gehabt: 'كان عنده',
   warst: 'كان (إنت)',
   waren: 'كانوا',
+  // self-written: paren-stripped variants of the a1-kb/22 exercise-7b box
+  'eintausendzweihundertfünfzig': '١٢٥٠',
+  'tausendzweihundertfünfzig': '١٢٥٠',
   wart: 'كنتوا',
   gewesen: 'كان (تصريف ثالث)',
   geworden: 'صار / أصبح',
