@@ -27,7 +27,7 @@ export const p54: ScanPage = {
     { id: 'b17', x: 699, y: 900, w: 444, h: 20, text: 'Das entspricht einem halben Rind, 5,5 Schweinen', ar: 'ده يعادل نص بقرة و٥ خنازير ونص' },
     { id: 'b18', x: 698, y: 925, w: 439, h: 21, text: 'und 108 Hühnern innerhalb von zehn Jahren. Der', ar: 'و١٠٨ فرخة في عشر سنين.' },
     { id: 'b19', x: 698, y: 950, w: 436, h: 21, text: 'Marktanteil von Bio-Fleisch liegt bei nur ca. zwei', ar: 'حصة اللحمة العضوية في السوق حوالي' },
-    { id: 'b20', x: 699, y: 975, w: 71, h: 16, text: 'Prozent.', ar: '٢% بس.' },
+    { id: 'b20', x: 699, y: 975, w: 71, h: 16, text: 'Prozent.', ar: 'بس.' },
     { id: 'b21', x: 169, y: 1190, w: 850, h: 28, text: '1a Lesen Sie die Texte und raten Sie, welche Zahlen richtig sind. Sprechen Sie zu zweit.', ar: '١أ اقرأوا النصوص وخمّنوا أنهي أرقام صح. اتكلموا في ثنائي.' },
     { id: 'b22', x: 190, y: 1258, w: 915, h: 28, text: 'b Vergleichen Sie Ihre Ergebnisse mit den Lösungen auf der letzten Seite. Sprechen Sie im Kurs:', ar: 'ب قارنوا نتايجكم بالحلول في آخر صفحة. اتكلموا في الكورس:' },
     { id: 'b23', x: 232, y: 1290, w: 222, h: 20, text: 'Was hat Sie überrascht?', ar: 'إيه اللي فاجأكم؟' },
