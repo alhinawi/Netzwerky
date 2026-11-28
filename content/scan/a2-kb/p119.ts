@@ -11,7 +11,7 @@ export const p119: ScanPage = {
     { id: 'n10', x: 1150, y: 24, w: 75, h: 28, text: '10', ar: '١٠' },
     { id: 'h', x: 637, y: 51, w: 425, h: 17, text: 'Ortsangaben machen, ein Fest vorbereiten', ar: 'نقول أماكن، نجهّز لحفلة' },
     { id: 'ti', x: 152, y: 150, w: 350, h: 13, text: 'Das Sommerfest', ar: 'حفلة الصيف' },
-    { id: 'n5a', x: 88, y: 197, w: 42, h: 28, text: '5 a', ar: '5 أ' },
+    { id: 'n5a', x: 88, y: 197, w: 42, h: 28, text: '5 a', ar: '٥ أ' },
     { id: 'a1', x: 155, y: 205, w: 417, h: 15, text: 'Lesen Sie den Aushang. Worum geht es?', ar: 'اقرا الإعلان. بيتكلم عن إيه؟' },
     { id: 's1', x: 172, y: 257, w: 232, h: 15, text: 'Hallo liebe Nachbarn!', ar: 'أهلًا يا جيراننا الأعزاء!' },
     { id: 's2', x: 172, y: 292, w: 790, h: 17, text: 'Endlich Juli! Zeit für unser Sommerfest am Samstag, den 18.7., ab 15 Uhr!', ar: 'أخيرًا يوليو! جه وقت حفلة الصيف بتاعتنا يوم السبت 18/7 من الساعة 3 العصر!' },

@@ -9,7 +9,7 @@ export const p103: ScanPage = {
   height: 1753,
   words: [
     { id: 'h', x: 253, y: 44, w: 764, h: 33, text: 'Kommentare verstehen und schreiben, Folgen und Widersprüche ausdrücken', ar: 'نفهم تعليقات ونكتبها، ونعبّر عن النتائج والتناقضات' },
-    { id: 'n5a', x: 52, y: 140, w: 42, h: 30, text: '5 a', ar: '5 أ' },
+    { id: 'n5a', x: 52, y: 140, w: 42, h: 30, text: '5 a', ar: '٥ أ' },
     { id: 't5a1', x: 118, y: 141, w: 957, h: 27, text: 'Ein Fußballstar. Lesen Sie die Kommentare auf der Fanseite. Welche Kommentare sind kritisch,', ar: 'نجم كورة. اقرا التعليقات على صفحة الفانز. أنهي تعليقات انتقادية،' },
     { id: 't5a2', x: 118, y: 174, w: 219, h: 22, text: 'welche sind positiv?', ar: 'وأنهي إيجابية؟' },
     { id: 'mn', x: 158, y: 249, w: 74, h: 26, text: 'Mike07', ar: 'Mike07' },
@@ -71,7 +71,7 @@ export const p103: ScanPage = {
     { id: 'n6', x: 105, y: 1354, w: 22, h: 30, text: '6', ar: '٦' },
     { id: 't61', x: 150, y: 1334, w: 1010, h: 49, text: 'Welche bekannte Person (Sportler/in, Musiker/in ...) finden Sie gut? Schreiben Sie einen Kommentar für', ar: 'أنهي شخصية مشهورة (رياضي/ة، موسيقي/ة ...) شايفها كويسة؟ اكتب تعليق لـ' },
     { id: 't62', x: 150, y: 1365, w: 1000, h: 48, text: 'die Fanseite. Hängen Sie alle Texte auf und lesen Sie sie. Welche Personen kennen oder mögen Sie auch?', ar: 'صفحة الفانز. علّق كل النصوص واقراها. أنهي أشخاص تعرفهم أو بتحبهم كمان؟' },
-    { id: 'n7a', x: 88, y: 1445, w: 40, h: 30, text: '7 a', ar: '7 أ' },
+    { id: 'n7a', x: 88, y: 1445, w: 40, h: 30, text: '7 a', ar: '٧ أ' },
     { id: 't7a1', x: 152, y: 1422, w: 996, h: 51, text: 'Aussprache: r und l. Hören Sie zuerst fünf Wörter mit r und fünf Wörter mit l. Lesen Sie sie dann laut.', ar: 'نطق: r و l. اسمع الأول خمس كلمات فيها r وخمس كلمات فيها l. بعدين اقراهم بصوت عالي.' },
     { id: 'w1', x: 153, y: 1495, w: 83, h: 24, text: '1. reiten', ar: '1. يركب خيل' },
     { id: 'w2', x: 153, y: 1524, w: 67, h: 24, text: '2. Tore', ar: '2. أهداف' },

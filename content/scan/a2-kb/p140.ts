@@ -11,7 +11,7 @@ export const p140: ScanPage = {
     { id: 'n12', x: 55, y: 25, w: 90, h: 80, text: '12', ar: '١٢' },
     { id: 'hd', x: 205, y: 33, w: 737, h: 53, text: 'Zeitungsmeldungen verstehen, genauere Informationen zu Personen geben', ar: 'نفهم أخبار الجرايد، ونديّ معلومات أدق عن الناس' },
     { id: 'ti', x: 207, y: 154, w: 290, h: 36, text: 'Kurz gemeldet', ar: 'أخبار قصيرة' },
-    { id: 'n7a', x: 140, y: 204, w: 45, h: 28, text: '7 a', ar: '7 أ' },
+    { id: 'n7a', x: 140, y: 204, w: 45, h: 28, text: '7 a', ar: '٧ أ' },
     { id: 't7', x: 210, y: 189, w: 887, h: 43, text: 'Arbeiten Sie zu dritt. Jede/r wählt einen Text und markiert die wichtigsten Informationen.', ar: 'اشتغلوا تلاتة تلاتة. كل واحد يختار نص ويعلّم أهم المعلومات.' },
     { id: 'Ah', x: 68, y: 530, w: 360, h: 24, text: 'A Radiosprecher verschläft Nachrichten', ar: 'أ. مذيع راديو بينام وقت الأخبار' },
     { id: 'A1', x: 70, y: 561, w: 315, h: 22, text: 'Die ganze Nacht hat der bekannte', ar: 'طول الليل المذيع المعروف' },

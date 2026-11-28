@@ -53,7 +53,7 @@ export const p23: ScanPage = {
     { id: 'b44', x: 147, y: 1228, w: 15, h: 20, text: 'd', ar: 'د' },
     { id: 'b45', x: 184, y: 1228, w: 887, h: 25, text: 'Schreiben Sie einen Kommentar zum Artikel in 6b. Sie können über Möglichkeiten, Kosten oder', ar: 'اكتبوا تعليق على المقال في 6b. تقدروا تكتبوا عن الإمكانيات أو التكلفة أو' },
     { id: 'b46', x: 184, y: 1264, w: 187, h: 17, text: 'Gefahren schreiben.', ar: 'المخاطر.' },
-    { id: 'b47', x: 117, y: 1312, w: 50, h: 25, text: '8 a', ar: '8 أ' },
+    { id: 'b47', x: 117, y: 1312, w: 50, h: 25, text: '8 a', ar: '٨ أ' },
     { id: 'b48', x: 184, y: 1312, w: 800, h: 27, text: 'Aussprache: ts und tst. Hören Sie die Wörter und markieren Sie: Hören Sie ts oder tst?', ar: 'النطق: ts و tst. اسمعوا الكلمات وعلّموا: بتسمعوا ts ولا tst؟' },
     { id: 'b50', x: 184, y: 1345, w: 776, h: 50, text: '1. ts tst 2. ts tst 3. ts tst 4. ts tst 5. ts tst 6. ts tst', ar: 'علّموا على اللي بتسمعوه لكل رقم: ts ولا tst' },
     { id: 'b51', x: 147, y: 1407, w: 14, h: 20, text: 'b', ar: 'ب' },

@@ -10,7 +10,7 @@ export const p26: ScanPage = {
   words: [
     { id: 'b1', x: 231, y: 51, w: 152, h: 16, text: 'hören und sehen', ar: 'سمع ورؤية' },
     { id: 'b2', x: 230, y: 133, w: 482, h: 41, text: 'Zu Besuch im Repair Café', ar: 'زيارة لمقهى التصليح' },
-    { id: 'b3', x: 149, y: 181, w: 54, h: 22, text: '12 a', ar: '12 أ' },
+    { id: 'b3', x: 149, y: 181, w: 54, h: 22, text: '12 a', ar: '١٢ أ' },
     { id: 'b4', x: 229, y: 187, w: 597, h: 23, text: 'Was ist ein Repair Café? Vermuten Sie und sprechen Sie im Kurs.', ar: 'إيه هو مقهى التصليح؟ خمّنوا واتكلموا في الحصة.' },
     { id: 'b5', x: 187, y: 241, w: 15, h: 21, text: 'b', ar: 'ب' },
     { id: 'b6', x: 229, y: 241, w: 585, h: 23, text: 'Das Repair Café. Sehen Sie Szene 4 und ergänzen Sie die Sätze.', ar: 'مقهى التصليح. شوفوا المشهد 4 وكمّلوا الجمل.' },
@@ -24,7 +24,7 @@ export const p26: ScanPage = {
     { id: 'b14', x: 252, y: 472, w: 140, h: 19, text: 'Helfer/innen …', ar: 'المساعدين ...' },
     { id: 'b15', x: 228, y: 500, w: 389, h: 21, text: '5. Die Besucher tragen das Risiko, wenn …', ar: '5. الزوار بيتحمّلوا المسؤولية لو ...' },
     { id: 'b16', x: 227, y: 527, w: 445, h: 21, text: '6. Das Repair Café ist gut für die Umwelt, weil …', ar: '6. مقهى التصليح مفيد للبيئة، لأن ...' },
-    { id: 'b17', x: 147, y: 578, w: 56, h: 22, text: '13 a', ar: '13 أ' },
+    { id: 'b17', x: 147, y: 578, w: 56, h: 22, text: '13 a', ar: '١٣ أ' },
     { id: 'b18', x: 226, y: 581, w: 589, h: 22, text: 'So geht’s. Sehen Sie Szene 5. Was passt zu wem? Verbinden Sie.', ar: 'كده تمام. شوفوا المشهد 5. إيه اللي يناسب مين؟ وصّلوا.' },
     { id: 'b19', x: 226, y: 621, w: 200, h: 22, text: '1. … findet die Atmosphäre', ar: '1. ... شايف أجواء' },
     { id: 'b20', x: 250, y: 647, w: 180, h: 28, text: 'im Repair Café toll.', ar: 'مقهى التصليح جميلة.' },

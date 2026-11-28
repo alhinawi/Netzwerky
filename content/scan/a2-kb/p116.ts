@@ -37,7 +37,7 @@ export const p116: ScanPage = {
     { id: 'p2', x: 225, y: 1046, w: 379, h: 14, text: 'mitten in der Natur mit vielen Kühen und', ar: 'في قلب الطبيعة مع بقر كتير و' },
     { id: 'p3', x: 225, y: 1075, w: 362, h: 14, text: 'anderen Tieren. 800 m zu den nächsten', ar: 'حيوانات تانية. 800 متر لأقرب' },
     { id: 'p4', x: 225, y: 1103, w: 309, h: 14, text: 'Nachbarn, vier Ferienwohnungen.', ar: 'جيران، أربع شقق إجازة.' },
-    { id: 'n1a', x: 155, y: 1296, w: 42, h: 28, text: '1 a', ar: '1 أ' },
+    { id: 'n1a', x: 155, y: 1296, w: 42, h: 28, text: '1 a', ar: '١ أ' },
     { id: 'a1', x: 222, y: 1306, w: 642, h: 27, text: 'Sehen Sie die Fotos an. Welcher Wohnort gefällt Ihnen am besten,', ar: 'بصّوا على الصور. أنهي مكان سكن عاجبكم أكتر،' },
     { id: 'a2', x: 222, y: 1333, w: 354, h: 16, text: 'welcher gefällt Ihnen nicht? Warum?', ar: 'وأنهي مش عاجبكم؟ ليه؟' },
     { id: 'e1', x: 523, y: 1387, w: 336, h: 32, text: 'Mir gefällt der Bauernhof, weil ...', ar: 'عاجبني المزرعة لأن ...' },

@@ -9,7 +9,7 @@ export const p25: ScanPage = {
   height: 1753,
   words: [
     { id: 'b1', x: 722, y: 51, w: 284, h: 21, text: 'über Werbestrategien sprechen', ar: 'نتكلم عن استراتيجيات الإعلان' },
-    { id: 'b2', x: 103, y: 134, w: 50, h: 24, text: '10 a', ar: '10 أ' },
+    { id: 'b2', x: 103, y: 134, w: 50, h: 24, text: '10 a', ar: '١٠ أ' },
     { id: 'b3', x: 183, y: 134, w: 480, h: 24, text: 'Welche Werbung aus Ihrem Land gefällt Ihnen?', ar: 'إعلانات أنهي من بلدكم عجبتكم؟' },
     { id: 'b4', x: 183, y: 162, w: 477, h: 23, text: 'Bringen Sie sie mit oder machen Sie ein Foto davon', ar: 'هاتوها معاكم أو صوّروها' },
     { id: 'b5', x: 183, y: 189, w: 443, h: 21, text: 'und stellen Sie sie vor. Warum gefällt sie Ihnen?', ar: 'واعرضوها. ليه عجبتكم؟' },

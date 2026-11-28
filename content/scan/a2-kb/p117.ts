@@ -40,7 +40,7 @@ export const p117: ScanPage = {
     { id: 'b5', x: 785, y: 1103, w: 422, h: 15, text: 'anstrengend. Luxus gibt es hier nicht. Wenn', ar: 'متعبة. مفيش رفاهية هنا. لما' },
     { id: 'b6', x: 783, y: 1131, w: 428, h: 15, text: 'es regnet, wird man eben ein bisschen nass.', ar: 'تمطر، الواحد بيتبل شوية.' },
     { id: 'au', x: 43, y: 1301, w: 24, h: 28, text: '🔊', ar: 'صوت' },
-    { id: 'n2a', x: 97, y: 1311, w: 42, h: 28, text: '2 a', ar: '2 أ' },
+    { id: 'n2a', x: 97, y: 1311, w: 42, h: 28, text: '2 a', ar: '٢ أ' },
     { id: 'i1', x: 165, y: 1298, w: 616, h: 33, text: 'Die Meinungen der Bewohner/innen. Hören und notieren Sie.', ar: 'آراء السكان. اسمعوا واكتبوا.' },
     { id: 't1', x: 543, y: 1337, w: 231, h: 17, text: 'Wie ist das Leben dort?', ar: 'الحياة هناك عاملة إزاي؟' },
     { id: 't2', x: 867, y: 1330, w: 304, h: 17, text: 'Welche anderen Personen sind', ar: 'أنهي ناس تانيين' },

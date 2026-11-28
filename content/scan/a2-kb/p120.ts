@@ -11,7 +11,7 @@ export const p120: ScanPage = {
     { id: 'n10', x: 55, y: 46, w: 100, h: 28, text: '10', ar: '١٠' },
     { id: 'h', x: 210, y: 63, w: 299, h: 15, text: 'Erfahrungsberichte verstehen', ar: 'نفهم تقارير تجارب' },
     { id: 'ti', x: 212, y: 165, w: 260, h: 16, text: 'Zimmer frei!', ar: 'أوضة فاضية!' },
-    { id: 'n6a', x: 143, y: 208, w: 60, h: 28, text: '6 a', ar: '6 أ' },
+    { id: 'n6a', x: 143, y: 208, w: 60, h: 28, text: '6 a', ar: '٦ أ' },
     { id: 'a1', x: 212, y: 208, w: 454, h: 18, text: 'Sie möchten in eine andere Stadt umziehen.', ar: 'عايز تنتقل لمدينة تانية.' },
     { id: 'a2', x: 214, y: 243, w: 427, h: 18, text: 'Was müssen Sie machen? Sammeln Sie zu', ar: 'لازم تعمل إيه؟ اجمعوا مع بعض' },
     { id: 'a3', x: 214, y: 274, w: 403, h: 17, text: 'zweit und vergleichen Sie dann im Kurs.', ar: 'واتنين اتنين وبعدين قارنوا في الكورس.' },
