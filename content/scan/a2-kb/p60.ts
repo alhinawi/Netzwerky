@@ -83,7 +83,6 @@ export const p60: ScanPage = {
     { id: 's32', text: 'Dort gibt es auch viele Bilder', ar: 'هناك كمان لوحات كتير', words: ['w32'] },
     { id: 's33', text: 'von Egon Schiele und anderen', ar: 'لإيجون شيله وغيره من', words: ['w33'] },
     { id: 's34', text: 'österreichischen Malern.', ar: 'الرسامين النمساويين.', words: ['w34'] },
-    { id: 's36', text: 'sechzig', ar: 'ستين', words: ['w36'] },
   ],
   patches: [
   ],

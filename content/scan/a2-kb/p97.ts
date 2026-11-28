@@ -152,7 +152,6 @@ export const p97: ScanPage = {
     { id: 's-w61', text: 'dem Handy auf und hören Sie sie an. Sprechen Sie', ar: 'بالموبايل واسمعه. هل بتتكلم', words: ['w61'] },
     { id: 's-w62', text: 'flüssig? Lesen Sie nicht ab? Was können Sie besser', ar: 'بسلاسة؟ مش بتقرا من الورقة؟ إيه اللي ممكن تحسّنه', words: ['w62'] },
     { id: 's-w63', text: 'machen? Üben Sie mehrmals.', ar: 'اتمرن أكتر من مرة.', words: ['w63'] },
-    { id: 's-al', text: '2.18', ar: '2.18', words: ['al'] },
   ],
   groups: [],
 }

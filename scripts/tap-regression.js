@@ -240,6 +240,26 @@ SPECS['/read/a2-kb/33/'] = [['dreiunddreißig', 0.5, null, 'none']]
 SPECS['/read/a2-kb/45/'] = [['fünfundvierzig', 0.5, null, 'none']]
 SPECS['/read/a2-kb/60/'] = [['sechzig', 0.5, null, 'none']]
 
+// K5 round 3b: leftover footer/track SENTENCES removed (word boxes were
+// already gone; the orphan sentences fed labeled-sentence popups)
+SPECS['/read/a2-kb/13/'] = [['dreizehn', 0.5, null, 'none']]
+SPECS['/read/a2-kb/26/'] = [['sechsundzwanzig', 0.5, null, 'none']]
+SPECS['/read/a2-kb/55/'] = [['fünfundfünfzig', 0.5, null, 'none']]
+SPECS['/read/a2-kb/57/'] = [['siebenundfünfzig', 0.5, null, 'none']]
+SPECS['/read/a2-kb/58/'] = [['achtundfünfzig', 0.5, null, 'none']]
+SPECS['/read/a2-kb/59/'] = [['neunundfünfzig', 0.5, null, 'none']]
+SPECS['/read/a2-kb/80/'] = [['2.1', 0.5, null, 'none']]
+SPECS['/read/a2-kb/81/'] = [['2.2', 0.5, null, 'none']]
+SPECS['/read/a2-kb/82/'] = [['2.3', 0.5, null, 'none']]
+SPECS['/read/a2-kb/84/'] = [['2.4', 0.5, null, 'none'], ['2.5', 0.5, null, 'none']]
+SPECS['/read/a2-kb/96/'] = [['2.17', 0.5, null, 'none']]
+SPECS['/read/a2-kb/97/'] = [['2.18', 0.5, null, 'none']]
+SPECS['/read/a2-kb/115/'] = [['2.29', 0.5, null, 'none']]
+SPECS['/read/a2-kb/121/'] = [['2.37', 0.5, null, 'none'], ['2.38', 0.5, null, 'none'], ['2.39', 0.5, null, 'none']]
+SPECS['/read/a2-kb/122/'] = [['2.40', 0.5, null, 'none'], ['2.41', 0.5, null, 'none']]
+SPECS['/read/b1-kb/23/'].push(['1.17', 0.5, null, 'none'])
+SPECS['/read/b1-kb/57/'] = [['1.37', 0.5, null, 'none'], ['1.38', 0.5, null, 'none']]
+
 const cases = SPECS[location.pathname]
 if (!cases) return 'no spec for ' + location.pathname
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms))

@@ -126,7 +126,6 @@ export const p122: ScanPage = {
   sentences: [
     { id: 's-h', text: 'über Haustiere sprechen, auf Informationen reagieren', ar: 'نتكلم عن الحيوانات الأليفة ونرد على معلومات', words: ['h'] },
     { id: 's-ti', text: 'Die Deutschen und ihre Haustiere', ar: 'الألمان وحيواناتهم الأليفة', words: ['ti'] },
-    { id: 's-tr', text: '2.40', ar: '2.40', words: ['tr'] },
     { id: 's-a1', text: 'Hören Sie die Gespräche. Was möchte Nina? Was ist das Problem?', ar: 'اسمع المحادثات. نينا عايزة إيه؟ إيه المشكلة؟', words: ['a1'] },
     { id: 's-b1', text: 'Hören Sie noch einmal. Welche Gründe haben die Personen?', ar: 'اسمع تاني. إيه الأسباب اللي عند الناس؟', words: ['b1'] },
     { id: 's-p1', text: 'Anne:', ar: 'آنّه:', words: ['p1'] },
@@ -150,7 +149,6 @@ export const p122: ScanPage = {
     { id: 's-q3b', text: 'Milliarden Euro pro Jahr aus.', ar: 'مليار يورو في السنة.', words: ['q3b'] },
     { id: 's-q4', text: '4. Mehr Männer als Frauen haben Haustiere.', ar: '4. رجالة أكتر من ستات عندهم حيوانات أليفة.', words: ['q4'] },
     { id: 's-q5', text: '5. 20 Prozent möchten kein Haustier haben.', ar: '5. 20 في المية مش عايزين حيوان أليف.', words: ['q5'] },
-    { id: 's-tr2', text: '2.41', ar: '2.41', words: ['tr2'] },
     { id: 's-g0', text: 'Gut gesagt: Kosenamen', ar: 'اتقال حلو: أسماء التدليل', words: ['g0'] },
     { id: 's-g1', text: 'Tiernamen sind oft Kosenamen', ar: 'أسماء الحيوانات غالبًا أسماء تدليل', words: ['g1'] },
     { id: 's-g2', text: 'für Kinder und Partner/innen:', ar: 'للأطفال والشركاء:', words: ['g2'] },

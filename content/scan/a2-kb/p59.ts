@@ -147,7 +147,6 @@ export const p59: ScanPage = {
     { id: 's52', text: 'Könnten Sie bitte Übung 4b machen?', ar: 'ممكن حضرتك تعمل تمرين ٤ ب؟', words: ['w60', 'w61'] },
     { id: 's53', text: 'c', ar: 'ج', words: ['w62'] },
     { id: 's54', text: 'Die höflichen fünf Minuten. Wählen Sie eine Situation (im Unterricht, im Café, beim Essen mit Freunden …). Formulieren Sie sehr höfliche Bitten.', ar: 'الخمس دقايق المؤدبين. اختاروا موقف (في الدرس، في الكافيه، وإنتوا بتاكلوا مع أصحاب …). صيغوا طلبات مؤدبة جدًا.', words: ['w63', 'w64', 'w65', 'w66'] },
-    { id: 's55', text: 'neunundfünfzig', ar: 'تسعة وخمسين', words: ['w67'] },
   ],
   patches: [
   ],

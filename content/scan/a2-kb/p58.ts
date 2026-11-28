@@ -120,7 +120,6 @@ export const p58: ScanPage = {
     { id: 's44', text: 'Wann waren Sie bei einer Behörde, einer Bank oder bei der Polizei? Was haben Sie dort gemacht?', ar: 'إمتى كنتوا في مصلحة حكومية أو بنك أو في الشرطة؟ عملتوا إيه هناك؟', words: ['w47', 'w48'] },
     { id: 's45', text: 'Berichten Sie.', ar: 'احكوا.', words: ['w49'] },
     { id: 's46', text: 'Ich war mal bei der Behörde. Mein Visum war nicht mehr gültig und …', ar: 'أنا كنت مرة في المصلحة الحكومية. التأشيرة بتاعتي مكانتش لسه شغالة و …', words: ['w50', 'w51'] },
-    { id: 's48', text: 'achtundfünfzig', ar: 'ثمانية وخمسين', words: ['w53'] },
   ],
   patches: [
   ],

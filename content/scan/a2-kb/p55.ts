@@ -40,7 +40,6 @@ export const p55: ScanPage = {
     { id: 's7', text: 'Was ist für Sie noch wichtig in einer Stadt? Sammeln Sie im Kurs.', ar: 'إيه كمان مهم بالنسبالكم في المدينة؟ اجمعوا أفكار في الكورس.', words: ['w7'] },
     { id: 's8', text: 'Ich finde eine Universität sehr wichtig. Da können die Leute studieren und …', ar: 'أنا شايف إن الجامعة مهمة جدًا. هناك الناس يقدروا يدرسوا و …', words: ['w8', 'w9'] },
     { id: 's9', text: 'Eine Stadt braucht eine Feuerwehr. Und Parks, denn …', ar: 'المدينة محتاجة فرقة مطافي. وحدائق، لأن …', words: ['w10', 'w11'] },
-    { id: 's10', text: 'fünfundfünfzig', ar: 'خمسة وخمسين', words: ['w12'] },
   ],
   patches: [
   ],

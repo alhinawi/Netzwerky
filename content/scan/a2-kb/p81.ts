@@ -98,7 +98,6 @@ export const p81: ScanPage = {
     { id: 's26', text: 'sein | keinen Führerschein brauchen | praktisch sein', ar: 'محجوزة | مش محتاجين رخصة قيادة | يكون عملي', words: ['w26'] },
     { id: 's27', text: 'eine App nutzen', ar: 'نستخدم أبلكيشن', words: ['w27'] },
     { id: 's28', text: 'Ich fahre meistens mit dem Bus. Das ist praktisch, aber ich muss ...', ar: 'أنا غالبًا بتحرك بالأتوبيس. ده عملي، بس لازم ...', words: ['w28'] },
-    { id: 's-al', text: '2.2', ar: '2.2', words: ['al'] },
   ],
   patches: [
   ],
